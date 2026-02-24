@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: {
@@ -11,18 +12,22 @@ export const metadata: Metadata = {
 const projects = [
   {
     title: "Water Tracker",
+    slug: "watertracker",
     desc: "A mobile app to track daily water intake with reminders and analytics for healthy hydration habits.",
   },
   {
     title: "She Health",
+    slug: "shehealth",
     desc: "A women-first health platform delivering personalized care journeys and secure health tracking.",
   },
   {
     title: "TCBS CLI",
+    slug: "tcbs-cli",
     desc: "A developer CLI tool for managing build workflows and automating common mobile release tasks.",
   },
   {
     title: "180 Days OfflineLifeArchive",
+    slug: "180days",
     desc: "An archival app designed for offline journaling and life-logging across a 180-day challenge.",
   },
 ];
@@ -38,9 +43,9 @@ export default function ProjectsPage() {
             <h2 className="text-lg font-medium">{p.title}</h2>
             <p className="mt-3 text-sm text-gray-700">{p.desc}</p>
             <div className="mt-6">
-              <button type="button" className="px-4 py-2 border rounded text-sm">
+              <Link href={`/${p.slug}`} className="inline-block px-4 py-2 border rounded text-sm">
                 View Details
-              </button>
+              </Link>
             </div>
           </article>
         ))}
