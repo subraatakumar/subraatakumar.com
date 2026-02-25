@@ -23,9 +23,10 @@ export default function CodeEnhancer() {
         document.head.appendChild(s);
       });
 
-    // Add Prism theme
+    // Add Prism theme + line-numbers plugin CSS
+    addLink("https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css");
     addLink(
-      "https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+      "https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css"
     );
 
     // Load Prism core + languages sequentially then highlight
@@ -38,6 +39,11 @@ export default function CodeEnhancer() {
         await loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-jsx.min.js");
         await loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-tsx.min.js");
         await loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js");
+        await loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js");
+        // load line-numbers plugin
+        await loadScript(
+          "https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"
+        );
 
         // Prism loaded — highlight
         if ((window as any).Prism && (window as any).Prism.highlightAll) {

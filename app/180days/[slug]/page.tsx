@@ -107,7 +107,8 @@ export default async function ArticlePage({ params }: PageProps) {
 
   // Enhance code blocks: add a language badge and copy button, and style the pre/code
   contentHtml = contentHtml.replace(/<pre><code([^>]*)>([\s\S]*?)<\/code><\/pre>/gi, (m, attrs, code) => {
-    const langMatch = attrs.match(/language-([a-z0-9]+)/i);
+    // detect language anywhere in the matched block (pre or code)
+    const langMatch = m.match(/language-([a-z0-9]+)/i);
     const lang = langMatch ? langMatch[1].toUpperCase() : "";
 
     // Keep the original attrs on the code tag
@@ -115,11 +116,11 @@ export default async function ArticlePage({ params }: PageProps) {
 
     return `
       <div class="relative my-6 code-block">
-        <div class="absolute right-3 top-3 flex items-center gap-2">
-          ${lang ? `<span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded">${lang}</span>` : ""}
-          <button data-copy class="copy-btn text-[12px] px-2 py-1 rounded bg-indigo-600 text-white hover:bg-indigo-700">Copy</button>
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          ${lang ? `<span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded z-50">${lang}</span>` : ""}
+          <button data-copy class="copy-btn text-[12px] px-2 py-1 rounded bg-indigo-600 text-white hover:bg-indigo-700 z-50">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4"><code${codeAttrs}>${code}</code></pre>
+        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code${codeAttrs}>${code}</code></pre>
       </div>
     `;
   });
