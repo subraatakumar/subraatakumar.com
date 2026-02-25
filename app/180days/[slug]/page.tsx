@@ -80,9 +80,11 @@ export default async function ArticlePage({ params }: PageProps) {
               <span className="font-black text-sm">SK</span>
             </div>
             <nav className="hidden md:flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-400">
+              <Link href="/180days" className="text-xs font-black px-4 py-2 bg-slate-100 dark:bg-slate-800 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors flex items-center gap-2 uppercase tracking-tight">
               <span className="hover:text-indigo-600 transition-colors cursor-pointer font-bold">180 Days</span>
               <span className="text-slate-300">/</span>
               <span className="text-slate-900 dark:text-white font-bold tracking-tight">Day {dayNumber}</span>
+              </Link>
             </nav>
           </div>
 
@@ -194,11 +196,11 @@ export default async function ArticlePage({ params }: PageProps) {
         </div>
       </main>
 
-      <footer className="py-12 border-t border-slate-100 dark:border-slate-800 text-center">
+      {/* <footer className="py-12 border-t border-slate-100 dark:border-slate-800 text-center">
         <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.3em] opacity-80">
           Subrata Kumar Das • Documentation System v1.0
         </p>
-      </footer>
+      </footer> */}
 
       {/* Structured Data */}
       <script
