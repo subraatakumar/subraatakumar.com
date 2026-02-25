@@ -66,43 +66,139 @@ export default async function ArticlePage({ params }: PageProps) {
   const prevSlug = allSlugs[currentIndex - 1];
   const nextSlug = allSlugs[currentIndex + 1];
 
+  // derive day number and progress for sidebar
+  const dayNumber = slug.replace("day-", "");
+  const progress = Math.round((Number(dayNumber) / 180) * 100);
+
   return (
-    <article className="prose max-w-3xl mx-auto">
-      
-      {/* Top breadcrumb */}
-      <p>
-        <Link href="/180days" className="text-sm text-blue-600 hover:underline">
-          ← Back to 180 Days
-        </Link>
-      </p>
+    <div className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans selection:bg-indigo-100 dark:selection:bg-indigo-900/30">
+      {/* Sticky Header */}
+      <header className="sticky top-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-xl border-b border-slate-200 dark:border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between gap-6">
+          <div className="flex items-center gap-3 shrink-0">
+            <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white shadow-lg shadow-indigo-500/20">
+              <span className="font-black text-sm">SK</span>
+            </div>
+            <nav className="hidden md:flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-400">
+              <span className="hover:text-indigo-600 transition-colors cursor-pointer font-bold">180 Days</span>
+              <span className="text-slate-300">/</span>
+              <span className="text-slate-900 dark:text-white font-bold tracking-tight">Day {dayNumber}</span>
+            </nav>
+          </div>
 
-      <h1>{data.title}</h1>
-      <p className="text-sm text-gray-500">{data.date}</p>
+          <div className="flex items-center gap-4">
+            <Link href="/180days" className="text-xs font-black px-4 py-2 bg-slate-100 dark:bg-slate-800 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors flex items-center gap-2 uppercase tracking-tight">
+              ← All Days
+            </Link>
+          </div>
+        </div>
+      </header>
 
-      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+      <main className="max-w-7xl mx-auto px-4 sm:px-8 py-8">
+        <div className="flex flex-col lg:flex-row gap-10">
+          {/* Sidebar */}
+          <aside className="lg:w-64 lg:shrink-0 space-y-8 order-2 lg:order-1">
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-[0.2em] mb-3">Log Metadata</h4>
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between text-xs">
+                    <div className="flex items-center gap-2 text-slate-500 font-medium">
+                      <span>Date</span>
+                    </div>
+                    <span className="font-bold">{data.date}</span>
+                  </div>
+                  <div className="flex items-center justify-between text-xs">
+                    <div className="flex items-center gap-2 text-slate-500 font-medium">
+                      <span>Author</span>
+                    </div>
+                    <span className="font-bold text-indigo-600 dark:text-indigo-400">Subrata K.</span>
+                  </div>
+                  <div className="flex items-center justify-between text-xs">
+                    <div className="flex items-center gap-2 text-slate-500 font-medium">
+                      <span>Status</span>
+                    </div>
+                    <span className="px-1.5 py-0.5 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded font-bold text-[10px] uppercase tracking-tighter">Complete</span>
+                  </div>
+                </div>
+              </div>
 
-      {/* Navigation */}
-      <hr className="my-10" />
+              <div className="pt-6 border-t border-slate-100 dark:border-slate-800">
+                <h4 className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-[0.2em] mb-3">Challenge Progress</h4>
+                <div className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-3 shadow-sm">
+                   <div className="flex justify-between items-center mb-2">
+                      <span className="text-[10px] font-bold text-slate-500">Day {dayNumber} / 180</span>
+                      <span className="text-[10px] font-bold text-indigo-600">{progress}%</span>
+                   </div>
+                   <div className="w-full bg-slate-200 dark:bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                      <div 
+                        className="bg-indigo-600 h-full transition-all duration-1000" 
+                        style={{ width: `${progress}%` }}
+                      />
+                   </div>
+                </div>
+              </div>
 
-      <div className="flex justify-between text-sm">
-        {prevSlug ? (
-          <Link
-            href={`/180days/${prevSlug}`}
-            className="text-blue-600 hover:underline"
-          >
-            ← Previous Day
-          </Link>
-        ) : <div />}
+              <div className="pt-6 border-t border-slate-100 dark:border-slate-800">
+                <div className="p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-xl border border-indigo-100 dark:border-indigo-800">
+                  <p className="text-[11px] leading-relaxed text-indigo-700 dark:text-indigo-300 font-medium italic">
+                    "Consistent small steps lead to massive long-term results. Keep pushing."
+                  </p>
+                </div>
+              </div>
 
-        {nextSlug ? (
-          <Link
-            href={`/180days/${nextSlug}`}
-            className="text-blue-600 hover:underline"
-          >
-            Next Day →
-          </Link>
-        ) : <div />}
-      </div>
+              <Link href="#" className="flex items-center justify-center gap-2 w-full py-3 bg-slate-950 dark:bg-white text-white dark:text-slate-950 rounded-xl font-black text-[10px] tracking-widest hover:opacity-90 transition-all shadow-xl shadow-indigo-500/10 uppercase">
+                Share Entry
+              </Link>
+            </div>
+          </aside>
+
+          {/* Main Article */}
+          <div className="flex-1 order-1 lg:order-2">
+            <div className="mb-8">
+              <div className="flex items-center gap-2 text-xs font-bold text-indigo-600 mb-2 uppercase tracking-widest">
+                Technical Entry
+              </div>
+              <h1 className="text-4xl lg:text-5xl font-black tracking-tighter text-slate-950 dark:text-white leading-[1.1]">{data.title}</h1>
+              {data.description && (
+                <p className="mt-4 text-lg text-slate-500 dark:text-slate-400 leading-relaxed max-w-2xl">{data.description}</p>
+              )}
+            </div>
+
+            <div className="w-full h-[1px] bg-slate-100 dark:bg-slate-800 mb-10" />
+
+            <article className="max-w-4xl prose prose-slate dark:prose-invert prose-headings:font-black prose-headings:tracking-tight prose-h1:text-3xl prose-h1:mt-8 prose-h1:mb-4 prose-h1:pb-3 prose-h1:border-b prose-h2:text-xl prose-h2:mt-6 prose-h2:mb-3 prose-p:text-base prose-p:leading-relaxed prose-p:my-2 prose-li:my-1 prose-pre:rounded-2xl prose-pre:bg-slate-950 prose-pre:p-6 prose-hr:my-8 prose-hr:border-slate-200 dark:prose-hr:border-slate-800">
+              <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+            </article>
+
+            <div className="mt-16 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 pb-20">
+              {prevSlug ? (
+                <Link href={`/180days/${prevSlug}`} className="group flex items-center gap-3 px-5 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-indigo-400 transition-all w-full sm:w-auto">
+                  <div className="text-left">
+                    <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-widest">Previous</span>
+                    <span className="text-sm font-bold capitalize">{prevSlug.replace('-', ' ')}</span>
+                  </div>
+                </Link>
+              ) : <div />}
+
+              {nextSlug ? (
+                <Link href={`/180days/${nextSlug}`} className="group flex items-center gap-3 px-5 py-3 bg-slate-900 dark:bg-white text-white dark:text-slate-950 rounded-xl hover:scale-[1.02] transition-all w-full sm:w-auto text-right">
+                  <div className="text-right">
+                    <span className="block text-[10px] font-bold opacity-60 uppercase tracking-widest">Next Up</span>
+                    <span className="text-sm font-bold capitalize">{nextSlug.replace('-', ' ')}</span>
+                  </div>
+                </Link>
+              ) : <div />}
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer className="py-12 border-t border-slate-100 dark:border-slate-800 text-center">
+        <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.3em] opacity-80">
+          Subrata Kumar Das • Documentation System v1.0
+        </p>
+      </footer>
 
       {/* Structured Data */}
       <script
@@ -121,6 +217,6 @@ export default async function ArticlePage({ params }: PageProps) {
           }),
         }}
       />
-    </article>
+    </div>
   );
 }
