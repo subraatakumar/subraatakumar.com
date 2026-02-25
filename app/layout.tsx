@@ -3,12 +3,29 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://subraatakumar.com"),
   title: {
     default: "Subrata Kumar Das",
     template: "%s | Subrata Kumar Das",
   },
   description:
-    "Official website of Subrata Kumar Das – Tech Lead, React Native Architect, Founder.",
+    "Tech Lead and React Native Architect with 10+ years building scalable mobile platforms and product-focused systems.",
+  keywords: [
+    "Subrata Kumar Das",
+    "React Native Developer",
+    "Tech Lead",
+    "Mobile Architect",
+    "Next.js Developer",
+  ],
+  openGraph: {
+    title: "Subrata Kumar Das",
+    description:
+      "Tech Lead and React Native Architect building scalable mobile systems.",
+    url: "https://subraatakumar.com",
+    siteName: "Subrata Kumar Das",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -19,6 +36,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-white text-black antialiased">
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Person",
+                name: "Subrata Kumar Das",
+                url: "https://subraatakumar.com",
+                jobTitle: "Tech Lead",
+                sameAs: [
+                  "https://github.com/subraatakumar",
+                  "https://linkedin.com/in/subraatakumar"
+                ],
+              }),
+            }}
+          />        
         <header className="border-b">
           <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
             <Link href="/" className="text-lg font-medium">

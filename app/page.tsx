@@ -17,8 +17,7 @@ export default function HomePage() {
       </h1>
 
       <p className="mt-6 text-lg text-gray-600 max-w-xl text-center">
-        Tech Lead • Mobile Platform Engineer • Tech Lead  
-        Building scalable mobile platforms and product-focused systems.
+        Tech Lead • Mobile Platform Engineer • Building scalable mobile platforms and product-focused systems.
       </p>
     </main>
   );
