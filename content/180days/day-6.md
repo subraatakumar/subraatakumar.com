@@ -1,7 +1,7 @@
 ---
 title: "Day 6 : Repository Layer Comes to Life"
 description: ""
-date: "2026-02-24"
+date: "2026-02-25"
 ---
 
 Today we bring the **Warehouse Clerk** into code.
