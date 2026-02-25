@@ -1,7 +1,20 @@
 ---
 title: "Day 5 : Encrypted Realm Initialization (Core + Data Layer Only)"
-description: ""
+description: "Set up encrypted Realm with secure key management and schema definitions to ensure privacy-first local storage for the app's core data layer."
 date: "2026-02-24"
+image: "/images/180days/day-5.png"
+slug: "day-5-encrypted-realm-initialization"
+tags:
+  - realm
+  - encryption
+  - core-layer
+  - react-native
+  - data-layer
+excerpt: "Implemented encrypted Realm initialization and secure key handling to keep user data private and local."
+author: "Subrata Kumar Das"
+updated: "2026-02-24"
+draft: false
+readingTime: "4 min"
 ---
 
 ![https180days.subraatakumar.com.png](/images/day5_1.png)

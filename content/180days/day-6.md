@@ -1,7 +1,20 @@
 ---
 title: "Day 6 : Repository Layer Comes to Life"
-description: ""
+description: "Implementing an ArchiveRepository to safely abstract encrypted Realm access — enabling persistent, privacy-first local storage while keeping UI and business logic decoupled from storage details."
 date: "2026-02-25"
+image: "/images/180days/day-6.png"
+slug: "day-6-repository-layer-comes-to-life"
+tags:
+  - realm
+  - repository-pattern
+  - encrypted-storage
+  - react-native
+  - clean-architecture
+excerpt: "Repository layer added to isolate Realm access and confirm encrypted persistence for offline-first storage."
+author: "Subrata Kumar Das"
+updated: "2026-02-25"
+draft: false
+readingTime: "3 min"
 ---
 
 Today we bring the **Warehouse Clerk** into code.

@@ -1,7 +1,20 @@
 ---
 title: "Day 4 : Establishing the Secure Infrastructure Layer"
-description: "In the previous chapter, we defined the architectural philosophy and layered structure of Offline Life Archive. We intentionally avoided writing feature-level code."
+description: "Implemented the secure infrastructure: encryption key strategy, encrypted Realm setup, and repository/service boundaries to ensure privacy-first, maintainable local storage."
 date: "2026-02-23"
+image: "/images/180days/day-4.png"
+slug: "day-4-establishing-secure-infrastructure-layer"
+tags:
+  - encryption
+  - realm
+  - infrastructure
+  - core-layer
+  - secure-storage
+excerpt: "Set up encryption keys and an encrypted Realm plus repository/service boundaries to protect user data and architecture integrity."
+author: "Subrata Kumar Das"
+updated: "2026-02-23"
+draft: false
+readingTime: "6 min"
 ---
 
 ## 4.1 Introduction

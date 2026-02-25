@@ -1,7 +1,19 @@
 ---
 title: "Day 0 – Why I Started OfflineLifeArchive"
-description: "The beginning of my 180-day public writing journey."
+description: "The beginning of my 180-day public writing journey and the privacy-first vision behind Offline Life Archive."
 date: "2026-02-19"
+image: "/images/180days/day-0.png"
+slug: "day-0-why-i-started-offline-life-archive"
+tags:
+    - intro
+    - journey
+    - privacy
+    - planning
+excerpt: "Kickoff: a 180-day journey to build Offline Life Archive — a privacy-first, local-first product with production discipline and clear architecture." 
+author: "Subrata Kumar Das"
+updated: "2026-02-19"
+draft: false
+readingTime: "2 min"
 ---
 
 For the next 180 days, I’m starting something intentional.

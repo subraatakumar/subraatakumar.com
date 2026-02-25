@@ -2,6 +2,17 @@
 title: "Day 1 – We Don’t Start With Code"
 description: "**Today is Friday.** And today — we are **not** writing features. We are deciding how this product will live, breathe, and evolve for the next five years. Most developers open a new project and immediately start creating screens. Buttons. Forms. Navigation stacks."
 date: "2026-02-20"
+image: "/images/180days/day-1.png"
+slug: "day-1-we-dont-start-with-code"
+tags:
+    - architecture
+    - product-design
+    - planning
+excerpt: "Foundational day: define architecture, product boundaries, and privacy-first principles before writing feature code."
+author: "Subrata Kumar Das"
+updated: "2026-02-20"
+draft: false
+readingTime: "5 min"
 ---
 
 **Today is Friday.**
