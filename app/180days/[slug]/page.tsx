@@ -83,7 +83,7 @@ export default async function ArticlePage({ params }: PageProps) {
     "6": "text-sm font-semibold tracking-tight text-slate-900 dark:text-white",
   };
 
-  contentHtml = contentHtml.replace(/<h([1-6])(?:\s+[^>]*)?>([\s\S]*?)<\/h\1>/gi, (m, lvl, inner) => {
+  contentHtml = contentHtml.replace(/<h([1-6])(?:\s+[^>]*)?>([\s\S]*?)<\/h\1>/gi, (m: string, lvl: string, inner: string) => {
     const id = slugify(inner);
 
     // Extract any existing attributes from the opening tag (if present)
@@ -106,7 +106,7 @@ export default async function ArticlePage({ params }: PageProps) {
   });
 
   // Enhance code blocks: add a language badge and copy button, and style the pre/code
-  contentHtml = contentHtml.replace(/<pre><code([^>]*)>([\s\S]*?)<\/code><\/pre>/gi, (m, attrs, code) => {
+  contentHtml = contentHtml.replace(/<pre><code([^>]*)>([\s\S]*?)<\/code><\/pre>/gi, (m: string, attrs: string, code: string) => {
     // detect language anywhere in the matched block (pre or code)
     const langMatch = m.match(/language-([a-z0-9]+)/i);
     const lang = langMatch ? langMatch[1].toUpperCase() : "";
@@ -123,6 +123,67 @@ export default async function ArticlePage({ params }: PageProps) {
         <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code${codeAttrs}>${code}</code></pre>
       </div>
     `;
+  });
+
+  // Style unordered lists: custom bullet + spacing + text colors
+  contentHtml = contentHtml.replace(/<ul(?:\s+[^>]*)?>([\s\S]*?)<\/ul>/gi, (m: string, inner: string) => {
+    // Transform each <li> to include a custom bullet span and content wrapper
+    const newInner = inner.replace(/<li(?:\s+[^>]*)?>([\s\S]*?)<\/li>/gi, (liMatch: string, liInner: string) => {
+      return `<li class="flex items-start gap-3"><span class="mt-0.5 w-2 h-2 rounded-full bg-indigo-600 dark:bg-indigo-400 flex-shrink-0"></span><div class="flex-1 text-base leading-relaxed text-slate-700 dark:text-slate-300">${liInner}</div></li>`;
+    });
+
+    // Remove default padding and use slightly smaller vertical spacing between items
+    return `<ul class="list-none space-y-2 pl-0">${newInner}</ul>`;
+  });
+
+  // Ordered lists: modest spacing and readable text
+  contentHtml = contentHtml.replace(/<ol(?:\s+[^>]*)?>([\s\S]*?)<\/ol>/gi, (m: string, inner: string) => {
+    const newInner = inner.replace(/<li(?:\s+[^>]*)?>([\s\S]*?)<\/li>/gi, (liMatch: string, liInner: string) => {
+      return `<li class="text-base leading-relaxed text-slate-700 dark:text-slate-300">${liInner}</li>`;
+    });
+
+    return `<ol class="pl-5 list-decimal space-y-2">${newInner}</ol>`;
+  });
+
+  // Blockquotes: subtle left border, muted background and italic tone
+  contentHtml = contentHtml.replace(/<blockquote(?:\s+[^>]*)?>([\s\S]*?)<\/blockquote>/gi, (m: string, inner: string) => {
+    return `<blockquote class="border-l-2 border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/30 p-4 rounded-lg text-slate-700 dark:text-slate-300 italic">${inner}</blockquote>`;
+  });
+
+  // Tables: responsive wrapper and simple cell styling
+  contentHtml = contentHtml.replace(/<table(?:\s+[^>]*)?>([\s\S]*?)<\/table>/gi, (m: string, inner: string) => {
+    const headered = inner.replace(/<th(?:\s+[^>]*)?>([\s\S]*?)<\/th>/gi, (mm: string, thInner: string) => {
+      return `<th class="text-left font-medium text-sm text-slate-700 dark:text-slate-300 p-2 border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/20">${thInner}</th>`;
+    });
+
+    const rows = headered.replace(/<td(?:\s+[^>]*)?>([\s\S]*?)<\/td>/gi, (mm: string, tdInner: string) => {
+      return `<td class="p-2 text-sm text-slate-700 dark:text-slate-300 border-b border-slate-100 dark:border-slate-800">${tdInner}</td>`;
+    });
+
+    return `<div class="overflow-auto rounded-lg border border-slate-100 dark:border-slate-800">` +
+           `<table class="min-w-full border-collapse">${rows}</table></div>`;
+  });
+
+  // Images: centered, rounded, subtle shadow
+  contentHtml = contentHtml.replace(/<img\s+([^>]*?)src=(?:"|')([^"']+)(?:"|')([^>]*)>/gi, (m: string, before: string, src: string, after: string) => {
+    const allAttrs = `${before} ${after}`.trim();
+    const classMatch = allAttrs.match(/class=(?:"|')([^"']*)(?:"|')/i);
+    const existingClass = classMatch ? classMatch[1] : "";
+    const cleaned = allAttrs.replace(/\s+class=(?:"|')[^"']*(?:"|')/i, "").trim();
+    const attrsString = cleaned ? ` ${cleaned}` : "";
+    const combinedClass = [existingClass, "rounded-md shadow-sm mx-auto block"].filter(Boolean).join(" ");
+    return `<img src="${src}" class="${combinedClass}"${attrsString}>`;
+  });
+
+  // Links: calm indigo accent and subtle underline on hover
+  contentHtml = contentHtml.replace(/<a\s+([^>]*?)href=(?:"|')([^"']+)(?:"|')([^>]*)>([\s\S]*?)<\/a>/gi, (m: string, before: string, href: string, after: string, text: string) => {
+    const allAttrs = `${before} ${after}`.trim();
+    const classMatch = allAttrs.match(/class=(?:"|')([^"']*)(?:"|')/i);
+    const existingClass = classMatch ? classMatch[1] : "";
+    const cleaned = allAttrs.replace(/\s+class=(?:"|')[^"']*(?:"|')/i, "").trim();
+    const attrsString = cleaned ? ` ${cleaned}` : "";
+    const combinedClass = [existingClass, "text-indigo-600 hover:underline dark:text-indigo-400"].filter(Boolean).join(" ");
+    return `<a href="${href}" class="${combinedClass}"${attrsString}>${text}</a>`;
   });
 
   const allSlugs = getAllSlugs();
