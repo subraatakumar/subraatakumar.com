@@ -104,9 +104,7 @@ export default function RootLayout({
           </div>
         </header>
 
-        <main>
-          <div className="max-w-4xl mx-auto px-4 py-8">{children}</div>
-        </main>
+        <main className="w-full">{children}</main>
 
         <footer className="border-t">
           <div className="max-w-4xl mx-auto px-4 py-6 text-center text-sm text-gray-600">

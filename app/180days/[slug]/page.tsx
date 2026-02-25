@@ -74,7 +74,7 @@ export default async function ArticlePage({ params }: PageProps) {
     <div className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans selection:bg-indigo-100 dark:selection:bg-indigo-900/30">
       {/* Sticky Header */}
       <header className="sticky top-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-xl border-b border-slate-200 dark:border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between gap-6">
+        <div className="w-full mx-auto px-4 sm:px-8 h-16 flex items-center justify-between gap-6">
           <div className="flex items-center gap-3 shrink-0">
             <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white shadow-lg shadow-indigo-500/20">
               <span className="font-black text-sm">SK</span>
@@ -96,7 +96,7 @@ export default async function ArticlePage({ params }: PageProps) {
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-8 py-8">
+      <main className="w-full mx-auto px-4 sm:px-8 py-8">
         <div className="flex flex-col lg:flex-row gap-10">
           {/* Sidebar */}
           <aside className="lg:w-64 lg:shrink-0 space-y-8 order-2 lg:order-1">
