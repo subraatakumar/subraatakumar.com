@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 type PageProps = {
@@ -12,59 +13,43 @@ type PageProps = {
 
 const contentDirectory = path.join(process.cwd(), "content/180days");
 
-/**
- * Generate static paths for all markdown files
- */
-export async function generateStaticParams() {
-  if (!fs.existsSync(contentDirectory)) {
-    return [];
-  }
+function getAllSlugs() {
+  if (!fs.existsSync(contentDirectory)) return [];
 
-  const filenames = fs
+  return fs
     .readdirSync(contentDirectory)
-    .filter((file) => file.endsWith(".md"));
-
-  return filenames.map((filename) => ({
-    slug: filename.replace(".md", ""),
-  }));
+    .filter((file) => file.endsWith(".md"))
+    .map((file) => file.replace(".md", ""))
+    .sort((a, b) => {
+      const numA = Number(a.replace("day-", ""));
+      const numB = Number(b.replace("day-", ""));
+      return numA - numB;
+    });
 }
 
-/**
- * Generate dynamic metadata for each article
- */
-export async function generateMetadata({
-  params,
-}: PageProps): Promise<Metadata> {
+export async function generateStaticParams() {
+  return getAllSlugs().map((slug) => ({ slug }));
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  if (!slug) {
-    return {};
-  }
 
   const filePath = path.join(contentDirectory, `${slug}.md`);
-  if (!fs.existsSync(filePath)) {
-    return {};
-  }
+  if (!fs.existsSync(filePath)) return {};
 
   const fileContents = fs.readFileSync(filePath, "utf8");
   const { data } = matter(fileContents);
 
   return {
-    title: data.title ?? "180 Days Article",
-    description: data.description ?? "",
+    title: data.title,
+    description: data.description,
   };
 }
 
-/**
- * Article Page
- */
 export default async function ArticlePage({ params }: PageProps) {
   const { slug } = await params;
-  if (!slug) {
-    notFound();
-  }
 
   const filePath = path.join(contentDirectory, `${slug}.md`);
-
   if (!fs.existsSync(filePath)) {
     notFound();
   }
@@ -72,23 +57,54 @@ export default async function ArticlePage({ params }: PageProps) {
   const fileContents = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(fileContents);
 
-  const processedContent = await remark()
-    .use(html)
-    .process(content);
-
+  const processedContent = await remark().use(html).process(content);
   const contentHtml = processedContent.toString();
+
+  const allSlugs = getAllSlugs();
+  const currentIndex = allSlugs.indexOf(slug);
+
+  const prevSlug = allSlugs[currentIndex - 1];
+  const nextSlug = allSlugs[currentIndex + 1];
 
   return (
     <article className="prose max-w-3xl mx-auto">
-      <h1>{data.title}</h1>
+      
+      {/* Top breadcrumb */}
+      <p>
+        <Link href="/180days" className="text-sm text-blue-600 hover:underline">
+          ← Back to 180 Days
+        </Link>
+      </p>
 
-      {data.date && (
-        <p className="text-sm text-gray-500">{data.date}</p>
-      )}
+      <h1>{data.title}</h1>
+      <p className="text-sm text-gray-500">{data.date}</p>
 
       <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
 
-      {/* JSON-LD Structured Data */}
+      {/* Navigation */}
+      <hr className="my-10" />
+
+      <div className="flex justify-between text-sm">
+        {prevSlug ? (
+          <Link
+            href={`/180days/${prevSlug}`}
+            className="text-blue-600 hover:underline"
+          >
+            ← Previous Day
+          </Link>
+        ) : <div />}
+
+        {nextSlug ? (
+          <Link
+            href={`/180days/${nextSlug}`}
+            className="text-blue-600 hover:underline"
+          >
+            Next Day →
+          </Link>
+        ) : <div />}
+      </div>
+
+      {/* Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -101,7 +117,6 @@ export default async function ArticlePage({ params }: PageProps) {
             author: {
               "@type": "Person",
               name: "Subrata Kumar Das",
-              url: "https://subraatakumar.com",
             },
           }),
         }}
