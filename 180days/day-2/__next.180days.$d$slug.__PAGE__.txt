@@ -1,6 +1,5 @@
 1:"$Sreact.fragment"
-3:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
-4:"$Sreact.suspense"
-0:{"buildId":"sv3KcJ22h_g6I-UpXSIQd","rsc":["$","$1","c",{"children":["$L2",null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
-5:null
-2:E{"digest":"NEXT_HTTP_ERROR_FALLBACK;404"}
+2:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+0:{"buildId":"EX_6qX9DpE5TBaYdpcSUF","rsc":["$","$1","c",{"children":[["$","article",null,{"className":"prose max-w-3xl mx-auto","children":[["$","h1",null,{}],"$undefined",["$","div",null,{"dangerouslySetInnerHTML":{"__html":""}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
+4:null
