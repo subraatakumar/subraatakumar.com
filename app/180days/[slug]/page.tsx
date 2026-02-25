@@ -70,9 +70,38 @@ export default async function ArticlePage({ params }: PageProps) {
       .replace(/[^a-z0-9\-]/g, "")
       .replace(/-+/g, "-");
 
-  contentHtml = contentHtml.replace(/<h([1-6])>(.*?)<\/h\1>/gi, (m, lvl, inner) => {
+  // Match headings including optional attributes and multi-line inner content.
+  // Preserve other attributes while removing any existing `id` to replace with our slug.
+  // Small map of tailwind classes to apply per heading level coming from markdown content
+  const headingClassMap: Record<string, string> = {
+    "1": "text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white",
+    "2": "text-2xl lg:text-3xl font-bold tracking-tight text-slate-900 dark:text-white",
+    "3": "text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white",
+    "4": "text-lg font-semibold tracking-tight text-slate-900 dark:text-white",
+    "5": "text-base font-semibold tracking-tight text-slate-900 dark:text-white",
+    "6": "text-sm font-semibold tracking-tight text-slate-900 dark:text-white",
+  };
+
+  contentHtml = contentHtml.replace(/<h([1-6])(?:\s+[^>]*)?>([\s\S]*?)<\/h\1>/gi, (m, lvl, inner) => {
     const id = slugify(inner);
-    return `<h${lvl} id="${id}">${inner}</h${lvl}>`;
+
+    // Extract any existing attributes from the opening tag (if present)
+    const openTagMatch = m.match(new RegExp(`^<h${lvl}([^>]*)>`));
+    const existingAttrs = openTagMatch ? openTagMatch[1] : "";
+
+    // Capture any existing class on the tag so we can merge with our level classes
+    const classMatch = existingAttrs.match(/class=(?:"|')([^"']*)(?:"|')/i);
+    const existingClass = classMatch ? classMatch[1] : "";
+
+    // Remove any existing id and class attributes to avoid duplication and preserve other attrs
+    let cleanedAttrs = existingAttrs.replace(/\s+id=(?:"|')(.*?)(?:"|')/gi, "");
+    cleanedAttrs = cleanedAttrs.replace(/\s+class=(?:"|')(.*?)(?:"|')/gi, "").trim();
+    const attrsString = cleanedAttrs ? ` ${cleanedAttrs}` : "";
+
+    const levelClass = headingClassMap[lvl] || "";
+    const combinedClass = [existingClass, levelClass].filter(Boolean).join(" ");
+
+    return `<h${lvl} id="${id}" class="${combinedClass}"${attrsString}>${inner}</h${lvl}>`;
   });
 
   const allSlugs = getAllSlugs();
