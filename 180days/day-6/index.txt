@@ -1,0 +1,505 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
+3:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+4:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+6:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+9:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"ViewportBoundary"]
+c:I[68027,[],"default"]
+:HL["/_next/static/chunks/aeed9aa279c49b6f.css","style"]
+0:{"P":null,"b":"8TlM1J5MHqaK7VEiA8o6D","c":["","180days","day-6",""],"q":"","i":false,"f":[[["",{"children":["180days",{"children":[["slug","day-6","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/aeed9aa279c49b6f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"bg-white text-black antialiased","children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","header",null,{"className":"border-b","children":[["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-4 flex items-center justify-between","children":[["$","$L2",null,{"href":"/","className":"text-lg font-medium","children":"Subrata Kumar Das"}],["$","nav",null,{"aria-label":"Primary","className":"hidden md:block","children":["$","ul",null,{"className":"flex gap-6 text-sm","children":[["$","li",null,{"children":["$","$L2",null,{"href":"/about","className":"hover:underline","children":"About"}]}],["$","li",null,{"children":["$","$L2",null,{"href":"/projects","className":"hover:underline","children":"Projects"}]}],["$","li",null,{"children":["$","$L2",null,{"href":"/contact","className":"hover:underline","children":"Contact"}]}]]}]}]]}],["$","div",null,{"className":"md:hidden","children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 pb-4","children":["$","nav",null,{"aria-label":"Mobile","children":["$","ul",null,{"className":"flex flex-col gap-2 text-sm","children":[["$","li",null,{"children":["$","$L2",null,{"href":"/about","className":"block py-1","children":"About"}]}],["$","li",null,{"children":["$","$L2",null,{"href":"/projects","className":"block py-1","children":"Projects"}]}],["$","li",null,{"children":["$","$L2",null,{"href":"/contact","className":"block py-1","children":"Contact"}]}]]}]}]}]}]]}],["$","main",null,{"className":"w-full","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t","children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-6 text-center text-sm text-gray-600","children":["© ",2026," Subrata Kumar Das. All rights reserved."]}]}]]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","main",null,{"className":"min-h-screen bg-amber-50 text-amber-900","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L5",[["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true,"nonce":"$undefined"}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],{},null,false,false]},null,false,false]},null,false,false]},null,false,false],["$","$1","h",{"children":[null,["$","$L9",null,{"children":"$La"}],["$","div",null,{"hidden":true,"children":"$Lb"}],null]}],false]],"m":"$undefined","G":["$c",[]],"S":true}
+d:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"MetadataBoundary"]
+b:["$","$Ld",null,{"children":["$","$7",null,{"name":"Next.Metadata","children":"$Le"}]}]
+5:["$","div",null,{"className":"min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans","children":[["$","header",null,{"className":"sticky top-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-xl border-b border-slate-200 dark:border-slate-800","children":["$","div",null,{"className":"w-full max-w-6xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between gap-6","children":[["$","div",null,{"className":"flex items-center gap-3 shrink-0","children":[["$","div",null,{"className":"w-8 h-8 bg-amber-400 rounded-lg flex items-center justify-center text-slate-900 shadow-lg shadow-amber-400/20","children":["$","span",null,{"className":"font-black text-sm","children":"SK"}]}],["$","nav",null,{"className":"hidden md:flex items-center gap-3 text-xs font-bold uppercase tracking-wider text-slate-400","children":[["$","$L2",null,{"href":"/180days","className":"text-xs font-black px-4 py-2 bg-slate-100 dark:bg-slate-800 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors flex items-center gap-2 uppercase tracking-tight","children":[["$","span",null,{"className":"hover:text-amber-500 transition-colors cursor-pointer font-bold","children":"180 Days"}],["$","span",null,{"className":"text-slate-300","children":"/"}],["$","span",null,{"className":"text-slate-900 dark:text-white font-bold tracking-tight","children":["Day ","6"]}]]}],["$","div",null,{"className":"flex items-center gap-2 px-3 py-1.5 bg-slate-100 dark:bg-slate-800 rounded-lg","children":[["$","div",null,{"className":"w-24 bg-slate-300 dark:bg-slate-600 h-2 rounded-full overflow-hidden","children":["$","div",null,{"className":"bg-amber-400 h-full rounded-full","style":{"width":"3%"}}]}],["$","span",null,{"className":"text-[11px] font-black text-amber-600 dark:text-amber-400 tabular-nums","children":[3,"%"]}]]}]]}]]}],["$","div",null,{"className":"flex items-center gap-4","children":["$","$L2",null,{"href":"/180days","className":"text-xs font-black px-4 py-2 bg-slate-100 dark:bg-slate-800 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors flex items-center gap-2 uppercase tracking-tight","children":"← All Days"}]}]]}]}],["$","div",null,{"className":"w-full border-b border-slate-200 dark:border-slate-800 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900/60 dark:to-slate-950","children":["$","div",null,{"className":"w-full max-w-6xl mx-auto px-4 sm:px-8 py-14","children":[["$","h1",null,{"className":"text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter text-slate-950 dark:text-white leading-[1.05] max-w-3xl","children":"Day 6 : Repository Layer Comes to Life"}],["$","p",null,{"className":"mt-6 text-xl text-slate-500 dark:text-slate-400 leading-relaxed max-w-2xl font-normal","children":"Implementing an ArchiveRepository to safely abstract encrypted Realm access — enabling persistent, privacy-first local storage while keeping UI and business logic decoupled from storage details."}],["$","div",null,{"className":"mt-8 flex flex-wrap items-center gap-2 text-sm","children":[["$","span",null,{"className":"font-semibold text-slate-600 dark:text-slate-300","children":"2026-02-25"}],["$","span",null,{"className":"w-1 h-1 rounded-full bg-slate-400 dark:bg-slate-500 inline-block"}],["$","span",null,{"className":"font-semibold text-amber-600 dark:text-amber-400","children":"Subrata Kumar Das"}],["$","span",null,{"className":"w-1 h-1 rounded-full bg-slate-400 dark:bg-slate-500 inline-block"}],["$","span",null,{"className":"px-2.5 py-0.5 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full font-bold text-xs uppercase tracking-tight","children":"Complete"}]]}],["$","p",null,{"className":"hidden md:block mt-8 text-[13px] leading-relaxed text-amber-700/80 dark:text-amber-400/70 font-medium italic border-l-2 border-amber-300 dark:border-amber-700 pl-4 max-w-sm","children":"\"Consistent small steps lead to massive long-term results. Keep pushing.\""}]]}]}],"$Lf","$L10"]}]
+11:T8adb,<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Today we bring the <strong>Warehouse Clerk</strong> into code.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Until now:</p>
+<ul class="list-disc pl-6 space-y-1 my-4">
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Realm is encrypted.</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Database initializes safely.</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Core layer is stable.</li>
+</ul>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">But nothing can <em>use</em> the database yet.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Today we implement:</p>
+<blockquote class="border-l-2 border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/30 p-4 rounded-lg text-slate-700 dark:text-slate-300 italic">
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Data access abstraction.</p>
+</blockquote>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Strictly aligned with architecture rules</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">And still within MVP boundaries</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">No UI logic explosion.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">No service yet.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Just repository.</p>
+<hr>
+<h1 id="-day-6-repository-layer-implementation" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">📘 Day 6 — Repository Layer Implementation</h1>
+<hr>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5"><img alt="https180days.subraatakumar.com.png"></p>
+<hr>
+<h2 id="61-why-repository-now" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">6.1 Why Repository Now?</h2>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Encryption protects storage.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">But modules should never call Realm directly .</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">If UI imports Realm:</p>
+<ul class="list-disc pl-6 space-y-1 my-4">
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Business logic leaks.</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Schema changes break screens.</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Extraction becomes painful.</li>
+</ul>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">So today we implement:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+        </div>
+        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>modules/archive/archive.repository.ts
+</code></pre>
+      </div>
+    
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This is the only place allowed to talk to Realm.</p>
+<hr>
+<h2 id="62-what-repository-is-responsible-for" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">6.2 What Repository Is Responsible For</h2>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Repository handles:</p>
+<ul class="list-disc pl-6 space-y-1 my-4">
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Create entry</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Fetch entries</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Delete entry</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Update entry</li>
+</ul>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">It does <strong>not</strong>:</p>
+<ul class="list-disc pl-6 space-y-1 my-4">
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Validate business rules</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Generate IDs</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Apply domain logic</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Coordinate multi-step workflows</li>
+</ul>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Those belong to Service (Day 7).</p>
+<hr>
+<h2 id="63-create-repository-file" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">6.3 Create Repository File</h2>
+<h3 id="-srcmodulesarchivearchiverepositoryts" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">📁 <code>src/modules/archive/archive.repository.ts</code></h3>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">TSX</span>
+          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+        </div>
+        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-tsx">import { getRealm } from '../../core/storage/realm';
+
+export type EntryInput = {
+  id: string;
+  title: string;
+  content: string;
+  createdAt: Date;
+};
+
+export class ArchiveRepository {
+
+  create(entry: EntryInput) {
+    const realm = getRealm();
+
+    realm.write(() => {
+      realm.create('Entry', entry);
+    });
+  }
+
+  getAll() {
+    const realm = getRealm();
+    return realm.objects('Entry').sorted('createdAt', true);
+  }
+
+  delete(id: string) {
+    const realm = getRealm();
+
+    realm.write(() => {
+      const entry = realm.objectForPrimaryKey('Entry', id);
+      if (entry) {
+        realm.delete(entry);
+      }
+    });
+  }
+}
+</code></pre>
+      </div>
+    
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Notice:</p>
+<ul class="list-disc pl-6 space-y-1 my-4">
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Repository imports only <code>getRealm</code></li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No business validation</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No UI references</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No ID generation</li>
+</ul>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Clean boundary.</p>
+<hr>
+<h2 id="64-temporary-test-still-no-service" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">6.4 Temporary Test (Still No Service)</h2>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">For testing only (temporary):</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Inside <code>App.tsx</code>, after initialization:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">TSX</span>
+          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+        </div>
+        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-tsx">import React, { useEffect } from 'react';
+import { View, Text } from 'react-native';
+import { initializeRealm } from './src/core/storage/realm';
+import { ArchiveRepository } from './src/modules/archive/archive.repository';
+import { v4 as uuidv4 } from 'uuid';
+
+export default function App() {
+  console.log('App component rendered');
+
+  useEffect(() => {
+    console.log('useEffect triggered');
+
+    async function init() {
+      console.log('Calling initializeRealm...');
+
+      try {
+        await initializeRealm();
+        console.log('Encrypted Realm initialized successfully');
+
+        // --- Day 6 Repository Test ---
+        const repo = new ArchiveRepository();
+
+        console.log('Creating test entry...');
+        repo.create({
+          id: uuidv4(),
+          title: 'First Entry',
+          content: 'Encrypted and stored locally.',
+          createdAt: new Date(),
+        });
+
+        const entries = repo.getAll();
+        console.log('Current Entries Count:', entries.length);
+
+      } catch (error) {
+        console.error('Realm initialization failed:', error);
+      }
+    }
+
+    init();
+  }, []);
+
+  return (
+    &#x3C;View style={{ padding: 20 }}>
+      &#x3C;Text>Offline Life Archive&#x3C;/Text>
+    &#x3C;/View>
+  );
+}
+</code></pre>
+      </div>
+    
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This confirms:</p>
+<ul class="list-disc pl-6 space-y-1 my-4">
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Realm writes correctly.</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Encryption works with writes.</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Data retrieval works.</li>
+</ul>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">After confirming → remove direct repository usage from App.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Because UI must not depend on repository long term .</p>
+<hr>
+<h1 id="-what-you-should-see-in-console-first-run" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">🔍 What You Should See in Console (First Run)</h1>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+        </div>
+        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>App component rendered
+useEffect triggered
+Calling initializeRealm...
+Encrypted Realm initialized successfully
+Creating test entry...
+Current Entries Count: 1
+</code></pre>
+      </div>
+    
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">If you reload app multiple times:</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Entry count will increase:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+        </div>
+        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>Current Entries Count: 2
+Current Entries Count: 3
+</code></pre>
+      </div>
+    
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">That confirms:</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">✔ Repository writes work</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">✔ Encryption does not block writes</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">✔ Retrieval works</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">✔ Realm persists data</p>
+<hr>
+<h1 id="-important-reminder" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">⚠ Important Reminder</h1>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This direct repository usage inside <code>App.tsx</code> is:</p>
+<ul class="list-disc pl-6 space-y-1 my-4">
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Only for Day 6 testing.</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Not architecturally correct long-term.</li>
+</ul>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Tomorrow (Day 7):</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We introduce Service layer.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Then flow becomes:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+        </div>
+        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>UI → Service → Repository → Encrypted Realm
+</code></pre>
+      </div>
+    
+<hr>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Now tell me:</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Does entry count increase on each reload?</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">If yes → Repository layer stable. 🚀</p>
+<hr>
+<h2 id="65-what-this-achieves" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">6.5 What This Achieves</h2>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Now architecture looks like:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+        </div>
+        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>UI (temporary)
+   ↓
+Repository
+   ↓
+Encrypted Realm
+</code></pre>
+      </div>
+    
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Tomorrow:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+        </div>
+        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>UI
+   ↓
+Service
+   ↓
+Repository
+   ↓
+Encrypted Realm
+</code></pre>
+      </div>
+    
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We are building layers step-by-step.</p>
+<hr>
+<h2 id="66-what-we-still-did-not-do" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">6.6 What We Still Did NOT Do</h2>
+<ul class="list-disc pl-6 space-y-1 my-4">
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No service layer</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No validation logic</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No timeline screen</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No tags</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No search</li>
+</ul>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We are respecting boundaries.</p>
+<hr>
+<h2 id="67-what-this-phase-clarifies" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">6.7 What This Phase Clarifies</h2>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Repository:</p>
+<ul class="list-disc pl-6 space-y-1 my-4">
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Abstracts database access.</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Protects storage structure.</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Prevents cross-layer contamination.</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Makes future database swap possible.</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Keeps modules clean.</li>
+</ul>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Encryption protects data.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Repository protects access.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Both are infrastructure decisions.</p>
+<hr>
+<h1 id="-day-6-outcome" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">🎯 Day 6 Outcome</h1>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Encrypted storage + structured data access.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Now the system can persist entries safely.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Tomorrow (Day 7):</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Service layer introduces business rules.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Warehouse manager enters the system.</p>
+<hr>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">If you’re ready, say:</p>
+<blockquote class="border-l-2 border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/30 p-4 rounded-lg text-slate-700 dark:text-slate-300 italic">
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Repository layer stable.</p>
+</blockquote>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">And we move to Day 7 — Service implementation with real validation logic.</p>
+<hr>
+<h2 id="-day-6-practical-exploration" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">🔧 Day 6 — Practical Exploration</h2>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">If you’re building alongside this journey, here are a few things worth trying before moving to Day 7.</p>
+<hr>
+<h3 id="1-verify-persistence-properly" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">1️⃣ Verify Persistence Properly</h3>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Restart the app multiple times.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Observe:</p>
+<ul class="list-disc pl-6 space-y-1 my-4">
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Does the entry count increase?</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Does data survive app restarts?</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Does it survive a Metro reload?</li>
+</ul>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Now try:</p>
+<ul class="list-disc pl-6 space-y-1 my-4">
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Kill the app completely.</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Reopen it.</li>
+</ul>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">You should still see the existing entries count increase with every new run.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">If data disappears, something is wrong in your Realm setup.</p>
+<hr>
+<h3 id="2-break-the-encryption-intentionally" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">2️⃣ Break the Encryption Intentionally</h3>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Go to <code>realm.ts</code>.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Temporarily replace:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">TSX</span>
+          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+        </div>
+        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-tsx">encryptionKey: key
+</code></pre>
+      </div>
+    
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">With:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">TSX</span>
+          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+        </div>
+        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-tsx">encryptionKey: generateEncryptionKey()
+</code></pre>
+      </div>
+    
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Now restart the app.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">It should fail to open the database.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">That failure is good.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">It proves encryption is real.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Revert the change after testing.</p>
+<hr>
+<h3 id="3-add-a-manual-delete-test" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">3️⃣ Add a Manual Delete Test</h3>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Inside <code>App.tsx</code>, after fetching entries:</p>
+<ul class="list-disc pl-6 space-y-1 my-4">
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Pick the first entry.</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Call <code>repo.delete(id)</code>.</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Log the count again.</li>
+</ul>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Observe how repository encapsulates database operations cleanly.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">You’ll start feeling the value of abstraction.</p>
+<hr>
+<h3 id="4-try-calling-realm-directly-then-undo-it" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">4️⃣ Try Calling Realm Directly (Then Undo It)</h3>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Inside <code>App.tsx</code>, import Realm directly and create an entry.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Notice:</p>
+<ul class="list-disc pl-6 space-y-1 my-4">
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">How messy it feels.</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">How you’re bypassing architectural rules .</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">How UI now knows too much about storage.</li>
+</ul>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Delete that code immediately after observing.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This exercise makes boundaries real.</p>
+<hr>
+<h3 id="5-add-a-console-log-inside-repository" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">5️⃣ Add a Console Log Inside Repository</h3>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Inside <code>archive.repository.ts</code>, add:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">TSX</span>
+          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+        </div>
+        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-tsx">console.log('[Repository] Creating entry');
+</code></pre>
+      </div>
+    
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Now watch the flow in logs.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">You’ll begin to see:</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">UI → Repository → Realm</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Tomorrow:</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">UI → Service → Repository → Realm</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Layering becomes visible.</p>
+<hr>
+<h2 id="-what-this-phase-is-really-about" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">🧠 What This Phase Is Really About</h2>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This isn’t about CRUD.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">It’s about discipline.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">The repository is the warehouse clerk.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">It doesn’t decide business rules.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">It doesn’t validate input.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">It only handles structured data access.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">And that separation is what protects the system long-term .</p>
+<hr>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">When you’re done exploring, say:</p>
+<blockquote class="border-l-2 border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/30 p-4 rounded-lg text-slate-700 dark:text-slate-300 italic">
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Repository layer stable.</p>
+</blockquote>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Then Day 7 begins.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Service layer enters.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Warehouse manager takes control. 🚀</p>
+<hr>
+<h2 id="-further-reading-x26-references-day-6" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">📚 Further Reading &#x26; References (Day 6)</h2>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">If you’re exploring deeper or want to understand the foundations behind today’s implementation, these are useful official resources:</p>
+<hr>
+<h3 id="-realm-database-react-native" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">🔐 Realm Database (React Native)</h3>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Official Realm React Native Documentation:</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">https://www.mongodb.com/docs/realm/sdk/react-native/</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Useful sections to review:</p>
+<ul class="list-disc pl-6 space-y-1 my-4">
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Opening a Realm</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Writing transactions</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Querying data</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Sorting results</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Primary keys</li>
+</ul>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Understanding Realm objects and live results will help when we build the timeline screen later.</p>
+<hr>
+<h3 id="-repository-pattern-conceptual-understanding" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">🧱 Repository Pattern (Conceptual Understanding)</h3>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">A clear conceptual explanation:</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">https://martinfowler.com/eaaCatalog/repository.html</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This explains why we isolate data access behind a repository layer and how it prevents storage leakage into business logic.</p>
+<hr>
+<h3 id="-uuid-in-javascript" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">🆔 UUID in JavaScript</h3>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">If you’re using UUID for entry IDs:</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">https://www.npmjs.com/package/uuid</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Understand:</p>
+<ul class="list-disc pl-6 space-y-1 my-4">
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Why UUID v4 is random</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Why IDs should be generated in service layer (not repository)</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Difference between identity and encryption</li>
+</ul>
+<hr>
+<h3 id="-react-native-secure-storage-keychain-keystore" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">🔒 React Native Secure Storage (Keychain / Keystore)</h3>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We used secure storage for encryption key management:</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">https://github.com/oblador/react-native-keychain</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Important sections:</p>
+<ul class="list-disc pl-6 space-y-1 my-4">
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">setGenericPassword</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">getGenericPassword</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Android vs iOS differences</li>
+</ul>
+<hr>
+<h3 id="-clean-architecture-high-level-overview" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">🧠 Clean Architecture (High-Level Overview)</h3>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">If you want a broader understanding of layering philosophy:</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">https://blog.cleancoder.com/</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This helps connect:</p>
+<ul class="list-disc pl-6 space-y-1 my-4">
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Repository</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Service</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">UI</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Infrastructure</li>
+</ul>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">to larger system design thinking.</p>
+<hr>
+<h2 id="-important-context" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">📌 Important Context</h2>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Everything we’re building aligns with:</p>
+<ul class="list-disc pl-6 space-y-1 my-4">
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Product boundaries</li>
+<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Architectural discipline</li>
+</ul>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We are not building a CRUD demo.</p>
+<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We are building a privacy-first system with intentional structure.</p>
+<hr>
+f:["$","main",null,{"className":"w-full max-w-6xl mx-auto px-4 sm:px-8 py-10","children":["$","div",null,{"className":"flex-1","children":[["$","article",null,{"className":"max-w-3xl prose prose-slate dark:prose-invert prose-headings:font-black prose-headings:tracking-tight prose-h1:text-4xl prose-h1:mt-16 prose-h1:mb-6 prose-h1:pb-4 prose-h1:border-b prose-h1:border-slate-200 dark:prose-h1:border-slate-700 prose-h2:text-3xl prose-h2:mt-14 prose-h2:mb-5 prose-h3:text-2xl prose-h3:mt-10 prose-h3:mb-4 prose-p:text-[17px] prose-p:leading-[1.85] prose-p:my-5 prose-p:text-slate-700 dark:prose-p:text-slate-300 prose-strong:text-slate-900 dark:prose-strong:text-white prose-pre:rounded-2xl prose-pre:bg-slate-950 prose-pre:p-6 prose-hr:my-12 prose-hr:border-slate-200 dark:prose-hr:border-slate-800 prose-ul:list-disc prose-ol:list-decimal","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$11"}}],"$L12"]}],"$L13","$L14"]}]}]
+10:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Day 6 : Repository Layer Comes to Life\",\"datePublished\":\"2026-02-25\",\"description\":\"Implementing an ArchiveRepository to safely abstract encrypted Realm access — enabling persistent, privacy-first local storage while keeping UI and business logic decoupled from storage details.\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\"}}"}}]
+15:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]
+12:["$","$L15",null,{}]
+13:["$","div",null,{"className":"mt-8 mb-6","children":["$","a",null,{"href":"https://github.com/subraatakumar/subraatakumar.com/edit/main/content/180days/day-6.md","target":"_blank","rel":"noopener noreferrer","className":"block w-full sm:w-auto px-4 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-amber-400 transition-all text-sm font-medium","children":"Suggest a change to the content of the material"}]}]
+14:["$","div",null,{"className":"mt-16 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 pb-20","children":[["$","$L2",null,{"href":"/180days/day-5","className":"group flex items-center gap-3 px-5 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-amber-400 transition-all w-full sm:w-auto","children":["$","div",null,{"className":"text-left","children":[["$","span",null,{"className":"block text-[10px] font-bold text-slate-400 uppercase tracking-widest","children":"Previous"}],["$","span",null,{"className":"text-sm font-bold capitalize","children":"day 5"}]]}]}],["$","div",null,{}]]}]
+a:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+16:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"IconMark"]
+8:null
+e:[["$","title","0",{"children":"Day 6 : Repository Layer Comes to Life | Subrata Kumar Das"}],["$","meta","1",{"name":"description","content":"Implementing an ArchiveRepository to safely abstract encrypted Realm access — enabling persistent, privacy-first local storage while keeping UI and business logic decoupled from storage details."}],["$","meta","2",{"name":"keywords","content":"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"}],["$","meta","3",{"property":"og:title","content":"Subrata Kumar Das"}],["$","meta","4",{"property":"og:description","content":"Tech Lead and React Native Architect building scalable mobile systems."}],["$","meta","5",{"property":"og:url","content":"https://subraatakumar.com/"}],["$","meta","6",{"property":"og:site_name","content":"Subrata Kumar Das"}],["$","meta","7",{"property":"og:locale","content":"en_US"}],["$","meta","8",{"property":"og:type","content":"website"}],["$","meta","9",{"name":"twitter:card","content":"summary"}],["$","meta","10",{"name":"twitter:title","content":"Subrata Kumar Das"}],["$","meta","11",{"name":"twitter:description","content":"Tech Lead and React Native Architect building scalable mobile systems."}],["$","link","12",{"rel":"icon","href":"/favicon.ico?favicon.750fd6b3.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L16","13",{}]]
