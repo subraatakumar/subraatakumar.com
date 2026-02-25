@@ -45,7 +45,7 @@ This chapter implements the Core and Data layers first.
 
 ---
 
-![image.png](attachment:e207d92e-fe85-4716-bb0b-d315d2537cf6:image.png)
+![image.png](/images/day4_system_design.png)
 
 ---
 
@@ -132,7 +132,7 @@ No screen imports Realm directly.
 
 ## 4.5 Repository Pattern
 
-![image.png](attachment:5a6cb14d-65e1-4a8b-8d06-ab511e5f7fee:image.png)
+![image.png](/images/day4_repository_layer.png)
 
 ### Real-World Analogy
 

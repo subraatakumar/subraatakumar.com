@@ -25,7 +25,7 @@ Today, I’m starting this as a 180-day mentorship journey.
 
 And along the way, I’ll be joined by Maya 🤖 — an AI-generated junior developer who will question my decisions.
 
-![ChatGPT Image Feb 20, 2026, 08_12_42 AM.png](attachment:e988487a-7953-4834-b507-962e47c41823:ChatGPT_Image_Feb_20_2026_08_12_42_AM.png)
+![](/images/day0.png)
 
 Because in a world where AI can generate code, the real value of a developer is judgment.
 

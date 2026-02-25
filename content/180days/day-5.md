@@ -4,7 +4,7 @@ description: ""
 date: "2026-02-24"
 ---
 
-![https180days.subraatakumar.com.png](attachment:1acb3605-9b0f-40ef-9461-869cb8e4b4f1:https180days.subraatakumar.com.png)
+![https180days.subraatakumar.com.png](/images/day5_1.png)
 
 ## 5.1 Introduction
 
@@ -500,7 +500,7 @@ This keeps boundaries intact exactly as defined in your blueprint.
 
 ---
 
-![image.png](attachment:a1b43477-6e4b-4b15-9500-9020962cfd4e:image.png)
+![image.png](/images/day5_2.png)
 
 ---
 
