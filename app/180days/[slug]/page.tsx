@@ -263,6 +263,19 @@ export default async function ArticlePage({ params }: PageProps) {
               <CodeEnhancer />
             </article>
 
+            {/* Suggest edit link - opens GitHub edit UI (fork + PR flow for external contributors) */}
+            <div className="mt-8 mb-6">
+              {(() => {
+                const repoBase = process.env.NEXT_PUBLIC_GITHUB_REPO || 'https://github.com/subraatakumar/subraatakumar.com';
+                const editUrl = `${repoBase.replace(/\/+$/, '')}/edit/main/content/180days/${slug}.md`;
+                return (
+                  <a href={editUrl} target="_blank" rel="noopener noreferrer" className="block w-full sm:w-auto px-4 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-amber-400 transition-all text-sm font-medium">
+                    Suggest a change to the content of the material
+                  </a>
+                );
+              })()}
+            </div>
+
             <div className="mt-16 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 pb-20">
               {prevSlug ? (
                 <Link href={`/180days/${prevSlug}`} className="group flex items-center gap-3 px-5 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-amber-400 transition-all w-full sm:w-auto">
