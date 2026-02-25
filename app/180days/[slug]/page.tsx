@@ -104,6 +104,25 @@ export default async function ArticlePage({ params }: PageProps) {
     return `<h${lvl} id="${id}" class="${combinedClass}"${attrsString}>${inner}</h${lvl}>`;
   });
 
+  // Enhance code blocks: add a language badge and copy button, and style the pre/code
+  contentHtml = contentHtml.replace(/<pre><code([^>]*)>([\s\S]*?)<\/code><\/pre>/gi, (m, attrs, code) => {
+    const langMatch = attrs.match(/language-([a-z0-9]+)/i);
+    const lang = langMatch ? langMatch[1].toUpperCase() : "";
+
+    // Keep the original attrs on the code tag
+    const codeAttrs = attrs || "";
+
+    return `
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2">
+          ${lang ? `<span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded">${lang}</span>` : ""}
+          <button data-copy class="copy-btn text-[12px] px-2 py-1 rounded bg-indigo-600 text-white hover:bg-indigo-700">Copy</button>
+        </div>
+        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4"><code${codeAttrs}>${code}</code></pre>
+      </div>
+    `;
+  });
+
   const allSlugs = getAllSlugs();
   const currentIndex = allSlugs.indexOf(slug);
 
@@ -215,6 +234,31 @@ export default async function ArticlePage({ params }: PageProps) {
 
             <article className="max-w-4xl prose prose-slate dark:prose-invert prose-headings:font-black prose-headings:tracking-tight prose-h1:text-3xl prose-h1:mt-8 prose-h1:mb-4 prose-h1:pb-3 prose-h1:border-b prose-h2:text-xl prose-h2:mt-6 prose-h2:mb-3 prose-p:text-base prose-p:leading-relaxed prose-p:my-2 prose-li:my-1 prose-pre:rounded-2xl prose-pre:bg-slate-950 prose-pre:p-6 prose-hr:my-8 prose-hr:border-slate-200 dark:prose-hr:border-slate-800">
               <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+                {/* Code block copy script (runs on client) */}
+                <script
+                  dangerouslySetInnerHTML={{
+                    __html: `
+                      (function(){
+                        document.addEventListener('click', function(e){
+                          var btn = e.target.closest && e.target.closest('[data-copy]');
+                          if(!btn) return;
+                          var wrapper = btn.closest('.code-block');
+                          if(!wrapper) return;
+                          var code = wrapper.querySelector('pre code');
+                          if(!code) return;
+                          var text = code.innerText;
+                          if(!navigator.clipboard) return;
+                          navigator.clipboard.writeText(text).then(function(){
+                            var old = btn.innerText;
+                            btn.innerText = 'Copied';
+                            btn.classList.add('bg-green-600');
+                            setTimeout(function(){ btn.innerText = old; btn.classList.remove('bg-green-600'); }, 1500);
+                          });
+                        });
+                      })();
+                    `,
+                  }}
+                />
             </article>
 
             <div className="mt-16 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 pb-20">
