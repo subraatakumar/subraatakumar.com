@@ -653,7 +653,7 @@ npx react-native run-android
 
 ---
 
-## ✅ 1️⃣ App Launch Test
+### ✅ 1️⃣ App Launch Test
 
 **Expected behavior:**
 
@@ -671,7 +671,7 @@ If the app crashes on first launch:
 
 ---
 
-## ✅ 2️⃣ Restart Persistence Test (Most Important)
+### ✅ 2️⃣ Restart Persistence Test (Most Important)
 
 Steps:
 
@@ -697,7 +697,7 @@ Encryption only works if the same key is reused.
 
 ---
 
-## ✅ 3️⃣ Force Failure Test (Proves Encryption Is Real)
+### ✅ 3️⃣ Force Failure Test (Proves Encryption Is Real)
 
 Temporarily modify `realm.ts`:
 
@@ -732,7 +732,7 @@ After testing, revert the change.
 
 ---
 
-## ✅ 4️⃣ Delete App Test
+### ✅ 4️⃣ Delete App Test
 
 Uninstall the app from device.
 
@@ -748,7 +748,7 @@ Because Keychain entry is removed when app is deleted.
 
 ---
 
-## ✅ 5️⃣ Verify No Plaintext Database
+### ✅ 5️⃣ Verify No Plaintext Database
 
 On Android:
 
@@ -773,7 +773,7 @@ If you see readable text:
 
 ---
 
-## ✅ 6️⃣ Ensure Key Is Never Logged in Production
+### ✅ 6️⃣ Ensure Key Is Never Logged in Production
 
 Search your codebase:
 
@@ -784,7 +784,7 @@ You may log it temporarily in `__DEV__`, but remove before production.
 
 ---
 
-## ✅ 7️⃣ Confirm Realm File Exists
+### ✅ 7️⃣ Confirm Realm File Exists
 
 Add temporary log:
 

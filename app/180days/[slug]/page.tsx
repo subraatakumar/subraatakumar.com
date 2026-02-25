@@ -6,6 +6,7 @@ import html from "remark-html";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import CodeEnhancer from '../../components/CodeEnhancer';
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -159,6 +160,7 @@ export default async function ArticlePage({ params }: PageProps) {
         </div>
       </header>
 
+
       <main className="w-full mx-auto px-4 sm:px-8 py-8">
         <div className="flex flex-col lg:flex-row gap-10">
           {/* Sidebar */}
@@ -234,31 +236,7 @@ export default async function ArticlePage({ params }: PageProps) {
 
             <article className="max-w-4xl prose prose-slate dark:prose-invert prose-headings:font-black prose-headings:tracking-tight prose-h1:text-3xl prose-h1:mt-8 prose-h1:mb-4 prose-h1:pb-3 prose-h1:border-b prose-h2:text-xl prose-h2:mt-6 prose-h2:mb-3 prose-p:text-base prose-p:leading-relaxed prose-p:my-2 prose-li:my-1 prose-pre:rounded-2xl prose-pre:bg-slate-950 prose-pre:p-6 prose-hr:my-8 prose-hr:border-slate-200 dark:prose-hr:border-slate-800">
               <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-                {/* Code block copy script (runs on client) */}
-                <script
-                  dangerouslySetInnerHTML={{
-                    __html: `
-                      (function(){
-                        document.addEventListener('click', function(e){
-                          var btn = e.target.closest && e.target.closest('[data-copy]');
-                          if(!btn) return;
-                          var wrapper = btn.closest('.code-block');
-                          if(!wrapper) return;
-                          var code = wrapper.querySelector('pre code');
-                          if(!code) return;
-                          var text = code.innerText;
-                          if(!navigator.clipboard) return;
-                          navigator.clipboard.writeText(text).then(function(){
-                            var old = btn.innerText;
-                            btn.innerText = 'Copied';
-                            btn.classList.add('bg-green-600');
-                            setTimeout(function(){ btn.innerText = old; btn.classList.remove('bg-green-600'); }, 1500);
-                          });
-                        });
-                      })();
-                    `,
-                  }}
-                />
+              <CodeEnhancer />
             </article>
 
             <div className="mt-16 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 pb-20">
@@ -309,4 +287,37 @@ export default async function ArticlePage({ params }: PageProps) {
       />
     </div>
   );
+}
+
+// Load Prism scripts client-side for syntax highlighting
+// These are added as plain script tags so Prism runs in the browser and highlights code blocks.
+// If you prefer bundling Prism, we can switch to an npm-based approach.
+
+/*
+  Note: Next.js will include these <script> tags in the rendered HTML. They are intentionally
+  plain tags (not using next/script) to keep this file self-contained and simple.
+*/
+
+// Append script tags to document.head when running in the browser
+if (typeof window !== 'undefined') {
+  const addScript = (src: string, cb?: () => void) => {
+    if (document.querySelector(`script[src="${src}"]`)) { cb && cb(); return; }
+    const s = document.createElement('script');
+    s.src = src;
+    s.async = true;
+    s.onload = cb || (() => {});
+    document.head.appendChild(s);
+  };
+
+  // Core + languages
+    addScript('https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js', () => {
+      addScript('https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-clike.min.js');
+      addScript('https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js');
+      addScript('https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js');
+      addScript('https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-jsx.min.js');
+      addScript('https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-tsx.min.js');
+      addScript('https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js');
+      // highlight after languages load (give a short delay)
+      setTimeout(() => { try { (window as any).Prism && (window as any).Prism.highlightAll(); } catch (e) {} }, 100);
+    });
 }
