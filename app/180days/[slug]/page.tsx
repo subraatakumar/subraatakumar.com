@@ -75,12 +75,12 @@ export default async function ArticlePage({ params }: PageProps) {
   // Preserve other attributes while removing any existing `id` to replace with our slug.
   // Small map of tailwind classes to apply per heading level coming from markdown content
   const headingClassMap: Record<string, string> = {
-    "1": "text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white",
-    "2": "text-2xl lg:text-3xl font-bold tracking-tight text-slate-900 dark:text-white",
-    "3": "text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white",
-    "4": "text-lg font-semibold tracking-tight text-slate-900 dark:text-white",
-    "5": "text-base font-semibold tracking-tight text-slate-900 dark:text-white",
-    "6": "text-sm font-semibold tracking-tight text-slate-900 dark:text-white",
+    "1": "text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700",
+    "2": "text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5",
+    "3": "text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4",
+    "4": "text-lg font-semibold tracking-tight text-slate-900 dark:text-white mt-8 mb-3",
+    "5": "text-base font-semibold tracking-tight text-slate-900 dark:text-white mt-6 mb-2",
+    "6": "text-sm font-semibold tracking-tight text-slate-900 dark:text-white mt-4 mb-2",
   };
 
   contentHtml = contentHtml.replace(/<h([1-6])(?:\s+[^>]*)?>([\s\S]*?)<\/h\1>/gi, (m: string, lvl: string, inner: string) => {
@@ -117,32 +117,35 @@ export default async function ArticlePage({ params }: PageProps) {
     return `
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          ${lang ? `<span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded z-50">${lang}</span>` : ""}
-          <button data-copy class="copy-btn text-[12px] px-2 py-1 rounded bg-indigo-600 text-white hover:bg-indigo-700 z-50">Copy</button>
+          ${lang ? `<span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">${lang}</span>` : ""}
+          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
         </div>
         <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code${codeAttrs}>${code}</code></pre>
       </div>
     `;
   });
 
-  // Style unordered lists: custom bullet + spacing + text colors
+  // Style unordered lists: clean standard bullets, proper nesting indent
   contentHtml = contentHtml.replace(/<ul(?:\s+[^>]*)?>([\s\S]*?)<\/ul>/gi, (m: string, inner: string) => {
-    // Transform each <li> to include a custom bullet span and content wrapper
-    const newInner = inner.replace(/<li(?:\s+[^>]*)?>([\s\S]*?)<\/li>/gi, (liMatch: string, liInner: string) => {
-      return `<li class="flex items-start gap-3"><span class="mt-0.5 w-2 h-2 rounded-full bg-indigo-600 dark:bg-indigo-400 flex-shrink-0"></span><div class="flex-1 text-base leading-relaxed text-slate-700 dark:text-slate-300">${liInner}</div></li>`;
+    const newInner = inner.replace(/<li(?:\s+[^>]*)?>([\s\S]*?)<\/li>/gi, (_liMatch: string, liInner: string) => {
+      return `<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">${liInner}</li>`;
     });
-
-    // Remove default padding and use slightly smaller vertical spacing between items
-    return `<ul class="list-none space-y-2 pl-0">${newInner}</ul>`;
+    return `<ul class="list-disc pl-6 space-y-1 my-4">${newInner}</ul>`;
   });
 
-  // Ordered lists: modest spacing and readable text
+  // Ordered lists: proper numbered indent, clean text
   contentHtml = contentHtml.replace(/<ol(?:\s+[^>]*)?>([\s\S]*?)<\/ol>/gi, (m: string, inner: string) => {
-    const newInner = inner.replace(/<li(?:\s+[^>]*)?>([\s\S]*?)<\/li>/gi, (liMatch: string, liInner: string) => {
-      return `<li class="text-base leading-relaxed text-slate-700 dark:text-slate-300">${liInner}</li>`;
+    const newInner = inner.replace(/<li(?:\s+[^>]*)?>([\s\S]*?)<\/li>/gi, (_liMatch: string, liInner: string) => {
+      return `<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5 pl-1">${liInner}</li>`;
     });
+    return `<ol class="list-decimal pl-7 space-y-1 my-4">${newInner}</ol>`;
+  });
 
-    return `<ol class="pl-5 list-decimal space-y-2">${newInner}</ol>`;
+  // Style paragraphs for better readability
+  contentHtml = contentHtml.replace(/<p(?:\s+[^>]*)?>([\s\S]*?)<\/p>/gi, (m: string, inner: string) => {
+    // Skip empty or whitespace-only paragraphs
+    if (!inner.trim()) return m;
+    return `<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">${inner}</p>`;
   });
 
   // Blockquotes: subtle left border, muted background and italic tone
@@ -182,7 +185,7 @@ export default async function ArticlePage({ params }: PageProps) {
     const existingClass = classMatch ? classMatch[1] : "";
     const cleaned = allAttrs.replace(/\s+class=(?:"|')[^"']*(?:"|')/i, "").trim();
     const attrsString = cleaned ? ` ${cleaned}` : "";
-    const combinedClass = [existingClass, "text-indigo-600 hover:underline dark:text-indigo-400"].filter(Boolean).join(" ");
+    const combinedClass = [existingClass, "text-amber-600 dark:text-amber-400 hover:underline font-medium"].filter(Boolean).join(" ");
     return `<a href="${href}" class="${combinedClass}"${attrsString}>${text}</a>`;
   });
 
@@ -197,20 +200,27 @@ export default async function ArticlePage({ params }: PageProps) {
   const progress = Math.round((Number(dayNumber) / 180) * 100);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans selection:bg-indigo-100 dark:selection:bg-indigo-900/30">
+    <div className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans">
       {/* Sticky Header */}
       <header className="sticky top-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-xl border-b border-slate-200 dark:border-slate-800">
-        <div className="w-full mx-auto px-4 sm:px-8 h-16 flex items-center justify-between gap-6">
+        <div className="w-full max-w-6xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between gap-6">
           <div className="flex items-center gap-3 shrink-0">
-            <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white shadow-lg shadow-indigo-500/20">
+            <div className="w-8 h-8 bg-amber-400 rounded-lg flex items-center justify-center text-slate-900 shadow-lg shadow-amber-400/20">
               <span className="font-black text-sm">SK</span>
             </div>
-            <nav className="hidden md:flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-400">
+            <nav className="hidden md:flex items-center gap-3 text-xs font-bold uppercase tracking-wider text-slate-400">
               <Link href="/180days" className="text-xs font-black px-4 py-2 bg-slate-100 dark:bg-slate-800 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors flex items-center gap-2 uppercase tracking-tight">
-              <span className="hover:text-indigo-600 transition-colors cursor-pointer font-bold">180 Days</span>
-              <span className="text-slate-300">/</span>
-              <span className="text-slate-900 dark:text-white font-bold tracking-tight">Day {dayNumber}</span>
+                <span className="hover:text-amber-500 transition-colors cursor-pointer font-bold">180 Days</span>
+                <span className="text-slate-300">/</span>
+                <span className="text-slate-900 dark:text-white font-bold tracking-tight">Day {dayNumber}</span>
               </Link>
+              {/* Inline progress pill */}
+              <div className="flex items-center gap-2 px-3 py-1.5 bg-slate-100 dark:bg-slate-800 rounded-lg">
+                <div className="w-24 bg-slate-300 dark:bg-slate-600 h-2 rounded-full overflow-hidden">
+                  <div className="bg-amber-400 h-full rounded-full" style={{ width: `${progress}%` }} />
+                </div>
+                <span className="text-[11px] font-black text-amber-600 dark:text-amber-400 tabular-nums">{progress}%</span>
+              </div>
             </nav>
           </div>
 
@@ -223,87 +233,39 @@ export default async function ArticlePage({ params }: PageProps) {
       </header>
 
 
-      <main className="w-full mx-auto px-4 sm:px-8 py-8">
-        <div className="flex flex-col lg:flex-row gap-10">
-          {/* Sidebar */}
-          <aside className="lg:w-64 lg:shrink-0 space-y-8 order-2 lg:order-1">
-            <div className="space-y-6">
-              <div>
-                <h4 className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-[0.2em] mb-3">Log Metadata</h4>
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between text-xs">
-                    <div className="flex items-center gap-2 text-slate-500 font-medium">
-                      <span>Date</span>
-                    </div>
-                    <span className="font-bold">{data.date}</span>
-                  </div>
-                  <div className="flex items-center justify-between text-xs">
-                    <div className="flex items-center gap-2 text-slate-500 font-medium">
-                      <span>Author</span>
-                    </div>
-                    <span className="font-bold text-indigo-600 dark:text-indigo-400">Subrata K.</span>
-                  </div>
-                  <div className="flex items-center justify-between text-xs">
-                    <div className="flex items-center gap-2 text-slate-500 font-medium">
-                      <span>Status</span>
-                    </div>
-                    <span className="px-1.5 py-0.5 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded font-bold text-[10px] uppercase tracking-tighter">Complete</span>
-                  </div>
-                </div>
-              </div>
+      {/* Hero Section */}
+      <div className="w-full border-b border-slate-200 dark:border-slate-800 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900/60 dark:to-slate-950">
+        <div className="w-full max-w-6xl mx-auto px-4 sm:px-8 py-14">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter text-slate-950 dark:text-white leading-[1.05] max-w-3xl">{data.title}</h1>
+          {data.description && (
+            <p className="mt-6 text-xl text-slate-500 dark:text-slate-400 leading-relaxed max-w-2xl font-normal">{data.description}</p>
+          )}
+          <div className="mt-8 flex flex-wrap items-center gap-2 text-sm">
+            <span className="font-semibold text-slate-600 dark:text-slate-300">{data.date}</span>
+            <span className="w-1 h-1 rounded-full bg-slate-400 dark:bg-slate-500 inline-block" />
+            <span className="font-semibold text-amber-600 dark:text-amber-400">Subrata Kumar Das</span>
+            <span className="w-1 h-1 rounded-full bg-slate-400 dark:bg-slate-500 inline-block" />
+            <span className="px-2.5 py-0.5 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full font-bold text-xs uppercase tracking-tight">Complete</span>
+          </div>
+          {/* Quote — visible on md screens and above only */}
+          <p className="hidden md:block mt-8 text-[13px] leading-relaxed text-amber-700/80 dark:text-amber-400/70 font-medium italic border-l-2 border-amber-300 dark:border-amber-700 pl-4 max-w-sm">
+            "Consistent small steps lead to massive long-term results. Keep pushing."
+          </p>
+        </div>
+      </div>
 
-              <div className="pt-6 border-t border-slate-100 dark:border-slate-800">
-                <h4 className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-[0.2em] mb-3">Challenge Progress</h4>
-                <div className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-3 shadow-sm">
-                   <div className="flex justify-between items-center mb-2">
-                      <span className="text-[10px] font-bold text-slate-500">Day {dayNumber} / 180</span>
-                      <span className="text-[10px] font-bold text-indigo-600">{progress}%</span>
-                   </div>
-                   <div className="w-full bg-slate-200 dark:bg-slate-800 h-1.5 rounded-full overflow-hidden">
-                      <div 
-                        className="bg-indigo-600 h-full transition-all duration-1000" 
-                        style={{ width: `${progress}%` }}
-                      />
-                   </div>
-                </div>
-              </div>
-
-              <div className="pt-6 border-t border-slate-100 dark:border-slate-800">
-                <div className="p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-xl border border-indigo-100 dark:border-indigo-800">
-                  <p className="text-[11px] leading-relaxed text-indigo-700 dark:text-indigo-300 font-medium italic">
-                    "Consistent small steps lead to massive long-term results. Keep pushing."
-                  </p>
-                </div>
-              </div>
-
-              <Link href="#" className="flex items-center justify-center gap-2 w-full py-3 bg-slate-950 dark:bg-white text-white dark:text-slate-950 rounded-xl font-black text-[10px] tracking-widest hover:opacity-90 transition-all shadow-xl shadow-indigo-500/10 uppercase">
-                Share Entry
-              </Link>
-            </div>
-          </aside>
-
+      <main className="w-full max-w-6xl mx-auto px-4 sm:px-8 py-10">
           {/* Main Article */}
-          <div className="flex-1 order-1 lg:order-2">
-            <div className="mb-8">
-              <div className="flex items-center gap-2 text-xs font-bold text-indigo-600 mb-2 uppercase tracking-widest">
-                Technical Entry
-              </div>
-              <h1 className="text-4xl lg:text-5xl font-black tracking-tighter text-slate-950 dark:text-white leading-[1.1]">{data.title}</h1>
-              {data.description && (
-                <p className="mt-4 text-lg text-slate-500 dark:text-slate-400 leading-relaxed max-w-2xl">{data.description}</p>
-              )}
-            </div>
+          <div className="flex-1">
 
-            <div className="w-full h-[1px] bg-slate-100 dark:bg-slate-800 mb-10" />
-
-            <article className="max-w-4xl prose prose-slate dark:prose-invert prose-headings:font-black prose-headings:tracking-tight prose-h1:text-3xl prose-h1:mt-8 prose-h1:mb-4 prose-h1:pb-3 prose-h1:border-b prose-h2:text-xl prose-h2:mt-6 prose-h2:mb-3 prose-p:text-base prose-p:leading-relaxed prose-p:my-2 prose-li:my-1 prose-pre:rounded-2xl prose-pre:bg-slate-950 prose-pre:p-6 prose-hr:my-8 prose-hr:border-slate-200 dark:prose-hr:border-slate-800">
+            <article className="max-w-3xl prose prose-slate dark:prose-invert prose-headings:font-black prose-headings:tracking-tight prose-h1:text-4xl prose-h1:mt-16 prose-h1:mb-6 prose-h1:pb-4 prose-h1:border-b prose-h1:border-slate-200 dark:prose-h1:border-slate-700 prose-h2:text-3xl prose-h2:mt-14 prose-h2:mb-5 prose-h3:text-2xl prose-h3:mt-10 prose-h3:mb-4 prose-p:text-[17px] prose-p:leading-[1.85] prose-p:my-5 prose-p:text-slate-700 dark:prose-p:text-slate-300 prose-strong:text-slate-900 dark:prose-strong:text-white prose-pre:rounded-2xl prose-pre:bg-slate-950 prose-pre:p-6 prose-hr:my-12 prose-hr:border-slate-200 dark:prose-hr:border-slate-800 prose-ul:list-disc prose-ol:list-decimal">
               <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
               <CodeEnhancer />
             </article>
 
             <div className="mt-16 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 pb-20">
               {prevSlug ? (
-                <Link href={`/180days/${prevSlug}`} className="group flex items-center gap-3 px-5 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-indigo-400 transition-all w-full sm:w-auto">
+                <Link href={`/180days/${prevSlug}`} className="group flex items-center gap-3 px-5 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-amber-400 transition-all w-full sm:w-auto">
                   <div className="text-left">
                     <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-widest">Previous</span>
                     <span className="text-sm font-bold capitalize">{prevSlug.replace('-', ' ')}</span>
@@ -321,7 +283,6 @@ export default async function ArticlePage({ params }: PageProps) {
               ) : <div />}
             </div>
           </div>
-        </div>
       </main>
 
       {/* <footer className="py-12 border-t border-slate-100 dark:border-slate-800 text-center">
