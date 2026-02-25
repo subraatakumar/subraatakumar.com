@@ -58,7 +58,22 @@ export default async function ArticlePage({ params }: PageProps) {
   const { data, content } = matter(fileContents);
 
   const processedContent = await remark().use(html).process(content);
-  const contentHtml = processedContent.toString();
+  let contentHtml = processedContent.toString();
+
+  // Inject id attributes for headings so #, ##, ### render with anchors
+  const slugify = (s: string) =>
+    s
+      .toLowerCase()
+      .trim()
+      .replace(/<[^>]+>/g, "")
+      .replace(/[\s]+/g, "-")
+      .replace(/[^a-z0-9\-]/g, "")
+      .replace(/-+/g, "-");
+
+  contentHtml = contentHtml.replace(/<h([1-6])>(.*?)<\/h\1>/gi, (m, lvl, inner) => {
+    const id = slugify(inner);
+    return `<h${lvl} id="${id}">${inner}</h${lvl}>`;
+  });
 
   const allSlugs = getAllSlugs();
   const currentIndex = allSlugs.indexOf(slug);
