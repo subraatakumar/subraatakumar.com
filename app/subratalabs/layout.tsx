@@ -19,109 +19,115 @@ export default function SubrataLabsLayout({ children }: { children: React.ReactN
         body:has(.labs-shell) .sk-footer {
           display: none !important;
         }
+
         .labs-shell {
-          --labs-charcoal: #111111;
-          --labs-slate: #1c1f26;
-          --labs-teal: #00c9a7;
-          --labs-offwhite: #ededed;
-          --labs-gray: #7a7f87;
+          --teal: #00c9a7;
           min-height: 100vh;
-          background:
-            radial-gradient(circle at 10% 0%, rgba(0, 201, 167, 0.13), transparent 34%),
-            radial-gradient(circle at 90% 100%, rgba(0, 201, 167, 0.1), transparent 40%),
-            linear-gradient(145deg, #0f1014, #111111 38%, #171a21 100%);
-          color: var(--labs-offwhite);
+          background: #0d1117;
+          color: #dde5e3;
         }
+
         .labs-shell * {
           box-sizing: border-box;
         }
+
+        /* ── Nav ── */
         .labs-nav {
           position: sticky;
           top: 0;
           z-index: 70;
-          border-bottom: 1px solid rgba(237, 237, 237, 0.12);
-          background: rgba(17, 17, 17, 0.82);
+          background: rgba(13, 17, 23, 0.88);
           backdrop-filter: blur(12px);
+          border-bottom: 1px solid rgba(255,255,255,0.07);
         }
         .labs-nav-inner {
           max-width: 1180px;
           margin: 0 auto;
-          padding: 0 24px;
-          height: 70px;
+          padding: 0 32px;
+          height: 64px;
           display: flex;
           align-items: center;
           justify-content: space-between;
-          gap: 14px;
         }
         .labs-brand {
           display: inline-flex;
           align-items: center;
-          gap: 12px;
+          gap: 10px;
           text-decoration: none;
-          color: var(--labs-offwhite);
         }
         .labs-mark {
-          width: 38px;
-          height: 38px;
-          border-radius: 11px;
-          display: inline-flex;
+          width: 34px;
+          height: 34px;
+          border-radius: 8px;
+          background: linear-gradient(135deg, #5effd8, #00c9a7, #009e84);
+          display: flex;
           align-items: center;
           justify-content: center;
-          color: #041814;
+          color: #021a12;
           font-weight: 800;
-          background: linear-gradient(140deg, #82ffe6 0%, #00c9a7 45%, #08a58b 100%);
-          box-shadow: 0 10px 20px rgba(0, 201, 167, 0.35);
+          font-size: 0.9rem;
+          box-shadow: 0 4px 14px rgba(0,201,167,0.5);
+          flex-shrink: 0;
         }
         .labs-brand-text {
           display: flex;
           flex-direction: column;
+          gap: 2px;
           line-height: 1;
-          gap: 4px;
         }
         .labs-brand-text b {
-          font-size: 0.96rem;
-          letter-spacing: 0.03em;
+          font-size: 0.9rem;
+          font-weight: 700;
+          color: #e0ecea;
+          letter-spacing: 0.01em;
         }
         .labs-brand-text span {
-          font-size: 0.77rem;
-          color: var(--labs-teal);
+          font-size: 0.65rem;
+          font-weight: 700;
+          color: var(--teal);
           text-transform: uppercase;
-          letter-spacing: 0.09em;
+          letter-spacing: 0.13em;
         }
-        .labs-links {
+        .labs-nav-links {
           display: flex;
           align-items: center;
-          gap: 8px;
+          gap: 4px;
         }
-        .labs-links a {
+        .labs-nav-links a {
           text-decoration: none;
-          color: var(--labs-offwhite);
-          font-size: 12px;
+          color: #8fa8a0;
+          font-size: 11px;
+          font-weight: 700;
           text-transform: uppercase;
-          letter-spacing: 0.06em;
-          font-weight: 800;
-          border-radius: 10px;
-          padding: 9px 12px;
+          letter-spacing: 0.1em;
+          padding: 7px 14px;
+          border-radius: 6px;
+          transition: color 0.15s;
         }
-        .labs-links a:hover {
-          color: #051b17;
-          background: rgba(0, 201, 167, 0.92);
+        .labs-nav-links a:hover {
+          color: #e0ecea;
         }
+
+        /* ── Main content ── */
         .labs-main {
           max-width: 1180px;
           margin: 0 auto;
-          padding: 30px 24px 70px;
+          padding: 0 32px 72px;
         }
+
+        /* ── Font util ── */
         .labs-font-display {
           font-family: ${exo2.style.fontFamily};
         }
+
+        /* ── Footer ── */
         .labs-footer {
-          border-top: 1px solid rgba(237, 237, 237, 0.12);
+          border-top: 1px solid rgba(255,255,255,0.07);
         }
         .labs-footer-inner {
           max-width: 1180px;
           margin: 0 auto;
-          padding: 16px 24px 26px;
+          padding: 16px 32px 24px;
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -130,29 +136,22 @@ export default function SubrataLabsLayout({ children }: { children: React.ReactN
         }
         .labs-footer p {
           margin: 0;
-          color: var(--labs-gray);
-          font-size: 12px;
+          color: #4a5a55;
+          font-size: 11px;
         }
         .labs-footer a {
-          color: var(--labs-teal);
+          color: var(--teal);
           text-decoration: none;
           font-weight: 700;
-          font-size: 12px;
+          font-size: 11px;
         }
-        @media (max-width: 760px) {
-          .labs-nav-inner {
-            padding: 0 14px;
-            height: auto;
-            min-height: 66px;
-            flex-wrap: wrap;
-            padding-top: 10px;
-            padding-bottom: 10px;
-          }
-          .labs-main {
-            padding: 20px 14px 56px;
-          }
+
+        @media (max-width: 680px) {
+          .labs-nav-inner,
+          .labs-main,
           .labs-footer-inner {
-            padding: 14px;
+            padding-left: 16px;
+            padding-right: 16px;
           }
         }
       `}</style>
@@ -160,16 +159,16 @@ export default function SubrataLabsLayout({ children }: { children: React.ReactN
       <header className="labs-nav">
         <div className="labs-nav-inner">
           <Link href="/subratalabs" className="labs-brand">
-            <span className="labs-mark">S</span>
+            <span className="labs-mark labs-font-display">S</span>
             <span className="labs-brand-text">
               <b className="labs-font-display">Subrata</b>
               <span>Labs</span>
             </span>
           </Link>
-          <nav className="labs-links" aria-label="Subrata Labs navigation">
-            <Link href="/subratalabs">Overview</Link>
-            <Link href="/180days">180Days</Link>
-            <Link href="/products">All Products</Link>
+          <nav className="labs-nav-links" aria-label="Subrata Labs navigation">
+            <Link href="/subratalabs/overview">Overview</Link>
+            <Link href="/subratalabs/insights">Insights</Link>
+            {/* <Link href="/subratalabs/products">All Products</Link> */}
           </nav>
         </div>
       </header>
