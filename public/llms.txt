@@ -17,6 +17,8 @@ The website contains portfolio pages and an active 180-day technical mentorship 
 
 ## Project pages
 - Water Tracker: https://subraatakumar.com/watertracker
+- Water Tracker Guide: https://subraatakumar.com/watertracker/guide
+- Water Tracker Benefits: https://subraatakumar.com/watertracker/benefits
 - She Health: https://subraatakumar.com/shehealth
 - TCBS CLI: https://subraatakumar.com/tcbs-cli
 

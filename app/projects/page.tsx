@@ -25,6 +25,12 @@ export const metadata: Metadata = {
 
 const projects = [
   {
+    title: "180 Days OfflineLifeArchive",
+    slug: "180days",
+    desc: "An archival app for offline journaling and life-logging across a 180-day challenge.",
+    tags: ["Expo", "SQLite"],
+  },  
+  {
     title: "Water Tracker",
     slug: "watertracker",
     desc: "A mobile app to track daily water intake with reminders and analytics for healthy hydration habits.",
@@ -41,12 +47,6 @@ const projects = [
     slug: "tcbs-cli",
     desc: "A developer CLI tool for managing build workflows and automating common mobile release tasks.",
     tags: ["Node.js", "CLI"],
-  },
-  {
-    title: "180 Days OfflineLifeArchive",
-    slug: "180days",
-    desc: "An archival app for offline journaling and life-logging across a 180-day challenge.",
-    tags: ["Expo", "SQLite"],
   },
 ];
 

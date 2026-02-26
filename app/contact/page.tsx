@@ -41,8 +41,8 @@ export default function ContactPage() {
           <span style={{ fontFamily: "'Caveat Brush', cursive", fontSize: "1.8rem", color: "#2563eb", minWidth: 36 }}>✉</span>
           <div>
             <div style={{ fontFamily: "'Caveat Brush', cursive", fontSize: "1.2rem", marginBottom: 2 }}>Email</div>
-            <a href="mailto:hello@subraatakumar.com" style={{ fontSize: "1.1rem", color: "#2563eb", textDecoration: "underline", fontFamily: "'Caveat', cursive" }}>
-              hello@subraatakumar.com
+            <a href="mailto:subraatakumar@gmail.com" style={{ fontSize: "1.1rem", color: "#2563eb", textDecoration: "underline", fontFamily: "'Caveat', cursive" }}>
+              subraatakumar@gmail.com
             </a>
           </div>
         </div>

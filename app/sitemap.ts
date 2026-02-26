@@ -27,6 +27,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
     "/for-ai",
     "/watertracker",
+    "/watertracker/guide",
+    "/watertracker/benefits",
     "/shehealth",
     "/tcbs-cli",
     "/180days",
