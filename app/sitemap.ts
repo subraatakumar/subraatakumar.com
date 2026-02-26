@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/",
     "/about",
     "/projects",
+    "/subratalabs",
     "/contact",
     "/for-ai",
     "/watertracker",

@@ -16,6 +16,7 @@ The website contains portfolio pages and an active 180-day technical mentorship 
 - Contact: https://subraatakumar.com/contact
 
 ## Project pages
+- Subrata Labs: https://subraatakumar.com/subratalabs
 - Water Tracker: https://subraatakumar.com/watertracker
 - Water Tracker Guide: https://subraatakumar.com/watertracker/guide
 - Water Tracker Benefits: https://subraatakumar.com/watertracker/benefits

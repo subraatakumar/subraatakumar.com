@@ -55,6 +55,7 @@ export default function ForAIPage() {
         <li><Link href="/">Home</Link></li>
         <li><Link href="/about">About</Link></li>
         <li><Link href="/projects">Projects</Link></li>
+        <li><Link href="/subratalabs">Subrata Labs</Link></li>
         <li><Link href="/180days">180 Days Mentoring Journey</Link></li>
         <li><Link href="/watertracker/guide">WaterTracker Guide</Link></li>
         <li><Link href="/watertracker/benefits">WaterTracker Benefits</Link></li>

@@ -25,10 +25,10 @@ export const metadata: Metadata = {
 
 const projects = [
   {
-    title: "180 Days OfflineLifeArchive",
-    slug: "180days",
-    desc: "A 180-day mentorship journey documenting the disciplined process of building a production-grade app in the AI era.",
-    tags: ["Product Mindset", "Mentorship", "AI Era", "Mobile Development", "React Native", "Realm"],
+    title: "Subrata Labs",
+    slug: "subratalabs",
+    desc: "Umbrella brand for practical AI products, systems, and developer ecosystems. Current live track: 180Days.",
+    tags: ["AI Products", "Developer Ecosystem", "Learning Tracks", "180Days"],
     layout: "full",
   },  
   {
