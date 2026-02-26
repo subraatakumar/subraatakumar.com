@@ -29,7 +29,7 @@ const featured = {
   title: "Why Most AI Products Fail at the Architecture Layer",
   excerpt:
     "LLM wrappers are easy to build and hard to scale. The products that survive are the ones that treat the AI layer as one component in a larger system — not the system itself. Here is what that architecture actually looks like in practice.",
-  readTime: "8 min read",
+  // readTime: "8 min read",
 };
 
 const insights = [
@@ -38,42 +38,36 @@ const insights = [
     title: "The 180-Day Rule: Why Short Sprints Kill Deep Products",
     excerpt:
       "Two-week sprints optimize for the appearance of progress. Building production-grade AI systems requires a different cadence — one that allows architecture to breathe.",
-    readTime: "6 min read",
   },
   {
     tag: "Developer Ecosystems",
     title: "Designing for Extensibility: Lessons from Building Plugin Systems",
     excerpt:
       "A plugin architecture is not a technical decision. It is a product philosophy. The interface you expose to developers is the product, and it will outlive every feature you ship.",
-    readTime: "7 min read",
   },
   {
     tag: "AI Systems",
     title: "Agents Need Boundaries: On Memory, Context, and Control Planes",
     excerpt:
       "Autonomous agents without well-defined boundaries are liabilities. The discipline of agent system design is learning where the agent stops and the deterministic system begins.",
-    readTime: "9 min read",
   },
   {
     tag: "Product",
     title: "From Framework to Product: The Productization Gap",
     excerpt:
       "Internal frameworks and developer products look identical at the code level. The gap is entirely in the contract — the promises you make about stability, versioning, and support.",
-    readTime: "5 min read",
   },
   {
     tag: "Enterprise AI",
     title: "Why Enterprise AI Tooling Needs a Command Layer",
     excerpt:
       "Enterprise users do not want to prompt an AI. They want to issue commands to a system. The interaction model for enterprise AI is fundamentally different from consumer products.",
-    readTime: "6 min read",
   },
   {
     tag: "Architecture",
     title: "Reusable Frameworks as a Long-Term Competitive Moat",
     excerpt:
       "Shipping a product creates users. Shipping a framework creates an ecosystem. The compounding returns of an ecosystem are why the best builders invest in reusability from day one.",
-    readTime: "7 min read",
   },
 ];
 
@@ -392,7 +386,6 @@ export default function InsightsPage() {
             <h2 className="labs-font-display">{featured.title}</h2>
             <p>{featured.excerpt}</p>
           </div>
-          <span className="ins-featured-meta">{featured.readTime}</span>
         </div>
       </div>
 
@@ -405,7 +398,6 @@ export default function InsightsPage() {
               <span className="ins-card-tag">{ins.tag}</span>
               <h3 className="labs-font-display">{ins.title}</h3>
               <p>{ins.excerpt}</p>
-              <span className="ins-card-meta">{ins.readTime}</span>
             </div>
           ))}
         </div>
