@@ -179,7 +179,7 @@ export default function WaterTrackerLayout({ children }: { children: React.React
             <Link href="/watertracker">Overview</Link>
             <Link href="/watertracker/guide">How To Use</Link>
             <Link href="/watertracker/benefits">Health Benefits</Link>
-            <Link href="/projects">All Projects</Link>
+            <Link href="/products">All Products</Link>
           </nav>
         </div>
       </header>

@@ -10,7 +10,7 @@ The website contains portfolio pages and an active 180-day technical mentorship 
 ## High-value pages
 - Home: https://subraatakumar.com/
 - About: https://subraatakumar.com/about
-- Projects index: https://subraatakumar.com/projects
+- Products index: https://subraatakumar.com/products
 - 180 Days series: https://subraatakumar.com/180days
 - AI summary page: https://subraatakumar.com/for-ai
 - Contact: https://subraatakumar.com/contact

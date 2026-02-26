@@ -70,7 +70,7 @@ export default function HomePage() {
         </p>
 
         <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-          <Link href="/projects" className="sk-btn">See My Work</Link>
+          <Link href="/products" className="sk-btn">See My Work</Link>
           <Link href="/about" className="sk-btn sk-btn-ghost">About Me</Link>
         </div>
       </div>
@@ -120,7 +120,7 @@ export default function HomePage() {
       <h2 className="sk-section-heading">Explore</h2>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 20 }}>
         {[
-          { label: "Projects", href: "/projects", note: "Apps & tools I've built" },
+          { label: "Products", href: "/products", note: "Apps & tools I've built" },
           { label: "About",    href: "/about",    note: "Background & philosophy" },
           { label: "Contact",  href: "/contact",  note: "Let's connect" },
         ].map((item) => (

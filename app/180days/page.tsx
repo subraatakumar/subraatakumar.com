@@ -75,7 +75,7 @@ export default function DaysIndex() {
             <Link href="/" className="d180-logo-badge" aria-label="Go to main home page">SK</Link>
             <span className="d180-logo-label">180 Days</span>
           </div>
-          <Link href="/projects" className="d180-back-btn">← Projects</Link>
+          <Link href="/products" className="d180-back-btn">← Products</Link>
         </div>
       </header>
 

@@ -169,7 +169,7 @@ export default function SubrataLabsLayout({ children }: { children: React.ReactN
           <nav className="labs-links" aria-label="Subrata Labs navigation">
             <Link href="/subratalabs">Overview</Link>
             <Link href="/180days">180Days</Link>
-            <Link href="/projects">All Projects</Link>
+            <Link href="/products">All Products</Link>
           </nav>
         </div>
       </header>

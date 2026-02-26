@@ -323,7 +323,7 @@ export default function RootLayout({
             <nav aria-label="Primary">
               <ul className="sk-nav-links">
                 <li><Link href="/about">About</Link></li>
-                <li><Link href="/projects">Projects</Link></li>
+                <li><Link href="/products">Products</Link></li>
                 <li><Link href="/contact">Contact</Link></li>
               </ul>
             </nav>
@@ -332,7 +332,7 @@ export default function RootLayout({
             <nav aria-label="Mobile">
               <ul>
                 <li><Link href="/about">About</Link></li>
-                <li><Link href="/projects">Projects</Link></li>
+                <li><Link href="/products">Products</Link></li>
                 <li><Link href="/contact">Contact</Link></li>
               </ul>
             </nav>

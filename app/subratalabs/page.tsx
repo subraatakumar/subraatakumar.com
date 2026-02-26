@@ -5,14 +5,14 @@ import { DEFAULT_OG_IMAGE, absoluteUrl } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Subrata Labs",
   description:
-    "Subrata Labs is the umbrella brand for practical AI products, systems, and developer ecosystems, starting with the 180Days structured build track.",
+    "Subrata Labs is the Execution Studio for practical AI products, systems, and developer ecosystems, starting with the 180Days structured build track.",
   alternates: {
     canonical: "/subratalabs",
   },
   openGraph: {
     title: "Subrata Labs | Practical AI Products and Systems",
     description:
-      "Umbrella brand for practical AI products, systems, and developer ecosystems. Explore 180Days and upcoming structured tracks.",
+      "Execution Studio for practical AI products, systems, and developer ecosystems. Explore 180Days and upcoming structured tracks.",
     url: "/subratalabs",
     type: "website",
     images: [DEFAULT_OG_IMAGE],
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Subrata Labs | Practical AI Products and Systems",
     description:
-      "Umbrella brand for practical AI products, systems, and developer ecosystems. Explore 180Days and upcoming structured tracks.",
+      "Execution Studio for practical AI products, systems, and developer ecosystems. Explore 180Days and upcoming structured tracks.",
     images: [DEFAULT_OG_IMAGE],
   },
 };
@@ -222,7 +222,7 @@ export default function SubrataLabsPage() {
       `}</style>
 
       <div className="labs-hero">
-        <span className="labs-kicker">Umbrella Brand</span>
+        <span className="labs-kicker">Execution Studio</span>
         <h1 className="labs-font-display">
           Subrata <span>Labs</span>
         </h1>
@@ -233,7 +233,7 @@ export default function SubrataLabsPage() {
         </p>
         <div className="labs-cta">
           <Link href="/180days" className="labs-btn labs-btn-primary">Explore 180Days</Link>
-          <Link href="/projects" className="labs-btn labs-btn-secondary">View All Projects</Link>
+          <Link href="/products" className="labs-btn labs-btn-secondary">View All Products</Link>
         </div>
       </div>
 
@@ -284,10 +284,10 @@ export default function SubrataLabsPage() {
               {
                 "@type": "Brand",
                 name: "Subrata Labs",
-                slogan: "Building practical AI products, systems & developer ecosystems.",
+                slogan: "Execution Studio for practical AI products, systems & developer ecosystems.",
                 url: absoluteUrl("/subratalabs"),
                 description:
-                  "Umbrella brand for practical AI products, systems, and developer ecosystems.",
+                  "Execution Studio for practical AI products, systems, and developer ecosystems.",
               },
               {
                 "@type": "ItemList",

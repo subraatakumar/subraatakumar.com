@@ -3,31 +3,31 @@ import Link from "next/link";
 import { DEFAULT_OG_IMAGE } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Projects",
-  description: "Selected projects by Subrata Kumar Das — Tech Lead and React Native Architect",
+  title: "Products",
+  description: "Selected products by Subrata Kumar Das — Tech Lead and React Native Architect",
   alternates: {
-    canonical: "/projects",
+    canonical: "/products",
   },
   openGraph: {
-    title: "Projects | Subrata Kumar Das",
-    description: "Selected projects by Subrata Kumar Das — Tech Lead and React Native Architect",
-    url: "/projects",
+    title: "Products | Subrata Kumar Das",
+    description: "Selected products by Subrata Kumar Das — Tech Lead and React Native Architect",
+    url: "/products",
     type: "website",
     images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Projects | Subrata Kumar Das",
-    description: "Selected projects by Subrata Kumar Das — Tech Lead and React Native Architect",
+    title: "Products | Subrata Kumar Das",
+    description: "Selected products by Subrata Kumar Das — Tech Lead and React Native Architect",
     images: [DEFAULT_OG_IMAGE],
   },
 };
 
-const projects = [
+const products = [
   {
     title: "Subrata Labs",
     slug: "subratalabs",
-    desc: "Umbrella brand for practical AI products, systems, and developer ecosystems. Current live track: 180Days.",
+    desc: "Execution Studio for practical AI products, systems, and developer ecosystems. Current live track: 180Days.",
     tags: ["AI Products", "Developer Ecosystem", "Learning Tracks", "180Days"],
     layout: "full",
   },  
@@ -61,7 +61,7 @@ export default function ProjectsPage() {
   return (
     <div className="sk-page">
 
-      <h1 className="sk-page-heading">Projects</h1>
+      <h1 className="sk-page-heading">Products</h1>
       <p style={{ fontSize: "1.2rem", color: "#555", marginTop: 8, marginBottom: 0 }}>
         A selection of apps, tools, and platforms I've built.
       </p>
@@ -72,7 +72,7 @@ export default function ProjectsPage() {
         gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
         gap: 24,
       }}>
-        {projects.map((p) => (
+        {products.map((p) => (
           <article
             key={p.title}
             className="sk-card"
