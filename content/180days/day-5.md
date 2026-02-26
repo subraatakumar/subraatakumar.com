@@ -17,7 +17,7 @@ draft: false
 readingTime: "4 min"
 ---
 
-![https180days.subraatakumar.com.png](/images/day5_1.png)
+![https180days.subraatakumar.com.png](/images/day5_system_design.jpg)
 
 ## 5.1 Introduction
 
