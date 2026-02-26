@@ -1,109 +1,965 @@
 1:"$Sreact.fragment"
-2:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
-3:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
-4:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
-6:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
-7:"$Sreact.suspense"
-9:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"ViewportBoundary"]
-c:I[68027,[],"default"]
-:HL["/_next/static/chunks/aeed9aa279c49b6f.css","style"]
-0:{"P":null,"b":"8TlM1J5MHqaK7VEiA8o6D","c":["","180days","day-5",""],"q":"","i":false,"f":[[["",{"children":["180days",{"children":[["slug","day-5","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/aeed9aa279c49b6f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"bg-white text-black antialiased","children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","header",null,{"className":"border-b","children":[["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-4 flex items-center justify-between","children":[["$","$L2",null,{"href":"/","className":"text-lg font-medium","children":"Subrata Kumar Das"}],["$","nav",null,{"aria-label":"Primary","className":"hidden md:block","children":["$","ul",null,{"className":"flex gap-6 text-sm","children":[["$","li",null,{"children":["$","$L2",null,{"href":"/about","className":"hover:underline","children":"About"}]}],["$","li",null,{"children":["$","$L2",null,{"href":"/projects","className":"hover:underline","children":"Projects"}]}],["$","li",null,{"children":["$","$L2",null,{"href":"/contact","className":"hover:underline","children":"Contact"}]}]]}]}]]}],["$","div",null,{"className":"md:hidden","children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 pb-4","children":["$","nav",null,{"aria-label":"Mobile","children":["$","ul",null,{"className":"flex flex-col gap-2 text-sm","children":[["$","li",null,{"children":["$","$L2",null,{"href":"/about","className":"block py-1","children":"About"}]}],["$","li",null,{"children":["$","$L2",null,{"href":"/projects","className":"block py-1","children":"Projects"}]}],["$","li",null,{"children":["$","$L2",null,{"href":"/contact","className":"block py-1","children":"Contact"}]}]]}]}]}]}]]}],["$","main",null,{"className":"w-full","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t","children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-6 text-center text-sm text-gray-600","children":["© ",2026," Subrata Kumar Das. All rights reserved."]}]}]]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","main",null,{"className":"min-h-screen bg-amber-50 text-amber-900","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L5",[["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true,"nonce":"$undefined"}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],{},null,false,false]},null,false,false]},null,false,false]},null,false,false],["$","$1","h",{"children":[null,["$","$L9",null,{"children":"$La"}],["$","div",null,{"hidden":true,"children":"$Lb"}],null]}],false]],"m":"$undefined","G":["$c",[]],"S":true}
-d:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"MetadataBoundary"]
-b:["$","$Ld",null,{"children":["$","$7",null,{"name":"Next.Metadata","children":"$Le"}]}]
-5:["$","div",null,{"className":"min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans","children":[["$","header",null,{"className":"sticky top-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-xl border-b border-slate-200 dark:border-slate-800","children":["$","div",null,{"className":"w-full max-w-6xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between gap-6","children":[["$","div",null,{"className":"flex items-center gap-3 shrink-0","children":[["$","div",null,{"className":"w-8 h-8 bg-amber-400 rounded-lg flex items-center justify-center text-slate-900 shadow-lg shadow-amber-400/20","children":["$","span",null,{"className":"font-black text-sm","children":"SK"}]}],["$","nav",null,{"className":"hidden md:flex items-center gap-3 text-xs font-bold uppercase tracking-wider text-slate-400","children":[["$","$L2",null,{"href":"/180days","className":"text-xs font-black px-4 py-2 bg-slate-100 dark:bg-slate-800 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors flex items-center gap-2 uppercase tracking-tight","children":[["$","span",null,{"className":"hover:text-amber-500 transition-colors cursor-pointer font-bold","children":"180 Days"}],["$","span",null,{"className":"text-slate-300","children":"/"}],["$","span",null,{"className":"text-slate-900 dark:text-white font-bold tracking-tight","children":["Day ","5"]}]]}],["$","div",null,{"className":"flex items-center gap-2 px-3 py-1.5 bg-slate-100 dark:bg-slate-800 rounded-lg","children":[["$","div",null,{"className":"w-24 bg-slate-300 dark:bg-slate-600 h-2 rounded-full overflow-hidden","children":["$","div",null,{"className":"bg-amber-400 h-full rounded-full","style":{"width":"3%"}}]}],["$","span",null,{"className":"text-[11px] font-black text-amber-600 dark:text-amber-400 tabular-nums","children":[3,"%"]}]]}]]}]]}],["$","div",null,{"className":"flex items-center gap-4","children":["$","$L2",null,{"href":"/180days","className":"text-xs font-black px-4 py-2 bg-slate-100 dark:bg-slate-800 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors flex items-center gap-2 uppercase tracking-tight","children":"← All Days"}]}]]}]}],["$","div",null,{"className":"w-full border-b border-slate-200 dark:border-slate-800 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900/60 dark:to-slate-950","children":["$","div",null,{"className":"w-full max-w-6xl mx-auto px-4 sm:px-8 py-14","children":[["$","h1",null,{"className":"text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter text-slate-950 dark:text-white leading-[1.05] max-w-3xl","children":"Day 5 : Encrypted Realm Initialization (Core + Data Layer Only)"}],["$","p",null,{"className":"mt-6 text-xl text-slate-500 dark:text-slate-400 leading-relaxed max-w-2xl font-normal","children":"Set up encrypted Realm with secure key management and schema definitions to ensure privacy-first local storage for the app's core data layer."}],["$","div",null,{"className":"mt-8 flex flex-wrap items-center gap-2 text-sm","children":[["$","span",null,{"className":"font-semibold text-slate-600 dark:text-slate-300","children":"2026-02-24"}],["$","span",null,{"className":"w-1 h-1 rounded-full bg-slate-400 dark:bg-slate-500 inline-block"}],["$","span",null,{"className":"font-semibold text-amber-600 dark:text-amber-400","children":"Subrata Kumar Das"}],["$","span",null,{"className":"w-1 h-1 rounded-full bg-slate-400 dark:bg-slate-500 inline-block"}],["$","span",null,{"className":"px-2.5 py-0.5 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full font-bold text-xs uppercase tracking-tight","children":"Complete"}]]}],["$","p",null,{"className":"hidden md:block mt-8 text-[13px] leading-relaxed text-amber-700/80 dark:text-amber-400/70 font-medium italic border-l-2 border-amber-300 dark:border-amber-700 pl-4 max-w-sm","children":"\"Consistent small steps lead to massive long-term results. Keep pushing.\""}]]}]}],"$Lf","$L10"]}]
-11:Te6f2,<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5"><img src="/images/day5_1.png" class="rounded-md shadow-sm mx-auto block" alt="https180days.subraatakumar.com.png"></p>
-<h2 id="51-introduction" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">5.1 Introduction</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">In the previous session, we prepared the foundation:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Created the React Native project</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Structured the layered architecture</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Understood Repository and Service responsibilities</li>
+a:I[68027,[],"default"]
+:HL["/_next/static/chunks/85e2c1094c0e9b2f.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","style"]
+2:T19f5,
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+
+          body {
+            background: #fafaf7;
+            font-family: 'Caveat', cursive;
+            color: #1a1a2e;
+          }
+
+          /* ── Nav ── */
+          .sk-header {
+            background: #fff;
+            border-bottom: 2.5px solid #1a1a2e;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+          }
+          .sk-header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .sk-logo {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.55rem;
+            color: #1a1a2e;
+            text-decoration: none;
+            letter-spacing: 0.01em;
+          }
+          .sk-nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+          }
+          .sk-nav-links a {
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+            padding-bottom: 2px;
+          }
+          .sk-nav-links a:hover {
+            text-decoration: underline wavy #2563eb 2px;
+            text-underline-offset: 4px;
+          }
+          .sk-nav-mobile {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 14px;
+          }
+          .sk-nav-mobile ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+          }
+          .sk-nav-mobile a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+          }
+
+          /* ── Footer ── */
+          .sk-footer {
+            border-top: 2.5px solid #1a1a2e;
+            background: #fff;
+            padding: 24px;
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+          }
+
+          /* ── Shared section ── */
+          .sk-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+          }
+          .sk-page-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            margin-bottom: 8px;
+            line-height: 1.1;
+          }
+          .sk-section-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.9rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+          .sk-section-heading::after {
+            content: '';
+            flex: 1;
+            border-top: 2px dashed #9ca3af;
+          }
+
+          /* ── Squiggle divider ── */
+          .sk-squiggle {
+            width: 100%;
+            height: 8px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 4 Q5 0 10 4 Q15 8 20 4 Q25 0 30 4 Q35 8 40 4' stroke='%239ca3af' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") repeat-x center;
+            opacity: 0.55;
+            margin: 36px 0;
+          }
+
+          /* ── Sketch button ── */
+          .sk-btn {
+            display: inline-block;
+            padding: 10px 26px;
+            background: #2563eb;
+            color: #fff;
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 3px 3px 0 #1a1a2e;
+            transition: transform 0.1s, box-shadow 0.1s;
+          }
+          .sk-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 #1a1a2e;
+          }
+          .sk-btn-ghost {
+            background: transparent;
+            color: #1a1a2e;
+            box-shadow: 3px 3px 0 #9ca3af;
+          }
+          .sk-btn-ghost:hover {
+            box-shadow: 5px 5px 0 #9ca3af;
+          }
+
+          /* ── Tag chip ── */
+          .sk-tag {
+            display: inline-block;
+            padding: 3px 13px;
+            border: 2px solid #1a1a2e;
+            border-radius: 2px;
+            font-size: 1rem;
+            font-weight: 600;
+            background: #fff;
+            margin: 3px;
+          }
+          .sk-tag.active {
+            background: #2563eb;
+            color: #fff;
+          }
+
+          /* ── Card ── */
+          .sk-card {
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 5px 5px 0 #1a1a2e;
+            padding: 24px;
+            transition: transform 0.15s, box-shadow 0.15s;
+          }
+          .sk-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0 #1a1a2e;
+          }
+
+          /* ── Stat card ── */
+          .sk-stat {
+            flex: 1;
+            min-width: 130px;
+            text-align: center;
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 4px 4px 0 #1a1a2e;
+            padding: 20px 12px;
+          }
+          .sk-stat .num {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            color: #2563eb;
+            line-height: 1;
+          }
+          .sk-stat .lbl {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 4px;
+          }
+
+          /* ── Image placeholder ── */
+          .sk-img {
+            width: 100%;
+            height: 160px;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            background: #f3f4f6;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 16px;
+          }
+          .sk-img::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+              linear-gradient(to bottom right, transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px)),
+              linear-gradient(to bottom left,  transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px));
+          }
+
+          @media (max-width: 640px) {
+            .sk-nav-links { display: none; }
+            .sk-nav-mobile { display: block; }
+            .sk-page-heading { font-size: 2.2rem; }
+          }
+        0:{"P":null,"b":"qWGB019utwya5Bcz8uHGu","c":["","180days","day-5",""],"q":"","i":false,"f":[[["",{"children":["180days",{"children":[["slug","day-5","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/85e2c1094c0e9b2f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+b:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
+c:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+d:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+11:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+14:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"ViewportBoundary"]
+16:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"MetadataBoundary"]
+3:["$","header",null,{"className":"sk-header","children":[["$","div",null,{"className":"sk-header-inner","children":[["$","$Lb",null,{"href":"/","className":"sk-logo","children":"SKD_"}],["$","nav",null,{"aria-label":"Primary","children":["$","ul",null,{"className":"sk-nav-links","children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/projects","children":"Projects"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]]}],["$","div",null,{"className":"sk-nav-mobile","children":["$","nav",null,{"aria-label":"Mobile","children":["$","ul",null,{"children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/projects","children":"Projects"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]}]]}]
+4:["$","main",null,{"style":{"width":"100%"},"children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
+5:["$","footer",null,{"className":"sk-footer","children":["© ",2026," Subrata Kumar Das. All rights reserved. ·"," ",["$","$Lb",null,{"href":"/for-ai","children":"For AI/Crawlers"}]]}]
+e:T267d,
+        /* ── Reset sketchy globals for this subtree ── */
+        body:has(#days180-root) .sk-header,
+        body:has(#days180-root) .sk-footer {
+          display: none !important;
+        }
+
+        #days180-root,
+        #days180-root * {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+          box-sizing: border-box;
+        }
+
+        /* ── 180 Days design tokens ── */
+        #days180-root {
+          --amber: #f59e0b;
+          --amber-light: #fef3c7;
+          --slate-950: #020617;
+          --slate-900: #0f172a;
+          --slate-800: #1e293b;
+          --slate-700: #334155;
+          --slate-500: #64748b;
+          --slate-400: #94a3b8;
+          --slate-300: #cbd5e1;
+          --slate-200: #e2e8f0;
+          --slate-100: #f1f5f9;
+          --slate-50:  #f8fafc;
+          --white: #ffffff;
+
+          min-height: 100vh;
+          background: var(--white);
+          color: var(--slate-900);
+        }
+
+        /* ── Header ── */
+        .d180-header {
+          position: sticky;
+          top: 0;
+          z-index: 100;
+          background: rgba(255,255,255,0.92);
+          backdrop-filter: blur(16px);
+          border-bottom: 1px solid var(--slate-200);
+        }
+        .d180-header-inner {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 32px;
+          height: 64px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .d180-logo-badge {
+          width: 32px;
+          height: 32px;
+          background: var(--amber);
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 900;
+          font-size: 13px;
+          color: var(--slate-900);
+          box-shadow: 0 4px 12px rgba(245,158,11,0.25);
+        }
+        .d180-logo-label {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.18em;
+          color: var(--slate-500);
+        }
+        .d180-back-btn {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          padding: 8px 16px;
+          background: var(--slate-100);
+          border-radius: 8px;
+          color: var(--slate-900);
+          text-decoration: none;
+          transition: background 0.15s;
+        }
+        .d180-back-btn:hover { background: var(--slate-200); }
+
+        /* ── Hero ── */
+        .d180-hero {
+          border-bottom: 1px solid var(--slate-200);
+          background: linear-gradient(to bottom, var(--slate-50), var(--white));
+        }
+        .d180-hero-inner {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 64px 32px;
+        }
+        .d180-hero h1 {
+          font-size: clamp(2.8rem, 6vw, 4.5rem);
+          font-weight: 900;
+          letter-spacing: -0.03em;
+          line-height: 1.0;
+          color: var(--slate-950);
+          margin: 0 0 12px;
+        }
+        .d180-hero h1 span { color: var(--amber); }
+        .d180-meta {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          margin-bottom: 20px;
+        }
+        .d180-meta-label {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+          color: var(--slate-400);
+        }
+        .d180-meta-dot {
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background: var(--slate-300);
+          display: inline-block;
+        }
+        .d180-meta-series {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+          color: var(--amber);
+        }
+        .d180-hero p {
+          font-size: 1.15rem;
+          color: var(--slate-500);
+          line-height: 1.7;
+          max-width: 500px;
+          margin: 0;
+        }
+
+        /* ── Progress bar ── */
+        .d180-progress-wrap {
+          margin-top: 40px;
+          max-width: 320px;
+        }
+        .d180-progress-labels {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 8px;
+        }
+        .d180-progress-labels span {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.15em;
+          color: var(--slate-400);
+        }
+        .d180-progress-labels span:last-child { color: var(--amber); }
+        .d180-progress-track {
+          width: 100%;
+          height: 8px;
+          background: var(--slate-200);
+          border-radius: 999px;
+          overflow: hidden;
+        }
+        .d180-progress-fill {
+          height: 100%;
+          background: var(--amber);
+          border-radius: 999px;
+          transition: width 0.7s ease;
+        }
+        .d180-progress-pct {
+          margin-top: 6px;
+          font-size: 11px;
+          color: var(--slate-400);
+          font-weight: 500;
+        }
+
+        /* ── Main content ── */
+        .d180-main {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 48px 32px 80px;
+        }
+
+        /* ── Stats row ── */
+        .d180-stats {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 16px;
+          margin-bottom: 48px;
+        }
+        .d180-stat-card {
+          background: var(--slate-50);
+          border: 1px solid var(--slate-200);
+          border-radius: 16px;
+          padding: 20px;
+        }
+        .d180-stat-num {
+          font-size: clamp(1.6rem, 3vw, 2rem);
+          font-weight: 900;
+          color: var(--slate-950);
+          letter-spacing: -0.02em;
+        }
+        .d180-stat-lbl {
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.15em;
+          color: var(--slate-400);
+          margin-top: 4px;
+        }
+
+        /* ── Entry list ── */
+        .d180-entry-list {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+        .d180-entry {
+          display: flex;
+          align-items: flex-start;
+          gap: 20px;
+          padding: 20px;
+          border-radius: 16px;
+          border: 1px solid var(--slate-200);
+          background: var(--white);
+          text-decoration: none;
+          color: inherit;
+          transition: border-color 0.2s, background 0.2s, transform 0.15s;
+        }
+        .d180-entry:hover {
+          border-color: var(--amber);
+          background: var(--slate-50);
+          transform: translateX(3px);
+        }
+        .d180-day-badge {
+          flex-shrink: 0;
+          width: 48px;
+          height: 48px;
+          border-radius: 12px;
+          background: var(--slate-100);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          color: var(--slate-500);
+          transition: background 0.2s, color 0.2s;
+        }
+        .d180-entry:hover .d180-day-badge {
+          background: var(--amber);
+          color: var(--slate-900);
+        }
+        .d180-entry-body { flex: 1; min-width: 0; }
+        .d180-entry-title {
+          font-size: 1rem;
+          font-weight: 700;
+          color: var(--slate-900);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          transition: color 0.2s;
+        }
+        .d180-entry:hover .d180-entry-title { color: var(--amber); }
+        .d180-entry-desc {
+          font-size: 0.875rem;
+          color: var(--slate-500);
+          margin-top: 4px;
+          line-height: 1.5;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+        }
+        .d180-entry-meta {
+          flex-shrink: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 8px;
+        }
+        .d180-entry-date {
+          font-size: 11px;
+          font-weight: 500;
+          color: var(--slate-400);
+        }
+        .d180-entry-arrow {
+          font-size: 14px;
+          color: var(--slate-300);
+          transition: color 0.2s;
+        }
+        .d180-entry:hover .d180-entry-arrow { color: var(--amber); }
+
+        /* ── Footer ── */
+        .d180-footer {
+          border-top: 1px solid var(--slate-200);
+          background: var(--white);
+        }
+        .d180-footer-inner {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 20px 32px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+        .d180-footer-copy {
+          font-size: 11px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.12em;
+          color: var(--slate-400);
+        }
+        .d180-footer-home {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          padding: 8px 12px;
+          border-radius: 8px;
+          background: var(--slate-100);
+          color: var(--slate-900);
+          text-decoration: none;
+        }
+        .d180-footer-home:hover {
+          background: var(--amber-light);
+          color: #b45309;
+        }
+
+        @media (max-width: 640px) {
+          .d180-header-inner { padding: 0 16px; }
+          .d180-hero-inner { padding: 40px 16px; }
+          .d180-main { padding: 32px 16px 60px; }
+          .d180-footer-inner { padding: 16px; }
+          .d180-stats { grid-template-columns: 1fr; }
+        }
+      6:["$","$1","c",{"children":[null,["$","div",null,{"style":{"all":"revert"},"children":[["$","style",null,{"children":"$e"}],"$Lf"]}]]}]
+7:["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+9:["$","$1","h",{"children":[null,["$","$L14",null,{"children":"$L15"}],["$","div",null,{"hidden":true,"children":["$","$L16",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L17"}]}]}],null]}]
+f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"className":"d180-footer","children":["$","div",null,{"className":"d180-footer-inner","children":[["$","p",null,{"className":"d180-footer-copy","children":"Subrata Kumar Das • 180 Days Mentoring Journey"}],["$","$Lb",null,{"href":"/","className":"d180-footer-home","children":"Main Home"}]]}]}]]}]
+18:T208a,
+        #days180-root .d180-article-page {
+          min-height: 100vh;
+          background: #fff;
+          color: #0f172a;
+        }
+        #days180-root .d180-article-header {
+          position: sticky;
+          top: 0;
+          z-index: 80;
+          background: rgba(255,255,255,0.92);
+          backdrop-filter: blur(16px);
+          border-bottom: 1px solid #e2e8f0;
+        }
+        #days180-root .d180-article-header-inner {
+          width: 100%;
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 32px;
+          height: 64px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        }
+        #days180-root .d180-crumb {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: .08em;
+          color: #64748b;
+          text-decoration: none;
+          background: #f1f5f9;
+          border-radius: 10px;
+          padding: 10px 14px;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+        }
+        #days180-root .d180-crumb-series {
+          transition: color .15s ease;
+        }
+        #days180-root .d180-crumb:hover .d180-crumb-series {
+          color: #d97706;
+        }
+        #days180-root .d180-crumb strong { color: #0f172a; }
+        #days180-root .d180-pill {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          padding: 8px 12px;
+          background: #f8fafc;
+          border: 1px solid #e2e8f0;
+          border-radius: 10px;
+        }
+        #days180-root .d180-pill-track {
+          width: 90px;
+          height: 8px;
+          background: #cbd5e1;
+          border-radius: 999px;
+          overflow: hidden;
+        }
+        #days180-root .d180-pill-fill {
+          height: 100%;
+          background: #f59e0b;
+          border-radius: 999px;
+        }
+        #days180-root .d180-pill b {
+          color: #d97706;
+          font-size: 11px;
+          letter-spacing: .02em;
+        }
+        #days180-root .d180-content-wrap {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 32px;
+        }
+        #days180-root .d180-meta-line {
+          margin-top: 8px;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 8px;
+          color: #64748b;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        #days180-root .d180-meta-line .dot {
+          width: 4px;
+          height: 4px;
+          border-radius: 999px;
+          background: #94a3b8;
+          display: inline-block;
+        }
+        #days180-root .d180-post-content {
+          max-width: 780px;
+        }
+        #days180-root .d180-post-content img {
+          max-width: 100%;
+          height: auto;
+        }
+        #days180-root .d180-post-content pre code {
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+        }
+        #days180-root .d180-md-p {
+          font-size: 17px;
+          line-height: 1.85;
+          color: #334155;
+          margin: 20px 0;
+        }
+        #days180-root .d180-md-h1 {
+          font-size: clamp(2rem, 4vw, 2.4rem);
+          font-weight: 900;
+          margin: 64px 0 24px;
+          padding-bottom: 12px;
+          border-bottom: 1px solid #e2e8f0;
+          line-height: 1.2;
+          color: #020617;
+        }
+        #days180-root .d180-md-h2 {
+          font-size: clamp(1.6rem, 3vw, 1.9rem);
+          font-weight: 900;
+          margin: 56px 0 18px;
+          line-height: 1.25;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-h3 {
+          font-size: clamp(1.3rem, 2.4vw, 1.5rem);
+          font-weight: 800;
+          margin: 40px 0 14px;
+          line-height: 1.3;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-h4,
+        #days180-root .d180-md-h5,
+        #days180-root .d180-md-h6 {
+          font-size: 1.1rem;
+          font-weight: 700;
+          margin: 28px 0 10px;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-ul {
+          list-style: disc;
+          padding-left: 24px;
+          margin: 18px 0;
+        }
+        #days180-root .d180-md-ol {
+          list-style: decimal;
+          padding-left: 28px;
+          margin: 18px 0;
+        }
+        #days180-root .d180-md-li {
+          margin: 8px 0;
+          line-height: 1.75;
+          color: #334155;
+        }
+        #days180-root .d180-md-blockquote {
+          margin: 26px 0;
+          padding: 14px 16px;
+          border-left: 2px solid #e2e8f0;
+          border-radius: 8px;
+          background: #f8fafc;
+          font-style: italic;
+          color: #334155;
+        }
+        #days180-root .d180-md-link {
+          color: #d97706;
+          text-decoration: none;
+          font-weight: 600;
+        }
+        #days180-root .d180-md-link:hover {
+          text-decoration: underline;
+        }
+        #days180-root .d180-md-table-wrap {
+          overflow: auto;
+          border: 1px solid #e2e8f0;
+          border-radius: 8px;
+          margin: 24px 0;
+        }
+        #days180-root .d180-md-table {
+          min-width: 100%;
+          border-collapse: collapse;
+        }
+        #days180-root .d180-md-th {
+          text-align: left;
+          font-size: 13px;
+          font-weight: 700;
+          color: #334155;
+          background: #f8fafc;
+          padding: 10px;
+          border-bottom: 1px solid #e2e8f0;
+        }
+        #days180-root .d180-md-td {
+          font-size: 14px;
+          color: #334155;
+          padding: 10px;
+          border-bottom: 1px solid #f1f5f9;
+        }
+        #days180-root .d180-code-lang {
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: .06em;
+          color: #475569;
+          background: #f1f5f9;
+          padding: 4px 10px;
+          border-radius: 6px;
+        }
+        #days180-root .d180-copy-btn {
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: .06em;
+          color: #0f172a;
+          background: #fbbf24;
+          border: 0;
+          border-radius: 6px;
+          padding: 4px 10px;
+          cursor: pointer;
+        }
+        #days180-root .d180-code-pre {
+          overflow: auto;
+          border-radius: 16px;
+          background: #0f172a;
+          color: #f8fafc;
+          padding: 18px 16px;
+        }
+        #days180-root .d180-bottom-nav {
+          margin-top: 64px;
+          padding: 24px 0 60px;
+          border-top: 1px solid #e2e8f0;
+          display: flex;
+          gap: 12px;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        #days180-root .d180-nav-link {
+          border-radius: 12px;
+          border: 1px solid #e2e8f0;
+          background: #f8fafc;
+          color: #0f172a;
+          text-decoration: none;
+          padding: 12px 16px;
+          min-width: 180px;
+        }
+        #days180-root .d180-nav-link strong {
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: .08em;
+          color: #64748b;
+          display: block;
+          margin-bottom: 4px;
+        }
+        #days180-root .d180-nav-link.next {
+          text-align: right;
+          background: #0f172a;
+          border-color: #0f172a;
+          color: #fff;
+        }
+        #days180-root .d180-nav-link.next strong {
+          color: rgba(255,255,255,0.72);
+        }
+        #days180-root .d180-edit-link {
+          display: inline-block;
+          margin-top: 16px;
+          padding: 10px 14px;
+          border: 1px solid #e2e8f0;
+          border-radius: 10px;
+          background: #f8fafc;
+          color: #334155;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        #days180-root .d180-edit-link:hover {
+          border-color: #f59e0b;
+        }
+        @media (max-width: 640px) {
+          #days180-root .d180-article-header-inner,
+          #days180-root .d180-content-wrap {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+          #days180-root .d180-pill {
+            display: none;
+          }
+        }
+      10:["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$18"}],"$L19","$L1a","$L1b","$L1c"]}]
+19:["$","header",null,{"className":"d180-article-header","children":["$","div",null,{"className":"d180-article-header-inner","children":[["$","div",null,{"className":"flex items-center gap-3 shrink-0","children":[["$","$Lb",null,{"href":"/","aria-label":"Go to main home page","className":"w-8 h-8 bg-amber-400 rounded-lg flex items-center justify-center text-slate-900 shadow-lg shadow-amber-400/20","children":["$","span",null,{"className":"font-black text-sm","children":"SK"}]}],["$","nav",null,{"className":"hidden md:flex items-center gap-3","children":[["$","$Lb",null,{"href":"/180days","className":"d180-crumb","children":[["$","span",null,{"className":"d180-crumb-series","children":"180 Days"}]," ",["$","span",null,{"children":"/"}]," ",["$","strong",null,{"children":["Day ","5"]}]]}],["$","div",null,{"className":"d180-pill","children":[["$","div",null,{"className":"d180-pill-track","children":["$","div",null,{"className":"d180-pill-fill","style":{"width":"3%"}}]}],["$","b",null,{"children":[3,"%"]}]]}]]}]]}],["$","div",null,{"className":"flex items-center gap-4","children":["$","$Lb",null,{"href":"/180days","className":"d180-crumb","children":"← All Days"}]}]]}]}]
+1a:["$","div",null,{"className":"d180-hero","children":["$","div",null,{"className":"d180-hero-inner d180-content-wrap","style":{"paddingTop":56,"paddingBottom":56},"children":[["$","h1",null,{"style":{"maxWidth":820},"children":"Day 5 : Encrypted Realm Initialization (Core + Data Layer Only)"}],["$","p",null,{"style":{"marginTop":14,"maxWidth":760},"children":"Set up encrypted Realm with secure key management and schema definitions to ensure privacy-first local storage for the app's core data layer."}],["$","div",null,{"className":"d180-meta-line","children":[["$","span",null,{"children":"2026-02-24"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#d97706"},"children":"Subrata Kumar Das"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#15803d","fontSize":11,"fontWeight":800,"textTransform":"uppercase","letterSpacing":".08em"},"children":"Complete"}]]}],["$","p",null,{"style":{"marginTop":16,"maxWidth":500,"fontSize":13,"lineHeight":1.7,"color":"#92400e","borderLeft":"2px solid #fcd34d","paddingLeft":10,"fontStyle":"italic"},"children":"\"Consistent small steps lead to massive long-term results. Keep pushing.\""}]]}]}]
+1d:T843e,<p class="d180-md-p"><img src="/images/day5_system_design.jpg" class="rounded-md shadow-sm mx-auto block" alt="https180days.subraatakumar.com.png"></p>
+<h2 id="51-introduction" class="d180-md-h2">5.1 Introduction</h2>
+<p class="d180-md-p">In the previous session, we prepared the foundation:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Created the React Native project</li>
+<li class="d180-md-li">Structured the layered architecture</li>
+<li class="d180-md-li">Understood Repository and Service responsibilities</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Today, we move from structure to infrastructure.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We will implement <strong>Encrypted Realm Initialization</strong>.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Important:</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We are still not touching UI logic.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We are not implementing business rules.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We are not building features.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Today is strictly about the <strong>Core Layer</strong> and the <strong>Data Layer</strong> .</p>
+<p class="d180-md-p">Today, we move from structure to infrastructure.</p>
+<p class="d180-md-p">We will implement <strong>Encrypted Realm Initialization</strong>.</p>
+<p class="d180-md-p">Important:</p>
+<p class="d180-md-p">We are still not touching UI logic.</p>
+<p class="d180-md-p">We are not implementing business rules.</p>
+<p class="d180-md-p">We are not building features.</p>
+<p class="d180-md-p">Today is strictly about the <strong>Core Layer</strong> and the <strong>Data Layer</strong> .</p>
 <hr>
-<h2 id="52-why-encryption-from-day-one" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">5.2 Why Encryption From Day One?</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">From the product definition , this application is:</p>
-<blockquote class="border-l-2 border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/30 p-4 rounded-lg text-slate-700 dark:text-slate-300 italic">
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">“Your private digital life. Stored locally. Owned by you.”</p>
+<h2 id="52-why-encryption-from-day-one" class="d180-md-h2">5.2 Why Encryption From Day One?</h2>
+<p class="d180-md-p">From the product definition , this application is:</p>
+<blockquote class="d180-md-blockquote">
+<p class="d180-md-p">“Your private digital life. Stored locally. Owned by you.”</p>
 </blockquote>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Privacy is not an optional enhancement.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">It is the core value proposition.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">If we delay encryption:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">We risk accidental plaintext storage.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">We introduce refactor risk later.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">We compromise architectural integrity.</li>
+<p class="d180-md-p">Privacy is not an optional enhancement.</p>
+<p class="d180-md-p">It is the core value proposition.</p>
+<p class="d180-md-p">If we delay encryption:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">We risk accidental plaintext storage.</li>
+<li class="d180-md-li">We introduce refactor risk later.</li>
+<li class="d180-md-li">We compromise architectural integrity.</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Therefore, encryption is implemented before any feature logic.</p>
+<p class="d180-md-p">Therefore, encryption is implemented before any feature logic.</p>
 <hr>
-<h2 id="53-todays-scope" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">5.3 Today’s Scope</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We will implement:</p>
-<ol class="list-decimal pl-7 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5 pl-1">Realm installation</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5 pl-1">Entry schema definition</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5 pl-1">Secure encryption key generation</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5 pl-1">Secure key storage (Keychain / Keystore)</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5 pl-1">Encrypted Realm configuration</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5 pl-1">Centralized initialization inside <code>core/storage/</code></li>
+<h2 id="53-todays-scope" class="d180-md-h2">5.3 Today’s Scope</h2>
+<p class="d180-md-p">We will implement:</p>
+<ol class="d180-md-ol">
+<li class="d180-md-li">Realm installation</li>
+<li class="d180-md-li">Entry schema definition</li>
+<li class="d180-md-li">Secure encryption key generation</li>
+<li class="d180-md-li">Secure key storage (Keychain / Keystore)</li>
+<li class="d180-md-li">Encrypted Realm configuration</li>
+<li class="d180-md-li">Centralized initialization inside <code>core/storage/</code></li>
 </ol>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We will NOT:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Build repository yet</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Build service logic</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Build UI features</li>
+<p class="d180-md-p">We will NOT:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Build repository yet</li>
+<li class="d180-md-li">Build service logic</li>
+<li class="d180-md-li">Build UI features</li>
 </ul>
 <hr>
-<h2 id="54-install-realm" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">5.4 Install Realm</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Run:</p>
+<h2 id="54-install-realm" class="d180-md-h2">5.4 Install Realm</h2>
+<p class="d180-md-p">Run:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">BASH</span>
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <span class="d180-code-lang">BASH</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-bash">npm install realm
+        <pre class="d180-code-pre line-numbers"><code class="language-bash">npm install realm
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">For iOS:</p>
+<p class="d180-md-p">For iOS:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">BASH</span>
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <span class="d180-code-lang">BASH</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-bash">cd ios &#x26;&#x26; pod install &#x26;&#x26; cd ..
+        <pre class="d180-code-pre line-numbers"><code class="language-bash">cd ios &#x26;&#x26; pod install &#x26;&#x26; cd ..
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Ensure the app still builds successfully.</p>
+<p class="d180-md-p">Ensure the app still builds successfully.</p>
 <hr>
-<h2 id="55-define-realm-schema" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">5.5 Define Realm Schema</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Inside:</p>
+<h2 id="55-define-realm-schema" class="d180-md-h2">5.5 Define Realm Schema</h2>
+<p class="d180-md-p">Inside:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
           
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>src/core/storage/realmSchemas.ts
+        <pre class="d180-code-pre line-numbers"><code>src/core/storage/realmSchemas.ts
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Create a basic Entry schema:</p>
+<p class="d180-md-p">Create a basic Entry schema:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">TSX</span>
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <span class="d180-code-lang">TSX</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-tsx">export const EntrySchema = {
+        <pre class="d180-code-pre line-numbers"><code class="language-tsx">export const EntrySchema = {
   name: 'Entry',
   primaryKey: 'id',
   properties: {
@@ -116,36 +972,36 @@ b:["$","$Ld",null,{"children":["$","$7",null,{"name":"Next.Metadata","children":
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This is raw structure.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">No validation here.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">No business rules here.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Schema belongs to Data Layer only.</p>
+<p class="d180-md-p">This is raw structure.</p>
+<p class="d180-md-p">No validation here.</p>
+<p class="d180-md-p">No business rules here.</p>
+<p class="d180-md-p">Schema belongs to Data Layer only.</p>
 <hr>
-<h2 id="56-encryption-key-generation" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">5.6 Encryption Key Generation</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Inside:</p>
+<h2 id="56-encryption-key-generation" class="d180-md-h2">5.6 Encryption Key Generation</h2>
+<p class="d180-md-p">Inside:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
           
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>src/core/security/encryptionKey.ts
+        <pre class="d180-code-pre line-numbers"><code>src/core/security/encryptionKey.ts
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Create a function that:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Generates a 64-byte random key</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Returns Uint8Array</li>
+<p class="d180-md-p">Create a function that:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Generates a 64-byte random key</li>
+<li class="d180-md-li">Returns Uint8Array</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Example concept:</p>
+<p class="d180-md-p">Example concept:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">TSX</span>
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <span class="d180-code-lang">TSX</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-tsx">import 'react-native-get-random-values';
+        <pre class="d180-code-pre line-numbers"><code class="language-tsx">import 'react-native-get-random-values';
 
 export function generateEncryptionKey(): Uint8Array {
   const key = new Uint8Array(64);
@@ -155,144 +1011,144 @@ export function generateEncryptionKey(): Uint8Array {
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This key must never be hardcoded.</p>
+<p class="d180-md-p">This key must never be hardcoded.</p>
 <hr>
-<h2 id="57-secure-key-storage" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">5.7 Secure Key Storage</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Inside:</p>
+<h2 id="57-secure-key-storage" class="d180-md-h2">5.7 Secure Key Storage</h2>
+<p class="d180-md-p">Inside:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
           
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>src/core/security/secureStorage.ts
+        <pre class="d180-code-pre line-numbers"><code>src/core/security/secureStorage.ts
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Use a secure storage library such as:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">react-native-keychain</li>
+<p class="d180-md-p">Use a secure storage library such as:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">react-native-keychain</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Install:</p>
+<p class="d180-md-p">Install:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">BASH</span>
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <span class="d180-code-lang">BASH</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-bash">npm install react-native-keychain
+        <pre class="d180-code-pre line-numbers"><code class="language-bash">npm install react-native-keychain
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Store the encryption key securely on first launch.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Important rule:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Never store encryption key in AsyncStorage.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Never log key in production.</li>
+<p class="d180-md-p">Store the encryption key securely on first launch.</p>
+<p class="d180-md-p">Important rule:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Never store encryption key in AsyncStorage.</li>
+<li class="d180-md-li">Never log key in production.</li>
 </ul>
 <hr>
-<h2 id="58-encrypted-realm-initialization" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">5.8 Encrypted Realm Initialization</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Inside:</p>
+<h2 id="58-encrypted-realm-initialization" class="d180-md-h2">5.8 Encrypted Realm Initialization</h2>
+<p class="d180-md-p">Inside:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
           
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>src/core/storage/realm.ts
+        <pre class="d180-code-pre line-numbers"><code>src/core/storage/realm.ts
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Implement:</p>
-<ol class="list-decimal pl-7 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5 pl-1">Retrieve encryption key from secure storage.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5 pl-1">If it doesn’t exist:
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Generate new key</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5 pl-1">Store it securely</li>
+<p class="d180-md-p">Implement:</p>
+<ol class="d180-md-ol">
+<li class="d180-md-li">Retrieve encryption key from secure storage.</li>
+<li class="d180-md-li">If it doesn’t exist:
+<ul class="d180-md-ul">
+<li class="d180-md-li">Generate new key</li>
+<li class="d180-md-li">Store it securely</li>
 </ul>
 </li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5 pl-1">Initialize Realm using encryption key.</li>
+<li class="d180-md-li">Initialize Realm using encryption key.</li>
 </ol>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Concept:</p>
+<p class="d180-md-p">Concept:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">TSX</span>
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <span class="d180-code-lang">TSX</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-tsx">const realm = await Realm.open({
+        <pre class="d180-code-pre line-numbers"><code class="language-tsx">const realm = await Realm.open({
   schema: [EntrySchema],
   encryptionKey: key,
 });
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This ensures the database is encrypted from day one.</p>
+<p class="d180-md-p">This ensures the database is encrypted from day one.</p>
 <hr>
-<h2 id="59-test-initialization" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">5.9 Test Initialization</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Temporarily inside <code>App.tsx</code>:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Call initialization function inside <code>useEffect</code></li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Log success message</li>
+<h2 id="59-test-initialization" class="d180-md-h2">5.9 Test Initialization</h2>
+<p class="d180-md-p">Temporarily inside <code>App.tsx</code>:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Call initialization function inside <code>useEffect</code></li>
+<li class="d180-md-li">Log success message</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">You are not creating entries yet.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Just verify:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Realm opens successfully</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Encryption key persists across reload</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">App restarts without crashing</li>
+<p class="d180-md-p">You are not creating entries yet.</p>
+<p class="d180-md-p">Just verify:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Realm opens successfully</li>
+<li class="d180-md-li">Encryption key persists across reload</li>
+<li class="d180-md-li">App restarts without crashing</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">If it crashes after restart, your key handling is incorrect.</p>
+<p class="d180-md-p">If it crashes after restart, your key handling is incorrect.</p>
 <hr>
-<h2 id="510-architectural-discipline" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">5.10 Architectural Discipline</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Notice what we did NOT do:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No repository</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No service</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No UI data rendering</li>
+<h2 id="510-architectural-discipline" class="d180-md-h2">5.10 Architectural Discipline</h2>
+<p class="d180-md-p">Notice what we did NOT do:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">No repository</li>
+<li class="d180-md-li">No service</li>
+<li class="d180-md-li">No UI data rendering</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We are respecting the layered model .</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Today was about:</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Core → Security</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Data → Storage</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Nothing else.</p>
+<p class="d180-md-p">We are respecting the layered model .</p>
+<p class="d180-md-p">Today was about:</p>
+<p class="d180-md-p">Core → Security</p>
+<p class="d180-md-p">Data → Storage</p>
+<p class="d180-md-p">Nothing else.</p>
 <hr>
-<h2 id="511-what-this-phase-clarifies" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">5.11 What This Phase Clarifies</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">By the end of Day 5, the architecture becomes more concrete:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Realm is now encrypted from initialization.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Encryption requires deliberate key management.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">The Core layer owns security infrastructure.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">The Data layer defines structural schemas.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Business logic has not yet been introduced.</li>
+<h2 id="511-what-this-phase-clarifies" class="d180-md-h2">5.11 What This Phase Clarifies</h2>
+<p class="d180-md-p">By the end of Day 5, the architecture becomes more concrete:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Realm is now encrypted from initialization.</li>
+<li class="d180-md-li">Encryption requires deliberate key management.</li>
+<li class="d180-md-li">The Core layer owns security infrastructure.</li>
+<li class="d180-md-li">The Data layer defines structural schemas.</li>
+<li class="d180-md-li">Business logic has not yet been introduced.</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This stage reinforces an important distinction:</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Encryption protects stored data.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Business rules govern how data is used.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Today was about protecting data at rest — not about feature implementation.</p>
+<p class="d180-md-p">This stage reinforces an important distinction:</p>
+<p class="d180-md-p">Encryption protects stored data.</p>
+<p class="d180-md-p">Business rules govern how data is used.</p>
+<p class="d180-md-p">Today was about protecting data at rest — not about feature implementation.</p>
 <hr>
-<h2 id="512-complete-minimal-production-ready-files-for-day-5" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5"><strong>5.12 complete minimal production-ready files</strong> for Day 5.</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">These strictly implement:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Encrypted Realm initialization</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Secure key generation</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Secure key storage</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Centralized initialization</li>
+<h2 id="512-complete-minimal-production-ready-files-for-day-5" class="d180-md-h2"><strong>5.12 complete minimal production-ready files</strong> for Day 5.</h2>
+<p class="d180-md-p">These strictly implement:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Encrypted Realm initialization</li>
+<li class="d180-md-li">Secure key generation</li>
+<li class="d180-md-li">Secure key storage</li>
+<li class="d180-md-li">Centralized initialization</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">No repository.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">No service.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">No UI logic.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Only Core + Data layer.</p>
+<p class="d180-md-p">No repository.</p>
+<p class="d180-md-p">No service.</p>
+<p class="d180-md-p">No UI logic.</p>
+<p class="d180-md-p">Only Core + Data layer.</p>
 <hr>
-<h1 id="-1-srccorestoragerealmschemasts" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">📁 1️⃣ <code>src/core/storage/realmSchemas.ts</code></h1>
+<h1 id="-1-srccorestoragerealmschemasts" class="d180-md-h1">📁 1️⃣ <code>src/core/storage/realmSchemas.ts</code></h1>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">TSX</span>
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <span class="d180-code-lang">TSX</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-tsx">// src/core/storage/realmSchemas.ts
+        <pre class="d180-code-pre line-numbers"><code class="language-tsx">// src/core/storage/realmSchemas.ts
 
 export const EntrySchema = {
   name: 'Entry',
@@ -310,14 +1166,14 @@ export const schemas = [EntrySchema];
       </div>
     
 <hr>
-<h1 id="-2-srccoresecurityencryptionkeyts" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">📁 2️⃣ <code>src/core/security/encryptionKey.ts</code></h1>
+<h1 id="-2-srccoresecurityencryptionkeyts" class="d180-md-h1">📁 2️⃣ <code>src/core/security/encryptionKey.ts</code></h1>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">TSX</span>
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <span class="d180-code-lang">TSX</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-tsx">// src/core/security/encryptionKey.ts
+        <pre class="d180-code-pre line-numbers"><code class="language-tsx">// src/core/security/encryptionKey.ts
 
 import 'react-native-get-random-values';
 
@@ -329,39 +1185,39 @@ export function generateEncryptionKey(): Uint8Array {
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Install dependency:</p>
+<p class="d180-md-p">Install dependency:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">BASH</span>
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <span class="d180-code-lang">BASH</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-bash">npm install react-native-get-random-values
+        <pre class="d180-code-pre line-numbers"><code class="language-bash">npm install react-native-get-random-values
 </code></pre>
       </div>
     
 <hr>
-<h1 id="-3-srccoresecuritysecurestoragets" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">📁 3️⃣ <code>src/core/security/secureStorage.ts</code></h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Using <code>react-native-keychain</code>.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Install:</p>
+<h1 id="-3-srccoresecuritysecurestoragets" class="d180-md-h1">📁 3️⃣ <code>src/core/security/secureStorage.ts</code></h1>
+<p class="d180-md-p">Using <code>react-native-keychain</code>.</p>
+<p class="d180-md-p">Install:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">BASH</span>
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <span class="d180-code-lang">BASH</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-bash">npm install react-native-keychain react-native-quick-base64
+        <pre class="d180-code-pre line-numbers"><code class="language-bash">npm install react-native-keychain react-native-quick-base64
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Then:</p>
+<p class="d180-md-p">Then:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">TSX</span>
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <span class="d180-code-lang">TSX</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-tsx">// src/core/security/secureStorage.ts
+        <pre class="d180-code-pre line-numbers"><code class="language-tsx">// src/core/security/secureStorage.ts
 
 import * as Keychain from 'react-native-keychain';
 import { fromByteArray, toByteArray } from 'react-native-quick-base64';
@@ -394,14 +1250,14 @@ export async function getEncryptionKey(): Promise&#x3C;Uint8Array | null> {
       </div>
     
 <hr>
-<h1 id="-4-srccorestoragerealmts" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">📁 4️⃣ <code>src/core/storage/realm.ts</code></h1>
+<h1 id="-4-srccorestoragerealmts" class="d180-md-h1">📁 4️⃣ <code>src/core/storage/realm.ts</code></h1>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">TSX</span>
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <span class="d180-code-lang">TSX</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-tsx">// src/core/storage/realm.ts
+        <pre class="d180-code-pre line-numbers"><code class="language-tsx">// src/core/storage/realm.ts
 
 import Realm from 'realm';
 import { schemas } from './realmSchemas';
@@ -441,14 +1297,14 @@ export function getRealm(): Realm {
       </div>
     
 <hr>
-<h1 id="-5-temporary-apptsx-test-initialization" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">📁 5️⃣ Temporary <code>App.tsx</code> Test Initialization</h1>
+<h1 id="-5-temporary-apptsx-test-initialization" class="d180-md-h1">📁 5️⃣ Temporary <code>App.tsx</code> Test Initialization</h1>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">TSX</span>
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <span class="d180-code-lang">TSX</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-tsx">import React, { useEffect } from 'react';
+        <pre class="d180-code-pre line-numbers"><code class="language-tsx">import React, { useEffect } from 'react';
 import { View, Text } from 'react-native';
 import { initializeRealm } from './src/core/storage/realm';
 
@@ -481,372 +1337,372 @@ export default function App() {
       </div>
     
 <hr>
-<h1 id="-what-this-achieves" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">🔐 What This Achieves</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">When the app runs:</p>
-<ol class="list-decimal pl-7 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5 pl-1">It checks secure storage for encryption key.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5 pl-1">If missing → generates new 64-byte key.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5 pl-1">Stores key securely in Keychain / Keystore.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5 pl-1">Opens Realm using that encryption key.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5 pl-1">Persists the same key across app restarts.</li>
+<h1 id="-what-this-achieves" class="d180-md-h1">🔐 What This Achieves</h1>
+<p class="d180-md-p">When the app runs:</p>
+<ol class="d180-md-ol">
+<li class="d180-md-li">It checks secure storage for encryption key.</li>
+<li class="d180-md-li">If missing → generates new 64-byte key.</li>
+<li class="d180-md-li">Stores key securely in Keychain / Keystore.</li>
+<li class="d180-md-li">Opens Realm using that encryption key.</li>
+<li class="d180-md-li">Persists the same key across app restarts.</li>
 </ol>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Database is encrypted from first launch.</p>
+<p class="d180-md-p">Database is encrypted from first launch.</p>
 <hr>
-<h1 id="-important-notes" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">⚠ Important Notes</h1>
-<h3 id="for-ios" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">For iOS</h3>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">After installing keychain:</p>
+<h1 id="-important-notes" class="d180-md-h1">⚠ Important Notes</h1>
+<h3 id="for-ios" class="d180-md-h3">For iOS</h3>
+<p class="d180-md-p">After installing keychain:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">BASH</span>
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <span class="d180-code-lang">BASH</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-bash">cd ios
+        <pre class="d180-code-pre line-numbers"><code class="language-bash">cd ios
 pod install
 cd ..
 </code></pre>
       </div>
     
-<h3 id="for-android" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">For Android</h3>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Ensure <code>minSdkVersion</code> ≥ 23 (recommended for secure keystore usage).</p>
+<h3 id="for-android" class="d180-md-h3">For Android</h3>
+<p class="d180-md-p">Ensure <code>minSdkVersion</code> ≥ 23 (recommended for secure keystore usage).</p>
 <hr>
-<h1 id="-architecture-integrity" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">🧠 Architecture Integrity</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Notice:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Encryption logic → <code>core/security</code></li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Storage config → <code>core/storage</code></li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No module touched</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No UI business logic</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No repository yet</li>
+<h1 id="-architecture-integrity" class="d180-md-h1">🧠 Architecture Integrity</h1>
+<p class="d180-md-p">Notice:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Encryption logic → <code>core/security</code></li>
+<li class="d180-md-li">Storage config → <code>core/storage</code></li>
+<li class="d180-md-li">No module touched</li>
+<li class="d180-md-li">No UI business logic</li>
+<li class="d180-md-li">No repository yet</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This keeps boundaries intact exactly as defined in your blueprint.</p>
+<p class="d180-md-p">This keeps boundaries intact exactly as defined in your blueprint.</p>
 <hr>
 <hr>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5"><img src="/images/day5_2.png" class="rounded-md shadow-sm mx-auto block" alt="image.png"></p>
+<p class="d180-md-p"><img src="/images/day5_2.png" class="rounded-md shadow-sm mx-auto block" alt="image.png"></p>
 <hr>
-<h2 id="todays-takeaway-on-vibe-coding" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">Today’s Takeaway on Vibe Coding</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Today I hit a small but important moment while implementing encrypted Realm.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">React Native threw this error:</p>
+<h2 id="todays-takeaway-on-vibe-coding" class="d180-md-h2">Today’s Takeaway on Vibe Coding</h2>
+<p class="d180-md-p">Today I hit a small but important moment while implementing encrypted Realm.</p>
+<p class="d180-md-p">React Native threw this error:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
           
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>ReferenceError: Property 'Buffer' doesn't exist
+        <pre class="d180-code-pre line-numbers"><code>ReferenceError: Property 'Buffer' doesn't exist
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">I asked AI for a solution.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">It suggested a base64 package. It would work.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">But then I checked something simple:</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Last maintained — 5 years ago.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">That’s where “vibe coding” could have taken over.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Install it. Move on. Ship it.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Instead, I paused.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Encryption is infrastructure. Infrastructure should not depend on outdated libraries.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">So I questioned the solution. Asked again. Explored alternatives. Found a modern, actively maintained React Native–specific package. Switched.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">It worked.</p>
+<p class="d180-md-p">I asked AI for a solution.</p>
+<p class="d180-md-p">It suggested a base64 package. It would work.</p>
+<p class="d180-md-p">But then I checked something simple:</p>
+<p class="d180-md-p">Last maintained — 5 years ago.</p>
+<p class="d180-md-p">That’s where “vibe coding” could have taken over.</p>
+<p class="d180-md-p">Install it. Move on. Ship it.</p>
+<p class="d180-md-p">Instead, I paused.</p>
+<p class="d180-md-p">Encryption is infrastructure. Infrastructure should not depend on outdated libraries.</p>
+<p class="d180-md-p">So I questioned the solution. Asked again. Explored alternatives. Found a modern, actively maintained React Native–specific package. Switched.</p>
+<p class="d180-md-p">It worked.</p>
 <hr>
-<h3 id="what-vibe-coding-should-actually-mean" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">What Vibe Coding Should Actually Mean</h3>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Vibe coding is not blindly pasting AI-generated code.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">It’s:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Moving fast</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Thinking critically</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Validating suggestions</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Making architectural decisions consciously</li>
+<h3 id="what-vibe-coding-should-actually-mean" class="d180-md-h3">What Vibe Coding Should Actually Mean</h3>
+<p class="d180-md-p">Vibe coding is not blindly pasting AI-generated code.</p>
+<p class="d180-md-p">It’s:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Moving fast</li>
+<li class="d180-md-li">Thinking critically</li>
+<li class="d180-md-li">Validating suggestions</li>
+<li class="d180-md-li">Making architectural decisions consciously</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">AI accelerates output.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">But engineering judgment protects the system.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Don’t compete with AI.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Don’t blindly follow AI.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Evolve with AI.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">That’s today’s real takeaway.</p>
+<p class="d180-md-p">AI accelerates output.</p>
+<p class="d180-md-p">But engineering judgment protects the system.</p>
+<p class="d180-md-p">Don’t compete with AI.</p>
+<p class="d180-md-p">Don’t blindly follow AI.</p>
+<p class="d180-md-p">Evolve with AI.</p>
+<p class="d180-md-p">That’s today’s real takeaway.</p>
 <hr>
-<h1 id="-professional-rule" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">🧠 Professional Rule</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">For encryption infrastructure:</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Never use:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Outdated libraries</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Polyfills</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Workarounds</li>
+<h1 id="-professional-rule" class="d180-md-h1">🧠 Professional Rule</h1>
+<p class="d180-md-p">For encryption infrastructure:</p>
+<p class="d180-md-p">Never use:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Outdated libraries</li>
+<li class="d180-md-li">Polyfills</li>
+<li class="d180-md-li">Workarounds</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Always use:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Native-safe</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Maintained</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Binary-aware libraries</li>
+<p class="d180-md-p">Always use:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Native-safe</li>
+<li class="d180-md-li">Maintained</li>
+<li class="d180-md-li">Binary-aware libraries</li>
 </ul>
 <hr>
-<h2 id="common-errors-and-fixes" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">Common errors and fixes:</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.</p>
-<h3 id="-fix-it-step-by-step-do-exactly-this" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">🚀 Fix It Step-by-Step (Do Exactly This)</h3>
+<h2 id="common-errors-and-fixes" class="d180-md-h2">Common errors and fixes:</h2>
+<p class="d180-md-p">Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.</p>
+<h3 id="-fix-it-step-by-step-do-exactly-this" class="d180-md-h3">🚀 Fix It Step-by-Step (Do Exactly This)</h3>
 <hr>
-<h2 id="-1-stop-everything" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">✅ 1️⃣ Stop Everything</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Stop Metro:</p>
+<h2 id="-1-stop-everything" class="d180-md-h2">✅ 1️⃣ Stop Everything</h2>
+<p class="d180-md-p">Stop Metro:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
           
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>Ctrl+ C
+        <pre class="d180-code-pre line-numbers"><code>Ctrl+ C
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Kill any running Gradle daemon:</p>
+<p class="d180-md-p">Kill any running Gradle daemon:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
           
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>./gradlew--stop
+        <pre class="d180-code-pre line-numbers"><code>./gradlew--stop
 </code></pre>
       </div>
     
 <hr>
-<h2 id="-2-delete-gradle-caches-most-important" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">✅ 2️⃣ Delete Gradle Caches (Most Important)</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Run:</p>
+<h2 id="-2-delete-gradle-caches-most-important" class="d180-md-h2">✅ 2️⃣ Delete Gradle Caches (Most Important)</h2>
+<p class="d180-md-p">Run:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
           
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>rm-rf ~/.gradle/caches
+        <pre class="d180-code-pre line-numbers"><code>rm-rf ~/.gradle/caches
 rm-rf android/.gradle
 rm-rf android/build
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Then clean project:</p>
+<p class="d180-md-p">Then clean project:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
           
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>cd android
+        <pre class="d180-code-pre line-numbers"><code>cd android
 ./gradlew clean
 cd ..
 </code></pre>
       </div>
     
 <hr>
-<h2 id="-3-clear-node-modules" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">✅ 3️⃣ Clear Node Modules</h2>
+<h2 id="-3-clear-node-modules" class="d180-md-h2">✅ 3️⃣ Clear Node Modules</h2>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
           
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>rm-rf node_modules
+        <pre class="d180-code-pre line-numbers"><code>rm-rf node_modules
 rm-rf package-lock.json
 npm install
 </code></pre>
       </div>
     
 <hr>
-<h2 id="-5-run-again" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">✅ 5️⃣ Run Again</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Start Metro:</p>
+<h2 id="-5-run-again" class="d180-md-h2">✅ 5️⃣ Run Again</h2>
+<p class="d180-md-p">Start Metro:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
           
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>npx react-nativestart--reset-cache
+        <pre class="d180-code-pre line-numbers"><code>npx react-nativestart--reset-cache
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">In another terminal:</p>
+<p class="d180-md-p">In another terminal:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
           
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>npx react-native run-android
+        <pre class="d180-code-pre line-numbers"><code>npx react-native run-android
 </code></pre>
       </div>
     
 <hr>
-<h1 id="-day-5-encryption-verification-checklist" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">🔐 Day 5 — Encryption Verification Checklist</h1>
+<h1 id="-day-5-encryption-verification-checklist" class="d180-md-h1">🔐 Day 5 — Encryption Verification Checklist</h1>
 <hr>
-<h3 id="-1-app-launch-test" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">✅ 1️⃣ App Launch Test</h3>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5"><strong>Expected behavior:</strong></p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">App runs without crashing.</p>
+<h3 id="-1-app-launch-test" class="d180-md-h3">✅ 1️⃣ App Launch Test</h3>
+<p class="d180-md-p"><strong>Expected behavior:</strong></p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">
+<p class="d180-md-p">App runs without crashing.</p>
 </li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Console logs:</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5"><code>Encrypted Realm initialized successfully</code></p>
+<li class="d180-md-li">
+<p class="d180-md-p">Console logs:</p>
+<p class="d180-md-p"><code>Encrypted Realm initialized successfully</code></p>
 </li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">If the app crashes on first launch:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Check if encryption key generation failed.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Check if secure storage permission errors occurred.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Ensure <code>react-native-get-random-values</code> is properly installed.</li>
+<p class="d180-md-p">If the app crashes on first launch:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Check if encryption key generation failed.</li>
+<li class="d180-md-li">Check if secure storage permission errors occurred.</li>
+<li class="d180-md-li">Ensure <code>react-native-get-random-values</code> is properly installed.</li>
 </ul>
 <hr>
-<h3 id="-2-restart-persistence-test-most-important" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">✅ 2️⃣ Restart Persistence Test (Most Important)</h3>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Steps:</p>
-<ol class="list-decimal pl-7 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5 pl-1">Launch the app.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5 pl-1">Close it completely.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5 pl-1">Reopen it.</li>
+<h3 id="-2-restart-persistence-test-most-important" class="d180-md-h3">✅ 2️⃣ Restart Persistence Test (Most Important)</h3>
+<p class="d180-md-p">Steps:</p>
+<ol class="d180-md-ol">
+<li class="d180-md-li">Launch the app.</li>
+<li class="d180-md-li">Close it completely.</li>
+<li class="d180-md-li">Reopen it.</li>
 </ol>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Expected:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No crash.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Realm initializes successfully again.</li>
+<p class="d180-md-p">Expected:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">No crash.</li>
+<li class="d180-md-li">Realm initializes successfully again.</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">If it crashes on second launch:</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">👉 This means the encryption key is not being retrieved properly.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Most likely issue:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Key not stored correctly.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Key retrieved with wrong encoding.</li>
+<p class="d180-md-p">If it crashes on second launch:</p>
+<p class="d180-md-p">👉 This means the encryption key is not being retrieved properly.</p>
+<p class="d180-md-p">Most likely issue:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Key not stored correctly.</li>
+<li class="d180-md-li">Key retrieved with wrong encoding.</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Encryption only works if the same key is reused.</p>
+<p class="d180-md-p">Encryption only works if the same key is reused.</p>
 <hr>
-<h3 id="-3-force-failure-test-proves-encryption-is-real" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">✅ 3️⃣ Force Failure Test (Proves Encryption Is Real)</h3>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Temporarily modify <code>realm.ts</code>:</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Replace:</p>
+<h3 id="-3-force-failure-test-proves-encryption-is-real" class="d180-md-h3">✅ 3️⃣ Force Failure Test (Proves Encryption Is Real)</h3>
+<p class="d180-md-p">Temporarily modify <code>realm.ts</code>:</p>
+<p class="d180-md-p">Replace:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">TSX</span>
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <span class="d180-code-lang">TSX</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-tsx">encryptionKey: key,
+        <pre class="d180-code-pre line-numbers"><code class="language-tsx">encryptionKey: key,
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">With:</p>
+<p class="d180-md-p">With:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">TSX</span>
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <span class="d180-code-lang">TSX</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-tsx">encryptionKey: generateEncryptionKey(),
+        <pre class="d180-code-pre line-numbers"><code class="language-tsx">encryptionKey: generateEncryptionKey(),
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Now restart the app.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Expected:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Realm should throw an error:</p>
-<blockquote class="border-l-2 border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/30 p-4 rounded-lg text-slate-700 dark:text-slate-300 italic">
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">"Decryption failed" or similar message.</p>
+<p class="d180-md-p">Now restart the app.</p>
+<p class="d180-md-p">Expected:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">
+<p class="d180-md-p">Realm should throw an error:</p>
+<blockquote class="d180-md-blockquote">
+<p class="d180-md-p">"Decryption failed" or similar message.</p>
 </blockquote>
 </li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This proves:</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">✔ Realm is actually encrypted</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">✔ It cannot open without the correct key</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">After testing, revert the change.</p>
+<p class="d180-md-p">This proves:</p>
+<p class="d180-md-p">✔ Realm is actually encrypted</p>
+<p class="d180-md-p">✔ It cannot open without the correct key</p>
+<p class="d180-md-p">After testing, revert the change.</p>
 <hr>
-<h3 id="-4-delete-app-test" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">✅ 4️⃣ Delete App Test</h3>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Uninstall the app from device.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Reinstall and run again.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Expected:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">New encryption key generated.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Fresh Realm database created.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No crash.</li>
+<h3 id="-4-delete-app-test" class="d180-md-h3">✅ 4️⃣ Delete App Test</h3>
+<p class="d180-md-p">Uninstall the app from device.</p>
+<p class="d180-md-p">Reinstall and run again.</p>
+<p class="d180-md-p">Expected:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">New encryption key generated.</li>
+<li class="d180-md-li">Fresh Realm database created.</li>
+<li class="d180-md-li">No crash.</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Because Keychain entry is removed when app is deleted.</p>
+<p class="d180-md-p">Because Keychain entry is removed when app is deleted.</p>
 <hr>
-<h3 id="-5-verify-no-plaintext-database" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">✅ 5️⃣ Verify No Plaintext Database</h3>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">On Android:</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Navigate to:</p>
+<h3 id="-5-verify-no-plaintext-database" class="d180-md-h3">✅ 5️⃣ Verify No Plaintext Database</h3>
+<p class="d180-md-p">On Android:</p>
+<p class="d180-md-p">Navigate to:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
           
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>/data/data/&#x3C;your.package.name>/files/
+        <pre class="d180-code-pre line-numbers"><code>/data/data/&#x3C;your.package.name>/files/
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Pull the Realm file.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Open it with a text editor or hex viewer.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Expected:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">You should NOT see readable strings like entry titles.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Data should appear binary / unreadable.</li>
+<p class="d180-md-p">Pull the Realm file.</p>
+<p class="d180-md-p">Open it with a text editor or hex viewer.</p>
+<p class="d180-md-p">Expected:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">You should NOT see readable strings like entry titles.</li>
+<li class="d180-md-li">Data should appear binary / unreadable.</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">If you see readable text:</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">🚨 Encryption is not applied.</p>
+<p class="d180-md-p">If you see readable text:</p>
+<p class="d180-md-p">🚨 Encryption is not applied.</p>
 <hr>
-<h3 id="-6-ensure-key-is-never-logged-in-production" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">✅ 6️⃣ Ensure Key Is Never Logged in Production</h3>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Search your codebase:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Ensure encryption key is never console.logged.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Ensure no debug statements expose it.</li>
+<h3 id="-6-ensure-key-is-never-logged-in-production" class="d180-md-h3">✅ 6️⃣ Ensure Key Is Never Logged in Production</h3>
+<p class="d180-md-p">Search your codebase:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Ensure encryption key is never console.logged.</li>
+<li class="d180-md-li">Ensure no debug statements expose it.</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">You may log it temporarily in <code>__DEV__</code>, but remove before production.</p>
+<p class="d180-md-p">You may log it temporarily in <code>__DEV__</code>, but remove before production.</p>
 <hr>
-<h3 id="-7-confirm-realm-file-exists" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">✅ 7️⃣ Confirm Realm File Exists</h3>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Add temporary log:</p>
+<h3 id="-7-confirm-realm-file-exists" class="d180-md-h3">✅ 7️⃣ Confirm Realm File Exists</h3>
+<p class="d180-md-p">Add temporary log:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          <span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">TSX</span>
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <span class="d180-code-lang">TSX</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code class="language-tsx">console.log(Realm.defaultPath);
+        <pre class="d180-code-pre line-numbers"><code class="language-tsx">console.log(Realm.defaultPath);
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Confirm:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">File path exists.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Database file size increases after adding data (later).</li>
+<p class="d180-md-p">Confirm:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">File path exists.</li>
+<li class="d180-md-li">Database file size increases after adding data (later).</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This confirms actual storage location.</p>
+<p class="d180-md-p">This confirms actual storage location.</p>
 <hr>
-<h1 id="-common-mistakes" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">🚨 Common Mistakes</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">❌ Using AsyncStorage for encryption key</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">❌ Generating a new key every launch</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">❌ Storing key without base64 encoding</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">❌ Forgetting to pod install (iOS)</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">❌ Using incorrect key length (must be 64 bytes)</p>
+<h1 id="-common-mistakes" class="d180-md-h1">🚨 Common Mistakes</h1>
+<p class="d180-md-p">❌ Using AsyncStorage for encryption key</p>
+<p class="d180-md-p">❌ Generating a new key every launch</p>
+<p class="d180-md-p">❌ Storing key without base64 encoding</p>
+<p class="d180-md-p">❌ Forgetting to pod install (iOS)</p>
+<p class="d180-md-p">❌ Using incorrect key length (must be 64 bytes)</p>
 <hr>
-<h1 id="-final-confirmation-logic" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">🧠 Final Confirmation Logic</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">If all these are true:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">App runs on first launch</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">App runs on restart</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">App fails when key is changed</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Database file unreadable externally</li>
+<h1 id="-final-confirmation-logic" class="d180-md-h1">🧠 Final Confirmation Logic</h1>
+<p class="d180-md-p">If all these are true:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">App runs on first launch</li>
+<li class="d180-md-li">App runs on restart</li>
+<li class="d180-md-li">App fails when key is changed</li>
+<li class="d180-md-li">Database file unreadable externally</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Then:</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">✔ Encryption is correctly implemented</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">✔ Key management is stable</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">✔ Core layer is functioning</p>
+<p class="d180-md-p">Then:</p>
+<p class="d180-md-p">✔ Encryption is correctly implemented</p>
+<p class="d180-md-p">✔ Key management is stable</p>
+<p class="d180-md-p">✔ Core layer is functioning</p>
 <hr>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This checklist converts encryption from theory → verified infrastructure.</p>
+<p class="d180-md-p">This checklist converts encryption from theory → verified infrastructure.</p>
 <hr>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Next:</p>
-<h3 id="day-6-repository-layer-implementation" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">Day 6 — Repository Layer Implementation</h3>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">(Warehouse clerk comes to life in code.)</p>
+<p class="d180-md-p">Next:</p>
+<h3 id="day-6-repository-layer-implementation" class="d180-md-h3">Day 6 — Repository Layer Implementation</h3>
+<p class="d180-md-p">(Warehouse clerk comes to life in code.)</p>
 <hr>
-f:["$","main",null,{"className":"w-full max-w-6xl mx-auto px-4 sm:px-8 py-10","children":["$","div",null,{"className":"flex-1","children":[["$","article",null,{"className":"max-w-3xl prose prose-slate dark:prose-invert prose-headings:font-black prose-headings:tracking-tight prose-h1:text-4xl prose-h1:mt-16 prose-h1:mb-6 prose-h1:pb-4 prose-h1:border-b prose-h1:border-slate-200 dark:prose-h1:border-slate-700 prose-h2:text-3xl prose-h2:mt-14 prose-h2:mb-5 prose-h3:text-2xl prose-h3:mt-10 prose-h3:mb-4 prose-p:text-[17px] prose-p:leading-[1.85] prose-p:my-5 prose-p:text-slate-700 dark:prose-p:text-slate-300 prose-strong:text-slate-900 dark:prose-strong:text-white prose-pre:rounded-2xl prose-pre:bg-slate-950 prose-pre:p-6 prose-hr:my-12 prose-hr:border-slate-200 dark:prose-hr:border-slate-800 prose-ul:list-disc prose-ol:list-decimal","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$11"}}],"$L12"]}],"$L13","$L14"]}]}]
-10:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Day 5 : Encrypted Realm Initialization (Core + Data Layer Only)\",\"datePublished\":\"2026-02-24\",\"description\":\"Set up encrypted Realm with secure key management and schema definitions to ensure privacy-first local storage for the app's core data layer.\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\"}}"}}]
-15:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]
-12:["$","$L15",null,{}]
-13:["$","div",null,{"className":"mt-8 mb-6","children":["$","a",null,{"href":"https://github.com/subraatakumar/subraatakumar.com/edit/main/content/180days/day-5.md","target":"_blank","rel":"noopener noreferrer","className":"block w-full sm:w-auto px-4 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-amber-400 transition-all text-sm font-medium","children":"Suggest a change to the content of the material"}]}]
-14:["$","div",null,{"className":"mt-16 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 pb-20","children":[["$","$L2",null,{"href":"/180days/day-4","className":"group flex items-center gap-3 px-5 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-amber-400 transition-all w-full sm:w-auto","children":["$","div",null,{"className":"text-left","children":[["$","span",null,{"className":"block text-[10px] font-bold text-slate-400 uppercase tracking-widest","children":"Previous"}],["$","span",null,{"className":"text-sm font-bold capitalize","children":"day 4"}]]}]}],["$","$L2",null,{"href":"/180days/day-6","className":"group flex items-center gap-3 px-5 py-3 bg-slate-900 dark:bg-white text-white dark:text-slate-950 rounded-xl hover:scale-[1.02] transition-all w-full sm:w-auto text-right","children":["$","div",null,{"className":"text-right","children":[["$","span",null,{"className":"block text-[10px] font-bold opacity-60 uppercase tracking-widest","children":"Next Up"}],["$","span",null,{"className":"text-sm font-bold capitalize","children":"day 6"}]]}]}]]}]
-a:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-16:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"IconMark"]
-8:null
-e:[["$","title","0",{"children":"Day 5 : Encrypted Realm Initialization (Core + Data Layer Only) | Subrata Kumar Das"}],["$","meta","1",{"name":"description","content":"Set up encrypted Realm with secure key management and schema definitions to ensure privacy-first local storage for the app's core data layer."}],["$","meta","2",{"name":"keywords","content":"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"}],["$","meta","3",{"property":"og:title","content":"Subrata Kumar Das"}],["$","meta","4",{"property":"og:description","content":"Tech Lead and React Native Architect building scalable mobile systems."}],["$","meta","5",{"property":"og:url","content":"https://subraatakumar.com/"}],["$","meta","6",{"property":"og:site_name","content":"Subrata Kumar Das"}],["$","meta","7",{"property":"og:locale","content":"en_US"}],["$","meta","8",{"property":"og:type","content":"website"}],["$","meta","9",{"name":"twitter:card","content":"summary"}],["$","meta","10",{"name":"twitter:title","content":"Subrata Kumar Das"}],["$","meta","11",{"name":"twitter:description","content":"Tech Lead and React Native Architect building scalable mobile systems."}],["$","link","12",{"rel":"icon","href":"/favicon.ico?favicon.750fd6b3.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L16","13",{}]]
+1b:["$","main",null,{"className":"d180-content-wrap","style":{"paddingTop":36},"children":["$","div",null,{"className":"flex-1","children":[["$","article",null,{"className":"d180-post-content","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$1d"}}],"$L1e"]}],"$L1f","$L20"]}]}]
+1c:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"mainEntityOfPage\":\"https://subraatakumar.com/180days/day-5\",\"headline\":\"Day 5 : Encrypted Realm Initialization (Core + Data Layer Only)\",\"datePublished\":\"2026-02-24\",\"description\":\"Set up encrypted Realm with secure key management and schema definitions to ensure privacy-first local storage for the app's core data layer.\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\"}}"}}]
+21:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]
+1e:["$","$L21",null,{}]
+1f:["$","div",null,{"className":"mt-8 mb-6","children":["$","a",null,{"href":"https://github.com/subraatakumar/subraatakumar.com/edit/main/content/180days/day-5.md","target":"_blank","rel":"noopener noreferrer","className":"d180-edit-link","children":"Suggest a change to the content of the material"}]}]
+20:["$","div",null,{"className":"d180-bottom-nav","children":[["$","$Lb",null,{"href":"/180days/day-4","className":"d180-nav-link","children":["$","div",null,{"children":[["$","strong",null,{"children":"Previous"}],["$","span",null,{"style":{"fontSize":14,"fontWeight":700,"textTransform":"capitalize"},"children":"day 4"}]]}]}],["$","$Lb",null,{"href":"/180days/day-6","className":"d180-nav-link next","children":["$","div",null,{"children":[["$","strong",null,{"children":"Next Up"}],["$","span",null,{"style":{"fontSize":14,"fontWeight":700,"textTransform":"capitalize"},"children":"day 6"}]]}]}]]}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+22:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"IconMark"]
+13:null
+17:[["$","title","0",{"children":"Day 5 : Encrypted Realm Initialization (Core + Data Layer Only) | Subrata Kumar Das"}],["$","meta","1",{"name":"description","content":"Set up encrypted Realm with secure key management and schema definitions to ensure privacy-first local storage for the app's core data layer."}],["$","meta","2",{"name":"keywords","content":"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"}],["$","link","3",{"rel":"canonical","href":"https://subraatakumar.com/180days/day-5/"}],["$","meta","4",{"property":"og:title","content":"Day 5 : Encrypted Realm Initialization (Core + Data Layer Only) | 180 Days"}],["$","meta","5",{"property":"og:description","content":"Set up encrypted Realm with secure key management and schema definitions to ensure privacy-first local storage for the app's core data layer."}],["$","meta","6",{"property":"og:url","content":"https://subraatakumar.com/180days/day-5/"}],["$","meta","7",{"property":"og:image","content":"https://subraatakumar.com/images/interview.png"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"property":"article:published_time","content":"2026-02-24"}],["$","meta","10",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","11",{"name":"twitter:title","content":"Day 5 : Encrypted Realm Initialization (Core + Data Layer Only) | 180 Days"}],["$","meta","12",{"name":"twitter:description","content":"Set up encrypted Realm with secure key management and schema definitions to ensure privacy-first local storage for the app's core data layer."}],["$","meta","13",{"name":"twitter:image","content":"https://subraatakumar.com/images/interview.png"}],["$","link","14",{"rel":"icon","href":"/favicon.ico?favicon.750fd6b3.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L22","15",{}]]

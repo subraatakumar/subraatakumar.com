@@ -1,99 +1,388 @@
 1:"$Sreact.fragment"
-2:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
-b:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
-c:"$Sreact.suspense"
-e:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]
-0:{"buildId":"8TlM1J5MHqaK7VEiA8o6D","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans","children":[["$","header",null,{"className":"sticky top-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-xl border-b border-slate-200 dark:border-slate-800","children":["$","div",null,{"className":"w-full max-w-6xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between gap-6","children":[["$","div",null,{"className":"flex items-center gap-3 shrink-0","children":[["$","div",null,{"className":"w-8 h-8 bg-amber-400 rounded-lg flex items-center justify-center text-slate-900 shadow-lg shadow-amber-400/20","children":["$","span",null,{"className":"font-black text-sm","children":"SK"}]}],["$","nav",null,{"className":"hidden md:flex items-center gap-3 text-xs font-bold uppercase tracking-wider text-slate-400","children":[["$","$L2",null,{"href":"/180days","className":"text-xs font-black px-4 py-2 bg-slate-100 dark:bg-slate-800 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors flex items-center gap-2 uppercase tracking-tight","children":[["$","span",null,{"className":"hover:text-amber-500 transition-colors cursor-pointer font-bold","children":"180 Days"}],["$","span",null,{"className":"text-slate-300","children":"/"}],["$","span",null,{"className":"text-slate-900 dark:text-white font-bold tracking-tight","children":["Day ","1"]}]]}],["$","div",null,{"className":"flex items-center gap-2 px-3 py-1.5 bg-slate-100 dark:bg-slate-800 rounded-lg","children":[["$","div",null,{"className":"w-24 bg-slate-300 dark:bg-slate-600 h-2 rounded-full overflow-hidden","children":["$","div",null,{"className":"bg-amber-400 h-full rounded-full","style":{"width":"1%"}}]}],["$","span",null,{"className":"text-[11px] font-black text-amber-600 dark:text-amber-400 tabular-nums","children":[1,"%"]}]]}]]}]]}],["$","div",null,{"className":"flex items-center gap-4","children":["$","$L2",null,{"href":"/180days","className":"text-xs font-black px-4 py-2 bg-slate-100 dark:bg-slate-800 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors flex items-center gap-2 uppercase tracking-tight","children":"← All Days"}]}]]}]}],["$","div",null,{"className":"w-full border-b border-slate-200 dark:border-slate-800 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900/60 dark:to-slate-950","children":["$","div",null,{"className":"w-full max-w-6xl mx-auto px-4 sm:px-8 py-14","children":[["$","h1",null,{"className":"text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter text-slate-950 dark:text-white leading-[1.05] max-w-3xl","children":"Day 1 – We Don’t Start With Code"}],["$","p",null,{"className":"mt-6 text-xl text-slate-500 dark:text-slate-400 leading-relaxed max-w-2xl font-normal","children":"**Today is Friday.** And today — we are **not** writing features. We are deciding how this product will live, breathe, and evolve for the next five years. Most developers open a new project and immediately start creating screens. Buttons. Forms. Navigation stacks."}],["$","div",null,{"className":"mt-8 flex flex-wrap items-center gap-2 text-sm","children":[["$","span",null,{"className":"font-semibold text-slate-600 dark:text-slate-300","children":"2026-02-20"}],["$","span",null,{"className":"w-1 h-1 rounded-full bg-slate-400 dark:bg-slate-500 inline-block"}],["$","span",null,{"className":"font-semibold text-amber-600 dark:text-amber-400","children":"Subrata Kumar Das"}],["$","span",null,{"className":"w-1 h-1 rounded-full bg-slate-400 dark:bg-slate-500 inline-block"}],["$","span",null,{"className":"px-2.5 py-0.5 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full font-bold text-xs uppercase tracking-tight","children":"Complete"}]]}],["$","p",null,{"className":"hidden md:block mt-8 text-[13px] leading-relaxed text-amber-700/80 dark:text-amber-400/70 font-medium italic border-l-2 border-amber-300 dark:border-amber-700 pl-4 max-w-sm","children":"\"Consistent small steps lead to massive long-term results. Keep pushing.\""}]]}]}],"$L3","$L4"]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
-7:Ta01f,<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5"><strong>Today is Friday.</strong></p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">And today — we are <strong>not</strong> writing features.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We are deciding how this product will live, breathe, and evolve for the next five years. Most developers open a new project and immediately start creating screens.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Buttons. Forms. Navigation stacks.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We won’t.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Because</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">This is not a demo app.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">This is not a hackathon submission.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">This is not something we build to “just make it work.”</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">This is a product.</li>
+9:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
+e:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+11:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]
+2:T208a,
+        #days180-root .d180-article-page {
+          min-height: 100vh;
+          background: #fff;
+          color: #0f172a;
+        }
+        #days180-root .d180-article-header {
+          position: sticky;
+          top: 0;
+          z-index: 80;
+          background: rgba(255,255,255,0.92);
+          backdrop-filter: blur(16px);
+          border-bottom: 1px solid #e2e8f0;
+        }
+        #days180-root .d180-article-header-inner {
+          width: 100%;
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 32px;
+          height: 64px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        }
+        #days180-root .d180-crumb {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: .08em;
+          color: #64748b;
+          text-decoration: none;
+          background: #f1f5f9;
+          border-radius: 10px;
+          padding: 10px 14px;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+        }
+        #days180-root .d180-crumb-series {
+          transition: color .15s ease;
+        }
+        #days180-root .d180-crumb:hover .d180-crumb-series {
+          color: #d97706;
+        }
+        #days180-root .d180-crumb strong { color: #0f172a; }
+        #days180-root .d180-pill {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          padding: 8px 12px;
+          background: #f8fafc;
+          border: 1px solid #e2e8f0;
+          border-radius: 10px;
+        }
+        #days180-root .d180-pill-track {
+          width: 90px;
+          height: 8px;
+          background: #cbd5e1;
+          border-radius: 999px;
+          overflow: hidden;
+        }
+        #days180-root .d180-pill-fill {
+          height: 100%;
+          background: #f59e0b;
+          border-radius: 999px;
+        }
+        #days180-root .d180-pill b {
+          color: #d97706;
+          font-size: 11px;
+          letter-spacing: .02em;
+        }
+        #days180-root .d180-content-wrap {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 32px;
+        }
+        #days180-root .d180-meta-line {
+          margin-top: 8px;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 8px;
+          color: #64748b;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        #days180-root .d180-meta-line .dot {
+          width: 4px;
+          height: 4px;
+          border-radius: 999px;
+          background: #94a3b8;
+          display: inline-block;
+        }
+        #days180-root .d180-post-content {
+          max-width: 780px;
+        }
+        #days180-root .d180-post-content img {
+          max-width: 100%;
+          height: auto;
+        }
+        #days180-root .d180-post-content pre code {
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+        }
+        #days180-root .d180-md-p {
+          font-size: 17px;
+          line-height: 1.85;
+          color: #334155;
+          margin: 20px 0;
+        }
+        #days180-root .d180-md-h1 {
+          font-size: clamp(2rem, 4vw, 2.4rem);
+          font-weight: 900;
+          margin: 64px 0 24px;
+          padding-bottom: 12px;
+          border-bottom: 1px solid #e2e8f0;
+          line-height: 1.2;
+          color: #020617;
+        }
+        #days180-root .d180-md-h2 {
+          font-size: clamp(1.6rem, 3vw, 1.9rem);
+          font-weight: 900;
+          margin: 56px 0 18px;
+          line-height: 1.25;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-h3 {
+          font-size: clamp(1.3rem, 2.4vw, 1.5rem);
+          font-weight: 800;
+          margin: 40px 0 14px;
+          line-height: 1.3;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-h4,
+        #days180-root .d180-md-h5,
+        #days180-root .d180-md-h6 {
+          font-size: 1.1rem;
+          font-weight: 700;
+          margin: 28px 0 10px;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-ul {
+          list-style: disc;
+          padding-left: 24px;
+          margin: 18px 0;
+        }
+        #days180-root .d180-md-ol {
+          list-style: decimal;
+          padding-left: 28px;
+          margin: 18px 0;
+        }
+        #days180-root .d180-md-li {
+          margin: 8px 0;
+          line-height: 1.75;
+          color: #334155;
+        }
+        #days180-root .d180-md-blockquote {
+          margin: 26px 0;
+          padding: 14px 16px;
+          border-left: 2px solid #e2e8f0;
+          border-radius: 8px;
+          background: #f8fafc;
+          font-style: italic;
+          color: #334155;
+        }
+        #days180-root .d180-md-link {
+          color: #d97706;
+          text-decoration: none;
+          font-weight: 600;
+        }
+        #days180-root .d180-md-link:hover {
+          text-decoration: underline;
+        }
+        #days180-root .d180-md-table-wrap {
+          overflow: auto;
+          border: 1px solid #e2e8f0;
+          border-radius: 8px;
+          margin: 24px 0;
+        }
+        #days180-root .d180-md-table {
+          min-width: 100%;
+          border-collapse: collapse;
+        }
+        #days180-root .d180-md-th {
+          text-align: left;
+          font-size: 13px;
+          font-weight: 700;
+          color: #334155;
+          background: #f8fafc;
+          padding: 10px;
+          border-bottom: 1px solid #e2e8f0;
+        }
+        #days180-root .d180-md-td {
+          font-size: 14px;
+          color: #334155;
+          padding: 10px;
+          border-bottom: 1px solid #f1f5f9;
+        }
+        #days180-root .d180-code-lang {
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: .06em;
+          color: #475569;
+          background: #f1f5f9;
+          padding: 4px 10px;
+          border-radius: 6px;
+        }
+        #days180-root .d180-copy-btn {
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: .06em;
+          color: #0f172a;
+          background: #fbbf24;
+          border: 0;
+          border-radius: 6px;
+          padding: 4px 10px;
+          cursor: pointer;
+        }
+        #days180-root .d180-code-pre {
+          overflow: auto;
+          border-radius: 16px;
+          background: #0f172a;
+          color: #f8fafc;
+          padding: 18px 16px;
+        }
+        #days180-root .d180-bottom-nav {
+          margin-top: 64px;
+          padding: 24px 0 60px;
+          border-top: 1px solid #e2e8f0;
+          display: flex;
+          gap: 12px;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        #days180-root .d180-nav-link {
+          border-radius: 12px;
+          border: 1px solid #e2e8f0;
+          background: #f8fafc;
+          color: #0f172a;
+          text-decoration: none;
+          padding: 12px 16px;
+          min-width: 180px;
+        }
+        #days180-root .d180-nav-link strong {
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: .08em;
+          color: #64748b;
+          display: block;
+          margin-bottom: 4px;
+        }
+        #days180-root .d180-nav-link.next {
+          text-align: right;
+          background: #0f172a;
+          border-color: #0f172a;
+          color: #fff;
+        }
+        #days180-root .d180-nav-link.next strong {
+          color: rgba(255,255,255,0.72);
+        }
+        #days180-root .d180-edit-link {
+          display: inline-block;
+          margin-top: 16px;
+          padding: 10px 14px;
+          border: 1px solid #e2e8f0;
+          border-radius: 10px;
+          background: #f8fafc;
+          color: #334155;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        #days180-root .d180-edit-link:hover {
+          border-color: #f59e0b;
+        }
+        @media (max-width: 640px) {
+          #days180-root .d180-article-header-inner,
+          #days180-root .d180-content-wrap {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+          #days180-root .d180-pill {
+            display: none;
+          }
+        }
+      0:{"buildId":"qWGB019utwya5Bcz8uHGu","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5","$L6"]}],["$L7"],"$L8"]}],"loading":null,"isPartial":false}
+3:["$","header",null,{"className":"d180-article-header","children":["$","div",null,{"className":"d180-article-header-inner","children":[["$","div",null,{"className":"flex items-center gap-3 shrink-0","children":[["$","$L9",null,{"href":"/","aria-label":"Go to main home page","className":"w-8 h-8 bg-amber-400 rounded-lg flex items-center justify-center text-slate-900 shadow-lg shadow-amber-400/20","children":["$","span",null,{"className":"font-black text-sm","children":"SK"}]}],["$","nav",null,{"className":"hidden md:flex items-center gap-3","children":[["$","$L9",null,{"href":"/180days","className":"d180-crumb","children":[["$","span",null,{"className":"d180-crumb-series","children":"180 Days"}]," ",["$","span",null,{"children":"/"}]," ",["$","strong",null,{"children":["Day ","1"]}]]}],["$","div",null,{"className":"d180-pill","children":[["$","div",null,{"className":"d180-pill-track","children":["$","div",null,{"className":"d180-pill-fill","style":{"width":"1%"}}]}],["$","b",null,{"children":[1,"%"]}]]}]]}]]}],["$","div",null,{"className":"flex items-center gap-4","children":["$","$L9",null,{"href":"/180days","className":"d180-crumb","children":"← All Days"}]}]]}]}]
+4:["$","div",null,{"className":"d180-hero","children":["$","div",null,{"className":"d180-hero-inner d180-content-wrap","style":{"paddingTop":56,"paddingBottom":56},"children":[["$","h1",null,{"style":{"maxWidth":820},"children":"Day 1 – We Don’t Start With Code"}],["$","p",null,{"style":{"marginTop":14,"maxWidth":760},"children":"**Today is Friday.** And today — we are **not** writing features. We are deciding how this product will live, breathe, and evolve for the next five years. Most developers open a new project and immediately start creating screens. Buttons. Forms. Navigation stacks."}],["$","div",null,{"className":"d180-meta-line","children":[["$","span",null,{"children":"2026-02-20"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#d97706"},"children":"Subrata Kumar Das"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#15803d","fontSize":11,"fontWeight":800,"textTransform":"uppercase","letterSpacing":".08em"},"children":"Complete"}]]}],["$","p",null,{"style":{"marginTop":16,"maxWidth":500,"fontSize":13,"lineHeight":1.7,"color":"#92400e","borderLeft":"2px solid #fcd34d","paddingLeft":10,"fontStyle":"italic"},"children":"\"Consistent small steps lead to massive long-term results. Keep pushing.\""}]]}]}]
+a:T4f80,<p class="d180-md-p"><strong>Today is Friday.</strong></p>
+<p class="d180-md-p">And today — we are <strong>not</strong> writing features.</p>
+<p class="d180-md-p">We are deciding how this product will live, breathe, and evolve for the next five years. Most developers open a new project and immediately start creating screens.</p>
+<p class="d180-md-p">Buttons. Forms. Navigation stacks.</p>
+<p class="d180-md-p">We won’t.</p>
+<p class="d180-md-p">Because</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">This is not a demo app.</li>
+<li class="d180-md-li">This is not a hackathon submission.</li>
+<li class="d180-md-li">This is not something we build to “just make it work.”</li>
+<li class="d180-md-li">This is a product.</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">▶️ Watch Day 1 Short on Youtube: https://youtube.com/shorts/_A8gPEWnwo8?feature=share</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">And when you work in any organisation — whether you are a junior developer or a tech lead — you must take ownership of the product as if it belongs to you.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Not 60%.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Not 80%.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5"><strong>100%.</strong></p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Think of your product like your child.</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">You don’t rush a child into the world without preparing.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">You don’t ignore the foundation and hope growth happens magically.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">You nurture. You protect. You think long-term. Right ?</li>
+<p class="d180-md-p">▶️ Watch Day 1 Short on Youtube: https://youtube.com/shorts/_A8gPEWnwo8?feature=share</p>
+<p class="d180-md-p">And when you work in any organisation — whether you are a junior developer or a tech lead — you must take ownership of the product as if it belongs to you.</p>
+<p class="d180-md-p">Not 60%.</p>
+<p class="d180-md-p">Not 80%.</p>
+<p class="d180-md-p"><strong>100%.</strong></p>
+<p class="d180-md-p">Think of your product like your child.</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">You don’t rush a child into the world without preparing.</li>
+<li class="d180-md-li">You don’t ignore the foundation and hope growth happens magically.</li>
+<li class="d180-md-li">You nurture. You protect. You think long-term. Right ?</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">You ask: <em>How will this grow? What environment does it need?</em></p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Architecture is that environment for your product. Features are just clothes.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Products are not built with excitement alone.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">They are built with responsibility. And responsibility begins with architecture.</p>
+<p class="d180-md-p">You ask: <em>How will this grow? What environment does it need?</em></p>
+<p class="d180-md-p">Architecture is that environment for your product. Features are just clothes.</p>
+<p class="d180-md-p">Products are not built with excitement alone.</p>
+<p class="d180-md-p">They are built with responsibility. And responsibility begins with architecture.</p>
 <hr>
-<h1 id="the-product-we-are-building" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">The Product We Are Building</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We are building <strong>Offline Life Archive</strong>.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">A private, offline-first memory vault.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Not social.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Not cloud-first.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Not productivity.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Not a journaling gimmick.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Just this:</p>
-<blockquote class="border-l-2 border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/30 p-4 rounded-lg text-slate-700 dark:text-slate-300 italic">
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Your private digital life. Stored locally. Owned by you.</p>
+<h1 id="the-product-we-are-building" class="d180-md-h1">The Product We Are Building</h1>
+<p class="d180-md-p">We are building <strong>Offline Life Archive</strong>.</p>
+<p class="d180-md-p">A private, offline-first memory vault.</p>
+<p class="d180-md-p">Not social.</p>
+<p class="d180-md-p">Not cloud-first.</p>
+<p class="d180-md-p">Not productivity.</p>
+<p class="d180-md-p">Not a journaling gimmick.</p>
+<p class="d180-md-p">Just this:</p>
+<blockquote class="d180-md-blockquote">
+<p class="d180-md-p">Your private digital life. Stored locally. Owned by you.</p>
 </blockquote>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Before writing a single line of feature code, we defined:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Who it is for</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">What problem it solves</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">What it will NOT include</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">MVP boundaries</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Emotional anchor</li>
+<p class="d180-md-p">Before writing a single line of feature code, we defined:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Who it is for</li>
+<li class="d180-md-li">What problem it solves</li>
+<li class="d180-md-li">What it will NOT include</li>
+<li class="d180-md-li">MVP boundaries</li>
+<li class="d180-md-li">Emotional anchor</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Architecture must serve that clarity.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Not ego.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Not trends.</p>
+<p class="d180-md-p">Architecture must serve that clarity.</p>
+<p class="d180-md-p">Not ego.</p>
+<p class="d180-md-p">Not trends.</p>
 <hr>
-<h1 id="why-architecture-on-day-one" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">Why Architecture on Day One?</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Because:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Architecture determines how fast you move later.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Architecture decides whether refactoring will destroy you.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Architecture defines whether you build features… or systems.</li>
+<h1 id="why-architecture-on-day-one" class="d180-md-h1">Why Architecture on Day One?</h1>
+<p class="d180-md-p">Because:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Architecture determines how fast you move later.</li>
+<li class="d180-md-li">Architecture decides whether refactoring will destroy you.</li>
+<li class="d180-md-li">Architecture defines whether you build features… or systems.</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Most apps die in month 6 — not because of features, but because of messy foundations.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We are building differently.</p>
+<p class="d180-md-p">Most apps die in month 6 — not because of features, but because of messy foundations.</p>
+<p class="d180-md-p">We are building differently.</p>
 <hr>
-<h1 id="the-philosophy-build-small-design-big" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">The Philosophy: Build Small. Design Big.</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We are building an MVP.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">But we are designing for extraction.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This app is not just an app.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">It is:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">A privacy product</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">A case study</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">The foundation of something larger (Production OS)</li>
+<h1 id="the-philosophy-build-small-design-big" class="d180-md-h1">The Philosophy: Build Small. Design Big.</h1>
+<p class="d180-md-p">We are building an MVP.</p>
+<p class="d180-md-p">But we are designing for extraction.</p>
+<p class="d180-md-p">This app is not just an app.</p>
+<p class="d180-md-p">It is:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">A privacy product</li>
+<li class="d180-md-li">A case study</li>
+<li class="d180-md-li">The foundation of something larger (Production OS)</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">So the question today is not:</p>
-<blockquote class="border-l-2 border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/30 p-4 rounded-lg text-slate-700 dark:text-slate-300 italic">
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">“How do we build the timeline screen?”</p>
+<p class="d180-md-p">So the question today is not:</p>
+<blockquote class="d180-md-blockquote">
+<p class="d180-md-p">“How do we build the timeline screen?”</p>
 </blockquote>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">It is:</p>
-<blockquote class="border-l-2 border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/30 p-4 rounded-lg text-slate-700 dark:text-slate-300 italic">
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">“How do we ensure the timeline screen never pollutes our business logic?”</p>
+<p class="d180-md-p">It is:</p>
+<blockquote class="d180-md-blockquote">
+<p class="d180-md-p">“How do we ensure the timeline screen never pollutes our business logic?”</p>
 </blockquote>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">That’s architecture thinking.</p>
+<p class="d180-md-p">That’s architecture thinking.</p>
 <hr>
-<h1 id="the-5-layer-architecture-model" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">The 5-Layer Architecture Model</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We are using a strict layered model:</p>
+<h1 id="the-5-layer-architecture-model" class="d180-md-h1">The 5-Layer Architecture Model</h1>
+<p class="d180-md-p">We are using a strict layered model:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
           
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>App Layer
+        <pre class="d180-code-pre line-numbers"><code>App Layer
 Module Layer
 Core Layer
 Shared Layer
@@ -101,37 +390,37 @@ Data Layer
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Let’s break that down.</p>
-<h3 id="app-layer" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">App Layer</h3>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Navigation and global orchestration only.</p>
-<h3 id="module-layer" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">Module Layer</h3>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Feature-level business logic (archive, tagging, sharing, settings).</p>
-<h3 id="core-layer" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">Core Layer</h3>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Infrastructure:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Encryption</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Secure storage</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Filesystem</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Config</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Devtools</li>
+<p class="d180-md-p">Let’s break that down.</p>
+<h3 id="app-layer" class="d180-md-h3">App Layer</h3>
+<p class="d180-md-p">Navigation and global orchestration only.</p>
+<h3 id="module-layer" class="d180-md-h3">Module Layer</h3>
+<p class="d180-md-p">Feature-level business logic (archive, tagging, sharing, settings).</p>
+<h3 id="core-layer" class="d180-md-h3">Core Layer</h3>
+<p class="d180-md-p">Infrastructure:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Encryption</li>
+<li class="d180-md-li">Secure storage</li>
+<li class="d180-md-li">Filesystem</li>
+<li class="d180-md-li">Config</li>
+<li class="d180-md-li">Devtools</li>
 </ul>
-<h3 id="shared-layer" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">Shared Layer</h3>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Reusable, presentational UI components only.</p>
-<h3 id="data-layer" class="text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4">Data Layer</h3>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Encrypted Realm database.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Each layer has boundaries.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">No cross-contamination.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">If layers bleed into each other, refactoring becomes inevitable.</p>
+<h3 id="shared-layer" class="d180-md-h3">Shared Layer</h3>
+<p class="d180-md-p">Reusable, presentational UI components only.</p>
+<h3 id="data-layer" class="d180-md-h3">Data Layer</h3>
+<p class="d180-md-p">Encrypted Realm database.</p>
+<p class="d180-md-p">Each layer has boundaries.</p>
+<p class="d180-md-p">No cross-contamination.</p>
+<p class="d180-md-p">If layers bleed into each other, refactoring becomes inevitable.</p>
 <hr>
-<h1 id="folder-structure-production-ready-from-day-one" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">Folder Structure (Production-Ready From Day One)</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We created a structure that supports growth:</p>
+<h1 id="folder-structure-production-ready-from-day-one" class="d180-md-h1">Folder Structure (Production-Ready From Day One)</h1>
+<p class="d180-md-p">We created a structure that supports growth:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
           
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>src/
+        <pre class="d180-code-pre line-numbers"><code>src/
   app/
   core/
   modules/
@@ -139,324 +428,324 @@ Data Layer
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This is not over-engineering.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This is prevention.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Most MVPs collapse because everything lives inside <code>screens/</code>.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We are separating:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Infrastructure from features</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Business logic from UI</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Storage from services</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Reusable systems from product modules</li>
+<p class="d180-md-p">This is not over-engineering.</p>
+<p class="d180-md-p">This is prevention.</p>
+<p class="d180-md-p">Most MVPs collapse because everything lives inside <code>screens/</code>.</p>
+<p class="d180-md-p">We are separating:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Infrastructure from features</li>
+<li class="d180-md-li">Business logic from UI</li>
+<li class="d180-md-li">Storage from services</li>
+<li class="d180-md-li">Reusable systems from product modules</li>
 </ul>
 <hr>
-<h1 id="strict-architectural-rules-non-negotiable" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">Strict Architectural Rules (Non-Negotiable)</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">From today onward:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No business logic inside UI components.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No direct Realm calls inside screens.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Repository layer handles database access.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Services handle business logic.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Encryption lives only inside <code>core/security</code>.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">File handling lives only inside <code>core/fileSystem</code>.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Modules never depend directly on other modules.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No hardcoded theme values in UI.</li>
+<h1 id="strict-architectural-rules-non-negotiable" class="d180-md-h1">Strict Architectural Rules (Non-Negotiable)</h1>
+<p class="d180-md-p">From today onward:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">No business logic inside UI components.</li>
+<li class="d180-md-li">No direct Realm calls inside screens.</li>
+<li class="d180-md-li">Repository layer handles database access.</li>
+<li class="d180-md-li">Services handle business logic.</li>
+<li class="d180-md-li">Encryption lives only inside <code>core/security</code>.</li>
+<li class="d180-md-li">File handling lives only inside <code>core/fileSystem</code>.</li>
+<li class="d180-md-li">Modules never depend directly on other modules.</li>
+<li class="d180-md-li">No hardcoded theme values in UI.</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">These rules are boring.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">And that’s the point.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Boring architecture scales.</p>
+<p class="d180-md-p">These rules are boring.</p>
+<p class="d180-md-p">And that’s the point.</p>
+<p class="d180-md-p">Boring architecture scales.</p>
 <hr>
-<h1 id="why-we-are-not-using-redux-yet" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">Why We Are NOT Using Redux (Yet)</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This is important.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We are not using:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Redux</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Zustand</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">MobX</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Any global state tool</li>
+<h1 id="why-we-are-not-using-redux-yet" class="d180-md-h1">Why We Are NOT Using Redux (Yet)</h1>
+<p class="d180-md-p">This is important.</p>
+<p class="d180-md-p">We are not using:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Redux</li>
+<li class="d180-md-li">Zustand</li>
+<li class="d180-md-li">MobX</li>
+<li class="d180-md-li">Any global state tool</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Why?</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Because:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Realm is the single source of truth.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">UI subscribes through custom hooks.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Derived state only.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No duplicated global state.</li>
+<p class="d180-md-p">Why?</p>
+<p class="d180-md-p">Because:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Realm is the single source of truth.</li>
+<li class="d180-md-li">UI subscribes through custom hooks.</li>
+<li class="d180-md-li">Derived state only.</li>
+<li class="d180-md-li">No duplicated global state.</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Premature abstraction is forbidden.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Complexity must be earned.</p>
+<p class="d180-md-p">Premature abstraction is forbidden.</p>
+<p class="d180-md-p">Complexity must be earned.</p>
 <hr>
-<h1 id="security-from-day-one" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">Security From Day One</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Most MVPs say:</p>
-<blockquote class="border-l-2 border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/30 p-4 rounded-lg text-slate-700 dark:text-slate-300 italic">
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">“We’ll add encryption later.”</p>
+<h1 id="security-from-day-one" class="d180-md-h1">Security From Day One</h1>
+<p class="d180-md-p">Most MVPs say:</p>
+<blockquote class="d180-md-blockquote">
+<p class="d180-md-p">“We’ll add encryption later.”</p>
 </blockquote>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We won’t.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">From Day 1:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Realm database is encrypted.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Encryption key is generated per installation.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Key stored securely (Keychain / Keystore).</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">PIN stored as hash (never plain text).</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">App lock is an overlay — not a navigation route.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Encryption and lock are separate layers.</li>
+<p class="d180-md-p">We won’t.</p>
+<p class="d180-md-p">From Day 1:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Realm database is encrypted.</li>
+<li class="d180-md-li">Encryption key is generated per installation.</li>
+<li class="d180-md-li">Key stored securely (Keychain / Keystore).</li>
+<li class="d180-md-li">PIN stored as hash (never plain text).</li>
+<li class="d180-md-li">App lock is an overlay — not a navigation route.</li>
+<li class="d180-md-li">Encryption and lock are separate layers.</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Data protection ≠ session protection.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This is infrastructure, not a feature.</p>
+<p class="d180-md-p">Data protection ≠ session protection.</p>
+<p class="d180-md-p">This is infrastructure, not a feature.</p>
 <hr>
-<h1 id="sharing-without-cloud" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">Sharing Without Cloud</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We are not building servers.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Sharing will be:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">File-based</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Encrypted bundle</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Password protected</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">OS share sheet</li>
+<h1 id="sharing-without-cloud" class="d180-md-h1">Sharing Without Cloud</h1>
+<p class="d180-md-p">We are not building servers.</p>
+<p class="d180-md-p">Sharing will be:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">File-based</li>
+<li class="d180-md-li">Encrypted bundle</li>
+<li class="d180-md-li">Password protected</li>
+<li class="d180-md-li">OS share sheet</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">No backend.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">No P2P.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">No link sharing.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Local-first means local-first.</p>
+<p class="d180-md-p">No backend.</p>
+<p class="d180-md-p">No P2P.</p>
+<p class="d180-md-p">No link sharing.</p>
+<p class="d180-md-p">Local-first means local-first.</p>
 <hr>
-<h1 id="theme-system-from-day-one" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">Theme System From Day One</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We are implementing:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Central ThemeProvider</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Light / Dark / System</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No hardcoded colors</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Design tokens early</li>
+<h1 id="theme-system-from-day-one" class="d180-md-h1">Theme System From Day One</h1>
+<p class="d180-md-p">We are implementing:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Central ThemeProvider</li>
+<li class="d180-md-li">Light / Dark / System</li>
+<li class="d180-md-li">No hardcoded colors</li>
+<li class="d180-md-li">Design tokens early</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Why?</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Because design refactors are expensive.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Calm Scandinavian minimalism is intentional.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">UI must remain replaceable.</p>
+<p class="d180-md-p">Why?</p>
+<p class="d180-md-p">Because design refactors are expensive.</p>
+<p class="d180-md-p">Calm Scandinavian minimalism is intentional.</p>
+<p class="d180-md-p">UI must remain replaceable.</p>
 <hr>
-<h1 id="the-extraction-vision" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">The Extraction Vision</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Everything inside:</p>
+<h1 id="the-extraction-vision" class="d180-md-h1">The Extraction Vision</h1>
+<p class="d180-md-p">Everything inside:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
           
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code>core/
+        <pre class="d180-code-pre line-numbers"><code>core/
 shared/
 </code></pre>
       </div>
     
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Must be reusable in future products.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Offline Life Archive is:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">A product</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">A teaching system</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">A foundation</li>
+<p class="d180-md-p">Must be reusable in future products.</p>
+<p class="d180-md-p">Offline Life Archive is:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">A product</li>
+<li class="d180-md-li">A teaching system</li>
+<li class="d180-md-li">A foundation</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We are not just shipping features.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We are building infrastructure that can be extracted.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This is how you think as a product owner.</p>
+<p class="d180-md-p">We are not just shipping features.</p>
+<p class="d180-md-p">We are building infrastructure that can be extracted.</p>
+<p class="d180-md-p">This is how you think as a product owner.</p>
 <hr>
-<h1 id="what-we-did-today-friday-day-1" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">What We Did Today (Friday – Day 1)</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Today we:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Finalized product boundaries</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Locked MVP scope</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Defined architecture philosophy</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Created layered folder structure</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Defined strict coding rules</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Chose state strategy</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Chose encryption strategy</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Defined extraction principles</li>
+<h1 id="what-we-did-today-friday-day-1" class="d180-md-h1">What We Did Today (Friday – Day 1)</h1>
+<p class="d180-md-p">Today we:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Finalized product boundaries</li>
+<li class="d180-md-li">Locked MVP scope</li>
+<li class="d180-md-li">Defined architecture philosophy</li>
+<li class="d180-md-li">Created layered folder structure</li>
+<li class="d180-md-li">Defined strict coding rules</li>
+<li class="d180-md-li">Chose state strategy</li>
+<li class="d180-md-li">Chose encryption strategy</li>
+<li class="d180-md-li">Defined extraction principles</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We did not write features.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">And that is discipline.</p>
+<p class="d180-md-p">We did not write features.</p>
+<p class="d180-md-p">And that is discipline.</p>
 <hr>
-<h1 id="what-we-did-not-do" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">What We Did NOT Do</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We did not:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Add AI</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Add cloud sync</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Add global state libraries</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Add 20 dependencies</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Add theme toggles in UI</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Start designing 10 screens</li>
+<h1 id="what-we-did-not-do" class="d180-md-h1">What We Did NOT Do</h1>
+<p class="d180-md-p">We did not:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Add AI</li>
+<li class="d180-md-li">Add cloud sync</li>
+<li class="d180-md-li">Add global state libraries</li>
+<li class="d180-md-li">Add 20 dependencies</li>
+<li class="d180-md-li">Add theme toggles in UI</li>
+<li class="d180-md-li">Start designing 10 screens</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Restraint is maturity.</p>
+<p class="d180-md-p">Restraint is maturity.</p>
 <hr>
-<h1 id="why-this-matters" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">Why This Matters</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Without structure:</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">You build features.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">With structure:</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">You build systems.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Without discipline:</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">You refactor in 6 months.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">With discipline:</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">You extract a product.</p>
+<h1 id="why-this-matters" class="d180-md-h1">Why This Matters</h1>
+<p class="d180-md-p">Without structure:</p>
+<p class="d180-md-p">You build features.</p>
+<p class="d180-md-p">With structure:</p>
+<p class="d180-md-p">You build systems.</p>
+<p class="d180-md-p">Without discipline:</p>
+<p class="d180-md-p">You refactor in 6 months.</p>
+<p class="d180-md-p">With discipline:</p>
+<p class="d180-md-p">You extract a product.</p>
 <hr>
-<h1 id="what-happens-next" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">What Happens Next?</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Today is Friday.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5"><strong>Day 2 will be updated on Monday.</strong></p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">On Day 2 we will:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Implement encrypted Realm setup</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Establish Core layer foundation</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Create first repository</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Wire infrastructure before UI</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Ensure database encryption actually works</li>
+<h1 id="what-happens-next" class="d180-md-h1">What Happens Next?</h1>
+<p class="d180-md-p">Today is Friday.</p>
+<p class="d180-md-p"><strong>Day 2 will be updated on Monday.</strong></p>
+<p class="d180-md-p">On Day 2 we will:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Implement encrypted Realm setup</li>
+<li class="d180-md-li">Establish Core layer foundation</li>
+<li class="d180-md-li">Create first repository</li>
+<li class="d180-md-li">Wire infrastructure before UI</li>
+<li class="d180-md-li">Ensure database encryption actually works</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We are building like serious engineers.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Not tutorial coders.</p>
+<p class="d180-md-p">We are building like serious engineers.</p>
+<p class="d180-md-p">Not tutorial coders.</p>
 <hr>
-<h1 id="closing-thought" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">Closing Thought</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Most people start with code.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We started with clarity.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">And clarity compounds.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">See you on Monday for Day 2.</p>
+<h1 id="closing-thought" class="d180-md-h1">Closing Thought</h1>
+<p class="d180-md-p">Most people start with code.</p>
+<p class="d180-md-p">We started with clarity.</p>
+<p class="d180-md-p">And clarity compounds.</p>
+<p class="d180-md-p">See you on Monday for Day 2.</p>
 <hr>
 <hr>
-<h1 id="-if-youre-a-fresher-do-the-extra-work" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">📚 If You’re a Fresher — Do The Extra Work</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This is not a step-by-step beginner tutorial. We are building like professionals. That means we assume responsibility for learning.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">If some concepts in this article feel heavy — good. Growth is supposed to feel heavy.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We are not explaining everything inside the blog because:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Real engineers research.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Real builders dig deeper.</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Real ownership requires extra effort.</li>
+<h1 id="-if-youre-a-fresher-do-the-extra-work" class="d180-md-h1">📚 If You’re a Fresher — Do The Extra Work</h1>
+<p class="d180-md-p">This is not a step-by-step beginner tutorial. We are building like professionals. That means we assume responsibility for learning.</p>
+<p class="d180-md-p">If some concepts in this article feel heavy — good. Growth is supposed to feel heavy.</p>
+<p class="d180-md-p">We are not explaining everything inside the blog because:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Real engineers research.</li>
+<li class="d180-md-li">Real builders dig deeper.</li>
+<li class="d180-md-li">Real ownership requires extra effort.</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">If you don’t understand something mentioned today, here are the foundational topics you <strong>must</strong> explore on your own:</p>
+<p class="d180-md-p">If you don’t understand something mentioned today, here are the foundational topics you <strong>must</strong> explore on your own:</p>
 <hr>
-<h2 id="-1-create-your-first-react-native-cli-project" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">🚀 1. Create Your First React Native CLI Project</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Before thinking about architecture, you must know how to create and run a project properly.</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Official React Native Setup Guide (CLI):</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">https://reactnative.dev/docs/environment-setup</p>
+<h2 id="-1-create-your-first-react-native-cli-project" class="d180-md-h2">🚀 1. Create Your First React Native CLI Project</h2>
+<p class="d180-md-p">Before thinking about architecture, you must know how to create and run a project properly.</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">
+<p class="d180-md-p">Official React Native Setup Guide (CLI):</p>
+<p class="d180-md-p">https://reactnative.dev/docs/environment-setup</p>
 </li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Understand:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Node setup</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Android/iOS configuration</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Metro bundler</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Project structure</li>
+<p class="d180-md-p">Understand:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Node setup</li>
+<li class="d180-md-li">Android/iOS configuration</li>
+<li class="d180-md-li">Metro bundler</li>
+<li class="d180-md-li">Project structure</li>
 </ul>
 <hr>
-<h2 id="-2-what-is-global-state" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">🧠 2. What Is Global State?</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">You must understand:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Local state vs global state</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Why global state exists</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">When it becomes necessary</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Why premature global state causes chaos</li>
+<h2 id="-2-what-is-global-state" class="d180-md-h2">🧠 2. What Is Global State?</h2>
+<p class="d180-md-p">You must understand:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Local state vs global state</li>
+<li class="d180-md-li">Why global state exists</li>
+<li class="d180-md-li">When it becomes necessary</li>
+<li class="d180-md-li">Why premature global state causes chaos</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Start here:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">React Official Docs – State:</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">https://react.dev/learn/state-a-components-memory</p>
-</li>
-</ul>
-<hr>
-<h2 id="-3-what-is-redux" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">🗂 3. What Is Redux?</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Even though we are not using Redux, you must know what it is.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Because maturity means choosing consciously — not avoiding blindly.</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Redux Official Docs:</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">https://redux.js.org/introduction/getting-started</p>
-</li>
-</ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Understand:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Store</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Actions</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Reducers</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Single source of truth</li>
-</ul>
-<hr>
-<h2 id="-4-what-is-realm-database" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">🧩 4. What Is Realm Database?</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Realm is our data layer.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">You must understand:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Local database vs async storage</p>
-</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Why Realm is reactive</p>
-</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">What encryption means in databases</p>
-</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Realm React Native Docs:</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">https://www.mongodb.com/docs/realm/sdk/react-native/</p>
+<p class="d180-md-p">Start here:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">
+<p class="d180-md-p">React Official Docs – State:</p>
+<p class="d180-md-p">https://react.dev/learn/state-a-components-memory</p>
 </li>
 </ul>
 <hr>
-<h2 id="-5-what-is-encryption" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">🔐 5. What Is Encryption?</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We mentioned:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Encrypted database</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Keychain / Keystore</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Hashing PIN</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">AES encryption</li>
+<h2 id="-3-what-is-redux" class="d180-md-h2">🗂 3. What Is Redux?</h2>
+<p class="d180-md-p">Even though we are not using Redux, you must know what it is.</p>
+<p class="d180-md-p">Because maturity means choosing consciously — not avoiding blindly.</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">
+<p class="d180-md-p">Redux Official Docs:</p>
+<p class="d180-md-p">https://redux.js.org/introduction/getting-started</p>
+</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">If these terms are new — pause and learn.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Start with:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">OWASP Mobile Security Guide:</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">https://owasp.org/www-project-mobile-top-10/</p>
+<p class="d180-md-p">Understand:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Store</li>
+<li class="d180-md-li">Actions</li>
+<li class="d180-md-li">Reducers</li>
+<li class="d180-md-li">Single source of truth</li>
+</ul>
+<hr>
+<h2 id="-4-what-is-realm-database" class="d180-md-h2">🧩 4. What Is Realm Database?</h2>
+<p class="d180-md-p">Realm is our data layer.</p>
+<p class="d180-md-p">You must understand:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">
+<p class="d180-md-p">Local database vs async storage</p>
+</li>
+<li class="d180-md-li">
+<p class="d180-md-p">Why Realm is reactive</p>
+</li>
+<li class="d180-md-li">
+<p class="d180-md-p">What encryption means in databases</p>
+</li>
+<li class="d180-md-li">
+<p class="d180-md-p">Realm React Native Docs:</p>
+<p class="d180-md-p">https://www.mongodb.com/docs/realm/sdk/react-native/</p>
 </li>
 </ul>
 <hr>
-<h2 id="-6-what-is-layered-architecture" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">🏗 6. What Is Layered Architecture?</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">You must understand:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Separation of concerns</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Repository pattern</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Service layer</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Clean architecture basics</li>
+<h2 id="-5-what-is-encryption" class="d180-md-h2">🔐 5. What Is Encryption?</h2>
+<p class="d180-md-p">We mentioned:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Encrypted database</li>
+<li class="d180-md-li">Keychain / Keystore</li>
+<li class="d180-md-li">Hashing PIN</li>
+<li class="d180-md-li">AES encryption</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">A good starting point:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Clean Architecture (Concept Overview):</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">https://blog.cleancoder.com/</p>
+<p class="d180-md-p">If these terms are new — pause and learn.</p>
+<p class="d180-md-p">Start with:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">
+<p class="d180-md-p">OWASP Mobile Security Guide:</p>
+<p class="d180-md-p">https://owasp.org/www-project-mobile-top-10/</p>
 </li>
 </ul>
 <hr>
-<h2 id="-7-what-is-a-design-system" class="text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5">🎨 7. What Is a Design System?</h2>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">We mentioned:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">ThemeProvider</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Design tokens</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">No hardcoded colors</li>
+<h2 id="-6-what-is-layered-architecture" class="d180-md-h2">🏗 6. What Is Layered Architecture?</h2>
+<p class="d180-md-p">You must understand:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Separation of concerns</li>
+<li class="d180-md-li">Repository pattern</li>
+<li class="d180-md-li">Service layer</li>
+<li class="d180-md-li">Clean architecture basics</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Learn:</p>
-<ul class="list-disc pl-6 space-y-1 my-4">
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">What is a design system?</li>
-<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">Why consistency reduces refactor cost?</li>
+<p class="d180-md-p">A good starting point:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">
+<p class="d180-md-p">Clean Architecture (Concept Overview):</p>
+<p class="d180-md-p">https://blog.cleancoder.com/</p>
+</li>
 </ul>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Intro:</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">https://www.designsystems.com/</p>
 <hr>
-<h1 id="-important" class="text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700">⚠ Important</h1>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">If you skip these topics and just copy folder structures,</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">you will build something that looks structured — but isn’t understood.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">And architecture without understanding is just decoration.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">This series is for builders.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Builders research.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Builders think.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Builders struggle a little.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">That’s how you grow.</p>
+<h2 id="-7-what-is-a-design-system" class="d180-md-h2">🎨 7. What Is a Design System?</h2>
+<p class="d180-md-p">We mentioned:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">ThemeProvider</li>
+<li class="d180-md-li">Design tokens</li>
+<li class="d180-md-li">No hardcoded colors</li>
+</ul>
+<p class="d180-md-p">Learn:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">What is a design system?</li>
+<li class="d180-md-li">Why consistency reduces refactor cost?</li>
+</ul>
+<p class="d180-md-p">Intro:</p>
+<p class="d180-md-p">https://www.designsystems.com/</p>
 <hr>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">See you on Monday for Day 2.</p>
-<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">Now go read.</p>
-3:["$","main",null,{"className":"w-full max-w-6xl mx-auto px-4 sm:px-8 py-10","children":["$","div",null,{"className":"flex-1","children":[["$","article",null,{"className":"max-w-3xl prose prose-slate dark:prose-invert prose-headings:font-black prose-headings:tracking-tight prose-h1:text-4xl prose-h1:mt-16 prose-h1:mb-6 prose-h1:pb-4 prose-h1:border-b prose-h1:border-slate-200 dark:prose-h1:border-slate-700 prose-h2:text-3xl prose-h2:mt-14 prose-h2:mb-5 prose-h3:text-2xl prose-h3:mt-10 prose-h3:mb-4 prose-p:text-[17px] prose-p:leading-[1.85] prose-p:my-5 prose-p:text-slate-700 dark:prose-p:text-slate-300 prose-strong:text-slate-900 dark:prose-strong:text-white prose-pre:rounded-2xl prose-pre:bg-slate-950 prose-pre:p-6 prose-hr:my-12 prose-hr:border-slate-200 dark:prose-hr:border-slate-800 prose-ul:list-disc prose-ol:list-decimal","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$7"}}],"$L8"]}],"$L9","$La"]}]}]
-4:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Day 1 – We Don’t Start With Code\",\"datePublished\":\"2026-02-20\",\"description\":\"**Today is Friday.** And today — we are **not** writing features. We are deciding how this product will live, breathe, and evolve for the next five years. Most developers open a new project and immediately start creating screens. Buttons. Forms. Navigation stacks.\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\"}}"}}]
-5:["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true}]
-6:["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]
-8:["$","$Le",null,{}]
-9:["$","div",null,{"className":"mt-8 mb-6","children":["$","a",null,{"href":"https://github.com/subraatakumar/subraatakumar.com/edit/main/content/180days/day-1.md","target":"_blank","rel":"noopener noreferrer","className":"block w-full sm:w-auto px-4 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-amber-400 transition-all text-sm font-medium","children":"Suggest a change to the content of the material"}]}]
-a:["$","div",null,{"className":"mt-16 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 pb-20","children":[["$","$L2",null,{"href":"/180days/day-0","className":"group flex items-center gap-3 px-5 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-amber-400 transition-all w-full sm:w-auto","children":["$","div",null,{"className":"text-left","children":[["$","span",null,{"className":"block text-[10px] font-bold text-slate-400 uppercase tracking-widest","children":"Previous"}],["$","span",null,{"className":"text-sm font-bold capitalize","children":"day 0"}]]}]}],["$","$L2",null,{"href":"/180days/day-2","className":"group flex items-center gap-3 px-5 py-3 bg-slate-900 dark:bg-white text-white dark:text-slate-950 rounded-xl hover:scale-[1.02] transition-all w-full sm:w-auto text-right","children":["$","div",null,{"className":"text-right","children":[["$","span",null,{"className":"block text-[10px] font-bold opacity-60 uppercase tracking-widest","children":"Next Up"}],["$","span",null,{"className":"text-sm font-bold capitalize","children":"day 2"}]]}]}]]}]
-d:null
+<h1 id="-important" class="d180-md-h1">⚠ Important</h1>
+<p class="d180-md-p">If you skip these topics and just copy folder structures,</p>
+<p class="d180-md-p">you will build something that looks structured — but isn’t understood.</p>
+<p class="d180-md-p">And architecture without understanding is just decoration.</p>
+<p class="d180-md-p">This series is for builders.</p>
+<p class="d180-md-p">Builders research.</p>
+<p class="d180-md-p">Builders think.</p>
+<p class="d180-md-p">Builders struggle a little.</p>
+<p class="d180-md-p">That’s how you grow.</p>
+<hr>
+<p class="d180-md-p">See you on Monday for Day 2.</p>
+<p class="d180-md-p">Now go read.</p>
+5:["$","main",null,{"className":"d180-content-wrap","style":{"paddingTop":36},"children":["$","div",null,{"className":"flex-1","children":[["$","article",null,{"className":"d180-post-content","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$a"}}],"$Lb"]}],"$Lc","$Ld"]}]}]
+6:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"mainEntityOfPage\":\"https://subraatakumar.com/180days/day-1\",\"headline\":\"Day 1 – We Don’t Start With Code\",\"datePublished\":\"2026-02-20\",\"description\":\"**Today is Friday.** And today — we are **not** writing features. We are deciding how this product will live, breathe, and evolve for the next five years. Most developers open a new project and immediately start creating screens. Buttons. Forms. Navigation stacks.\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\"}}"}}]
+7:["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true}]
+8:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+b:["$","$L11",null,{}]
+c:["$","div",null,{"className":"mt-8 mb-6","children":["$","a",null,{"href":"https://github.com/subraatakumar/subraatakumar.com/edit/main/content/180days/day-1.md","target":"_blank","rel":"noopener noreferrer","className":"d180-edit-link","children":"Suggest a change to the content of the material"}]}]
+d:["$","div",null,{"className":"d180-bottom-nav","children":[["$","$L9",null,{"href":"/180days/day-0","className":"d180-nav-link","children":["$","div",null,{"children":[["$","strong",null,{"children":"Previous"}],["$","span",null,{"style":{"fontSize":14,"fontWeight":700,"textTransform":"capitalize"},"children":"day 0"}]]}]}],["$","$L9",null,{"href":"/180days/day-2","className":"d180-nav-link next","children":["$","div",null,{"children":[["$","strong",null,{"children":"Next Up"}],["$","span",null,{"style":{"fontSize":14,"fontWeight":700,"textTransform":"capitalize"},"children":"day 2"}]]}]}]]}]
+10:null

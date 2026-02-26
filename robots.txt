@@ -1,4 +1,5 @@
-User-agent: *
+User-Agent: *
 Allow: /
 
+Host: https://subraatakumar.com
 Sitemap: https://subraatakumar.com/sitemap.xml
