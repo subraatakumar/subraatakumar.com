@@ -1,6 +1,260 @@
 1:"$Sreact.fragment"
-2:I[22016,["/_next/static/chunks/7c92e96509cd355e.js"],""]
-3:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
-4:"$Sreact.suspense"
-0:{"buildId":"qWGB019utwya5Bcz8uHGu","rsc":["$","$1","c",{"children":[["$","section",null,{"className":"prose mx-auto","children":[["$","h1",null,{"children":"Water Tracker"}],["$","p",null,{"children":"Water Tracker is a mobile app concept to help users log daily intake, receive reminders, and review hydration trends over time."}],["$","h2",null,{"children":"Project Focus"}],["$","p",null,{"children":"The core scope covers low-friction logging, clear progress visuals, and reminder workflows that support consistent habits."}],["$","h2",null,{"children":"Current Status"}],["$","p",null,{"children":"This page currently documents the product scope and portfolio context."}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"Water Tracker\",\"applicationCategory\":\"HealthApplication\",\"operatingSystem\":\"iOS, Android\",\"description\":\"Hydration app concept for daily intake logging, reminders, and trend visibility with a mobile-first experience.\",\"url\":\"https://subraatakumar.com/watertracker\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\"}}"}}],["$","p",null,{"className":"mt-6","children":["$","$L2",null,{"href":"/projects","className":"text-sm text-blue-600","children":"← Back to Projects"}]}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
-5:null
+9:I[22016,["/_next/static/chunks/7c92e96509cd355e.js"],""]
+a:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+b:"$Sreact.suspense"
+2:T1b45,
+        .wt-hero {
+          border-radius: 28px;
+          overflow: hidden;
+          position: relative;
+          border: 1px solid rgba(20, 51, 111, 0.1);
+          background:
+            radial-gradient(circle at 14% 0%, rgba(127, 195, 255, 0.36), transparent 35%),
+            radial-gradient(circle at 92% 90%, rgba(94, 173, 255, 0.3), transparent 32%),
+            linear-gradient(145deg, #0f2458 0%, #163b7e 45%, #2f6bc2 100%);
+          color: #e9f6ff;
+          padding: 48px 38px;
+          min-height: 420px;
+          display: grid;
+          grid-template-columns: 1.2fr 1fr;
+          gap: 26px;
+        }
+        .wt-badge-row {
+          display: flex;
+          gap: 10px;
+          flex-wrap: wrap;
+          margin-bottom: 18px;
+        }
+        .wt-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          padding: 7px 10px;
+          border-radius: 999px;
+          background: rgba(217, 245, 255, 0.15);
+          border: 1px solid rgba(217, 245, 255, 0.3);
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+        }
+        .wt-hero h1 {
+          margin: 0;
+          line-height: 1.02;
+          letter-spacing: -0.03em;
+          font-size: clamp(2.1rem, 5vw, 4rem);
+        }
+        .wt-hero p {
+          color: #c5e7ff;
+          font-size: 1.08rem;
+          line-height: 1.7;
+          max-width: 580px;
+          margin: 18px 0 24px;
+        }
+        .wt-cta {
+          display: flex;
+          gap: 12px;
+          flex-wrap: wrap;
+          align-items: center;
+        }
+        .wt-btn {
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 800;
+          letter-spacing: 0.03em;
+          font-size: 13px;
+          text-transform: uppercase;
+          border-radius: 12px;
+          min-height: 46px;
+          padding: 0 16px;
+          border: 1px solid transparent;
+        }
+        .wt-btn-primary {
+          background: #8fd5ff;
+          color: #103068;
+          box-shadow: 0 10px 22px rgba(9, 19, 48, 0.35);
+        }
+        .wt-btn-secondary {
+          background: transparent;
+          color: #def3ff;
+          border-color: rgba(222, 243, 255, 0.4);
+        }
+        .wt-btn-disabled {
+          background: rgba(255,255,255,0.12);
+          color: #c2d8f3;
+          border-color: rgba(255,255,255,0.2);
+          cursor: default;
+        }
+        .wt-phone {
+          align-self: center;
+          justify-self: center;
+          width: min(100%, 330px);
+          border-radius: 30px;
+          background: linear-gradient(180deg, rgba(193, 234, 255, 0.97), rgba(220, 244, 255, 0.9));
+          border: 2px solid rgba(224, 244, 255, 0.45);
+          box-shadow: 0 28px 50px rgba(8, 17, 42, 0.45);
+          padding: 16px 16px 14px;
+          transform: rotate(-7deg);
+        }
+        .wt-phone-notch {
+          width: 96px;
+          height: 22px;
+          background: #091631;
+          border-radius: 999px;
+          margin: 0 auto 12px;
+        }
+        .wt-phone-card {
+          background: rgba(255,255,255,0.9);
+          border-radius: 14px;
+          border: 1px solid rgba(16, 36, 79, 0.1);
+          padding: 14px 12px;
+        }
+        .wt-ring {
+          margin: 14px 0 10px;
+          width: 160px;
+          height: 160px;
+          border-radius: 50%;
+          background:
+            conic-gradient(#4fc6ff 0 60%, #f59e0b 60% 75%, #95d5ff 75% 100%);
+          position: relative;
+        }
+        .wt-ring::after {
+          content: "";
+          position: absolute;
+          inset: 18px;
+          border-radius: 50%;
+          background: #fff;
+        }
+        .wt-ring-value {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 2;
+          font-size: 20px;
+          font-weight: 800;
+          color: #17386f;
+        }
+        .wt-section {
+          margin-top: 24px;
+          padding: 28px;
+          border-radius: 24px;
+          background: rgba(255,255,255,0.82);
+          border: 1px solid rgba(20, 51, 111, 0.08);
+        }
+        .wt-section h2 {
+          margin: 0 0 10px;
+          font-size: clamp(1.4rem, 2.4vw, 2rem);
+          letter-spacing: -0.02em;
+          color: #0f2458;
+        }
+        .wt-sub {
+          color: #4a5f8c;
+          line-height: 1.7;
+          margin: 0 0 18px;
+          max-width: 900px;
+        }
+        .wt-grid {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 14px;
+        }
+        .wt-feature {
+          border-radius: 16px;
+          border: 1px solid rgba(16, 36, 79, 0.1);
+          background: #fff;
+          padding: 16px 14px;
+        }
+        .wt-feature b {
+          display: block;
+          font-size: 1rem;
+          color: #123272;
+          margin-bottom: 8px;
+        }
+        .wt-feature p {
+          margin: 0;
+          color: #516692;
+          line-height: 1.6;
+          font-size: 0.95rem;
+        }
+        .wt-steps {
+          display: grid;
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          gap: 12px;
+        }
+        .wt-step {
+          background: linear-gradient(180deg, #ffffff, #edf6ff);
+          border-radius: 15px;
+          border: 1px solid rgba(16, 36, 79, 0.08);
+          padding: 14px;
+        }
+        .wt-step .n {
+          width: 26px;
+          height: 26px;
+          border-radius: 999px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 800;
+          color: #fff;
+          background: #3f82ff;
+          font-size: 12px;
+          margin-bottom: 8px;
+        }
+        .wt-step b {
+          display: block;
+          color: #13306a;
+          margin-bottom: 5px;
+        }
+        .wt-step p {
+          margin: 0;
+          color: #50648d;
+          font-size: 0.92rem;
+          line-height: 1.5;
+        }
+        .wt-note {
+          margin-top: 14px;
+          border-radius: 14px;
+          padding: 12px 13px;
+          background: #ecf7ff;
+          color: #31507f;
+          border: 1px solid rgba(49, 80, 127, 0.15);
+          font-size: 0.9rem;
+        }
+        @media (max-width: 980px) {
+          .wt-hero {
+            grid-template-columns: 1fr;
+          }
+          .wt-phone {
+            transform: none;
+          }
+          .wt-grid {
+            grid-template-columns: 1fr 1fr;
+          }
+          .wt-steps {
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+        @media (max-width: 640px) {
+          .wt-hero {
+            padding: 30px 18px;
+          }
+          .wt-section {
+            padding: 20px 16px;
+          }
+          .wt-grid,
+          .wt-steps {
+            grid-template-columns: 1fr;
+          }
+        }
+      0:{"buildId":"p2Q5GIjfCZI8jzjyliMZE","rsc":["$","$1","c",{"children":[["$","section",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5","$L6","$L7"]}],null,"$L8"]}],"loading":null,"isPartial":false}
+3:["$","div",null,{"className":"wt-hero","children":[["$","div",null,{"children":[["$","div",null,{"className":"wt-badge-row","children":[["$","span",null,{"className":"wt-badge","children":"App Store: Live"}],["$","span",null,{"className":"wt-badge","children":"Play Store: Under Review"}],["$","span",null,{"className":"wt-badge","children":"Offline-First"}]]}],["$","h1",null,{"className":"wt-font-display","children":"Stay Hydrated. Stay In Control."}],["$","p",null,{"children":"WaterTracker is a privacy-first hydration companion for people who want consistent habits without account setup. Track any drink, set your schedule, and keep all data local on-device with encrypted Realm storage."}],["$","div",null,{"className":"wt-cta","children":[["$","span",null,{"className":"wt-btn wt-btn-disabled","children":"App Store Link Pending"}],["$","span",null,{"className":"wt-btn wt-btn-disabled","children":"Play Store Under Review"}],["$","$L9",null,{"href":"/watertracker/guide","className":"wt-btn wt-btn-secondary","children":"How To Use"}],["$","$L9",null,{"href":"/watertracker/benefits","className":"wt-btn wt-btn-secondary","children":"Health Benefits"}]]}]]}],["$","div",null,{"className":"wt-phone","aria-hidden":"true","children":[["$","div",null,{"className":"wt-phone-notch"}],["$","div",null,{"className":"wt-phone-card","children":[["$","strong",null,{"style":{"color":"#1a3a72"},"children":"Fluid Intake"}],["$","div",null,{"className":"wt-ring","children":["$","div",null,{"className":"wt-ring-value","children":"2240 ml"}]}],["$","div",null,{"style":{"display":"grid","gap":8},"children":[["$","div","Water (Bottle) · 1500 ml",{"style":{"borderRadius":10,"border":"1px solid rgba(16, 36, 79, 0.12)","background":"#fff","padding":"8px 10px","color":"#4a5f8c","fontSize":12,"fontWeight":700},"children":"Water (Bottle) · 1500 ml"}],["$","div","Orange Juice · 240 ml",{"style":{"borderRadius":10,"border":"1px solid rgba(16, 36, 79, 0.12)","background":"#fff","padding":"8px 10px","color":"#4a5f8c","fontSize":12,"fontWeight":700},"children":"Orange Juice · 240 ml"}],["$","div","Milk · 200 ml",{"style":{"borderRadius":10,"border":"1px solid rgba(16, 36, 79, 0.12)","background":"#fff","padding":"8px 10px","color":"#4a5f8c","fontSize":12,"fontWeight":700},"children":"Milk · 200 ml"}]]}]]}]]}]]}]
+4:["$","div",null,{"className":"wt-section","children":[["$","h2",null,{"className":"wt-font-display","children":"Built For Real-World Hydration"}],["$","p",null,{"className":"wt-sub","children":"The app focuses on utility, not complexity. Every feature is designed to help users log quickly, maintain rhythm, and protect personal data."}],["$","div",null,{"className":"wt-grid","children":[["$","div",null,{"className":"wt-feature","children":[["$","b",null,{"children":"Custom Drinks & Volumes"}],["$","p",null,{"children":"Create your own drink presets, set exact ml/oz values, and manage your list anytime."}]]}],["$","div",null,{"className":"wt-feature","children":[["$","b",null,{"children":"Hydration Reminders"}],["$","p",null,{"children":"Schedule reminders that fit your day with follow-up and sound options."}]]}],["$","div",null,{"className":"wt-feature","children":[["$","b",null,{"children":"Quick Intake Logging"}],["$","p",null,{"children":"Tap to add drinks fast and keep your daily progress visible at a glance."}]]}],["$","div",null,{"className":"wt-feature","children":[["$","b",null,{"children":"PIN + Biometric Lock"}],["$","p",null,{"children":"Protect your hydration history with local security controls from the first launch."}]]}],["$","div",null,{"className":"wt-feature","children":[["$","b",null,{"children":"Backup & Restore"}],["$","p",null,{"children":"Use iCloud (iOS) or Google Drive (Android) backup flows for peace of mind."}]]}],["$","div",null,{"className":"wt-feature","children":[["$","b",null,{"children":"No Account Required"}],["$","p",null,{"children":"No backend profile and no mandatory login. Your data remains on your device by default."}]]}]]}]]}]
+5:["$","div",null,{"className":"wt-section","children":[["$","h2",null,{"className":"wt-font-display","children":"How It Works"}],["$","p",null,{"className":"wt-sub","children":"First-time setup takes less than two minutes. The guide page includes complete step-by-step flows."}],["$","div",null,{"className":"wt-steps","children":[["$","div",null,{"className":"wt-step","children":[["$","span",null,{"className":"n","children":"1"}],["$","b",null,{"children":"Set Goal"}],["$","p",null,{"children":"Choose your daily ml/oz target and preferred units."}]]}],["$","div",null,{"className":"wt-step","children":[["$","span",null,{"className":"n","children":"2"}],["$","b",null,{"children":"Add Drinks"}],["$","p",null,{"children":"Create drink presets with icon, color, and volume."}]]}],["$","div",null,{"className":"wt-step","children":[["$","span",null,{"className":"n","children":"3"}],["$","b",null,{"children":"Track Intake"}],["$","p",null,{"children":"Log each drink and watch progress ring updates live."}]]}],["$","div",null,{"className":"wt-step","children":[["$","span",null,{"className":"n","children":"4"}],["$","b",null,{"children":"Protect & Backup"}],["$","p",null,{"children":"Enable PIN/Biometric and run cloud backup when needed."}]]}]]}],["$","div",null,{"className":"wt-note","children":["Want detailed walkthroughs for reminders, backups, and PIN setup? Open"," ",["$","$L9",null,{"href":"/watertracker/guide","style":{"color":"#1f4f9d","fontWeight":800},"children":"WaterTracker How-To Guide"}],"."," ","For hydration education, read"," ",["$","$L9",null,{"href":"/watertracker/benefits","style":{"color":"#1f4f9d","fontWeight":800},"children":"Balanced Drinking Benefits"}],"."]}]]}]
+6:["$","div",null,{"className":"wt-section","children":[["$","h2",null,{"className":"wt-font-display","children":"Privacy Model"}],["$","p",null,{"className":"wt-sub","children":"WaterTracker is designed as a public utility app that keeps core user data local. The hydration history, presets, and preferences are stored in on-device Realm database. No mandatory account is required to use core tracking features."}]]}]
+7:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"SoftwareApplication\",\"name\":\"WaterTracker\",\"applicationCategory\":\"HealthApplication\",\"operatingSystem\":\"iOS, Android\",\"url\":\"https://subraatakumar.com/watertracker\",\"description\":\"WaterTracker helps users log fluid intake, set reminders, and protect hydration history with local-first storage.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\"},\"featureList\":[\"Custom drink presets and volumes\",\"Hydration reminders\",\"Daily progress tracking\",\"PIN and biometric protection\",\"Backup and restore\"],\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\"}},{\"@type\":\"WebPage\",\"name\":\"WaterTracker Landing Page\",\"url\":\"https://subraatakumar.com/watertracker\",\"description\":\"Official landing page for WaterTracker with feature overview, availability, and usage links.\"}]}"}}]
+8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
+c:null

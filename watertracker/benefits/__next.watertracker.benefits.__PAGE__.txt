@@ -1,0 +1,132 @@
+1:"$Sreact.fragment"
+9:I[22016,["/_next/static/chunks/7c92e96509cd355e.js"],""]
+b:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+c:"$Sreact.suspense"
+2:Tc00,
+        .wtb-wrap {
+          border-radius: 24px;
+          border: 1px solid rgba(16, 36, 79, 0.1);
+          background: rgba(255,255,255,0.86);
+          padding: 30px 26px;
+        }
+        .wtb-wrap h1 {
+          margin: 0;
+          font-size: clamp(2rem, 4vw, 3rem);
+          letter-spacing: -0.03em;
+          color: #0f2458;
+        }
+        .wtb-intro {
+          margin: 12px 0 20px;
+          color: #4a5f8c;
+          line-height: 1.8;
+          max-width: 900px;
+        }
+        .wtb-grid {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 12px;
+        }
+        .wtb-card {
+          border-radius: 16px;
+          border: 1px solid rgba(16, 36, 79, 0.1);
+          background: #fff;
+          padding: 14px;
+        }
+        .wtb-card b {
+          color: #14336f;
+          display: block;
+          margin-bottom: 5px;
+          font-size: 1rem;
+        }
+        .wtb-card p {
+          margin: 0;
+          color: #4b5f89;
+          line-height: 1.6;
+          font-size: 0.95rem;
+        }
+        .wtb-sec {
+          margin-top: 16px;
+          border-radius: 16px;
+          border: 1px solid rgba(16, 36, 79, 0.1);
+          background: #fff;
+          padding: 16px;
+        }
+        .wtb-sec h2 {
+          margin: 0 0 8px;
+          color: #0f2458;
+          font-size: 1.35rem;
+        }
+        .wtb-faq {
+          display: grid;
+          gap: 10px;
+        }
+        .wtb-faq-item {
+          border-radius: 12px;
+          border: 1px solid rgba(16, 36, 79, 0.1);
+          background: #f8fcff;
+          padding: 12px;
+        }
+        .wtb-faq-item b {
+          color: #17386f;
+          display: block;
+          margin-bottom: 4px;
+        }
+        .wtb-faq-item p {
+          margin: 0;
+          color: #4d5f86;
+          line-height: 1.6;
+        }
+        .wtb-note {
+          margin-top: 10px;
+          border-radius: 12px;
+          border: 1px solid rgba(245, 158, 11, 0.35);
+          background: #fff8eb;
+          color: #7c4a04;
+          padding: 10px 12px;
+          font-size: 0.92rem;
+          line-height: 1.6;
+        }
+        .wtb-actions {
+          margin-top: 14px;
+          display: flex;
+          gap: 10px;
+          flex-wrap: wrap;
+        }
+        .wtb-btn {
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 42px;
+          padding: 0 14px;
+          border-radius: 10px;
+          font-size: 13px;
+          text-transform: uppercase;
+          font-weight: 800;
+          letter-spacing: 0.04em;
+        }
+        .wtb-btn-primary {
+          background: #3f82ff;
+          color: #fff;
+        }
+        .wtb-btn-ghost {
+          border: 1px solid rgba(16, 36, 79, 0.2);
+          color: #17386f;
+          background: #fff;
+        }
+        @media (max-width: 820px) {
+          .wtb-wrap {
+            padding: 22px 16px;
+          }
+          .wtb-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+      0:{"buildId":"p2Q5GIjfCZI8jzjyliMZE","rsc":["$","$1","c",{"children":[["$","article",null,{"children":[["$","style",null,{"children":"$2"}],["$","div",null,{"className":"wtb-wrap","children":[["$","h1",null,{"className":"wt-font-display","children":"Benefits of Balanced Drinking"}],"$L3","$L4","$L5","$L6"]}],"$L7"]}],null,"$L8"]}],"loading":null,"isPartial":false}
+3:["$","p",null,{"className":"wtb-intro","children":"Balanced hydration is not about drinking as much as possible. It means giving your body the right amount of fluid consistently so daily functions like focus, energy, digestion, and recovery stay stable."}]
+4:["$","div",null,{"className":"wtb-grid","children":[["$","div","Better Focus and Mental Clarity",{"className":"wtb-card","children":[["$","b",null,{"children":"Better Focus and Mental Clarity"}],["$","p",null,{"children":"Mild dehydration can reduce concentration. Balanced fluid intake helps maintain attention, memory, and decision-making through the day."}]]}],["$","div","Steadier Energy",{"className":"wtb-card","children":[["$","b",null,{"children":"Steadier Energy"}],["$","p",null,{"children":"When hydration is consistent, fatigue tends to reduce and daily activity feels more sustainable, especially in long work sessions."}]]}],["$","div","Support for Digestion and Metabolism",{"className":"wtb-card","children":[["$","b",null,{"children":"Support for Digestion and Metabolism"}],["$","p",null,{"children":"Adequate water supports digestion and regular bowel function, and helps your body process nutrients effectively."}]]}],["$","div","Temperature and Physical Performance",{"className":"wtb-card","children":[["$","b",null,{"children":"Temperature and Physical Performance"}],["$","p",null,{"children":"Hydration helps regulate body temperature and supports exercise performance, especially in warm conditions."}]]}],["$","div","Kidney and Urinary Health Support",{"className":"wtb-card","children":[["$","b",null,{"children":"Kidney and Urinary Health Support"}],["$","p",null,{"children":"Consistent hydration supports healthy urine flow and can reduce risk associated with concentrated urine patterns."}]]}],["$","div","Healthier Habit Formation",{"className":"wtb-card","children":[["$","b",null,{"children":"Healthier Habit Formation"}],["$","p",null,{"children":"Tracking water intake creates awareness and consistency, helping people build sustainable long-term routines."}]]}]]}]
+5:["$","div",null,{"className":"wtb-sec","children":[["$","h2",null,{"className":"wt-font-display","children":"Common Questions"}],["$","div",null,{"className":"wtb-faq","children":[["$","div","What is balanced drinking?",{"className":"wtb-faq-item","children":[["$","b",null,{"children":"What is balanced drinking?"}],["$","p",null,{"children":"Balanced drinking means meeting your body’s hydration needs consistently without going too low or too high."}]]}],["$","div","Is more water always better?",{"className":"wtb-faq-item","children":[["$","b",null,{"children":"Is more water always better?"}],["$","p",null,{"children":"No. Excessive intake in short time can be harmful. Hydration should be paced across the day and aligned with your body and activity."}]]}],["$","div","Does tea or coffee count as fluid intake?",{"className":"wtb-faq-item","children":[["$","b",null,{"children":"Does tea or coffee count as fluid intake?"}],["$","p",null,{"children":"Yes. They contribute to total fluid intake, though plain water is still the simplest base for daily hydration."}]]}],["$","div","How do I find my ideal daily goal?",{"className":"wtb-faq-item","children":[["$","b",null,{"children":"How do I find my ideal daily goal?"}],["$","p",null,{"children":"Start with a moderate goal, monitor thirst and urine color trends, then adjust for climate, activity, and health conditions."}]]}]]}],["$","div",null,{"className":"wtb-note","children":"General guidance only. If you have kidney, heart, endocrine, or other medical conditions affecting fluid intake, follow your clinician’s advice."}]]}]
+6:["$","div",null,{"className":"wtb-actions","children":[["$","$L9",null,{"href":"/watertracker","className":"wtb-btn wtb-btn-primary","children":"Back To Overview"}],["$","$L9",null,{"href":"/watertracker/guide","className":"wtb-btn wtb-btn-ghost","children":"Open How-To Guide"}]]}]
+a:T555,{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Benefits of Balanced Drinking","description":"Practical health benefits of balanced hydration and safe intake habits.","url":"https://subraatakumar.com/watertracker/benefits","author":{"@type":"Person","name":"Subrata Kumar Das"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is balanced drinking?","acceptedAnswer":{"@type":"Answer","text":"Balanced drinking means meeting your body’s hydration needs consistently without going too low or too high."}},{"@type":"Question","name":"Is more water always better?","acceptedAnswer":{"@type":"Answer","text":"No. Excessive intake in short time can be harmful. Hydration should be paced across the day and aligned with your body and activity."}},{"@type":"Question","name":"Does tea or coffee count as fluid intake?","acceptedAnswer":{"@type":"Answer","text":"Yes. They contribute to total fluid intake, though plain water is still the simplest base for daily hydration."}},{"@type":"Question","name":"How do I find my ideal daily goal?","acceptedAnswer":{"@type":"Answer","text":"Start with a moderate goal, monitor thirst and urine color trends, then adjust for climate, activity, and health conditions."}}]},{"@type":"WebPage","name":"Balanced Drinking Benefits","url":"https://subraatakumar.com/watertracker/benefits"}]}7:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$a"}}]
+8:["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]
+d:null

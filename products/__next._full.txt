@@ -1,0 +1,248 @@
+1:"$Sreact.fragment"
+9:I[68027,[],"default"]
+:HL["/_next/static/chunks/cc821bed03f9ddd8.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","style"]
+2:T19f5,
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+
+          body {
+            background: #fafaf7;
+            font-family: 'Caveat', cursive;
+            color: #1a1a2e;
+          }
+
+          /* ── Nav ── */
+          .sk-header {
+            background: #fff;
+            border-bottom: 2.5px solid #1a1a2e;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+          }
+          .sk-header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .sk-logo {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.55rem;
+            color: #1a1a2e;
+            text-decoration: none;
+            letter-spacing: 0.01em;
+          }
+          .sk-nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+          }
+          .sk-nav-links a {
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+            padding-bottom: 2px;
+          }
+          .sk-nav-links a:hover {
+            text-decoration: underline wavy #2563eb 2px;
+            text-underline-offset: 4px;
+          }
+          .sk-nav-mobile {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 14px;
+          }
+          .sk-nav-mobile ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+          }
+          .sk-nav-mobile a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+          }
+
+          /* ── Footer ── */
+          .sk-footer {
+            border-top: 2.5px solid #1a1a2e;
+            background: #fff;
+            padding: 24px;
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+          }
+
+          /* ── Shared section ── */
+          .sk-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+          }
+          .sk-page-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            margin-bottom: 8px;
+            line-height: 1.1;
+          }
+          .sk-section-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.9rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+          .sk-section-heading::after {
+            content: '';
+            flex: 1;
+            border-top: 2px dashed #9ca3af;
+          }
+
+          /* ── Squiggle divider ── */
+          .sk-squiggle {
+            width: 100%;
+            height: 8px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 4 Q5 0 10 4 Q15 8 20 4 Q25 0 30 4 Q35 8 40 4' stroke='%239ca3af' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") repeat-x center;
+            opacity: 0.55;
+            margin: 36px 0;
+          }
+
+          /* ── Sketch button ── */
+          .sk-btn {
+            display: inline-block;
+            padding: 10px 26px;
+            background: #2563eb;
+            color: #fff;
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 3px 3px 0 #1a1a2e;
+            transition: transform 0.1s, box-shadow 0.1s;
+          }
+          .sk-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 #1a1a2e;
+          }
+          .sk-btn-ghost {
+            background: transparent;
+            color: #1a1a2e;
+            box-shadow: 3px 3px 0 #9ca3af;
+          }
+          .sk-btn-ghost:hover {
+            box-shadow: 5px 5px 0 #9ca3af;
+          }
+
+          /* ── Tag chip ── */
+          .sk-tag {
+            display: inline-block;
+            padding: 3px 13px;
+            border: 2px solid #1a1a2e;
+            border-radius: 2px;
+            font-size: 1rem;
+            font-weight: 600;
+            background: #fff;
+            margin: 3px;
+          }
+          .sk-tag.active {
+            background: #2563eb;
+            color: #fff;
+          }
+
+          /* ── Card ── */
+          .sk-card {
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 5px 5px 0 #1a1a2e;
+            padding: 24px;
+            transition: transform 0.15s, box-shadow 0.15s;
+          }
+          .sk-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0 #1a1a2e;
+          }
+
+          /* ── Stat card ── */
+          .sk-stat {
+            flex: 1;
+            min-width: 130px;
+            text-align: center;
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 4px 4px 0 #1a1a2e;
+            padding: 20px 12px;
+          }
+          .sk-stat .num {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            color: #2563eb;
+            line-height: 1;
+          }
+          .sk-stat .lbl {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 4px;
+          }
+
+          /* ── Image placeholder ── */
+          .sk-img {
+            width: 100%;
+            height: 160px;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            background: #f3f4f6;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 16px;
+          }
+          .sk-img::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+              linear-gradient(to bottom right, transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px)),
+              linear-gradient(to bottom left,  transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px));
+          }
+
+          @media (max-width: 640px) {
+            .sk-nav-links { display: none; }
+            .sk-nav-mobile { display: block; }
+            .sk-page-heading { font-size: 2.2rem; }
+          }
+        0:{"P":null,"b":"p2Q5GIjfCZI8jzjyliMZE","c":["","products",""],"q":"","i":false,"f":[[["",{"children":["products",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/cc821bed03f9ddd8.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{},null,false,false]},null,false,false]},null,false,false],"$L8",false]],"m":"$undefined","G":["$9",[]],"S":true}
+a:I[22016,["/_next/static/chunks/7c92e96509cd355e.js"],""]
+b:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+c:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+14:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"ViewportBoundary"]
+16:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"MetadataBoundary"]
+17:"$Sreact.suspense"
+3:["$","header",null,{"className":"sk-header","children":[["$","div",null,{"className":"sk-header-inner","children":[["$","$La",null,{"href":"/","className":"sk-logo","children":"SKD_"}],["$","nav",null,{"aria-label":"Primary","children":["$","ul",null,{"className":"sk-nav-links","children":[["$","li",null,{"children":["$","$La",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/contact","children":"Contact"}]}]]}]}]]}],["$","div",null,{"className":"sk-nav-mobile","children":["$","nav",null,{"aria-label":"Mobile","children":["$","ul",null,{"children":[["$","li",null,{"children":["$","$La",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/contact","children":"Contact"}]}]]}]}]}]]}]
+4:["$","main",null,{"style":{"width":"100%"},"children":["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
+5:["$","footer",null,{"className":"sk-footer","children":["© ",2026," Subrata Kumar Das. All rights reserved. ·"," ",["$","$La",null,{"href":"/for-ai","children":"For AI/Crawlers"}]]}]
+6:["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+7:["$","$1","c",{"children":[["$","div",null,{"className":"sk-page","children":[["$","h1",null,{"className":"sk-page-heading","children":"Products"}],["$","p",null,{"style":{"fontSize":"1.2rem","color":"#555","marginTop":8,"marginBottom":0},"children":"A selection of apps, tools, and platforms I've built."}],["$","div",null,{"className":"sk-squiggle","style":{"marginTop":16}}],["$","div",null,{"style":{"display":"grid","gridTemplateColumns":"repeat(auto-fill, minmax(260px, 1fr))","gap":24},"children":[["$","article","Subrata Labs",{"className":"sk-card","style":{"display":"flex","flexDirection":"column","gridColumn":"1 / -1"},"children":[["$","div",null,{"className":"sk-img"}],["$","div",null,{"style":{"fontFamily":"'Caveat Brush', cursive","fontSize":"1.5rem","marginBottom":8},"children":"Subrata Labs"}],["$","p",null,{"style":{"fontSize":"1.05rem","color":"#555","lineHeight":1.5,"flex":1,"marginBottom":14},"children":"Execution Studio for practical AI products, systems, and developer ecosystems. Current live track: 180Days."}],["$","div",null,{"style":{"marginBottom":16},"children":[["$","span","AI Products",{"className":"sk-tag","style":{"fontSize":"0.9rem","padding":"2px 10px"},"children":"AI Products"}],["$","span","Developer Ecosystem",{"className":"sk-tag","style":{"fontSize":"0.9rem","padding":"2px 10px"},"children":"Developer Ecosystem"}],["$","span","Learning Tracks",{"className":"sk-tag","style":{"fontSize":"0.9rem","padding":"2px 10px"},"children":"Learning Tracks"}],["$","span","180Days",{"className":"sk-tag","style":{"fontSize":"0.9rem","padding":"2px 10px"},"children":"180Days"}]]}],["$","$La",null,{"href":"/subratalabs","className":"sk-btn sk-btn-ghost","style":{"alignSelf":"flex-start","fontSize":"1rem","padding":"7px 18px"},"children":"View Details →"}]]}],["$","article","Offline Life Archive",{"className":"sk-card","style":{"display":"flex","flexDirection":"column","gridColumn":"$undefined"},"children":[["$","div",null,{"className":"sk-img"}],["$","div",null,{"style":{"fontFamily":"'Caveat Brush', cursive","fontSize":"1.5rem","marginBottom":8},"children":"Offline Life Archive"}],["$","p",null,{"style":{"fontSize":"1.05rem","color":"#555","lineHeight":1.5,"flex":1,"marginBottom":14},"children":"A personal project to document and reflect on life experiences, learnings, and growth through a private digital journal app."}],["$","div",null,{"style":{"marginBottom":16},"children":[["$","span","React Native",{"className":"sk-tag","style":{"fontSize":"0.9rem","padding":"2px 10px"},"children":"React Native"}],["$","span","Realm",{"className":"sk-tag","style":{"fontSize":"0.9rem","padding":"2px 10px"},"children":"Realm"}],["$","span","Personal",{"className":"sk-tag","style":{"fontSize":"0.9rem","padding":"2px 10px"},"children":"Personal"}],["$","span","Journal",{"className":"sk-tag","style":{"fontSize":"0.9rem","padding":"2px 10px"},"children":"Journal"}],["$","span","Privacy",{"className":"sk-tag","style":{"fontSize":"0.9rem","padding":"2px 10px"},"children":"Privacy"}],["$","span","Self-Reflection",{"className":"sk-tag","style":{"fontSize":"0.9rem","padding":"2px 10px"},"children":"Self-Reflection"}],["$","span","Offline-First",{"className":"sk-tag","style":{"fontSize":"0.9rem","padding":"2px 10px"},"children":"Offline-First"}]]}],["$","$La",null,{"href":"/offline-life-archive","className":"sk-btn sk-btn-ghost","style":{"alignSelf":"flex-start","fontSize":"1rem","padding":"7px 18px"},"children":"View Details →"}]]}],["$","article","Water Tracker",{"className":"sk-card","style":{"display":"flex","flexDirection":"column","gridColumn":"$undefined"},"children":[["$","div",null,{"className":"sk-img"}],["$","div",null,{"style":{"fontFamily":"'Caveat Brush', cursive","fontSize":"1.5rem","marginBottom":8},"children":"Water Tracker"}],["$","p",null,{"style":{"fontSize":"1.05rem","color":"#555","lineHeight":1.5,"flex":1,"marginBottom":14},"children":"A mobile app to track daily water intake with reminders and analytics for healthy hydration habits."}],["$","div",null,{"style":{"marginBottom":16},"children":[["$","span","React Native",{"className":"sk-tag","style":{"fontSize":"0.9rem","padding":"2px 10px"},"children":"React Native"}],["$","span","Health",{"className":"sk-tag","style":{"fontSize":"0.9rem","padding":"2px 10px"},"children":"Health"}]]}],["$","$La",null,{"href":"/watertracker","className":"sk-btn sk-btn-ghost","style":{"alignSelf":"flex-start","fontSize":"1rem","padding":"7px 18px"},"children":"View Details →"}]]}],["$","article","She Health",{"className":"sk-card","style":{"display":"flex","flexDirection":"column","gridColumn":"$undefined"},"children":["$Ld","$Le","$Lf","$L10","$L11"]}],"$L12"]}]]}],null,"$L13"]}]
+8:["$","$1","h",{"children":[null,["$","$L14",null,{"children":"$L15"}],["$","div",null,{"hidden":true,"children":["$","$L16",null,{"children":["$","$17",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+19:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+d:["$","div",null,{"className":"sk-img"}]
+e:["$","div",null,{"style":{"fontFamily":"'Caveat Brush', cursive","fontSize":"1.5rem","marginBottom":8},"children":"She Health"}]
+f:["$","p",null,{"style":{"fontSize":"1.05rem","color":"#555","lineHeight":1.5,"flex":1,"marginBottom":14},"children":"A women-first health platform delivering personalised care journeys and secure health tracking."}]
+10:["$","div",null,{"style":{"marginBottom":16},"children":[["$","span","React Native",{"className":"sk-tag","style":{"fontSize":"0.9rem","padding":"2px 10px"},"children":"React Native"}],["$","span","Firebase",{"className":"sk-tag","style":{"fontSize":"0.9rem","padding":"2px 10px"},"children":"Firebase"}]]}]
+11:["$","$La",null,{"href":"/shehealth","className":"sk-btn sk-btn-ghost","style":{"alignSelf":"flex-start","fontSize":"1rem","padding":"7px 18px"},"children":"View Details →"}]
+12:["$","article","TCBS CLI",{"className":"sk-card","style":{"display":"flex","flexDirection":"column","gridColumn":"$undefined"},"children":[["$","div",null,{"className":"sk-img"}],["$","div",null,{"style":{"fontFamily":"'Caveat Brush', cursive","fontSize":"1.5rem","marginBottom":8},"children":"TCBS CLI"}],["$","p",null,{"style":{"fontSize":"1.05rem","color":"#555","lineHeight":1.5,"flex":1,"marginBottom":14},"children":"A developer CLI tool for managing build workflows and automating common mobile release tasks."}],["$","div",null,{"style":{"marginBottom":16},"children":[["$","span","Node.js",{"className":"sk-tag","style":{"fontSize":"0.9rem","padding":"2px 10px"},"children":"Node.js"}],["$","span","CLI",{"className":"sk-tag","style":{"fontSize":"0.9rem","padding":"2px 10px"},"children":"CLI"}]]}],["$","$La",null,{"href":"/tcbs-cli","className":"sk-btn sk-btn-ghost","style":{"alignSelf":"flex-start","fontSize":"1rem","padding":"7px 18px"},"children":"View Details →"}]]}]
+13:["$","$L19",null,{"children":["$","$17",null,{"name":"Next.MetadataOutlet","children":"$@1a"}]}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1b:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"IconMark"]
+18:[["$","title","0",{"children":"Products | Subrata Kumar Das"}],["$","meta","1",{"name":"description","content":"Selected products by Subrata Kumar Das — Tech Lead and React Native Architect"}],["$","meta","2",{"name":"keywords","content":"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"}],["$","link","3",{"rel":"canonical","href":"https://subraatakumar.com/products/"}],["$","meta","4",{"property":"og:title","content":"Products | Subrata Kumar Das"}],["$","meta","5",{"property":"og:description","content":"Selected products by Subrata Kumar Das — Tech Lead and React Native Architect"}],["$","meta","6",{"property":"og:url","content":"https://subraatakumar.com/products/"}],["$","meta","7",{"property":"og:image","content":"https://subraatakumar.com/images/interview.png"}],["$","meta","8",{"property":"og:type","content":"website"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"Products | Subrata Kumar Das"}],["$","meta","11",{"name":"twitter:description","content":"Selected products by Subrata Kumar Das — Tech Lead and React Native Architect"}],["$","meta","12",{"name":"twitter:image","content":"https://subraatakumar.com/images/interview.png"}],["$","link","13",{"rel":"icon","href":"/favicon.ico?favicon.750fd6b3.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L1b","14",{}]]
+1a:null

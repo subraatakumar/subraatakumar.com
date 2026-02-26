@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-4:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
-5:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+4:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+5:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
 6:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
 2:T267d,
         /* ── Reset sketchy globals for this subtree ── */
@@ -342,5 +342,5 @@
           .d180-footer-inner { padding: 16px; }
           .d180-stats { grid-template-columns: 1fr; }
         }
-      0:{"buildId":"qWGB019utwya5Bcz8uHGu","rsc":["$","$1","c",{"children":[null,["$","div",null,{"style":{"all":"revert"},"children":[["$","style",null,{"children":"$2"}],"$L3"]}]]}],"loading":null,"isPartial":false}
+      0:{"buildId":"p2Q5GIjfCZI8jzjyliMZE","rsc":["$","$1","c",{"children":[null,["$","div",null,{"style":{"all":"revert"},"children":[["$","style",null,{"children":"$2"}],"$L3"]}]]}],"loading":null,"isPartial":false}
 3:["$","div",null,{"id":"days180-root","children":[["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}],["$","footer",null,{"className":"d180-footer","children":["$","div",null,{"className":"d180-footer-inner","children":[["$","p",null,{"className":"d180-footer-copy","children":"Subrata Kumar Das • 180 Days Mentoring Journey"}],["$","$L6",null,{"href":"/","className":"d180-footer-home","children":"Main Home"}]]}]}]]}]

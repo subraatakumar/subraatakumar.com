@@ -1,0 +1,252 @@
+1:"$Sreact.fragment"
+a:I[22016,["/_next/static/chunks/7c92e96509cd355e.js"],""]
+b:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+c:"$Sreact.suspense"
+2:T1b93,
+
+        /* ── Shared tokens (mirror home page) ── */
+        .ov { --teal: #00c9a7; --muted: #687e78; --card: #111820; --border: rgba(255,255,255,0.07); }
+
+        /* ── Page hero ── */
+        .ov-hero {
+          position: relative;
+          overflow: hidden;
+          padding: 60px 0 72px;
+          background:
+            radial-gradient(ellipse 50% 70% at 92% 38%, rgba(0,210,180,0.18) 0%, rgba(0,180,160,0.06) 40%, transparent 65%),
+            radial-gradient(ellipse 25% 40% at 70% 20%, rgba(0,230,200,0.09) 0%, transparent 55%),
+            transparent;
+        }
+        .ov-wave-svg {
+          position: absolute;
+          right: -40px;
+          bottom: -20px;
+          width: 50%;
+          height: 80%;
+          pointer-events: none;
+        }
+        .ov-hero-content { position: relative; z-index: 2; max-width: 620px; }
+
+        .ov-kicker {
+          display: block;
+          font-size: 11px;
+          font-weight: 700;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          color: #7ab8ae;
+          margin-bottom: 14px;
+        }
+        .ov-hero h1 {
+          margin: 0 0 16px;
+          font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+          line-height: 1.02;
+          letter-spacing: -0.03em;
+          color: #ffffff;
+          font-weight: 800;
+        }
+        .ov-hero h1 em { font-style: normal; color: var(--teal); }
+        .ov-hero p {
+          margin: 0 0 28px;
+          color: #8fa8a2;
+          font-size: 0.97rem;
+          line-height: 1.75;
+          max-width: 560px;
+        }
+        .ov-btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          height: 40px;
+          padding: 0 18px;
+          border-radius: 7px;
+          font-size: 11px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.09em;
+          text-decoration: none;
+          background: var(--teal);
+          color: #021a12;
+          border: 1px solid var(--teal);
+          box-shadow: 0 4px 18px rgba(0,201,167,0.32);
+          transition: opacity 0.15s, transform 0.15s;
+        }
+        .ov-btn:hover { opacity: 0.82; transform: translateY(-1px); }
+
+        /* ── Section label ── */
+        .ov-section-label {
+          font-size: 10.5px;
+          font-weight: 700;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          color: #4a7a6e;
+          margin: 0 0 20px;
+        }
+
+        /* ── What is Subrata Labs — two col ── */
+        .ov-what {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 16px;
+          margin-top: 16px;
+        }
+        .ov-card {
+          border-radius: 16px;
+          background: var(--card);
+          border: 1px solid var(--border);
+          padding: 26px 24px;
+        }
+        .ov-card h2 {
+          margin: 0 0 10px;
+          font-size: 1.12rem;
+          font-weight: 700;
+          letter-spacing: -0.02em;
+          color: #dde8e4;
+        }
+        .ov-card p {
+          margin: 0;
+          color: var(--muted);
+          font-size: 0.88rem;
+          line-height: 1.75;
+        }
+        .ov-card p + p { margin-top: 10px; }
+
+        /* Teal accent left border variant */
+        .ov-card-accent {
+          border-left: 3px solid var(--teal);
+          background: linear-gradient(135deg, rgba(0,201,167,0.06), rgba(17,24,32,0.95));
+        }
+
+        /* ── Principles — 2×2 grid ── */
+        .ov-principles {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 12px;
+          margin-top: 16px;
+        }
+        .ov-principle {
+          border-radius: 14px;
+          background: var(--card);
+          border: 1px solid var(--border);
+          padding: 20px 20px;
+        }
+        .ov-principle-label {
+          font-size: 11px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          color: var(--teal);
+          margin-bottom: 8px;
+        }
+        .ov-principle p {
+          margin: 0;
+          color: var(--muted);
+          font-size: 0.86rem;
+          line-height: 1.7;
+        }
+
+        /* ── How it works — horizontal phases ── */
+        .ov-phases {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 12px;
+          margin-top: 16px;
+        }
+        .ov-phase {
+          border-radius: 14px;
+          background: var(--card);
+          border: 1px solid var(--border);
+          padding: 20px 18px;
+          position: relative;
+        }
+        .ov-phase-num {
+          font-size: 0.72rem;
+          font-weight: 800;
+          letter-spacing: 0.12em;
+          color: #2a4a42;
+          margin-bottom: 10px;
+        }
+        .ov-phase h3 {
+          margin: 0 0 8px;
+          font-size: 0.92rem;
+          font-weight: 700;
+          color: #ccddd8;
+          letter-spacing: -0.01em;
+        }
+        .ov-phase p {
+          margin: 0;
+          color: var(--muted);
+          font-size: 0.82rem;
+          line-height: 1.65;
+        }
+        /* Connector line between phases */
+        .ov-phase:not(:last-child)::after {
+          content: "";
+          position: absolute;
+          top: 28px;
+          right: -7px;
+          width: 14px;
+          height: 1px;
+          background: linear-gradient(90deg, rgba(0,201,167,0.4), transparent);
+          z-index: 1;
+        }
+
+        /* ── Tracks table ── */
+        .ov-tracks {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          margin-top: 16px;
+        }
+        .ov-track-row {
+          border-radius: 12px;
+          background: var(--card);
+          border: 1px solid var(--border);
+          padding: 14px 18px;
+          display: grid;
+          grid-template-columns: 180px 1fr 80px;
+          align-items: center;
+          gap: 16px;
+        }
+        .ov-track-name {
+          font-size: 0.9rem;
+          font-weight: 700;
+          color: #cdddd8;
+        }
+        .ov-track-desc {
+          font-size: 0.84rem;
+          color: var(--muted);
+          line-height: 1.5;
+        }
+        .ov-track-status {
+          font-size: 9.5px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          text-align: right;
+        }
+        .ov-track-status.live { color: var(--teal); }
+        .ov-track-status.planned { color: #2e5a50; }
+
+        /* ── Spacer between sections ── */
+        .ov-section { margin-top: 48px; }
+
+        @media (max-width: 860px) {
+          .ov-what, .ov-principles { grid-template-columns: 1fr; }
+          .ov-phases { grid-template-columns: 1fr 1fr; }
+          .ov-track-row { grid-template-columns: 1fr 80px; }
+          .ov-track-desc { display: none; }
+          .ov-hero { padding: 44px 0 56px; }
+          .ov-phase:not(:last-child)::after { display: none; }
+        }
+        @media (max-width: 520px) {
+          .ov-phases { grid-template-columns: 1fr; }
+        }
+      0:{"buildId":"p2Q5GIjfCZI8jzjyliMZE","rsc":["$","$1","c",{"children":[["$","section",null,{"className":"ov","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5","$L6","$L7","$L8"]}],null,"$L9"]}],"loading":null,"isPartial":false}
+3:["$","div",null,{"className":"ov-hero","children":[["$","svg",null,{"className":"ov-wave-svg","viewBox":"0 0 600 400","fill":"none","xmlns":"http://www.w3.org/2000/svg","aria-hidden":"true","children":[["$","defs",null,{"children":[["$","filter",null,{"id":"ov-glow1","x":"-30%","y":"-30%","width":"160%","height":"160%","children":[["$","feGaussianBlur",null,{"stdDeviation":"3.5","result":"blur"}],["$","feMerge",null,{"children":[["$","feMergeNode",null,{"in":"blur"}],["$","feMergeNode",null,{"in":"SourceGraphic"}]]}]]}],["$","filter",null,{"id":"ov-glow2","x":"-40%","y":"-40%","width":"180%","height":"180%","children":[["$","feGaussianBlur",null,{"stdDeviation":"6","result":"blur"}],["$","feMerge",null,{"children":[["$","feMergeNode",null,{"in":"blur"}],["$","feMergeNode",null,{"in":"SourceGraphic"}]]}]]}]]}],["$","path",null,{"d":"M 600 320 Q 440 260 280 310 Q 160 345 0 290","stroke":"rgba(0,210,185,0.08)","strokeWidth":"60","fill":"none","filter":"url(#ov-glow2)"}],["$","path",null,{"d":"M 600 320 Q 440 255 280 308 Q 160 344 0 288","stroke":"rgba(0,220,190,0.75)","strokeWidth":"1.2","fill":"none","filter":"url(#ov-glow1)"}],["$","path",null,{"d":"M 600 345 Q 430 275 265 330 Q 140 368 0 310","stroke":"rgba(0,200,175,0.35)","strokeWidth":"1","fill":"none","filter":"url(#ov-glow1)"}],["$","path",null,{"d":"M 600 370 Q 420 295 250 352 Q 120 392 0 332","stroke":"rgba(0,185,165,0.18)","strokeWidth":"1","fill":"none"}],["$","path",null,{"d":"M 600 295 Q 460 240 330 278 Q 240 302 180 295","stroke":"rgba(0,230,200,0.28)","strokeWidth":"0.8","fill":"none","filter":"url(#ov-glow1)"}],["$","circle",null,{"cx":"420","cy":"279","r":"2.5","fill":"rgba(100,255,225,0.7)","filter":"url(#ov-glow1)"}],["$","circle",null,{"cx":"420","cy":"279","r":"5","fill":"rgba(0,220,190,0.2)"}]]}],["$","div",null,{"className":"ov-hero-content","children":[["$","span",null,{"className":"ov-kicker","children":"Subrata Labs — Overview"}],["$","h1",null,{"className":"labs-font-display","children":["What We ",["$","em",null,{"children":"Build"}],["$","br",null,{}],"and Why"]}],["$","p",null,{"children":"Subrata Labs is not a content channel or a course platform. It is an execution studio — a long-horizon environment where structured tracks turn disciplined daily work into production-grade AI systems and developer-facing products."}],["$","$La",null,{"href":"/180days","className":"ov-btn","children":"Start with 180Days"}]]}]]}]
+4:["$","div",null,{"className":"ov-section","children":[["$","p",null,{"className":"ov-section-label","children":"What it is"}],["$","div",null,{"className":"ov-what","children":[["$","div",null,{"className":"ov-card ov-card-accent","children":[["$","h2",null,{"className":"labs-font-display","children":"An Execution Studio"}],["$","p",null,{"children":"Subrata Labs is organized around tracks — each track is a multi-month, theme-specific build program with a daily execution cadence, architecture documentation, and a production-ready deliverable at the end."}],["$","p",null,{"children":"The studio model means the output is not just knowledge. It is code, systems, frameworks, and documentation that others can use, fork, and deploy. Every track leaves a permanent artifact in the ecosystem."}]]}],["$","div",null,{"className":"ov-card","children":[["$","h2",null,{"className":"labs-font-display","children":"Why Long-Horizon?"}],["$","p",null,{"children":"Shallow sprints produce shallow results. AI product development requires iterative architecture decisions, real feedback loops, and time to discover what actually works in production — not just in theory."}],["$","p",null,{"children":"A 180-day track is not slow. It is the minimum viable depth to go from concept to a system that survives contact with real-world constraints. Speed comes from having the right structure, not from cutting corners."}]]}]]}]]}]
+5:["$","div",null,{"className":"ov-section","children":[["$","p",null,{"className":"ov-section-label","children":"Core principles"}],["$","div",null,{"className":"ov-principles","children":[["$","div","Build First",{"className":"ov-principle","children":[["$","div",null,{"className":"ov-principle-label","children":"Build First"}],["$","p",null,{"children":"Every track starts with a real deliverable, not a slide deck. Code, systems, and shipped artifacts are the primary output."}]]}],["$","div","Long Horizon",{"className":"ov-principle","children":[["$","div",null,{"className":"ov-principle-label","children":"Long Horizon"}],["$","p",null,{"children":"Months-long tracks over shallow sprints. Depth compounds. Each day of execution adds to a growing, reusable body of work."}]]}],["$","div","Architecture-Led",{"className":"ov-principle","children":[["$","div",null,{"className":"ov-principle-label","children":"Architecture-Led"}],["$","p",null,{"children":"We design systems before we write code. Structure, interfaces, and decision records are first-class citizens in every track."}]]}],["$","div","Production-Ready",{"className":"ov-principle","children":[["$","div",null,{"className":"ov-principle-label","children":"Production-Ready"}],["$","p",null,{"children":"The bar is not 'demo quality'. Every capability built inside a track must be deployable, composable, and extensible."}]]}]]}]]}]
+6:["$","div",null,{"className":"ov-section","children":[["$","p",null,{"className":"ov-section-label","children":"How a track works"}],["$","div",null,{"className":"ov-phases","children":[["$","div","01",{"className":"ov-phase","children":[["$","div",null,{"className":"ov-phase-num","children":"01"}],["$","h3",null,{"className":"labs-font-display","children":"Foundation"}],["$","p",null,{"children":"Define the problem space, architect the system, and establish the execution cadence for the full track."}]]}],["$","div","02",{"className":"ov-phase","children":[["$","div",null,{"className":"ov-phase-num","children":"02"}],["$","h3",null,{"className":"labs-font-display","children":"Build Cycles"}],["$","p",null,{"children":"Daily, weekly, and milestone-based build loops. Each cycle ships a discrete, documented capability."}]]}],["$","div","03",{"className":"ov-phase","children":[["$","div",null,{"className":"ov-phase-num","children":"03"}],["$","h3",null,{"className":"labs-font-display","children":"Integration"}],["$","p",null,{"children":"Capabilities are stitched into a cohesive system. APIs, interfaces, and data flows are hardened."}]]}],["$","div","04",{"className":"ov-phase","children":[["$","div",null,{"className":"ov-phase-num","children":"04"}],["$","h3",null,{"className":"labs-font-display","children":"Productization"}],["$","p",null,{"children":"The system is packaged as a reusable framework, open track, or deployable product available to the ecosystem."}]]}]]}]]}]
+7:["$","div",null,{"className":"ov-section","children":[["$","p",null,{"className":"ov-section-label","children":"All tracks"}],["$","div",null,{"className":"ov-tracks","children":[["$","div","180Days",{"className":"ov-track-row","children":[["$","span",null,{"className":"ov-track-name labs-font-display","children":"180Days"}],["$","span",null,{"className":"ov-track-desc","children":"Architecture-first AI product development. Daily build-and-document execution over 180 days."}],["$","span",null,{"className":"ov-track-status live","children":"Live"}]]}],["$","div","Agent Systems Lab",{"className":"ov-track-row","children":[["$","span",null,{"className":"ov-track-name labs-font-display","children":"Agent Systems Lab"}],["$","span",null,{"className":"ov-track-desc","children":"Autonomous agent orchestration, memory, and multi-agent coordination patterns."}],["$","span",null,{"className":"ov-track-status planned","children":"Planned"}]]}],["$","div","Plugin Craft Studio",{"className":"ov-track-row","children":[["$","span",null,{"className":"ov-track-name labs-font-display","children":"Plugin Craft Studio"}],["$","span",null,{"className":"ov-track-desc","children":"Designing, building, and shipping AI plugin and integration systems at production quality."}],["$","span",null,{"className":"ov-track-status planned","children":"Planned"}]]}],["$","div","Enterprise AI Stack",{"className":"ov-track-row","children":[["$","span",null,{"className":"ov-track-name labs-font-display","children":"Enterprise AI Stack"}],["$","span",null,{"className":"ov-track-desc","children":"Workflow automation, command interfaces, and AI tooling for enterprise environments."}],["$","span",null,{"className":"ov-track-status planned","children":"Planned"}]]}],["$","div","Desktop Intelligence",{"className":"ov-track-row","children":[["$","span",null,{"className":"ov-track-name labs-font-display","children":"Desktop Intelligence"}],["$","span",null,{"className":"ov-track-desc","children":"Local-first AI application engineering for desktop platforms."}],["$","span",null,{"className":"ov-track-status planned","children":"Planned"}]]}],["$","div","Mobile AI Accelerator",{"className":"ov-track-row","children":[["$","span",null,{"className":"ov-track-name labs-font-display","children":"Mobile AI Accelerator"}],["$","span",null,{"className":"ov-track-desc","children":"End-to-end AI-native mobile product design and launch track."}],["$","span",null,{"className":"ov-track-status planned","children":"Planned"}]]}]]}]]}]
+8:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"Overview — Subrata Labs\",\"url\":\"https://subraatakumar.com/subratalabs/overview\",\"description\":\"What Subrata Labs is, why it exists, and how long-horizon execution tracks produce production-ready AI systems.\"}"}}]
+9:["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]
+d:null

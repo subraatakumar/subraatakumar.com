@@ -1,0 +1,493 @@
+<!DOCTYPE html><!--p2Q5GIjfCZI8jzjyliMZE--><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" href="/_next/static/media/0c89a48fa5027cee-s.p.4564287c.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="preload" href="/_next/static/media/a343f882a40d2cc9-s.p.71e1367e.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="stylesheet" href="/_next/static/chunks/cc821bed03f9ddd8.css" data-precedence="next"/><link rel="stylesheet" href="/_next/static/chunks/67d266141b06bb08.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/465f799faf41e6df.js"/><script src="/_next/static/chunks/2a53c54479327e33.js" async=""></script><script src="/_next/static/chunks/7cd4d4fdb91bf20a.js" async=""></script><script src="/_next/static/chunks/bd1354d7a1b1bf9d.js" async=""></script><script src="/_next/static/chunks/turbopack-562346048d24b60f.js" async=""></script><script src="/_next/static/chunks/7c92e96509cd355e.js" async=""></script><script src="/_next/static/chunks/ff1a16fafef87110.js" async=""></script><script src="/_next/static/chunks/bf1f6d5df2e9b1a8.js" async=""></script><link rel="preload" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&amp;family=Caveat+Brush&amp;display=swap" as="style"/><meta name="next-size-adjust" content=""/><title>Balanced Drinking Benefits | Subrata Kumar Das</title><meta name="description" content="Learn the practical health benefits of balanced hydration, how water intake affects focus, energy, digestion, and how to avoid over- or under-drinking."/><meta name="keywords" content="Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"/><link rel="canonical" href="https://subraatakumar.com/watertracker/benefits/"/><meta property="og:title" content="Balanced Hydration Benefits | WaterTracker"/><meta property="og:description" content="Practical guide to balanced hydration and how consistent water intake supports daily health."/><meta property="og:url" content="https://subraatakumar.com/watertracker/benefits/"/><meta property="og:image" content="https://subraatakumar.com/images/interview.png"/><meta property="og:type" content="article"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Balanced Hydration Benefits | WaterTracker"/><meta name="twitter:description" content="Practical guide to balanced hydration and how consistent water intake supports daily health."/><meta name="twitter:image" content="https://subraatakumar.com/images/interview.png"/><link rel="icon" href="/favicon.ico?favicon.750fd6b3.ico" sizes="48x48" type="image/x-icon"/><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&amp;family=Caveat+Brush&amp;display=swap" rel="stylesheet"/><script src="/_next/static/chunks/a6dad97d9634a72d.js" noModule=""></script></head><body style="background:#fafaf7;margin:0;font-family:&#x27;Caveat&#x27;, cursive;color:#1a1a2e"><div hidden=""><!--$--><!--/$--></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Subrata Kumar Das","url":"https://subraatakumar.com","jobTitle":"Tech Lead","sameAs":["https://github.com/subraatakumar","https://linkedin.com/in/subraatakumar"]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWorkSeries","name":"180 Days Mentoring Journey","description":"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.","url":"https://subraatakumar.com/180days","startDate":"2026-02-19","publisher":{"@type":"Organization","name":"Subrata Kumar Das","url":"https://subraatakumar.com"}}</script><style>
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+
+          body {
+            background: #fafaf7;
+            font-family: 'Caveat', cursive;
+            color: #1a1a2e;
+          }
+
+          /* ── Nav ── */
+          .sk-header {
+            background: #fff;
+            border-bottom: 2.5px solid #1a1a2e;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+          }
+          .sk-header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .sk-logo {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.55rem;
+            color: #1a1a2e;
+            text-decoration: none;
+            letter-spacing: 0.01em;
+          }
+          .sk-nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+          }
+          .sk-nav-links a {
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+            padding-bottom: 2px;
+          }
+          .sk-nav-links a:hover {
+            text-decoration: underline wavy #2563eb 2px;
+            text-underline-offset: 4px;
+          }
+          .sk-nav-mobile {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 14px;
+          }
+          .sk-nav-mobile ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+          }
+          .sk-nav-mobile a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+          }
+
+          /* ── Footer ── */
+          .sk-footer {
+            border-top: 2.5px solid #1a1a2e;
+            background: #fff;
+            padding: 24px;
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+          }
+
+          /* ── Shared section ── */
+          .sk-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+          }
+          .sk-page-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            margin-bottom: 8px;
+            line-height: 1.1;
+          }
+          .sk-section-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.9rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+          .sk-section-heading::after {
+            content: '';
+            flex: 1;
+            border-top: 2px dashed #9ca3af;
+          }
+
+          /* ── Squiggle divider ── */
+          .sk-squiggle {
+            width: 100%;
+            height: 8px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 4 Q5 0 10 4 Q15 8 20 4 Q25 0 30 4 Q35 8 40 4' stroke='%239ca3af' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") repeat-x center;
+            opacity: 0.55;
+            margin: 36px 0;
+          }
+
+          /* ── Sketch button ── */
+          .sk-btn {
+            display: inline-block;
+            padding: 10px 26px;
+            background: #2563eb;
+            color: #fff;
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 3px 3px 0 #1a1a2e;
+            transition: transform 0.1s, box-shadow 0.1s;
+          }
+          .sk-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 #1a1a2e;
+          }
+          .sk-btn-ghost {
+            background: transparent;
+            color: #1a1a2e;
+            box-shadow: 3px 3px 0 #9ca3af;
+          }
+          .sk-btn-ghost:hover {
+            box-shadow: 5px 5px 0 #9ca3af;
+          }
+
+          /* ── Tag chip ── */
+          .sk-tag {
+            display: inline-block;
+            padding: 3px 13px;
+            border: 2px solid #1a1a2e;
+            border-radius: 2px;
+            font-size: 1rem;
+            font-weight: 600;
+            background: #fff;
+            margin: 3px;
+          }
+          .sk-tag.active {
+            background: #2563eb;
+            color: #fff;
+          }
+
+          /* ── Card ── */
+          .sk-card {
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 5px 5px 0 #1a1a2e;
+            padding: 24px;
+            transition: transform 0.15s, box-shadow 0.15s;
+          }
+          .sk-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0 #1a1a2e;
+          }
+
+          /* ── Stat card ── */
+          .sk-stat {
+            flex: 1;
+            min-width: 130px;
+            text-align: center;
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 4px 4px 0 #1a1a2e;
+            padding: 20px 12px;
+          }
+          .sk-stat .num {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            color: #2563eb;
+            line-height: 1;
+          }
+          .sk-stat .lbl {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 4px;
+          }
+
+          /* ── Image placeholder ── */
+          .sk-img {
+            width: 100%;
+            height: 160px;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            background: #f3f4f6;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 16px;
+          }
+          .sk-img::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+              linear-gradient(to bottom right, transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px)),
+              linear-gradient(to bottom left,  transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px));
+          }
+
+          @media (max-width: 640px) {
+            .sk-nav-links { display: none; }
+            .sk-nav-mobile { display: block; }
+            .sk-page-heading { font-size: 2.2rem; }
+          }
+        </style><header class="sk-header"><div class="sk-header-inner"><a class="sk-logo" href="/">SKD_</a><nav aria-label="Primary"><ul class="sk-nav-links"><li><a href="/about/">About</a></li><li><a href="/products/">Products</a></li><li><a href="/contact/">Contact</a></li></ul></nav></div><div class="sk-nav-mobile"><nav aria-label="Mobile"><ul><li><a href="/about/">About</a></li><li><a href="/products/">Products</a></li><li><a href="/contact/">Contact</a></li></ul></nav></div></header><main style="width:100%"><div class="wt-shell manrope_65508a06-module__rzDLfa__className"><style>
+        body:has(.wt-shell) .sk-header,
+        body:has(.wt-shell) .sk-footer {
+          display: none !important;
+        }
+
+        .wt-shell {
+          --wt-navy-900: #0f2458;
+          --wt-navy-800: #14336f;
+          --wt-navy-700: #1f4f9d;
+          --wt-sky-400: #7fc3ff;
+          --wt-sky-300: #b9e3ff;
+          --wt-cyan-200: #d8f5ff;
+          --wt-card: rgba(255, 255, 255, 0.88);
+          --wt-ink: #10244f;
+          --wt-muted: #4a5f8c;
+          min-height: 100vh;
+          color: var(--wt-ink);
+          background:
+            radial-gradient(circle at 8% 10%, rgba(125, 196, 255, 0.25), transparent 42%),
+            radial-gradient(circle at 92% 22%, rgba(174, 229, 255, 0.24), transparent 35%),
+            linear-gradient(140deg, #eaf6ff 0%, #dff2ff 30%, #cfe8ff 100%);
+        }
+        .wt-shell * {
+          box-sizing: border-box;
+        }
+        .wt-nav {
+          position: sticky;
+          top: 0;
+          z-index: 60;
+          border-bottom: 1px solid rgba(16, 36, 79, 0.1);
+          background: rgba(239, 249, 255, 0.85);
+          backdrop-filter: blur(12px);
+        }
+        .wt-nav-inner {
+          max-width: 1120px;
+          margin: 0 auto;
+          padding: 0 24px;
+          height: 68px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        }
+        .wt-logo {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          color: var(--wt-navy-900);
+          text-decoration: none;
+        }
+        .wt-logo-mark {
+          width: 34px;
+          height: 34px;
+          border-radius: 10px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 800;
+          color: #fff;
+          background: linear-gradient(140deg, #4f88ff, #3ec1ff);
+          box-shadow: 0 8px 16px rgba(31, 79, 157, 0.22);
+        }
+        .wt-logo-text {
+          font-size: 14px;
+          font-weight: 800;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+        }
+        .wt-links {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .wt-links a {
+          text-decoration: none;
+          font-size: 13px;
+          font-weight: 800;
+          color: var(--wt-navy-900);
+          padding: 10px 12px;
+          border-radius: 10px;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+        }
+        .wt-links a:hover {
+          background: rgba(79, 136, 255, 0.14);
+          color: var(--wt-navy-700);
+        }
+        .wt-main {
+          max-width: 1120px;
+          margin: 0 auto;
+          padding: 26px 24px 70px;
+        }
+        .wt-footer {
+          border-top: 1px solid rgba(16, 36, 79, 0.12);
+          background: rgba(235, 247, 255, 0.78);
+        }
+        .wt-footer-inner {
+          max-width: 1120px;
+          margin: 0 auto;
+          padding: 16px 24px 22px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+        .wt-footer-copy {
+          color: var(--wt-muted);
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0.03em;
+        }
+        .wt-footer-links {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          flex-wrap: wrap;
+        }
+        .wt-footer-links a {
+          text-decoration: none;
+          font-size: 11px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          color: var(--wt-navy-900);
+          border: 1px solid rgba(16, 36, 79, 0.15);
+          border-radius: 9px;
+          padding: 7px 10px;
+          background: #fff;
+        }
+        .wt-footer-links a:hover {
+          border-color: rgba(31, 79, 157, 0.45);
+          color: var(--wt-navy-700);
+        }
+        .wt-font-display {
+          font-family: 'Space Grotesk', 'Space Grotesk Fallback';
+        }
+        @media (max-width: 760px) {
+          .wt-nav-inner {
+            padding: 0 14px;
+          }
+          .wt-main {
+            padding: 22px 14px 54px;
+          }
+          .wt-footer-inner {
+            padding: 14px 14px 18px;
+          }
+          .wt-links a {
+            font-size: 11px;
+            padding: 8px 10px;
+          }
+        }
+      </style><header class="wt-nav"><div class="wt-nav-inner"><a class="wt-logo" href="/watertracker/"><span class="wt-logo-mark">WT</span><span class="wt-logo-text wt-font-display">WaterTracker</span></a><nav class="wt-links" aria-label="Water Tracker pages"><a href="/watertracker/">Overview</a><a href="/watertracker/guide/">How To Use</a><a href="/watertracker/benefits/">Health Benefits</a><a href="/products/">All Products</a></nav></div></header><main class="wt-main"><article><style>
+        .wtb-wrap {
+          border-radius: 24px;
+          border: 1px solid rgba(16, 36, 79, 0.1);
+          background: rgba(255,255,255,0.86);
+          padding: 30px 26px;
+        }
+        .wtb-wrap h1 {
+          margin: 0;
+          font-size: clamp(2rem, 4vw, 3rem);
+          letter-spacing: -0.03em;
+          color: #0f2458;
+        }
+        .wtb-intro {
+          margin: 12px 0 20px;
+          color: #4a5f8c;
+          line-height: 1.8;
+          max-width: 900px;
+        }
+        .wtb-grid {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 12px;
+        }
+        .wtb-card {
+          border-radius: 16px;
+          border: 1px solid rgba(16, 36, 79, 0.1);
+          background: #fff;
+          padding: 14px;
+        }
+        .wtb-card b {
+          color: #14336f;
+          display: block;
+          margin-bottom: 5px;
+          font-size: 1rem;
+        }
+        .wtb-card p {
+          margin: 0;
+          color: #4b5f89;
+          line-height: 1.6;
+          font-size: 0.95rem;
+        }
+        .wtb-sec {
+          margin-top: 16px;
+          border-radius: 16px;
+          border: 1px solid rgba(16, 36, 79, 0.1);
+          background: #fff;
+          padding: 16px;
+        }
+        .wtb-sec h2 {
+          margin: 0 0 8px;
+          color: #0f2458;
+          font-size: 1.35rem;
+        }
+        .wtb-faq {
+          display: grid;
+          gap: 10px;
+        }
+        .wtb-faq-item {
+          border-radius: 12px;
+          border: 1px solid rgba(16, 36, 79, 0.1);
+          background: #f8fcff;
+          padding: 12px;
+        }
+        .wtb-faq-item b {
+          color: #17386f;
+          display: block;
+          margin-bottom: 4px;
+        }
+        .wtb-faq-item p {
+          margin: 0;
+          color: #4d5f86;
+          line-height: 1.6;
+        }
+        .wtb-note {
+          margin-top: 10px;
+          border-radius: 12px;
+          border: 1px solid rgba(245, 158, 11, 0.35);
+          background: #fff8eb;
+          color: #7c4a04;
+          padding: 10px 12px;
+          font-size: 0.92rem;
+          line-height: 1.6;
+        }
+        .wtb-actions {
+          margin-top: 14px;
+          display: flex;
+          gap: 10px;
+          flex-wrap: wrap;
+        }
+        .wtb-btn {
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 42px;
+          padding: 0 14px;
+          border-radius: 10px;
+          font-size: 13px;
+          text-transform: uppercase;
+          font-weight: 800;
+          letter-spacing: 0.04em;
+        }
+        .wtb-btn-primary {
+          background: #3f82ff;
+          color: #fff;
+        }
+        .wtb-btn-ghost {
+          border: 1px solid rgba(16, 36, 79, 0.2);
+          color: #17386f;
+          background: #fff;
+        }
+        @media (max-width: 820px) {
+          .wtb-wrap {
+            padding: 22px 16px;
+          }
+          .wtb-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+      </style><div class="wtb-wrap"><h1 class="wt-font-display">Benefits of Balanced Drinking</h1><p class="wtb-intro">Balanced hydration is not about drinking as much as possible. It means giving your body the right amount of fluid consistently so daily functions like focus, energy, digestion, and recovery stay stable.</p><div class="wtb-grid"><div class="wtb-card"><b>Better Focus and Mental Clarity</b><p>Mild dehydration can reduce concentration. Balanced fluid intake helps maintain attention, memory, and decision-making through the day.</p></div><div class="wtb-card"><b>Steadier Energy</b><p>When hydration is consistent, fatigue tends to reduce and daily activity feels more sustainable, especially in long work sessions.</p></div><div class="wtb-card"><b>Support for Digestion and Metabolism</b><p>Adequate water supports digestion and regular bowel function, and helps your body process nutrients effectively.</p></div><div class="wtb-card"><b>Temperature and Physical Performance</b><p>Hydration helps regulate body temperature and supports exercise performance, especially in warm conditions.</p></div><div class="wtb-card"><b>Kidney and Urinary Health Support</b><p>Consistent hydration supports healthy urine flow and can reduce risk associated with concentrated urine patterns.</p></div><div class="wtb-card"><b>Healthier Habit Formation</b><p>Tracking water intake creates awareness and consistency, helping people build sustainable long-term routines.</p></div></div><div class="wtb-sec"><h2 class="wt-font-display">Common Questions</h2><div class="wtb-faq"><div class="wtb-faq-item"><b>What is balanced drinking?</b><p>Balanced drinking means meeting your body’s hydration needs consistently without going too low or too high.</p></div><div class="wtb-faq-item"><b>Is more water always better?</b><p>No. Excessive intake in short time can be harmful. Hydration should be paced across the day and aligned with your body and activity.</p></div><div class="wtb-faq-item"><b>Does tea or coffee count as fluid intake?</b><p>Yes. They contribute to total fluid intake, though plain water is still the simplest base for daily hydration.</p></div><div class="wtb-faq-item"><b>How do I find my ideal daily goal?</b><p>Start with a moderate goal, monitor thirst and urine color trends, then adjust for climate, activity, and health conditions.</p></div></div><div class="wtb-note">General guidance only. If you have kidney, heart, endocrine, or other medical conditions affecting fluid intake, follow your clinician’s advice.</div></div><div class="wtb-actions"><a class="wtb-btn wtb-btn-primary" href="/watertracker/">Back To Overview</a><a class="wtb-btn wtb-btn-ghost" href="/watertracker/guide/">Open How-To Guide</a></div></div><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Benefits of Balanced Drinking","description":"Practical health benefits of balanced hydration and safe intake habits.","url":"https://subraatakumar.com/watertracker/benefits","author":{"@type":"Person","name":"Subrata Kumar Das"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is balanced drinking?","acceptedAnswer":{"@type":"Answer","text":"Balanced drinking means meeting your body’s hydration needs consistently without going too low or too high."}},{"@type":"Question","name":"Is more water always better?","acceptedAnswer":{"@type":"Answer","text":"No. Excessive intake in short time can be harmful. Hydration should be paced across the day and aligned with your body and activity."}},{"@type":"Question","name":"Does tea or coffee count as fluid intake?","acceptedAnswer":{"@type":"Answer","text":"Yes. They contribute to total fluid intake, though plain water is still the simplest base for daily hydration."}},{"@type":"Question","name":"How do I find my ideal daily goal?","acceptedAnswer":{"@type":"Answer","text":"Start with a moderate goal, monitor thirst and urine color trends, then adjust for climate, activity, and health conditions."}}]},{"@type":"WebPage","name":"Balanced Drinking Benefits","url":"https://subraatakumar.com/watertracker/benefits"}]}</script></article><!--$--><!--/$--></main><footer class="wt-footer"><div class="wt-footer-inner"><p class="wt-footer-copy">© <!-- -->2026<!-- --> WaterTracker</p><div class="wt-footer-links"><a href="/watertracker/">Overview</a><a href="/watertracker/guide/">How To Use</a><a href="/watertracker/benefits/">Health Benefits</a><a href="/contact/">Support</a></div></div></footer></div></main><footer class="sk-footer">© <!-- -->2026<!-- --> Subrata Kumar Das. All rights reserved. ·<!-- --> <a href="/for-ai/">For AI/Crawlers</a></footer><script src="/_next/static/chunks/465f799faf41e6df.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\na:I[68027,[],\"default\"]\n:HL[\"/_next/static/chunks/cc821bed03f9ddd8.css\",\"style\"]\n:HL[\"/_next/static/chunks/67d266141b06bb08.css\",\"style\"]\n:HL[\"/_next/static/media/0c89a48fa5027cee-s.p.4564287c.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/a343f882a40d2cc9-s.p.71e1367e.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700\u0026family=Caveat+Brush\u0026display=swap\",\"style\"]\n2:T19f5,"])</script><script>self.__next_f.push([1,"\n          * { box-sizing: border-box; margin: 0; padding: 0; }\n\n          body {\n            background: #fafaf7;\n            font-family: 'Caveat', cursive;\n            color: #1a1a2e;\n          }\n\n          /* ── Nav ── */\n          .sk-header {\n            background: #fff;\n            border-bottom: 2.5px solid #1a1a2e;\n            position: sticky;\n            top: 0;\n            z-index: 100;\n          }\n          .sk-header-inner {\n            max-width: 900px;\n            margin: 0 auto;\n            padding: 16px 24px;\n            display: flex;\n            align-items: center;\n            justify-content: space-between;\n          }\n          .sk-logo {\n            font-family: 'Caveat Brush', cursive;\n            font-size: 1.55rem;\n            color: #1a1a2e;\n            text-decoration: none;\n            letter-spacing: 0.01em;\n          }\n          .sk-nav-links {\n            display: flex;\n            gap: 32px;\n            list-style: none;\n          }\n          .sk-nav-links a {\n            font-family: 'Caveat', cursive;\n            font-size: 1.15rem;\n            font-weight: 600;\n            color: #1a1a2e;\n            text-decoration: none;\n            padding-bottom: 2px;\n          }\n          .sk-nav-links a:hover {\n            text-decoration: underline wavy #2563eb 2px;\n            text-underline-offset: 4px;\n          }\n          .sk-nav-mobile {\n            display: none;\n            max-width: 900px;\n            margin: 0 auto;\n            padding: 0 24px 14px;\n          }\n          .sk-nav-mobile ul {\n            display: flex;\n            gap: 20px;\n            list-style: none;\n          }\n          .sk-nav-mobile a {\n            font-size: 1.1rem;\n            font-weight: 600;\n            color: #1a1a2e;\n            text-decoration: none;\n          }\n\n          /* ── Footer ── */\n          .sk-footer {\n            border-top: 2.5px solid #1a1a2e;\n            background: #fff;\n            padding: 24px;\n            text-align: center;\n            font-size: 1rem;\n            color: #666;\n          }\n\n          /* ── Shared section ── */\n          .sk-page {\n            max-width: 900px;\n            margin: 0 auto;\n            padding: 60px 24px 80px;\n          }\n          .sk-page-heading {\n            font-family: 'Caveat Brush', cursive;\n            font-size: 2.8rem;\n            margin-bottom: 8px;\n            line-height: 1.1;\n          }\n          .sk-section-heading {\n            font-family: 'Caveat Brush', cursive;\n            font-size: 1.9rem;\n            margin-bottom: 16px;\n            display: flex;\n            align-items: center;\n            gap: 12px;\n          }\n          .sk-section-heading::after {\n            content: '';\n            flex: 1;\n            border-top: 2px dashed #9ca3af;\n          }\n\n          /* ── Squiggle divider ── */\n          .sk-squiggle {\n            width: 100%;\n            height: 8px;\n            background: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 4 Q5 0 10 4 Q15 8 20 4 Q25 0 30 4 Q35 8 40 4' stroke='%239ca3af' stroke-width='1.5' fill='none'/%3E%3C/svg%3E\") repeat-x center;\n            opacity: 0.55;\n            margin: 36px 0;\n          }\n\n          /* ── Sketch button ── */\n          .sk-btn {\n            display: inline-block;\n            padding: 10px 26px;\n            background: #2563eb;\n            color: #fff;\n            font-family: 'Caveat', cursive;\n            font-size: 1.15rem;\n            font-weight: 700;\n            border: 2.5px solid #1a1a2e;\n            border-radius: 2px;\n            cursor: pointer;\n            text-decoration: none;\n            box-shadow: 3px 3px 0 #1a1a2e;\n            transition: transform 0.1s, box-shadow 0.1s;\n          }\n          .sk-btn:hover {\n            transform: translate(-2px, -2px);\n            box-shadow: 5px 5px 0 #1a1a2e;\n          }\n          .sk-btn-ghost {\n            background: transparent;\n            color: #1a1a2e;\n            box-shadow: 3px 3px 0 #9ca3af;\n          }\n          .sk-btn-ghost:hover {\n            box-shadow: 5px 5px 0 #9ca3af;\n          }\n\n          /* ── Tag chip ── */\n          .sk-tag {\n            display: inline-block;\n            padding: 3px 13px;\n            border: 2px solid #1a1a2e;\n            border-radius: 2px;\n            font-size: 1rem;\n            font-weight: 600;\n            background: #fff;\n            margin: 3px;\n          }\n          .sk-tag.active {\n            background: #2563eb;\n            color: #fff;\n          }\n\n          /* ── Card ── */\n          .sk-card {\n            background: #fff;\n            border: 2.5px solid #1a1a2e;\n            border-radius: 2px;\n            box-shadow: 5px 5px 0 #1a1a2e;\n            padding: 24px;\n            transition: transform 0.15s, box-shadow 0.15s;\n          }\n          .sk-card:hover {\n            transform: translate(-3px, -3px);\n            box-shadow: 8px 8px 0 #1a1a2e;\n          }\n\n          /* ── Stat card ── */\n          .sk-stat {\n            flex: 1;\n            min-width: 130px;\n            text-align: center;\n            background: #fff;\n            border: 2.5px solid #1a1a2e;\n            border-radius: 2px;\n            box-shadow: 4px 4px 0 #1a1a2e;\n            padding: 20px 12px;\n          }\n          .sk-stat .num {\n            font-family: 'Caveat Brush', cursive;\n            font-size: 2.8rem;\n            color: #2563eb;\n            line-height: 1;\n          }\n          .sk-stat .lbl {\n            font-size: 1rem;\n            color: #555;\n            margin-top: 4px;\n          }\n\n          /* ── Image placeholder ── */\n          .sk-img {\n            width: 100%;\n            height: 160px;\n            border: 2.5px solid #1a1a2e;\n            border-radius: 2px;\n            background: #f3f4f6;\n            position: relative;\n            overflow: hidden;\n            margin-bottom: 16px;\n          }\n          .sk-img::before {\n            content: '';\n            position: absolute;\n            inset: 0;\n            background:\n              linear-gradient(to bottom right, transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px)),\n              linear-gradient(to bottom left,  transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px));\n          }\n\n          @media (max-width: 640px) {\n            .sk-nav-links { display: none; }\n            .sk-nav-mobile { display: block; }\n            .sk-page-heading { font-size: 2.2rem; }\n          }\n        "])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"p2Q5GIjfCZI8jzjyliMZE\",\"c\":[\"\",\"watertracker\",\"benefits\",\"\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"watertracker\",{\"children\":[\"benefits\",{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",true],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/cc821bed03f9ddd8.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/7c92e96509cd355e.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[[\"$\",\"head\",null,{\"children\":[\"$\",\"link\",null,{\"href\":\"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700\u0026family=Caveat+Brush\u0026display=swap\",\"rel\":\"stylesheet\"}]}],[\"$\",\"body\",null,{\"style\":{\"background\":\"#fafaf7\",\"margin\":0,\"fontFamily\":\"'Caveat', cursive\",\"color\":\"#1a1a2e\"},\"children\":[[\"$\",\"script\",null,{\"type\":\"application/ld+json\",\"dangerouslySetInnerHTML\":{\"__html\":\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Subrata Kumar Das\\\",\\\"url\\\":\\\"https://subraatakumar.com\\\",\\\"jobTitle\\\":\\\"Tech Lead\\\",\\\"sameAs\\\":[\\\"https://github.com/subraatakumar\\\",\\\"https://linkedin.com/in/subraatakumar\\\"]}\"}}],[\"$\",\"script\",null,{\"type\":\"application/ld+json\",\"dangerouslySetInnerHTML\":{\"__html\":\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"CreativeWorkSeries\\\",\\\"name\\\":\\\"180 Days Mentoring Journey\\\",\\\"description\\\":\\\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\\\",\\\"url\\\":\\\"https://subraatakumar.com/180days\\\",\\\"startDate\\\":\\\"2026-02-19\\\",\\\"publisher\\\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"Subrata Kumar Das\\\",\\\"url\\\":\\\"https://subraatakumar.com\\\"}}\"}}],[\"$\",\"style\",null,{\"children\":\"$2\"}],\"$L3\",\"$L4\",\"$L5\"]}]]}]]}],{\"children\":[\"$L6\",{\"children\":[\"$L7\",{\"children\":[\"$L8\",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],\"$L9\",false]],\"m\":\"$undefined\",\"G\":[\"$a\",[]],\"S\":true}\n"])</script><script>self.__next_f.push([1,"b:I[22016,[\"/_next/static/chunks/7c92e96509cd355e.js\"],\"\"]\nc:I[39756,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"default\"]\nd:I[37457,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"default\"]\n19:I[97367,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"ViewportBoundary\"]\n1b:I[97367,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"MetadataBoundary\"]\n1c:\"$Sreact.suspense\"\n3:[\"$\",\"header\",null,{\"className\":\"sk-header\",\"children\":[[\"$\",\"div\",null,{\"className\":\"sk-header-inner\",\"children\":[[\"$\",\"$Lb\",null,{\"href\":\"/\",\"className\":\"sk-logo\",\"children\":\"SKD_\"}],[\"$\",\"nav\",null,{\"aria-label\":\"Primary\",\"children\":[\"$\",\"ul\",null,{\"className\":\"sk-nav-links\",\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/about\",\"children\":\"About\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/products\",\"children\":\"Products\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/contact\",\"children\":\"Contact\"}]}]]}]}]]}],[\"$\",\"div\",null,{\"className\":\"sk-nav-mobile\",\"children\":[\"$\",\"nav\",null,{\"aria-label\":\"Mobile\",\"children\":[\"$\",\"ul\",null,{\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/about\",\"children\":\"About\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/products\",\"children\":\"Products\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/contact\",\"children\":\"Contact\"}]}]]}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"4:[\"$\",\"main\",null,{\"style\":{\"width\":\"100%\"},\"children\":[\"$\",\"$Lc\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Ld\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]\n"])</script><script>self.__next_f.push([1,"5:[\"$\",\"footer\",null,{\"className\":\"sk-footer\",\"children\":[\"© \",2026,\" Subrata Kumar Das. All rights reserved. ·\",\" \",[\"$\",\"$Lb\",null,{\"href\":\"/for-ai\",\"children\":\"For AI/Crawlers\"}]]}]\ne:T1146,"])</script><script>self.__next_f.push([1,"\n        body:has(.wt-shell) .sk-header,\n        body:has(.wt-shell) .sk-footer {\n          display: none !important;\n        }\n\n        .wt-shell {\n          --wt-navy-900: #0f2458;\n          --wt-navy-800: #14336f;\n          --wt-navy-700: #1f4f9d;\n          --wt-sky-400: #7fc3ff;\n          --wt-sky-300: #b9e3ff;\n          --wt-cyan-200: #d8f5ff;\n          --wt-card: rgba(255, 255, 255, 0.88);\n          --wt-ink: #10244f;\n          --wt-muted: #4a5f8c;\n          min-height: 100vh;\n          color: var(--wt-ink);\n          background:\n            radial-gradient(circle at 8% 10%, rgba(125, 196, 255, 0.25), transparent 42%),\n            radial-gradient(circle at 92% 22%, rgba(174, 229, 255, 0.24), transparent 35%),\n            linear-gradient(140deg, #eaf6ff 0%, #dff2ff 30%, #cfe8ff 100%);\n        }\n        .wt-shell * {\n          box-sizing: border-box;\n        }\n        .wt-nav {\n          position: sticky;\n          top: 0;\n          z-index: 60;\n          border-bottom: 1px solid rgba(16, 36, 79, 0.1);\n          background: rgba(239, 249, 255, 0.85);\n          backdrop-filter: blur(12px);\n        }\n        .wt-nav-inner {\n          max-width: 1120px;\n          margin: 0 auto;\n          padding: 0 24px;\n          height: 68px;\n          display: flex;\n          align-items: center;\n          justify-content: space-between;\n          gap: 16px;\n        }\n        .wt-logo {\n          display: inline-flex;\n          align-items: center;\n          gap: 10px;\n          color: var(--wt-navy-900);\n          text-decoration: none;\n        }\n        .wt-logo-mark {\n          width: 34px;\n          height: 34px;\n          border-radius: 10px;\n          display: inline-flex;\n          align-items: center;\n          justify-content: center;\n          font-weight: 800;\n          color: #fff;\n          background: linear-gradient(140deg, #4f88ff, #3ec1ff);\n          box-shadow: 0 8px 16px rgba(31, 79, 157, 0.22);\n        }\n        .wt-logo-text {\n          font-size: 14px;\n          font-weight: 800;\n          letter-spacing: 0.04em;\n          text-transform: uppercase;\n        }\n        .wt-links {\n          display: flex;\n          align-items: center;\n          gap: 8px;\n        }\n        .wt-links a {\n          text-decoration: none;\n          font-size: 13px;\n          font-weight: 800;\n          color: var(--wt-navy-900);\n          padding: 10px 12px;\n          border-radius: 10px;\n          text-transform: uppercase;\n          letter-spacing: 0.05em;\n        }\n        .wt-links a:hover {\n          background: rgba(79, 136, 255, 0.14);\n          color: var(--wt-navy-700);\n        }\n        .wt-main {\n          max-width: 1120px;\n          margin: 0 auto;\n          padding: 26px 24px 70px;\n        }\n        .wt-footer {\n          border-top: 1px solid rgba(16, 36, 79, 0.12);\n          background: rgba(235, 247, 255, 0.78);\n        }\n        .wt-footer-inner {\n          max-width: 1120px;\n          margin: 0 auto;\n          padding: 16px 24px 22px;\n          display: flex;\n          align-items: center;\n          justify-content: space-between;\n          gap: 12px;\n          flex-wrap: wrap;\n        }\n        .wt-footer-copy {\n          color: var(--wt-muted);\n          font-size: 12px;\n          font-weight: 700;\n          letter-spacing: 0.03em;\n        }\n        .wt-footer-links {\n          display: flex;\n          align-items: center;\n          gap: 8px;\n          flex-wrap: wrap;\n        }\n        .wt-footer-links a {\n          text-decoration: none;\n          font-size: 11px;\n          font-weight: 800;\n          text-transform: uppercase;\n          letter-spacing: 0.05em;\n          color: var(--wt-navy-900);\n          border: 1px solid rgba(16, 36, 79, 0.15);\n          border-radius: 9px;\n          padding: 7px 10px;\n          background: #fff;\n        }\n        .wt-footer-links a:hover {\n          border-color: rgba(31, 79, 157, 0.45);\n          color: var(--wt-navy-700);\n        }\n        .wt-font-display {\n          font-family: 'Space Grotesk', 'Space Grotesk Fallback';\n        }\n        @media (max-width: 760px) {\n          .wt-nav-inner {\n            padding: 0 14px;\n          }\n          .wt-main {\n            padding: 22px 14px 54px;\n          }\n          .wt-footer-inner {\n            padding: 14px 14px 18px;\n          }\n          .wt-links a {\n            font-size: 11px;\n            padding: 8px 10px;\n          }\n        }\n      "])</script><script>self.__next_f.push([1,"6:[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/67d266141b06bb08.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"div\",null,{\"className\":\"wt-shell manrope_65508a06-module__rzDLfa__className\",\"children\":[[\"$\",\"style\",null,{\"children\":\"$e\"}],\"$Lf\",\"$L10\",\"$L11\"]}]]}]\n7:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$Lc\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Ld\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n12:Tc00,"])</script><script>self.__next_f.push([1,"\n        .wtb-wrap {\n          border-radius: 24px;\n          border: 1px solid rgba(16, 36, 79, 0.1);\n          background: rgba(255,255,255,0.86);\n          padding: 30px 26px;\n        }\n        .wtb-wrap h1 {\n          margin: 0;\n          font-size: clamp(2rem, 4vw, 3rem);\n          letter-spacing: -0.03em;\n          color: #0f2458;\n        }\n        .wtb-intro {\n          margin: 12px 0 20px;\n          color: #4a5f8c;\n          line-height: 1.8;\n          max-width: 900px;\n        }\n        .wtb-grid {\n          display: grid;\n          grid-template-columns: repeat(2, minmax(0, 1fr));\n          gap: 12px;\n        }\n        .wtb-card {\n          border-radius: 16px;\n          border: 1px solid rgba(16, 36, 79, 0.1);\n          background: #fff;\n          padding: 14px;\n        }\n        .wtb-card b {\n          color: #14336f;\n          display: block;\n          margin-bottom: 5px;\n          font-size: 1rem;\n        }\n        .wtb-card p {\n          margin: 0;\n          color: #4b5f89;\n          line-height: 1.6;\n          font-size: 0.95rem;\n        }\n        .wtb-sec {\n          margin-top: 16px;\n          border-radius: 16px;\n          border: 1px solid rgba(16, 36, 79, 0.1);\n          background: #fff;\n          padding: 16px;\n        }\n        .wtb-sec h2 {\n          margin: 0 0 8px;\n          color: #0f2458;\n          font-size: 1.35rem;\n        }\n        .wtb-faq {\n          display: grid;\n          gap: 10px;\n        }\n        .wtb-faq-item {\n          border-radius: 12px;\n          border: 1px solid rgba(16, 36, 79, 0.1);\n          background: #f8fcff;\n          padding: 12px;\n        }\n        .wtb-faq-item b {\n          color: #17386f;\n          display: block;\n          margin-bottom: 4px;\n        }\n        .wtb-faq-item p {\n          margin: 0;\n          color: #4d5f86;\n          line-height: 1.6;\n        }\n        .wtb-note {\n          margin-top: 10px;\n          border-radius: 12px;\n          border: 1px solid rgba(245, 158, 11, 0.35);\n          background: #fff8eb;\n          color: #7c4a04;\n          padding: 10px 12px;\n          font-size: 0.92rem;\n          line-height: 1.6;\n        }\n        .wtb-actions {\n          margin-top: 14px;\n          display: flex;\n          gap: 10px;\n          flex-wrap: wrap;\n        }\n        .wtb-btn {\n          text-decoration: none;\n          display: inline-flex;\n          align-items: center;\n          justify-content: center;\n          min-height: 42px;\n          padding: 0 14px;\n          border-radius: 10px;\n          font-size: 13px;\n          text-transform: uppercase;\n          font-weight: 800;\n          letter-spacing: 0.04em;\n        }\n        .wtb-btn-primary {\n          background: #3f82ff;\n          color: #fff;\n        }\n        .wtb-btn-ghost {\n          border: 1px solid rgba(16, 36, 79, 0.2);\n          color: #17386f;\n          background: #fff;\n        }\n        @media (max-width: 820px) {\n          .wtb-wrap {\n            padding: 22px 16px;\n          }\n          .wtb-grid {\n            grid-template-columns: 1fr;\n          }\n        }\n      "])</script><script>self.__next_f.push([1,"8:[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"article\",null,{\"children\":[[\"$\",\"style\",null,{\"children\":\"$12\"}],[\"$\",\"div\",null,{\"className\":\"wtb-wrap\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"wt-font-display\",\"children\":\"Benefits of Balanced Drinking\"}],\"$L13\",\"$L14\",\"$L15\",\"$L16\"]}],\"$L17\"]}],null,\"$L18\"]}]\n9:[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$L19\",null,{\"children\":\"$L1a\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$L1b\",null,{\"children\":[\"$\",\"$1c\",null,{\"name\":\"Next.Metadata\",\"children\":\"$L1d\"}]}]}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}]\n"])</script><script>self.__next_f.push([1,"1f:I[97367,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"OutletBoundary\"]\nf:[\"$\",\"header\",null,{\"className\":\"wt-nav\",\"children\":[\"$\",\"div\",null,{\"className\":\"wt-nav-inner\",\"children\":[[\"$\",\"$Lb\",null,{\"href\":\"/watertracker\",\"className\":\"wt-logo\",\"children\":[[\"$\",\"span\",null,{\"className\":\"wt-logo-mark\",\"children\":\"WT\"}],[\"$\",\"span\",null,{\"className\":\"wt-logo-text wt-font-display\",\"children\":\"WaterTracker\"}]]}],[\"$\",\"nav\",null,{\"className\":\"wt-links\",\"aria-label\":\"Water Tracker pages\",\"children\":[[\"$\",\"$Lb\",null,{\"href\":\"/watertracker\",\"children\":\"Overview\"}],[\"$\",\"$Lb\",null,{\"href\":\"/watertracker/guide\",\"children\":\"How To Use\"}],[\"$\",\"$Lb\",null,{\"href\":\"/watertracker/benefits\",\"children\":\"Health Benefits\"}],[\"$\",\"$Lb\",null,{\"href\":\"/products\",\"children\":\"All Products\"}]]}]]}]}]\n10:[\"$\",\"main\",null,{\"className\":\"wt-main\",\"children\":[\"$\",\"$Lc\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Ld\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]\n11:[\"$\",\"footer\",null,{\"className\":\"wt-footer\",\"children\":[\"$\",\"div\",null,{\"className\":\"wt-footer-inner\",\"children\":[[\"$\",\"p\",null,{\"className\":\"wt-footer-copy\",\"children\":[\"© \",2026,\" WaterTracker\"]}],[\"$\",\"div\",null,{\"className\":\"wt-footer-links\",\"children\":[[\"$\",\"$Lb\",null,{\"href\":\"/watertracker\",\"children\":\"Overview\"}],[\"$\",\"$Lb\",null,{\"href\":\"/watertracker/guide\",\"children\":\"How To Use\"}],[\"$\",\"$Lb\",null,{\"href\":\"/watertracker/benefits\",\"children\":\"Health Benefits\"}],[\"$\",\"$Lb\",null,{\"href\":\"/contact\",\"children\":\"Support\"}]]}]]}]}]\n13:[\"$\",\"p\",null,{\"className\":\"wtb-intro\",\"children\":\"Balanced hydration is not about drinking as much as possible. It means giving your body the right amount of fluid consistently so daily functions like focus, energy, digestion, and recovery stay stable.\"}]\n"])</script><script>self.__next_f.push([1,"14:[\"$\",\"div\",null,{\"className\":\"wtb-grid\",\"children\":[[\"$\",\"div\",\"Better Focus and Mental Clarity\",{\"className\":\"wtb-card\",\"children\":[[\"$\",\"b\",null,{\"children\":\"Better Focus and Mental Clarity\"}],[\"$\",\"p\",null,{\"children\":\"Mild dehydration can reduce concentration. Balanced fluid intake helps maintain attention, memory, and decision-making through the day.\"}]]}],[\"$\",\"div\",\"Steadier Energy\",{\"className\":\"wtb-card\",\"children\":[[\"$\",\"b\",null,{\"children\":\"Steadier Energy\"}],[\"$\",\"p\",null,{\"children\":\"When hydration is consistent, fatigue tends to reduce and daily activity feels more sustainable, especially in long work sessions.\"}]]}],[\"$\",\"div\",\"Support for Digestion and Metabolism\",{\"className\":\"wtb-card\",\"children\":[[\"$\",\"b\",null,{\"children\":\"Support for Digestion and Metabolism\"}],[\"$\",\"p\",null,{\"children\":\"Adequate water supports digestion and regular bowel function, and helps your body process nutrients effectively.\"}]]}],[\"$\",\"div\",\"Temperature and Physical Performance\",{\"className\":\"wtb-card\",\"children\":[[\"$\",\"b\",null,{\"children\":\"Temperature and Physical Performance\"}],[\"$\",\"p\",null,{\"children\":\"Hydration helps regulate body temperature and supports exercise performance, especially in warm conditions.\"}]]}],[\"$\",\"div\",\"Kidney and Urinary Health Support\",{\"className\":\"wtb-card\",\"children\":[[\"$\",\"b\",null,{\"children\":\"Kidney and Urinary Health Support\"}],[\"$\",\"p\",null,{\"children\":\"Consistent hydration supports healthy urine flow and can reduce risk associated with concentrated urine patterns.\"}]]}],[\"$\",\"div\",\"Healthier Habit Formation\",{\"className\":\"wtb-card\",\"children\":[[\"$\",\"b\",null,{\"children\":\"Healthier Habit Formation\"}],[\"$\",\"p\",null,{\"children\":\"Tracking water intake creates awareness and consistency, helping people build sustainable long-term routines.\"}]]}]]}]\n"])</script><script>self.__next_f.push([1,"15:[\"$\",\"div\",null,{\"className\":\"wtb-sec\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"wt-font-display\",\"children\":\"Common Questions\"}],[\"$\",\"div\",null,{\"className\":\"wtb-faq\",\"children\":[[\"$\",\"div\",\"What is balanced drinking?\",{\"className\":\"wtb-faq-item\",\"children\":[[\"$\",\"b\",null,{\"children\":\"What is balanced drinking?\"}],[\"$\",\"p\",null,{\"children\":\"Balanced drinking means meeting your body’s hydration needs consistently without going too low or too high.\"}]]}],[\"$\",\"div\",\"Is more water always better?\",{\"className\":\"wtb-faq-item\",\"children\":[[\"$\",\"b\",null,{\"children\":\"Is more water always better?\"}],[\"$\",\"p\",null,{\"children\":\"No. Excessive intake in short time can be harmful. Hydration should be paced across the day and aligned with your body and activity.\"}]]}],[\"$\",\"div\",\"Does tea or coffee count as fluid intake?\",{\"className\":\"wtb-faq-item\",\"children\":[[\"$\",\"b\",null,{\"children\":\"Does tea or coffee count as fluid intake?\"}],[\"$\",\"p\",null,{\"children\":\"Yes. They contribute to total fluid intake, though plain water is still the simplest base for daily hydration.\"}]]}],[\"$\",\"div\",\"How do I find my ideal daily goal?\",{\"className\":\"wtb-faq-item\",\"children\":[[\"$\",\"b\",null,{\"children\":\"How do I find my ideal daily goal?\"}],[\"$\",\"p\",null,{\"children\":\"Start with a moderate goal, monitor thirst and urine color trends, then adjust for climate, activity, and health conditions.\"}]]}]]}],[\"$\",\"div\",null,{\"className\":\"wtb-note\",\"children\":\"General guidance only. If you have kidney, heart, endocrine, or other medical conditions affecting fluid intake, follow your clinician’s advice.\"}]]}]\n"])</script><script>self.__next_f.push([1,"16:[\"$\",\"div\",null,{\"className\":\"wtb-actions\",\"children\":[[\"$\",\"$Lb\",null,{\"href\":\"/watertracker\",\"className\":\"wtb-btn wtb-btn-primary\",\"children\":\"Back To Overview\"}],[\"$\",\"$Lb\",null,{\"href\":\"/watertracker/guide\",\"className\":\"wtb-btn wtb-btn-ghost\",\"children\":\"Open How-To Guide\"}]]}]\n1e:T555,{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Article\",\"headline\":\"Benefits of Balanced Drinking\",\"description\":\"Practical health benefits of balanced hydration and safe intake habits.\",\"url\":\"https://subraatakumar.com/watertracker/benefits\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\"}},{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"What is balanced drinking?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Balanced drinking means meeting your body’s hydration needs consistently without going too low or too high.\"}},{\"@type\":\"Question\",\"name\":\"Is more water always better?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"No. Excessive intake in short time can be harmful. Hydration should be paced across the day and aligned with your body and activity.\"}},{\"@type\":\"Question\",\"name\":\"Does tea or coffee count as fluid intake?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. They contribute to total fluid intake, though plain water is still the simplest base for daily hydration.\"}},{\"@type\":\"Question\",\"name\":\"How do I find my ideal daily goal?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Start with a moderate goal, monitor thirst and urine color trends, then adjust for climate, activity, and health conditions.\"}}]},{\"@type\":\"WebPage\",\"name\":\"Balanced Drinking Benefits\",\"url\":\"https://subraatakumar.com/watertracker/benefits\"}]}17:[\"$\",\"script\",null,{\"type\":\"application/ld+json\",\"dangerouslySetInnerHTML\":{\"__html\":\"$1e\"}}]\n18:[\"$\",\"$L1f\",null,{\"children\":[\"$\",\"$1c\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@20\"}]}]\n"])</script><script>self.__next_f.push([1,"1a:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n"])</script><script>self.__next_f.push([1,"21:I[27201,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"IconMark\"]\n"])</script><script>self.__next_f.push([1,"1d:[[\"$\",\"title\",\"0\",{\"children\":\"Balanced Drinking Benefits | Subrata Kumar Das\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Learn the practical health benefits of balanced hydration, how water intake affects focus, energy, digestion, and how to avoid over- or under-drinking.\"}],[\"$\",\"meta\",\"2\",{\"name\":\"keywords\",\"content\":\"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer\"}],[\"$\",\"link\",\"3\",{\"rel\":\"canonical\",\"href\":\"https://subraatakumar.com/watertracker/benefits/\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:title\",\"content\":\"Balanced Hydration Benefits | WaterTracker\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:description\",\"content\":\"Practical guide to balanced hydration and how consistent water intake supports daily health.\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:url\",\"content\":\"https://subraatakumar.com/watertracker/benefits/\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:image\",\"content\":\"https://subraatakumar.com/images/interview.png\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"9\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"10\",{\"name\":\"twitter:title\",\"content\":\"Balanced Hydration Benefits | WaterTracker\"}],[\"$\",\"meta\",\"11\",{\"name\":\"twitter:description\",\"content\":\"Practical guide to balanced hydration and how consistent water intake supports daily health.\"}],[\"$\",\"meta\",\"12\",{\"name\":\"twitter:image\",\"content\":\"https://subraatakumar.com/images/interview.png\"}],[\"$\",\"link\",\"13\",{\"rel\":\"icon\",\"href\":\"/favicon.ico?favicon.750fd6b3.ico\",\"sizes\":\"48x48\",\"type\":\"image/x-icon\"}],[\"$\",\"$L21\",\"14\",{}]]\n"])</script><script>self.__next_f.push([1,"20:null\n"])</script></body></html>

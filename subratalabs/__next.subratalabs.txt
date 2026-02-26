@@ -1,0 +1,149 @@
+1:"$Sreact.fragment"
+6:I[22016,["/_next/static/chunks/7c92e96509cd355e.js"],""]
+7:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+8:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+:HL["/_next/static/chunks/19626a09ad9ab341.css","style"]
+2:Te14,
+        body:has(.labs-shell) .sk-header,
+        body:has(.labs-shell) .sk-footer {
+          display: none !important;
+        }
+
+        .labs-shell {
+          --teal: #00c9a7;
+          min-height: 100vh;
+          background: #0d1117;
+          color: #dde5e3;
+        }
+
+        .labs-shell * {
+          box-sizing: border-box;
+        }
+
+        /* ── Nav ── */
+        .labs-nav {
+          position: sticky;
+          top: 0;
+          z-index: 70;
+          background: rgba(13, 17, 23, 0.88);
+          backdrop-filter: blur(12px);
+          border-bottom: 1px solid rgba(255,255,255,0.07);
+        }
+        .labs-nav-inner {
+          max-width: 1180px;
+          margin: 0 auto;
+          padding: 0 32px;
+          height: 64px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .labs-brand {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          text-decoration: none;
+        }
+        .labs-mark {
+          width: 34px;
+          height: 34px;
+          border-radius: 8px;
+          background: linear-gradient(135deg, #5effd8, #00c9a7, #009e84);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #021a12;
+          font-weight: 800;
+          font-size: 0.9rem;
+          box-shadow: 0 4px 14px rgba(0,201,167,0.5);
+          flex-shrink: 0;
+        }
+        .labs-brand-text {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+          line-height: 1;
+        }
+        .labs-brand-text b {
+          font-size: 0.9rem;
+          font-weight: 700;
+          color: #e0ecea;
+          letter-spacing: 0.01em;
+        }
+        .labs-brand-text span {
+          font-size: 0.65rem;
+          font-weight: 700;
+          color: var(--teal);
+          text-transform: uppercase;
+          letter-spacing: 0.13em;
+        }
+        .labs-nav-links {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+        }
+        .labs-nav-links a {
+          text-decoration: none;
+          color: #8fa8a0;
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          padding: 7px 14px;
+          border-radius: 6px;
+          transition: color 0.15s;
+        }
+        .labs-nav-links a:hover {
+          color: #e0ecea;
+        }
+
+        /* ── Main content ── */
+        .labs-main {
+          max-width: 1180px;
+          margin: 0 auto;
+          padding: 0 32px 72px;
+        }
+
+        /* ── Font util ── */
+        .labs-font-display {
+          font-family: 'Exo 2', 'Exo 2 Fallback';
+        }
+
+        /* ── Footer ── */
+        .labs-footer {
+          border-top: 1px solid rgba(255,255,255,0.07);
+        }
+        .labs-footer-inner {
+          max-width: 1180px;
+          margin: 0 auto;
+          padding: 16px 32px 24px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 8px;
+          flex-wrap: wrap;
+        }
+        .labs-footer p {
+          margin: 0;
+          color: #4a5a55;
+          font-size: 11px;
+        }
+        .labs-footer a {
+          color: var(--teal);
+          text-decoration: none;
+          font-weight: 700;
+          font-size: 11px;
+        }
+
+        @media (max-width: 680px) {
+          .labs-nav-inner,
+          .labs-main,
+          .labs-footer-inner {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+        }
+      0:{"buildId":"p2Q5GIjfCZI8jzjyliMZE","rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/19626a09ad9ab341.css","precedence":"next"}]],["$","div",null,{"className":"labs-shell plus_jakarta_sans_2535c7a2-module__o7etOa__className","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}],"loading":null,"isPartial":false}
+3:["$","header",null,{"className":"labs-nav","children":["$","div",null,{"className":"labs-nav-inner","children":[["$","$L6",null,{"href":"/subratalabs","className":"labs-brand","children":[["$","span",null,{"className":"labs-mark labs-font-display","children":"S"}],["$","span",null,{"className":"labs-brand-text","children":[["$","b",null,{"className":"labs-font-display","children":"Subrata"}],["$","span",null,{"children":"Labs"}]]}]]}],["$","nav",null,{"className":"labs-nav-links","aria-label":"Subrata Labs navigation","children":[["$","$L6",null,{"href":"/subratalabs/overview","children":"Overview"}],["$","$L6",null,{"href":"/subratalabs/insights","children":"Insights"}]]}]]}]}]
+4:["$","main",null,{"className":"labs-main","children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]}]
+5:["$","footer",null,{"className":"labs-footer","children":["$","div",null,{"className":"labs-footer-inner","children":[["$","p",null,{"children":["© ",2026," Subrata Labs"]}],["$","$L6",null,{"href":"/contact","children":"Collaborate with Subrata Labs"}]]}]}]

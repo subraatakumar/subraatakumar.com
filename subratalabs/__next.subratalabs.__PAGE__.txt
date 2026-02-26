@@ -1,0 +1,222 @@
+1:"$Sreact.fragment"
+7:I[22016,["/_next/static/chunks/7c92e96509cd355e.js"],""]
+8:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+2:T17ef,
+
+        /* ─────────────────────────────────────────
+           HERO
+        ───────────────────────────────────────── */
+        .lp-hero {
+          position: relative;
+          overflow: hidden;
+          min-height: 420px;
+          padding: 64px 0 80px;
+          /* Teal radial glow on the right — the key visual from the screenshot */
+          background:
+            radial-gradient(ellipse 55% 75% at 88% 42%, rgba(0,210,180,0.22) 0%, rgba(0,180,160,0.07) 38%, transparent 68%),
+            radial-gradient(ellipse 30% 50% at 72% 28%, rgba(0,230,200,0.12) 0%, transparent 55%),
+            transparent;
+        }
+
+        /* The flowing aurora/wave lines — SVG positioned bottom-right of hero */
+        .lp-wave-svg {
+          position: absolute;
+          right: -40px;
+          bottom: -20px;
+          width: 52%;
+          height: 80%;
+          pointer-events: none;
+          opacity: 1;
+        }
+
+        .lp-hero-content {
+          position: relative;
+          z-index: 2;
+          max-width: 660px;
+        }
+
+        .lp-kicker {
+          display: block;
+          font-size: 11px;
+          font-weight: 700;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          color: #7ab8ae;
+          margin-bottom: 16px;
+        }
+
+        .lp-hero h1 {
+          margin: 0 0 18px;
+          font-size: clamp(2.6rem, 5vw, 4rem);
+          line-height: 1;
+          letter-spacing: -0.03em;
+          color: #ffffff;
+          font-weight: 800;
+        }
+        .lp-hero h1 em {
+          font-style: normal;
+          color: #00c9a7;
+        }
+
+        .lp-hero p {
+          margin: 0 0 32px;
+          color: #8fa8a2;
+          font-size: 0.97rem;
+          line-height: 1.75;
+          max-width: 580px;
+        }
+
+        .lp-cta {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+
+        .lp-btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          height: 40px;
+          padding: 0 18px;
+          border-radius: 7px;
+          font-size: 11px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.09em;
+          text-decoration: none;
+          border: 1px solid transparent;
+          transition: opacity 0.15s, transform 0.15s;
+          white-space: nowrap;
+        }
+        .lp-btn:hover { opacity: 0.82; transform: translateY(-1px); }
+
+        .lp-btn-solid {
+          background: #00c9a7;
+          color: #021a12;
+          border-color: #00c9a7;
+          box-shadow: 0 4px 18px rgba(0,201,167,0.35);
+        }
+
+        .lp-btn-ghost {
+          background: rgba(255,255,255,0.05);
+          color: #c8dbd7;
+          border-color: rgba(255,255,255,0.15);
+        }
+        .lp-btn-ghost:hover {
+          border-color: rgba(0,201,167,0.4);
+          color: #00c9a7;
+          background: rgba(0,201,167,0.07);
+        }
+
+        /* ─────────────────────────────────────────
+           TWO-COLUMN CARDS
+        ───────────────────────────────────────── */
+        .lp-grid {
+          display: grid;
+          grid-template-columns: 1.25fr 1fr;
+          gap: 16px;
+          margin-top: 20px;
+        }
+
+        .lp-card {
+          border-radius: 16px;
+          background: #111820;
+          border: 1px solid rgba(255,255,255,0.07);
+          padding: 24px 22px;
+        }
+
+        .lp-card h2 {
+          margin: 0 0 8px;
+          font-size: 1.15rem;
+          font-weight: 700;
+          letter-spacing: -0.02em;
+          color: #dde8e4;
+        }
+
+        .lp-card > p {
+          margin: 0 0 16px;
+          color: #687e78;
+          font-size: 0.88rem;
+          line-height: 1.7;
+        }
+
+        /* Live track box inside left card */
+        .lp-live-box {
+          border-radius: 10px;
+          background: rgba(0,40,30,0.6);
+          border: 1px solid rgba(0,201,167,0.3);
+          padding: 14px 16px;
+        }
+        .lp-live-box strong {
+          display: block;
+          color: #00c9a7;
+          font-size: 0.9rem;
+          margin-bottom: 6px;
+        }
+        .lp-live-box p {
+          margin: 0 0 12px;
+          color: #7eada6;
+          font-size: 0.84rem;
+          line-height: 1.6;
+        }
+        .lp-mini-btn {
+          display: inline-flex;
+          align-items: center;
+          height: 32px;
+          padding: 0 14px;
+          border-radius: 6px;
+          background: rgba(0,201,167,0.15);
+          border: 1px solid rgba(0,201,167,0.35);
+          color: #00c9a7;
+          font-size: 10px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.09em;
+          text-decoration: none;
+          transition: background 0.15s;
+        }
+        .lp-mini-btn:hover {
+          background: rgba(0,201,167,0.25);
+        }
+
+        /* Right card: Coming Next list */
+        .lp-track-list {
+          display: flex;
+          flex-direction: column;
+          gap: 7px;
+          margin-top: 6px;
+        }
+        .lp-track-row {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px 12px;
+          border-radius: 8px;
+          background: #0d1510;
+          border: 1px solid rgba(255,255,255,0.06);
+        }
+        .lp-track-row span {
+          color: #c8dbd5;
+          font-size: 0.88rem;
+          font-weight: 600;
+        }
+        .lp-track-badge {
+          font-size: 9.5px !important;
+          font-weight: 700 !important;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          color: #4a7a6e !important;
+        }
+
+        @media (max-width: 860px) {
+          .lp-grid { grid-template-columns: 1fr; }
+          .lp-hero { padding: 44px 0 60px; }
+        }
+      0:{"buildId":"p2Q5GIjfCZI8jzjyliMZE","rsc":["$","$1","c",{"children":[["$","section",null,{"className":"lp","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}],null,"$L6"]}],"loading":null,"isPartial":false}
+3:["$","div",null,{"className":"lp-hero","children":[["$","svg",null,{"className":"lp-wave-svg","viewBox":"0 0 600 400","fill":"none","xmlns":"http://www.w3.org/2000/svg","aria-hidden":"true","children":[["$","defs",null,{"children":[["$","filter",null,{"id":"glow1","x":"-30%","y":"-30%","width":"160%","height":"160%","children":[["$","feGaussianBlur",null,{"stdDeviation":"3.5","result":"blur"}],["$","feMerge",null,{"children":[["$","feMergeNode",null,{"in":"blur"}],["$","feMergeNode",null,{"in":"SourceGraphic"}]]}]]}],["$","filter",null,{"id":"glow2","x":"-40%","y":"-40%","width":"180%","height":"180%","children":[["$","feGaussianBlur",null,{"stdDeviation":"6","result":"blur"}],["$","feMerge",null,{"children":[["$","feMergeNode",null,{"in":"blur"}],["$","feMergeNode",null,{"in":"SourceGraphic"}]]}]]}]]}],["$","path",null,{"d":"M 600 320 Q 440 260 280 310 Q 160 345 0 290","stroke":"rgba(0,210,185,0.08)","strokeWidth":"60","fill":"none","filter":"url(#glow2)"}],["$","path",null,{"d":"M 600 320 Q 440 255 280 308 Q 160 344 0 288","stroke":"rgba(0,220,190,0.75)","strokeWidth":"1.2","fill":"none","filter":"url(#glow1)"}],["$","path",null,{"d":"M 600 345 Q 430 275 265 330 Q 140 368 0 310","stroke":"rgba(0,200,175,0.35)","strokeWidth":"1","fill":"none","filter":"url(#glow1)"}],["$","path",null,{"d":"M 600 370 Q 420 295 250 352 Q 120 392 0 332","stroke":"rgba(0,185,165,0.18)","strokeWidth":"1","fill":"none"}],["$","path",null,{"d":"M 600 295 Q 460 240 330 278 Q 240 302 180 295","stroke":"rgba(0,230,200,0.28)","strokeWidth":"0.8","fill":"none","filter":"url(#glow1)"}],["$","circle",null,{"cx":"420","cy":"279","r":"2.5","fill":"rgba(100,255,225,0.7)","filter":"url(#glow1)"}],["$","circle",null,{"cx":"420","cy":"279","r":"5","fill":"rgba(0,220,190,0.2)"}]]}],["$","div",null,{"className":"lp-hero-content","children":[["$","span",null,{"className":"lp-kicker","children":"Execution Studio"}],["$","h1",null,{"className":"labs-font-display","children":["Subrata ",["$","em",null,{"children":"Labs"}]]}],["$","p",null,{"children":"Building practical AI products, systems, and developer ecosystems. Subrata Labs is a long-horizon execution studio where learning tracks evolve into production-ready capabilities and reusable frameworks."}],["$","div",null,{"className":"lp-cta","children":["$","$L7",null,{"href":"/180days","className":"lp-btn lp-btn-solid","children":"Explore 180Days"}]}]]}]]}]
+4:["$","div",null,{"className":"lp-grid","children":[["$","div",null,{"className":"lp-card","children":[["$","h2",null,{"className":"labs-font-display","children":"Structured Learning Tracks"}],["$","p",null,{"children":"Each track has a distinct theme and delivery style, but all tracks share one mission: practical depth that can be converted into real products and systems."}],["$","div",null,{"className":"lp-live-box","children":[["$","strong",null,{"children":"Live Track: 180Days"}],["$","p",null,{"children":"Daily build-and-document execution track for architecture-first product development in the AI era."}],["$","$L7",null,{"href":"/180days","className":"lp-mini-btn","children":"Open 180Days"}]]}]]}],["$","div",null,{"className":"lp-card","children":[["$","h2",null,{"className":"labs-font-display","children":"Coming Next"}],["$","div",null,{"className":"lp-track-list","children":[["$","div","AI Agents",{"className":"lp-track-row","children":[["$","span",null,{"children":"AI Agents"}],["$","span",null,{"className":"lp-track-badge","children":"Planned"}]]}],["$","div","Plugins",{"className":"lp-track-row","children":[["$","span",null,{"children":"Plugins"}],["$","span",null,{"className":"lp-track-badge","children":"Planned"}]]}],["$","div","Enterprise Tools",{"className":"lp-track-row","children":[["$","span",null,{"children":"Enterprise Tools"}],["$","span",null,{"className":"lp-track-badge","children":"Planned"}]]}],["$","div","Monetization Frameworks",{"className":"lp-track-row","children":[["$","span",null,{"children":"Monetization Frameworks"}],["$","span",null,{"className":"lp-track-badge","children":"Planned"}]]}],["$","div","Desktop/Mobile AI Apps",{"className":"lp-track-row","children":[["$","span",null,{"children":"Desktop/Mobile AI Apps"}],["$","span",null,{"className":"lp-track-badge","children":"Planned"}]]}]]}]]}]]}]
+5:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Brand\",\"name\":\"Subrata Labs\",\"url\":\"https://subraatakumar.com/subratalabs\",\"description\":\"Execution Studio for practical AI products, systems, and developer ecosystems.\"},{\"@type\":\"ItemList\",\"name\":\"Subrata Labs Learning Tracks\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"180Days\",\"url\":\"https://subraatakumar.com/180days\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"AI Agents\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Plugins\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Enterprise Tools\"},{\"@type\":\"ListItem\",\"position\":5,\"name\":\"Monetization Frameworks\"},{\"@type\":\"ListItem\",\"position\":6,\"name\":\"Desktop/Mobile AI Apps\"}]},{\"@type\":\"WebPage\",\"name\":\"Subrata Labs\",\"url\":\"https://subraatakumar.com/subratalabs\"}]}"}}]
+6:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null

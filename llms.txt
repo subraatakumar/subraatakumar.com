@@ -10,13 +10,16 @@ The website contains portfolio pages and an active 180-day technical mentorship 
 ## High-value pages
 - Home: https://subraatakumar.com/
 - About: https://subraatakumar.com/about
-- Projects index: https://subraatakumar.com/projects
+- Products index: https://subraatakumar.com/products
 - 180 Days series: https://subraatakumar.com/180days
 - AI summary page: https://subraatakumar.com/for-ai
 - Contact: https://subraatakumar.com/contact
 
 ## Project pages
+- Subrata Labs: https://subraatakumar.com/subratalabs
 - Water Tracker: https://subraatakumar.com/watertracker
+- Water Tracker Guide: https://subraatakumar.com/watertracker/guide
+- Water Tracker Benefits: https://subraatakumar.com/watertracker/benefits
 - She Health: https://subraatakumar.com/shehealth
 - TCBS CLI: https://subraatakumar.com/tcbs-cli
 
