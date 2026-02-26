@@ -1,8 +1,25 @@
 import type { Metadata } from "next";
+import { DEFAULT_OG_IMAGE } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Contact",
   description: "Get in touch with Subrata Kumar Das — Tech Lead and React Native Architect",
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    title: "Contact | Subrata Kumar Das",
+    description: "Get in touch with Subrata Kumar Das — Tech Lead and React Native Architect",
+    url: "/contact",
+    type: "website",
+    images: [DEFAULT_OG_IMAGE],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact | Subrata Kumar Das",
+    description: "Get in touch with Subrata Kumar Das — Tech Lead and React Native Architect",
+    images: [DEFAULT_OG_IMAGE],
+  },
 };
 
 export default function ContactPage() {

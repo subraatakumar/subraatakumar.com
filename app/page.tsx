@@ -1,13 +1,29 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { DEFAULT_OG_IMAGE } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: {
-    default: "Home",
-    template: "%s | Subrata Kumar Das",
-  },
+  title: "Home",
   description:
     "Tech Lead and React Native Architect with 10+ years building scalable mobile platforms and delivering 40+ mobile applications.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Subrata Kumar Das | Home",
+    description:
+      "Tech Lead and React Native Architect with 10+ years building scalable mobile platforms and delivering 40+ mobile applications.",
+    url: "/",
+    type: "website",
+    images: [DEFAULT_OG_IMAGE],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Subrata Kumar Das | Home",
+    description:
+      "Tech Lead and React Native Architect with 10+ years building scalable mobile platforms and delivering 40+ mobile applications.",
+    images: [DEFAULT_OG_IMAGE],
+  },
 };
 
 export default function HomePage() {

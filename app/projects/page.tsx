@@ -1,9 +1,26 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { DEFAULT_OG_IMAGE } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Projects",
   description: "Selected projects by Subrata Kumar Das — Tech Lead and React Native Architect",
+  alternates: {
+    canonical: "/projects",
+  },
+  openGraph: {
+    title: "Projects | Subrata Kumar Das",
+    description: "Selected projects by Subrata Kumar Das — Tech Lead and React Native Architect",
+    url: "/projects",
+    type: "website",
+    images: [DEFAULT_OG_IMAGE],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Projects | Subrata Kumar Das",
+    description: "Selected projects by Subrata Kumar Das — Tech Lead and React Native Architect",
+    images: [DEFAULT_OG_IMAGE],
+  },
 };
 
 const projects = [

@@ -7,6 +7,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import CodeEnhancer from '../../components/CodeEnhancer';
+import { DEFAULT_OG_IMAGE, absoluteUrl } from "@/lib/seo";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -40,10 +41,32 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const fileContents = fs.readFileSync(filePath, "utf8");
   const { data } = matter(fileContents);
+  const title = data.title ?? `Day ${slug.replace("day-", "")}`;
+  const description =
+    data.description ??
+    "Daily log from a 180-day mentorship journey documenting architecture, implementation, and product decisions.";
+  const canonicalPath = `/180days/${slug}`;
 
   return {
-    title: data.title,
-    description: data.description,
+    title,
+    description,
+    alternates: {
+      canonical: canonicalPath,
+    },
+    openGraph: {
+      title: `${title} | 180 Days`,
+      description,
+      url: canonicalPath,
+      type: "article",
+      publishedTime: data.date,
+      images: [DEFAULT_OG_IMAGE],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${title} | 180 Days`,
+      description,
+      images: [DEFAULT_OG_IMAGE],
+    },
   };
 }
 
@@ -593,6 +616,7 @@ export default async function ArticlePage({ params }: PageProps) {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
+            mainEntityOfPage: absoluteUrl(`/180days/${slug}`),
             headline: data.title,
             datePublished: data.date,
             description: data.description,

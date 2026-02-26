@@ -2,6 +2,8 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import matter from "gray-matter";
+import type { Metadata } from "next";
+import { DEFAULT_OG_IMAGE } from "@/lib/seo";
 
 type Post = {
   slug: string;
@@ -12,6 +14,30 @@ type Post = {
 };
 
 const contentDirectory = path.join(process.cwd(), "content/180days");
+
+export const metadata: Metadata = {
+  title: "180 Days Mentoring Journey",
+  description:
+    "A 180-day mentorship journal documenting architecture, engineering decisions, and daily execution while building a production-grade mobile app.",
+  alternates: {
+    canonical: "/180days",
+  },
+  openGraph: {
+    title: "180 Days Mentoring Journey | Subrata Kumar Das",
+    description:
+      "A 180-day mentorship journal documenting architecture, engineering decisions, and daily execution while building a production-grade mobile app.",
+    url: "/180days",
+    type: "website",
+    images: [DEFAULT_OG_IMAGE],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "180 Days Mentoring Journey | Subrata Kumar Das",
+    description:
+      "A 180-day mentorship journal documenting architecture, engineering decisions, and daily execution while building a production-grade mobile app.",
+    images: [DEFAULT_OG_IMAGE],
+  },
+};
 
 export default function DaysIndex() {
   const filenames = fs
@@ -125,6 +151,29 @@ export default function DaysIndex() {
         </div>
 
       </main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            name: "180 Days Mentoring Journey",
+            description:
+              "A 180-day mentorship journal documenting architecture and execution while building a production-grade mobile app.",
+            url: "https://subraatakumar.com/180days",
+            numberOfItems: posts.length,
+            mainEntity: {
+              "@type": "ItemList",
+              itemListElement: posts.map((post, index) => ({
+                "@type": "ListItem",
+                position: index + 1,
+                url: `https://subraatakumar.com/180days/${post.slug}`,
+                name: post.title,
+              })),
+            },
+          }),
+        }}
+      />
     </>
   );
 }

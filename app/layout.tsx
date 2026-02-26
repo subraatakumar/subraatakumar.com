@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
+import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://subraatakumar.com"),
+  metadataBase: new URL(SITE_URL),
+  alternates: {
+    canonical: "/",
+  },
   title: {
-    default: "Subrata Kumar Das",
-    template: "%s | Subrata Kumar Das",
+    default: SITE_NAME,
+    template: `%s | ${SITE_NAME}`,
   },
   description:
     "Tech Lead and React Native Architect with 10+ years building scalable mobile platforms and product-focused systems.",
@@ -18,13 +22,28 @@ export const metadata: Metadata = {
     "Next.js Developer",
   ],
   openGraph: {
-    title: "Subrata Kumar Das",
+    title: SITE_NAME,
     description:
       "Tech Lead and React Native Architect building scalable mobile systems.",
-    url: "https://subraatakumar.com",
-    siteName: "Subrata Kumar Das",
+    url: SITE_URL,
+    siteName: SITE_NAME,
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: DEFAULT_OG_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: `${SITE_NAME} portfolio`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_NAME,
+    description:
+      "Tech Lead and React Native Architect building scalable mobile systems.",
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 
@@ -298,25 +317,6 @@ export default function RootLayout({
             .sk-page-heading { font-size: 2.2rem; }
           }
         `}</style>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "CreativeWorkSeries",
-              name: "180 Days Mentoring Journey",
-              description:
-                "A 180-day mentoring journey (Session 1+) documenting the build of a real mobile app intended for app stores. Series includes practical architecture, repository and service patterns, and implementation walkthroughs.",
-              url: "https://subraatakumar.com/180days",
-              startDate: "2026-02-19",
-              publisher: {
-                "@type": "Organization",
-                name: "Subrata Kumar Das",
-                url: "https://subraatakumar.com",
-              },
-            }),
-          }}
-        />
         <header className="sk-header">
           <div className="sk-header-inner">
             <Link href="/" className="sk-logo">SKD_</Link>
@@ -342,7 +342,8 @@ export default function RootLayout({
         <main style={{ width: "100%" }}>{children}</main>
 
         <footer className="sk-footer">
-          © {new Date().getFullYear()} Subrata Kumar Das. All rights reserved.
+          © {new Date().getFullYear()} Subrata Kumar Das. All rights reserved. ·{" "}
+          <Link href="/for-ai">For AI/Crawlers</Link>
         </footer>
       </body>
     </html>
