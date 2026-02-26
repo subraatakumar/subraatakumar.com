@@ -75,12 +75,12 @@ export default async function ArticlePage({ params }: PageProps) {
   // Preserve other attributes while removing any existing `id` to replace with our slug.
   // Small map of tailwind classes to apply per heading level coming from markdown content
   const headingClassMap: Record<string, string> = {
-    "1": "text-3xl lg:text-4xl font-black tracking-tighter text-slate-950 dark:text-white mt-16 mb-6 pb-4 border-b border-slate-200 dark:border-slate-700",
-    "2": "text-2xl lg:text-3xl font-black tracking-tight text-slate-900 dark:text-white mt-14 mb-5",
-    "3": "text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mt-10 mb-4",
-    "4": "text-lg font-semibold tracking-tight text-slate-900 dark:text-white mt-8 mb-3",
-    "5": "text-base font-semibold tracking-tight text-slate-900 dark:text-white mt-6 mb-2",
-    "6": "text-sm font-semibold tracking-tight text-slate-900 dark:text-white mt-4 mb-2",
+    "1": "d180-md-h1",
+    "2": "d180-md-h2",
+    "3": "d180-md-h3",
+    "4": "d180-md-h4",
+    "5": "d180-md-h5",
+    "6": "d180-md-h6",
   };
 
   contentHtml = contentHtml.replace(/<h([1-6])(?:\s+[^>]*)?>([\s\S]*?)<\/h\1>/gi, (m: string, lvl: string, inner: string) => {
@@ -117,10 +117,10 @@ export default async function ArticlePage({ params }: PageProps) {
     return `
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          ${lang ? `<span class="text-[11px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded z-50">${lang}</span>` : ""}
-          <button data-copy class="copy-btn text-[11px] font-medium px-2.5 py-1 rounded bg-amber-400 text-slate-900 hover:bg-amber-500 z-50 uppercase tracking-wider">Copy</button>
+          ${lang ? `<span class="d180-code-lang">${lang}</span>` : ""}
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="overflow-auto rounded-2xl bg-slate-950 text-slate-100 p-4 line-numbers"><code${codeAttrs}>${code}</code></pre>
+        <pre class="d180-code-pre line-numbers"><code${codeAttrs}>${code}</code></pre>
       </div>
     `;
   });
@@ -128,43 +128,42 @@ export default async function ArticlePage({ params }: PageProps) {
   // Style unordered lists: clean standard bullets, proper nesting indent
   contentHtml = contentHtml.replace(/<ul(?:\s+[^>]*)?>([\s\S]*?)<\/ul>/gi, (m: string, inner: string) => {
     const newInner = inner.replace(/<li(?:\s+[^>]*)?>([\s\S]*?)<\/li>/gi, (_liMatch: string, liInner: string) => {
-      return `<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5">${liInner}</li>`;
+      return `<li class="d180-md-li">${liInner}</li>`;
     });
-    return `<ul class="list-disc pl-6 space-y-1 my-4">${newInner}</ul>`;
+    return `<ul class="d180-md-ul">${newInner}</ul>`;
   });
 
   // Ordered lists: proper numbered indent, clean text
   contentHtml = contentHtml.replace(/<ol(?:\s+[^>]*)?>([\s\S]*?)<\/ol>/gi, (m: string, inner: string) => {
     const newInner = inner.replace(/<li(?:\s+[^>]*)?>([\s\S]*?)<\/li>/gi, (_liMatch: string, liInner: string) => {
-      return `<li class="text-[17px] leading-relaxed text-slate-700 dark:text-slate-300 my-1.5 pl-1">${liInner}</li>`;
+      return `<li class="d180-md-li">${liInner}</li>`;
     });
-    return `<ol class="list-decimal pl-7 space-y-1 my-4">${newInner}</ol>`;
+    return `<ol class="d180-md-ol">${newInner}</ol>`;
   });
 
   // Style paragraphs for better readability
   contentHtml = contentHtml.replace(/<p(?:\s+[^>]*)?>([\s\S]*?)<\/p>/gi, (m: string, inner: string) => {
     // Skip empty or whitespace-only paragraphs
     if (!inner.trim()) return m;
-    return `<p class="text-[17px] leading-[1.85] text-slate-700 dark:text-slate-300 my-5">${inner}</p>`;
+    return `<p class="d180-md-p">${inner}</p>`;
   });
 
   // Blockquotes: subtle left border, muted background and italic tone
   contentHtml = contentHtml.replace(/<blockquote(?:\s+[^>]*)?>([\s\S]*?)<\/blockquote>/gi, (m: string, inner: string) => {
-    return `<blockquote class="border-l-2 border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/30 p-4 rounded-lg text-slate-700 dark:text-slate-300 italic">${inner}</blockquote>`;
+    return `<blockquote class="d180-md-blockquote">${inner}</blockquote>`;
   });
 
   // Tables: responsive wrapper and simple cell styling
   contentHtml = contentHtml.replace(/<table(?:\s+[^>]*)?>([\s\S]*?)<\/table>/gi, (m: string, inner: string) => {
     const headered = inner.replace(/<th(?:\s+[^>]*)?>([\s\S]*?)<\/th>/gi, (mm: string, thInner: string) => {
-      return `<th class="text-left font-medium text-sm text-slate-700 dark:text-slate-300 p-2 border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/20">${thInner}</th>`;
+      return `<th class="d180-md-th">${thInner}</th>`;
     });
 
     const rows = headered.replace(/<td(?:\s+[^>]*)?>([\s\S]*?)<\/td>/gi, (mm: string, tdInner: string) => {
-      return `<td class="p-2 text-sm text-slate-700 dark:text-slate-300 border-b border-slate-100 dark:border-slate-800">${tdInner}</td>`;
+      return `<td class="d180-md-td">${tdInner}</td>`;
     });
 
-    return `<div class="overflow-auto rounded-lg border border-slate-100 dark:border-slate-800">` +
-           `<table class="min-w-full border-collapse">${rows}</table></div>`;
+    return `<div class="d180-md-table-wrap"><table class="d180-md-table">${rows}</table></div>`;
   });
 
   // Images: centered, rounded, subtle shadow
@@ -185,7 +184,7 @@ export default async function ArticlePage({ params }: PageProps) {
     const existingClass = classMatch ? classMatch[1] : "";
     const cleaned = allAttrs.replace(/\s+class=(?:"|')[^"']*(?:"|')/i, "").trim();
     const attrsString = cleaned ? ` ${cleaned}` : "";
-    const combinedClass = [existingClass, "text-amber-600 dark:text-amber-400 hover:underline font-medium"].filter(Boolean).join(" ");
+    const combinedClass = [existingClass, "d180-md-link"].filter(Boolean).join(" ");
     return `<a href="${href}" class="${combinedClass}"${attrsString}>${text}</a>`;
   });
 
@@ -200,32 +199,317 @@ export default async function ArticlePage({ params }: PageProps) {
   const progress = Math.round((Number(dayNumber) / 180) * 100);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans">
+    <div className="d180-article-page">
+      <style>{`
+        #days180-root .d180-article-page {
+          min-height: 100vh;
+          background: #fff;
+          color: #0f172a;
+        }
+        #days180-root .d180-article-header {
+          position: sticky;
+          top: 0;
+          z-index: 80;
+          background: rgba(255,255,255,0.92);
+          backdrop-filter: blur(16px);
+          border-bottom: 1px solid #e2e8f0;
+        }
+        #days180-root .d180-article-header-inner {
+          width: 100%;
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 32px;
+          height: 64px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        }
+        #days180-root .d180-crumb {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: .08em;
+          color: #64748b;
+          text-decoration: none;
+          background: #f1f5f9;
+          border-radius: 10px;
+          padding: 10px 14px;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+        }
+        #days180-root .d180-crumb-series {
+          transition: color .15s ease;
+        }
+        #days180-root .d180-crumb:hover .d180-crumb-series {
+          color: #d97706;
+        }
+        #days180-root .d180-crumb strong { color: #0f172a; }
+        #days180-root .d180-pill {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          padding: 8px 12px;
+          background: #f8fafc;
+          border: 1px solid #e2e8f0;
+          border-radius: 10px;
+        }
+        #days180-root .d180-pill-track {
+          width: 90px;
+          height: 8px;
+          background: #cbd5e1;
+          border-radius: 999px;
+          overflow: hidden;
+        }
+        #days180-root .d180-pill-fill {
+          height: 100%;
+          background: #f59e0b;
+          border-radius: 999px;
+        }
+        #days180-root .d180-pill b {
+          color: #d97706;
+          font-size: 11px;
+          letter-spacing: .02em;
+        }
+        #days180-root .d180-content-wrap {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 32px;
+        }
+        #days180-root .d180-meta-line {
+          margin-top: 8px;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 8px;
+          color: #64748b;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        #days180-root .d180-meta-line .dot {
+          width: 4px;
+          height: 4px;
+          border-radius: 999px;
+          background: #94a3b8;
+          display: inline-block;
+        }
+        #days180-root .d180-post-content {
+          max-width: 780px;
+        }
+        #days180-root .d180-post-content img {
+          max-width: 100%;
+          height: auto;
+        }
+        #days180-root .d180-post-content pre code {
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+        }
+        #days180-root .d180-md-p {
+          font-size: 17px;
+          line-height: 1.85;
+          color: #334155;
+          margin: 20px 0;
+        }
+        #days180-root .d180-md-h1 {
+          font-size: clamp(2rem, 4vw, 2.4rem);
+          font-weight: 900;
+          margin: 64px 0 24px;
+          padding-bottom: 12px;
+          border-bottom: 1px solid #e2e8f0;
+          line-height: 1.2;
+          color: #020617;
+        }
+        #days180-root .d180-md-h2 {
+          font-size: clamp(1.6rem, 3vw, 1.9rem);
+          font-weight: 900;
+          margin: 56px 0 18px;
+          line-height: 1.25;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-h3 {
+          font-size: clamp(1.3rem, 2.4vw, 1.5rem);
+          font-weight: 800;
+          margin: 40px 0 14px;
+          line-height: 1.3;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-h4,
+        #days180-root .d180-md-h5,
+        #days180-root .d180-md-h6 {
+          font-size: 1.1rem;
+          font-weight: 700;
+          margin: 28px 0 10px;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-ul {
+          list-style: disc;
+          padding-left: 24px;
+          margin: 18px 0;
+        }
+        #days180-root .d180-md-ol {
+          list-style: decimal;
+          padding-left: 28px;
+          margin: 18px 0;
+        }
+        #days180-root .d180-md-li {
+          margin: 8px 0;
+          line-height: 1.75;
+          color: #334155;
+        }
+        #days180-root .d180-md-blockquote {
+          margin: 26px 0;
+          padding: 14px 16px;
+          border-left: 2px solid #e2e8f0;
+          border-radius: 8px;
+          background: #f8fafc;
+          font-style: italic;
+          color: #334155;
+        }
+        #days180-root .d180-md-link {
+          color: #d97706;
+          text-decoration: none;
+          font-weight: 600;
+        }
+        #days180-root .d180-md-link:hover {
+          text-decoration: underline;
+        }
+        #days180-root .d180-md-table-wrap {
+          overflow: auto;
+          border: 1px solid #e2e8f0;
+          border-radius: 8px;
+          margin: 24px 0;
+        }
+        #days180-root .d180-md-table {
+          min-width: 100%;
+          border-collapse: collapse;
+        }
+        #days180-root .d180-md-th {
+          text-align: left;
+          font-size: 13px;
+          font-weight: 700;
+          color: #334155;
+          background: #f8fafc;
+          padding: 10px;
+          border-bottom: 1px solid #e2e8f0;
+        }
+        #days180-root .d180-md-td {
+          font-size: 14px;
+          color: #334155;
+          padding: 10px;
+          border-bottom: 1px solid #f1f5f9;
+        }
+        #days180-root .d180-code-lang {
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: .06em;
+          color: #475569;
+          background: #f1f5f9;
+          padding: 4px 10px;
+          border-radius: 6px;
+        }
+        #days180-root .d180-copy-btn {
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: .06em;
+          color: #0f172a;
+          background: #fbbf24;
+          border: 0;
+          border-radius: 6px;
+          padding: 4px 10px;
+          cursor: pointer;
+        }
+        #days180-root .d180-code-pre {
+          overflow: auto;
+          border-radius: 16px;
+          background: #0f172a;
+          color: #f8fafc;
+          padding: 18px 16px;
+        }
+        #days180-root .d180-bottom-nav {
+          margin-top: 64px;
+          padding: 24px 0 60px;
+          border-top: 1px solid #e2e8f0;
+          display: flex;
+          gap: 12px;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        #days180-root .d180-nav-link {
+          border-radius: 12px;
+          border: 1px solid #e2e8f0;
+          background: #f8fafc;
+          color: #0f172a;
+          text-decoration: none;
+          padding: 12px 16px;
+          min-width: 180px;
+        }
+        #days180-root .d180-nav-link strong {
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: .08em;
+          color: #64748b;
+          display: block;
+          margin-bottom: 4px;
+        }
+        #days180-root .d180-nav-link.next {
+          text-align: right;
+          background: #0f172a;
+          border-color: #0f172a;
+          color: #fff;
+        }
+        #days180-root .d180-nav-link.next strong {
+          color: rgba(255,255,255,0.72);
+        }
+        #days180-root .d180-edit-link {
+          display: inline-block;
+          margin-top: 16px;
+          padding: 10px 14px;
+          border: 1px solid #e2e8f0;
+          border-radius: 10px;
+          background: #f8fafc;
+          color: #334155;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        #days180-root .d180-edit-link:hover {
+          border-color: #f59e0b;
+        }
+        @media (max-width: 640px) {
+          #days180-root .d180-article-header-inner,
+          #days180-root .d180-content-wrap {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+          #days180-root .d180-pill {
+            display: none;
+          }
+        }
+      `}</style>
       {/* Sticky Header */}
-      <header className="sticky top-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-xl border-b border-slate-200 dark:border-slate-800">
-        <div className="w-full max-w-6xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between gap-6">
+      <header className="d180-article-header">
+        <div className="d180-article-header-inner">
           <div className="flex items-center gap-3 shrink-0">
-            <div className="w-8 h-8 bg-amber-400 rounded-lg flex items-center justify-center text-slate-900 shadow-lg shadow-amber-400/20">
+            <Link href="/" aria-label="Go to main home page" className="w-8 h-8 bg-amber-400 rounded-lg flex items-center justify-center text-slate-900 shadow-lg shadow-amber-400/20">
               <span className="font-black text-sm">SK</span>
-            </div>
-            <nav className="hidden md:flex items-center gap-3 text-xs font-bold uppercase tracking-wider text-slate-400">
-              <Link href="/180days" className="text-xs font-black px-4 py-2 bg-slate-100 dark:bg-slate-800 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors flex items-center gap-2 uppercase tracking-tight">
-                <span className="hover:text-amber-500 transition-colors cursor-pointer font-bold">180 Days</span>
-                <span className="text-slate-300">/</span>
-                <span className="text-slate-900 dark:text-white font-bold tracking-tight">Day {dayNumber}</span>
+            </Link>
+            <nav className="hidden md:flex items-center gap-3">
+              <Link href="/180days" className="d180-crumb">
+                <span className="d180-crumb-series">180 Days</span> <span>/</span> <strong>Day {dayNumber}</strong>
               </Link>
-              {/* Inline progress pill */}
-              <div className="flex items-center gap-2 px-3 py-1.5 bg-slate-100 dark:bg-slate-800 rounded-lg">
-                <div className="w-24 bg-slate-300 dark:bg-slate-600 h-2 rounded-full overflow-hidden">
-                  <div className="bg-amber-400 h-full rounded-full" style={{ width: `${progress}%` }} />
+              <div className="d180-pill">
+                <div className="d180-pill-track">
+                  <div className="d180-pill-fill" style={{ width: `${progress}%` }} />
                 </div>
-                <span className="text-[11px] font-black text-amber-600 dark:text-amber-400 tabular-nums">{progress}%</span>
+                <b>{progress}%</b>
               </div>
             </nav>
           </div>
 
           <div className="flex items-center gap-4">
-            <Link href="/180days" className="text-xs font-black px-4 py-2 bg-slate-100 dark:bg-slate-800 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors flex items-center gap-2 uppercase tracking-tight">
+            <Link href="/180days" className="d180-crumb">
               ← All Days
             </Link>
           </div>
@@ -234,31 +518,29 @@ export default async function ArticlePage({ params }: PageProps) {
 
 
       {/* Hero Section */}
-      <div className="w-full border-b border-slate-200 dark:border-slate-800 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900/60 dark:to-slate-950">
-        <div className="w-full max-w-6xl mx-auto px-4 sm:px-8 py-14">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter text-slate-950 dark:text-white leading-[1.05] max-w-3xl">{data.title}</h1>
+      <div className="d180-hero">
+        <div className="d180-hero-inner d180-content-wrap" style={{ paddingTop: 56, paddingBottom: 56 }}>
+          <h1 style={{ maxWidth: 820 }}>{data.title}</h1>
           {data.description && (
-            <p className="mt-6 text-xl text-slate-500 dark:text-slate-400 leading-relaxed max-w-2xl font-normal">{data.description}</p>
+            <p style={{ marginTop: 14, maxWidth: 760 }}>{data.description}</p>
           )}
-          <div className="mt-8 flex flex-wrap items-center gap-2 text-sm">
-            <span className="font-semibold text-slate-600 dark:text-slate-300">{data.date}</span>
-            <span className="w-1 h-1 rounded-full bg-slate-400 dark:bg-slate-500 inline-block" />
-            <span className="font-semibold text-amber-600 dark:text-amber-400">Subrata Kumar Das</span>
-            <span className="w-1 h-1 rounded-full bg-slate-400 dark:bg-slate-500 inline-block" />
-            <span className="px-2.5 py-0.5 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full font-bold text-xs uppercase tracking-tight">Complete</span>
+          <div className="d180-meta-line">
+            <span>{data.date}</span>
+            <span className="dot" />
+            <span style={{ color: "#d97706" }}>Subrata Kumar Das</span>
+            <span className="dot" />
+            <span style={{ color: "#15803d", fontSize: 11, fontWeight: 800, textTransform: "uppercase", letterSpacing: ".08em" }}>Complete</span>
           </div>
-          {/* Quote — visible on md screens and above only */}
-          <p className="hidden md:block mt-8 text-[13px] leading-relaxed text-amber-700/80 dark:text-amber-400/70 font-medium italic border-l-2 border-amber-300 dark:border-amber-700 pl-4 max-w-sm">
+          <p style={{ marginTop: 16, maxWidth: 500, fontSize: 13, lineHeight: 1.7, color: "#92400e", borderLeft: "2px solid #fcd34d", paddingLeft: 10, fontStyle: "italic" }}>
             "Consistent small steps lead to massive long-term results. Keep pushing."
           </p>
         </div>
       </div>
 
-      <main className="w-full max-w-6xl mx-auto px-4 sm:px-8 py-10">
+      <main className="d180-content-wrap" style={{ paddingTop: 36 }}>
           {/* Main Article */}
           <div className="flex-1">
-
-            <article className="max-w-3xl prose prose-slate dark:prose-invert prose-headings:font-black prose-headings:tracking-tight prose-h1:text-4xl prose-h1:mt-16 prose-h1:mb-6 prose-h1:pb-4 prose-h1:border-b prose-h1:border-slate-200 dark:prose-h1:border-slate-700 prose-h2:text-3xl prose-h2:mt-14 prose-h2:mb-5 prose-h3:text-2xl prose-h3:mt-10 prose-h3:mb-4 prose-p:text-[17px] prose-p:leading-[1.85] prose-p:my-5 prose-p:text-slate-700 dark:prose-p:text-slate-300 prose-strong:text-slate-900 dark:prose-strong:text-white prose-pre:rounded-2xl prose-pre:bg-slate-950 prose-pre:p-6 prose-hr:my-12 prose-hr:border-slate-200 dark:prose-hr:border-slate-800 prose-ul:list-disc prose-ol:list-decimal">
+            <article className="d180-post-content">
               <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
               <CodeEnhancer />
             </article>
@@ -269,28 +551,28 @@ export default async function ArticlePage({ params }: PageProps) {
                 const repoBase = process.env.NEXT_PUBLIC_GITHUB_REPO || 'https://github.com/subraatakumar/subraatakumar.com';
                 const editUrl = `${repoBase.replace(/\/+$/, '')}/edit/main/content/180days/${slug}.md`;
                 return (
-                  <a href={editUrl} target="_blank" rel="noopener noreferrer" className="block w-full sm:w-auto px-4 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-amber-400 transition-all text-sm font-medium">
+                  <a href={editUrl} target="_blank" rel="noopener noreferrer" className="d180-edit-link">
                     Suggest a change to the content of the material
                   </a>
                 );
               })()}
             </div>
 
-            <div className="mt-16 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 pb-20">
+            <div className="d180-bottom-nav">
               {prevSlug ? (
-                <Link href={`/180days/${prevSlug}`} className="group flex items-center gap-3 px-5 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-amber-400 transition-all w-full sm:w-auto">
-                  <div className="text-left">
-                    <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-widest">Previous</span>
-                    <span className="text-sm font-bold capitalize">{prevSlug.replace('-', ' ')}</span>
+                <Link href={`/180days/${prevSlug}`} className="d180-nav-link">
+                  <div>
+                    <strong>Previous</strong>
+                    <span style={{ fontSize: 14, fontWeight: 700, textTransform: "capitalize" }}>{prevSlug.replace('-', ' ')}</span>
                   </div>
                 </Link>
               ) : <div />}
 
               {nextSlug ? (
-                <Link href={`/180days/${nextSlug}`} className="group flex items-center gap-3 px-5 py-3 bg-slate-900 dark:bg-white text-white dark:text-slate-950 rounded-xl hover:scale-[1.02] transition-all w-full sm:w-auto text-right">
-                  <div className="text-right">
-                    <span className="block text-[10px] font-bold opacity-60 uppercase tracking-widest">Next Up</span>
-                    <span className="text-sm font-bold capitalize">{nextSlug.replace('-', ' ')}</span>
+                <Link href={`/180days/${nextSlug}`} className="d180-nav-link next">
+                  <div>
+                    <strong>Next Up</strong>
+                    <span style={{ fontSize: 14, fontWeight: 700, textTransform: "capitalize" }}>{nextSlug.replace('-', ' ')}</span>
                   </div>
                 </Link>
               ) : <div />}
@@ -323,37 +605,4 @@ export default async function ArticlePage({ params }: PageProps) {
       />
     </div>
   );
-}
-
-// Load Prism scripts client-side for syntax highlighting
-// These are added as plain script tags so Prism runs in the browser and highlights code blocks.
-// If you prefer bundling Prism, we can switch to an npm-based approach.
-
-/*
-  Note: Next.js will include these <script> tags in the rendered HTML. They are intentionally
-  plain tags (not using next/script) to keep this file self-contained and simple.
-*/
-
-// Append script tags to document.head when running in the browser
-if (typeof window !== 'undefined') {
-  const addScript = (src: string, cb?: () => void) => {
-    if (document.querySelector(`script[src="${src}"]`)) { cb && cb(); return; }
-    const s = document.createElement('script');
-    s.src = src;
-    s.async = true;
-    s.onload = cb || (() => {});
-    document.head.appendChild(s);
-  };
-
-  // Core + languages
-    addScript('https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js', () => {
-      addScript('https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-clike.min.js');
-      addScript('https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js');
-      addScript('https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js');
-      addScript('https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-jsx.min.js');
-      addScript('https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-tsx.min.js');
-      addScript('https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js');
-      // highlight after languages load (give a short delay)
-      setTimeout(() => { try { (window as any).Prism && (window as any).Prism.highlightAll(); } catch (e) {} }, 100);
-    });
 }

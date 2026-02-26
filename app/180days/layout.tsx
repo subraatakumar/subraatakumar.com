@@ -7,6 +7,11 @@ export default function Days180Layout({ children }: { children: React.ReactNode 
     <div style={{ all: "revert" }}>
       <style>{`
         /* ── Reset sketchy globals for this subtree ── */
+        body:has(#days180-root) .sk-header,
+        body:has(#days180-root) .sk-footer {
+          display: none !important;
+        }
+
         #days180-root,
         #days180-root * {
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
@@ -295,16 +300,63 @@ export default function Days180Layout({ children }: { children: React.ReactNode 
         }
         .d180-entry:hover .d180-entry-arrow { color: var(--amber); }
 
+        /* ── Footer ── */
+        .d180-footer {
+          border-top: 1px solid var(--slate-200);
+          background: var(--white);
+        }
+        .d180-footer-inner {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 20px 32px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+        .d180-footer-copy {
+          font-size: 11px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.12em;
+          color: var(--slate-400);
+        }
+        .d180-footer-home {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          padding: 8px 12px;
+          border-radius: 8px;
+          background: var(--slate-100);
+          color: var(--slate-900);
+          text-decoration: none;
+        }
+        .d180-footer-home:hover {
+          background: var(--amber-light);
+          color: #b45309;
+        }
+
         @media (max-width: 640px) {
           .d180-header-inner { padding: 0 16px; }
           .d180-hero-inner { padding: 40px 16px; }
           .d180-main { padding: 32px 16px 60px; }
+          .d180-footer-inner { padding: 16px; }
           .d180-stats { grid-template-columns: 1fr; }
         }
       `}</style>
 
       <div id="days180-root">
         {children}
+        <footer className="d180-footer">
+          <div className="d180-footer-inner">
+            <p className="d180-footer-copy">
+              Subrata Kumar Das • 180 Days Mentoring Journey
+            </p>
+            <Link href="/" className="d180-footer-home">Main Home</Link>
+          </div>
+        </footer>
       </div>
     </div>
   );

@@ -46,7 +46,7 @@ export default function DaysIndex() {
       <header className="d180-header">
         <div className="d180-header-inner">
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <div className="d180-logo-badge">SK</div>
+            <Link href="/" className="d180-logo-badge" aria-label="Go to main home page">SK</Link>
             <span className="d180-logo-label">180 Days</span>
           </div>
           <Link href="/projects" className="d180-back-btn">← Projects</Link>
