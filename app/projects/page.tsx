@@ -27,9 +27,16 @@ const projects = [
   {
     title: "180 Days OfflineLifeArchive",
     slug: "180days",
-    desc: "An archival app for offline journaling and life-logging across a 180-day challenge.",
-    tags: ["Expo", "SQLite"],
+    desc: "A 180-day mentorship journey documenting the disciplined process of building a production-grade app in the AI era.",
+    tags: ["Product Mindset", "Mentorship", "AI Era", "Mobile Development", "React Native", "Realm"],
+    layout: "full",
   },  
+  {
+    title: "Offline Life Archive",
+    slug: "offline-life-archive",
+    desc: "A personal project to document and reflect on life experiences, learnings, and growth through a private digital journal app.",
+    tags: ["React Native", "Realm", "Personal", "Journal", "Privacy", "Self-Reflection", "Offline-First"],
+  },   
   {
     title: "Water Tracker",
     slug: "watertracker",
@@ -66,7 +73,15 @@ export default function ProjectsPage() {
         gap: 24,
       }}>
         {projects.map((p) => (
-          <article key={p.title} className="sk-card" style={{ display: "flex", flexDirection: "column" }}>
+          <article
+            key={p.title}
+            className="sk-card"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gridColumn: p.layout === "full" ? "1 / -1" : undefined,
+            }}
+          >
 
             {/* X-placeholder image */}
             <div className="sk-img" />
