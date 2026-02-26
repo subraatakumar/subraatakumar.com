@@ -1,6 +1,6 @@
 ---
 title: "Day 7 : Service Layer Introduced"
-description: "Introducing the Service Layer to isolate business logic, validation, and ID generation — keeping UI and repository clean."
+description: "Session 1 of a 180-day mentoring journey: introducing the Service Layer to isolate business logic, validation, and ID generation — keeping UI and repository clean."
 date: "2026-02-26"
 image: "/images/180days/day-7.png"
 slug: "day-7-service-layer"
@@ -10,12 +10,14 @@ tags:
   - architecture
   - uuid
   - validation
-excerpt: "Service layer added to isolate business rules and centralize ID generation."
+excerpt: "Session 1 of a 180-day mentoring journey: Service layer added to isolate business rules and centralize ID generation."
 author: "Subrata Kumar Das"
 updated: "2026-02-26"
 draft: false
 readingTime: "4 min"
 ---
+
+This is Session 1 of a 180-day mentoring journey building a real mobile app destined for app stores.
 
 Day 4 → Foundation
 

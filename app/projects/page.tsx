@@ -2,10 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: {
-    default: "Projects",
-    template: "%s | Subrata Kumar Das",
-  },
+  title: "Projects",
   description: "Selected projects by Subrata Kumar Das — Tech Lead and React Native Architect",
 };
 
@@ -14,42 +11,69 @@ const projects = [
     title: "Water Tracker",
     slug: "watertracker",
     desc: "A mobile app to track daily water intake with reminders and analytics for healthy hydration habits.",
+    tags: ["React Native", "Health"],
   },
   {
     title: "She Health",
     slug: "shehealth",
-    desc: "A women-first health platform delivering personalized care journeys and secure health tracking.",
+    desc: "A women-first health platform delivering personalised care journeys and secure health tracking.",
+    tags: ["React Native", "Firebase"],
   },
   {
     title: "TCBS CLI",
     slug: "tcbs-cli",
     desc: "A developer CLI tool for managing build workflows and automating common mobile release tasks.",
+    tags: ["Node.js", "CLI"],
   },
   {
     title: "180 Days OfflineLifeArchive",
     slug: "180days",
-    desc: "An archival app designed for offline journaling and life-logging across a 180-day challenge.",
+    desc: "An archival app for offline journaling and life-logging across a 180-day challenge.",
+    tags: ["Expo", "SQLite"],
   },
 ];
 
 export default function ProjectsPage() {
   return (
-    <section aria-labelledby="projects-heading" className="max-w-4xl mx-auto px-4 py-12">
-      <h1 id="projects-heading" className="text-3xl font-semibold mb-8">Projects</h1>
+    <div className="sk-page">
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <h1 className="sk-page-heading">Projects</h1>
+      <p style={{ fontSize: "1.2rem", color: "#555", marginTop: 8, marginBottom: 0 }}>
+        A selection of apps, tools, and platforms I've built.
+      </p>
+      <div className="sk-squiggle" style={{ marginTop: 16 }} />
+
+      <div style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
+        gap: 24,
+      }}>
         {projects.map((p) => (
-          <article key={p.title} className="border rounded-lg p-6 bg-white">
-            <h2 className="text-lg font-medium">{p.title}</h2>
-            <p className="mt-3 text-sm text-gray-700">{p.desc}</p>
-            <div className="mt-6">
-              <Link href={`/${p.slug}`} className="inline-block px-4 py-2 border rounded text-sm">
-                View Details
-              </Link>
+          <article key={p.title} className="sk-card" style={{ display: "flex", flexDirection: "column" }}>
+
+            {/* X-placeholder image */}
+            <div className="sk-img" />
+
+            <div style={{ fontFamily: "'Caveat Brush', cursive", fontSize: "1.5rem", marginBottom: 8 }}>
+              {p.title}
             </div>
+            <p style={{ fontSize: "1.05rem", color: "#555", lineHeight: 1.5, flex: 1, marginBottom: 14 }}>
+              {p.desc}
+            </p>
+
+            <div style={{ marginBottom: 16 }}>
+              {p.tags.map((t) => (
+                <span key={t} className="sk-tag" style={{ fontSize: "0.9rem", padding: "2px 10px" }}>{t}</span>
+              ))}
+            </div>
+
+            <Link href={`/${p.slug}`} className="sk-btn sk-btn-ghost" style={{ alignSelf: "flex-start", fontSize: "1rem", padding: "7px 18px" }}>
+              View Details →
+            </Link>
           </article>
         ))}
       </div>
-    </section>
+
+    </div>
   );
 }
