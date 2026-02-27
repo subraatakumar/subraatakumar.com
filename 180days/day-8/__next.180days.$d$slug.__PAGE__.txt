@@ -1,0 +1,1017 @@
+1:"$Sreact.fragment"
+9:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
+e:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+11:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]
+2:T208a,
+        #days180-root .d180-article-page {
+          min-height: 100vh;
+          background: #fff;
+          color: #0f172a;
+        }
+        #days180-root .d180-article-header {
+          position: sticky;
+          top: 0;
+          z-index: 80;
+          background: rgba(255,255,255,0.92);
+          backdrop-filter: blur(16px);
+          border-bottom: 1px solid #e2e8f0;
+        }
+        #days180-root .d180-article-header-inner {
+          width: 100%;
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 32px;
+          height: 64px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        }
+        #days180-root .d180-crumb {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: .08em;
+          color: #64748b;
+          text-decoration: none;
+          background: #f1f5f9;
+          border-radius: 10px;
+          padding: 10px 14px;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+        }
+        #days180-root .d180-crumb-series {
+          transition: color .15s ease;
+        }
+        #days180-root .d180-crumb:hover .d180-crumb-series {
+          color: #d97706;
+        }
+        #days180-root .d180-crumb strong { color: #0f172a; }
+        #days180-root .d180-pill {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          padding: 8px 12px;
+          background: #f8fafc;
+          border: 1px solid #e2e8f0;
+          border-radius: 10px;
+        }
+        #days180-root .d180-pill-track {
+          width: 90px;
+          height: 8px;
+          background: #cbd5e1;
+          border-radius: 999px;
+          overflow: hidden;
+        }
+        #days180-root .d180-pill-fill {
+          height: 100%;
+          background: #f59e0b;
+          border-radius: 999px;
+        }
+        #days180-root .d180-pill b {
+          color: #d97706;
+          font-size: 11px;
+          letter-spacing: .02em;
+        }
+        #days180-root .d180-content-wrap {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 32px;
+        }
+        #days180-root .d180-meta-line {
+          margin-top: 8px;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 8px;
+          color: #64748b;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        #days180-root .d180-meta-line .dot {
+          width: 4px;
+          height: 4px;
+          border-radius: 999px;
+          background: #94a3b8;
+          display: inline-block;
+        }
+        #days180-root .d180-post-content {
+          max-width: 780px;
+        }
+        #days180-root .d180-post-content img {
+          max-width: 100%;
+          height: auto;
+        }
+        #days180-root .d180-post-content pre code {
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+        }
+        #days180-root .d180-md-p {
+          font-size: 17px;
+          line-height: 1.85;
+          color: #334155;
+          margin: 20px 0;
+        }
+        #days180-root .d180-md-h1 {
+          font-size: clamp(2rem, 4vw, 2.4rem);
+          font-weight: 900;
+          margin: 64px 0 24px;
+          padding-bottom: 12px;
+          border-bottom: 1px solid #e2e8f0;
+          line-height: 1.2;
+          color: #020617;
+        }
+        #days180-root .d180-md-h2 {
+          font-size: clamp(1.6rem, 3vw, 1.9rem);
+          font-weight: 900;
+          margin: 56px 0 18px;
+          line-height: 1.25;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-h3 {
+          font-size: clamp(1.3rem, 2.4vw, 1.5rem);
+          font-weight: 800;
+          margin: 40px 0 14px;
+          line-height: 1.3;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-h4,
+        #days180-root .d180-md-h5,
+        #days180-root .d180-md-h6 {
+          font-size: 1.1rem;
+          font-weight: 700;
+          margin: 28px 0 10px;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-ul {
+          list-style: disc;
+          padding-left: 24px;
+          margin: 18px 0;
+        }
+        #days180-root .d180-md-ol {
+          list-style: decimal;
+          padding-left: 28px;
+          margin: 18px 0;
+        }
+        #days180-root .d180-md-li {
+          margin: 8px 0;
+          line-height: 1.75;
+          color: #334155;
+        }
+        #days180-root .d180-md-blockquote {
+          margin: 26px 0;
+          padding: 14px 16px;
+          border-left: 2px solid #e2e8f0;
+          border-radius: 8px;
+          background: #f8fafc;
+          font-style: italic;
+          color: #334155;
+        }
+        #days180-root .d180-md-link {
+          color: #d97706;
+          text-decoration: none;
+          font-weight: 600;
+        }
+        #days180-root .d180-md-link:hover {
+          text-decoration: underline;
+        }
+        #days180-root .d180-md-table-wrap {
+          overflow: auto;
+          border: 1px solid #e2e8f0;
+          border-radius: 8px;
+          margin: 24px 0;
+        }
+        #days180-root .d180-md-table {
+          min-width: 100%;
+          border-collapse: collapse;
+        }
+        #days180-root .d180-md-th {
+          text-align: left;
+          font-size: 13px;
+          font-weight: 700;
+          color: #334155;
+          background: #f8fafc;
+          padding: 10px;
+          border-bottom: 1px solid #e2e8f0;
+        }
+        #days180-root .d180-md-td {
+          font-size: 14px;
+          color: #334155;
+          padding: 10px;
+          border-bottom: 1px solid #f1f5f9;
+        }
+        #days180-root .d180-code-lang {
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: .06em;
+          color: #475569;
+          background: #f1f5f9;
+          padding: 4px 10px;
+          border-radius: 6px;
+        }
+        #days180-root .d180-copy-btn {
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: .06em;
+          color: #0f172a;
+          background: #fbbf24;
+          border: 0;
+          border-radius: 6px;
+          padding: 4px 10px;
+          cursor: pointer;
+        }
+        #days180-root .d180-code-pre {
+          overflow: auto;
+          border-radius: 16px;
+          background: #0f172a;
+          color: #f8fafc;
+          padding: 18px 16px;
+        }
+        #days180-root .d180-bottom-nav {
+          margin-top: 64px;
+          padding: 24px 0 60px;
+          border-top: 1px solid #e2e8f0;
+          display: flex;
+          gap: 12px;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        #days180-root .d180-nav-link {
+          border-radius: 12px;
+          border: 1px solid #e2e8f0;
+          background: #f8fafc;
+          color: #0f172a;
+          text-decoration: none;
+          padding: 12px 16px;
+          min-width: 180px;
+        }
+        #days180-root .d180-nav-link strong {
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: .08em;
+          color: #64748b;
+          display: block;
+          margin-bottom: 4px;
+        }
+        #days180-root .d180-nav-link.next {
+          text-align: right;
+          background: #0f172a;
+          border-color: #0f172a;
+          color: #fff;
+        }
+        #days180-root .d180-nav-link.next strong {
+          color: rgba(255,255,255,0.72);
+        }
+        #days180-root .d180-edit-link {
+          display: inline-block;
+          margin-top: 16px;
+          padding: 10px 14px;
+          border: 1px solid #e2e8f0;
+          border-radius: 10px;
+          background: #f8fafc;
+          color: #334155;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        #days180-root .d180-edit-link:hover {
+          border-color: #f59e0b;
+        }
+        @media (max-width: 640px) {
+          #days180-root .d180-article-header-inner,
+          #days180-root .d180-content-wrap {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+          #days180-root .d180-pill {
+            display: none;
+          }
+        }
+      0:{"buildId":"J_9A4fZPxLJd6FVVsigKD","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5","$L6"]}],["$L7"],"$L8"]}],"loading":null,"isPartial":false}
+3:["$","header",null,{"className":"d180-article-header","children":["$","div",null,{"className":"d180-article-header-inner","children":[["$","div",null,{"className":"flex items-center gap-3 shrink-0","children":[["$","$L9",null,{"href":"/","aria-label":"Go to main home page","className":"w-8 h-8 bg-amber-400 rounded-lg flex items-center justify-center text-slate-900 shadow-lg shadow-amber-400/20","children":["$","span",null,{"className":"font-black text-sm","children":"SK"}]}],["$","nav",null,{"className":"hidden md:flex items-center gap-3","children":[["$","$L9",null,{"href":"/180days","className":"d180-crumb","children":[["$","span",null,{"className":"d180-crumb-series","children":"180 Days"}]," ",["$","span",null,{"children":"/"}]," ",["$","strong",null,{"children":["Day ","8"]}]]}],["$","div",null,{"className":"d180-pill","children":[["$","div",null,{"className":"d180-pill-track","children":["$","div",null,{"className":"d180-pill-fill","style":{"width":"4%"}}]}],["$","b",null,{"children":[4,"%"]}]]}]]}]]}],["$","div",null,{"className":"flex items-center gap-4","children":["$","$L9",null,{"href":"/180days","className":"d180-crumb","children":"← All Days"}]}]]}]}]
+4:["$","div",null,{"className":"d180-hero","children":["$","div",null,{"className":"d180-hero-inner d180-content-wrap","style":{"paddingTop":56,"paddingBottom":56},"children":[["$","h1",null,{"style":{"maxWidth":820},"children":"Day 8 : Offline Life Archive — Screen Structure (MVP) Using AI"}],["$","p",null,{"style":{"marginTop":14,"maxWidth":760},"children":"Define the MVP screen structure and prompts for a privacy-focused offline memory app."}],["$","div",null,{"className":"d180-meta-line","children":[["$","span",null,{"children":"2026-02-27"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#d97706"},"children":"Subrata Kumar Das"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#15803d","fontSize":11,"fontWeight":800,"textTransform":"uppercase","letterSpacing":".08em"},"children":"Complete"}]]}],["$","p",null,{"style":{"marginTop":16,"maxWidth":500,"fontSize":13,"lineHeight":1.7,"color":"#92400e","borderLeft":"2px solid #fcd34d","paddingLeft":10,"fontStyle":"italic"},"children":"\"Consistent small steps lead to massive long-term results. Keep pushing.\""}]]}]}]
+a:T684f,<p class="d180-md-p">We divide screens into 4 groups:</p>
+<ol class="d180-md-ol">
+<li class="d180-md-li">Onboarding</li>
+<li class="d180-md-li">Core Archive</li>
+<li class="d180-md-li">Sharing</li>
+<li class="d180-md-li">Settings &#x26; Security</li>
+</ol>
+<hr>
+<h2 id="1-onboarding-flow" class="d180-md-h2">1️⃣ Onboarding Flow</h2>
+<h3 id="1-welcome-screen" class="d180-md-h3">1. Welcome Screen</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">
+<p class="d180-md-p">Calm intro</p>
+</li>
+<li class="d180-md-li">
+<p class="d180-md-p">One line value proposition:</p>
+<blockquote class="d180-md-blockquote">
+<p class="d180-md-p">Your private digital life. Stored locally. Owned by you.</p>
+</blockquote>
+</li>
+<li class="d180-md-li">
+<p class="d180-md-p">CTA: “Get Started”</p>
+</li>
+</ul>
+<hr>
+<h3 id="2-privacy-explanation-screen" class="d180-md-h3">2. Privacy Explanation Screen</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Fully offline</li>
+<li class="d180-md-li">No tracking</li>
+<li class="d180-md-li">No cloud</li>
+<li class="d180-md-li">Local encrypted storage</li>
+</ul>
+<p class="d180-md-p">This builds trust early.</p>
+<hr>
+<h3 id="3-optional-app-lock-setup" class="d180-md-h3">3. Optional App Lock Setup</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Enable PIN?</li>
+<li class="d180-md-li">Enable Biometrics?</li>
+<li class="d180-md-li">Skip option available</li>
+</ul>
+<p class="d180-md-p">This integrates with your <code>LockProvider</code> architecture.</p>
+<hr>
+<h3 id="4-theme-selection-optional" class="d180-md-h3">4. Theme Selection (Optional)</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Light</li>
+<li class="d180-md-li">Dark</li>
+<li class="d180-md-li">System</li>
+</ul>
+<p class="d180-md-p">Can also live inside Settings if you want fewer onboarding steps.</p>
+<hr>
+<h2 id="2-core-archive-main-product" class="d180-md-h2">2️⃣ Core Archive (Main Product)</h2>
+<p class="d180-md-p">This is the heart.</p>
+<hr>
+<h3 id="-5-archive-timeline-screen-home" class="d180-md-h3">🏠 5. Archive Timeline Screen (Home)</h3>
+<p class="d180-md-p">This is your main screen.</p>
+<p class="d180-md-p"><strong>Must include:</strong></p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Chronological entries</li>
+<li class="d180-md-li">Entry preview (title + small image thumbnail)</li>
+<li class="d180-md-li">Tags preview</li>
+<li class="d180-md-li">Floating “+” button</li>
+<li class="d180-md-li">Search bar (basic title + tag search)</li>
+</ul>
+<p class="d180-md-p">Minimal.</p>
+<p class="d180-md-p">Calm.</p>
+<p class="d180-md-p">Scandinavian.</p>
+<p class="d180-md-p">No filters overload.</p>
+<hr>
+<h3 id="-6-create-edit-entry-screen" class="d180-md-h3">✍️ 6. Create / Edit Entry Screen</h3>
+<p class="d180-md-p">Fields:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Title</li>
+<li class="d180-md-li">Body text</li>
+<li class="d180-md-li">Add image (optional)</li>
+<li class="d180-md-li">Add manual tags</li>
+<li class="d180-md-li">Save button</li>
+</ul>
+<p class="d180-md-p">No autosave complexity.</p>
+<p class="d180-md-p">No AI.</p>
+<p class="d180-md-p">No templates.</p>
+<p class="d180-md-p">Just clean writing space.</p>
+<hr>
+<h3 id="-7-entry-detail-screen" class="d180-md-h3">👁 7. Entry Detail Screen</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Full text</li>
+<li class="d180-md-li">Full image preview</li>
+<li class="d180-md-li">Tags</li>
+<li class="d180-md-li">Edit button</li>
+<li class="d180-md-li">Delete button</li>
+<li class="d180-md-li">“Share / Export” button</li>
+</ul>
+<p class="d180-md-p">Simple and intentional.</p>
+<hr>
+<h2 id="3-sharing-flow-encrypted-bundle-system" class="d180-md-h2">3️⃣ Sharing Flow (Encrypted Bundle System)</h2>
+<hr>
+<h3 id="-8-share-export-screen" class="d180-md-h3">📤 8. Share / Export Screen</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Select entries</li>
+<li class="d180-md-li">Enter password</li>
+<li class="d180-md-li">Generate encrypted bundle</li>
+<li class="d180-md-li">Trigger OS share sheet</li>
+</ul>
+<p class="d180-md-p">No cloud.</p>
+<p class="d180-md-p">No links.</p>
+<p class="d180-md-p">File-based only.</p>
+<hr>
+<h3 id="-9-import-screen" class="d180-md-h3">📥 9. Import Screen</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Select bundle file</li>
+<li class="d180-md-li">Enter password</li>
+<li class="d180-md-li">Validate</li>
+<li class="d180-md-li">Show preview</li>
+<li class="d180-md-li">Confirm import</li>
+</ul>
+<p class="d180-md-p">Imported entries marked:</p>
+<p class="d180-md-p"><code>isShared = true</code></p>
+<hr>
+<h3 id="-10-shared-with-me-screen" class="d180-md-h3">📦 10. “Shared With Me” Screen</h3>
+<p class="d180-md-p">Separate from main timeline.</p>
+<p class="d180-md-p">User can:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Move to archive</li>
+<li class="d180-md-li">Delete</li>
+<li class="d180-md-li">Keep separate</li>
+</ul>
+<p class="d180-md-p">Clean separation.</p>
+<hr>
+<h2 id="4-settings-x26-security" class="d180-md-h2">4️⃣ Settings &#x26; Security</h2>
+<hr>
+<h3 id="-11-settings-screen" class="d180-md-h3">⚙️ 11. Settings Screen</h3>
+<p class="d180-md-p">Sections:</p>
+<p class="d180-md-p"><strong>Security</strong></p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Enable / Disable App Lock</li>
+<li class="d180-md-li">Change PIN</li>
+<li class="d180-md-li">Biometric toggle</li>
+</ul>
+<p class="d180-md-p"><strong>Data</strong></p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Export All Data</li>
+<li class="d180-md-li">Delete All Data</li>
+<li class="d180-md-li">Storage size</li>
+</ul>
+<p class="d180-md-p"><strong>Appearance</strong></p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Theme selector</li>
+</ul>
+<p class="d180-md-p"><strong>About</strong></p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Version</li>
+<li class="d180-md-li">Privacy philosophy</li>
+<li class="d180-md-li">Open source link (future)</li>
+</ul>
+<hr>
+<h3 id="-12-lock-overlay-screen-not-a-route" class="d180-md-h3">🔒 12. Lock Overlay Screen (Not a Route)</h3>
+<p class="d180-md-p">Important per architecture:</p>
+<p class="d180-md-p">Lock is NOT a screen in navigation.</p>
+<p class="d180-md-p">It is an overlay wrapped by:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>&#x3C;LockProvider>
+   &#x3C;NavigationContainer>
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">It appears:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">On app launch</li>
+<li class="d180-md-li">When backgrounded</li>
+</ul>
+<p class="d180-md-p">This follows blueprint rule</p>
+<hr>
+<h2 id="-final-screen-list-mvp-locked" class="d180-md-h2">🧭 Final Screen List (MVP Locked)</h2>
+<ol class="d180-md-ol">
+<li class="d180-md-li">Welcome</li>
+<li class="d180-md-li">Privacy Info</li>
+<li class="d180-md-li">Lock Setup</li>
+<li class="d180-md-li">Theme Setup (optional)</li>
+<li class="d180-md-li">Archive Timeline</li>
+<li class="d180-md-li">Create/Edit Entry</li>
+<li class="d180-md-li">Entry Detail</li>
+<li class="d180-md-li">Share / Export</li>
+<li class="d180-md-li">Import</li>
+<li class="d180-md-li">Shared With Me</li>
+<li class="d180-md-li">Settings</li>
+<li class="d180-md-li">Lock Overlay (infrastructure)</li>
+</ol>
+<hr>
+<h1 id="-what-we-are-not-adding-first-90-days" class="d180-md-h1">🚫 What We Are NOT Adding (First 90 Days)</h1>
+<ul class="d180-md-ul">
+<li class="d180-md-li">No analytics dashboard</li>
+<li class="d180-md-li">No advanced filters</li>
+<li class="d180-md-li">No archive folders</li>
+<li class="d180-md-li">No collaboration</li>
+<li class="d180-md-li">No AI assistant</li>
+<li class="d180-md-li">No web version</li>
+<li class="d180-md-li">No multi-device sync</li>
+<li class="d180-md-li">No feature explosion</li>
+</ul>
+<p class="d180-md-p">This respects MVP Boundaries</p>
+<hr>
+<h1 id="-minimal-navigation-map" class="d180-md-h1">🎯 Minimal Navigation Map</h1>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>Onboarding Stack
+    → Main App (Tab or Stack)
+
+Main Stack:
+    Archive (Home)
+        → Entry Detail
+        → Create/Edit
+        → Share
+    Shared With Me
+    Settings
+</code></pre>
+      </div>
+    
+<h2 id="stitch-google-ai-ui-generator" class="d180-md-h2"><strong>Stitch (Google AI UI generator)</strong></h2>
+<p class="d180-md-p">If you use <strong>Stitch (Google AI UI generator)</strong> properly, you’ll get production-grade layout inspiration — not random dribbble fluff.</p>
+<p class="d180-md-p">Because <em>Offline Life Archive</em> has a very strong philosophy (privacy-first, calm, Scandinavian minimal), your prompt must be:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Product-aligned</li>
+<li class="d180-md-li">Emotion-aligned</li>
+<li class="d180-md-li">Constraint-driven</li>
+<li class="d180-md-li">Clear about what NOT to include</li>
+</ul>
+<p class="d180-md-p">Below are ready-to-copy prompts per screen.</p>
+<hr>
+<h1 id="-master-style-prompt-use-this-at-top-of-every-prompt" class="d180-md-h1">🎯 Master Style Prompt (Use This At Top of Every Prompt)</h1>
+<p class="d180-md-p">Paste this first in Stitch before each screen request:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>Design a minimal, Scandinavian-style mobile app UI.
+Calm, privacy-focused, distraction-free.
+Soft neutral colors (off-white, light gray, muted blue).
+Clean typography.
+No gradients.
+No bright colors.
+No gamification.
+No social elements.
+Designed for a privacy-first offline memory archive app.
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">This anchors the design philosophy.</p>
+<hr>
+<h3 id="-1-archive-timeline-screen-prompt" class="d180-md-h3">🏠 1️⃣ Archive Timeline Screen Prompt</h3>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>Create a mobile app home screen for a privacy-first offline memory archive.
+
+Screen name: Archive
+
+Include:
+- Simple header with title "Archive"
+- Minimal search bar (search by title or tag)
+- Chronological vertical timeline of entries
+- Each entry card shows:
+    - Title
+    - 1–2 line preview text
+    - Small image thumbnail (optional)
+    - Subtle tags
+    - Date (small, subtle)
+- Floating action button (+) to create new entry
+
+Design must feel calm, intentional, and not crowded.
+No analytics.
+No charts.
+No filters.
+No bottom nav with many tabs.
+</code></pre>
+      </div>
+    
+<hr>
+<h3 id="-2-create-edit-entry-screen-prompt" class="d180-md-h3">✍️ 2️⃣ Create / Edit Entry Screen Prompt</h3>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>Design a minimal entry creation screen for a private offline memory app.
+
+Screen name: New Entry
+
+Include:
+- Back button
+- Title input field (large, clean)
+- Multiline text area for writing
+- Section to add multiple images (max 5)
+- Simple tag input field
+- Save button (subtle, not flashy)
+
+Layout should prioritize writing space.
+No formatting toolbar.
+No emoji reactions.
+No AI suggestions.
+No productivity elements.
+Clean and focused writing experience.
+</code></pre>
+      </div>
+    
+<hr>
+<h3 id="-3-entry-detail-screen-prompt" class="d180-md-h3">👁 3️⃣ Entry Detail Screen Prompt</h3>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>Design a memory detail screen in a privacy-focused mobile app.
+
+Include:
+- Title
+- Full text body
+- Scrollable image gallery (minimal dots indicator)
+- Tags below content
+- Subtle edit button
+- Subtle delete option
+
+No social sharing icons.
+No likes.
+No comments.
+No cloud sync indicators.
+
+Design must feel intimate and personal.
+</code></pre>
+      </div>
+    
+<hr>
+<h3 id="-4-share-export-screen-prompt" class="d180-md-h3">📤 4️⃣ Share / Export Screen Prompt</h3>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>Design a secure export screen for a privacy-first app.
+
+Include:
+- Select entries list (minimal checkbox style)
+- Password input field for encryption
+- Primary button: "Generate Encrypted File"
+- Subtle explanation text about file-based encrypted sharing
+
+No cloud upload UI.
+No social media icons.
+No public link options.
+Must look secure and calm.
+</code></pre>
+      </div>
+    
+<hr>
+<h3 id="-5-import-screen-prompt" class="d180-md-h3">📥 5️⃣ Import Screen Prompt</h3>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>Design an import screen for encrypted memory files.
+
+Include:
+- Select file button
+- Password input
+- Preview section after decryption
+- Confirm import button
+
+Minimal UI.
+No animations.
+No complexity.
+Focus on clarity and trust.
+</code></pre>
+      </div>
+    
+<hr>
+<h3 id="-6-settings-screen-prompt" class="d180-md-h3">⚙️ 6️⃣ Settings Screen Prompt</h3>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>Design a minimal settings screen for a privacy-first archive app.
+
+Sections:
+Security:
+- Enable app lock toggle
+- Change PIN
+- Biometric toggle
+
+Appearance:
+- Theme selection (Light / Dark / System)
+
+Data:
+- Export all data
+- Delete all data
+
+About:
+- App version
+- Privacy philosophy
+
+No clutter.
+No promotional banners.
+No gamification.
+</code></pre>
+      </div>
+    
+<hr>
+<h3 id="-7-lock-screen-prompt" class="d180-md-h3">🔒 7️⃣ Lock Screen Prompt</h3>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>Design a clean PIN lock overlay screen for a privacy-first mobile app.
+
+Include:
+- Minimal logo or app name
+- PIN entry dots
+- Numeric keypad
+- Biometric icon option
+- Calm background
+
+No bright colors.
+No flashy animations.
+Must feel secure and respectful.
+</code></pre>
+      </div>
+    
+<hr>
+<h3 id="-advanced-tip-very-important" class="d180-md-h3">💡 Advanced Tip (Very Important)</h3>
+<p class="d180-md-p">At the end of each prompt, add:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>Use spacing generously.
+Avoid crowded UI.
+Design for emotional safety and privacy.
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">That forces better output.</p>
+<hr>
+<h1 id="-if-you-want-next-level-results" class="d180-md-h1">🚀 If You Want Next-Level Results</h1>
+<p class="d180-md-p">After generating each screen, ask Stitch:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>Now redesign this with even more minimalism and fewer visual elements.
+Remove anything unnecessary.
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">Iteration improves quality drastically.</p>
+<hr>
+<h2 id="home-screen-design-using-stitch" class="d180-md-h2">Home Screen design using Stitch</h2>
+<h3 id="prompt-for-stitch" class="d180-md-h3">prompt for stitch</h3>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>Create a mobile app home screen for a privacy-first offline memory archive.
+
+Screen name: Archive
+
+Include:
+- Simple header with title "Archive"
+- Minimal search bar (search by title or tag)
+- Chronological vertical timeline of entries
+- Each entry card shows:
+    - Title
+    - 1–2 line preview text
+    - Small image thumbnail (optional)
+    - Subtle tags
+    - Date (small, subtle)
+- Floating action button (+) to create new entry
+
+Design must feel calm, intentional, and not crowded.
+No analytics.
+No charts.
+No filters.
+No bottom nav with many tabs.
+
+Design a minimal entry creation screen for a private offline memory app.
+
+Screen name: New Entry
+
+Include:
+- Back button
+- Title input field (large, clean)
+- Multiline text area for writing
+- Section to add multiple images (max 5)
+- Simple tag input field
+- Save button (subtle, not flashy)
+
+Layout should prioritize writing space.
+No formatting toolbar.
+No emoji reactions.
+No AI suggestions.
+No productivity elements.
+Clean and focused writing experience.
+
+Use spacing generously.
+Avoid crowded UI.
+Design for emotional safety and privacy.
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">Result:</p>
+<p class="d180-md-p"><img src="/images/day8_first_screen.png" class="rounded-md shadow-sm mx-auto block" alt="First screen design using Stitch AI"></p>
+<p class="d180-md-p">This is actually <strong>very good</strong> for a first generation.</p>
+<p class="d180-md-p">Stitch understood your philosophy correctly. 👏</p>
+<p class="d180-md-p">Now let’s review it like a product owner, not like a designer.</p>
+<hr>
+<p class="d180-md-p">✅ What Is Working Well</p>
+<h3 id="1-emotional-tone-excellent" class="d180-md-h3">1️⃣ Emotional Tone — ✔ Excellent</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Calm</li>
+<li class="d180-md-li">Neutral palette</li>
+<li class="d180-md-li">Soft spacing</li>
+<li class="d180-md-li">No visual noise</li>
+<li class="d180-md-li">No gamification</li>
+</ul>
+<p class="d180-md-p">This matches:</p>
+<blockquote class="d180-md-blockquote">
+<p class="d180-md-p">“Your private digital life. Stored locally. Owned by you.”</p>
+</blockquote>
+<p class="d180-md-p">Good alignment with product definition.</p>
+<hr>
+<h3 id="2-timeline-structure-correct" class="d180-md-h3">2️⃣ Timeline Structure — ✔ Correct</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Chronological grouping by date</li>
+<li class="d180-md-li">Clean entry cards</li>
+<li class="d180-md-li">Subtle tags</li>
+<li class="d180-md-li">Search at top</li>
+<li class="d180-md-li">Floating + button</li>
+</ul>
+<p class="d180-md-p">This respects MVP boundaries:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">No filters overload</li>
+<li class="d180-md-li">No analytics</li>
+<li class="d180-md-li">No cloud indicators</li>
+</ul>
+<p class="d180-md-p">Very disciplined.</p>
+<hr>
+<h3 id="-what-we-should-improve-product-owner-mode-activated" class="d180-md-h3">🔍 What We Should Improve (Product Owner Mode Activated)</h3>
+<p class="d180-md-p">Now we refine it to feel <strong>premium and intentional</strong>, not “AI-generated minimal template”.</p>
+<hr>
+<h3 id="-1-header-feels-slightly-generic" class="d180-md-h3">🔹 1. Header Feels Slightly Generic</h3>
+<p class="d180-md-p">Right now it says:</p>
+<blockquote class="d180-md-blockquote">
+<p class="d180-md-p">Archive</p>
+</blockquote>
+<p class="d180-md-p">Consider upgrading the emotional tone slightly.</p>
+<p class="d180-md-p">Instead of just:</p>
+<blockquote class="d180-md-blockquote">
+<p class="d180-md-p">Archive</p>
+</blockquote>
+<p class="d180-md-p">Try:</p>
+<p class="d180-md-p">Option A:</p>
+<blockquote class="d180-md-blockquote">
+<p class="d180-md-p">Archive</p>
+<p class="d180-md-p"><em>Your private timeline</em></p>
+</blockquote>
+<p class="d180-md-p">Option B:</p>
+<blockquote class="d180-md-blockquote">
+<p class="d180-md-p">Archive</p>
+<p class="d180-md-p">subtle lock icon (very minimal)</p>
+</blockquote>
+<p class="d180-md-p">Prompt to refine in Stitch:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>Make the header feel more premium and intentional.
+Add subtle personality without adding visual clutter.
+Keep it minimal.
+</code></pre>
+      </div>
+    
+<hr>
+<h3 id="-2-entry-cards-need-slight-hierarchy-boost" class="d180-md-h3">🔹 2. Entry Cards Need Slight Hierarchy Boost</h3>
+<p class="d180-md-p">Right now:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Title</li>
+<li class="d180-md-li">Preview</li>
+<li class="d180-md-li">Date</li>
+<li class="d180-md-li">Tag</li>
+</ul>
+<p class="d180-md-p">But the hierarchy is a bit flat.</p>
+<p class="d180-md-p">We want:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Title: Strongest</li>
+<li class="d180-md-li">Date: Small &#x26; subtle</li>
+<li class="d180-md-li">Preview: Soft gray</li>
+<li class="d180-md-li">Tags: Very light pill style</li>
+</ul>
+<p class="d180-md-p">Prompt:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>Improve typography hierarchy.
+Make title stronger.
+Make date smaller and lighter.
+Make preview text softer.
+Keep minimal aesthetic.
+</code></pre>
+      </div>
+    
+<hr>
+<h3 id="-3-floating-button-is-slightly-heavy" class="d180-md-h3">🔹 3. Floating Button Is Slightly Heavy</h3>
+<p class="d180-md-p">The + button feels slightly dark and attention-grabbing.</p>
+<p class="d180-md-p">In a calm app, we want it softer.</p>
+<p class="d180-md-p">Ask Stitch:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>Make the floating action button more subtle.
+Use muted tone instead of dark gray.
+It should not dominate the screen.
+</code></pre>
+      </div>
+    
+<hr>
+<h3 id="-4-add-empty-state-design-very-important" class="d180-md-h3">🔹 4. Add Empty State Design (Very Important)</h3>
+<p class="d180-md-p">Right now we see populated state.</p>
+<p class="d180-md-p">But MVP must define:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">What if no entries exist?</li>
+</ul>
+<p class="d180-md-p">Ask Stitch:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>Design the empty state for the Archive screen.
+Show a calm message like:
+"No memories yet."
+Add subtle explanation:
+"Your private archive begins here."
+Include a minimal create button.
+Keep calm tone.
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">Empty state is emotional moment.</p>
+<hr>
+<h3 id="-next-step" class="d180-md-h3">🚀 Next Step</h3>
+<p class="d180-md-p">Tell Stitch:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>Refine this screen to feel more premium, calmer, and less template-like.
+Increase spacing.
+Improve typography hierarchy.
+Soften floating action button.
+Add empty state variation.
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">The updated version after the prompt.</p>
+<p class="d180-md-p"><img src="/images/day8_revised_screen.png" class="rounded-md shadow-sm mx-auto block" alt="After refine prompt design using AI"></p>
+<p class="d180-md-p">We are now polishing, not designing.</p>
+<p class="d180-md-p">That’s the difference between a developer and a product owner.</p>
+<p class="d180-md-p">Create your screens ready, we will meet on Monday again on Day 11.</p>
+<p class="d180-md-p">My screens look like below after refining.</p>
+<p class="d180-md-p"><img src="/images/day8_second_screen.png" class="rounded-md shadow-sm mx-auto block" alt="all screens generated by AI"></p>
+<p class="d180-md-p">The best part is when exported as zip, it exported images as well as html files of screens.</p>
+<p class="d180-md-p">when I exported the designs as a ZIP file, it generated:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Screen images</li>
+<li class="d180-md-li">Structured HTML files for each screen</li>
+</ul>
+<p class="d180-md-p">Not just pretty visuals — but usable structure.</p>
+<p class="d180-md-p"><img src="/images/day8_last_screen.png" class="rounded-md shadow-sm mx-auto block" alt="export designed screens and html files as zip"></p>
+5:["$","main",null,{"className":"d180-content-wrap","style":{"paddingTop":36},"children":["$","div",null,{"className":"flex-1","children":[["$","article",null,{"className":"d180-post-content","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$a"}}],"$Lb"]}],"$Lc","$Ld"]}]}]
+6:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"mainEntityOfPage\":\"https://subraatakumar.com/180days/day-8\",\"headline\":\"Day 8 : Offline Life Archive — Screen Structure (MVP) Using AI\",\"datePublished\":\"2026-02-27\",\"description\":\"Define the MVP screen structure and prompts for a privacy-focused offline memory app.\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\"}}"}}]
+7:["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true}]
+8:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+b:["$","$L11",null,{}]
+c:["$","div",null,{"className":"mt-8 mb-6","children":["$","a",null,{"href":"https://github.com/subraatakumar/subraatakumar.com/edit/main/content/180days/day-8.md","target":"_blank","rel":"noopener noreferrer","className":"d180-edit-link","children":"Suggest a change to the content of the material"}]}]
+d:["$","div",null,{"className":"d180-bottom-nav","children":[["$","$L9",null,{"href":"/180days/day-7","className":"d180-nav-link","children":["$","div",null,{"children":[["$","strong",null,{"children":"Previous"}],["$","span",null,{"style":{"fontSize":14,"fontWeight":700,"textTransform":"capitalize"},"children":"day 7"}]]}]}],["$","div",null,{}]]}]
+10:null
