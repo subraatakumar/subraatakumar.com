@@ -1,3 +1,4 @@
+import GuideClient from "./GuideClient";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { DEFAULT_OG_IMAGE, absoluteUrl } from "@/lib/seo";
@@ -27,6 +28,21 @@ export const metadata: Metadata = {
 };
 
 const steps = [
+  {
+    title: "How to change the unit of measurement?",
+    body:
+      "On the Home screen, tap the 'Consumed Today' value to toggle units between milliliters (ml) and ounces (oz). The change applies immediately and updates displayed intake values and your daily goal.",
+    images: [
+      {
+        src: "/watertrackerimages/home_screen_ml.png",
+        caption: "Home screen — ml",
+      },
+      {
+        src: "/watertrackerimages/home_screen_oz.png",
+        caption: "Home screen — oz",
+      },
+    ],
+  },
   {
     title: "Set Daily Hydration Goal",
     body:
@@ -109,11 +125,125 @@ export default function WaterTrackerGuidePage() {
           grid-template-columns: 1fr 1fr;
           gap: 12px;
         }
+        .wtg-screens {
+          display: flex;
+          gap: 12px;
+          margin-top: 14px;
+          flex-wrap: wrap;
+        }
+        .wtg-screens figure {
+          margin: 0;
+          border-radius: 12px;
+          overflow: hidden;
+          border: 1px solid rgba(16, 36, 79, 0.08);
+          background: #fff;
+          display: flex;
+          flex-direction: column;
+          flex: 1 1 240px;
+          min-width: 200px;
+        }
+        .wtg-screens img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+        .wtg-step-header {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-bottom: 8px;
+        }
+        @media (min-width: 821px) {
+          .wtg-step.has-images {
+            display: grid;
+            grid-template-columns: 1fr 340px;
+            gap: 18px;
+            align-items: start;
+          }
+          .wtg-step.has-images .wtg-screens {
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 0;
+          }
+          /* Ensure header and body occupy left column and images the right column */
+          .wtg-step.has-images > .wtg-step-header,
+          .wtg-step.has-images > p {
+            grid-column: 1 / 2;
+          }
+          .wtg-step.has-images > .wtg-screens {
+            grid-column: 2 / 3;
+          }
+          .wtg-screens figure {
+            min-width: auto;
+            flex: none;
+          }
+          .wtg-screens img {
+            max-height: 220px;
+            object-fit: cover;
+          }
+        }
+
+        .wtg-modal {
+          position: fixed;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(0,0,0,0.6);
+          z-index: 1200;
+        }
+        .wtg-modal .inner {
+          max-width: 92%;
+          max-height: 92%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .wtg-modal img {
+          max-width: 100%;
+          max-height: 85vh;
+          border-radius: 8px;
+        }
+        .wtg-modal .caption {
+          margin-top: 10px;
+          color: #fff;
+          text-align: center;
+        }
+        .wtg-modal .close {
+          position: absolute;
+          top: 18px;
+          right: 18px;
+          background: transparent;
+          border: none;
+          color: #fff;
+          font-size: 22px;
+          cursor: pointer;
+        }
+        .wtg-screens figcaption {
+          padding: 8px 10px;
+          font-size: 0.9rem;
+          color: #17386f;
+          text-align: center;
+          background: #f8fcff;
+        }
         .wtg-step {
           border-radius: 16px;
           border: 1px solid rgba(16, 36, 79, 0.12);
           background: linear-gradient(180deg, #fff, #eff7ff);
           padding: 16px 14px;
+        }
+        .wtg-step.has-images {
+          grid-column: 1 / -1;
+        }
+        .wtg-step.has-images .n {
+          margin-bottom: 0;
+          margin-right: 10px;
+          vertical-align: middle;
+        }
+        .wtg-step.has-images b {
+          display: inline-block;
+          vertical-align: middle;
+          margin-bottom: 0;
         }
         .wtg-step .n {
           width: 28px;
@@ -212,48 +342,7 @@ export default function WaterTrackerGuidePage() {
         }
       `}</style>
 
-      <div className="wtg-wrap">
-        <h1 className="wt-font-display">How To Use WaterTracker</h1>
-        <p className="wtg-intro">
-          This guide covers the fastest setup flow and the core features: drink management,
-          intake logging, reminders, data protection, and backup/restore.
-        </p>
-
-        <div className="wtg-grid">
-          {steps.map((step, index) => (
-            <div key={step.title} className="wtg-step">
-              <span className="n">{index + 1}</span>
-              <b>{step.title}</b>
-              <p>{step.body}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="wtg-section">
-          <h2 className="wt-font-display">Quick FAQ</h2>
-          <div className="wtg-faq">
-            {faq.map((item) => (
-              <div key={item.q} className="wtg-faq-item">
-                <b>{item.q}</b>
-                <p>{item.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="wtg-section">
-          <h2 className="wt-font-display">Need More Help?</h2>
-          <p style={{ margin: 0, color: "#4b5f89", lineHeight: 1.7 }}>
-            If something is unclear or you hit an issue, share the exact device and app behavior
-            so support can reproduce and guide you quickly.
-          </p>
-          <div className="wtg-actions">
-            <Link href="/watertracker" className="wtg-btn wtg-btn-primary">Back To Landing Page</Link>
-            <Link href="/watertracker/benefits" className="wtg-btn wtg-btn-ghost">Hydration Benefits</Link>
-            <Link href="/contact" className="wtg-btn wtg-btn-ghost">Contact Support</Link>
-          </div>
-        </div>
-      </div>
+      <GuideClient steps={steps} faq={faq} />
 
       <script
         type="application/ld+json"
@@ -272,6 +361,7 @@ export default function WaterTrackerGuidePage() {
                   position: i + 1,
                   name: step.title,
                   text: step.body,
+                  ...(step.images ? { image: step.images.map((im) => absoluteUrl(im.src)) } : {}),
                 })),
               },
               {
