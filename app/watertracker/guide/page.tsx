@@ -141,11 +141,28 @@ export default function WaterTrackerGuidePage() {
           flex-direction: column;
           flex: 1 1 240px;
           min-width: 200px;
+          position: relative;
         }
         .wtg-screens img {
           display: block;
           width: 100%;
           height: auto;
+        }
+        .img-wrap {
+          position: relative;
+        }
+        .wtg-screens .overlay {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          font-weight: 800;
+          font-size: 0.95rem;
+          pointer-events: none;
+          background: linear-gradient(180deg, rgba(0,0,0,0.0), rgba(0,0,0,0.28));
+          opacity: 1;
         }
         .wtg-step-header {
           display: flex;

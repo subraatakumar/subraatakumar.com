@@ -33,17 +33,20 @@ export default function GuideClient({ steps, faq }: { steps: Step[]; faq: any[] 
                 <div className="wtg-screens" aria-hidden={false}>
                   {step.images.map((img) => (
                     <figure key={img.src}>
-                      <img
-                        src={img.src}
-                        alt={img.caption}
-                        role="button"
-                        tabIndex={0}
-                        onClick={() => setOpenImage({ src: img.src, caption: img.caption })}
-                        onKeyDown={(e) => {
-                          if (e.key === "Enter") setOpenImage({ src: img.src, caption: img.caption });
-                        }}
-                        style={{ cursor: "pointer" }}
-                      />
+                      <div className="img-wrap">
+                        <img
+                          src={img.src}
+                          alt={img.caption}
+                          role="button"
+                          tabIndex={0}
+                          onClick={() => setOpenImage({ src: img.src, caption: img.caption })}
+                          onKeyDown={(e) => {
+                            if (e.key === "Enter") setOpenImage({ src: img.src, caption: img.caption });
+                          }}
+                          style={{ cursor: "pointer" }}
+                        />
+                        <div className="overlay">🔍 Click to enlarge</div>
+                      </div>
                       <figcaption>{img.caption}</figcaption>
                     </figure>
                   ))}
