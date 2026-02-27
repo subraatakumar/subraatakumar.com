@@ -224,13 +224,13 @@ a:I[68027,[],"default"]
             .sk-nav-mobile { display: block; }
             .sk-page-heading { font-size: 2.2rem; }
           }
-        0:{"P":null,"b":"J_9A4fZPxLJd6FVVsigKD","c":["","watertracker","guide",""],"q":"","i":false,"f":[[["",{"children":["watertracker",{"children":["guide",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/cc821bed03f9ddd8.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+        0:{"P":null,"b":"Wwd4qPeH1W3u2GGoyQtaW","c":["","watertracker","guide",""],"q":"","i":false,"f":[[["",{"children":["watertracker",{"children":["guide",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/cc821bed03f9ddd8.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
 b:I[22016,["/_next/static/chunks/7c92e96509cd355e.js"],""]
 c:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
 d:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
-16:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"ViewportBoundary"]
-18:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"MetadataBoundary"]
-19:"$Sreact.suspense"
+17:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"ViewportBoundary"]
+19:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"MetadataBoundary"]
+1a:"$Sreact.suspense"
 3:["$","header",null,{"className":"sk-header","children":[["$","div",null,{"className":"sk-header-inner","children":[["$","$Lb",null,{"href":"/","className":"sk-logo","children":"SKD_"}],["$","nav",null,{"aria-label":"Primary","children":["$","ul",null,{"className":"sk-nav-links","children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]]}],["$","div",null,{"className":"sk-nav-mobile","children":["$","nav",null,{"aria-label":"Mobile","children":["$","ul",null,{"children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]}]]}]
 4:["$","main",null,{"style":{"width":"100%"},"children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
 5:["$","footer",null,{"className":"sk-footer","children":["© ",2026," Subrata Kumar Das. All rights reserved. ·"," ",["$","$Lb",null,{"href":"/for-ai","children":"For AI/Crawlers"}]]}]
@@ -389,7 +389,7 @@ e:T1146,
         }
       6:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/67d266141b06bb08.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","div",null,{"className":"wt-shell manrope_65508a06-module__rzDLfa__className","children":[["$","style",null,{"children":"$e"}],"$Lf","$L10","$L11"]}]]}]
 7:["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
-12:Tc98,
+12:T1586,
         .wtg-wrap {
           border-radius: 24px;
           border: 1px solid rgba(16, 36, 79, 0.1);
@@ -413,11 +413,101 @@ e:T1146,
           grid-template-columns: 1fr 1fr;
           gap: 12px;
         }
+        .wtg-screens {
+          display: flex;
+          gap: 12px;
+          margin-top: 14px;
+          flex-wrap: wrap;
+        }
+        .wtg-screens figure {
+          margin: 0;
+          border-radius: 12px;
+          overflow: hidden;
+          border: 1px solid rgba(16, 36, 79, 0.08);
+          background: #fff;
+          display: flex;
+          flex-direction: column;
+          flex: 1 1 240px;
+          min-width: 200px;
+        }
+        .wtg-screens img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+        @media (min-width: 821px) {
+          .wtg-step.has-images {
+            display: grid;
+            grid-template-columns: 1fr 340px;
+            gap: 18px;
+            align-items: start;
+          }
+          .wtg-step.has-images .wtg-screens {
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 0;
+          }
+          .wtg-screens figure {
+            min-width: auto;
+            flex: none;
+          }
+          .wtg-screens img {
+            max-height: 220px;
+            object-fit: cover;
+          }
+        }
+
+        .wtg-modal {
+          position: fixed;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(0,0,0,0.6);
+          z-index: 1200;
+        }
+        .wtg-modal .inner {
+          max-width: 92%;
+          max-height: 92%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .wtg-modal img {
+          max-width: 100%;
+          max-height: 85vh;
+          border-radius: 8px;
+        }
+        .wtg-modal .caption {
+          margin-top: 10px;
+          color: #fff;
+          text-align: center;
+        }
+        .wtg-modal .close {
+          position: absolute;
+          top: 18px;
+          right: 18px;
+          background: transparent;
+          border: none;
+          color: #fff;
+          font-size: 22px;
+          cursor: pointer;
+        }
+        .wtg-screens figcaption {
+          padding: 8px 10px;
+          font-size: 0.9rem;
+          color: #17386f;
+          text-align: center;
+          background: #f8fcff;
+        }
         .wtg-step {
           border-radius: 16px;
           border: 1px solid rgba(16, 36, 79, 0.12);
           background: linear-gradient(180deg, #fff, #eff7ff);
           padding: 16px 14px;
+        }
+        .wtg-step.has-images {
+          grid-column: 1 / -1;
         }
         .wtg-step .n {
           width: 28px;
@@ -514,17 +604,18 @@ e:T1146,
             grid-template-columns: 1fr;
           }
         }
-      8:["$","$1","c",{"children":[["$","article",null,{"children":[["$","style",null,{"children":"$12"}],"$L13","$L14"]}],null,"$L15"]}]
-9:["$","$1","h",{"children":[null,["$","$L16",null,{"children":"$L17"}],["$","div",null,{"hidden":true,"children":["$","$L18",null,{"children":["$","$19",null,{"name":"Next.Metadata","children":"$L1a"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
-1d:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+      8:["$","$1","c",{"children":[["$","article",null,{"children":[["$","style",null,{"children":"$12"}],"$L13","$L14"]}],["$L15"],"$L16"]}]
+9:["$","$1","h",{"children":[null,["$","$L17",null,{"children":"$L18"}],["$","div",null,{"hidden":true,"children":["$","$L19",null,{"children":["$","$1a",null,{"name":"Next.Metadata","children":"$L1b"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+1c:I[44095,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/933efe2d8321f2f3.js"],"default"]
+1e:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
 f:["$","header",null,{"className":"wt-nav","children":["$","div",null,{"className":"wt-nav-inner","children":[["$","$Lb",null,{"href":"/watertracker","className":"wt-logo","children":[["$","span",null,{"className":"wt-logo-mark","children":"WT"}],["$","span",null,{"className":"wt-logo-text wt-font-display","children":"WaterTracker"}]]}],["$","nav",null,{"className":"wt-links","aria-label":"Water Tracker pages","children":[["$","$Lb",null,{"href":"/watertracker","children":"Overview"}],["$","$Lb",null,{"href":"/watertracker/guide","children":"How To Use"}],["$","$Lb",null,{"href":"/watertracker/benefits","children":"Health Benefits"}],["$","$Lb",null,{"href":"/products","children":"All Products"}]]}]]}]}]
 10:["$","main",null,{"className":"wt-main","children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}]
 11:["$","footer",null,{"className":"wt-footer","children":["$","div",null,{"className":"wt-footer-inner","children":[["$","p",null,{"className":"wt-footer-copy","children":["© ",2026," WaterTracker"]}],["$","div",null,{"className":"wt-footer-links","children":[["$","$Lb",null,{"href":"/watertracker","children":"Overview"}],["$","$Lb",null,{"href":"/watertracker/guide","children":"How To Use"}],["$","$Lb",null,{"href":"/watertracker/benefits","children":"Health Benefits"}],["$","$Lb",null,{"href":"/contact","children":"Support"}]]}]]}]}]
-13:["$","div",null,{"className":"wtg-wrap","children":[["$","h1",null,{"className":"wt-font-display","children":"How To Use WaterTracker"}],["$","p",null,{"className":"wtg-intro","children":"This guide covers the fastest setup flow and the core features: drink management, intake logging, reminders, data protection, and backup/restore."}],["$","div",null,{"className":"wtg-grid","children":[["$","div","Set Daily Hydration Goal",{"className":"wtg-step","children":[["$","span",null,{"className":"n","children":1}],["$","b",null,{"children":"Set Daily Hydration Goal"}],["$","p",null,{"children":"Open goal settings, pick your unit (ml or oz), then set a realistic daily target. Start conservative and increase over time."}]]}],["$","div","Create Your Drink List",{"className":"wtg-step","children":[["$","span",null,{"className":"n","children":2}],["$","b",null,{"children":"Create Your Drink List"}],["$","p",null,{"children":"Use Manage Drinks to add custom items with icon, color, and volume. Keep common choices at the top for faster logging."}]]}],["$","div","Log Intake Quickly",{"className":"wtg-step","children":[["$","span",null,{"className":"n","children":3}],["$","b",null,{"children":"Log Intake Quickly"}],["$","p",null,{"children":"On the intake screen, tap drink chips for the current day and save. The dashboard ring updates immediately."}]]}],["$","div","Schedule Smart Reminders",{"className":"wtg-step","children":[["$","span",null,{"className":"n","children":4}],["$","b",null,{"children":"Schedule Smart Reminders"}],["$","p",null,{"children":"Add reminders based on your routine and choose alert style. Enable follow-up reminders if you often miss notifications."}]]}],["$","div","Enable PIN and Biometric",{"className":"wtg-step","children":[["$","span",null,{"className":"n","children":5}],["$","b",null,{"children":"Enable PIN and Biometric"}],["$","p",null,{"children":"Protect your local data with a 6-digit PIN and optional biometrics for fast unlock."}]]}],["$","div","Backup and Restore",{"className":"wtg-step","children":[["$","span",null,{"className":"n","children":6}],["$","b",null,{"children":"Backup and Restore"}],["$","p",null,{"children":"Use cloud backup options (iCloud or Google Drive depending on device) to create restore points before switching phones."}]]}]]}],["$","div",null,{"className":"wtg-section","children":[["$","h2",null,{"className":"wt-font-display","children":"Quick FAQ"}],["$","div",null,{"className":"wtg-faq","children":[["$","div","Do I need an account to use WaterTracker?",{"className":"wtg-faq-item","children":[["$","b",null,{"children":"Do I need an account to use WaterTracker?"}],["$","p",null,{"children":"No. Core hydration tracking works without account signup. Data is stored locally on device."}]]}],["$","div","Where is my hydration data stored?",{"className":"wtg-faq-item","children":[["$","b",null,{"children":"Where is my hydration data stored?"}],["$","p",null,{"children":"Hydration history, drink presets, and app preferences are stored in on-device Realm database."}]]}],["$","div","Can I track custom drinks and units?",{"className":"wtg-faq-item","children":[["$","b",null,{"children":"Can I track custom drinks and units?"}],["$","p",null,{"children":"Yes. You can create custom drinks and use either ml or oz units depending on your preference."}]]}],["$","div","How do I move data to a new phone?",{"className":"wtg-faq-item","children":[["$","b",null,{"children":"How do I move data to a new phone?"}],["$","p",null,{"children":"Use Backup & Restore to create a backup, then restore from the same cloud provider on the new device."}]]}],["$","div","What if reminders are not firing?",{"className":"wtg-faq-item","children":[["$","b",null,{"children":"What if reminders are not firing?"}],["$","p",null,{"children":"Check system notification permissions, battery restrictions, and the reminder schedule inside the app."}]]}]]}]]}],["$","div",null,{"className":"wtg-section","children":[["$","h2",null,{"className":"wt-font-display","children":"Need More Help?"}],["$","p",null,{"style":{"margin":0,"color":"#4b5f89","lineHeight":1.7},"children":"If something is unclear or you hit an issue, share the exact device and app behavior so support can reproduce and guide you quickly."}],"$L1b"]}]]}]
-1c:T9f5,{"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"How to use WaterTracker","description":"Step-by-step setup and usage guide for WaterTracker hydration app.","url":"https://subraatakumar.com/watertracker/guide","step":[{"@type":"HowToStep","position":1,"name":"Set Daily Hydration Goal","text":"Open goal settings, pick your unit (ml or oz), then set a realistic daily target. Start conservative and increase over time."},{"@type":"HowToStep","position":2,"name":"Create Your Drink List","text":"Use Manage Drinks to add custom items with icon, color, and volume. Keep common choices at the top for faster logging."},{"@type":"HowToStep","position":3,"name":"Log Intake Quickly","text":"On the intake screen, tap drink chips for the current day and save. The dashboard ring updates immediately."},{"@type":"HowToStep","position":4,"name":"Schedule Smart Reminders","text":"Add reminders based on your routine and choose alert style. Enable follow-up reminders if you often miss notifications."},{"@type":"HowToStep","position":5,"name":"Enable PIN and Biometric","text":"Protect your local data with a 6-digit PIN and optional biometrics for fast unlock."},{"@type":"HowToStep","position":6,"name":"Backup and Restore","text":"Use cloud backup options (iCloud or Google Drive depending on device) to create restore points before switching phones."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need an account to use WaterTracker?","acceptedAnswer":{"@type":"Answer","text":"No. Core hydration tracking works without account signup. Data is stored locally on device."}},{"@type":"Question","name":"Where is my hydration data stored?","acceptedAnswer":{"@type":"Answer","text":"Hydration history, drink presets, and app preferences are stored in on-device Realm database."}},{"@type":"Question","name":"Can I track custom drinks and units?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can create custom drinks and use either ml or oz units depending on your preference."}},{"@type":"Question","name":"How do I move data to a new phone?","acceptedAnswer":{"@type":"Answer","text":"Use Backup & Restore to create a backup, then restore from the same cloud provider on the new device."}},{"@type":"Question","name":"What if reminders are not firing?","acceptedAnswer":{"@type":"Answer","text":"Check system notification permissions, battery restrictions, and the reminder schedule inside the app."}}]},{"@type":"WebPage","name":"WaterTracker Guide","url":"https://subraatakumar.com/watertracker/guide"}]}14:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$1c"}}]
-15:["$","$L1d",null,{"children":["$","$19",null,{"name":"Next.MetadataOutlet","children":"$@1e"}]}]
-1b:["$","div",null,{"className":"wtg-actions","children":[["$","$Lb",null,{"href":"/watertracker","className":"wtg-btn wtg-btn-primary","children":"Back To Landing Page"}],["$","$Lb",null,{"href":"/watertracker/benefits","className":"wtg-btn wtg-btn-ghost","children":"Hydration Benefits"}],["$","$Lb",null,{"href":"/contact","className":"wtg-btn wtg-btn-ghost","children":"Contact Support"}]]}]
-17:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-1f:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"IconMark"]
-1a:[["$","title","0",{"children":"WaterTracker Guide | Subrata Kumar Das"}],["$","meta","1",{"name":"description","content":"Step-by-step guide to use WaterTracker: setup goal, add drinks, log intake, configure reminders, protect data, and backup/restore."}],["$","meta","2",{"name":"keywords","content":"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"}],["$","link","3",{"rel":"canonical","href":"https://subraatakumar.com/watertracker/guide/"}],["$","meta","4",{"property":"og:title","content":"WaterTracker How-To Guide"}],["$","meta","5",{"property":"og:description","content":"Learn how to set up and use WaterTracker with reminders, custom drinks, PIN/Biometric lock, and backup flows."}],["$","meta","6",{"property":"og:url","content":"https://subraatakumar.com/watertracker/guide/"}],["$","meta","7",{"property":"og:image","content":"https://subraatakumar.com/images/interview.png"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"WaterTracker How-To Guide"}],["$","meta","11",{"name":"twitter:description","content":"Learn how to set up and use WaterTracker with reminders, custom drinks, PIN/Biometric lock, and backup flows."}],["$","meta","12",{"name":"twitter:image","content":"https://subraatakumar.com/images/interview.png"}],["$","link","13",{"rel":"icon","href":"/favicon.ico?favicon.750fd6b3.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L1f","14",{}]]
-1e:null
+13:["$","$L1c",null,{"steps":[{"title":"How to change the unit of measurement?","body":"On the Home screen, tap the 'Consumed Today' value to toggle units between milliliters (ml) and ounces (oz). The change applies immediately and updates displayed intake values and your daily goal.","images":[{"src":"/watertrackerimages/home_screen_ml.png","caption":"Home screen — ml"},{"src":"/watertrackerimages/home_screen_oz.png","caption":"Home screen — oz"}]},{"title":"Set Daily Hydration Goal","body":"Open goal settings, pick your unit (ml or oz), then set a realistic daily target. Start conservative and increase over time."},{"title":"Create Your Drink List","body":"Use Manage Drinks to add custom items with icon, color, and volume. Keep common choices at the top for faster logging."},{"title":"Log Intake Quickly","body":"On the intake screen, tap drink chips for the current day and save. The dashboard ring updates immediately."},{"title":"Schedule Smart Reminders","body":"Add reminders based on your routine and choose alert style. Enable follow-up reminders if you often miss notifications."},{"title":"Enable PIN and Biometric","body":"Protect your local data with a 6-digit PIN and optional biometrics for fast unlock."},{"title":"Backup and Restore","body":"Use cloud backup options (iCloud or Google Drive depending on device) to create restore points before switching phones."}],"faq":[{"q":"Do I need an account to use WaterTracker?","a":"No. Core hydration tracking works without account signup. Data is stored locally on device."},{"q":"Where is my hydration data stored?","a":"Hydration history, drink presets, and app preferences are stored in on-device Realm database."},{"q":"Can I track custom drinks and units?","a":"Yes. You can create custom drinks and use either ml or oz units depending on your preference."},{"q":"How do I move data to a new phone?","a":"Use Backup & Restore to create a backup, then restore from the same cloud provider on the new device."},{"q":"What if reminders are not firing?","a":"Check system notification permissions, battery restrictions, and the reminder schedule inside the app."}]}]
+1d:Tba4,{"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"How to use WaterTracker","description":"Step-by-step setup and usage guide for WaterTracker hydration app.","url":"https://subraatakumar.com/watertracker/guide","step":[{"@type":"HowToStep","position":1,"name":"How to change the unit of measurement?","text":"On the Home screen, tap the 'Consumed Today' value to toggle units between milliliters (ml) and ounces (oz). The change applies immediately and updates displayed intake values and your daily goal.","image":["https://subraatakumar.com/watertrackerimages/home_screen_ml.png","https://subraatakumar.com/watertrackerimages/home_screen_oz.png"]},{"@type":"HowToStep","position":2,"name":"Set Daily Hydration Goal","text":"Open goal settings, pick your unit (ml or oz), then set a realistic daily target. Start conservative and increase over time."},{"@type":"HowToStep","position":3,"name":"Create Your Drink List","text":"Use Manage Drinks to add custom items with icon, color, and volume. Keep common choices at the top for faster logging."},{"@type":"HowToStep","position":4,"name":"Log Intake Quickly","text":"On the intake screen, tap drink chips for the current day and save. The dashboard ring updates immediately."},{"@type":"HowToStep","position":5,"name":"Schedule Smart Reminders","text":"Add reminders based on your routine and choose alert style. Enable follow-up reminders if you often miss notifications."},{"@type":"HowToStep","position":6,"name":"Enable PIN and Biometric","text":"Protect your local data with a 6-digit PIN and optional biometrics for fast unlock."},{"@type":"HowToStep","position":7,"name":"Backup and Restore","text":"Use cloud backup options (iCloud or Google Drive depending on device) to create restore points before switching phones."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need an account to use WaterTracker?","acceptedAnswer":{"@type":"Answer","text":"No. Core hydration tracking works without account signup. Data is stored locally on device."}},{"@type":"Question","name":"Where is my hydration data stored?","acceptedAnswer":{"@type":"Answer","text":"Hydration history, drink presets, and app preferences are stored in on-device Realm database."}},{"@type":"Question","name":"Can I track custom drinks and units?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can create custom drinks and use either ml or oz units depending on your preference."}},{"@type":"Question","name":"How do I move data to a new phone?","acceptedAnswer":{"@type":"Answer","text":"Use Backup & Restore to create a backup, then restore from the same cloud provider on the new device."}},{"@type":"Question","name":"What if reminders are not firing?","acceptedAnswer":{"@type":"Answer","text":"Check system notification permissions, battery restrictions, and the reminder schedule inside the app."}}]},{"@type":"WebPage","name":"WaterTracker Guide","url":"https://subraatakumar.com/watertracker/guide"}]}14:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$1d"}}]
+15:["$","script","script-0",{"src":"/_next/static/chunks/933efe2d8321f2f3.js","async":true,"nonce":"$undefined"}]
+16:["$","$L1e",null,{"children":["$","$1a",null,{"name":"Next.MetadataOutlet","children":"$@1f"}]}]
+18:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+20:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"IconMark"]
+1b:[["$","title","0",{"children":"WaterTracker Guide | Subrata Kumar Das"}],["$","meta","1",{"name":"description","content":"Step-by-step guide to use WaterTracker: setup goal, add drinks, log intake, configure reminders, protect data, and backup/restore."}],["$","meta","2",{"name":"keywords","content":"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"}],["$","link","3",{"rel":"canonical","href":"https://subraatakumar.com/watertracker/guide/"}],["$","meta","4",{"property":"og:title","content":"WaterTracker How-To Guide"}],["$","meta","5",{"property":"og:description","content":"Learn how to set up and use WaterTracker with reminders, custom drinks, PIN/Biometric lock, and backup flows."}],["$","meta","6",{"property":"og:url","content":"https://subraatakumar.com/watertracker/guide/"}],["$","meta","7",{"property":"og:image","content":"https://subraatakumar.com/images/interview.png"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"WaterTracker How-To Guide"}],["$","meta","11",{"name":"twitter:description","content":"Learn how to set up and use WaterTracker with reminders, custom drinks, PIN/Biometric lock, and backup flows."}],["$","meta","12",{"name":"twitter:image","content":"https://subraatakumar.com/images/interview.png"}],["$","link","13",{"rel":"icon","href":"/favicon.ico?favicon.750fd6b3.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L20","14",{}]]
+1f:null

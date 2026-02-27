@@ -1,8 +1,8 @@
 1:"$Sreact.fragment"
-8:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
-9:"$Sreact.suspense"
-b:I[22016,["/_next/static/chunks/7c92e96509cd355e.js"],""]
-2:Tc98,
+7:I[44095,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/933efe2d8321f2f3.js"],"default"]
+9:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+a:"$Sreact.suspense"
+2:T1586,
         .wtg-wrap {
           border-radius: 24px;
           border: 1px solid rgba(16, 36, 79, 0.1);
@@ -26,11 +26,101 @@ b:I[22016,["/_next/static/chunks/7c92e96509cd355e.js"],""]
           grid-template-columns: 1fr 1fr;
           gap: 12px;
         }
+        .wtg-screens {
+          display: flex;
+          gap: 12px;
+          margin-top: 14px;
+          flex-wrap: wrap;
+        }
+        .wtg-screens figure {
+          margin: 0;
+          border-radius: 12px;
+          overflow: hidden;
+          border: 1px solid rgba(16, 36, 79, 0.08);
+          background: #fff;
+          display: flex;
+          flex-direction: column;
+          flex: 1 1 240px;
+          min-width: 200px;
+        }
+        .wtg-screens img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+        @media (min-width: 821px) {
+          .wtg-step.has-images {
+            display: grid;
+            grid-template-columns: 1fr 340px;
+            gap: 18px;
+            align-items: start;
+          }
+          .wtg-step.has-images .wtg-screens {
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 0;
+          }
+          .wtg-screens figure {
+            min-width: auto;
+            flex: none;
+          }
+          .wtg-screens img {
+            max-height: 220px;
+            object-fit: cover;
+          }
+        }
+
+        .wtg-modal {
+          position: fixed;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(0,0,0,0.6);
+          z-index: 1200;
+        }
+        .wtg-modal .inner {
+          max-width: 92%;
+          max-height: 92%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .wtg-modal img {
+          max-width: 100%;
+          max-height: 85vh;
+          border-radius: 8px;
+        }
+        .wtg-modal .caption {
+          margin-top: 10px;
+          color: #fff;
+          text-align: center;
+        }
+        .wtg-modal .close {
+          position: absolute;
+          top: 18px;
+          right: 18px;
+          background: transparent;
+          border: none;
+          color: #fff;
+          font-size: 22px;
+          cursor: pointer;
+        }
+        .wtg-screens figcaption {
+          padding: 8px 10px;
+          font-size: 0.9rem;
+          color: #17386f;
+          text-align: center;
+          background: #f8fcff;
+        }
         .wtg-step {
           border-radius: 16px;
           border: 1px solid rgba(16, 36, 79, 0.12);
           background: linear-gradient(180deg, #fff, #eff7ff);
           padding: 16px 14px;
+        }
+        .wtg-step.has-images {
+          grid-column: 1 / -1;
         }
         .wtg-step .n {
           width: 28px;
@@ -127,9 +217,9 @@ b:I[22016,["/_next/static/chunks/7c92e96509cd355e.js"],""]
             grid-template-columns: 1fr;
           }
         }
-      0:{"buildId":"J_9A4fZPxLJd6FVVsigKD","rsc":["$","$1","c",{"children":[["$","article",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],null,"$L5"]}],"loading":null,"isPartial":false}
-3:["$","div",null,{"className":"wtg-wrap","children":[["$","h1",null,{"className":"wt-font-display","children":"How To Use WaterTracker"}],["$","p",null,{"className":"wtg-intro","children":"This guide covers the fastest setup flow and the core features: drink management, intake logging, reminders, data protection, and backup/restore."}],["$","div",null,{"className":"wtg-grid","children":[["$","div","Set Daily Hydration Goal",{"className":"wtg-step","children":[["$","span",null,{"className":"n","children":1}],["$","b",null,{"children":"Set Daily Hydration Goal"}],["$","p",null,{"children":"Open goal settings, pick your unit (ml or oz), then set a realistic daily target. Start conservative and increase over time."}]]}],["$","div","Create Your Drink List",{"className":"wtg-step","children":[["$","span",null,{"className":"n","children":2}],["$","b",null,{"children":"Create Your Drink List"}],["$","p",null,{"children":"Use Manage Drinks to add custom items with icon, color, and volume. Keep common choices at the top for faster logging."}]]}],["$","div","Log Intake Quickly",{"className":"wtg-step","children":[["$","span",null,{"className":"n","children":3}],["$","b",null,{"children":"Log Intake Quickly"}],["$","p",null,{"children":"On the intake screen, tap drink chips for the current day and save. The dashboard ring updates immediately."}]]}],["$","div","Schedule Smart Reminders",{"className":"wtg-step","children":[["$","span",null,{"className":"n","children":4}],["$","b",null,{"children":"Schedule Smart Reminders"}],["$","p",null,{"children":"Add reminders based on your routine and choose alert style. Enable follow-up reminders if you often miss notifications."}]]}],["$","div","Enable PIN and Biometric",{"className":"wtg-step","children":[["$","span",null,{"className":"n","children":5}],["$","b",null,{"children":"Enable PIN and Biometric"}],["$","p",null,{"children":"Protect your local data with a 6-digit PIN and optional biometrics for fast unlock."}]]}],["$","div","Backup and Restore",{"className":"wtg-step","children":[["$","span",null,{"className":"n","children":6}],["$","b",null,{"children":"Backup and Restore"}],["$","p",null,{"children":"Use cloud backup options (iCloud or Google Drive depending on device) to create restore points before switching phones."}]]}]]}],["$","div",null,{"className":"wtg-section","children":[["$","h2",null,{"className":"wt-font-display","children":"Quick FAQ"}],["$","div",null,{"className":"wtg-faq","children":[["$","div","Do I need an account to use WaterTracker?",{"className":"wtg-faq-item","children":[["$","b",null,{"children":"Do I need an account to use WaterTracker?"}],["$","p",null,{"children":"No. Core hydration tracking works without account signup. Data is stored locally on device."}]]}],["$","div","Where is my hydration data stored?",{"className":"wtg-faq-item","children":[["$","b",null,{"children":"Where is my hydration data stored?"}],["$","p",null,{"children":"Hydration history, drink presets, and app preferences are stored in on-device Realm database."}]]}],["$","div","Can I track custom drinks and units?",{"className":"wtg-faq-item","children":[["$","b",null,{"children":"Can I track custom drinks and units?"}],["$","p",null,{"children":"Yes. You can create custom drinks and use either ml or oz units depending on your preference."}]]}],["$","div","How do I move data to a new phone?",{"className":"wtg-faq-item","children":[["$","b",null,{"children":"How do I move data to a new phone?"}],["$","p",null,{"children":"Use Backup & Restore to create a backup, then restore from the same cloud provider on the new device."}]]}],["$","div","What if reminders are not firing?",{"className":"wtg-faq-item","children":[["$","b",null,{"children":"What if reminders are not firing?"}],["$","p",null,{"children":"Check system notification permissions, battery restrictions, and the reminder schedule inside the app."}]]}]]}]]}],["$","div",null,{"className":"wtg-section","children":[["$","h2",null,{"className":"wt-font-display","children":"Need More Help?"}],["$","p",null,{"style":{"margin":0,"color":"#4b5f89","lineHeight":1.7},"children":"If something is unclear or you hit an issue, share the exact device and app behavior so support can reproduce and guide you quickly."}],"$L6"]}]]}]
-7:T9f5,{"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"How to use WaterTracker","description":"Step-by-step setup and usage guide for WaterTracker hydration app.","url":"https://subraatakumar.com/watertracker/guide","step":[{"@type":"HowToStep","position":1,"name":"Set Daily Hydration Goal","text":"Open goal settings, pick your unit (ml or oz), then set a realistic daily target. Start conservative and increase over time."},{"@type":"HowToStep","position":2,"name":"Create Your Drink List","text":"Use Manage Drinks to add custom items with icon, color, and volume. Keep common choices at the top for faster logging."},{"@type":"HowToStep","position":3,"name":"Log Intake Quickly","text":"On the intake screen, tap drink chips for the current day and save. The dashboard ring updates immediately."},{"@type":"HowToStep","position":4,"name":"Schedule Smart Reminders","text":"Add reminders based on your routine and choose alert style. Enable follow-up reminders if you often miss notifications."},{"@type":"HowToStep","position":5,"name":"Enable PIN and Biometric","text":"Protect your local data with a 6-digit PIN and optional biometrics for fast unlock."},{"@type":"HowToStep","position":6,"name":"Backup and Restore","text":"Use cloud backup options (iCloud or Google Drive depending on device) to create restore points before switching phones."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need an account to use WaterTracker?","acceptedAnswer":{"@type":"Answer","text":"No. Core hydration tracking works without account signup. Data is stored locally on device."}},{"@type":"Question","name":"Where is my hydration data stored?","acceptedAnswer":{"@type":"Answer","text":"Hydration history, drink presets, and app preferences are stored in on-device Realm database."}},{"@type":"Question","name":"Can I track custom drinks and units?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can create custom drinks and use either ml or oz units depending on your preference."}},{"@type":"Question","name":"How do I move data to a new phone?","acceptedAnswer":{"@type":"Answer","text":"Use Backup & Restore to create a backup, then restore from the same cloud provider on the new device."}},{"@type":"Question","name":"What if reminders are not firing?","acceptedAnswer":{"@type":"Answer","text":"Check system notification permissions, battery restrictions, and the reminder schedule inside the app."}}]},{"@type":"WebPage","name":"WaterTracker Guide","url":"https://subraatakumar.com/watertracker/guide"}]}4:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$7"}}]
-5:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
-6:["$","div",null,{"className":"wtg-actions","children":[["$","$Lb",null,{"href":"/watertracker","className":"wtg-btn wtg-btn-primary","children":"Back To Landing Page"}],["$","$Lb",null,{"href":"/watertracker/benefits","className":"wtg-btn wtg-btn-ghost","children":"Hydration Benefits"}],["$","$Lb",null,{"href":"/contact","className":"wtg-btn wtg-btn-ghost","children":"Contact Support"}]]}]
-a:null
+      0:{"buildId":"Wwd4qPeH1W3u2GGoyQtaW","rsc":["$","$1","c",{"children":[["$","article",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
+3:["$","$L7",null,{"steps":[{"title":"How to change the unit of measurement?","body":"On the Home screen, tap the 'Consumed Today' value to toggle units between milliliters (ml) and ounces (oz). The change applies immediately and updates displayed intake values and your daily goal.","images":[{"src":"/watertrackerimages/home_screen_ml.png","caption":"Home screen — ml"},{"src":"/watertrackerimages/home_screen_oz.png","caption":"Home screen — oz"}]},{"title":"Set Daily Hydration Goal","body":"Open goal settings, pick your unit (ml or oz), then set a realistic daily target. Start conservative and increase over time."},{"title":"Create Your Drink List","body":"Use Manage Drinks to add custom items with icon, color, and volume. Keep common choices at the top for faster logging."},{"title":"Log Intake Quickly","body":"On the intake screen, tap drink chips for the current day and save. The dashboard ring updates immediately."},{"title":"Schedule Smart Reminders","body":"Add reminders based on your routine and choose alert style. Enable follow-up reminders if you often miss notifications."},{"title":"Enable PIN and Biometric","body":"Protect your local data with a 6-digit PIN and optional biometrics for fast unlock."},{"title":"Backup and Restore","body":"Use cloud backup options (iCloud or Google Drive depending on device) to create restore points before switching phones."}],"faq":[{"q":"Do I need an account to use WaterTracker?","a":"No. Core hydration tracking works without account signup. Data is stored locally on device."},{"q":"Where is my hydration data stored?","a":"Hydration history, drink presets, and app preferences are stored in on-device Realm database."},{"q":"Can I track custom drinks and units?","a":"Yes. You can create custom drinks and use either ml or oz units depending on your preference."},{"q":"How do I move data to a new phone?","a":"Use Backup & Restore to create a backup, then restore from the same cloud provider on the new device."},{"q":"What if reminders are not firing?","a":"Check system notification permissions, battery restrictions, and the reminder schedule inside the app."}]}]
+8:Tba4,{"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"How to use WaterTracker","description":"Step-by-step setup and usage guide for WaterTracker hydration app.","url":"https://subraatakumar.com/watertracker/guide","step":[{"@type":"HowToStep","position":1,"name":"How to change the unit of measurement?","text":"On the Home screen, tap the 'Consumed Today' value to toggle units between milliliters (ml) and ounces (oz). The change applies immediately and updates displayed intake values and your daily goal.","image":["https://subraatakumar.com/watertrackerimages/home_screen_ml.png","https://subraatakumar.com/watertrackerimages/home_screen_oz.png"]},{"@type":"HowToStep","position":2,"name":"Set Daily Hydration Goal","text":"Open goal settings, pick your unit (ml or oz), then set a realistic daily target. Start conservative and increase over time."},{"@type":"HowToStep","position":3,"name":"Create Your Drink List","text":"Use Manage Drinks to add custom items with icon, color, and volume. Keep common choices at the top for faster logging."},{"@type":"HowToStep","position":4,"name":"Log Intake Quickly","text":"On the intake screen, tap drink chips for the current day and save. The dashboard ring updates immediately."},{"@type":"HowToStep","position":5,"name":"Schedule Smart Reminders","text":"Add reminders based on your routine and choose alert style. Enable follow-up reminders if you often miss notifications."},{"@type":"HowToStep","position":6,"name":"Enable PIN and Biometric","text":"Protect your local data with a 6-digit PIN and optional biometrics for fast unlock."},{"@type":"HowToStep","position":7,"name":"Backup and Restore","text":"Use cloud backup options (iCloud or Google Drive depending on device) to create restore points before switching phones."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need an account to use WaterTracker?","acceptedAnswer":{"@type":"Answer","text":"No. Core hydration tracking works without account signup. Data is stored locally on device."}},{"@type":"Question","name":"Where is my hydration data stored?","acceptedAnswer":{"@type":"Answer","text":"Hydration history, drink presets, and app preferences are stored in on-device Realm database."}},{"@type":"Question","name":"Can I track custom drinks and units?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can create custom drinks and use either ml or oz units depending on your preference."}},{"@type":"Question","name":"How do I move data to a new phone?","acceptedAnswer":{"@type":"Answer","text":"Use Backup & Restore to create a backup, then restore from the same cloud provider on the new device."}},{"@type":"Question","name":"What if reminders are not firing?","acceptedAnswer":{"@type":"Answer","text":"Check system notification permissions, battery restrictions, and the reminder schedule inside the app."}}]},{"@type":"WebPage","name":"WaterTracker Guide","url":"https://subraatakumar.com/watertracker/guide"}]}4:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$8"}}]
+5:["$","script","script-0",{"src":"/_next/static/chunks/933efe2d8321f2f3.js","async":true}]
+6:["$","$L9",null,{"children":["$","$a",null,{"name":"Next.MetadataOutlet","children":"$@b"}]}]
+b:null
