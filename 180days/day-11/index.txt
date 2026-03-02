@@ -221,7 +221,7 @@ a:I[68027,[],"default"]
             .sk-nav-mobile { display: block; }
             .sk-page-heading { font-size: 2.2rem; }
           }
-        0:{"P":null,"b":"NQgK-Z7PvI4g98Ly7DiFn","c":["","180days","day-11",""],"q":"","i":false,"f":[[["",{"children":["180days",{"children":[["slug","day-11","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/116c86ebb776b851.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+        0:{"P":null,"b":"10q8doTsHOu2pJIQsamA5","c":["","180days","day-11",""],"q":"","i":false,"f":[[["",{"children":["180days",{"children":[["slug","day-11","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/116c86ebb776b851.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
 b:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
 c:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
 d:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
@@ -881,7 +881,7 @@ f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRou
       10:["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$18"}],"$L19","$L1a","$L1b","$L1c"]}]
 19:["$","header",null,{"className":"d180-article-header","children":["$","div",null,{"className":"d180-article-header-inner","children":[["$","div",null,{"className":"flex items-center gap-3 shrink-0","children":[["$","$Lb",null,{"href":"/","aria-label":"Go to main home page","className":"w-8 h-8 bg-amber-400 rounded-lg flex items-center justify-center text-slate-900 shadow-lg shadow-amber-400/20","children":["$","span",null,{"className":"font-black text-sm","children":"SK"}]}],["$","nav",null,{"className":"hidden md:flex items-center gap-3","children":[["$","$Lb",null,{"href":"/180days","className":"d180-crumb","children":[["$","span",null,{"className":"d180-crumb-series","children":"180 Days"}]," ",["$","span",null,{"children":"/"}]," ",["$","strong",null,{"children":["Day ","11"]}]]}],["$","div",null,{"className":"d180-pill","children":[["$","div",null,{"className":"d180-pill-track","children":["$","div",null,{"className":"d180-pill-fill","style":{"width":"6%"}}]}],["$","b",null,{"children":[6,"%"]}]]}]]}]]}],["$","div",null,{"className":"flex items-center gap-4","children":["$","$Lb",null,{"href":"/180days","className":"d180-crumb","children":"← All Days"}]}]]}]}]
 1a:["$","div",null,{"className":"d180-hero","children":["$","div",null,{"className":"d180-hero-inner d180-content-wrap","style":{"paddingTop":56,"paddingBottom":56},"children":[["$","h1",null,{"style":{"maxWidth":820},"children":"Day 11: AI-Assisted Translation — From Web to Native"}],["$","p",null,{"style":{"marginTop":14,"maxWidth":760},"children":"We take the AI-generated HTML/CSS from Day 8 and, using GitHub Copilot as our pairing partner, translate it into a beautiful, functional React Native component. A practical lesson in prompt-driven development."}],["$","div",null,{"className":"d180-meta-line","children":[["$","span",null,{"children":"2026-03-02"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#d97706"},"children":"Subrata Kumar Das"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#15803d","fontSize":11,"fontWeight":800,"textTransform":"uppercase","letterSpacing":".08em"},"children":"Complete"}]]}],["$","p",null,{"style":{"marginTop":16,"maxWidth":500,"fontSize":13,"lineHeight":1.7,"color":"#92400e","borderLeft":"2px solid #fcd34d","paddingLeft":10,"fontStyle":"italic"},"children":"\"Consistent small steps lead to massive long-term results. Keep pushing.\""}]]}]}]
-1d:T5ce1,<p class="d180-md-p"><strong>Previously on the journey:</strong></p>
+1d:T615b,<p class="d180-md-p"><strong>Previously on the journey:</strong></p>
 <ul class="d180-md-ul">
 <li class="d180-md-li">The application's backend is solid: Service → Repository → Encrypted Realm.</li>
 <li class="d180-md-li">The UI vision is clear: On Day 8, we used an AI design tool ("Stitch") to generate beautiful, minimal mockups and, crucially, a set of corresponding HTML and CSS files.</li>
@@ -1295,6 +1295,29 @@ export default ArchiveTimelineScreen;
 <p class="d180-md-p"><strong>After:</strong>
 <code class="d180-md-inline-code">import { useArchiveEntries } from '@/hooks/useArchiveEntries';</code></p>
 <p class="d180-md-p">No matter where we move our screen file, this import will never break. It's a small change that pays huge dividends in maintainability.</p>
+<hr class="d180-md-hr" />
+<h3 id="prompt-to-refactor-the-screen-using-5-layer-architecture" class="d180-md-h3">Prompt to refactor the screen using <a href="/180days/5_layer_architecture/" class="d180-md-link">5 Layer architecture</a></h3>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>refactor ArchiveTimelineScreen.tsx following 5_layer_architecture.md
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">If you are providing prompt at design time:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>create ArchiveTimelineScreen.tsx. match the design with code.html and follow architecture from 5_layer_architecture.md
+</code></pre>
+      </div>
+    
 <hr class="d180-md-hr" />
 <h3 id="-day-11-outcome" class="d180-md-h3">🎯 Day 11 Outcome</h3>
 <p class="d180-md-p">Today, we successfully transformed a static web design into a live, styled React Native component. We didn't just write code; we directed an AI to do the heavy lifting of translation for us.</p>
