@@ -1,0 +1,80 @@
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ec5b13",
+            "background-light": "#f8f6f6",
+            "background-dark": "#221610",
+          },
+          fontFamily: {
+            "display": ["Public Sans", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Public Sans', sans-serif;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="dark:bg-background-dark transition-colors duration-300" style="background-color: #F9F9F7; min-height: max(884px, 100dvh);">
+<div class="relative flex min-h-screen w-full flex-col items-center justify-center overflow-x-hidden p-6 md:p-12">
+<!-- Navigation / Top Bar (Minimal) -->
+<div class="absolute top-0 left-0 w-full flex items-center justify-between p-8">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span class="text-slate-900 dark:text-slate-100 font-medium tracking-tight text-sm">ARCHIVE</span>
+</div>
+</div>
+<!-- Main Content Area -->
+<main class="max-w-2xl w-full flex flex-col items-center text-center space-y-8">
+<!-- Headline Group -->
+<div class="space-y-4">
+<h1 class="text-slate-900 dark:text-slate-100 tracking-tight text-4xl md:text-6xl font-bold leading-tight">
+          Your private digital life.
+        </h1>
+<h2 class="dark:text-slate-300 text-xl md:text-2xl font-medium leading-tight text-slate-600">
+          Stored locally. Owned by you.
+        </h2>
+</div>
+<!-- Supporting Text -->
+<p class="text-slate-500 dark:text-slate-400 text-lg font-light leading-relaxed max-w-md">
+        No cloud. No tracking. Just your memories — secure and offline.
+      </p>
+<!-- Action Buttons -->
+<div class="flex flex-col items-center gap-6 pt-4 w-full sm:w-auto">
+<button class="w-full sm:min-w-[200px] cursor-pointer items-center justify-center rounded-xl h-14 px-8 text-white text-base font-medium transition-all hover:opacity-90 active:scale-[0.98]" style="background-color: #E8601C;">
+          Get Started
+        </button>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium tracking-wide" href="#">
+          LEARN MORE
+        </a>
+</div>
+</main>
+<!-- Subtle Decorative Element -->
+<div class="absolute bottom-12 flex flex-col items-center gap-4">
+<div class="w-px h-12 bg-slate-200 dark:bg-slate-800"></div>
+<span class="text-[10px] uppercase tracking-[0.2em] text-slate-400 dark:text-slate-600">Encrypted &amp; Local</span>
+</div>
+<!-- Background Pattern (Very Subtle) -->
+<div class="fixed inset-0 -z-10 pointer-events-none opacity-[0.03] dark:opacity-[0.05]" data-alt="Subtle dot pattern background for texture" style="background-image: radial-gradient(circle at 2px 2px, #000 1px, transparent 0); background-size: 40px 40px;">
+</div>
+</div>
+</body></html>

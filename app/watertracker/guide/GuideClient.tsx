@@ -31,7 +31,7 @@ export default function GuideClient({ steps, faq }: { steps: Step[]; faq: any[] 
 
               {step.images && step.images.length > 0 && (
                 <div className="wtg-screens" aria-hidden={false}>
-                  {step.images.map((img) => (
+                  {step.images.map((img, imgIndex) => (
                     <figure key={img.src}>
                       <div className="img-wrap">
                         <img
@@ -46,8 +46,10 @@ export default function GuideClient({ steps, faq }: { steps: Step[]; faq: any[] 
                           style={{ cursor: "pointer" }}
                         />
                         <div className="overlay">🔍 Click to enlarge</div>
+                        <figcaption>
+                          {img.caption ?? (imgIndex === 0 ? "Home screen — ml" : "Home screen — oz")}
+                        </figcaption>
                       </div>
-                      <figcaption>{img.caption}</figcaption>
                     </figure>
                   ))}
                 </div>

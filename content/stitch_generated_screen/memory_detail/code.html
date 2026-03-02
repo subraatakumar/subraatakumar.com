@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>Memory Details - Offline Life Archive</title>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex h-screen w-full flex-col overflow-x-hidden">
+<!-- Top Navigation -->
+<nav class="sticky top-0 z-10 flex items-center justify-between px-4 py-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<button class="flex items-center justify-center p-2 rounded-full hover:bg-primary/10 transition-colors text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h2 class="text-sm font-medium tracking-widest uppercase text-slate-500 dark:text-slate-400">Memory Details</h2>
+<button class="text-primary font-semibold text-sm px-3 py-1 hover:bg-primary/5 rounded-lg transition-colors">
+                Edit
+            </button>
+</nav>
+<main class="flex-1 overflow-y-auto px-6 pb-12">
+<!-- Memory Title -->
+<header class="pt-8 pb-6">
+<h1 class="text-3xl font-bold leading-tight tracking-tight text-slate-900 dark:text-slate-50">
+                    Midsummer Evening at the Archipelago
+                </h1>
+<p class="mt-2 text-sm text-slate-400 dark:text-slate-500 italic">June 21, 2023</p>
+</header>
+<!-- Image Gallery Section -->
+<section class="@container mb-8">
+<div class="relative overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800 aspect-[4/3] w-full">
+<div class="flex h-full w-full overflow-x-auto snap-x snap-mandatory scrollbar-hide">
+<div class="shrink-0 w-full h-full snap-center bg-cover bg-center" data-alt="Serene lake landscape during golden hour sunset" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBroSm8A_sBCWM9ac0u8f0HkJ80Ian-MG8zvqwSDDh25mDj3mn5R9ElR3duaWVUBxrZ1Ozjg8fZuae1UdGCclNX1XU3Ucc93JN0gT_cEG9XHFsNFG5juuXzW82aIt5Lj3r0q-3EVB3wBABbykS9vxYnJmoK4pEW5-SHAe0CH7vE9HXAsVpV_FVkv1aOppSXPRdECt3xit9IJSeOUM9u2aVegxcgYzVWOXyYNBZfAjHzLO1JTYK8vlL9FIF6LAi90iVkY-xHRO-SJeo')"></div>
+<div class="shrink-0 w-full h-full snap-center bg-cover bg-center" data-alt="Misty mountain peaks in early morning light" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD63IXZrHBOkU1H9F4zDoWklMLcPW2ynU8aT0mZ3MUCtiRASucxJLWj8qQD71WGHLJJFvIPY-lDdvpJYYg3xKZLqYavdZO59uQuvrP3d6qpcrVds3gsyxYlwEieUdWMjb9Kw_UiOSh9hJqEUST714OBNgOtIJ-6X9H6_D_SnghBgBQN3EktBdAWx4IgiC9VG--928rlJoIH1S6ZnS94Ra6b8QyXtkAIgRqhC6wI2KfuaYV1EQdd-H3CIAPTPm-c6nT3SN7Yo4DBotw')"></div>
+</div>
+<!-- Minimal Indicators -->
+<div class="absolute bottom-4 left-0 right-0 flex justify-center gap-1.5">
+<div class="size-1.5 rounded-full bg-white"></div>
+<div class="size-1.5 rounded-full bg-white/40"></div>
+<div class="size-1.5 rounded-full bg-white/40"></div>
+</div>
+</div>
+</section>
+<!-- Body Text - Scandinavian Typography Style -->
+<article class="max-w-prose">
+<p class="text-lg leading-relaxed text-slate-700 dark:text-slate-300 font-light mb-6">
+                    The air was perfectly still, carrying the faint scent of pine needles and damp earth. We sat on the edge of the weathered wooden dock, feet dangling just above the glassy surface of the water. There were no phones, no notifications—just the rhythmic sound of a distant loon and the slow fading of the amber light.
+                </p>
+<p class="text-lg leading-relaxed text-slate-700 dark:text-slate-300 font-light mb-6">
+                    It felt like time had finally decided to pause, allowing us to simply exist in the quietude of the moment. We spoke in hushed tones, as if raising our voices would shatter the fragile peace of the archipelago. The horizon glowed in shades of bruised purple and soft orange for hours, a testament to the endless days of the northern summer.
+                </p>
+<p class="text-lg leading-relaxed text-slate-700 dark:text-slate-300 font-light">
+                    I remember the cold bite of the water when I finally decided to dip my toes in, a sharp contrast to the warmth of the coffee mug still held in my hands. These are the moments we archive not for others to see, but for our future selves to remember what it felt like to be truly present.
+                </p>
+</article>
+<!-- Tags Section -->
+<section class="mt-10 pt-8 border-t border-slate-200 dark:border-slate-800">
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 text-xs font-medium rounded-full">#nature</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 text-xs font-medium rounded-full">#solstice</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 text-xs font-medium rounded-full">#quiet</span>
+</div>
+</section>
+<!-- Delete Option -->
+<footer class="mt-20 flex justify-center">
+<button class="flex items-center gap-2 text-slate-400 dark:text-slate-600 hover:text-red-400 transition-colors text-sm font-medium py-4">
+<span class="material-symbols-outlined text-lg">delete_outline</span>
+                    Delete Memory
+                </button>
+</footer>
+</main>
+</div>
+</body></html>

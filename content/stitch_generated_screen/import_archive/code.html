@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#ec5b13",
+                "background-light": "#f8f6f6",
+                "background-dark": "#221610",
+              },
+              fontFamily: {
+                "display": ["Public Sans", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<title>Import Archive</title>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col items-center justify-center p-6">
+<div class="max-w-md w-full space-y-8">
+<!-- Header -->
+<header class="text-center space-y-2">
+<div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-4">
+<span class="material-icons-outlined text-primary text-2xl">lock_open</span>
+</div>
+<h1 class="text-2xl font-semibold tracking-tight">Import Archive</h1>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Securely decrypt and import your memory files.</p>
+</header>
+<!-- Main Form -->
+<div class="space-y-6">
+<!-- File Selection -->
+<div class="space-y-3">
+<label class="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Memory File</label>
+<div class="flex items-center justify-between p-4 border border-primary/20 bg-white dark:bg-primary/5 rounded-xl">
+<div class="flex items-center space-x-3">
+<span class="material-icons-outlined text-slate-400">description</span>
+<span class="text-sm font-medium">memories_2023.enc</span>
+</div>
+<button class="text-sm font-medium border border-primary/40 text-primary px-4 py-2 rounded-lg hover:bg-primary/10 transition-colors">
+                        Change File
+                    </button>
+</div>
+</div>
+<!-- Password Input -->
+<div class="space-y-3">
+<label class="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Encryption Password</label>
+<div class="relative">
+<input class="w-full bg-white dark:bg-primary/5 border border-primary/20 rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="Enter archive password" type="password" value="••••••••••••"/>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-primary">
+<span class="material-icons-outlined text-xl">visibility</span>
+</button>
+</div>
+<p class="text-[11px] text-slate-400 italic">Encrypted with AES-256 standards for your privacy.</p>
+</div>
+<!-- Preview Section (State: After Decryption) -->
+<div class="space-y-3 pt-2">
+<label class="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Preview</label>
+<div class="p-4 bg-white dark:bg-primary/5 border border-primary/20 rounded-xl flex items-center space-x-4">
+<div class="relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-slate-200">
+<img alt="Memory preview thumbnail" class="w-full h-full object-cover opacity-80" data-alt="Blurred nostalgic landscape memory photo thumbnail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-w6T2Z4eCKoWm1vZ4-iSEGzW0iOs16sCLCBX3y4cIP5-by3Sn5XwBKM8GE6jUBHjP65_7zkTVikZBIVW1kx5rYR4DlvmEtTIe0a3Cm-fXz5mF6d3bVucpVkE133SQ8EA6ChagjxKgw7SnXCETsqsXfj_Mc2JT9adzSKdSMfwxaFx6fSmLijUjJ1AiINt-19e1wG6jxyQHaZUiygqZA6MUFptlOxD-zjB2NKyWAjdBaIL_0ZnO6cPIW0Egucu49xecYy9Q6mkAQpM"/>
+</div>
+<div class="flex-1 min-w-0">
+<h3 class="text-sm font-semibold truncate">Summer Solstice 2023</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">142 memories • 428 MB</p>
+</div>
+<div class="flex-shrink-0">
+<span class="material-icons-outlined text-green-500">check_circle</span>
+</div>
+</div>
+</div>
+<!-- Confirm Button -->
+<div class="pt-4">
+<button class="w-full bg-primary text-white font-semibold py-4 rounded-xl hover:opacity-90 shadow-lg shadow-primary/20 transition-all flex items-center justify-center space-x-2">
+<span class="material-icons-outlined text-lg">download</span>
+<span>Confirm Import</span>
+</button>
+<button class="w-full mt-4 text-slate-500 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors">
+                    Cancel and exit
+                </button>
+</div>
+</div>
+<!-- Footer Info -->
+<footer class="text-center pt-8">
+<div class="inline-flex items-center space-x-2 text-slate-400">
+<span class="material-icons-outlined text-sm">verified_user</span>
+<span class="text-[10px] uppercase tracking-[0.2em]">End-to-End Encrypted Environment</span>
+</div>
+</footer>
+</div>
+</body></html>

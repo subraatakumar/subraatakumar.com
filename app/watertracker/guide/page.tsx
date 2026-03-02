@@ -1,6 +1,5 @@
-import GuideClient from "./GuideClient";
-import Link from "next/link";
 import type { Metadata } from "next";
+import GuideClient from "./GuideClient";
 import { DEFAULT_OG_IMAGE, absoluteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -27,7 +26,13 @@ export const metadata: Metadata = {
   },
 };
 
-const steps = [
+type GuideStep = {
+  title: string;
+  body: string;
+  images?: { src: string; caption: string }[];
+};
+
+const steps: GuideStep[] = [
   {
     title: "How to change the unit of measurement?",
     body:
@@ -82,23 +87,50 @@ const faq = [
   },
   {
     q: "Where is my hydration data stored?",
-    a: "Hydration history, drink presets, and app preferences are stored in on-device Realm database.",
+    a: "Hydration history, drink presets, and app preferences are stored in on-device storage.",
   },
   {
     q: "Can I track custom drinks and units?",
     a: "Yes. You can create custom drinks and use either ml or oz units depending on your preference.",
   },
-  {
-    q: "How do I move data to a new phone?",
-    a: "Use Backup & Restore to create a backup, then restore from the same cloud provider on the new device.",
-  },
-  {
-    q: "What if reminders are not firing?",
-    a: "Check system notification permissions, battery restrictions, and the reminder schedule inside the app.",
-  },
 ];
 
-export default function WaterTrackerGuidePage() {
+const ldJson = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HowTo",
+      name: "How to use WaterTracker",
+      description: "Step-by-step setup and usage guide for WaterTracker hydration app.",
+      url: absoluteUrl("/watertracker/guide"),
+      step: steps.map((step, i) => ({
+        "@type": "HowToStep",
+        position: i + 1,
+        name: step.title,
+        text: step.body,
+        ...(step.images ? { image: step.images.map((im) => absoluteUrl(im.src)) } : {}),
+      })),
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: faq.map((item) => ({
+        "@type": "Question",
+        name: item.q,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.a,
+        },
+      })),
+    },
+    {
+      "@type": "WebPage",
+      name: "WaterTracker Guide",
+      url: absoluteUrl("/watertracker/guide"),
+    },
+  ],
+});
+
+export default function Page() {
   return (
     <article>
       <style>{`
@@ -132,16 +164,13 @@ export default function WaterTrackerGuidePage() {
           flex-wrap: wrap;
         }
         .wtg-screens figure {
-          margin: 0;
+          margin: 0 0 8px 0;
           border-radius: 12px;
-          overflow: hidden;
-          border: 1px solid rgba(16, 36, 79, 0.08);
-          background: #fff;
-          display: flex;
-          flex-direction: column;
-          flex: 1 1 240px;
-          min-width: 200px;
-          position: relative;
+          display: inline-block; /* shrink to fit image and caption */
+          vertical-align: top;
+          width: min(320px, 100%);
+          max-width: 320px;
+          min-width: 250px; /* ensure minimum placeholder width */
         }
         .wtg-screens img {
           display: block;
@@ -150,18 +179,30 @@ export default function WaterTrackerGuidePage() {
         }
         .img-wrap {
           position: relative;
+          border-radius: 12px;
+          overflow: hidden;
+          border: 1px solid rgba(16, 36, 79, 0.03);
+          background: #fff;
+          display: block;
+          width: 100%;
         }
         .wtg-screens .overlay {
           position: absolute;
-          inset: 0;
+          left: 0;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
           display: flex;
           align-items: center;
           justify-content: center;
           color: #fff;
           font-weight: 800;
-          font-size: 0.95rem;
+          font-size: 0.88rem;
+          line-height: 1;
+          padding: 8px 10px;
           pointer-events: none;
-          background: linear-gradient(180deg, rgba(0,0,0,0.0), rgba(0,0,0,0.28));
+          background: rgba(0, 0, 0, 0.1);
+          transform: translateY(-50%) rotate(-45deg);
           opacity: 1;
         }
         .wtg-step-header {
@@ -171,32 +212,18 @@ export default function WaterTrackerGuidePage() {
           margin-bottom: 8px;
         }
         @media (min-width: 821px) {
-          .wtg-step.has-images {
-            display: grid;
-            grid-template-columns: 1fr 340px;
-            gap: 18px;
-            align-items: start;
-          }
-          .wtg-step.has-images .wtg-screens {
-            flex-direction: column;
-            gap: 10px;
-            margin-top: 0;
-          }
-          /* Ensure header and body occupy left column and images the right column */
-          .wtg-step.has-images > .wtg-step-header,
-          .wtg-step.has-images > p {
-            grid-column: 1 / 2;
-          }
-          .wtg-step.has-images > .wtg-screens {
-            grid-column: 2 / 3;
-          }
           .wtg-screens figure {
-            min-width: auto;
             flex: none;
+            max-width: 320px;
+            display: inline-block;
+            vertical-align: top;
+            width: min(320px, 100%);
+            min-width: 250px;
           }
           .wtg-screens img {
-            max-height: 220px;
-            object-fit: cover;
+            display: block;
+            width: 100%;
+            height: auto;
           }
         }
 
@@ -236,12 +263,16 @@ export default function WaterTrackerGuidePage() {
           font-size: 22px;
           cursor: pointer;
         }
-        .wtg-screens figcaption {
+        .wtg-screens .img-wrap figcaption {
           padding: 8px 10px;
           font-size: 0.9rem;
           color: #17386f;
           text-align: center;
           background: #f8fcff;
+          display: block;
+          width: 100%;
+          box-sizing: border-box;
+          margin: 0; /* keep tight to wrapper */
         }
         .wtg-step {
           border-radius: 16px;

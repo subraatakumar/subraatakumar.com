@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Protect Your Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col font-display">
+<!-- Top Navigation Bar -->
+<header class="flex items-center px-6 py-4 justify-between">
+<button class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<div class="w-6"></div> <!-- Spacer for centering -->
+</header>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col px-8 max-w-md mx-auto w-full">
+<!-- Header Section -->
+<div class="pt-8 pb-10">
+<h1 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100 mb-2">
+                Protect Your Archive
+            </h1>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                Ensure your personal memories stay private with an additional layer of security.
+            </p>
+</div>
+<!-- Security Options List -->
+<div class="space-y-2">
+<!-- App Lock Toggle -->
+<div class="flex items-center justify-between py-5 border-b border-slate-200 dark:border-slate-800">
+<div class="flex items-center gap-4">
+<div class="bg-slate-100 dark:bg-slate-800 p-2.5 rounded-lg text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined">lock</span>
+</div>
+<span class="text-base font-medium text-slate-800 dark:text-slate-200">Enable App Lock</span>
+</div>
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-slate-200 dark:bg-slate-700 p-0.5 has-[:checked]:justify-end has-[:checked]:bg-primary transition-all">
+<div class="h-full w-[27px] rounded-full bg-white shadow-sm"></div>
+<input checked="" class="invisible absolute" type="checkbox"/>
+</label>
+</div>
+<!-- Set PIN Menu Item -->
+<button class="w-full flex items-center justify-between py-5 border-b border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors group">
+<div class="flex items-center gap-4">
+<div class="bg-slate-100 dark:bg-slate-800 p-2.5 rounded-lg text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined">password</span>
+</div>
+<span class="text-base font-medium text-slate-800 dark:text-slate-200">Set PIN</span>
+</div>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">chevron_right</span>
+</button>
+<!-- Biometric Toggle -->
+<div class="flex items-center justify-between py-5">
+<div class="flex items-center gap-4">
+<div class="bg-slate-100 dark:bg-slate-800 p-2.5 rounded-lg text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined">fingerprint</span>
+</div>
+<span class="text-base font-medium text-slate-800 dark:text-slate-200">Enable biometric access</span>
+</div>
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-slate-200 dark:bg-slate-700 p-0.5 has-[:checked]:justify-end has-[:checked]:bg-primary transition-all">
+<div class="h-full w-[27px] rounded-full bg-white shadow-sm"></div>
+<input class="invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+<!-- Helper Text -->
+<p class="mt-6 text-center text-xs text-slate-400 dark:text-slate-500 font-light italic">
+            You can change this anytime in Settings.
+        </p>
+<!-- Spacer to push button to bottom -->
+<div class="flex-1"></div>
+<!-- Action Button -->
+<div class="pb-12 pt-6">
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-4 px-6 rounded-xl shadow-lg shadow-primary/20 transition-all active:scale-[0.98]">
+                Continue
+            </button>
+</div>
+</main>
+</body></html>

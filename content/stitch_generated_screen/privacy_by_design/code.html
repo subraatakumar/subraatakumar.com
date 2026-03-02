@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col items-center">
+<div class="relative flex h-full min-h-screen w-full max-w-md flex-col bg-background-light dark:bg-background-dark overflow-x-hidden px-6 py-12">
+<header class="mb-16 mt-8">
+<h1 class="text-slate-900 dark:text-slate-50 text-[32px] font-semibold tracking-tight leading-tight">
+                Privacy by Design
+            </h1>
+<p class="mt-4 text-slate-500 dark:text-slate-400 text-base font-light leading-relaxed">
+                Your memories are yours alone. We built this app with a foundation of total privacy.
+            </p>
+</header>
+<main class="flex-grow space-y-10">
+<!-- Section 1: Local Storage -->
+<div class="flex items-start gap-5 group">
+<div class="flex items-center justify-center rounded-xl bg-primary/10 dark:bg-primary/20 shrink-0 size-14 border border-primary/5">
+<span class="material-symbols-outlined text-primary text-3xl">
+                        hard_drive
+                    </span>
+</div>
+<div class="flex flex-col justify-center pt-1">
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-medium leading-tight mb-1">Local Storage</h2>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-light leading-normal">
+                        All data stays on your device. Nothing ever touches a server.
+                    </p>
+</div>
+</div>
+<!-- Section 2: Encrypted Database -->
+<div class="flex items-start gap-5 group">
+<div class="flex items-center justify-center rounded-xl bg-primary/10 dark:bg-primary/20 shrink-0 size-14 border border-primary/5">
+<span class="material-symbols-outlined text-primary text-3xl">
+                        lock_open
+                    </span>
+</div>
+<div class="flex flex-col justify-center pt-1">
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-medium leading-tight mb-1">Encrypted Database</h2>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-light leading-normal">
+                        Your archive is encrypted from day one using industry-standard protocols.
+                    </p>
+</div>
+</div>
+<!-- Section 3: No Tracking -->
+<div class="flex items-start gap-5 group">
+<div class="flex items-center justify-center rounded-xl bg-primary/10 dark:bg-primary/20 shrink-0 size-14 border border-primary/5">
+<span class="material-symbols-outlined text-primary text-3xl">
+                        visibility_off
+                    </span>
+</div>
+<div class="flex flex-col justify-center pt-1">
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-medium leading-tight mb-1">No Tracking</h2>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-light leading-normal">
+                        No analytics. No accounts. No cloud sync. We don't know who you are.
+                    </p>
+</div>
+</div>
+</main>
+<footer class="mt-12 mb-6">
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-medium py-4 px-6 rounded-xl transition-colors duration-200 shadow-sm active:scale-[0.98]">
+                Continue
+            </button>
+<p class="mt-6 text-center text-slate-400 dark:text-slate-500 text-xs font-light">
+                By continuing, you agree to our <a class="underline underline-offset-4 hover:text-primary" href="#">Terms of Service</a>.
+            </p>
+</footer>
+</div>
+</body></html>

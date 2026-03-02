@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Archive - Memory Journal</title>
+<!-- BEGIN: External Resources -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<!-- END: External Resources -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'scandi-white': '#F9F9F9',
+            'scandi-gray': '#E5E5E5',
+            'scandi-text': '#2D2D2D', 
+            'scandi-muted': '#7A7A7A',
+            'scandi-accent': '#A7BBC7',
+            'scandi-charcoal': '#333333',
+            'primary-orange': '#E8601C'
+          },
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-layout-styling">
+    body {
+      background-color: #F9F9F9;
+      color: #4A4A4A;
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    /* Subtle vertical line for the timeline */
+    .timeline-line {
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background-color: #E5E5E5;
+      z-index: 0;
+    }
+
+    /* Soft shadow for the FAB */
+    .fab-shadow {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Minimal scrollbar */
+    ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased">
+<!-- BEGIN: Header -->
+<header class="sticky top-0 z-20 bg-scandi-white/90 backdrop-blur-md px-6 pt-12 pb-10" data-purpose="app-header">
+<h1 class="tracking-tight text-scandi-text font-bold font-bold text-scandi-text" style="font-size: 28px; line-height: 1.2;">Offline Life Archive</h1><p class="font-normal tracking-wide mt-1.5 font-normal text-scandi-muted" style="font-size: 14px;">Your private timeline</p>
+</header>
+<!-- END: Header -->
+<!-- BEGIN: Search Bar -->
+<section class="px-6 mb-8" data-purpose="search-container">
+<div class="relative">
+<input class="w-full bg-white border-none rounded-xl px-4 py-3 text-sm focus:ring-1 focus:ring-scandi-accent/50 placeholder:text-scandi-muted/60 shadow-sm" placeholder="Search title or tags..." type="text"/>
+</div>
+</section>
+<!-- END: Search Bar -->
+<!-- BEGIN: Timeline Section -->
+<main class="relative px-6 pb-32" data-purpose="timeline-content">
+<div class="timeline-line"></div>
+<!-- Entry 1 -->
+<article class="relative pl-10 mb-14 group" data-purpose="memory-entry">
+<!-- Timeline Node -->
+<div class="absolute left-[-2px] top-2 w-[5px] h-[5px] rounded-full bg-scandi-accent border-4 border-scandi-white ring-1 ring-scandi-gray"></div>
+<div class="flex gap-4">
+<div class="flex-1">
+<time class="block text-[10px] uppercase tracking-wider text-scandi-muted/50 mb-1.5 font-medium">October 24, 2023</time>
+<h2 class="text-[17px] font-semibold text-scandi-text leading-tight">Morning by the lake</h2>
+<p class="text-[13.5px] text-scandi-muted/70 mt-1 leading-relaxed line-clamp-2 font-normal">
+            The fog was sitting low over the water today. Everything felt quiet, like the world hadn't woken up yet.
+          </p>
+<div class="mt-3 flex flex-wrap gap-2">
+<span class="text-[10px] text-scandi-accent bg-scandi-accent/10 px-2 py-0.5 rounded">#nature</span>
+<span class="text-[10px] text-scandi-accent bg-scandi-accent/10 px-2 py-0.5 rounded">#quiet</span>
+</div>
+</div>
+<!-- Optional Thumbnail -->
+<div class="w-16 h-16 rounded-lg bg-scandi-gray overflow-hidden shrink-0">
+<img alt="Entry thumbnail" class="w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZHzs5St1xsmpoHCnXsnR7L66d8KMJy7YD3uCK-9ICezlprqDPSJU_g9q8lU4_DuIvkayVhh2R0qNqx7WKGs3ZUFC6ZTzsCc-H_CbJoRh-mKq1ulev_QeU6gpixsN9IjA3fqOGjPiGaArlJd38FFmhAqSEXX_HrwgDpXjs00NvI8-A5ozNKpC7wJbqn65vI_UZwI7z96aYQ0q0EGdqJb6Myw6_NeGSsWmfZqztFIPRfWoeuHVnwqxSuNLOhWrX0x96RI_G4GJG78o"/>
+</div>
+</div>
+</article>
+<!-- Entry 2 -->
+<article class="relative pl-10 mb-14 group" data-purpose="memory-entry">
+<!-- Timeline Node -->
+<div class="absolute left-[-2px] top-2 w-[5px] h-[5px] rounded-full bg-scandi-accent border-4 border-scandi-white ring-1 ring-scandi-gray"></div>
+<div class="flex gap-4">
+<div class="flex-1">
+<time class="block text-[10px] uppercase tracking-wider text-scandi-muted/50 mb-1.5 font-medium">October 21, 2023</time>
+<h2 class="text-[17px] font-semibold text-scandi-text leading-tight">The old bookstore scent</h2>
+<p class="text-[13.5px] text-scandi-muted/70 mt-1 leading-relaxed line-clamp-2 font-normal">
+            Found a first edition of Oliver Twist. The paper felt thick and brittle. Reminded me of grandfather's study.
+          </p>
+<div class="mt-3 flex flex-wrap gap-2">
+<span class="text-[10px] text-scandi-accent bg-scandi-accent/10 px-2 py-0.5 rounded">#books</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Entry 3 -->
+<article class="relative pl-10 mb-14 group" data-purpose="memory-entry">
+<!-- Timeline Node -->
+<div class="absolute left-[-2px] top-2 w-[5px] h-[5px] rounded-full bg-scandi-accent border-4 border-scandi-white ring-1 ring-scandi-gray"></div>
+<div class="flex gap-4">
+<div class="flex-1">
+<time class="block text-[10px] uppercase tracking-wider text-scandi-muted/50 mb-1.5 font-medium">October 15, 2023</time>
+<h2 class="text-[17px] font-semibold text-scandi-text leading-tight">Coffee in Copenhagen</h2>
+<p class="text-[13.5px] text-scandi-muted/70 mt-1 leading-relaxed line-clamp-2 font-normal">
+            Sitting at the corner cafe. The ceramic cup was perfectly warm. No phones in sight, just people talking.
+          </p>
+<div class="mt-3 flex flex-wrap gap-2">
+<span class="text-[10px] text-scandi-accent bg-scandi-accent/10 px-2 py-0.5 rounded">#travel</span>
+<span class="text-[10px] text-scandi-accent bg-scandi-accent/10 px-2 py-0.5 rounded">#hygge</span>
+</div>
+</div>
+<div class="w-16 h-16 rounded-lg bg-scandi-gray overflow-hidden shrink-0">
+<img alt="Entry thumbnail" class="w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4I8n-mSosuWh-l-FTfFpdsKklpBNJukR8BJ50hgvwi-vqmxqPTEDy-fWUEMof5_1k7XhdkYIOqUdP-vndxukYJ_a4kg3VX4st9n2scnM3fXWOBUcbWj_Pii9li7_o6pldmB1-bJrCczyX8wkRw-Dw1Ld7GjNaHKEORypbtgiPMHqhOxuTyDBqTD6HoTQQ0GDxnj2mX9YrmK9zUSn4Tu__csRxZsZ-D83-ToQD7M54CzUaXiYOkb1HcfinILFW5j1dZHejzPnaBs4"/>
+</div>
+</div>
+</article>
+<!-- Entry 4 -->
+<article class="relative pl-10 mb-14 group" data-purpose="memory-entry">
+<!-- Timeline Node -->
+<div class="absolute left-[-2px] top-2 w-[5px] h-[5px] rounded-full bg-scandi-accent border-4 border-scandi-white ring-1 ring-scandi-gray"></div>
+<div class="flex gap-4">
+<div class="flex-1">
+<time class="block text-[10px] uppercase tracking-wider text-scandi-muted/50 mb-1.5 font-medium">October 12, 2023</time>
+<h2 class="text-[17px] font-semibold text-scandi-text leading-tight">First frost on the window</h2>
+<p class="text-[13.5px] text-scandi-muted/70 mt-1 leading-relaxed line-clamp-2 font-normal">
+            Winter is coming. The patterns on the glass look like fern leaves.
+          </p>
+</div>
+</div>
+</article>
+</main>
+<!-- END: Timeline Section -->
+<!-- BEGIN: Floating Action Button -->
+<button aria-label="Create new entry" class="fixed bottom-8 right-8 w-14 h-14 text-scandi-white rounded-full flex items-center justify-center fab-shadow active:scale-95 transition-transform w-[60px] h-[60px] shadow-xl bg-primary-orange active:bg-[#D45519]" data-purpose="create-button">
+<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<line x1="12" x2="12" y1="5" y2="19"></line>
+<line x1="5" x2="19" y1="12" y2="12"></line>
+</svg>
+</button>
+<!-- END: Floating Action Button -->
+</body></html>

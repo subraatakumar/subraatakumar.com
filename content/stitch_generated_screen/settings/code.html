@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex min-h-screen flex-col mx-auto max-w-md bg-background-light dark:bg-background-dark border-x border-slate-200 dark:border-slate-800">
+<!-- Header Section -->
+<header class="flex flex-col gap-4 px-6 pt-12 pb-6">
+<div class="flex items-center justify-between">
+<button class="p-2 -ml-2 text-slate-500 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+</div>
+<h1 class="text-[28px] font-bold tracking-tight text-slate-900 dark:text-slate-100">Settings</h1>
+</header>
+<!-- Main Content Scroll Area -->
+<main class="flex-1 overflow-y-auto pb-32">
+<!-- Security Section -->
+<section class="mt-4">
+<h3 class="px-6 py-3 text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">Security</h3>
+<div class="space-y-1">
+<div class="flex items-center justify-between px-6 py-4 hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-colors cursor-pointer">
+<span class="text-base font-medium">Enable app lock</span>
+<label class="relative flex h-[28px] w-[48px] cursor-pointer items-center rounded-full border-none bg-slate-200 dark:bg-slate-700 p-1 has-[:checked]:justify-end has-[:checked]:bg-primary">
+<div class="h-full aspect-square rounded-full bg-white shadow-sm"></div>
+<input checked="" class="invisible absolute" type="checkbox"/>
+</label>
+</div>
+<div class="flex items-center justify-between px-6 py-4 hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-colors cursor-pointer">
+<span class="text-base font-medium">Change PIN</span>
+<span class="material-symbols-outlined text-slate-400">chevron_right</span>
+</div>
+<div class="flex items-center justify-between px-6 py-4 hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-colors cursor-pointer">
+<span class="text-base font-medium">Biometric access</span>
+<label class="relative flex h-[28px] w-[48px] cursor-pointer items-center rounded-full border-none bg-slate-200 dark:bg-slate-700 p-1 has-[:checked]:justify-end has-[:checked]:bg-primary">
+<div class="h-full aspect-square rounded-full bg-white shadow-sm"></div>
+<input class="invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+</section>
+<!-- Appearance Section -->
+<section class="mt-8">
+<h3 class="px-6 py-3 text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">Appearance</h3>
+<div class="px-6 py-4">
+<div class="flex gap-2 p-1 bg-slate-100 dark:bg-slate-800 rounded-lg">
+<button class="flex-1 py-2 text-sm font-medium rounded-md bg-white dark:bg-slate-700 shadow-sm text-slate-900 dark:text-white">Light</button>
+<button class="flex-1 py-2 text-sm font-medium rounded-md text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors">Dark</button>
+<button class="flex-1 py-2 text-sm font-medium rounded-md text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors">System</button>
+</div>
+</div>
+</section>
+<!-- Data Management Section -->
+<section class="mt-8">
+<h3 class="px-6 py-3 text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">Data</h3>
+<div class="space-y-1">
+<button class="w-full text-left px-6 py-4 hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-colors flex items-center justify-between group">
+<span class="text-base font-medium text-slate-600 dark:text-slate-400 group-hover:text-primary transition-colors">Export all data</span>
+<span class="material-symbols-outlined text-slate-300">download</span>
+</button>
+<button class="w-full text-left px-6 py-4 hover:bg-red-50 dark:hover:bg-red-900/10 transition-colors group">
+<span class="text-base font-medium text-red-500/80 group-hover:text-red-600">Delete all data</span>
+</button>
+</div>
+</section>
+<!-- About Section -->
+<section class="mt-8 border-t border-slate-200 dark:border-slate-800 pt-4">
+<div class="space-y-1">
+<div class="flex items-center justify-between px-6 py-4">
+<span class="text-base font-medium">App version</span>
+<span class="text-sm text-slate-400">v1.0.0</span>
+</div>
+<a class="flex items-center justify-between px-6 py-4 hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-colors" href="#">
+<span class="text-base font-medium">Privacy philosophy</span>
+<span class="material-symbols-outlined text-slate-400">open_in_new</span>
+</a>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 px-6 pb-8 pt-4 flex justify-between items-center z-50">
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">archive</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">cloud_done</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span>
+</a>
+</nav>
+</div>
+</body></html>

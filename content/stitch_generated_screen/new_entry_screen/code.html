@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased font-display">
+<div class="relative flex min-h-screen w-full flex-col max-w-md mx-auto bg-background-light dark:bg-background-dark overflow-x-hidden">
+<!-- Header -->
+<header class="flex items-center justify-between px-4 py-4 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md z-10 border-b border-slate-200 dark:border-slate-800">
+<button class="flex items-center justify-center size-10 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 rounded-full transition-colors">
+<span class="material-symbols-outlined text-slate-600 dark:text-slate-400">arrow_back</span>
+</button>
+<h1 class="text-base font-semibold tracking-tight text-slate-900 dark:text-slate-100">New Entry</h1>
+<button class="text-primary font-semibold text-sm px-3 py-1 hover:bg-primary/10 rounded-lg transition-colors">
+                Save
+            </button>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col p-6 gap-6">
+<!-- Title Input -->
+<div class="flex flex-col gap-2">
+<input class="w-full bg-transparent border-none p-0 text-2xl font-bold placeholder:text-slate-300 dark:placeholder:text-slate-700 focus:ring-0 text-slate-900 dark:text-slate-100" placeholder="Entry Title" type="text"/>
+</div>
+<!-- Writing Area -->
+<div class="flex-1 min-h-[40vh]">
+<textarea class="w-full h-full bg-transparent border-none p-0 text-lg leading-relaxed placeholder:text-slate-300 dark:placeholder:text-slate-700 focus:ring-0 resize-none text-slate-700 dark:text-slate-300" placeholder="Write your memory here..."></textarea>
+</div>
+<!-- Tags Field -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-2 text-slate-400 dark:text-slate-500">
+<span class="material-symbols-outlined text-lg">sell</span>
+<input class="flex-1 bg-transparent border-none p-0 text-sm focus:ring-0 placeholder:text-slate-300 dark:placeholder:text-slate-700" placeholder="Add tags..." type="text"/>
+</div>
+<!-- Tag Suggestions/Visual -->
+<div class="flex flex-wrap gap-2">
+<span class="bg-primary/5 dark:bg-primary/10 text-primary/80 text-xs px-2.5 py-1 rounded-full border border-primary/20">Private</span>
+<span class="bg-primary/5 dark:bg-primary/10 text-primary/80 text-xs px-2.5 py-1 rounded-full border border-primary/20">Nature</span>
+</div>
+</div>
+<!-- Attachments Section -->
+<div class="pt-4 border-t border-slate-200 dark:border-slate-800">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-xs font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">Attachments</h3>
+<button class="text-primary p-1 rounded-full hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined">add_circle</span>
+</button>
+</div>
+<div class="flex gap-3 overflow-x-auto no-scrollbar pb-2">
+<!-- Image Placeholders -->
+<div class="min-w-[100px] aspect-square rounded-xl bg-slate-100 dark:bg-slate-800/50 border-2 border-dashed border-slate-200 dark:border-slate-800 flex items-center justify-center group cursor-pointer hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-slate-300 dark:text-slate-600 group-hover:text-primary/50">image</span>
+</div>
+<div class="min-w-[100px] aspect-square rounded-xl bg-slate-100 dark:bg-slate-800/50 border-2 border-dashed border-slate-200 dark:border-slate-800 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-200 dark:text-slate-700">add</span>
+</div>
+<div class="min-w-[100px] aspect-square rounded-xl bg-slate-100 dark:bg-slate-800/50 border-2 border-dashed border-slate-200 dark:border-slate-800 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-200 dark:text-slate-700">add</span>
+</div>
+<div class="min-w-[100px] aspect-square rounded-xl bg-slate-100 dark:bg-slate-800/50 border-2 border-dashed border-slate-200 dark:border-slate-800 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-200 dark:text-slate-700">add</span>
+</div>
+<div class="min-w-[100px] aspect-square rounded-xl bg-slate-100 dark:bg-slate-800/50 border-2 border-dashed border-slate-200 dark:border-slate-800 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-200 dark:text-slate-700">add</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="p-6 text-center">
+<div class="flex items-center justify-center gap-1.5 text-slate-400 dark:text-slate-600">
+<span class="material-symbols-outlined text-sm">lock</span>
+<p class="text-[10px] font-medium uppercase tracking-[0.2em]">Stored locally &amp; encrypted</p>
+</div>
+</footer>
+</div>
+</body></html>
