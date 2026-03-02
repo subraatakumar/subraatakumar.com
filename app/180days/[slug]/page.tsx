@@ -182,6 +182,11 @@ export default async function ArticlePage({ params }: PageProps) {
     return `<code class="d180-md-inline-code">${inner}</code>`;
   });
 
+  // Horizontal rules: simple, clean line
+  contentHtml = contentHtml.replace(/<hr(?:\s+[^>]*)?>/gi, () => {
+    return `<hr class="d180-md-hr" />`;
+  });
+
   // Tables: responsive wrapper and simple cell styling
   contentHtml = contentHtml.replace(/<table(?:\s+[^>]*)?>([\s\S]*?)<\/table>/gi, (m: string, inner: string) => {
     const headered = inner.replace(/<th(?:\s+[^>]*)?>([\s\S]*?)<\/th>/gi, (mm: string, thInner: string) => {
@@ -401,6 +406,12 @@ export default async function ArticlePage({ params }: PageProps) {
           font-size: 0.9em;
           padding: 3px 6px;
           border-radius: 6px;
+        }
+        #days180-root .d180-md-hr {
+          border: 0;
+          height: 1px;
+          background: #e2e8f0;
+          margin: 48px 0;
         }
         #days180-root .d180-md-link {
           color: #d97706;
