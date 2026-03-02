@@ -3,6 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
+import gfm from "remark-gfm";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -81,7 +82,7 @@ export default async function ArticlePage({ params }: PageProps) {
   const fileContents = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(fileContents);
 
-  const processedContent = await remark().use(html).process(content);
+  const processedContent = await remark().use(html).use(gfm).process(content);
   let contentHtml = processedContent.toString();
 
   // Inject id attributes for headings so #, ##, ### render with anchors
@@ -174,6 +175,11 @@ export default async function ArticlePage({ params }: PageProps) {
   // Blockquotes: subtle left border, muted background and italic tone
   contentHtml = contentHtml.replace(/<blockquote(?:\s+[^>]*)?>([\s\S]*?)<\/blockquote>/gi, (m: string, inner: string) => {
     return `<blockquote class="d180-md-blockquote">${inner}</blockquote>`;
+  });
+
+  // Inline code: apply backtick styling
+  contentHtml = contentHtml.replace(/(?<!<pre\b[^>]*>)<code(?:\s+[^>]*)?>([\s\S]*?)<\/code>/gi, (m, inner) => {
+    return `<code class="d180-md-inline-code">${inner}</code>`;
   });
 
   // Tables: responsive wrapper and simple cell styling
@@ -387,6 +393,14 @@ export default async function ArticlePage({ params }: PageProps) {
           background: #f8fafc;
           font-style: italic;
           color: #334155;
+        }
+        #days180-root .d180-md-inline-code {
+          background: #f1f5f9;
+          color: #c2410c;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+          font-size: 0.9em;
+          padding: 3px 6px;
+          border-radius: 6px;
         }
         #days180-root .d180-md-link {
           color: #d97706;
