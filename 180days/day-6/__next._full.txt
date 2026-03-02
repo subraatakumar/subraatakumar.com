@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
 a:I[68027,[],"default"]
-:HL["/_next/static/chunks/cc821bed03f9ddd8.css","style"]
+:HL["/_next/static/chunks/116c86ebb776b851.css","style"]
 :HL["https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","style"]
 2:T19f5,
           * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -221,7 +221,7 @@ a:I[68027,[],"default"]
             .sk-nav-mobile { display: block; }
             .sk-page-heading { font-size: 2.2rem; }
           }
-        0:{"P":null,"b":"Wwd4qPeH1W3u2GGoyQtaW","c":["","180days","day-6",""],"q":"","i":false,"f":[[["",{"children":["180days",{"children":[["slug","day-6","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/cc821bed03f9ddd8.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+        0:{"P":null,"b":"NQgK-Z7PvI4g98Ly7DiFn","c":["","180days","day-6",""],"q":"","i":false,"f":[[["",{"children":["180days",{"children":[["slug","day-6","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/116c86ebb776b851.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
 b:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
 c:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
 d:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
@@ -577,7 +577,7 @@ e:T267d,
 8:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
 9:["$","$1","h",{"children":[null,["$","$L14",null,{"children":"$L15"}],["$","div",null,{"hidden":true,"children":["$","$L16",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L17"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
 f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"className":"d180-footer","children":["$","div",null,{"className":"d180-footer-inner","children":[["$","p",null,{"className":"d180-footer-copy","children":"Subrata Kumar Das • 180 Days Mentoring Journey"}],["$","$Lb",null,{"href":"/","className":"d180-footer-home","children":"Main Home"}]]}]}]]}]
-18:T208a,
+18:T225e,
         #days180-root .d180-article-page {
           min-height: 100vh;
           background: #fff;
@@ -742,6 +742,20 @@ f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRou
           font-style: italic;
           color: #334155;
         }
+        #days180-root .d180-md-inline-code {
+          background: #f1f5f9;
+          color: #c2410c;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+          font-size: 0.9em;
+          padding: 3px 6px;
+          border-radius: 6px;
+        }
+        #days180-root .d180-md-hr {
+          border: 0;
+          height: 1px;
+          background: #e2e8f0;
+          margin: 48px 0;
+        }
         #days180-root .d180-md-link {
           color: #d97706;
           text-decoration: none;
@@ -867,7 +881,7 @@ f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRou
       10:["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$18"}],"$L19","$L1a","$L1b","$L1c"]}]
 19:["$","header",null,{"className":"d180-article-header","children":["$","div",null,{"className":"d180-article-header-inner","children":[["$","div",null,{"className":"flex items-center gap-3 shrink-0","children":[["$","$Lb",null,{"href":"/","aria-label":"Go to main home page","className":"w-8 h-8 bg-amber-400 rounded-lg flex items-center justify-center text-slate-900 shadow-lg shadow-amber-400/20","children":["$","span",null,{"className":"font-black text-sm","children":"SK"}]}],["$","nav",null,{"className":"hidden md:flex items-center gap-3","children":[["$","$Lb",null,{"href":"/180days","className":"d180-crumb","children":[["$","span",null,{"className":"d180-crumb-series","children":"180 Days"}]," ",["$","span",null,{"children":"/"}]," ",["$","strong",null,{"children":["Day ","6"]}]]}],["$","div",null,{"className":"d180-pill","children":[["$","div",null,{"className":"d180-pill-track","children":["$","div",null,{"className":"d180-pill-fill","style":{"width":"3%"}}]}],["$","b",null,{"children":[3,"%"]}]]}]]}]]}],["$","div",null,{"className":"flex items-center gap-4","children":["$","$Lb",null,{"href":"/180days","className":"d180-crumb","children":"← All Days"}]}]]}]}]
 1a:["$","div",null,{"className":"d180-hero","children":["$","div",null,{"className":"d180-hero-inner d180-content-wrap","style":{"paddingTop":56,"paddingBottom":56},"children":[["$","h1",null,{"style":{"maxWidth":820},"children":"Day 6 : Repository Layer Comes to Life"}],["$","p",null,{"style":{"marginTop":14,"maxWidth":760},"children":"Implementing an ArchiveRepository to safely abstract encrypted Realm access — enabling persistent, privacy-first local storage while keeping UI and business logic decoupled from storage details."}],["$","div",null,{"className":"d180-meta-line","children":[["$","span",null,{"children":"2026-02-25"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#d97706"},"children":"Subrata Kumar Das"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#15803d","fontSize":11,"fontWeight":800,"textTransform":"uppercase","letterSpacing":".08em"},"children":"Complete"}]]}],["$","p",null,{"style":{"marginTop":16,"maxWidth":500,"fontSize":13,"lineHeight":1.7,"color":"#92400e","borderLeft":"2px solid #fcd34d","paddingLeft":10,"fontStyle":"italic"},"children":"\"Consistent small steps lead to massive long-term results. Keep pushing.\""}]]}]}]
-1d:T4e5e,<p class="d180-md-p">Today we bring the <strong>Warehouse Clerk</strong> into code.</p>
+1d:T5359,<p class="d180-md-p">Today we bring the <strong>Warehouse Clerk</strong> into code.</p>
 <p class="d180-md-p">Until now:</p>
 <ul class="d180-md-ul">
 <li class="d180-md-li">Realm is encrypted.</li>
@@ -884,11 +898,11 @@ f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRou
 <p class="d180-md-p">No UI logic explosion.</p>
 <p class="d180-md-p">No service yet.</p>
 <p class="d180-md-p">Just repository.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="-day-6-repository-layer-implementation" class="d180-md-h1">📘 Day 6 — Repository Layer Implementation</h1>
-<hr>
+<hr class="d180-md-hr" />
 <p class="d180-md-p"><img alt="https180days.subraatakumar.com.png"></p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="61-why-repository-now" class="d180-md-h2">6.1 Why Repository Now?</h2>
 <p class="d180-md-p">Encryption protects storage.</p>
 <p class="d180-md-p">But modules should never call Realm directly .</p>
@@ -910,7 +924,7 @@ f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRou
       </div>
     
 <p class="d180-md-p">This is the only place allowed to talk to Realm.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="62-what-repository-is-responsible-for" class="d180-md-h2">6.2 What Repository Is Responsible For</h2>
 <p class="d180-md-p">Repository handles:</p>
 <ul class="d180-md-ul">
@@ -927,9 +941,9 @@ f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRou
 <li class="d180-md-li">Coordinate multi-step workflows</li>
 </ul>
 <p class="d180-md-p">Those belong to Service (Day 7).</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="63-create-repository-file" class="d180-md-h2">6.3 Create Repository File</h2>
-<h3 id="-srcmodulesarchivearchiverepositoryts" class="d180-md-h3">📁 <code>src/modules/archive/archive.repository.ts</code></h3>
+<h3 id="-srcmodulesarchivearchiverepositoryts" class="d180-md-h3">📁 <code class="d180-md-inline-code">src/modules/archive/archive.repository.ts</code></h3>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
@@ -976,16 +990,16 @@ export class ArchiveRepository {
     
 <p class="d180-md-p">Notice:</p>
 <ul class="d180-md-ul">
-<li class="d180-md-li">Repository imports only <code>getRealm</code></li>
+<li class="d180-md-li">Repository imports only <code class="d180-md-inline-code">getRealm</code></li>
 <li class="d180-md-li">No business validation</li>
 <li class="d180-md-li">No UI references</li>
 <li class="d180-md-li">No ID generation</li>
 </ul>
 <p class="d180-md-p">Clean boundary.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="64-temporary-test-still-no-service" class="d180-md-h2">6.4 Temporary Test (Still No Service)</h2>
 <p class="d180-md-p">For testing only (temporary):</p>
-<p class="d180-md-p">Inside <code>App.tsx</code>, after initialization:</p>
+<p class="d180-md-p">Inside <code class="d180-md-inline-code">App.tsx</code>, after initialization:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
@@ -1050,7 +1064,7 @@ export default function App() {
 </ul>
 <p class="d180-md-p">After confirming → remove direct repository usage from App.</p>
 <p class="d180-md-p">Because UI must not depend on repository long term .</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="-what-you-should-see-in-console-first-run" class="d180-md-h1">🔍 What You Should See in Console (First Run)</h1>
 
       <div class="relative my-6 code-block">
@@ -1085,9 +1099,9 @@ Current Entries Count: 3
 <p class="d180-md-p">✔ Encryption does not block writes</p>
 <p class="d180-md-p">✔ Retrieval works</p>
 <p class="d180-md-p">✔ Realm persists data</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="-important-reminder" class="d180-md-h1">⚠ Important Reminder</h1>
-<p class="d180-md-p">This direct repository usage inside <code>App.tsx</code> is:</p>
+<p class="d180-md-p">This direct repository usage inside <code class="d180-md-inline-code">App.tsx</code> is:</p>
 <ul class="d180-md-ul">
 <li class="d180-md-li">Only for Day 6 testing.</li>
 <li class="d180-md-li">Not architecturally correct long-term.</li>
@@ -1105,11 +1119,11 @@ Current Entries Count: 3
 </code></pre>
       </div>
     
-<hr>
+<hr class="d180-md-hr" />
 <p class="d180-md-p">Now tell me:</p>
 <p class="d180-md-p">Does entry count increase on each reload?</p>
 <p class="d180-md-p">If yes → Repository layer stable. 🚀</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="65-what-this-achieves" class="d180-md-h2">6.5 What This Achieves</h2>
 <p class="d180-md-p">Now architecture looks like:</p>
 
@@ -1144,7 +1158,7 @@ Encrypted Realm
       </div>
     
 <p class="d180-md-p">We are building layers step-by-step.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="66-what-we-still-did-not-do" class="d180-md-h2">6.6 What We Still Did NOT Do</h2>
 <ul class="d180-md-ul">
 <li class="d180-md-li">No service layer</li>
@@ -1154,7 +1168,7 @@ Encrypted Realm
 <li class="d180-md-li">No search</li>
 </ul>
 <p class="d180-md-p">We are respecting boundaries.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="67-what-this-phase-clarifies" class="d180-md-h2">6.7 What This Phase Clarifies</h2>
 <p class="d180-md-p">Repository:</p>
 <ul class="d180-md-ul">
@@ -1167,23 +1181,23 @@ Encrypted Realm
 <p class="d180-md-p">Encryption protects data.</p>
 <p class="d180-md-p">Repository protects access.</p>
 <p class="d180-md-p">Both are infrastructure decisions.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="-day-6-outcome" class="d180-md-h1">🎯 Day 6 Outcome</h1>
 <p class="d180-md-p">Encrypted storage + structured data access.</p>
 <p class="d180-md-p">Now the system can persist entries safely.</p>
 <p class="d180-md-p">Tomorrow (Day 7):</p>
 <p class="d180-md-p">Service layer introduces business rules.</p>
 <p class="d180-md-p">Warehouse manager enters the system.</p>
-<hr>
+<hr class="d180-md-hr" />
 <p class="d180-md-p">If you’re ready, say:</p>
 <blockquote class="d180-md-blockquote">
 <p class="d180-md-p">Repository layer stable.</p>
 </blockquote>
 <p class="d180-md-p">And we move to Day 7 — Service implementation with real validation logic.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="-day-6-practical-exploration" class="d180-md-h2">🔧 Day 6 — Practical Exploration</h2>
 <p class="d180-md-p">If you’re building alongside this journey, here are a few things worth trying before moving to Day 7.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="1-verify-persistence-properly" class="d180-md-h3">1️⃣ Verify Persistence Properly</h3>
 <p class="d180-md-p">Restart the app multiple times.</p>
 <p class="d180-md-p">Observe:</p>
@@ -1199,9 +1213,9 @@ Encrypted Realm
 </ul>
 <p class="d180-md-p">You should still see the existing entries count increase with every new run.</p>
 <p class="d180-md-p">If data disappears, something is wrong in your Realm setup.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="2-break-the-encryption-intentionally" class="d180-md-h3">2️⃣ Break the Encryption Intentionally</h3>
-<p class="d180-md-p">Go to <code>realm.ts</code>.</p>
+<p class="d180-md-p">Go to <code class="d180-md-inline-code">realm.ts</code>.</p>
 <p class="d180-md-p">Temporarily replace:</p>
 
       <div class="relative my-6 code-block">
@@ -1229,19 +1243,19 @@ Encrypted Realm
 <p class="d180-md-p">That failure is good.</p>
 <p class="d180-md-p">It proves encryption is real.</p>
 <p class="d180-md-p">Revert the change after testing.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="3-add-a-manual-delete-test" class="d180-md-h3">3️⃣ Add a Manual Delete Test</h3>
-<p class="d180-md-p">Inside <code>App.tsx</code>, after fetching entries:</p>
+<p class="d180-md-p">Inside <code class="d180-md-inline-code">App.tsx</code>, after fetching entries:</p>
 <ul class="d180-md-ul">
 <li class="d180-md-li">Pick the first entry.</li>
-<li class="d180-md-li">Call <code>repo.delete(id)</code>.</li>
+<li class="d180-md-li">Call <code class="d180-md-inline-code">repo.delete(id)</code>.</li>
 <li class="d180-md-li">Log the count again.</li>
 </ul>
 <p class="d180-md-p">Observe how repository encapsulates database operations cleanly.</p>
 <p class="d180-md-p">You’ll start feeling the value of abstraction.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="4-try-calling-realm-directly-then-undo-it" class="d180-md-h3">4️⃣ Try Calling Realm Directly (Then Undo It)</h3>
-<p class="d180-md-p">Inside <code>App.tsx</code>, import Realm directly and create an entry.</p>
+<p class="d180-md-p">Inside <code class="d180-md-inline-code">App.tsx</code>, import Realm directly and create an entry.</p>
 <p class="d180-md-p">Notice:</p>
 <ul class="d180-md-ul">
 <li class="d180-md-li">How messy it feels.</li>
@@ -1250,9 +1264,9 @@ Encrypted Realm
 </ul>
 <p class="d180-md-p">Delete that code immediately after observing.</p>
 <p class="d180-md-p">This exercise makes boundaries real.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="5-add-a-console-log-inside-repository" class="d180-md-h3">5️⃣ Add a Console Log Inside Repository</h3>
-<p class="d180-md-p">Inside <code>archive.repository.ts</code>, add:</p>
+<p class="d180-md-p">Inside <code class="d180-md-inline-code">archive.repository.ts</code>, add:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
@@ -1269,7 +1283,7 @@ Encrypted Realm
 <p class="d180-md-p">Tomorrow:</p>
 <p class="d180-md-p">UI → Service → Repository → Realm</p>
 <p class="d180-md-p">Layering becomes visible.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="-what-this-phase-is-really-about" class="d180-md-h2">🧠 What This Phase Is Really About</h2>
 <p class="d180-md-p">This isn’t about CRUD.</p>
 <p class="d180-md-p">It’s about discipline.</p>
@@ -1278,7 +1292,7 @@ Encrypted Realm
 <p class="d180-md-p">It doesn’t validate input.</p>
 <p class="d180-md-p">It only handles structured data access.</p>
 <p class="d180-md-p">And that separation is what protects the system long-term .</p>
-<hr>
+<hr class="d180-md-hr" />
 <p class="d180-md-p">When you’re done exploring, say:</p>
 <blockquote class="d180-md-blockquote">
 <p class="d180-md-p">Repository layer stable.</p>
@@ -1286,13 +1300,13 @@ Encrypted Realm
 <p class="d180-md-p">Then Day 7 begins.</p>
 <p class="d180-md-p">Service layer enters.</p>
 <p class="d180-md-p">Warehouse manager takes control. 🚀</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="-further-reading-x26-references-day-6" class="d180-md-h2">📚 Further Reading &#x26; References (Day 6)</h2>
 <p class="d180-md-p">If you’re exploring deeper or want to understand the foundations behind today’s implementation, these are useful official resources:</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-realm-database-react-native" class="d180-md-h3">🔐 Realm Database (React Native)</h3>
 <p class="d180-md-p">Official Realm React Native Documentation:</p>
-<p class="d180-md-p">https://www.mongodb.com/docs/realm/sdk/react-native/</p>
+<p class="d180-md-p"><a href="https://www.mongodb.com/docs/realm/sdk/react-native/" class="d180-md-link">https://www.mongodb.com/docs/realm/sdk/react-native/</a></p>
 <p class="d180-md-p">Useful sections to review:</p>
 <ul class="d180-md-ul">
 <li class="d180-md-li">Opening a Realm</li>
@@ -1302,35 +1316,35 @@ Encrypted Realm
 <li class="d180-md-li">Primary keys</li>
 </ul>
 <p class="d180-md-p">Understanding Realm objects and live results will help when we build the timeline screen later.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-repository-pattern-conceptual-understanding" class="d180-md-h3">🧱 Repository Pattern (Conceptual Understanding)</h3>
 <p class="d180-md-p">A clear conceptual explanation:</p>
-<p class="d180-md-p">https://martinfowler.com/eaaCatalog/repository.html</p>
+<p class="d180-md-p"><a href="https://martinfowler.com/eaaCatalog/repository.html" class="d180-md-link">https://martinfowler.com/eaaCatalog/repository.html</a></p>
 <p class="d180-md-p">This explains why we isolate data access behind a repository layer and how it prevents storage leakage into business logic.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-uuid-in-javascript" class="d180-md-h3">🆔 UUID in JavaScript</h3>
 <p class="d180-md-p">If you’re using UUID for entry IDs:</p>
-<p class="d180-md-p">https://www.npmjs.com/package/uuid</p>
+<p class="d180-md-p"><a href="https://www.npmjs.com/package/uuid" class="d180-md-link">https://www.npmjs.com/package/uuid</a></p>
 <p class="d180-md-p">Understand:</p>
 <ul class="d180-md-ul">
 <li class="d180-md-li">Why UUID v4 is random</li>
 <li class="d180-md-li">Why IDs should be generated in service layer (not repository)</li>
 <li class="d180-md-li">Difference between identity and encryption</li>
 </ul>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-react-native-secure-storage-keychain-keystore" class="d180-md-h3">🔒 React Native Secure Storage (Keychain / Keystore)</h3>
 <p class="d180-md-p">We used secure storage for encryption key management:</p>
-<p class="d180-md-p">https://github.com/oblador/react-native-keychain</p>
+<p class="d180-md-p"><a href="https://github.com/oblador/react-native-keychain" class="d180-md-link">https://github.com/oblador/react-native-keychain</a></p>
 <p class="d180-md-p">Important sections:</p>
 <ul class="d180-md-ul">
 <li class="d180-md-li">setGenericPassword</li>
 <li class="d180-md-li">getGenericPassword</li>
 <li class="d180-md-li">Android vs iOS differences</li>
 </ul>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-clean-architecture-high-level-overview" class="d180-md-h3">🧠 Clean Architecture (High-Level Overview)</h3>
 <p class="d180-md-p">If you want a broader understanding of layering philosophy:</p>
-<p class="d180-md-p">https://blog.cleancoder.com/</p>
+<p class="d180-md-p"><a href="https://blog.cleancoder.com/" class="d180-md-link">https://blog.cleancoder.com/</a></p>
 <p class="d180-md-p">This helps connect:</p>
 <ul class="d180-md-ul">
 <li class="d180-md-li">Repository</li>
@@ -1339,7 +1353,7 @@ Encrypted Realm
 <li class="d180-md-li">Infrastructure</li>
 </ul>
 <p class="d180-md-p">to larger system design thinking.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="-important-context" class="d180-md-h2">📌 Important Context</h2>
 <p class="d180-md-p">Everything we’re building aligns with:</p>
 <ul class="d180-md-ul">
@@ -1348,7 +1362,7 @@ Encrypted Realm
 </ul>
 <p class="d180-md-p">We are not building a CRUD demo.</p>
 <p class="d180-md-p">We are building a privacy-first system with intentional structure.</p>
-<hr>
+<hr class="d180-md-hr" />
 1b:["$","main",null,{"className":"d180-content-wrap","style":{"paddingTop":36},"children":["$","div",null,{"className":"flex-1","children":[["$","article",null,{"className":"d180-post-content","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$1d"}}],"$L1e"]}],"$L1f","$L20"]}]}]
 1c:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"mainEntityOfPage\":\"https://subraatakumar.com/180days/day-6\",\"headline\":\"Day 6 : Repository Layer Comes to Life\",\"datePublished\":\"2026-02-25\",\"description\":\"Implementing an ArchiveRepository to safely abstract encrypted Realm access — enabling persistent, privacy-first local storage while keeping UI and business logic decoupled from storage details.\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\"}}"}}]
 21:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]

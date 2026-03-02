@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
 a:I[68027,[],"default"]
-:HL["/_next/static/chunks/cc821bed03f9ddd8.css","style"]
+:HL["/_next/static/chunks/116c86ebb776b851.css","style"]
 :HL["https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","style"]
 2:T19f5,
           * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -221,7 +221,7 @@ a:I[68027,[],"default"]
             .sk-nav-mobile { display: block; }
             .sk-page-heading { font-size: 2.2rem; }
           }
-        0:{"P":null,"b":"Wwd4qPeH1W3u2GGoyQtaW","c":["","180days","day-5",""],"q":"","i":false,"f":[[["",{"children":["180days",{"children":[["slug","day-5","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/cc821bed03f9ddd8.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+        0:{"P":null,"b":"NQgK-Z7PvI4g98Ly7DiFn","c":["","180days","day-5",""],"q":"","i":false,"f":[[["",{"children":["180days",{"children":[["slug","day-5","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/116c86ebb776b851.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
 b:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
 c:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
 d:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
@@ -577,7 +577,7 @@ e:T267d,
 8:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
 9:["$","$1","h",{"children":[null,["$","$L14",null,{"children":"$L15"}],["$","div",null,{"hidden":true,"children":["$","$L16",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L17"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
 f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"className":"d180-footer","children":["$","div",null,{"className":"d180-footer-inner","children":[["$","p",null,{"className":"d180-footer-copy","children":"Subrata Kumar Das • 180 Days Mentoring Journey"}],["$","$Lb",null,{"href":"/","className":"d180-footer-home","children":"Main Home"}]]}]}]]}]
-18:T208a,
+18:T225e,
         #days180-root .d180-article-page {
           min-height: 100vh;
           background: #fff;
@@ -742,6 +742,20 @@ f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRou
           font-style: italic;
           color: #334155;
         }
+        #days180-root .d180-md-inline-code {
+          background: #f1f5f9;
+          color: #c2410c;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+          font-size: 0.9em;
+          padding: 3px 6px;
+          border-radius: 6px;
+        }
+        #days180-root .d180-md-hr {
+          border: 0;
+          height: 1px;
+          background: #e2e8f0;
+          margin: 48px 0;
+        }
         #days180-root .d180-md-link {
           color: #d97706;
           text-decoration: none;
@@ -867,7 +881,7 @@ f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRou
       10:["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$18"}],"$L19","$L1a","$L1b","$L1c"]}]
 19:["$","header",null,{"className":"d180-article-header","children":["$","div",null,{"className":"d180-article-header-inner","children":[["$","div",null,{"className":"flex items-center gap-3 shrink-0","children":[["$","$Lb",null,{"href":"/","aria-label":"Go to main home page","className":"w-8 h-8 bg-amber-400 rounded-lg flex items-center justify-center text-slate-900 shadow-lg shadow-amber-400/20","children":["$","span",null,{"className":"font-black text-sm","children":"SK"}]}],["$","nav",null,{"className":"hidden md:flex items-center gap-3","children":[["$","$Lb",null,{"href":"/180days","className":"d180-crumb","children":[["$","span",null,{"className":"d180-crumb-series","children":"180 Days"}]," ",["$","span",null,{"children":"/"}]," ",["$","strong",null,{"children":["Day ","5"]}]]}],["$","div",null,{"className":"d180-pill","children":[["$","div",null,{"className":"d180-pill-track","children":["$","div",null,{"className":"d180-pill-fill","style":{"width":"3%"}}]}],["$","b",null,{"children":[3,"%"]}]]}]]}]]}],["$","div",null,{"className":"flex items-center gap-4","children":["$","$Lb",null,{"href":"/180days","className":"d180-crumb","children":"← All Days"}]}]]}]}]
 1a:["$","div",null,{"className":"d180-hero","children":["$","div",null,{"className":"d180-hero-inner d180-content-wrap","style":{"paddingTop":56,"paddingBottom":56},"children":[["$","h1",null,{"style":{"maxWidth":820},"children":"Day 5 : Encrypted Realm Initialization (Core + Data Layer Only)"}],["$","p",null,{"style":{"marginTop":14,"maxWidth":760},"children":"Set up encrypted Realm with secure key management and schema definitions to ensure privacy-first local storage for the app's core data layer."}],["$","div",null,{"className":"d180-meta-line","children":[["$","span",null,{"children":"2026-02-24"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#d97706"},"children":"Subrata Kumar Das"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#15803d","fontSize":11,"fontWeight":800,"textTransform":"uppercase","letterSpacing":".08em"},"children":"Complete"}]]}],["$","p",null,{"style":{"marginTop":16,"maxWidth":500,"fontSize":13,"lineHeight":1.7,"color":"#92400e","borderLeft":"2px solid #fcd34d","paddingLeft":10,"fontStyle":"italic"},"children":"\"Consistent small steps lead to massive long-term results. Keep pushing.\""}]]}]}]
-1d:T843e,<p class="d180-md-p"><img src="/images/day5_system_design.jpg" class="rounded-md shadow-sm mx-auto block" alt="https180days.subraatakumar.com.png"></p>
+1d:T8970,<p class="d180-md-p"><img src="/images/day5_system_design.jpg" class="rounded-md shadow-sm mx-auto block" alt="https180days.subraatakumar.com.png"></p>
 <h2 id="51-introduction" class="d180-md-h2">5.1 Introduction</h2>
 <p class="d180-md-p">In the previous session, we prepared the foundation:</p>
 <ul class="d180-md-ul">
@@ -882,7 +896,7 @@ f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRou
 <p class="d180-md-p">We are not implementing business rules.</p>
 <p class="d180-md-p">We are not building features.</p>
 <p class="d180-md-p">Today is strictly about the <strong>Core Layer</strong> and the <strong>Data Layer</strong> .</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="52-why-encryption-from-day-one" class="d180-md-h2">5.2 Why Encryption From Day One?</h2>
 <p class="d180-md-p">From the product definition , this application is:</p>
 <blockquote class="d180-md-blockquote">
@@ -897,7 +911,7 @@ f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRou
 <li class="d180-md-li">We compromise architectural integrity.</li>
 </ul>
 <p class="d180-md-p">Therefore, encryption is implemented before any feature logic.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="53-todays-scope" class="d180-md-h2">5.3 Today’s Scope</h2>
 <p class="d180-md-p">We will implement:</p>
 <ol class="d180-md-ol">
@@ -906,7 +920,7 @@ f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRou
 <li class="d180-md-li">Secure encryption key generation</li>
 <li class="d180-md-li">Secure key storage (Keychain / Keystore)</li>
 <li class="d180-md-li">Encrypted Realm configuration</li>
-<li class="d180-md-li">Centralized initialization inside <code>core/storage/</code></li>
+<li class="d180-md-li">Centralized initialization inside <code class="d180-md-inline-code">core/storage/</code></li>
 </ol>
 <p class="d180-md-p">We will NOT:</p>
 <ul class="d180-md-ul">
@@ -914,7 +928,7 @@ f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRou
 <li class="d180-md-li">Build service logic</li>
 <li class="d180-md-li">Build UI features</li>
 </ul>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="54-install-realm" class="d180-md-h2">5.4 Install Realm</h2>
 <p class="d180-md-p">Run:</p>
 
@@ -939,7 +953,7 @@ f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRou
       </div>
     
 <p class="d180-md-p">Ensure the app still builds successfully.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="55-define-realm-schema" class="d180-md-h2">5.5 Define Realm Schema</h2>
 <p class="d180-md-p">Inside:</p>
 
@@ -976,7 +990,7 @@ f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRou
 <p class="d180-md-p">No validation here.</p>
 <p class="d180-md-p">No business rules here.</p>
 <p class="d180-md-p">Schema belongs to Data Layer only.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="56-encryption-key-generation" class="d180-md-h2">5.6 Encryption Key Generation</h2>
 <p class="d180-md-p">Inside:</p>
 
@@ -1012,7 +1026,7 @@ export function generateEncryptionKey(): Uint8Array {
       </div>
     
 <p class="d180-md-p">This key must never be hardcoded.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="57-secure-key-storage" class="d180-md-h2">5.7 Secure Key Storage</h2>
 <p class="d180-md-p">Inside:</p>
 
@@ -1046,7 +1060,7 @@ export function generateEncryptionKey(): Uint8Array {
 <li class="d180-md-li">Never store encryption key in AsyncStorage.</li>
 <li class="d180-md-li">Never log key in production.</li>
 </ul>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="58-encrypted-realm-initialization" class="d180-md-h2">5.8 Encrypted Realm Initialization</h2>
 <p class="d180-md-p">Inside:</p>
 
@@ -1085,11 +1099,11 @@ export function generateEncryptionKey(): Uint8Array {
       </div>
     
 <p class="d180-md-p">This ensures the database is encrypted from day one.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="59-test-initialization" class="d180-md-h2">5.9 Test Initialization</h2>
-<p class="d180-md-p">Temporarily inside <code>App.tsx</code>:</p>
+<p class="d180-md-p">Temporarily inside <code class="d180-md-inline-code">App.tsx</code>:</p>
 <ul class="d180-md-ul">
-<li class="d180-md-li">Call initialization function inside <code>useEffect</code></li>
+<li class="d180-md-li">Call initialization function inside <code class="d180-md-inline-code">useEffect</code></li>
 <li class="d180-md-li">Log success message</li>
 </ul>
 <p class="d180-md-p">You are not creating entries yet.</p>
@@ -1100,7 +1114,7 @@ export function generateEncryptionKey(): Uint8Array {
 <li class="d180-md-li">App restarts without crashing</li>
 </ul>
 <p class="d180-md-p">If it crashes after restart, your key handling is incorrect.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="510-architectural-discipline" class="d180-md-h2">5.10 Architectural Discipline</h2>
 <p class="d180-md-p">Notice what we did NOT do:</p>
 <ul class="d180-md-ul">
@@ -1113,7 +1127,7 @@ export function generateEncryptionKey(): Uint8Array {
 <p class="d180-md-p">Core → Security</p>
 <p class="d180-md-p">Data → Storage</p>
 <p class="d180-md-p">Nothing else.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="511-what-this-phase-clarifies" class="d180-md-h2">5.11 What This Phase Clarifies</h2>
 <p class="d180-md-p">By the end of Day 5, the architecture becomes more concrete:</p>
 <ul class="d180-md-ul">
@@ -1127,7 +1141,7 @@ export function generateEncryptionKey(): Uint8Array {
 <p class="d180-md-p">Encryption protects stored data.</p>
 <p class="d180-md-p">Business rules govern how data is used.</p>
 <p class="d180-md-p">Today was about protecting data at rest — not about feature implementation.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="512-complete-minimal-production-ready-files-for-day-5" class="d180-md-h2"><strong>5.12 complete minimal production-ready files</strong> for Day 5.</h2>
 <p class="d180-md-p">These strictly implement:</p>
 <ul class="d180-md-ul">
@@ -1140,8 +1154,8 @@ export function generateEncryptionKey(): Uint8Array {
 <p class="d180-md-p">No service.</p>
 <p class="d180-md-p">No UI logic.</p>
 <p class="d180-md-p">Only Core + Data layer.</p>
-<hr>
-<h1 id="-1-srccorestoragerealmschemasts" class="d180-md-h1">📁 1️⃣ <code>src/core/storage/realmSchemas.ts</code></h1>
+<hr class="d180-md-hr" />
+<h1 id="-1-srccorestoragerealmschemasts" class="d180-md-h1">📁 1️⃣ <code class="d180-md-inline-code">src/core/storage/realmSchemas.ts</code></h1>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
@@ -1165,8 +1179,8 @@ export const schemas = [EntrySchema];
 </code></pre>
       </div>
     
-<hr>
-<h1 id="-2-srccoresecurityencryptionkeyts" class="d180-md-h1">📁 2️⃣ <code>src/core/security/encryptionKey.ts</code></h1>
+<hr class="d180-md-hr" />
+<h1 id="-2-srccoresecurityencryptionkeyts" class="d180-md-h1">📁 2️⃣ <code class="d180-md-inline-code">src/core/security/encryptionKey.ts</code></h1>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
@@ -1196,9 +1210,9 @@ export function generateEncryptionKey(): Uint8Array {
 </code></pre>
       </div>
     
-<hr>
-<h1 id="-3-srccoresecuritysecurestoragets" class="d180-md-h1">📁 3️⃣ <code>src/core/security/secureStorage.ts</code></h1>
-<p class="d180-md-p">Using <code>react-native-keychain</code>.</p>
+<hr class="d180-md-hr" />
+<h1 id="-3-srccoresecuritysecurestoragets" class="d180-md-h1">📁 3️⃣ <code class="d180-md-inline-code">src/core/security/secureStorage.ts</code></h1>
+<p class="d180-md-p">Using <code class="d180-md-inline-code">react-native-keychain</code>.</p>
 <p class="d180-md-p">Install:</p>
 
       <div class="relative my-6 code-block">
@@ -1249,8 +1263,8 @@ export async function getEncryptionKey(): Promise&#x3C;Uint8Array | null> {
 </code></pre>
       </div>
     
-<hr>
-<h1 id="-4-srccorestoragerealmts" class="d180-md-h1">📁 4️⃣ <code>src/core/storage/realm.ts</code></h1>
+<hr class="d180-md-hr" />
+<h1 id="-4-srccorestoragerealmts" class="d180-md-h1">📁 4️⃣ <code class="d180-md-inline-code">src/core/storage/realm.ts</code></h1>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
@@ -1296,8 +1310,8 @@ export function getRealm(): Realm {
 </code></pre>
       </div>
     
-<hr>
-<h1 id="-5-temporary-apptsx-test-initialization" class="d180-md-h1">📁 5️⃣ Temporary <code>App.tsx</code> Test Initialization</h1>
+<hr class="d180-md-hr" />
+<h1 id="-5-temporary-apptsx-test-initialization" class="d180-md-h1">📁 5️⃣ Temporary <code class="d180-md-inline-code">App.tsx</code> Test Initialization</h1>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
@@ -1336,7 +1350,7 @@ export default function App() {
 </code></pre>
       </div>
     
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="-what-this-achieves" class="d180-md-h1">🔐 What This Achieves</h1>
 <p class="d180-md-p">When the app runs:</p>
 <ol class="d180-md-ol">
@@ -1347,7 +1361,7 @@ export default function App() {
 <li class="d180-md-li">Persists the same key across app restarts.</li>
 </ol>
 <p class="d180-md-p">Database is encrypted from first launch.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="-important-notes" class="d180-md-h1">⚠ Important Notes</h1>
 <h3 id="for-ios" class="d180-md-h3">For iOS</h3>
 <p class="d180-md-p">After installing keychain:</p>
@@ -1364,22 +1378,22 @@ cd ..
       </div>
     
 <h3 id="for-android" class="d180-md-h3">For Android</h3>
-<p class="d180-md-p">Ensure <code>minSdkVersion</code> ≥ 23 (recommended for secure keystore usage).</p>
-<hr>
+<p class="d180-md-p">Ensure <code class="d180-md-inline-code">minSdkVersion</code> ≥ 23 (recommended for secure keystore usage).</p>
+<hr class="d180-md-hr" />
 <h1 id="-architecture-integrity" class="d180-md-h1">🧠 Architecture Integrity</h1>
 <p class="d180-md-p">Notice:</p>
 <ul class="d180-md-ul">
-<li class="d180-md-li">Encryption logic → <code>core/security</code></li>
-<li class="d180-md-li">Storage config → <code>core/storage</code></li>
+<li class="d180-md-li">Encryption logic → <code class="d180-md-inline-code">core/security</code></li>
+<li class="d180-md-li">Storage config → <code class="d180-md-inline-code">core/storage</code></li>
 <li class="d180-md-li">No module touched</li>
 <li class="d180-md-li">No UI business logic</li>
 <li class="d180-md-li">No repository yet</li>
 </ul>
 <p class="d180-md-p">This keeps boundaries intact exactly as defined in your blueprint.</p>
-<hr>
-<hr>
+<hr class="d180-md-hr" />
+<hr class="d180-md-hr" />
 <p class="d180-md-p"><img src="/images/day5_2.png" class="rounded-md shadow-sm mx-auto block" alt="image.png"></p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="todays-takeaway-on-vibe-coding" class="d180-md-h2">Today’s Takeaway on Vibe Coding</h2>
 <p class="d180-md-p">Today I hit a small but important moment while implementing encrypted Realm.</p>
 <p class="d180-md-p">React Native threw this error:</p>
@@ -1403,7 +1417,7 @@ cd ..
 <p class="d180-md-p">Encryption is infrastructure. Infrastructure should not depend on outdated libraries.</p>
 <p class="d180-md-p">So I questioned the solution. Asked again. Explored alternatives. Found a modern, actively maintained React Native–specific package. Switched.</p>
 <p class="d180-md-p">It worked.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="what-vibe-coding-should-actually-mean" class="d180-md-h3">What Vibe Coding Should Actually Mean</h3>
 <p class="d180-md-p">Vibe coding is not blindly pasting AI-generated code.</p>
 <p class="d180-md-p">It’s:</p>
@@ -1419,7 +1433,7 @@ cd ..
 <p class="d180-md-p">Don’t blindly follow AI.</p>
 <p class="d180-md-p">Evolve with AI.</p>
 <p class="d180-md-p">That’s today’s real takeaway.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="-professional-rule" class="d180-md-h1">🧠 Professional Rule</h1>
 <p class="d180-md-p">For encryption infrastructure:</p>
 <p class="d180-md-p">Never use:</p>
@@ -1434,11 +1448,11 @@ cd ..
 <li class="d180-md-li">Maintained</li>
 <li class="d180-md-li">Binary-aware libraries</li>
 </ul>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="common-errors-and-fixes" class="d180-md-h2">Common errors and fixes:</h2>
 <p class="d180-md-p">Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.</p>
 <h3 id="-fix-it-step-by-step-do-exactly-this" class="d180-md-h3">🚀 Fix It Step-by-Step (Do Exactly This)</h3>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="-1-stop-everything" class="d180-md-h2">✅ 1️⃣ Stop Everything</h2>
 <p class="d180-md-p">Stop Metro:</p>
 
@@ -1462,7 +1476,7 @@ cd ..
 </code></pre>
       </div>
     
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="-2-delete-gradle-caches-most-important" class="d180-md-h2">✅ 2️⃣ Delete Gradle Caches (Most Important)</h2>
 <p class="d180-md-p">Run:</p>
 
@@ -1490,7 +1504,7 @@ cd ..
 </code></pre>
       </div>
     
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="-3-clear-node-modules" class="d180-md-h2">✅ 3️⃣ Clear Node Modules</h2>
 
       <div class="relative my-6 code-block">
@@ -1504,7 +1518,7 @@ npm install
 </code></pre>
       </div>
     
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="-5-run-again" class="d180-md-h2">✅ 5️⃣ Run Again</h2>
 <p class="d180-md-p">Start Metro:</p>
 
@@ -1528,9 +1542,9 @@ npm install
 </code></pre>
       </div>
     
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="-day-5-encryption-verification-checklist" class="d180-md-h1">🔐 Day 5 — Encryption Verification Checklist</h1>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-1-app-launch-test" class="d180-md-h3">✅ 1️⃣ App Launch Test</h3>
 <p class="d180-md-p"><strong>Expected behavior:</strong></p>
 <ul class="d180-md-ul">
@@ -1539,16 +1553,16 @@ npm install
 </li>
 <li class="d180-md-li">
 <p class="d180-md-p">Console logs:</p>
-<p class="d180-md-p"><code>Encrypted Realm initialized successfully</code></p>
+<p class="d180-md-p"><code class="d180-md-inline-code">Encrypted Realm initialized successfully</code></p>
 </li>
 </ul>
 <p class="d180-md-p">If the app crashes on first launch:</p>
 <ul class="d180-md-ul">
 <li class="d180-md-li">Check if encryption key generation failed.</li>
 <li class="d180-md-li">Check if secure storage permission errors occurred.</li>
-<li class="d180-md-li">Ensure <code>react-native-get-random-values</code> is properly installed.</li>
+<li class="d180-md-li">Ensure <code class="d180-md-inline-code">react-native-get-random-values</code> is properly installed.</li>
 </ul>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-2-restart-persistence-test-most-important" class="d180-md-h3">✅ 2️⃣ Restart Persistence Test (Most Important)</h3>
 <p class="d180-md-p">Steps:</p>
 <ol class="d180-md-ol">
@@ -1569,9 +1583,9 @@ npm install
 <li class="d180-md-li">Key retrieved with wrong encoding.</li>
 </ul>
 <p class="d180-md-p">Encryption only works if the same key is reused.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-3-force-failure-test-proves-encryption-is-real" class="d180-md-h3">✅ 3️⃣ Force Failure Test (Proves Encryption Is Real)</h3>
-<p class="d180-md-p">Temporarily modify <code>realm.ts</code>:</p>
+<p class="d180-md-p">Temporarily modify <code class="d180-md-inline-code">realm.ts</code>:</p>
 <p class="d180-md-p">Replace:</p>
 
       <div class="relative my-6 code-block">
@@ -1608,7 +1622,7 @@ npm install
 <p class="d180-md-p">✔ Realm is actually encrypted</p>
 <p class="d180-md-p">✔ It cannot open without the correct key</p>
 <p class="d180-md-p">After testing, revert the change.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-4-delete-app-test" class="d180-md-h3">✅ 4️⃣ Delete App Test</h3>
 <p class="d180-md-p">Uninstall the app from device.</p>
 <p class="d180-md-p">Reinstall and run again.</p>
@@ -1619,7 +1633,7 @@ npm install
 <li class="d180-md-li">No crash.</li>
 </ul>
 <p class="d180-md-p">Because Keychain entry is removed when app is deleted.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-5-verify-no-plaintext-database" class="d180-md-h3">✅ 5️⃣ Verify No Plaintext Database</h3>
 <p class="d180-md-p">On Android:</p>
 <p class="d180-md-p">Navigate to:</p>
@@ -1642,15 +1656,15 @@ npm install
 </ul>
 <p class="d180-md-p">If you see readable text:</p>
 <p class="d180-md-p">🚨 Encryption is not applied.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-6-ensure-key-is-never-logged-in-production" class="d180-md-h3">✅ 6️⃣ Ensure Key Is Never Logged in Production</h3>
 <p class="d180-md-p">Search your codebase:</p>
 <ul class="d180-md-ul">
 <li class="d180-md-li">Ensure encryption key is never console.logged.</li>
 <li class="d180-md-li">Ensure no debug statements expose it.</li>
 </ul>
-<p class="d180-md-p">You may log it temporarily in <code>__DEV__</code>, but remove before production.</p>
-<hr>
+<p class="d180-md-p">You may log it temporarily in <code class="d180-md-inline-code">__DEV__</code>, but remove before production.</p>
+<hr class="d180-md-hr" />
 <h3 id="-7-confirm-realm-file-exists" class="d180-md-h3">✅ 7️⃣ Confirm Realm File Exists</h3>
 <p class="d180-md-p">Add temporary log:</p>
 
@@ -1669,14 +1683,14 @@ npm install
 <li class="d180-md-li">Database file size increases after adding data (later).</li>
 </ul>
 <p class="d180-md-p">This confirms actual storage location.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="-common-mistakes" class="d180-md-h1">🚨 Common Mistakes</h1>
 <p class="d180-md-p">❌ Using AsyncStorage for encryption key</p>
 <p class="d180-md-p">❌ Generating a new key every launch</p>
 <p class="d180-md-p">❌ Storing key without base64 encoding</p>
 <p class="d180-md-p">❌ Forgetting to pod install (iOS)</p>
 <p class="d180-md-p">❌ Using incorrect key length (must be 64 bytes)</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="-final-confirmation-logic" class="d180-md-h1">🧠 Final Confirmation Logic</h1>
 <p class="d180-md-p">If all these are true:</p>
 <ul class="d180-md-ul">
@@ -1689,13 +1703,13 @@ npm install
 <p class="d180-md-p">✔ Encryption is correctly implemented</p>
 <p class="d180-md-p">✔ Key management is stable</p>
 <p class="d180-md-p">✔ Core layer is functioning</p>
-<hr>
+<hr class="d180-md-hr" />
 <p class="d180-md-p">This checklist converts encryption from theory → verified infrastructure.</p>
-<hr>
+<hr class="d180-md-hr" />
 <p class="d180-md-p">Next:</p>
 <h3 id="day-6-repository-layer-implementation" class="d180-md-h3">Day 6 — Repository Layer Implementation</h3>
 <p class="d180-md-p">(Warehouse clerk comes to life in code.)</p>
-<hr>
+<hr class="d180-md-hr" />
 1b:["$","main",null,{"className":"d180-content-wrap","style":{"paddingTop":36},"children":["$","div",null,{"className":"flex-1","children":[["$","article",null,{"className":"d180-post-content","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$1d"}}],"$L1e"]}],"$L1f","$L20"]}]}]
 1c:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"mainEntityOfPage\":\"https://subraatakumar.com/180days/day-5\",\"headline\":\"Day 5 : Encrypted Realm Initialization (Core + Data Layer Only)\",\"datePublished\":\"2026-02-24\",\"description\":\"Set up encrypted Realm with secure key management and schema definitions to ensure privacy-first local storage for the app's core data layer.\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\"}}"}}]
 21:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]

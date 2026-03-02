@@ -3,7 +3,7 @@
 e:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
 f:"$Sreact.suspense"
 11:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]
-2:T208a,
+2:T225e,
         #days180-root .d180-article-page {
           min-height: 100vh;
           background: #fff;
@@ -168,6 +168,20 @@ f:"$Sreact.suspense"
           font-style: italic;
           color: #334155;
         }
+        #days180-root .d180-md-inline-code {
+          background: #f1f5f9;
+          color: #c2410c;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+          font-size: 0.9em;
+          padding: 3px 6px;
+          border-radius: 6px;
+        }
+        #days180-root .d180-md-hr {
+          border: 0;
+          height: 1px;
+          background: #e2e8f0;
+          margin: 48px 0;
+        }
         #days180-root .d180-md-link {
           color: #d97706;
           text-decoration: none;
@@ -290,10 +304,10 @@ f:"$Sreact.suspense"
             display: none;
           }
         }
-      0:{"buildId":"Wwd4qPeH1W3u2GGoyQtaW","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5","$L6"]}],["$L7"],"$L8"]}],"loading":null,"isPartial":false}
+      0:{"buildId":"NQgK-Z7PvI4g98Ly7DiFn","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5","$L6"]}],["$L7"],"$L8"]}],"loading":null,"isPartial":false}
 3:["$","header",null,{"className":"d180-article-header","children":["$","div",null,{"className":"d180-article-header-inner","children":[["$","div",null,{"className":"flex items-center gap-3 shrink-0","children":[["$","$L9",null,{"href":"/","aria-label":"Go to main home page","className":"w-8 h-8 bg-amber-400 rounded-lg flex items-center justify-center text-slate-900 shadow-lg shadow-amber-400/20","children":["$","span",null,{"className":"font-black text-sm","children":"SK"}]}],["$","nav",null,{"className":"hidden md:flex items-center gap-3","children":[["$","$L9",null,{"href":"/180days","className":"d180-crumb","children":[["$","span",null,{"className":"d180-crumb-series","children":"180 Days"}]," ",["$","span",null,{"children":"/"}]," ",["$","strong",null,{"children":["Day ","7"]}]]}],["$","div",null,{"className":"d180-pill","children":[["$","div",null,{"className":"d180-pill-track","children":["$","div",null,{"className":"d180-pill-fill","style":{"width":"4%"}}]}],["$","b",null,{"children":[4,"%"]}]]}]]}]]}],["$","div",null,{"className":"flex items-center gap-4","children":["$","$L9",null,{"href":"/180days","className":"d180-crumb","children":"← All Days"}]}]]}]}]
 4:["$","div",null,{"className":"d180-hero","children":["$","div",null,{"className":"d180-hero-inner d180-content-wrap","style":{"paddingTop":56,"paddingBottom":56},"children":[["$","h1",null,{"style":{"maxWidth":820},"children":"Day 7 : Service Layer Introduced"}],["$","p",null,{"style":{"marginTop":14,"maxWidth":760},"children":"Session 1 of a 180-day mentoring journey: introducing the Service Layer to isolate business logic, validation, and ID generation — keeping UI and repository clean."}],["$","div",null,{"className":"d180-meta-line","children":[["$","span",null,{"children":"2026-02-26"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#d97706"},"children":"Subrata Kumar Das"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#15803d","fontSize":11,"fontWeight":800,"textTransform":"uppercase","letterSpacing":".08em"},"children":"Complete"}]]}],["$","p",null,{"style":{"marginTop":16,"maxWidth":500,"fontSize":13,"lineHeight":1.7,"color":"#92400e","borderLeft":"2px solid #fcd34d","paddingLeft":10,"fontStyle":"italic"},"children":"\"Consistent small steps lead to massive long-term results. Keep pushing.\""}]]}]}]
-a:T4618,<p class="d180-md-p">This is Session 1 of a 180-day mentoring journey building a real mobile app destined for app stores.</p>
+a:T4a63,<p class="d180-md-p">This is Session 1 of a 180-day mentoring journey building a real mobile app destined for app stores.</p>
 <p class="d180-md-p">Day 4 → Foundation</p>
 <p class="d180-md-p">Day 5 → Encryption</p>
 <p class="d180-md-p">Day 6 → Repository (Warehouse Clerk)</p>
@@ -317,7 +331,7 @@ Encrypted Realm
 <p class="d180-md-p">Clean. Stable. Structured.</p>
 <p class="d180-md-p">But incomplete.</p>
 <p class="d180-md-p">Because something was missing.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="-the-problem-without-service-layer" class="d180-md-h1">🏭 The Problem Without Service Layer</h1>
 <p class="d180-md-p">Right now:</p>
 <ul class="d180-md-ul">
@@ -332,7 +346,7 @@ Encrypted Realm
 <p class="d180-md-p">Services contain business logic.</p>
 </blockquote>
 <p class="d180-md-p">So today, we fix that.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="-what-service-layer-does" class="d180-md-h1">🧠 What Service Layer Does</h1>
 <p class="d180-md-p">If Repository is the <strong>warehouse clerk</strong>,</p>
 <p class="d180-md-p">Service is the <strong>warehouse manager</strong>.</p>
@@ -346,9 +360,9 @@ Encrypted Realm
 </ul>
 <p class="d180-md-p">Repository only executes.</p>
 <p class="d180-md-p">Service decides.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="-day-7-implementation" class="d180-md-h1">📁 Day 7 Implementation</h1>
-<h3 id="srcmodulesarchivearchiveservicets" class="d180-md-h3"><code>src/modules/archive/archive.service.ts</code></h3>
+<h3 id="srcmodulesarchivearchiveservicets" class="d180-md-h3"><code class="d180-md-inline-code">src/modules/archive/archive.service.ts</code></h3>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
@@ -392,7 +406,7 @@ export class ArchiveService {
 </code></pre>
       </div>
     
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="-updated-flow-correct-architecture" class="d180-md-h1">🔄 Updated Flow (Correct Architecture)</h1>
 
       <div class="relative my-6 code-block">
@@ -418,7 +432,7 @@ Encrypted Realm
 <li class="d180-md-li">UI only talks to Service</li>
 </ul>
 <p class="d180-md-p">This is clean layering.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="-why-this-matters" class="d180-md-h1">🧱 Why This Matters</h1>
 <p class="d180-md-p">Because Offline Life Archive is not:</p>
 <ul class="d180-md-ul">
@@ -431,9 +445,9 @@ Encrypted Realm
 <p class="d180-md-p">“Your private digital life. Stored locally. Owned by you.”</p>
 </blockquote>
 <p class="d180-md-p">And ownership requires disciplined architecture.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="-day-7-test" class="d180-md-h1">🧪 Day 7 Test</h1>
-<p class="d180-md-p">Inside <code>App.tsx</code> (temporary test):</p>
+<p class="d180-md-p">Inside <code class="d180-md-inline-code">App.tsx</code> (temporary test):</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
@@ -454,7 +468,7 @@ console.log(service.getEntries().length);
 <p class="d180-md-p">Now UI speaks only to Service.</p>
 <p class="d180-md-p">Repository is no longer visible from UI.</p>
 <p class="d180-md-p">Boundary respected.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="-what-we-achieved-today" class="d180-md-h1">🎯 What We Achieved Today</h1>
 <p class="d180-md-p">✔ Business logic isolated</p>
 <p class="d180-md-p">✔ ID generation centralized</p>
@@ -463,9 +477,9 @@ console.log(service.getEntries().length);
 <p class="d180-md-p">✔ Layered architecture completed</p>
 <p class="d180-md-p">Core → Repository → Service → UI</p>
 <p class="d180-md-p">Now the structure matches our blueprint .</p>
-<hr>
+<hr class="d180-md-hr" />
 <p class="d180-md-p">Tomorrow:</p>
-<p class="d180-md-p">We stop testing in <code>App.tsx</code>.</p>
+<p class="d180-md-p">We stop testing in <code class="d180-md-inline-code">App.tsx</code>.</p>
 <p class="d180-md-p">We build the first real feature screen using proper hooks.</p>
 <p class="d180-md-p">Warehouse is fully operational.</p>
 <p class="d180-md-p">If you’re ready, say:</p>
@@ -473,12 +487,12 @@ console.log(service.getEntries().length);
 <p class="d180-md-p">Warehouse manager stable.</p>
 </blockquote>
 <p class="d180-md-p">And we move forward. 🚀</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="-day-7-practical-exploration-service-layer" class="d180-md-h2">🔧 Day 7 — Practical Exploration (Service Layer)</h2>
 <p class="d180-md-p">If you’re building along, don’t just copy the service file.</p>
 <p class="d180-md-p">Stress it. Break it. Observe it.</p>
 <p class="d180-md-p">That’s how layering becomes instinct.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="1-try-creating-an-entry-with-empty-title" class="d180-md-h3">1️⃣ Try Creating an Entry with Empty Title</h3>
 <p class="d180-md-p">In your temporary test:</p>
 
@@ -516,7 +530,7 @@ console.log(service.getEntries().length);
 <p class="d180-md-p">Service handled it.</p>
 <p class="d180-md-p">Repository remained clean.</p>
 <p class="d180-md-p">That boundary is intentional.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="2-remove-validation-temporarily" class="d180-md-h3">2️⃣ Remove Validation Temporarily</h3>
 <p class="d180-md-p">Comment out:</p>
 
@@ -539,7 +553,7 @@ console.log(service.getEntries().length);
 <li class="d180-md-li">Service owns business rules.</li>
 </ul>
 <p class="d180-md-p">Revert the change after observing.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="3-move-uuid-to-repository-then-undo-it" class="d180-md-h3">3️⃣ Move UUID to Repository (Then Undo It)</h3>
 <p class="d180-md-p">Temporarily shift ID generation into repository.</p>
 <p class="d180-md-p">Observe how it feels:</p>
@@ -551,10 +565,10 @@ console.log(service.getEntries().length);
 <p class="d180-md-p">Undo it.</p>
 <p class="d180-md-p">Identity belongs to service.</p>
 <p class="d180-md-p">Repository should not “decide.”</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="4-log-the-flow" class="d180-md-h3">4️⃣ Log the Flow</h3>
 <p class="d180-md-p">Add temporary logs:</p>
-<p class="d180-md-p">In <code>archive.service.ts</code>:</p>
+<p class="d180-md-p">In <code class="d180-md-inline-code">archive.service.ts</code>:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
@@ -565,7 +579,7 @@ console.log(service.getEntries().length);
 </code></pre>
       </div>
     
-<p class="d180-md-p">In <code>archive.repository.ts</code>:</p>
+<p class="d180-md-p">In <code class="d180-md-inline-code">archive.repository.ts</code>:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
@@ -591,9 +605,9 @@ console.log(service.getEntries().length);
 <p class="d180-md-p">You can visually see the flow:</p>
 <p class="d180-md-p">UI → Service → Repository → Realm</p>
 <p class="d180-md-p">Layering becomes tangible.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="5-try-calling-repository-directly-from-ui-then-delete-it" class="d180-md-h3">5️⃣ Try Calling Repository Directly from UI (Then Delete It)</h3>
-<p class="d180-md-p">Temporarily import repository inside <code>App.tsx</code>.</p>
+<p class="d180-md-p">Temporarily import repository inside <code class="d180-md-inline-code">App.tsx</code>.</p>
 <p class="d180-md-p">Call:</p>
 
       <div class="relative my-6 code-block">
@@ -613,7 +627,7 @@ console.log(service.getEntries().length);
 </ul>
 <p class="d180-md-p">Delete direct repository usage.</p>
 <p class="d180-md-p">That discomfort is learning.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="6-add-a-new-business-rule" class="d180-md-h3">6️⃣ Add a New Business Rule</h3>
 <p class="d180-md-p">Inside service:</p>
 <p class="d180-md-p">Add rule:</p>
@@ -627,20 +641,20 @@ console.log(service.getEntries().length);
 <li class="d180-md-li">UI remains untouched.</li>
 </ul>
 <p class="d180-md-p">This is the power of separation.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-what-day-7-really-teaches" class="d180-md-h3">🧠 What Day 7 Really Teaches</h3>
 <p class="d180-md-p">Repository protects access.</p>
 <p class="d180-md-p">Service protects logic.</p>
 <p class="d180-md-p">Encryption protects data.</p>
 <p class="d180-md-p">Each layer has one responsibility.</p>
 <p class="d180-md-p">And that discipline is what protects the system long-term .</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="-further-reading-x26-references-day-7-service-layer" class="d180-md-h2">📚 Further Reading &#x26; References (Day 7 — Service Layer)</h2>
 <p class="d180-md-p">If you're exploring deeper into today’s implementation, these references strengthen the foundation behind the Service Layer decision.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-service-layer-pattern-conceptual-foundation" class="d180-md-h3">🧠 Service Layer Pattern (Conceptual Foundation)</h3>
 <p class="d180-md-p">Martin Fowler — Service Layer Pattern:</p>
-<p class="d180-md-p">https://martinfowler.com/eaaCatalog/serviceLayer.html</p>
+<p class="d180-md-p"><a href="https://martinfowler.com/eaaCatalog/serviceLayer.html" class="d180-md-link">https://martinfowler.com/eaaCatalog/serviceLayer.html</a></p>
 <p class="d180-md-p">This explains:</p>
 <ul class="d180-md-ul">
 <li class="d180-md-li">Why business logic should not live inside controllers (or UI)</li>
@@ -648,10 +662,10 @@ console.log(service.getEntries().length);
 <li class="d180-md-li">Why separation prevents chaos as systems grow</li>
 </ul>
 <p class="d180-md-p">Today’s implementation directly aligns with this idea.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-clean-architecture-layer-responsibility" class="d180-md-h3">🧱 Clean Architecture (Layer Responsibility)</h3>
 <p class="d180-md-p">Robert C. Martin (Uncle Bob) — Clean Architecture Concepts:</p>
-<p class="d180-md-p">https://blog.cleancoder.com/</p>
+<p class="d180-md-p"><a href="https://blog.cleancoder.com/" class="d180-md-link">https://blog.cleancoder.com/</a></p>
 <p class="d180-md-p">Focus on:</p>
 <ul class="d180-md-ul">
 <li class="d180-md-li">Separation of concerns</li>
@@ -659,33 +673,33 @@ console.log(service.getEntries().length);
 <li class="d180-md-li">Keeping business rules independent of frameworks</li>
 </ul>
 <p class="d180-md-p">Our layering model reflects this philosophy .</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-repository-vs-service-clear-responsibility-difference" class="d180-md-h3">🏗 Repository vs Service (Clear Responsibility Difference)</h3>
 <p class="d180-md-p">A helpful explanation of responsibilities:</p>
-<p class="d180-md-p">https://enterprisecraftsmanship.com/posts/service-layer-vs-repository-pattern/</p>
+<p class="d180-md-p"><a href="https://enterprisecraftsmanship.com/posts/service-layer-vs-repository-pattern/" class="d180-md-link">https://enterprisecraftsmanship.com/posts/service-layer-vs-repository-pattern/</a></p>
 <p class="d180-md-p">Understand:</p>
 <ul class="d180-md-ul">
 <li class="d180-md-li">Repository = data access abstraction</li>
 <li class="d180-md-li">Service = business rule orchestration</li>
 <li class="d180-md-li">Why mixing them creates long-term instability</li>
 </ul>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-uuid-best-practices" class="d180-md-h3">🆔 UUID Best Practices</h3>
 <p class="d180-md-p">Official UUID package documentation:</p>
-<p class="d180-md-p">https://www.npmjs.com/package/uuid</p>
+<p class="d180-md-p"><a href="https://www.npmjs.com/package/uuid" class="d180-md-link">https://www.npmjs.com/package/uuid</a></p>
 <p class="d180-md-p">Why this matters:</p>
 <ul class="d180-md-ul">
 <li class="d180-md-li">ID generation belongs to business layer</li>
 <li class="d180-md-li">Identity is not a storage concern</li>
 <li class="d180-md-li">Separation of identity from persistence keeps system flexible</li>
 </ul>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-domain-driven-design-optional-deep-dive" class="d180-md-h3">🔐 Domain-Driven Design (Optional Deep Dive)</h3>
 <p class="d180-md-p">If you want to understand where Service Layer fits in larger systems:</p>
-<p class="d180-md-p">https://martinfowler.com/bliki/DomainDrivenDesign.html</p>
+<p class="d180-md-p"><a href="https://martinfowler.com/bliki/DomainDrivenDesign.html" class="d180-md-link">https://martinfowler.com/bliki/DomainDrivenDesign.html</a></p>
 <p class="d180-md-p">Not required for MVP.</p>
 <p class="d180-md-p">But useful if you want to see how today’s decision scales to enterprise systems.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-context-reminder" class="d180-md-h3">📌 Context Reminder</h3>
 <p class="d180-md-p">Offline Life Archive is:</p>
 <blockquote class="d180-md-blockquote">
@@ -698,7 +712,7 @@ console.log(service.getEntries().length);
 <li class="d180-md-li">Repository remains boring and predictable</li>
 <li class="d180-md-li">Architecture remains extraction-ready</li>
 </ul>
-<hr>
+<hr class="d180-md-hr" />
 <p class="d180-md-p">Day 7 is where the system stopped being “just storage”</p>
 <p class="d180-md-p">and started becoming a structured application.</p>
 <p class="d180-md-p">If you’re ready:</p>

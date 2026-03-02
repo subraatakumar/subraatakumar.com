@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
 a:I[68027,[],"default"]
-:HL["/_next/static/chunks/cc821bed03f9ddd8.css","style"]
+:HL["/_next/static/chunks/116c86ebb776b851.css","style"]
 :HL["https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","style"]
 2:T19f5,
           * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -221,7 +221,7 @@ a:I[68027,[],"default"]
             .sk-nav-mobile { display: block; }
             .sk-page-heading { font-size: 2.2rem; }
           }
-        0:{"P":null,"b":"Wwd4qPeH1W3u2GGoyQtaW","c":["","180days","day-1",""],"q":"","i":false,"f":[[["",{"children":["180days",{"children":[["slug","day-1","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/cc821bed03f9ddd8.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+        0:{"P":null,"b":"NQgK-Z7PvI4g98Ly7DiFn","c":["","180days","day-1",""],"q":"","i":false,"f":[[["",{"children":["180days",{"children":[["slug","day-1","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/116c86ebb776b851.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
 b:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
 c:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
 d:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
@@ -577,7 +577,7 @@ e:T267d,
 8:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
 9:["$","$1","h",{"children":[null,["$","$L14",null,{"children":"$L15"}],["$","div",null,{"hidden":true,"children":["$","$L16",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L17"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
 f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"className":"d180-footer","children":["$","div",null,{"className":"d180-footer-inner","children":[["$","p",null,{"className":"d180-footer-copy","children":"Subrata Kumar Das • 180 Days Mentoring Journey"}],["$","$Lb",null,{"href":"/","className":"d180-footer-home","children":"Main Home"}]]}]}]]}]
-18:T208a,
+18:T225e,
         #days180-root .d180-article-page {
           min-height: 100vh;
           background: #fff;
@@ -742,6 +742,20 @@ f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRou
           font-style: italic;
           color: #334155;
         }
+        #days180-root .d180-md-inline-code {
+          background: #f1f5f9;
+          color: #c2410c;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+          font-size: 0.9em;
+          padding: 3px 6px;
+          border-radius: 6px;
+        }
+        #days180-root .d180-md-hr {
+          border: 0;
+          height: 1px;
+          background: #e2e8f0;
+          margin: 48px 0;
+        }
         #days180-root .d180-md-link {
           color: #d97706;
           text-decoration: none;
@@ -867,7 +881,7 @@ f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRou
       10:["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$18"}],"$L19","$L1a","$L1b","$L1c"]}]
 19:["$","header",null,{"className":"d180-article-header","children":["$","div",null,{"className":"d180-article-header-inner","children":[["$","div",null,{"className":"flex items-center gap-3 shrink-0","children":[["$","$Lb",null,{"href":"/","aria-label":"Go to main home page","className":"w-8 h-8 bg-amber-400 rounded-lg flex items-center justify-center text-slate-900 shadow-lg shadow-amber-400/20","children":["$","span",null,{"className":"font-black text-sm","children":"SK"}]}],["$","nav",null,{"className":"hidden md:flex items-center gap-3","children":[["$","$Lb",null,{"href":"/180days","className":"d180-crumb","children":[["$","span",null,{"className":"d180-crumb-series","children":"180 Days"}]," ",["$","span",null,{"children":"/"}]," ",["$","strong",null,{"children":["Day ","1"]}]]}],["$","div",null,{"className":"d180-pill","children":[["$","div",null,{"className":"d180-pill-track","children":["$","div",null,{"className":"d180-pill-fill","style":{"width":"1%"}}]}],["$","b",null,{"children":[1,"%"]}]]}]]}]]}],["$","div",null,{"className":"flex items-center gap-4","children":["$","$Lb",null,{"href":"/180days","className":"d180-crumb","children":"← All Days"}]}]]}]}]
 1a:["$","div",null,{"className":"d180-hero","children":["$","div",null,{"className":"d180-hero-inner d180-content-wrap","style":{"paddingTop":56,"paddingBottom":56},"children":[["$","h1",null,{"style":{"maxWidth":820},"children":"Day 1 – We Don’t Start With Code"}],["$","p",null,{"style":{"marginTop":14,"maxWidth":760},"children":"**Today is Friday.** And today — we are **not** writing features. We are deciding how this product will live, breathe, and evolve for the next five years. Most developers open a new project and immediately start creating screens. Buttons. Forms. Navigation stacks."}],["$","div",null,{"className":"d180-meta-line","children":[["$","span",null,{"children":"2026-02-20"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#d97706"},"children":"Subrata Kumar Das"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#15803d","fontSize":11,"fontWeight":800,"textTransform":"uppercase","letterSpacing":".08em"},"children":"Complete"}]]}],["$","p",null,{"style":{"marginTop":16,"maxWidth":500,"fontSize":13,"lineHeight":1.7,"color":"#92400e","borderLeft":"2px solid #fcd34d","paddingLeft":10,"fontStyle":"italic"},"children":"\"Consistent small steps lead to massive long-term results. Keep pushing.\""}]]}]}]
-1d:T4f80,<p class="d180-md-p"><strong>Today is Friday.</strong></p>
+1d:T5489,<p class="d180-md-p"><strong>Today is Friday.</strong></p>
 <p class="d180-md-p">And today — we are <strong>not</strong> writing features.</p>
 <p class="d180-md-p">We are deciding how this product will live, breathe, and evolve for the next five years. Most developers open a new project and immediately start creating screens.</p>
 <p class="d180-md-p">Buttons. Forms. Navigation stacks.</p>
@@ -879,7 +893,7 @@ f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRou
 <li class="d180-md-li">This is not something we build to “just make it work.”</li>
 <li class="d180-md-li">This is a product.</li>
 </ul>
-<p class="d180-md-p">▶️ Watch Day 1 Short on Youtube: https://youtube.com/shorts/_A8gPEWnwo8?feature=share</p>
+<p class="d180-md-p">▶️ Watch Day 1 Short on Youtube: <a href="https://youtube.com/shorts/_A8gPEWnwo8?feature=share" class="d180-md-link">https://youtube.com/shorts/_A8gPEWnwo8?feature=share</a></p>
 <p class="d180-md-p">And when you work in any organisation — whether you are a junior developer or a tech lead — you must take ownership of the product as if it belongs to you.</p>
 <p class="d180-md-p">Not 60%.</p>
 <p class="d180-md-p">Not 80%.</p>
@@ -894,7 +908,7 @@ f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRou
 <p class="d180-md-p">Architecture is that environment for your product. Features are just clothes.</p>
 <p class="d180-md-p">Products are not built with excitement alone.</p>
 <p class="d180-md-p">They are built with responsibility. And responsibility begins with architecture.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="the-product-we-are-building" class="d180-md-h1">The Product We Are Building</h1>
 <p class="d180-md-p">We are building <strong>Offline Life Archive</strong>.</p>
 <p class="d180-md-p">A private, offline-first memory vault.</p>
@@ -917,7 +931,7 @@ f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRou
 <p class="d180-md-p">Architecture must serve that clarity.</p>
 <p class="d180-md-p">Not ego.</p>
 <p class="d180-md-p">Not trends.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="why-architecture-on-day-one" class="d180-md-h1">Why Architecture on Day One?</h1>
 <p class="d180-md-p">Because:</p>
 <ul class="d180-md-ul">
@@ -927,7 +941,7 @@ f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRou
 </ul>
 <p class="d180-md-p">Most apps die in month 6 — not because of features, but because of messy foundations.</p>
 <p class="d180-md-p">We are building differently.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="the-philosophy-build-small-design-big" class="d180-md-h1">The Philosophy: Build Small. Design Big.</h1>
 <p class="d180-md-p">We are building an MVP.</p>
 <p class="d180-md-p">But we are designing for extraction.</p>
@@ -947,7 +961,7 @@ f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRou
 <p class="d180-md-p">“How do we ensure the timeline screen never pollutes our business logic?”</p>
 </blockquote>
 <p class="d180-md-p">That’s architecture thinking.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="the-5-layer-architecture-model" class="d180-md-h1">The 5-Layer Architecture Model</h1>
 <p class="d180-md-p">We are using a strict layered model:</p>
 
@@ -985,7 +999,7 @@ Data Layer
 <p class="d180-md-p">Each layer has boundaries.</p>
 <p class="d180-md-p">No cross-contamination.</p>
 <p class="d180-md-p">If layers bleed into each other, refactoring becomes inevitable.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="folder-structure-production-ready-from-day-one" class="d180-md-h1">Folder Structure (Production-Ready From Day One)</h1>
 <p class="d180-md-p">We created a structure that supports growth:</p>
 
@@ -1004,7 +1018,7 @@ Data Layer
     
 <p class="d180-md-p">This is not over-engineering.</p>
 <p class="d180-md-p">This is prevention.</p>
-<p class="d180-md-p">Most MVPs collapse because everything lives inside <code>screens/</code>.</p>
+<p class="d180-md-p">Most MVPs collapse because everything lives inside <code class="d180-md-inline-code">screens/</code>.</p>
 <p class="d180-md-p">We are separating:</p>
 <ul class="d180-md-ul">
 <li class="d180-md-li">Infrastructure from features</li>
@@ -1012,7 +1026,7 @@ Data Layer
 <li class="d180-md-li">Storage from services</li>
 <li class="d180-md-li">Reusable systems from product modules</li>
 </ul>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="strict-architectural-rules-non-negotiable" class="d180-md-h1">Strict Architectural Rules (Non-Negotiable)</h1>
 <p class="d180-md-p">From today onward:</p>
 <ul class="d180-md-ul">
@@ -1020,15 +1034,15 @@ Data Layer
 <li class="d180-md-li">No direct Realm calls inside screens.</li>
 <li class="d180-md-li">Repository layer handles database access.</li>
 <li class="d180-md-li">Services handle business logic.</li>
-<li class="d180-md-li">Encryption lives only inside <code>core/security</code>.</li>
-<li class="d180-md-li">File handling lives only inside <code>core/fileSystem</code>.</li>
+<li class="d180-md-li">Encryption lives only inside <code class="d180-md-inline-code">core/security</code>.</li>
+<li class="d180-md-li">File handling lives only inside <code class="d180-md-inline-code">core/fileSystem</code>.</li>
 <li class="d180-md-li">Modules never depend directly on other modules.</li>
 <li class="d180-md-li">No hardcoded theme values in UI.</li>
 </ul>
 <p class="d180-md-p">These rules are boring.</p>
 <p class="d180-md-p">And that’s the point.</p>
 <p class="d180-md-p">Boring architecture scales.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="why-we-are-not-using-redux-yet" class="d180-md-h1">Why We Are NOT Using Redux (Yet)</h1>
 <p class="d180-md-p">This is important.</p>
 <p class="d180-md-p">We are not using:</p>
@@ -1048,7 +1062,7 @@ Data Layer
 </ul>
 <p class="d180-md-p">Premature abstraction is forbidden.</p>
 <p class="d180-md-p">Complexity must be earned.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="security-from-day-one" class="d180-md-h1">Security From Day One</h1>
 <p class="d180-md-p">Most MVPs say:</p>
 <blockquote class="d180-md-blockquote">
@@ -1066,7 +1080,7 @@ Data Layer
 </ul>
 <p class="d180-md-p">Data protection ≠ session protection.</p>
 <p class="d180-md-p">This is infrastructure, not a feature.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="sharing-without-cloud" class="d180-md-h1">Sharing Without Cloud</h1>
 <p class="d180-md-p">We are not building servers.</p>
 <p class="d180-md-p">Sharing will be:</p>
@@ -1080,7 +1094,7 @@ Data Layer
 <p class="d180-md-p">No P2P.</p>
 <p class="d180-md-p">No link sharing.</p>
 <p class="d180-md-p">Local-first means local-first.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="theme-system-from-day-one" class="d180-md-h1">Theme System From Day One</h1>
 <p class="d180-md-p">We are implementing:</p>
 <ul class="d180-md-ul">
@@ -1093,7 +1107,7 @@ Data Layer
 <p class="d180-md-p">Because design refactors are expensive.</p>
 <p class="d180-md-p">Calm Scandinavian minimalism is intentional.</p>
 <p class="d180-md-p">UI must remain replaceable.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="the-extraction-vision" class="d180-md-h1">The Extraction Vision</h1>
 <p class="d180-md-p">Everything inside:</p>
 
@@ -1117,7 +1131,7 @@ shared/
 <p class="d180-md-p">We are not just shipping features.</p>
 <p class="d180-md-p">We are building infrastructure that can be extracted.</p>
 <p class="d180-md-p">This is how you think as a product owner.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="what-we-did-today-friday-day-1" class="d180-md-h1">What We Did Today (Friday – Day 1)</h1>
 <p class="d180-md-p">Today we:</p>
 <ul class="d180-md-ul">
@@ -1132,7 +1146,7 @@ shared/
 </ul>
 <p class="d180-md-p">We did not write features.</p>
 <p class="d180-md-p">And that is discipline.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="what-we-did-not-do" class="d180-md-h1">What We Did NOT Do</h1>
 <p class="d180-md-p">We did not:</p>
 <ul class="d180-md-ul">
@@ -1144,7 +1158,7 @@ shared/
 <li class="d180-md-li">Start designing 10 screens</li>
 </ul>
 <p class="d180-md-p">Restraint is maturity.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="why-this-matters" class="d180-md-h1">Why This Matters</h1>
 <p class="d180-md-p">Without structure:</p>
 <p class="d180-md-p">You build features.</p>
@@ -1154,7 +1168,7 @@ shared/
 <p class="d180-md-p">You refactor in 6 months.</p>
 <p class="d180-md-p">With discipline:</p>
 <p class="d180-md-p">You extract a product.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="what-happens-next" class="d180-md-h1">What Happens Next?</h1>
 <p class="d180-md-p">Today is Friday.</p>
 <p class="d180-md-p"><strong>Day 2 will be updated on Monday.</strong></p>
@@ -1168,14 +1182,14 @@ shared/
 </ul>
 <p class="d180-md-p">We are building like serious engineers.</p>
 <p class="d180-md-p">Not tutorial coders.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="closing-thought" class="d180-md-h1">Closing Thought</h1>
 <p class="d180-md-p">Most people start with code.</p>
 <p class="d180-md-p">We started with clarity.</p>
 <p class="d180-md-p">And clarity compounds.</p>
 <p class="d180-md-p">See you on Monday for Day 2.</p>
-<hr>
-<hr>
+<hr class="d180-md-hr" />
+<hr class="d180-md-hr" />
 <h1 id="-if-youre-a-fresher-do-the-extra-work" class="d180-md-h1">📚 If You’re a Fresher — Do The Extra Work</h1>
 <p class="d180-md-p">This is not a step-by-step beginner tutorial. We are building like professionals. That means we assume responsibility for learning.</p>
 <p class="d180-md-p">If some concepts in this article feel heavy — good. Growth is supposed to feel heavy.</p>
@@ -1186,13 +1200,13 @@ shared/
 <li class="d180-md-li">Real ownership requires extra effort.</li>
 </ul>
 <p class="d180-md-p">If you don’t understand something mentioned today, here are the foundational topics you <strong>must</strong> explore on your own:</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="-1-create-your-first-react-native-cli-project" class="d180-md-h2">🚀 1. Create Your First React Native CLI Project</h2>
 <p class="d180-md-p">Before thinking about architecture, you must know how to create and run a project properly.</p>
 <ul class="d180-md-ul">
 <li class="d180-md-li">
 <p class="d180-md-p">Official React Native Setup Guide (CLI):</p>
-<p class="d180-md-p">https://reactnative.dev/docs/environment-setup</p>
+<p class="d180-md-p"><a href="https://reactnative.dev/docs/environment-setup" class="d180-md-link">https://reactnative.dev/docs/environment-setup</a></p>
 </li>
 </ul>
 <p class="d180-md-p">Understand:</p>
@@ -1202,7 +1216,7 @@ shared/
 <li class="d180-md-li">Metro bundler</li>
 <li class="d180-md-li">Project structure</li>
 </ul>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="-2-what-is-global-state" class="d180-md-h2">🧠 2. What Is Global State?</h2>
 <p class="d180-md-p">You must understand:</p>
 <ul class="d180-md-ul">
@@ -1215,17 +1229,17 @@ shared/
 <ul class="d180-md-ul">
 <li class="d180-md-li">
 <p class="d180-md-p">React Official Docs – State:</p>
-<p class="d180-md-p">https://react.dev/learn/state-a-components-memory</p>
+<p class="d180-md-p"><a href="https://react.dev/learn/state-a-components-memory" class="d180-md-link">https://react.dev/learn/state-a-components-memory</a></p>
 </li>
 </ul>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="-3-what-is-redux" class="d180-md-h2">🗂 3. What Is Redux?</h2>
 <p class="d180-md-p">Even though we are not using Redux, you must know what it is.</p>
 <p class="d180-md-p">Because maturity means choosing consciously — not avoiding blindly.</p>
 <ul class="d180-md-ul">
 <li class="d180-md-li">
 <p class="d180-md-p">Redux Official Docs:</p>
-<p class="d180-md-p">https://redux.js.org/introduction/getting-started</p>
+<p class="d180-md-p"><a href="https://redux.js.org/introduction/getting-started" class="d180-md-link">https://redux.js.org/introduction/getting-started</a></p>
 </li>
 </ul>
 <p class="d180-md-p">Understand:</p>
@@ -1235,7 +1249,7 @@ shared/
 <li class="d180-md-li">Reducers</li>
 <li class="d180-md-li">Single source of truth</li>
 </ul>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="-4-what-is-realm-database" class="d180-md-h2">🧩 4. What Is Realm Database?</h2>
 <p class="d180-md-p">Realm is our data layer.</p>
 <p class="d180-md-p">You must understand:</p>
@@ -1251,10 +1265,10 @@ shared/
 </li>
 <li class="d180-md-li">
 <p class="d180-md-p">Realm React Native Docs:</p>
-<p class="d180-md-p">https://www.mongodb.com/docs/realm/sdk/react-native/</p>
+<p class="d180-md-p"><a href="https://www.mongodb.com/docs/realm/sdk/react-native/" class="d180-md-link">https://www.mongodb.com/docs/realm/sdk/react-native/</a></p>
 </li>
 </ul>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="-5-what-is-encryption" class="d180-md-h2">🔐 5. What Is Encryption?</h2>
 <p class="d180-md-p">We mentioned:</p>
 <ul class="d180-md-ul">
@@ -1268,10 +1282,10 @@ shared/
 <ul class="d180-md-ul">
 <li class="d180-md-li">
 <p class="d180-md-p">OWASP Mobile Security Guide:</p>
-<p class="d180-md-p">https://owasp.org/www-project-mobile-top-10/</p>
+<p class="d180-md-p"><a href="https://owasp.org/www-project-mobile-top-10/" class="d180-md-link">https://owasp.org/www-project-mobile-top-10/</a></p>
 </li>
 </ul>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="-6-what-is-layered-architecture" class="d180-md-h2">🏗 6. What Is Layered Architecture?</h2>
 <p class="d180-md-p">You must understand:</p>
 <ul class="d180-md-ul">
@@ -1284,10 +1298,10 @@ shared/
 <ul class="d180-md-ul">
 <li class="d180-md-li">
 <p class="d180-md-p">Clean Architecture (Concept Overview):</p>
-<p class="d180-md-p">https://blog.cleancoder.com/</p>
+<p class="d180-md-p"><a href="https://blog.cleancoder.com/" class="d180-md-link">https://blog.cleancoder.com/</a></p>
 </li>
 </ul>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="-7-what-is-a-design-system" class="d180-md-h2">🎨 7. What Is a Design System?</h2>
 <p class="d180-md-p">We mentioned:</p>
 <ul class="d180-md-ul">
@@ -1301,8 +1315,8 @@ shared/
 <li class="d180-md-li">Why consistency reduces refactor cost?</li>
 </ul>
 <p class="d180-md-p">Intro:</p>
-<p class="d180-md-p">https://www.designsystems.com/</p>
-<hr>
+<p class="d180-md-p"><a href="https://www.designsystems.com/" class="d180-md-link">https://www.designsystems.com/</a></p>
+<hr class="d180-md-hr" />
 <h1 id="-important" class="d180-md-h1">⚠ Important</h1>
 <p class="d180-md-p">If you skip these topics and just copy folder structures,</p>
 <p class="d180-md-p">you will build something that looks structured — but isn’t understood.</p>
@@ -1312,7 +1326,7 @@ shared/
 <p class="d180-md-p">Builders think.</p>
 <p class="d180-md-p">Builders struggle a little.</p>
 <p class="d180-md-p">That’s how you grow.</p>
-<hr>
+<hr class="d180-md-hr" />
 <p class="d180-md-p">See you on Monday for Day 2.</p>
 <p class="d180-md-p">Now go read.</p>
 1b:["$","main",null,{"className":"d180-content-wrap","style":{"paddingTop":36},"children":["$","div",null,{"className":"flex-1","children":[["$","article",null,{"className":"d180-post-content","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$1d"}}],"$L1e"]}],"$L1f","$L20"]}]}]

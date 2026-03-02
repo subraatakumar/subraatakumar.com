@@ -1,0 +1,1327 @@
+1:"$Sreact.fragment"
+a:I[68027,[],"default"]
+:HL["/_next/static/chunks/116c86ebb776b851.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","style"]
+2:T19f5,
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+
+          body {
+            background: #fafaf7;
+            font-family: 'Caveat', cursive;
+            color: #1a1a2e;
+          }
+
+          /* ── Nav ── */
+          .sk-header {
+            background: #fff;
+            border-bottom: 2.5px solid #1a1a2e;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+          }
+          .sk-header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .sk-logo {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.55rem;
+            color: #1a1a2e;
+            text-decoration: none;
+            letter-spacing: 0.01em;
+          }
+          .sk-nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+          }
+          .sk-nav-links a {
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+            padding-bottom: 2px;
+          }
+          .sk-nav-links a:hover {
+            text-decoration: underline wavy #2563eb 2px;
+            text-underline-offset: 4px;
+          }
+          .sk-nav-mobile {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 14px;
+          }
+          .sk-nav-mobile ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+          }
+          .sk-nav-mobile a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+          }
+
+          /* ── Footer ── */
+          .sk-footer {
+            border-top: 2.5px solid #1a1a2e;
+            background: #fff;
+            padding: 24px;
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+          }
+
+          /* ── Shared section ── */
+          .sk-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+          }
+          .sk-page-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            margin-bottom: 8px;
+            line-height: 1.1;
+          }
+          .sk-section-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.9rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+          .sk-section-heading::after {
+            content: '';
+            flex: 1;
+            border-top: 2px dashed #9ca3af;
+          }
+
+          /* ── Squiggle divider ── */
+          .sk-squiggle {
+            width: 100%;
+            height: 8px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 4 Q5 0 10 4 Q15 8 20 4 Q25 0 30 4 Q35 8 40 4' stroke='%239ca3af' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") repeat-x center;
+            opacity: 0.55;
+            margin: 36px 0;
+          }
+
+          /* ── Sketch button ── */
+          .sk-btn {
+            display: inline-block;
+            padding: 10px 26px;
+            background: #2563eb;
+            color: #fff;
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 3px 3px 0 #1a1a2e;
+            transition: transform 0.1s, box-shadow 0.1s;
+          }
+          .sk-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 #1a1a2e;
+          }
+          .sk-btn-ghost {
+            background: transparent;
+            color: #1a1a2e;
+            box-shadow: 3px 3px 0 #9ca3af;
+          }
+          .sk-btn-ghost:hover {
+            box-shadow: 5px 5px 0 #9ca3af;
+          }
+
+          /* ── Tag chip ── */
+          .sk-tag {
+            display: inline-block;
+            padding: 3px 13px;
+            border: 2px solid #1a1a2e;
+            border-radius: 2px;
+            font-size: 1rem;
+            font-weight: 600;
+            background: #fff;
+            margin: 3px;
+          }
+          .sk-tag.active {
+            background: #2563eb;
+            color: #fff;
+          }
+
+          /* ── Card ── */
+          .sk-card {
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 5px 5px 0 #1a1a2e;
+            padding: 24px;
+            transition: transform 0.15s, box-shadow 0.15s;
+          }
+          .sk-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0 #1a1a2e;
+          }
+
+          /* ── Stat card ── */
+          .sk-stat {
+            flex: 1;
+            min-width: 130px;
+            text-align: center;
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 4px 4px 0 #1a1a2e;
+            padding: 20px 12px;
+          }
+          .sk-stat .num {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            color: #2563eb;
+            line-height: 1;
+          }
+          .sk-stat .lbl {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 4px;
+          }
+
+          /* ── Image placeholder ── */
+          .sk-img {
+            width: 100%;
+            height: 160px;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            background: #f3f4f6;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 16px;
+          }
+          .sk-img::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+              linear-gradient(to bottom right, transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px)),
+              linear-gradient(to bottom left,  transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px));
+          }
+
+          @media (max-width: 640px) {
+            .sk-nav-links { display: none; }
+            .sk-nav-mobile { display: block; }
+            .sk-page-heading { font-size: 2.2rem; }
+          }
+        0:{"P":null,"b":"NQgK-Z7PvI4g98Ly7DiFn","c":["","180days","day-11",""],"q":"","i":false,"f":[[["",{"children":["180days",{"children":[["slug","day-11","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/116c86ebb776b851.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+b:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
+c:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+d:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+11:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+14:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"ViewportBoundary"]
+16:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"MetadataBoundary"]
+3:["$","header",null,{"className":"sk-header","children":[["$","div",null,{"className":"sk-header-inner","children":[["$","$Lb",null,{"href":"/","className":"sk-logo","children":"SKD_"}],["$","nav",null,{"aria-label":"Primary","children":["$","ul",null,{"className":"sk-nav-links","children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]]}],["$","div",null,{"className":"sk-nav-mobile","children":["$","nav",null,{"aria-label":"Mobile","children":["$","ul",null,{"children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]}]]}]
+4:["$","main",null,{"style":{"width":"100%"},"children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
+5:["$","footer",null,{"className":"sk-footer","children":["© ",2026," Subrata Kumar Das. All rights reserved. ·"," ",["$","$Lb",null,{"href":"/for-ai","children":"For AI/Crawlers"}]]}]
+e:T267d,
+        /* ── Reset sketchy globals for this subtree ── */
+        body:has(#days180-root) .sk-header,
+        body:has(#days180-root) .sk-footer {
+          display: none !important;
+        }
+
+        #days180-root,
+        #days180-root * {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+          box-sizing: border-box;
+        }
+
+        /* ── 180 Days design tokens ── */
+        #days180-root {
+          --amber: #f59e0b;
+          --amber-light: #fef3c7;
+          --slate-950: #020617;
+          --slate-900: #0f172a;
+          --slate-800: #1e293b;
+          --slate-700: #334155;
+          --slate-500: #64748b;
+          --slate-400: #94a3b8;
+          --slate-300: #cbd5e1;
+          --slate-200: #e2e8f0;
+          --slate-100: #f1f5f9;
+          --slate-50:  #f8fafc;
+          --white: #ffffff;
+
+          min-height: 100vh;
+          background: var(--white);
+          color: var(--slate-900);
+        }
+
+        /* ── Header ── */
+        .d180-header {
+          position: sticky;
+          top: 0;
+          z-index: 100;
+          background: rgba(255,255,255,0.92);
+          backdrop-filter: blur(16px);
+          border-bottom: 1px solid var(--slate-200);
+        }
+        .d180-header-inner {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 32px;
+          height: 64px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .d180-logo-badge {
+          width: 32px;
+          height: 32px;
+          background: var(--amber);
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 900;
+          font-size: 13px;
+          color: var(--slate-900);
+          box-shadow: 0 4px 12px rgba(245,158,11,0.25);
+        }
+        .d180-logo-label {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.18em;
+          color: var(--slate-500);
+        }
+        .d180-back-btn {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          padding: 8px 16px;
+          background: var(--slate-100);
+          border-radius: 8px;
+          color: var(--slate-900);
+          text-decoration: none;
+          transition: background 0.15s;
+        }
+        .d180-back-btn:hover { background: var(--slate-200); }
+
+        /* ── Hero ── */
+        .d180-hero {
+          border-bottom: 1px solid var(--slate-200);
+          background: linear-gradient(to bottom, var(--slate-50), var(--white));
+        }
+        .d180-hero-inner {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 64px 32px;
+        }
+        .d180-hero h1 {
+          font-size: clamp(2.8rem, 6vw, 4.5rem);
+          font-weight: 900;
+          letter-spacing: -0.03em;
+          line-height: 1.0;
+          color: var(--slate-950);
+          margin: 0 0 12px;
+        }
+        .d180-hero h1 span { color: var(--amber); }
+        .d180-meta {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          margin-bottom: 20px;
+        }
+        .d180-meta-label {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+          color: var(--slate-400);
+        }
+        .d180-meta-dot {
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background: var(--slate-300);
+          display: inline-block;
+        }
+        .d180-meta-series {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+          color: var(--amber);
+        }
+        .d180-hero p {
+          font-size: 1.15rem;
+          color: var(--slate-500);
+          line-height: 1.7;
+          max-width: 500px;
+          margin: 0;
+        }
+
+        /* ── Progress bar ── */
+        .d180-progress-wrap {
+          margin-top: 40px;
+          max-width: 320px;
+        }
+        .d180-progress-labels {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 8px;
+        }
+        .d180-progress-labels span {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.15em;
+          color: var(--slate-400);
+        }
+        .d180-progress-labels span:last-child { color: var(--amber); }
+        .d180-progress-track {
+          width: 100%;
+          height: 8px;
+          background: var(--slate-200);
+          border-radius: 999px;
+          overflow: hidden;
+        }
+        .d180-progress-fill {
+          height: 100%;
+          background: var(--amber);
+          border-radius: 999px;
+          transition: width 0.7s ease;
+        }
+        .d180-progress-pct {
+          margin-top: 6px;
+          font-size: 11px;
+          color: var(--slate-400);
+          font-weight: 500;
+        }
+
+        /* ── Main content ── */
+        .d180-main {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 48px 32px 80px;
+        }
+
+        /* ── Stats row ── */
+        .d180-stats {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 16px;
+          margin-bottom: 48px;
+        }
+        .d180-stat-card {
+          background: var(--slate-50);
+          border: 1px solid var(--slate-200);
+          border-radius: 16px;
+          padding: 20px;
+        }
+        .d180-stat-num {
+          font-size: clamp(1.6rem, 3vw, 2rem);
+          font-weight: 900;
+          color: var(--slate-950);
+          letter-spacing: -0.02em;
+        }
+        .d180-stat-lbl {
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.15em;
+          color: var(--slate-400);
+          margin-top: 4px;
+        }
+
+        /* ── Entry list ── */
+        .d180-entry-list {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+        .d180-entry {
+          display: flex;
+          align-items: flex-start;
+          gap: 20px;
+          padding: 20px;
+          border-radius: 16px;
+          border: 1px solid var(--slate-200);
+          background: var(--white);
+          text-decoration: none;
+          color: inherit;
+          transition: border-color 0.2s, background 0.2s, transform 0.15s;
+        }
+        .d180-entry:hover {
+          border-color: var(--amber);
+          background: var(--slate-50);
+          transform: translateX(3px);
+        }
+        .d180-day-badge {
+          flex-shrink: 0;
+          width: 48px;
+          height: 48px;
+          border-radius: 12px;
+          background: var(--slate-100);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          color: var(--slate-500);
+          transition: background 0.2s, color 0.2s;
+        }
+        .d180-entry:hover .d180-day-badge {
+          background: var(--amber);
+          color: var(--slate-900);
+        }
+        .d180-entry-body { flex: 1; min-width: 0; }
+        .d180-entry-title {
+          font-size: 1rem;
+          font-weight: 700;
+          color: var(--slate-900);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          transition: color 0.2s;
+        }
+        .d180-entry:hover .d180-entry-title { color: var(--amber); }
+        .d180-entry-desc {
+          font-size: 0.875rem;
+          color: var(--slate-500);
+          margin-top: 4px;
+          line-height: 1.5;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+        }
+        .d180-entry-meta {
+          flex-shrink: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 8px;
+        }
+        .d180-entry-date {
+          font-size: 11px;
+          font-weight: 500;
+          color: var(--slate-400);
+        }
+        .d180-entry-arrow {
+          font-size: 14px;
+          color: var(--slate-300);
+          transition: color 0.2s;
+        }
+        .d180-entry:hover .d180-entry-arrow { color: var(--amber); }
+
+        /* ── Footer ── */
+        .d180-footer {
+          border-top: 1px solid var(--slate-200);
+          background: var(--white);
+        }
+        .d180-footer-inner {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 20px 32px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+        .d180-footer-copy {
+          font-size: 11px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.12em;
+          color: var(--slate-400);
+        }
+        .d180-footer-home {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          padding: 8px 12px;
+          border-radius: 8px;
+          background: var(--slate-100);
+          color: var(--slate-900);
+          text-decoration: none;
+        }
+        .d180-footer-home:hover {
+          background: var(--amber-light);
+          color: #b45309;
+        }
+
+        @media (max-width: 640px) {
+          .d180-header-inner { padding: 0 16px; }
+          .d180-hero-inner { padding: 40px 16px; }
+          .d180-main { padding: 32px 16px 60px; }
+          .d180-footer-inner { padding: 16px; }
+          .d180-stats { grid-template-columns: 1fr; }
+        }
+      6:["$","$1","c",{"children":[null,["$","div",null,{"style":{"all":"revert"},"children":[["$","style",null,{"children":"$e"}],"$Lf"]}]]}]
+7:["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+9:["$","$1","h",{"children":[null,["$","$L14",null,{"children":"$L15"}],["$","div",null,{"hidden":true,"children":["$","$L16",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L17"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+f:["$","div",null,{"id":"days180-root","children":[["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"className":"d180-footer","children":["$","div",null,{"className":"d180-footer-inner","children":[["$","p",null,{"className":"d180-footer-copy","children":"Subrata Kumar Das • 180 Days Mentoring Journey"}],["$","$Lb",null,{"href":"/","className":"d180-footer-home","children":"Main Home"}]]}]}]]}]
+18:T225e,
+        #days180-root .d180-article-page {
+          min-height: 100vh;
+          background: #fff;
+          color: #0f172a;
+        }
+        #days180-root .d180-article-header {
+          position: sticky;
+          top: 0;
+          z-index: 80;
+          background: rgba(255,255,255,0.92);
+          backdrop-filter: blur(16px);
+          border-bottom: 1px solid #e2e8f0;
+        }
+        #days180-root .d180-article-header-inner {
+          width: 100%;
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 32px;
+          height: 64px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        }
+        #days180-root .d180-crumb {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: .08em;
+          color: #64748b;
+          text-decoration: none;
+          background: #f1f5f9;
+          border-radius: 10px;
+          padding: 10px 14px;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+        }
+        #days180-root .d180-crumb-series {
+          transition: color .15s ease;
+        }
+        #days180-root .d180-crumb:hover .d180-crumb-series {
+          color: #d97706;
+        }
+        #days180-root .d180-crumb strong { color: #0f172a; }
+        #days180-root .d180-pill {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          padding: 8px 12px;
+          background: #f8fafc;
+          border: 1px solid #e2e8f0;
+          border-radius: 10px;
+        }
+        #days180-root .d180-pill-track {
+          width: 90px;
+          height: 8px;
+          background: #cbd5e1;
+          border-radius: 999px;
+          overflow: hidden;
+        }
+        #days180-root .d180-pill-fill {
+          height: 100%;
+          background: #f59e0b;
+          border-radius: 999px;
+        }
+        #days180-root .d180-pill b {
+          color: #d97706;
+          font-size: 11px;
+          letter-spacing: .02em;
+        }
+        #days180-root .d180-content-wrap {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 32px;
+        }
+        #days180-root .d180-meta-line {
+          margin-top: 8px;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 8px;
+          color: #64748b;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        #days180-root .d180-meta-line .dot {
+          width: 4px;
+          height: 4px;
+          border-radius: 999px;
+          background: #94a3b8;
+          display: inline-block;
+        }
+        #days180-root .d180-post-content {
+          max-width: 780px;
+        }
+        #days180-root .d180-post-content img {
+          max-width: 100%;
+          height: auto;
+        }
+        #days180-root .d180-post-content pre code {
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+        }
+        #days180-root .d180-md-p {
+          font-size: 17px;
+          line-height: 1.85;
+          color: #334155;
+          margin: 20px 0;
+        }
+        #days180-root .d180-md-h1 {
+          font-size: clamp(2rem, 4vw, 2.4rem);
+          font-weight: 900;
+          margin: 64px 0 24px;
+          padding-bottom: 12px;
+          border-bottom: 1px solid #e2e8f0;
+          line-height: 1.2;
+          color: #020617;
+        }
+        #days180-root .d180-md-h2 {
+          font-size: clamp(1.6rem, 3vw, 1.9rem);
+          font-weight: 900;
+          margin: 56px 0 18px;
+          line-height: 1.25;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-h3 {
+          font-size: clamp(1.3rem, 2.4vw, 1.5rem);
+          font-weight: 800;
+          margin: 40px 0 14px;
+          line-height: 1.3;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-h4,
+        #days180-root .d180-md-h5,
+        #days180-root .d180-md-h6 {
+          font-size: 1.1rem;
+          font-weight: 700;
+          margin: 28px 0 10px;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-ul {
+          list-style: disc;
+          padding-left: 24px;
+          margin: 18px 0;
+        }
+        #days180-root .d180-md-ol {
+          list-style: decimal;
+          padding-left: 28px;
+          margin: 18px 0;
+        }
+        #days180-root .d180-md-li {
+          margin: 8px 0;
+          line-height: 1.75;
+          color: #334155;
+        }
+        #days180-root .d180-md-blockquote {
+          margin: 26px 0;
+          padding: 14px 16px;
+          border-left: 2px solid #e2e8f0;
+          border-radius: 8px;
+          background: #f8fafc;
+          font-style: italic;
+          color: #334155;
+        }
+        #days180-root .d180-md-inline-code {
+          background: #f1f5f9;
+          color: #c2410c;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+          font-size: 0.9em;
+          padding: 3px 6px;
+          border-radius: 6px;
+        }
+        #days180-root .d180-md-hr {
+          border: 0;
+          height: 1px;
+          background: #e2e8f0;
+          margin: 48px 0;
+        }
+        #days180-root .d180-md-link {
+          color: #d97706;
+          text-decoration: none;
+          font-weight: 600;
+        }
+        #days180-root .d180-md-link:hover {
+          text-decoration: underline;
+        }
+        #days180-root .d180-md-table-wrap {
+          overflow: auto;
+          border: 1px solid #e2e8f0;
+          border-radius: 8px;
+          margin: 24px 0;
+        }
+        #days180-root .d180-md-table {
+          min-width: 100%;
+          border-collapse: collapse;
+        }
+        #days180-root .d180-md-th {
+          text-align: left;
+          font-size: 13px;
+          font-weight: 700;
+          color: #334155;
+          background: #f8fafc;
+          padding: 10px;
+          border-bottom: 1px solid #e2e8f0;
+        }
+        #days180-root .d180-md-td {
+          font-size: 14px;
+          color: #334155;
+          padding: 10px;
+          border-bottom: 1px solid #f1f5f9;
+        }
+        #days180-root .d180-code-lang {
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: .06em;
+          color: #475569;
+          background: #f1f5f9;
+          padding: 4px 10px;
+          border-radius: 6px;
+        }
+        #days180-root .d180-copy-btn {
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: .06em;
+          color: #0f172a;
+          background: #fbbf24;
+          border: 0;
+          border-radius: 6px;
+          padding: 4px 10px;
+          cursor: pointer;
+        }
+        #days180-root .d180-code-pre {
+          overflow: auto;
+          border-radius: 16px;
+          background: #0f172a;
+          color: #f8fafc;
+          padding: 18px 16px;
+        }
+        #days180-root .d180-bottom-nav {
+          margin-top: 64px;
+          padding: 24px 0 60px;
+          border-top: 1px solid #e2e8f0;
+          display: flex;
+          gap: 12px;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        #days180-root .d180-nav-link {
+          border-radius: 12px;
+          border: 1px solid #e2e8f0;
+          background: #f8fafc;
+          color: #0f172a;
+          text-decoration: none;
+          padding: 12px 16px;
+          min-width: 180px;
+        }
+        #days180-root .d180-nav-link strong {
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: .08em;
+          color: #64748b;
+          display: block;
+          margin-bottom: 4px;
+        }
+        #days180-root .d180-nav-link.next {
+          text-align: right;
+          background: #0f172a;
+          border-color: #0f172a;
+          color: #fff;
+        }
+        #days180-root .d180-nav-link.next strong {
+          color: rgba(255,255,255,0.72);
+        }
+        #days180-root .d180-edit-link {
+          display: inline-block;
+          margin-top: 16px;
+          padding: 10px 14px;
+          border: 1px solid #e2e8f0;
+          border-radius: 10px;
+          background: #f8fafc;
+          color: #334155;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        #days180-root .d180-edit-link:hover {
+          border-color: #f59e0b;
+        }
+        @media (max-width: 640px) {
+          #days180-root .d180-article-header-inner,
+          #days180-root .d180-content-wrap {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+          #days180-root .d180-pill {
+            display: none;
+          }
+        }
+      10:["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$18"}],"$L19","$L1a","$L1b","$L1c"]}]
+19:["$","header",null,{"className":"d180-article-header","children":["$","div",null,{"className":"d180-article-header-inner","children":[["$","div",null,{"className":"flex items-center gap-3 shrink-0","children":[["$","$Lb",null,{"href":"/","aria-label":"Go to main home page","className":"w-8 h-8 bg-amber-400 rounded-lg flex items-center justify-center text-slate-900 shadow-lg shadow-amber-400/20","children":["$","span",null,{"className":"font-black text-sm","children":"SK"}]}],["$","nav",null,{"className":"hidden md:flex items-center gap-3","children":[["$","$Lb",null,{"href":"/180days","className":"d180-crumb","children":[["$","span",null,{"className":"d180-crumb-series","children":"180 Days"}]," ",["$","span",null,{"children":"/"}]," ",["$","strong",null,{"children":["Day ","11"]}]]}],["$","div",null,{"className":"d180-pill","children":[["$","div",null,{"className":"d180-pill-track","children":["$","div",null,{"className":"d180-pill-fill","style":{"width":"6%"}}]}],["$","b",null,{"children":[6,"%"]}]]}]]}]]}],["$","div",null,{"className":"flex items-center gap-4","children":["$","$Lb",null,{"href":"/180days","className":"d180-crumb","children":"← All Days"}]}]]}]}]
+1a:["$","div",null,{"className":"d180-hero","children":["$","div",null,{"className":"d180-hero-inner d180-content-wrap","style":{"paddingTop":56,"paddingBottom":56},"children":[["$","h1",null,{"style":{"maxWidth":820},"children":"Day 11: AI-Assisted Translation — From Web to Native"}],["$","p",null,{"style":{"marginTop":14,"maxWidth":760},"children":"We take the AI-generated HTML/CSS from Day 8 and, using GitHub Copilot as our pairing partner, translate it into a beautiful, functional React Native component. A practical lesson in prompt-driven development."}],["$","div",null,{"className":"d180-meta-line","children":[["$","span",null,{"children":"2026-03-02"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#d97706"},"children":"Subrata Kumar Das"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#15803d","fontSize":11,"fontWeight":800,"textTransform":"uppercase","letterSpacing":".08em"},"children":"Complete"}]]}],["$","p",null,{"style":{"marginTop":16,"maxWidth":500,"fontSize":13,"lineHeight":1.7,"color":"#92400e","borderLeft":"2px solid #fcd34d","paddingLeft":10,"fontStyle":"italic"},"children":"\"Consistent small steps lead to massive long-term results. Keep pushing.\""}]]}]}]
+1d:T5ce1,<p class="d180-md-p"><strong>Previously on the journey:</strong></p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">The application's backend is solid: Service → Repository → Encrypted Realm.</li>
+<li class="d180-md-li">The UI vision is clear: On Day 8, we used an AI design tool ("Stitch") to generate beautiful, minimal mockups and, crucially, a set of corresponding HTML and CSS files.</li>
+</ul>
+<p class="d180-md-p">The weekend is over. It’s Monday. The architectural foundation is set, and the design blueprint is in hand. Today, we build the bridge between them. We will bring the main <strong>Archive Timeline</strong> screen to life.</p>
+<p class="d180-md-p">But we won’t do it alone. In the spirit of this "AI era" journey, we’ll use another AI tool, <strong>GitHub Copilot</strong>, as our intelligent pairing partner to translate the web design into native reality.</p>
+<hr class="d180-md-hr" />
+<h3 id="the-challenge-a-tale-of-two-worlds" class="d180-md-h3">The Challenge: A Tale of Two Worlds</h3>
+<p class="d180-md-p">The AI design tool gave us web code. It thinks in terms of the <strong>Document Object Model (DOM)</strong>: <code class="d180-md-inline-code">&#x3C;div></code>s, <code class="d180-md-inline-code">&#x3C;p></code>s, and CSS properties like <code class="d180-md-inline-code">box-shadow</code>.</p>
+<p class="d180-md-p">React Native, however, builds for a different world. It commands <strong>native UI components</strong>: <code class="d180-md-inline-code">&#x3C;View></code>, <code class="d180-md-inline-code">&#x3C;Text></code>, and uses a JavaScript-based styling system (<code class="d180-md-inline-code">StyleSheet</code>) that doesn't understand CSS syntax directly.</p>
+<div class="d180-md-table-wrap"><table class="d180-md-table">
+<thead>
+<tr>
+<th class="d180-md-th">Web (From AI Tool)</th>
+<th class="d180-md-th">React Native (Our Goal)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="d180-md-td"><code class="d180-md-inline-code">&#x3C;div></code></td>
+<td class="d180-md-td"><code class="d180-md-inline-code">&#x3C;View></code></td>
+</tr>
+<tr>
+<td class="d180-md-td"><code class="d180-md-inline-code">&#x3C;p></code>, <code class="d180-md-inline-code">&#x3C;h2></code></td>
+<td class="d180-md-td"><code class="d180-md-inline-code">&#x3C;Text></code></td>
+</tr>
+<tr>
+<td class="d180-md-td"><code class="d180-md-inline-code">class="card"</code></td>
+<td class="d180-md-td"><code class="d180-md-inline-code">style={styles.card}</code></td>
+</tr>
+<tr>
+<td class="d180-md-td"><code class="d180-md-inline-code">box-shadow: ...</code></td>
+<td class="d180-md-td"><code class="d180-md-inline-code">shadowColor, shadowOffset, elevation...</code></td>
+</tr>
+</tbody>
+</table></div>
+<p class="d180-md-p">We can't just copy-paste. We must <strong>translate</strong>. And for this translation work, a tool like GitHub Copilot is not a shortcut—it’s a force multiplier.</p>
+<hr class="d180-md-hr" />
+<h3 id="the-process-prompt-driven-translation-with-github-copilot" class="d180-md-h3">The Process: Prompt-Driven Translation with GitHub Copilot</h3>
+<p class="d180-md-p">Our goal is to create <code class="d180-md-inline-code">src/screens/ArchiveTimelineScreen.tsx</code>. We'll do this by giving Copilot clear instructions, context, and code to work with.</p>
+<h4 id="step-1-create-the-component-and-provide-context" class="d180-md-h4">Step 1: Create the Component and Provide Context</h4>
+<p class="d180-md-p">First, create the file. To give Copilot the best possible context, we'll paste the HTML and CSS from our AI design tool directly into the file as comments.</p>
+<p class="d180-md-p"><strong>File: <code class="d180-md-inline-code">src/screens/ArchiveTimelineScreen.tsx</code></strong></p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TYPESCRIPTREACT</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-typescriptreact">// The AI design tool gave us this HTML structure for an entry card:
+/*
+&#x3C;div class="entry-card">
+  &#x3C;p class="entry-date">2026-03-01&#x3C;/p>
+  &#x3C;h2 class="entry-title">First day of spring&#x3C;/h2>
+  &#x3C;p class="entry-preview">Walked through the park and felt the sun.&#x3C;/p>
+  &#x3C;div class="tags-container">
+    &#x3C;span class="tag">nature&#x3C;/span>
+    &#x3C;span class="tag">walk&#x3C;/span>
+  &#x3C;/div>
+&#x3C;/div>
+*/
+
+// And it gave us this CSS:
+/*
+.entry-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.entry-date {
+  font-size: 12px;
+  color: #868e96;
+  margin-bottom: 5px;
+}
+... (and so on for other classes)
+*/
+
+// Now, let's start building.
+</code></pre>
+      </div>
+    
+<h4 id="step-2-prompting-for-jsx-structure" class="d180-md-h4">Step 2: Prompting for JSX Structure</h4>
+<p class="d180-md-p">With the context in place, we can write a prompt (as a comment) asking Copilot to generate the JSX.</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TYPESCRIPTREACT</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-typescriptreact">// PROMPT for Copilot:
+// Based on the HTML comment above, create a stateless React Native component named EntryCard
+// that takes `item` as a prop. Use &#x3C;View> and &#x3C;Text> components.
+
+// --- After this line, Copilot will suggest the following code ---
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">Copilot will generate a functional component that looks remarkably close to what we need, correctly mapping divs and paragraphs to Views and Texts.</p>
+<h4 id="step-3-prompting-for-style-translation" class="d180-md-h4">Step 3: Prompting for Style Translation</h4>
+<p class="d180-md-p">This is the magic step. We ask Copilot to perform the translation from CSS to a StyleSheet object.</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TYPESCRIPTREACT</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-typescriptreact">// PROMPT for Copilot:
+// Now, convert the CSS comment block above into a React Native StyleSheet object named 'styles'.
+// Convert properties to camelCase.
+// For the 'box-shadow', create a cross-platform solution using 'shadow' properties for iOS
+// and 'elevation' for Android.
+
+// --- Copilot's turn ---
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">By providing a specific instruction for <code class="d180-md-inline-code">box-shadow</code>, we guide the AI to handle the most complex part of the translation correctly. This is the difference between a generic prompt and an expert one.</p>
+<h4 id="step-4-assemble-review-and-refine" class="d180-md-h4">Step 4: Assemble, Review, and Refine</h4>
+<p class="d180-md-p">Copilot isn't perfect; it's a "co-pilot." It provides a high-quality draft. Our job as the lead pilot is to review, refine, and <strong>integrate</strong>. We will now integrate three things: the JSX structure from Step 2, the <code class="d180-md-inline-code">StyleSheet</code> from Step 3, and a custom hook to provide data while respecting our application's architecture.</p>
+<h5 id="architectural-integrity-the-usearchiveentries-hook" class="d180-md-h5">Architectural Integrity: The <code class="d180-md-inline-code">useArchiveEntries</code> Hook</h5>
+<p class="d180-md-p">Our UI component must not fetch data directly. That's the job of the service layer, as we defined on Day 7. To keep this boundary clean, we'll create a custom hook, <code class="d180-md-inline-code">useArchiveEntries</code>, that will act as the middleman. For today's UI work, it will simply return mock data, but in a future chapter, we will upgrade it to call our <code class="d180-md-inline-code">ArchiveService</code>.</p>
+<p class="d180-md-p">Create the following file:</p>
+<p class="d180-md-p"><strong>File: <code class="d180-md-inline-code">src/hooks/useArchiveEntries.ts</code></strong></p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TYPESCRIPT</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-typescript">import { useState, useEffect } from 'react';
+
+// Type for an archive entry
+export interface ArchiveEntry {
+  id: string;
+  title: string;
+  preview: string;
+  date: string;
+  tags: string[];
+}
+
+// Mock data that matches our design for now
+const MOCK_ENTRIES: ArchiveEntry[] = [
+  { id: '1', title: 'First day of spring', preview: 'Walked through the park and felt the sun.', date: '2026-03-01', tags: ['nature', 'walk'] },
+  { id: '2', title: 'A new project idea', preview: 'Sketched out a plan for a new application.', date: '2026-02-28', tags: ['work', 'creative'] },
+  { id: '3', title: 'Reading by the window', preview: 'Finished the last chapter of a great book.', date: '2026-02-25', tags: ['books', 'calm'] },
+];
+
+export const useArchiveEntries = (): { entries: ArchiveEntry[] } => {
+  const [entries, setEntries] = useState&#x3C;ArchiveEntry[]>([]);
+
+  useEffect(() => {
+    // In a future chapter, this will call our ArchiveService.
+    // For now, we simulate an API call with mock data.
+    setEntries(MOCK_ENTRIES);
+  }, []);
+
+  return {
+    entries,
+    // We can add loading/error states here later
+  };
+};
+
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">With this hook created, we can now assemble our final component, confident that our architecture remains clean.</p>
+<p class="d180-md-p">One such refinement is handling the "safe area" (the part of the screen not obscured by notches or home indicators). While React Native includes a basic <code class="d180-md-inline-code">SafeAreaView</code>, the <code class="d180-md-inline-code">react-native-safe-area-context</code> package provides a more powerful and reliable implementation that works seamlessly with navigation. We'll use that one.</p>
+<p class="d180-md-p">If you haven't already, install it:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">BASH</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-bash">npm install react-native-safe-area-context
+</code></pre>
+      </div>
+    
+<hr class="d180-md-hr" />
+<h3 id="the-final-code-ai-assisted" class="d180-md-h3">The Final Code (AI-Assisted)</h3>
+<p class="d180-md-p">After assembling the pieces and performing minor touch-ups, our final component looks like this:</p>
+<p class="d180-md-p"><strong>File: <code class="d180-md-inline-code">src/screens/ArchiveTimelineScreen.tsx</code></strong></p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TYPESCRIPTREACT</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-typescriptreact">import React from 'react';
+import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { useArchiveEntries } from '../hooks/useArchiveEntries'; // Respecting our architecture
+
+/**
+ * A card component to display a single archive entry.
+ * Its structure was first drafted by GitHub Copilot based on an HTML comment.
+ */
+const EntryCard = ({ item }) => (
+  &#x3C;View style={styles.entryCard}>
+    &#x3C;Text style={styles.entryDate}>{item.date}&#x3C;/Text>
+    &#x3C;Text style={styles.entryTitle}>{item.title}&#x3C;/Text>
+    &#x3C;Text style={styles.entryPreview}>{item.preview}&#x3C;/Text>
+    &#x3C;View style={styles.tagsContainer}>
+      {item.tags.map(tag => &#x3C;Text key={tag} style={styles.tag}>{tag}&#x3C;/Text>)}
+    &#x3C;/View>
+  &#x3C;/View>
+);
+
+const ArchiveTimelineScreen = () => {
+  const { entries } = useArchiveEntries();
+
+  return (
+    &#x3C;SafeAreaView style={styles.container}>
+      &#x3C;Text style={styles.headerTitle}>Archive&#x3C;/Text>
+
+      &#x3C;View style={styles.searchBar}>
+        &#x3C;Text style={styles.searchText}>Search...&#x3C;/Text>
+      &#x3C;/View>
+
+      &#x3C;FlatList
+        data={entries}
+        renderItem={({ item }) => &#x3C;EntryCard item={item} />}
+        keyExtractor={(item) => item.id}
+        contentContainerStyle={styles.listContent}
+        showsVerticalScrollIndicator={false}
+      />
+
+      &#x3C;TouchableOpacity style={styles.fab}>
+        &#x3C;Text style={styles.fabText}>+&#x3C;/Text>
+      &#x3C;/TouchableOpacity>
+    &#x3C;/SafeAreaView>
+  );
+};
+
+/**
+ * These styles were translated from CSS by GitHub Copilot, with manual review
+ * and refinement, especially for the cross-platform shadow properties.
+ */
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#f8f9fa', // Off-white
+  },
+  headerTitle: {
+    fontSize: 32,
+    fontWeight: 'bold',
+    marginTop: 20,
+    marginBottom: 20,
+    paddingHorizontal: 20,
+  },
+  searchBar: {
+    backgroundColor: '#e9ecef',
+    borderRadius: 10,
+    padding: 15,
+    marginHorizontal: 20,
+    marginBottom: 20,
+  },
+  searchText: {
+    color: '#868e96',
+  },
+  listContent: {
+    paddingHorizontal: 20,
+    paddingBottom: 100, // Ensure space for the FAB
+  },
+  entryCard: {
+    backgroundColor: '#ffffff',
+    borderRadius: 12,
+    padding: 20,
+    marginBottom: 15,
+    // Shadow properties refined from Copilot's suggestion
+    shadowColor: '#000', // iOS
+    shadowOffset: { width: 0, height: 2 }, // iOS
+    shadowOpacity: 0.08, // iOS
+    shadowRadius: 4, // iOS
+    elevation: 3, // Android
+  },
+  entryDate: {
+    fontSize: 12,
+    color: '#868e96',
+    marginBottom: 5,
+  },
+  entryTitle: {
+    fontSize: 18,
+    fontWeight: '600',
+    marginBottom: 5,
+    color: '#212529',
+  },
+  entryPreview: {
+    fontSize: 14,
+    color: '#495057',
+    lineHeight: 20,
+  },
+  tagsContainer: {
+    flexDirection: 'row',
+    marginTop: 12,
+    flexWrap: 'wrap',
+  },
+  tag: {
+    backgroundColor: '#e9ecef',
+    color: '#495057',
+    fontSize: 12,
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    borderRadius: 16,
+    marginRight: 8,
+    marginBottom: 8,
+    overflow: 'hidden',
+  },
+  fab: {
+    position: 'absolute',
+    right: 25,
+    bottom: 40,
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    backgroundColor: '#ced4da',
+    justifyContent: 'center',
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 5,
+    elevation: 8,
+  },
+  fabText: {
+    fontSize: 30,
+    color: '#495057',
+    fontWeight: '300',
+  },
+});
+
+export default ArchiveTimelineScreen;
+</code></pre>
+      </div>
+    
+<hr class="d180-md-hr" />
+<h3 id="a-quick-detour-absolute-import-aliases" class="d180-md-h3">A Quick Detour: Absolute Import Aliases</h3>
+<p class="d180-md-p">As our project grows, you'll notice import paths getting longer and more fragile.</p>
+<p class="d180-md-p"><code class="d180-md-inline-code">import { useArchiveEntries } from '../hooks/useArchiveEntries';</code></p>
+<p class="d180-md-p">This is called a <strong>relative path</strong>. If we move this screen to a different folder, the <code class="d180-md-inline-code">../</code> part breaks. It’s brittle.</p>
+<p class="d180-md-p">The solution is to use <strong>absolute import aliases</strong>. We can tell our project that the special character <code class="d180-md-inline-code">@/</code> always means "start from the <code class="d180-md-inline-code">src/</code> directory."</p>
+<p class="d180-md-p">This is a two-step process:</p>
+<h4 id="1-configure-tsconfigjson" class="d180-md-h4">1. Configure <code class="d180-md-inline-code">tsconfig.json</code></h4>
+<p class="d180-md-p">Add the <code class="d180-md-inline-code">baseUrl</code> and <code class="d180-md-inline-code">paths</code> properties to your <code class="d180-md-inline-code">tsconfig.json</code> file. This tells TypeScript how to resolve the <code class="d180-md-inline-code">@/</code> alias.</p>
+<p class="d180-md-p"><strong>File: <code class="d180-md-inline-code">tsconfig.json</code></strong></p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">JSON</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-json">{
+  "compilerOptions": {
+    // ... existing options
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+  // ... rest of the file
+}
+</code></pre>
+      </div>
+    
+<h4 id="2-update-babel-for-metro-bundler" class="d180-md-h4">2. Update Babel (for Metro Bundler)</h4>
+<p class="d180-md-p">React Native's bundler, Metro, doesn't read <code class="d180-md-inline-code">tsconfig.json</code>. We need to tell it about our alias separately using the <code class="d180-md-inline-code">babel-plugin-module-resolver</code>.</p>
+<p class="d180-md-p">First, install it:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">BASH</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-bash">npm install --save-dev babel-plugin-module-resolver
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">Next, create or update your <code class="d180-md-inline-code">babel.config.js</code> file in the project root:</p>
+<p class="d180-md-p"><strong>File: <code class="d180-md-inline-code">babel.config.js</code></strong></p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">JAVASCRIPT</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-javascript">module.exports = {
+  presets: ['module:metro-react-native-babel-preset'],
+  plugins: [
+    [
+      'module-resolver',
+      {
+        root: ['./src'],
+        extensions: ['.ios.js', '.android.js', '.js', '.ts', '.tsx', '.json'],
+        alias: {
+          "@": "./src",
+        }
+      }
+    ]
+  ]
+};
+</code></pre>
+      </div>
+    
+<h4 id="the-result-cleaner-stronger-imports" class="d180-md-h4">The Result: Cleaner, Stronger Imports</h4>
+<p class="d180-md-p">Now, we can refactor our imports to be much cleaner and more robust.</p>
+<p class="d180-md-p"><strong>Before:</strong>
+<code class="d180-md-inline-code">import { useArchiveEntries } from '../hooks/useArchiveEntries';</code></p>
+<p class="d180-md-p"><strong>After:</strong>
+<code class="d180-md-inline-code">import { useArchiveEntries } from '@/hooks/useArchiveEntries';</code></p>
+<p class="d180-md-p">No matter where we move our screen file, this import will never break. It's a small change that pays huge dividends in maintainability.</p>
+<hr class="d180-md-hr" />
+<h3 id="-day-11-outcome" class="d180-md-h3">🎯 Day 11 Outcome</h3>
+<p class="d180-md-p">Today, we successfully transformed a static web design into a live, styled React Native component. We didn't just write code; we directed an AI to do the heavy lifting of translation for us.</p>
+<p class="d180-md-p"><strong>The key takeaway is a new development skill: Prompt Engineering.</strong> Our value was not in typing <code class="d180-md-inline-code">backgroundColor</code> a dozen times, but in crafting a precise prompt that instructed an AI to do it correctly, and then using our expertise to validate and refine the result. We acted as architects and quality assurance, not just as bricklayers.</p>
+<p class="d180-md-p"><strong>Next up:</strong> The screen looks beautiful but is static. On Day 12, we will bring it to life by implementing navigation, making the floating action button open the <code class="d180-md-inline-code">Create New Entry</code> screen.</p>
+<hr class="d180-md-hr" />
+<h3 id="-your-turn-practical-exercises" class="d180-md-h3">🔧 Your Turn: Practical Exercises</h3>
+<ol class="d180-md-ol">
+<li class="d180-md-li"><strong>Translate Another Component:</strong> Take the HTML/CSS for the "New Entry" screen from the Day 8 files and use the same prompt-driven process to create a new <code class="d180-md-inline-code">CreateEntryScreen.tsx</code> component.</li>
+<li class="d180-md-li"><strong>Implement the Empty State:</strong> Our current code assumes there are always entries. Modify <code class="d180-md-inline-code">ArchiveTimelineScreen.tsx</code> to show the "empty state" design from Day 8 when the <code class="d180-md-inline-code">entries</code> array is empty. (Hint: Use a conditional render: <code class="d180-md-inline-code">entries.length === 0 ? &#x3C;EmptyStateComponent /> : &#x3C;FlatList ... /></code>).</li>
+<li class="d180-md-li"><strong>Experiment with Prompts:</strong> Go back to the style translation prompt. Change it to be less specific (e.g., remove the instruction about <code class="d180-md-inline-code">box-shadow</code>). How does Copilot's output change? Now, try being more specific (e.g., "Use a larger shadow radius for a softer feel"). Observe the difference.</li>
+</ol>
+<h3 id="-further-reading" class="d180-md-h3">📚 Further Reading</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li"><strong>React Hooks:</strong> <a href="https://react.dev/reference/react/hooks" class="d180-md-link">Official Introduction to Hooks</a> - The best place to start understanding <code class="d180-md-inline-code">useState</code>, <code class="d180-md-inline-code">useEffect</code>, and the logic behind custom hooks.</li>
+<li class="d180-md-li"><strong>Building Your Own Hooks:</strong> <a href="https://react.dev/learn/reusing-logic-with-custom-hooks" class="d180-md-link">React Docs on Custom Hooks</a> - A guide to extracting component logic into reusable functions, just like we did with <code class="d180-md-inline-code">useArchiveEntries</code>.</li>
+<li class="d180-md-li"><strong>React Native Styling:</strong> <a href="https://reactnative.dev/docs/stylesheet" class="d180-md-link">StyleSheet API Documentation</a> - The official reference for React Native's styling system.</li>
+<li class="d180-md-li"><strong>Styling Cheatsheet:</strong> <a href="https://github.com/vhpoet/react-native-styling-cheat-sheet" class="d180-md-link">React Native vs. Web CSS</a> - An excellent resource for manual style translations.</li>
+<li class="d180-md-li"><strong>GitHub Copilot Best Practices:</strong> <a href="https://github.blog/2023-06-20-getting-the-most-out-of-github-copilot/" class="d180-md-link">Getting the most out of GitHub Copilot</a> - Tips for writing effective prompts.</li>
+</ul>
+1b:["$","main",null,{"className":"d180-content-wrap","style":{"paddingTop":36},"children":["$","div",null,{"className":"flex-1","children":[["$","article",null,{"className":"d180-post-content","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$1d"}}],"$L1e"]}],"$L1f","$L20"]}]}]
+1c:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"mainEntityOfPage\":\"https://subraatakumar.com/180days/day-11\",\"headline\":\"Day 11: AI-Assisted Translation — From Web to Native\",\"datePublished\":\"2026-03-02\",\"description\":\"We take the AI-generated HTML/CSS from Day 8 and, using GitHub Copilot as our pairing partner, translate it into a beautiful, functional React Native component. A practical lesson in prompt-driven development.\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\"}}"}}]
+21:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]
+1e:["$","$L21",null,{}]
+1f:["$","div",null,{"className":"mt-8 mb-6","children":["$","a",null,{"href":"https://github.com/subraatakumar/subraatakumar.com/edit/main/content/180days/day-11.md","target":"_blank","rel":"noopener noreferrer","className":"d180-edit-link","children":"Suggest a change to the content of the material"}]}]
+20:["$","div",null,{"className":"d180-bottom-nav","children":[["$","$Lb",null,{"href":"/180days/day-8","className":"d180-nav-link","children":["$","div",null,{"children":[["$","strong",null,{"children":"Previous"}],["$","span",null,{"style":{"fontSize":14,"fontWeight":700,"textTransform":"capitalize"},"children":"day 8"}]]}]}],["$","div",null,{}]]}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+22:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"IconMark"]
+13:null
+17:[["$","title","0",{"children":"Day 11: AI-Assisted Translation — From Web to Native | Subrata Kumar Das"}],["$","meta","1",{"name":"description","content":"We take the AI-generated HTML/CSS from Day 8 and, using GitHub Copilot as our pairing partner, translate it into a beautiful, functional React Native component. A practical lesson in prompt-driven development."}],["$","meta","2",{"name":"keywords","content":"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"}],["$","link","3",{"rel":"canonical","href":"https://subraatakumar.com/180days/day-11/"}],["$","meta","4",{"property":"og:title","content":"Day 11: AI-Assisted Translation — From Web to Native | 180 Days"}],["$","meta","5",{"property":"og:description","content":"We take the AI-generated HTML/CSS from Day 8 and, using GitHub Copilot as our pairing partner, translate it into a beautiful, functional React Native component. A practical lesson in prompt-driven development."}],["$","meta","6",{"property":"og:url","content":"https://subraatakumar.com/180days/day-11/"}],["$","meta","7",{"property":"og:image","content":"https://subraatakumar.com/images/interview.png"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"property":"article:published_time","content":"2026-03-02"}],["$","meta","10",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","11",{"name":"twitter:title","content":"Day 11: AI-Assisted Translation — From Web to Native | 180 Days"}],["$","meta","12",{"name":"twitter:description","content":"We take the AI-generated HTML/CSS from Day 8 and, using GitHub Copilot as our pairing partner, translate it into a beautiful, functional React Native component. A practical lesson in prompt-driven development."}],["$","meta","13",{"name":"twitter:image","content":"https://subraatakumar.com/images/interview.png"}],["$","link","14",{"rel":"icon","href":"/favicon.ico?favicon.750fd6b3.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L22","15",{}]]

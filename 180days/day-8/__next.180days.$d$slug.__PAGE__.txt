@@ -3,7 +3,7 @@
 e:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
 f:"$Sreact.suspense"
 11:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]
-2:T208a,
+2:T225e,
         #days180-root .d180-article-page {
           min-height: 100vh;
           background: #fff;
@@ -168,6 +168,20 @@ f:"$Sreact.suspense"
           font-style: italic;
           color: #334155;
         }
+        #days180-root .d180-md-inline-code {
+          background: #f1f5f9;
+          color: #c2410c;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+          font-size: 0.9em;
+          padding: 3px 6px;
+          border-radius: 6px;
+        }
+        #days180-root .d180-md-hr {
+          border: 0;
+          height: 1px;
+          background: #e2e8f0;
+          margin: 48px 0;
+        }
         #days180-root .d180-md-link {
           color: #d97706;
           text-decoration: none;
@@ -290,17 +304,17 @@ f:"$Sreact.suspense"
             display: none;
           }
         }
-      0:{"buildId":"Wwd4qPeH1W3u2GGoyQtaW","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5","$L6"]}],["$L7"],"$L8"]}],"loading":null,"isPartial":false}
+      0:{"buildId":"NQgK-Z7PvI4g98Ly7DiFn","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5","$L6"]}],["$L7"],"$L8"]}],"loading":null,"isPartial":false}
 3:["$","header",null,{"className":"d180-article-header","children":["$","div",null,{"className":"d180-article-header-inner","children":[["$","div",null,{"className":"flex items-center gap-3 shrink-0","children":[["$","$L9",null,{"href":"/","aria-label":"Go to main home page","className":"w-8 h-8 bg-amber-400 rounded-lg flex items-center justify-center text-slate-900 shadow-lg shadow-amber-400/20","children":["$","span",null,{"className":"font-black text-sm","children":"SK"}]}],["$","nav",null,{"className":"hidden md:flex items-center gap-3","children":[["$","$L9",null,{"href":"/180days","className":"d180-crumb","children":[["$","span",null,{"className":"d180-crumb-series","children":"180 Days"}]," ",["$","span",null,{"children":"/"}]," ",["$","strong",null,{"children":["Day ","8"]}]]}],["$","div",null,{"className":"d180-pill","children":[["$","div",null,{"className":"d180-pill-track","children":["$","div",null,{"className":"d180-pill-fill","style":{"width":"4%"}}]}],["$","b",null,{"children":[4,"%"]}]]}]]}]]}],["$","div",null,{"className":"flex items-center gap-4","children":["$","$L9",null,{"href":"/180days","className":"d180-crumb","children":"← All Days"}]}]]}]}]
 4:["$","div",null,{"className":"d180-hero","children":["$","div",null,{"className":"d180-hero-inner d180-content-wrap","style":{"paddingTop":56,"paddingBottom":56},"children":[["$","h1",null,{"style":{"maxWidth":820},"children":"Day 8 : Offline Life Archive — Screen Structure (MVP) Using AI"}],["$","p",null,{"style":{"marginTop":14,"maxWidth":760},"children":"Define the MVP screen structure and prompts for a privacy-focused offline memory app."}],["$","div",null,{"className":"d180-meta-line","children":[["$","span",null,{"children":"2026-02-27"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#d97706"},"children":"Subrata Kumar Das"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#15803d","fontSize":11,"fontWeight":800,"textTransform":"uppercase","letterSpacing":".08em"},"children":"Complete"}]]}],["$","p",null,{"style":{"marginTop":16,"maxWidth":500,"fontSize":13,"lineHeight":1.7,"color":"#92400e","borderLeft":"2px solid #fcd34d","paddingLeft":10,"fontStyle":"italic"},"children":"\"Consistent small steps lead to massive long-term results. Keep pushing.\""}]]}]}]
-a:T684f,<p class="d180-md-p">We divide screens into 4 groups:</p>
+a:T6b90,<p class="d180-md-p">We divide screens into 4 groups:</p>
 <ol class="d180-md-ol">
 <li class="d180-md-li">Onboarding</li>
 <li class="d180-md-li">Core Archive</li>
 <li class="d180-md-li">Sharing</li>
 <li class="d180-md-li">Settings &#x26; Security</li>
 </ol>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="1-onboarding-flow" class="d180-md-h2">1️⃣ Onboarding Flow</h2>
 <h3 id="1-welcome-screen" class="d180-md-h3">1. Welcome Screen</h3>
 <ul class="d180-md-ul">
@@ -317,7 +331,7 @@ a:T684f,<p class="d180-md-p">We divide screens into 4 groups:</p>
 <p class="d180-md-p">CTA: “Get Started”</p>
 </li>
 </ul>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="2-privacy-explanation-screen" class="d180-md-h3">2. Privacy Explanation Screen</h3>
 <ul class="d180-md-ul">
 <li class="d180-md-li">Fully offline</li>
@@ -326,15 +340,15 @@ a:T684f,<p class="d180-md-p">We divide screens into 4 groups:</p>
 <li class="d180-md-li">Local encrypted storage</li>
 </ul>
 <p class="d180-md-p">This builds trust early.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="3-optional-app-lock-setup" class="d180-md-h3">3. Optional App Lock Setup</h3>
 <ul class="d180-md-ul">
 <li class="d180-md-li">Enable PIN?</li>
 <li class="d180-md-li">Enable Biometrics?</li>
 <li class="d180-md-li">Skip option available</li>
 </ul>
-<p class="d180-md-p">This integrates with your <code>LockProvider</code> architecture.</p>
-<hr>
+<p class="d180-md-p">This integrates with your <code class="d180-md-inline-code">LockProvider</code> architecture.</p>
+<hr class="d180-md-hr" />
 <h3 id="4-theme-selection-optional" class="d180-md-h3">4. Theme Selection (Optional)</h3>
 <ul class="d180-md-ul">
 <li class="d180-md-li">Light</li>
@@ -342,10 +356,10 @@ a:T684f,<p class="d180-md-p">We divide screens into 4 groups:</p>
 <li class="d180-md-li">System</li>
 </ul>
 <p class="d180-md-p">Can also live inside Settings if you want fewer onboarding steps.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="2-core-archive-main-product" class="d180-md-h2">2️⃣ Core Archive (Main Product)</h2>
 <p class="d180-md-p">This is the heart.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-5-archive-timeline-screen-home" class="d180-md-h3">🏠 5. Archive Timeline Screen (Home)</h3>
 <p class="d180-md-p">This is your main screen.</p>
 <p class="d180-md-p"><strong>Must include:</strong></p>
@@ -360,7 +374,7 @@ a:T684f,<p class="d180-md-p">We divide screens into 4 groups:</p>
 <p class="d180-md-p">Calm.</p>
 <p class="d180-md-p">Scandinavian.</p>
 <p class="d180-md-p">No filters overload.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-6-create-edit-entry-screen" class="d180-md-h3">✍️ 6. Create / Edit Entry Screen</h3>
 <p class="d180-md-p">Fields:</p>
 <ul class="d180-md-ul">
@@ -374,7 +388,7 @@ a:T684f,<p class="d180-md-p">We divide screens into 4 groups:</p>
 <p class="d180-md-p">No AI.</p>
 <p class="d180-md-p">No templates.</p>
 <p class="d180-md-p">Just clean writing space.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-7-entry-detail-screen" class="d180-md-h3">👁 7. Entry Detail Screen</h3>
 <ul class="d180-md-ul">
 <li class="d180-md-li">Full text</li>
@@ -385,9 +399,9 @@ a:T684f,<p class="d180-md-p">We divide screens into 4 groups:</p>
 <li class="d180-md-li">“Share / Export” button</li>
 </ul>
 <p class="d180-md-p">Simple and intentional.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="3-sharing-flow-encrypted-bundle-system" class="d180-md-h2">3️⃣ Sharing Flow (Encrypted Bundle System)</h2>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-8-share-export-screen" class="d180-md-h3">📤 8. Share / Export Screen</h3>
 <ul class="d180-md-ul">
 <li class="d180-md-li">Select entries</li>
@@ -398,7 +412,7 @@ a:T684f,<p class="d180-md-p">We divide screens into 4 groups:</p>
 <p class="d180-md-p">No cloud.</p>
 <p class="d180-md-p">No links.</p>
 <p class="d180-md-p">File-based only.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-9-import-screen" class="d180-md-h3">📥 9. Import Screen</h3>
 <ul class="d180-md-ul">
 <li class="d180-md-li">Select bundle file</li>
@@ -408,8 +422,8 @@ a:T684f,<p class="d180-md-p">We divide screens into 4 groups:</p>
 <li class="d180-md-li">Confirm import</li>
 </ul>
 <p class="d180-md-p">Imported entries marked:</p>
-<p class="d180-md-p"><code>isShared = true</code></p>
-<hr>
+<p class="d180-md-p"><code class="d180-md-inline-code">isShared = true</code></p>
+<hr class="d180-md-hr" />
 <h3 id="-10-shared-with-me-screen" class="d180-md-h3">📦 10. “Shared With Me” Screen</h3>
 <p class="d180-md-p">Separate from main timeline.</p>
 <p class="d180-md-p">User can:</p>
@@ -419,9 +433,9 @@ a:T684f,<p class="d180-md-p">We divide screens into 4 groups:</p>
 <li class="d180-md-li">Keep separate</li>
 </ul>
 <p class="d180-md-p">Clean separation.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="4-settings-x26-security" class="d180-md-h2">4️⃣ Settings &#x26; Security</h2>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-11-settings-screen" class="d180-md-h3">⚙️ 11. Settings Screen</h3>
 <p class="d180-md-p">Sections:</p>
 <p class="d180-md-p"><strong>Security</strong></p>
@@ -446,7 +460,7 @@ a:T684f,<p class="d180-md-p">We divide screens into 4 groups:</p>
 <li class="d180-md-li">Privacy philosophy</li>
 <li class="d180-md-li">Open source link (future)</li>
 </ul>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-12-lock-overlay-screen-not-a-route" class="d180-md-h3">🔒 12. Lock Overlay Screen (Not a Route)</h3>
 <p class="d180-md-p">Important per architecture:</p>
 <p class="d180-md-p">Lock is NOT a screen in navigation.</p>
@@ -468,7 +482,7 @@ a:T684f,<p class="d180-md-p">We divide screens into 4 groups:</p>
 <li class="d180-md-li">When backgrounded</li>
 </ul>
 <p class="d180-md-p">This follows blueprint rule</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="-final-screen-list-mvp-locked" class="d180-md-h2">🧭 Final Screen List (MVP Locked)</h2>
 <ol class="d180-md-ol">
 <li class="d180-md-li">Welcome</li>
@@ -484,7 +498,7 @@ a:T684f,<p class="d180-md-p">We divide screens into 4 groups:</p>
 <li class="d180-md-li">Settings</li>
 <li class="d180-md-li">Lock Overlay (infrastructure)</li>
 </ol>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="-what-we-are-not-adding-first-90-days" class="d180-md-h1">🚫 What We Are NOT Adding (First 90 Days)</h1>
 <ul class="d180-md-ul">
 <li class="d180-md-li">No analytics dashboard</li>
@@ -497,7 +511,7 @@ a:T684f,<p class="d180-md-p">We divide screens into 4 groups:</p>
 <li class="d180-md-li">No feature explosion</li>
 </ul>
 <p class="d180-md-p">This respects MVP Boundaries</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="-minimal-navigation-map" class="d180-md-h1">🎯 Minimal Navigation Map</h1>
 
       <div class="relative my-6 code-block">
@@ -528,7 +542,7 @@ Main Stack:
 <li class="d180-md-li">Clear about what NOT to include</li>
 </ul>
 <p class="d180-md-p">Below are ready-to-copy prompts per screen.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="-master-style-prompt-use-this-at-top-of-every-prompt" class="d180-md-h1">🎯 Master Style Prompt (Use This At Top of Every Prompt)</h1>
 <p class="d180-md-p">Paste this first in Stitch before each screen request:</p>
 
@@ -550,7 +564,7 @@ Designed for a privacy-first offline memory archive app.
       </div>
     
 <p class="d180-md-p">This anchors the design philosophy.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-1-archive-timeline-screen-prompt" class="d180-md-h3">🏠 1️⃣ Archive Timeline Screen Prompt</h3>
 
       <div class="relative my-6 code-block">
@@ -582,7 +596,7 @@ No bottom nav with many tabs.
 </code></pre>
       </div>
     
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-2-create-edit-entry-screen-prompt" class="d180-md-h3">✍️ 2️⃣ Create / Edit Entry Screen Prompt</h3>
 
       <div class="relative my-6 code-block">
@@ -611,7 +625,7 @@ Clean and focused writing experience.
 </code></pre>
       </div>
     
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-3-entry-detail-screen-prompt" class="d180-md-h3">👁 3️⃣ Entry Detail Screen Prompt</h3>
 
       <div class="relative my-6 code-block">
@@ -638,7 +652,7 @@ Design must feel intimate and personal.
 </code></pre>
       </div>
     
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-4-share-export-screen-prompt" class="d180-md-h3">📤 4️⃣ Share / Export Screen Prompt</h3>
 
       <div class="relative my-6 code-block">
@@ -661,7 +675,7 @@ Must look secure and calm.
 </code></pre>
       </div>
     
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-5-import-screen-prompt" class="d180-md-h3">📥 5️⃣ Import Screen Prompt</h3>
 
       <div class="relative my-6 code-block">
@@ -684,7 +698,7 @@ Focus on clarity and trust.
 </code></pre>
       </div>
     
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-6-settings-screen-prompt" class="d180-md-h3">⚙️ 6️⃣ Settings Screen Prompt</h3>
 
       <div class="relative my-6 code-block">
@@ -717,7 +731,7 @@ No gamification.
 </code></pre>
       </div>
     
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-7-lock-screen-prompt" class="d180-md-h3">🔒 7️⃣ Lock Screen Prompt</h3>
 
       <div class="relative my-6 code-block">
@@ -740,7 +754,7 @@ Must feel secure and respectful.
 </code></pre>
       </div>
     
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-advanced-tip-very-important" class="d180-md-h3">💡 Advanced Tip (Very Important)</h3>
 <p class="d180-md-p">At the end of each prompt, add:</p>
 
@@ -756,7 +770,7 @@ Design for emotional safety and privacy.
       </div>
     
 <p class="d180-md-p">That forces better output.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h1 id="-if-you-want-next-level-results" class="d180-md-h1">🚀 If You Want Next-Level Results</h1>
 <p class="d180-md-p">After generating each screen, ask Stitch:</p>
 
@@ -771,7 +785,7 @@ Remove anything unnecessary.
       </div>
     
 <p class="d180-md-p">Iteration improves quality drastically.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h2 id="home-screen-design-using-stitch" class="d180-md-h2">Home Screen design using Stitch</h2>
 <h3 id="prompt-for-stitch" class="d180-md-h3">prompt for stitch</h3>
 
@@ -832,7 +846,7 @@ Design for emotional safety and privacy.
 <p class="d180-md-p">This is actually <strong>very good</strong> for a first generation.</p>
 <p class="d180-md-p">Stitch understood your philosophy correctly. 👏</p>
 <p class="d180-md-p">Now let’s review it like a product owner, not like a designer.</p>
-<hr>
+<hr class="d180-md-hr" />
 <p class="d180-md-p">✅ What Is Working Well</p>
 <h3 id="1-emotional-tone-excellent" class="d180-md-h3">1️⃣ Emotional Tone — ✔ Excellent</h3>
 <ul class="d180-md-ul">
@@ -847,7 +861,7 @@ Design for emotional safety and privacy.
 <p class="d180-md-p">“Your private digital life. Stored locally. Owned by you.”</p>
 </blockquote>
 <p class="d180-md-p">Good alignment with product definition.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="2-timeline-structure-correct" class="d180-md-h3">2️⃣ Timeline Structure — ✔ Correct</h3>
 <ul class="d180-md-ul">
 <li class="d180-md-li">Chronological grouping by date</li>
@@ -863,10 +877,10 @@ Design for emotional safety and privacy.
 <li class="d180-md-li">No cloud indicators</li>
 </ul>
 <p class="d180-md-p">Very disciplined.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-what-we-should-improve-product-owner-mode-activated" class="d180-md-h3">🔍 What We Should Improve (Product Owner Mode Activated)</h3>
 <p class="d180-md-p">Now we refine it to feel <strong>premium and intentional</strong>, not “AI-generated minimal template”.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-1-header-feels-slightly-generic" class="d180-md-h3">🔹 1. Header Feels Slightly Generic</h3>
 <p class="d180-md-p">Right now it says:</p>
 <blockquote class="d180-md-blockquote">
@@ -901,7 +915,7 @@ Keep it minimal.
 </code></pre>
       </div>
     
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-2-entry-cards-need-slight-hierarchy-boost" class="d180-md-h3">🔹 2. Entry Cards Need Slight Hierarchy Boost</h3>
 <p class="d180-md-p">Right now:</p>
 <ul class="d180-md-ul">
@@ -933,7 +947,7 @@ Keep minimal aesthetic.
 </code></pre>
       </div>
     
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-3-floating-button-is-slightly-heavy" class="d180-md-h3">🔹 3. Floating Button Is Slightly Heavy</h3>
 <p class="d180-md-p">The + button feels slightly dark and attention-grabbing.</p>
 <p class="d180-md-p">In a calm app, we want it softer.</p>
@@ -950,7 +964,7 @@ It should not dominate the screen.
 </code></pre>
       </div>
     
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-4-add-empty-state-design-very-important" class="d180-md-h3">🔹 4. Add Empty State Design (Very Important)</h3>
 <p class="d180-md-p">Right now we see populated state.</p>
 <p class="d180-md-p">But MVP must define:</p>
@@ -975,7 +989,7 @@ Keep calm tone.
       </div>
     
 <p class="d180-md-p">Empty state is emotional moment.</p>
-<hr>
+<hr class="d180-md-hr" />
 <h3 id="-next-step" class="d180-md-h3">🚀 Next Step</h3>
 <p class="d180-md-p">Tell Stitch:</p>
 
@@ -1013,5 +1027,5 @@ Add empty state variation.
 8:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
 b:["$","$L11",null,{}]
 c:["$","div",null,{"className":"mt-8 mb-6","children":["$","a",null,{"href":"https://github.com/subraatakumar/subraatakumar.com/edit/main/content/180days/day-8.md","target":"_blank","rel":"noopener noreferrer","className":"d180-edit-link","children":"Suggest a change to the content of the material"}]}]
-d:["$","div",null,{"className":"d180-bottom-nav","children":[["$","$L9",null,{"href":"/180days/day-7","className":"d180-nav-link","children":["$","div",null,{"children":[["$","strong",null,{"children":"Previous"}],["$","span",null,{"style":{"fontSize":14,"fontWeight":700,"textTransform":"capitalize"},"children":"day 7"}]]}]}],["$","div",null,{}]]}]
+d:["$","div",null,{"className":"d180-bottom-nav","children":[["$","$L9",null,{"href":"/180days/day-7","className":"d180-nav-link","children":["$","div",null,{"children":[["$","strong",null,{"children":"Previous"}],["$","span",null,{"style":{"fontSize":14,"fontWeight":700,"textTransform":"capitalize"},"children":"day 7"}]]}]}],["$","$L9",null,{"href":"/180days/day-11","className":"d180-nav-link next","children":["$","div",null,{"children":[["$","strong",null,{"children":"Next Up"}],["$","span",null,{"style":{"fontSize":14,"fontWeight":700,"textTransform":"capitalize"},"children":"day 11"}]]}]}]]}]
 10:null
