@@ -2,7 +2,7 @@
 title: "Day 12: Implementing Navigation with TypeScript"
 description: "A guide to building a type-safe navigation system in React Native using React Navigation and TypeScript, eliminating common errors and improving code maintainability."
 date: "2026-03-03"
-image: "/images/180days/day-0.png"
+image: "/images/180days/day-12.png"
 slug: "day-12-implementing-navigation-with-typescript"
 tags:
   - react-native
@@ -16,8 +16,6 @@ updated: "2026-03-04"
 draft: false
 readingTime: "9 min"
 ---
-
-# Day 12: Implementing Navigation with TypeScript
 
 Yesterday we converted the **static screens generated using Stitch** into working React Native components.
 
@@ -579,5 +577,5 @@ We will integrate tabs **without breaking the stack navigation architecture crea
 
 ---
 
-See you on **Day 13**.
+See you on **Day 13**
 
