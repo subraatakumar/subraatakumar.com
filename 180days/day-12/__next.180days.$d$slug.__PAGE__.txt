@@ -1,0 +1,918 @@
+1:"$Sreact.fragment"
+9:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
+e:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+11:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]
+2:T225e,
+        #days180-root .d180-article-page {
+          min-height: 100vh;
+          background: #fff;
+          color: #0f172a;
+        }
+        #days180-root .d180-article-header {
+          position: sticky;
+          top: 0;
+          z-index: 80;
+          background: rgba(255,255,255,0.92);
+          backdrop-filter: blur(16px);
+          border-bottom: 1px solid #e2e8f0;
+        }
+        #days180-root .d180-article-header-inner {
+          width: 100%;
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 32px;
+          height: 64px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        }
+        #days180-root .d180-crumb {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: .08em;
+          color: #64748b;
+          text-decoration: none;
+          background: #f1f5f9;
+          border-radius: 10px;
+          padding: 10px 14px;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+        }
+        #days180-root .d180-crumb-series {
+          transition: color .15s ease;
+        }
+        #days180-root .d180-crumb:hover .d180-crumb-series {
+          color: #d97706;
+        }
+        #days180-root .d180-crumb strong { color: #0f172a; }
+        #days180-root .d180-pill {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          padding: 8px 12px;
+          background: #f8fafc;
+          border: 1px solid #e2e8f0;
+          border-radius: 10px;
+        }
+        #days180-root .d180-pill-track {
+          width: 90px;
+          height: 8px;
+          background: #cbd5e1;
+          border-radius: 999px;
+          overflow: hidden;
+        }
+        #days180-root .d180-pill-fill {
+          height: 100%;
+          background: #f59e0b;
+          border-radius: 999px;
+        }
+        #days180-root .d180-pill b {
+          color: #d97706;
+          font-size: 11px;
+          letter-spacing: .02em;
+        }
+        #days180-root .d180-content-wrap {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 32px;
+        }
+        #days180-root .d180-meta-line {
+          margin-top: 8px;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 8px;
+          color: #64748b;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        #days180-root .d180-meta-line .dot {
+          width: 4px;
+          height: 4px;
+          border-radius: 999px;
+          background: #94a3b8;
+          display: inline-block;
+        }
+        #days180-root .d180-post-content {
+          max-width: 780px;
+        }
+        #days180-root .d180-post-content img {
+          max-width: 100%;
+          height: auto;
+        }
+        #days180-root .d180-post-content pre code {
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+        }
+        #days180-root .d180-md-p {
+          font-size: 17px;
+          line-height: 1.85;
+          color: #334155;
+          margin: 20px 0;
+        }
+        #days180-root .d180-md-h1 {
+          font-size: clamp(2rem, 4vw, 2.4rem);
+          font-weight: 900;
+          margin: 64px 0 24px;
+          padding-bottom: 12px;
+          border-bottom: 1px solid #e2e8f0;
+          line-height: 1.2;
+          color: #020617;
+        }
+        #days180-root .d180-md-h2 {
+          font-size: clamp(1.6rem, 3vw, 1.9rem);
+          font-weight: 900;
+          margin: 56px 0 18px;
+          line-height: 1.25;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-h3 {
+          font-size: clamp(1.3rem, 2.4vw, 1.5rem);
+          font-weight: 800;
+          margin: 40px 0 14px;
+          line-height: 1.3;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-h4,
+        #days180-root .d180-md-h5,
+        #days180-root .d180-md-h6 {
+          font-size: 1.1rem;
+          font-weight: 700;
+          margin: 28px 0 10px;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-ul {
+          list-style: disc;
+          padding-left: 24px;
+          margin: 18px 0;
+        }
+        #days180-root .d180-md-ol {
+          list-style: decimal;
+          padding-left: 28px;
+          margin: 18px 0;
+        }
+        #days180-root .d180-md-li {
+          margin: 8px 0;
+          line-height: 1.75;
+          color: #334155;
+        }
+        #days180-root .d180-md-blockquote {
+          margin: 26px 0;
+          padding: 14px 16px;
+          border-left: 2px solid #e2e8f0;
+          border-radius: 8px;
+          background: #f8fafc;
+          font-style: italic;
+          color: #334155;
+        }
+        #days180-root .d180-md-inline-code {
+          background: #f1f5f9;
+          color: #c2410c;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+          font-size: 0.9em;
+          padding: 3px 6px;
+          border-radius: 6px;
+        }
+        #days180-root .d180-md-hr {
+          border: 0;
+          height: 1px;
+          background: #e2e8f0;
+          margin: 48px 0;
+        }
+        #days180-root .d180-md-link {
+          color: #d97706;
+          text-decoration: none;
+          font-weight: 600;
+        }
+        #days180-root .d180-md-link:hover {
+          text-decoration: underline;
+        }
+        #days180-root .d180-md-table-wrap {
+          overflow: auto;
+          border: 1px solid #e2e8f0;
+          border-radius: 8px;
+          margin: 24px 0;
+        }
+        #days180-root .d180-md-table {
+          min-width: 100%;
+          border-collapse: collapse;
+        }
+        #days180-root .d180-md-th {
+          text-align: left;
+          font-size: 13px;
+          font-weight: 700;
+          color: #334155;
+          background: #f8fafc;
+          padding: 10px;
+          border-bottom: 1px solid #e2e8f0;
+        }
+        #days180-root .d180-md-td {
+          font-size: 14px;
+          color: #334155;
+          padding: 10px;
+          border-bottom: 1px solid #f1f5f9;
+        }
+        #days180-root .d180-code-lang {
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: .06em;
+          color: #475569;
+          background: #f1f5f9;
+          padding: 4px 10px;
+          border-radius: 6px;
+        }
+        #days180-root .d180-copy-btn {
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: .06em;
+          color: #0f172a;
+          background: #fbbf24;
+          border: 0;
+          border-radius: 6px;
+          padding: 4px 10px;
+          cursor: pointer;
+        }
+        #days180-root .d180-code-pre {
+          overflow: auto;
+          border-radius: 16px;
+          background: #0f172a;
+          color: #f8fafc;
+          padding: 18px 16px;
+        }
+        #days180-root .d180-bottom-nav {
+          margin-top: 64px;
+          padding: 24px 0 60px;
+          border-top: 1px solid #e2e8f0;
+          display: flex;
+          gap: 12px;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        #days180-root .d180-nav-link {
+          border-radius: 12px;
+          border: 1px solid #e2e8f0;
+          background: #f8fafc;
+          color: #0f172a;
+          text-decoration: none;
+          padding: 12px 16px;
+          min-width: 180px;
+        }
+        #days180-root .d180-nav-link strong {
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: .08em;
+          color: #64748b;
+          display: block;
+          margin-bottom: 4px;
+        }
+        #days180-root .d180-nav-link.next {
+          text-align: right;
+          background: #0f172a;
+          border-color: #0f172a;
+          color: #fff;
+        }
+        #days180-root .d180-nav-link.next strong {
+          color: rgba(255,255,255,0.72);
+        }
+        #days180-root .d180-edit-link {
+          display: inline-block;
+          margin-top: 16px;
+          padding: 10px 14px;
+          border: 1px solid #e2e8f0;
+          border-radius: 10px;
+          background: #f8fafc;
+          color: #334155;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        #days180-root .d180-edit-link:hover {
+          border-color: #f59e0b;
+        }
+        @media (max-width: 640px) {
+          #days180-root .d180-article-header-inner,
+          #days180-root .d180-content-wrap {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+          #days180-root .d180-pill {
+            display: none;
+          }
+        }
+      0:{"buildId":"eoP6ud356d7pLE79c31EA","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5","$L6"]}],["$L7"],"$L8"]}],"loading":null,"isPartial":false}
+3:["$","header",null,{"className":"d180-article-header","children":["$","div",null,{"className":"d180-article-header-inner","children":[["$","div",null,{"className":"flex items-center gap-3 shrink-0","children":[["$","$L9",null,{"href":"/","aria-label":"Go to main home page","className":"w-8 h-8 bg-amber-400 rounded-lg flex items-center justify-center text-slate-900 shadow-lg shadow-amber-400/20","children":["$","span",null,{"className":"font-black text-sm","children":"SK"}]}],["$","nav",null,{"className":"hidden md:flex items-center gap-3","children":[["$","$L9",null,{"href":"/180days","className":"d180-crumb","children":[["$","span",null,{"className":"d180-crumb-series","children":"180 Days"}]," ",["$","span",null,{"children":"/"}]," ",["$","strong",null,{"children":["Day ","12"]}]]}],["$","div",null,{"className":"d180-pill","children":[["$","div",null,{"className":"d180-pill-track","children":["$","div",null,{"className":"d180-pill-fill","style":{"width":"7%"}}]}],["$","b",null,{"children":[7,"%"]}]]}]]}]]}],["$","div",null,{"className":"flex items-center gap-4","children":["$","$L9",null,{"href":"/180days","className":"d180-crumb","children":"← All Days"}]}]]}]}]
+4:["$","div",null,{"className":"d180-hero","children":["$","div",null,{"className":"d180-hero-inner d180-content-wrap","style":{"paddingTop":56,"paddingBottom":56},"children":[["$","h1",null,{"style":{"maxWidth":820},"children":"Day 12: Implementing Navigation with TypeScript"}],["$","p",null,{"style":{"marginTop":14,"maxWidth":760},"children":"A guide to building a type-safe navigation system in React Native using React Navigation and TypeScript, eliminating common errors and improving code maintainability."}],["$","div",null,{"className":"d180-meta-line","children":[["$","span",null,{"children":"2026-03-03"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#d97706"},"children":"Subrata Kumar Das"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#15803d","fontSize":11,"fontWeight":800,"textTransform":"uppercase","letterSpacing":".08em"},"children":"Complete"}]]}],["$","p",null,{"style":{"marginTop":16,"maxWidth":500,"fontSize":13,"lineHeight":1.7,"color":"#92400e","borderLeft":"2px solid #fcd34d","paddingLeft":10,"fontStyle":"italic"},"children":"\"Consistent small steps lead to massive long-term results. Keep pushing.\""}]]}]}]
+a:T5f40,<p class="d180-md-p">Yesterday we converted the <strong>static screens generated using Stitch</strong> into working React Native components.</p>
+<p class="d180-md-p">The UI now exists, but the screens are still <strong>isolated</strong>.</p>
+<p class="d180-md-p">They do not communicate with each other yet.</p>
+<p class="d180-md-p">Today we solve that problem by implementing <strong>navigation</strong>.</p>
+<p class="d180-md-p">Navigation is what turns separate screens into an actual <strong>mobile application experience</strong>.</p>
+<p class="d180-md-p">When a user taps <strong>“Create Memory”</strong>, the app must open the <strong>New Entry screen</strong>.</p>
+<p class="d180-md-p">When they tap an entry, the app must open <strong>Memory Details</strong>.</p>
+<p class="d180-md-p">To achieve this we will implement <strong>React Navigation with TypeScript</strong>.</p>
+<hr class="d180-md-hr" />
+<h1 id="why-navigation-matters" class="d180-md-h1">Why Navigation Matters</h1>
+<p class="d180-md-p">Navigation is the <strong>skeleton of a mobile application</strong>.</p>
+<p class="d180-md-p">Without navigation:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">screens cannot connect</li>
+<li class="d180-md-li">users cannot move between features</li>
+<li class="d180-md-li">app flow cannot exist</li>
+</ul>
+<p class="d180-md-p">Navigation defines:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">how screens transition</li>
+<li class="d180-md-li">how parameters move between screens</li>
+<li class="d180-md-li">how back navigation works</li>
+<li class="d180-md-li">how the app structure evolves</li>
+</ul>
+<p class="d180-md-p">In a well-architected app, navigation should be <strong>predictable and centralized</strong>.</p>
+<hr class="d180-md-hr" />
+<h1 id="navigation-strategy-for-this-project" class="d180-md-h1">Navigation Strategy for This Project</h1>
+<p class="d180-md-p">Mobile apps typically combine multiple navigation systems:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Stack Navigation</li>
+<li class="d180-md-li">Bottom Tabs</li>
+<li class="d180-md-li">Drawer Navigation</li>
+<li class="d180-md-li">Modal Navigation</li>
+</ul>
+<p class="d180-md-p">Implementing everything at once creates confusion.</p>
+<p class="d180-md-p">Instead we follow a <strong>progressive navigation approach</strong>.</p>
+<h3 id="step-1-today" class="d180-md-h3">Step 1 (Today)</h3>
+<p class="d180-md-p">Implement <strong>Stack Navigation only</strong></p>
+<h3 id="step-2-tomorrow" class="d180-md-h3">Step 2 (Tomorrow)</h3>
+<p class="d180-md-p">Introduce <strong>Bottom Tab Navigation</strong></p>
+<h3 id="step-3-later" class="d180-md-h3">Step 3 (Later)</h3>
+<p class="d180-md-p">Add:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">modals</li>
+<li class="d180-md-li">overlays</li>
+<li class="d180-md-li">special flows</li>
+</ul>
+<p class="d180-md-p">This keeps the architecture <strong>clean and beginner friendly</strong>.</p>
+<hr class="d180-md-hr" />
+<h1 id="screens-generated-from-stitch" class="d180-md-h1">Screens Generated From Stitch</h1>
+<p class="d180-md-p">During earlier days we used <strong>Stitch AI</strong> to generate UI mockups.</p>
+<p class="d180-md-p">Those mockups were converted into React Native screens.</p>
+<p class="d180-md-p">The following folders were created:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>stitch_generated_screen/
+
+choose_appearance
+import_archive
+memory_detail
+new_entry_screen
+onboarding_completion_standardized
+pin_lock_overlay
+privacy_by_design
+security_setup
+settings
+unified_archive_timeline_updated_fab
+unified_empty_state_minimal
+welcome_standardized
+
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">These represent the <strong>UI foundation of the application</strong>.</p>
+<p class="d180-md-p">Now we connect them through navigation.</p>
+<hr class="d180-md-hr" />
+<h1 id="screens-included-in-stack-navigation" class="d180-md-h1">Screens Included in Stack Navigation</h1>
+<p class="d180-md-p">For Day 12 we will include the following screens in the navigation stack.</p>
+<div class="d180-md-table-wrap"><table class="d180-md-table">
+<thead>
+<tr>
+<th class="d180-md-th">Screen</th>
+<th class="d180-md-th">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="d180-md-td">welcome_standardized</td>
+<td class="d180-md-td">First screen shown when the app launches</td>
+</tr>
+<tr>
+<td class="d180-md-td">privacy_by_design</td>
+<td class="d180-md-td">Explains privacy-first philosophy</td>
+</tr>
+<tr>
+<td class="d180-md-td">security_setup</td>
+<td class="d180-md-td">User configures encryption security</td>
+</tr>
+<tr>
+<td class="d180-md-td">choose_appearance</td>
+<td class="d180-md-td">Light / dark theme selection</td>
+</tr>
+<tr>
+<td class="d180-md-td">onboarding_completion_standardized</td>
+<td class="d180-md-td">Final onboarding confirmation</td>
+</tr>
+<tr>
+<td class="d180-md-td">unified_archive_timeline_updated_fab</td>
+<td class="d180-md-td">Main archive timeline</td>
+</tr>
+<tr>
+<td class="d180-md-td">unified_empty_state_minimal</td>
+<td class="d180-md-td">Empty archive placeholder</td>
+</tr>
+<tr>
+<td class="d180-md-td">new_entry_screen</td>
+<td class="d180-md-td">Create a new memory</td>
+</tr>
+<tr>
+<td class="d180-md-td">memory_detail</td>
+<td class="d180-md-td">View stored memory</td>
+</tr>
+<tr>
+<td class="d180-md-td">settings</td>
+<td class="d180-md-td">App settings</td>
+</tr>
+<tr>
+<td class="d180-md-td">import_archive</td>
+<td class="d180-md-td">Import encrypted archive</td>
+</tr>
+</tbody>
+</table></div>
+<p class="d180-md-p">Important note:</p>
+<p class="d180-md-p"><code class="d180-md-inline-code">pin_lock_overlay</code> is <strong>not part of navigation</strong>.</p>
+<p class="d180-md-p">It is implemented as an <strong>overlay security layer</strong> above navigation.</p>
+<p class="d180-md-p">This follows the architecture rule that session locking must wrap the navigation container instead of becoming a route.</p>
+<hr class="d180-md-hr" />
+<h1 id="current-navigation-flow" class="d180-md-h1">Current Navigation Flow</h1>
+<p class="d180-md-p">The initial onboarding flow looks like this:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>
+Welcome
+↓
+Privacy by Design
+↓
+Security Setup
+↓
+Choose Appearance
+↓
+Onboarding Completed
+↓
+Archive Timeline
+
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">From the <strong>Archive Timeline</strong>, users can navigate to:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>
+Archive Timeline
+↓
+New Entry
+↓
+Memory Detail
+
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">Additional screens:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>
+Archive Timeline
+↓
+Settings
+↓
+Import Archive
+
+</code></pre>
+      </div>
+    
+<hr class="d180-md-hr" />
+<h1 id="installing-react-navigation" class="d180-md-h1">Installing React Navigation</h1>
+<p class="d180-md-p">First install required dependencies.</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">BASH</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-bash">yarn add @react-navigation/native @react-navigation/native-stack
+yarn add react-native-screens react-native-safe-area-context
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">These libraries provide:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">stack navigation</li>
+<li class="d180-md-li">screen lifecycle management</li>
+<li class="d180-md-li">native performance optimizations</li>
+</ul>
+<hr class="d180-md-hr" />
+<h1 id="creating-type-safe-navigation" class="d180-md-h1">Creating Type-Safe Navigation</h1>
+<p class="d180-md-p">In many apps developers write:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>navigation.navigate("NewEntry")
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">This is risky.</p>
+<p class="d180-md-p">Why?</p>
+<p class="d180-md-p">Because <code class="d180-md-inline-code">"NewEntry"</code> is a <strong>magic string</strong>.</p>
+<p class="d180-md-p">If we misspell it:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>navigation.navigate("NewEnty")
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">The error appears <strong>only at runtime</strong>.</p>
+<p class="d180-md-p">TypeScript solves this.</p>
+<hr class="d180-md-hr" />
+<h1 id="defining-navigation-types" class="d180-md-h1">Defining Navigation Types</h1>
+<p class="d180-md-p">Create:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>navigation/types.ts
+</code></pre>
+      </div>
+    
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TYPESCRIPT</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-typescript">import type { NativeStackScreenProps } from '@react-navigation/native-stack';
+
+export const SCREENS = {
+  TIMELINE: 'Timeline',
+  NEW_ENTRY: 'NewEntry',
+} as const;
+
+export type RootStackParamList = {
+  [SCREENS.TIMELINE]: undefined;
+  [SCREENS.NEW_ENTRY]: { entryId?: string };
+};
+
+export type ScreenProps&#x3C;T extends keyof RootStackParamList> =
+  NativeStackScreenProps&#x3C;RootStackParamList, T>;
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">Now TypeScript will enforce:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">valid screen names</li>
+<li class="d180-md-li">correct parameters</li>
+</ul>
+<hr class="d180-md-hr" />
+<h1 id="creating-the-stack-navigator" class="d180-md-h1">Creating the Stack Navigator</h1>
+<p class="d180-md-p">Inside <code class="d180-md-inline-code">App.tsx</code>:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TYPESCRIPT</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-typescript">import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import { SCREENS, RootStackParamList } from './navigation/types';
+
+import ArchiveTimelineScreen from './screens/ArchiveTimelineScreen';
+import NewEntryScreen from './screens/NewEntryScreen';
+
+const Stack = createNativeStackNavigator&#x3C;RootStackParamList>();
+
+export default function App() {
+  return (
+    &#x3C;NavigationContainer>
+      &#x3C;Stack.Navigator initialRouteName={SCREENS.TIMELINE}>
+        &#x3C;Stack.Screen
+          name={SCREENS.TIMELINE}
+          component={ArchiveTimelineScreen}
+        />
+
+        &#x3C;Stack.Screen
+          name={SCREENS.NEW_ENTRY}
+          component={NewEntryScreen}
+        />
+      &#x3C;/Stack.Navigator>
+    &#x3C;/NavigationContainer>
+  );
+}
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">This defines the <strong>navigation stack</strong>.</p>
+<hr class="d180-md-hr" />
+<h1 id="triggering-navigation" class="d180-md-h1">Triggering Navigation</h1>
+<p class="d180-md-p">Inside the timeline screen we can open the new entry screen.</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TYPESCRIPT</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-typescript">import React from 'react';
+import { Pressable, Text } from 'react-native';
+
+import { SCREENS } from '../navigation/types';
+import type { ScreenProps } from '../navigation/types';
+
+const ArchiveTimelineScreen = ({ navigation }: ScreenProps&#x3C;typeof SCREENS.TIMELINE>) => {
+  return (
+    &#x3C;Pressable onPress={() => navigation.navigate(SCREENS.NEW_ENTRY)}>
+      &#x3C;Text>Create Memory&#x3C;/Text>
+    &#x3C;/Pressable>
+  );
+};
+
+export default ArchiveTimelineScreen;
+</code></pre>
+      </div>
+    
+<hr class="d180-md-hr" />
+<h1 id="accessing-navigation-parameters" class="d180-md-h1">Accessing Navigation Parameters</h1>
+<p class="d180-md-p">If editing an entry we may pass an ID.</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>navigation.navigate(SCREENS.NEW_ENTRY, {
+  entryId: "memory_123"
+})
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">Inside the screen:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TYPESCRIPT</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-typescript">const { entryId } = route.params;
+</code></pre>
+      </div>
+    
+<hr class="d180-md-hr" />
+<h1 id="placeholder-screen" class="d180-md-h1">Placeholder Screen</h1>
+<p class="d180-md-p">For now we create a simple placeholder.</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TYPESCRIPT</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-typescript">import React from 'react';
+import { View, Text, Button } from 'react-native';
+
+import type { ScreenProps } from '../navigation/types';
+import { SCREENS } from '../navigation/types';
+
+const NewEntryScreen = ({ navigation }: ScreenProps&#x3C;typeof SCREENS.NEW_ENTRY>) => {
+  return (
+    &#x3C;View style={{ flex:1, alignItems:"center", justifyContent:"center" }}>
+      &#x3C;Text>New Entry Screen - Coming Soon&#x3C;/Text>
+
+      &#x3C;Button
+        title="Go Back"
+        onPress={() => navigation.goBack()}
+      />
+    &#x3C;/View>
+  );
+};
+
+export default NewEntryScreen;
+</code></pre>
+      </div>
+    
+<hr class="d180-md-hr" />
+<h1 id="architecture-rule-for-navigation" class="d180-md-h1">Architecture Rule for Navigation</h1>
+<p class="d180-md-p">Navigation belongs <strong>only to the App Layer</strong>.</p>
+<p class="d180-md-p">Example folder:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>src/app/navigation/
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">Feature modules must <strong>not directly control navigation</strong>.</p>
+<p class="d180-md-p">This keeps architecture clean and predictable.</p>
+<hr class="d180-md-hr" />
+<h1 id="common-navigation-mistakes-beginners-make" class="d180-md-h1">Common Navigation Mistakes Beginners Make</h1>
+<h3 id="1-using-magic-strings" class="d180-md-h3">1. Using Magic Strings</h3>
+<p class="d180-md-p">Bad:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>navigation.navigate("Profile")
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">Better:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>navigation.navigate(SCREENS.PROFILE)
+</code></pre>
+      </div>
+    
+<hr class="d180-md-hr" />
+<h3 id="2-not-using-typescript" class="d180-md-h3">2. Not Using TypeScript</h3>
+<p class="d180-md-p">Without types:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">invalid parameters crash the app</li>
+<li class="d180-md-li">refactoring becomes dangerous</li>
+</ul>
+<hr class="d180-md-hr" />
+<h3 id="3-mixing-navigation-with-business-logic" class="d180-md-h3">3. Mixing Navigation With Business Logic</h3>
+<p class="d180-md-p">Navigation should not live inside services.</p>
+<p class="d180-md-p">It belongs to the <strong>UI layer only</strong>.</p>
+<hr class="d180-md-hr" />
+<h3 id="4-creating-too-many-navigators" class="d180-md-h3">4. Creating Too Many Navigators</h3>
+<p class="d180-md-p">Beginners often create:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">nested stacks</li>
+<li class="d180-md-li">nested drawers</li>
+<li class="d180-md-li">nested tabs</li>
+</ul>
+<p class="d180-md-p">Too early.</p>
+<p class="d180-md-p">Start simple.</p>
+<hr class="d180-md-hr" />
+<h3 id="5-using-navigation-for-security" class="d180-md-h3">5. Using Navigation for Security</h3>
+<p class="d180-md-p">Security should <strong>never rely on navigation routes</strong>.</p>
+<p class="d180-md-p">Instead implement security as an <strong>overlay layer</strong>.</p>
+<hr class="d180-md-hr" />
+<h1 id="your-turn-practical-exercises" class="d180-md-h1">Your Turn: Practical Exercises</h1>
+<h3 id="exercise-1" class="d180-md-h3">Exercise 1</h3>
+<p class="d180-md-p">Add a <strong>Settings Screen</strong>.</p>
+<p class="d180-md-p">Update:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>SCREENS.SETTINGS
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">Add it to the stack navigator.</p>
+<hr class="d180-md-hr" />
+<h3 id="exercise-2" class="d180-md-h3">Exercise 2</h3>
+<p class="d180-md-p">Pass a parameter when opening New Entry.</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>navigation.navigate(SCREENS.NEW_ENTRY, {
+  entryId: "entry_001"
+})
+</code></pre>
+      </div>
+    
+<hr class="d180-md-hr" />
+<h3 id="exercise-3" class="d180-md-h3">Exercise 3</h3>
+<p class="d180-md-p">Customize the header title.</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>&#x3C;Stack.Screen
+  name={SCREENS.NEW_ENTRY}
+  component={NewEntryScreen}
+  options={{ title: "Create Memory" }}
+/>
+</code></pre>
+      </div>
+    
+<hr class="d180-md-hr" />
+<h3 id="exercise-4" class="d180-md-h3">Exercise 4</h3>
+<p class="d180-md-p">Change animation style.</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>options={{ animation: "slide_from_bottom" }}
+</code></pre>
+      </div>
+    
+<hr class="d180-md-hr" />
+<h1 id="further-reading" class="d180-md-h1">Further Reading</h1>
+<h3 id="react-navigation-official-docs" class="d180-md-h3">React Navigation Official Docs</h3>
+<p class="d180-md-p"><a href="https://reactnavigation.org/docs/getting-started" class="d180-md-link">https://reactnavigation.org/docs/getting-started</a></p>
+<p class="d180-md-p">Topics covered:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">stack navigation</li>
+<li class="d180-md-li">tab navigation</li>
+<li class="d180-md-li">passing parameters</li>
+<li class="d180-md-li">navigation lifecycle</li>
+</ul>
+<hr class="d180-md-hr" />
+<h3 id="typescript-with-react-navigation" class="d180-md-h3">TypeScript With React Navigation</h3>
+<p class="d180-md-p"><a href="https://reactnavigation.org/docs/typescript" class="d180-md-link">https://reactnavigation.org/docs/typescript</a></p>
+<p class="d180-md-p">Learn how TypeScript prevents:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">invalid routes</li>
+<li class="d180-md-li">missing parameters</li>
+<li class="d180-md-li">runtime navigation crashes</li>
+</ul>
+<hr class="d180-md-hr" />
+<h3 id="mobile-navigation-design" class="d180-md-h3">Mobile Navigation Design</h3>
+<p class="d180-md-p">Understanding mobile navigation patterns improves UX design.</p>
+<p class="d180-md-p">Recommended reading:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Material Design Navigation Patterns</li>
+<li class="d180-md-li">Apple Human Interface Guidelines</li>
+</ul>
+<hr class="d180-md-hr" />
+<h3 id="clean-architecture-concepts" class="d180-md-h3">Clean Architecture Concepts</h3>
+<p class="d180-md-p">Navigation should stay isolated from business logic.</p>
+<p class="d180-md-p">Search topics like:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Clean Architecture</li>
+<li class="d180-md-li">Separation of Concerns</li>
+<li class="d180-md-li">Modular App Design</li>
+</ul>
+<p class="d180-md-p">These ideas help build scalable mobile applications.</p>
+<hr class="d180-md-hr" />
+<h1 id="tomorrow-day-13" class="d180-md-h1">Tomorrow (Day 13)</h1>
+<p class="d180-md-p">Today we implemented <strong>Stack Navigation</strong>.</p>
+<p class="d180-md-p">Tomorrow we introduce:</p>
+<h3 id="bottom-tab-navigation" class="d180-md-h3">Bottom Tab Navigation</h3>
+<p class="d180-md-p">The app will evolve into a realistic mobile layout:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code>Archive
+Search
+Shared
+Settings
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">We will integrate tabs <strong>without breaking the stack navigation architecture created today</strong>.</p>
+<hr class="d180-md-hr" />
+<p class="d180-md-p">See you on <strong>Day 13</strong></p>
+5:["$","main",null,{"className":"d180-content-wrap","style":{"paddingTop":36},"children":["$","div",null,{"className":"flex-1","children":[["$","article",null,{"className":"d180-post-content","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$a"}}],"$Lb"]}],"$Lc","$Ld"]}]}]
+6:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"mainEntityOfPage\":\"https://subraatakumar.com/180days/day-12\",\"headline\":\"Day 12: Implementing Navigation with TypeScript\",\"datePublished\":\"2026-03-03\",\"description\":\"A guide to building a type-safe navigation system in React Native using React Navigation and TypeScript, eliminating common errors and improving code maintainability.\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\"}}"}}]
+7:["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true}]
+8:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+b:["$","$L11",null,{}]
+c:["$","div",null,{"className":"mt-8 mb-6","children":["$","a",null,{"href":"https://github.com/subraatakumar/subraatakumar.com/edit/main/content/180days/day-12.md","target":"_blank","rel":"noopener noreferrer","className":"d180-edit-link","children":"Suggest a change to the content of the material"}]}]
+d:["$","div",null,{"className":"d180-bottom-nav","children":[["$","$L9",null,{"href":"/180days/day-11","className":"d180-nav-link","children":["$","div",null,{"children":[["$","strong",null,{"children":"Previous"}],["$","span",null,{"style":{"fontSize":14,"fontWeight":700,"textTransform":"capitalize"},"children":"day 11"}]]}]}],["$","div",null,{}]]}]
+10:null
