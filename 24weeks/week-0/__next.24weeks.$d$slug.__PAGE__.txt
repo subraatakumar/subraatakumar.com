@@ -1,0 +1,362 @@
+1:"$Sreact.fragment"
+9:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
+e:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+11:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]
+2:T227c,
+        #days180-root .d180-article-page {
+          min-height: 100vh;
+          background: #fff;
+          color: #0f172a;
+        }
+        #days180-root .d180-article-header {
+          position: sticky;
+          top: 0;
+          z-index: 80;
+          background: rgba(255,255,255,0.92);
+          backdrop-filter: blur(16px);
+          border-bottom: 1px solid #e2e8f0;
+        }
+        #days180-root .d180-article-header-inner {
+          width: 100%;
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 32px;
+          height: 64px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        }
+        #days180-root .d180-crumb {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: .08em;
+          color: #64748b;
+          text-decoration: none;
+          background: #f1f5f9;
+          border-radius: 10px;
+          padding: 10px 14px;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+        }
+        #days180-root .d180-crumb-series {
+          transition: color .15s ease;
+        }
+        #days180-root .d180-crumb:hover .d180-crumb-series {
+          color: var(--amber);
+        }
+        #days180-root .d180-crumb strong { color: #0f172a; }
+        #days180-root .d180-pill {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          padding: 8px 12px;
+          background: #f8fafc;
+          border: 1px solid #e2e8f0;
+          border-radius: 10px;
+        }
+        #days180-root .d180-pill-track {
+          width: 90px;
+          height: 8px;
+          background: #cbd5e1;
+          border-radius: 999px;
+          overflow: hidden;
+        }
+        #days180-root .d180-pill-fill {
+          height: 100%;
+          background: var(--amber);
+          border-radius: 999px;
+        }
+        #days180-root .d180-pill b {
+          color: var(--amber);
+          font-size: 11px;
+          letter-spacing: .02em;
+        }
+        #days180-root .d180-content-wrap {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 32px;
+        }
+        #days180-root .d180-meta-line {
+          margin-top: 8px;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 8px;
+          color: #64748b;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        #days180-root .d180-meta-line .dot {
+          width: 4px;
+          height: 4px;
+          border-radius: 999px;
+          background: #94a3b8;
+          display: inline-block;
+        }
+        #days180-root .d180-post-content {
+          max-width: 780px;
+        }
+        #days180-root .d180-post-content img {
+          max-width: 100%;
+          height: auto;
+        }
+        #days180-root .d180-post-content pre code {
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+        }
+        #days180-root .d180-md-p {
+          font-size: 17px;
+          line-height: 1.85;
+          color: #334155;
+          margin: 20px 0;
+        }
+        #days180-root .d180-md-h1 {
+          font-size: clamp(2rem, 4vw, 2.4rem);
+          font-weight: 900;
+          margin: 64px 0 24px;
+          padding-bottom: 12px;
+          border-bottom: 1px solid #e2e8f0;
+          line-height: 1.2;
+          color: #020617;
+        }
+        #days180-root .d180-md-h2 {
+          font-size: clamp(1.6rem, 3vw, 1.9rem);
+          font-weight: 900;
+          margin: 56px 0 18px;
+          line-height: 1.25;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-h3 {
+          font-size: clamp(1.3rem, 2.4vw, 1.5rem);
+          font-weight: 800;
+          margin: 40px 0 14px;
+          line-height: 1.3;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-h4,
+        #days180-root .d180-md-h5,
+        #days180-root .d180-md-h6 {
+          font-size: 1.1rem;
+          font-weight: 700;
+          margin: 28px 0 10px;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-ul {
+          list-style: disc;
+          padding-left: 24px;
+          margin: 18px 0;
+        }
+        #days180-root .d180-md-ol {
+          list-style: decimal;
+          padding-left: 28px;
+          margin: 18px 0;
+        }
+        #days180-root .d180-md-li {
+          margin: 8px 0;
+          line-height: 1.75;
+          color: #334155;
+        }
+        #days180-root .d180-md-blockquote {
+          margin: 26px 0;
+          padding: 14px 16px;
+          border-left: 2px solid #e2e8f0;
+          border-radius: 8px;
+          background: #f8fafc;
+          font-style: italic;
+          color: #334155;
+        }
+        #days180-root .d180-md-inline-code {
+          background: #f1f5f9;
+          color: #c2410c;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+          font-size: 0.9em;
+          padding: 3px 6px;
+          border-radius: 6px;
+        }
+        #days180-root .d180-md-hr {
+          border: 0;
+          height: 1px;
+          background: #e2e8f0;
+          margin: 48px 0;
+        }
+        #days180-root .d180-md-link {
+          color: var(--amber);
+          text-decoration: none;
+          font-weight: 600;
+        }
+        #days180-root .d180-md-link:hover {
+          text-decoration: underline;
+        }
+        #days180-root .d180-md-table-wrap {
+          overflow: auto;
+          border: 1px solid #e2e8f0;
+          border-radius: 8px;
+          margin: 24px 0;
+        }
+        #days180-root .d180-md-table {
+          min-width: 100%;
+          border-collapse: collapse;
+        }
+        #days180-root .d180-md-th {
+          text-align: left;
+          font-size: 13px;
+          font-weight: 700;
+          color: #334155;
+          background: #f8fafc;
+          padding: 10px;
+          border-bottom: 1px solid #e2e8f0;
+        }
+        #days180-root .d180-md-td {
+          font-size: 14px;
+          color: #334155;
+          padding: 10px;
+          border-bottom: 1px solid #f1f5f9;
+        }
+        #days180-root .d180-code-lang {
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: .06em;
+          color: #475569;
+          background: #f1f5f9;
+          padding: 4px 10px;
+          border-radius: 6px;
+        }
+        #days180-root .d180-copy-btn {
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: .06em;
+          color: #0f172a;
+          background: var(--amber);
+          border: 0;
+          border-radius: 6px;
+          padding: 4px 10px;
+          cursor: pointer;
+        }
+        #days180-root .d180-code-pre {
+          overflow: auto;
+          border-radius: 16px;
+          background: #0f172a;
+          color: #f8fafc;
+          padding: 18px 16px;
+        }
+        #days180-root .d180-bottom-nav {
+          margin-top: 64px;
+          padding: 24px 0 60px;
+          border-top: 1px solid #e2e8f0;
+          display: flex;
+          gap: 12px;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        #days180-root .d180-nav-link {
+          border-radius: 12px;
+          border: 1px solid #e2e8f0;
+          background: #f8fafc;
+          color: #0f172a;
+          text-decoration: none;
+          padding: 12px 16px;
+          min-width: 180px;
+        }
+        #days180-root .d180-nav-link strong {
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: .08em;
+          color: #64748b;
+          display: block;
+          margin-bottom: 4px;
+        }
+        #days180-root .d180-nav-link.next {
+          text-align: right;
+          background: #0f172a;
+          border-color: #0f172a;
+          color: #fff;
+        }
+        #days180-root .d180-nav-link.next strong {
+          color: rgba(255,255,255,0.72);
+        }
+        #days180-root .d180-edit-link {
+          display: inline-block;
+          margin-top: 16px;
+          padding: 10px 14px;
+          border: 1px solid #e2e8f0;
+          border-radius: 10px;
+          background: #f8fafc;
+          color: #334155;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        #days180-root .d180-edit-link:hover {
+          border-color: var(--amber);
+        }
+        @media (max-width: 640px) {
+          #days180-root .d180-article-header-inner,
+          #days180-root .d180-content-wrap {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+          #days180-root .d180-pill {
+            display: none;
+          }
+        }
+      0:{"buildId":"sHvKfGmDnlL1m562rxcse","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5","$L6"]}],["$L7"],"$L8"]}],"loading":null,"isPartial":false}
+3:["$","header",null,{"className":"d180-article-header","children":["$","div",null,{"className":"d180-article-header-inner","children":[["$","div",null,{"className":"flex items-center gap-3 shrink-0","children":[["$","$L9",null,{"href":"/","aria-label":"Go to main home page","className":"w-8 h-8 rounded-lg flex items-center justify-center text-slate-900 shadow-lg","style":{"background":"var(--amber)","boxShadow":"0 8px 20px rgba(22, 208, 236, 0.22)"},"children":["$","span",null,{"className":"font-black text-sm","children":"SK"}]}],["$","nav",null,{"className":"hidden md:flex items-center gap-3","children":[["$","$L9",null,{"href":"/24weeks","className":"d180-crumb","children":[["$","span",null,{"className":"d180-crumb-series","children":"24 Weeks"}]," ",["$","span",null,{"children":"/"}]," ",["$","strong",null,{"children":["Week ","week-0"]}]]}],["$","div",null,{"className":"d180-pill","children":[["$","div",null,{"className":"d180-pill-track","children":["$","div",null,{"className":"d180-pill-fill","style":{"width":"NaN%"}}]}],["$","b",null,{"children":["$NaN","%"]}]]}]]}]]}],["$","div",null,{"className":"flex items-center gap-4","children":["$","$L9",null,{"href":"/24weeks","className":"d180-crumb","children":"← All Weeks"}]}]]}]}]
+4:["$","div",null,{"className":"d180-hero","children":["$","div",null,{"className":"d180-hero-inner d180-content-wrap","style":{"paddingTop":56,"paddingBottom":56},"children":[["$","h1",null,{"style":{"maxWidth":820},"children":"24 Weeks of AI-Native SaaS: A Developer's Journey"}],["$","p",null,{"style":{"marginTop":14,"maxWidth":760},"children":"A 24-week curriculum for developers to master AI-native SaaS development, from LLM integration and autonomous agents to production-scale deployment and safety."}],["$","div",null,{"className":"d180-meta-line","children":[["$","span",null,{"children":"2026-03-05"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"var(--amber)"},"children":"Subrata Kumar Das"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#15803d","fontSize":11,"fontWeight":800,"textTransform":"uppercase","letterSpacing":".08em"},"children":"Complete"}]]}],["$","p",null,{"style":{"marginTop":16,"maxWidth":500,"fontSize":13,"lineHeight":1.7,"color":"var(--slate-700)","borderLeft":"2px solid var(--amber)","paddingLeft":10,"fontStyle":"italic"},"children":"\"Consistent small steps lead to massive long-term results. Keep pushing.\""}]]}]}]
+a:T15de,<h2 id="phase-1-the-ai-integration-layer-weeks-18" class="d180-md-h2"><strong>Phase 1: The AI Integration Layer (Weeks 1–8)</strong></h2>
+<p class="d180-md-p"><em>Focus: Mastering the interface between traditional code and LLMs.</em></p>
+<ul class="d180-md-ul">
+<li class="d180-md-li"><strong>Week 1: The Multi-Model Evaluator.</strong> Build a side-by-side comparison tool for GPT-4, Claude, and Gemini to test architectural logic.</li>
+<li class="d180-md-li"><strong>Week 2: Local RAG (Retrieval-Augmented Generation).</strong> Create a tool to "chat" with your own local Markdown or PDF notes using a Vector DB (ChromaDB).</li>
+<li class="d180-md-li"><strong>Week 3: Structured Data Factory.</strong> A service that converts messy text (emails/receipts) into strict, validated JSON using Pydantic.</li>
+<li class="d180-md-li"><strong>Week 4: The Voice-to-Jira Pipeline.</strong> Use Whisper (audio-to-text) to turn voice memos into formatted project tickets automatically.</li>
+<li class="d180-md-li"><strong>Week 5: The LLM-as-a-Judge.</strong> Build an automated testing script where a "stronger" model audits the code quality of a "smaller" model.</li>
+<li class="d180-md-li"><strong>Week 6: Multimodal UI Auditor.</strong> An app that "sees" a website screenshot and generates a report on UI/UX flaws.</li>
+<li class="d180-md-li"><strong>Week 7: Token &#x26; Cost Dashboard.</strong> A middleware that tracks API usage and predicts monthly spend based on current prompt volume.</li>
+<li class="d180-md-li"><strong>Week 8: Phase 1 Portfolio Site.</strong> Deploy a centralized dashboard hosting all previous 7 micro-tools.</li>
+</ul>
+<hr class="d180-md-hr" />
+<h2 id="phase-2-autonomous-agents-x26-orchestration-weeks-916" class="d180-md-h2"><strong>Phase 2: Autonomous Agents &#x26; Orchestration (Weeks 9–16)</strong></h2>
+<p class="d180-md-p"><em>Focus: Moving from "Chat" to "Task Execution" using Agentic workflows.</em></p>
+<ul class="d180-md-ul">
+<li class="d180-md-li"><strong>Week 9: The Autonomous Research Agent.</strong> An agent that browses 5+ web sources and writes a technical briefing on a specific 2030 trend.</li>
+<li class="d180-md-li"><strong>Week 10: Natural Language SQL Agent.</strong> Build a bridge where you ask "Who are my top customers?" and the agent writes and runs the SQL.</li>
+<li class="d180-md-li"><strong>Week 11: The Multi-Agent Debate.</strong> Set up two agents—a "Developer" and a "Security Specialist"—to argue over a code snippet until it’s perfect.</li>
+<li class="d180-md-li"><strong>Week 12: Long-Term Memory (Graph RAG).</strong> Use a Graph Database (Neo4j) to help an agent remember relationships between concepts over time.</li>
+<li class="d180-md-li"><strong>Week 13: Automated PR Reviewer.</strong> A GitHub bot that automatically reviews incoming code for performance bottlenecks.</li>
+<li class="d180-md-li"><strong>Week 14: Human-in-the-Loop Workflow.</strong> An agent that researches and drafts emails but "pauses" for your physical button-click approval before sending.</li>
+<li class="d180-md-li"><strong>Week 15: Local Model Edge Deployment.</strong> Run a quantized Llama-3 model locally using Ollama to prove "Privacy-First" AI capabilities.</li>
+<li class="d180-md-li"><strong>Week 16: The Autonomous SDR.</strong> An agent that finds potential leads on LinkedIn and drafts hyper-personalized outreach based on their recent posts.</li>
+</ul>
+<hr class="d180-md-hr" />
+<h2 id="phase-3-production-scale-x26-safety-weeks-1724" class="d180-md-h2"><strong>Phase 3: Production, Scale &#x26; Safety (Weeks 17–24)</strong></h2>
+<p class="d180-md-p"><em>Focus: Professionalizing the stack for enterprise-grade reliability.</em></p>
+<ul class="d180-md-ul">
+<li class="d180-md-li"><strong>Week 17: The LLM Firewall.</strong> Build a security layer that detects and sanitizes "Prompt Injection" attempts in real-time.</li>
+<li class="d180-md-li"><strong>Week 18: Vector DB Migration Logic.</strong> Write a script to migrate high-dimensional data between two different Vector providers without downtime.</li>
+<li class="d180-md-li"><strong>Week 19: Targeted Fine-Tuning.</strong> Fine-tune a small model (Mistral/Phi) on a specific niche dataset (e.g., medical or legal) using LoRA.</li>
+<li class="d180-md-li"><strong>Week 20: Serverless Inference Scaling.</strong> Deploy your AI logic to AWS Lambda or Vercel Functions and benchmark cold-start latency.</li>
+<li class="d180-md-li"><strong>Week 21: AI Observability Stack.</strong> Integrate LangSmith or Phoenix to "trace" exactly where an agentic chain fails or gets stuck.</li>
+<li class="d180-md-li"><strong>Week 22: Intelligent Model Router.</strong> Build a proxy that sends easy tasks to "cheap" models and hard tasks to "expensive" models automatically.</li>
+<li class="d180-md-li"><strong>Week 23: The Compliance Auditor.</strong> A tool that scans AI outputs for PII (Personally Identifiable Information) before it hits the UI.</li>
+<li class="d180-md-li"><strong>Week 24: The 2030 Capstone.</strong> Combine the best elements of the previous 23 weeks into one "AI-Native" SaaS product.</li>
+</ul>
+<hr class="d180-md-hr" />
+<h3 id="the-weekend-warrior-cadence" class="d180-md-h3"><strong>The "Weekend Warrior" Cadence</strong></h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li"><strong>Saturday:</strong> Build the core logic (4–6 hours).</li>
+<li class="d180-md-li"><strong>Sunday:</strong> Refine the UI and write the Journal Entry (2 hours).</li>
+<li class="d180-md-li"><strong>Monday:</strong> Publish the showcase with your professional thumbnail.</li>
+</ul>
+5:["$","main",null,{"className":"d180-content-wrap","style":{"paddingTop":36},"children":["$","div",null,{"className":"flex-1","children":[["$","article",null,{"className":"d180-post-content","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$a"}}],"$Lb"]}],"$Lc","$Ld"]}]}]
+6:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"mainEntityOfPage\":\"https://subraatakumar.com/180days/week-0\",\"headline\":\"24 Weeks of AI-Native SaaS: A Developer's Journey\",\"datePublished\":\"2026-03-05\",\"description\":\"A 24-week curriculum for developers to master AI-native SaaS development, from LLM integration and autonomous agents to production-scale deployment and safety.\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\"}}"}}]
+7:["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true}]
+8:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+b:["$","$L11",null,{}]
+c:["$","div",null,{"className":"mt-8 mb-6","children":["$","a",null,{"href":"https://github.com/subraatakumar/subraatakumar.com/edit/main/content/180days/week-0.md","target":"_blank","rel":"noopener noreferrer","className":"d180-edit-link","children":"Suggest a change to the content of the material"}]}]
+d:["$","div",null,{"className":"d180-bottom-nav","children":[["$","div",null,{}],["$","div",null,{}]]}]
+10:null
