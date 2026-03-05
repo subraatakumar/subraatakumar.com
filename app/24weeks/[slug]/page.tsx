@@ -14,7 +14,7 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-const contentDirectory = path.join(process.cwd(), "content/180days");
+const contentDirectory = path.join(process.cwd(), "content/24weeks");
 
 function getAllSlugs() {
   if (!fs.existsSync(contentDirectory)) return [];
@@ -24,8 +24,8 @@ function getAllSlugs() {
     .filter((file) => file.endsWith(".md"))
     .map((file) => file.replace(".md", ""))
     .sort((a, b) => {
-      const numA = Number(a.replace("day-", ""));
-      const numB = Number(b.replace("day-", ""));
+      const numA = Number(a.replace("week-", ""));
+      const numB = Number(b.replace("week-", ""));
       return numA - numB;
     });
 }
@@ -42,11 +42,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const fileContents = fs.readFileSync(filePath, "utf8");
   const { data } = matter(fileContents);
-  const title = data.title ?? `Day ${slug.replace("day-", "")}`;
+  const title = data.title ?? `Week ${slug.replace("week-", "")}`;
   const description =
     data.description ??
-    "Daily log from a 180-day mentorship journey documenting architecture, implementation, and product decisions.";
-  const canonicalPath = `/180days/${slug}`;
+    "Mapping the blueprint for the 2030 stack through 24 weeks of hands-on, autonomous agent and infrastructure builds. Follow along as I open-source the architectural trade-offs, failures, and breakthroughs of engineering in the AI era.";
+  const canonicalPath = `/24weeks/${slug}`;
 
   return {
     title,
@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: canonicalPath,
     },
     openGraph: {
-      title: `${title} | 180 Days`,
+      title: `${title} | 24 Weeks`,
       description,
       url: canonicalPath,
       type: "article",
@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     twitter: {
       card: "summary_large_image",
-      title: `${title} | 180 Days`,
+      title: `${title} | 24 Weeks`,
       description,
       images: [DEFAULT_OG_IMAGE],
     },
@@ -277,7 +277,7 @@ export default async function ArticlePage({ params }: PageProps) {
           transition: color .15s ease;
         }
         #days180-root .d180-crumb:hover .d180-crumb-series {
-          color: #d97706;
+          color: var(--amber);
         }
         #days180-root .d180-crumb strong { color: #0f172a; }
         #days180-root .d180-pill {
@@ -298,11 +298,11 @@ export default async function ArticlePage({ params }: PageProps) {
         }
         #days180-root .d180-pill-fill {
           height: 100%;
-          background: #f59e0b;
+          background: var(--amber);
           border-radius: 999px;
         }
         #days180-root .d180-pill b {
-          color: #d97706;
+          color: var(--amber);
           font-size: 11px;
           letter-spacing: .02em;
         }
@@ -414,7 +414,7 @@ export default async function ArticlePage({ params }: PageProps) {
           margin: 48px 0;
         }
         #days180-root .d180-md-link {
-          color: #d97706;
+          color: var(--amber);
           text-decoration: none;
           font-weight: 600;
         }
@@ -462,7 +462,7 @@ export default async function ArticlePage({ params }: PageProps) {
           text-transform: uppercase;
           letter-spacing: .06em;
           color: #0f172a;
-          background: #fbbf24;
+          background: var(--amber);
           border: 0;
           border-radius: 6px;
           padding: 4px 10px;
@@ -523,7 +523,7 @@ export default async function ArticlePage({ params }: PageProps) {
           font-weight: 600;
         }
         #days180-root .d180-edit-link:hover {
-          border-color: #f59e0b;
+          border-color: var(--amber);
         }
         @media (max-width: 640px) {
           #days180-root .d180-article-header-inner,
@@ -540,12 +540,17 @@ export default async function ArticlePage({ params }: PageProps) {
       <header className="d180-article-header">
         <div className="d180-article-header-inner">
           <div className="flex items-center gap-3 shrink-0">
-            <Link href="/" aria-label="Go to main home page" className="w-8 h-8 bg-amber-400 rounded-lg flex items-center justify-center text-slate-900 shadow-lg shadow-amber-400/20">
+            <Link
+              href="/"
+              aria-label="Go to main home page"
+              className="w-8 h-8 rounded-lg flex items-center justify-center text-slate-900 shadow-lg"
+              style={{ background: "var(--amber)", boxShadow: "0 8px 20px rgba(22, 208, 236, 0.22)" }}
+            >
               <span className="font-black text-sm">SK</span>
             </Link>
             <nav className="hidden md:flex items-center gap-3">
-              <Link href="/180days" className="d180-crumb">
-                <span className="d180-crumb-series">180 Days</span> <span>/</span> <strong>Day {dayNumber}</strong>
+              <Link href="/24weeks" className="d180-crumb">
+                <span className="d180-crumb-series">24 Weeks</span> <span>/</span> <strong>Week {dayNumber}</strong>
               </Link>
               <div className="d180-pill">
                 <div className="d180-pill-track">
@@ -557,8 +562,8 @@ export default async function ArticlePage({ params }: PageProps) {
           </div>
 
           <div className="flex items-center gap-4">
-            <Link href="/180days" className="d180-crumb">
-              ← All Days
+            <Link href="/24weeks" className="d180-crumb">
+              ← All Weeks
             </Link>
           </div>
         </div>
@@ -575,11 +580,11 @@ export default async function ArticlePage({ params }: PageProps) {
           <div className="d180-meta-line">
             <span>{data.date}</span>
             <span className="dot" />
-            <span style={{ color: "#d97706" }}>Subrata Kumar Das</span>
+            <span style={{ color: "var(--amber)" }}>Subrata Kumar Das</span>
             <span className="dot" />
             <span style={{ color: "#15803d", fontSize: 11, fontWeight: 800, textTransform: "uppercase", letterSpacing: ".08em" }}>Complete</span>
           </div>
-          <p style={{ marginTop: 16, maxWidth: 500, fontSize: 13, lineHeight: 1.7, color: "#92400e", borderLeft: "2px solid #fcd34d", paddingLeft: 10, fontStyle: "italic" }}>
+          <p style={{ marginTop: 16, maxWidth: 500, fontSize: 13, lineHeight: 1.7, color: "var(--slate-700)", borderLeft: "2px solid var(--amber)", paddingLeft: 10, fontStyle: "italic" }}>
             "Consistent small steps lead to massive long-term results. Keep pushing."
           </p>
         </div>

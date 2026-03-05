@@ -13,7 +13,7 @@ type Post = {
   dayNumber: number;
 };
 
-const contentDirectory = path.join(process.cwd(), "content/180days");
+const contentDirectory = path.join(process.cwd(), "content/24weeks");
 
 export const metadata: Metadata = {
   title: "24-Weeks to AI-Native | Subrata Kumar Das",
@@ -62,9 +62,9 @@ export default function DaysIndex() {
 
   posts.sort((a, b) => a.dayNumber - b.dayNumber);
 
-  const totalDays = 24 * 7; // 24 weeks
-  const completedDays = posts.length;
-  const progressPercent = Math.round((completedDays / totalDays) * 100);
+  const totalWeeks = 24; // 24 weeks
+  const completedWeeks = posts.length;
+  const progressPercent = Math.round((completedWeeks / totalWeeks) * 100);
 
   return (
     <>
@@ -101,7 +101,7 @@ export default function DaysIndex() {
           <div className="d180-progress-wrap">
             <div className="d180-progress-labels">
               <span>Progress</span>
-              <span>{completedDays} / {totalDays} days</span>
+              <span>{completedWeeks} / {totalWeeks} weeks</span>
             </div>
             <div className="d180-progress-track">
               <div className="d180-progress-fill" style={{ width: `${progressPercent}%` }} />
@@ -117,8 +117,8 @@ export default function DaysIndex() {
         {/* Stats */}
         <div className="d180-stats">
           {[
-            { label: "Days Logged",     value: completedDays },
-            { label: "Days Remaining",  value: totalDays - completedDays },
+            { label: "Weeks Logged",     value: completedWeeks },
+            { label: "Weeks Remaining",  value: totalWeeks - completedWeeks },
             { label: "Completion",      value: `${progressPercent}%` },
           ].map((s) => (
             <div key={s.label} className="d180-stat-card">

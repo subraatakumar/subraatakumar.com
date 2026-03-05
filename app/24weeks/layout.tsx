@@ -21,7 +21,7 @@ export default function Days180Layout({ children }: { children: React.ReactNode 
         /* ── 180 Days design tokens ── */
         #days180-root {
           --amber: #16d0ec;
-          --amber-light: #fef3c7;
+          --amber-light: #cffafe;
           --slate-950: #020617;
           --slate-900: #0f172a;
           --slate-800: #1e293b;
@@ -68,7 +68,7 @@ export default function Days180Layout({ children }: { children: React.ReactNode 
           font-weight: 900;
           font-size: 13px;
           color: var(--slate-900);
-          box-shadow: 0 4px 12px rgba(245,158,11,0.25);
+          box-shadow: 0 4px 12px rgba(22, 208, 236, 0.25);
         }
         .d180-logo-label {
           font-size: 11px;
@@ -335,7 +335,7 @@ export default function Days180Layout({ children }: { children: React.ReactNode 
         }
         .d180-footer-home:hover {
           background: var(--amber-light);
-          color: #b45309;
+          color: #155e75;
         }
 
         @media (max-width: 640px) {
