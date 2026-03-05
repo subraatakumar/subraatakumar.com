@@ -35,6 +35,7 @@ export default function SheHealthLayout({ children }: { children: React.ReactNod
           --sh-card:     rgba(255, 255, 255, 0.88);
 
           min-height: 100vh;
+          overflow-x: hidden; /* FIX: prevent horizontal scroll */
           color: var(--sh-charcoal);
           background:
             radial-gradient(circle at 8% 10%, rgba(196, 122, 90, 0.14), transparent 42%),
@@ -71,6 +72,7 @@ export default function SheHealthLayout({ children }: { children: React.ReactNod
           gap: 10px;
           color: var(--sh-maroon);
           text-decoration: none;
+          flex-shrink: 0; /* FIX: prevent logo from squishing */
         }
         .sh-logo-mark {
           width: 34px;
@@ -105,6 +107,7 @@ export default function SheHealthLayout({ children }: { children: React.ReactNod
           border-radius: 10px;
           letter-spacing: 0.02em;
           transition: background 0.18s, color 0.18s;
+          white-space: nowrap; /* FIX: prevent link text wrapping */
         }
         .sh-links a:hover {
           background: rgba(196, 122, 90, 0.12);
@@ -120,6 +123,11 @@ export default function SheHealthLayout({ children }: { children: React.ReactNod
         }
         .sh-links a.sh-nav-cta:hover {
           background: var(--sh-maroon-d);
+        }
+
+        /* FIX: hide secondary nav links on mobile, keep only CTA */
+        .sh-links a.sh-nav-secondary {
+          display: inline-flex;
         }
 
         /* MAIN */
@@ -188,12 +196,15 @@ export default function SheHealthLayout({ children }: { children: React.ReactNod
           .sh-footer-inner {
             padding: 14px 14px 18px;
           }
-          .sh-links a {
-            font-size: 12px;
-            padding: 8px 10px;
+
+          /* FIX: hide secondary nav links on mobile — only show CTA */
+          .sh-links a.sh-nav-secondary {
+            display: none;
           }
+
           .sh-links a.sh-nav-cta {
-            padding: 8px 14px;
+            padding: 9px 16px;
+            font-size: 13px;
           }
         }
       `}</style>
@@ -205,11 +216,11 @@ export default function SheHealthLayout({ children }: { children: React.ReactNod
             <span className="sh-logo-text">She Health</span>
           </Link>
           <nav className="sh-links" aria-label="She Health pages">
-            <Link href="/shehealth">Overview</Link>
-            {/* <Link href="/shehealth/guide">How To Use</Link> */}
-            <Link href="/shehealth/privacy-policy">Privacy Policy</Link>
-            <Link href="/shehealth/terms">Terms of Use</Link>
-            <Link href="/products">All Products</Link>
+            <Link href="/shehealth" className="sh-nav-secondary">Overview</Link>
+            {/* <Link href="/shehealth/guide" className="sh-nav-secondary">How To Use</Link> */}
+            <Link href="/shehealth/privacy-policy" className="sh-nav-secondary">Privacy Policy</Link>
+            <Link href="/shehealth/terms" className="sh-nav-secondary">Terms of Use</Link>
+            <Link href="/products" className="sh-nav-secondary">All Products</Link>
             <Link href="/shehealth#download" className="sh-nav-cta">Download Free</Link>
           </nav>
         </div>

@@ -97,6 +97,7 @@ export default function WaterTrackerLayout({ children }: { children: React.React
           border-radius: 10px;
           text-transform: uppercase;
           letter-spacing: 0.05em;
+          white-space: nowrap;
         }
         .wt-links a:hover {
           background: rgba(79, 136, 255, 0.14);
@@ -152,19 +153,52 @@ export default function WaterTrackerLayout({ children }: { children: React.React
         .wt-font-display {
           font-family: ${spaceGrotesk.style.fontFamily};
         }
+        .wt-mobile-nav {
+          display: none;
+        }
         @media (max-width: 760px) {
           .wt-nav-inner {
             padding: 0 14px;
+            height: 56px;
+          }
+          .wt-links {
+            display: none;
+          }
+          .wt-mobile-nav {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            overflow-x: auto;
+            padding: 0 14px 10px;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            border-bottom: 1px solid rgba(16, 36, 79, 0.1);
+          }
+          .wt-mobile-nav::-webkit-scrollbar {
+            display: none;
+          }
+          .wt-mobile-nav a {
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: 800;
+            color: var(--wt-navy-900);
+            padding: 7px 11px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            white-space: nowrap;
+            border: 1px solid rgba(16, 36, 79, 0.18);
+            background: rgba(255,255,255,0.7);
+          }
+          .wt-mobile-nav a:hover {
+            background: rgba(79, 136, 255, 0.14);
+            border-color: rgba(31, 79, 157, 0.35);
           }
           .wt-main {
             padding: 22px 14px 54px;
           }
           .wt-footer-inner {
             padding: 14px 14px 18px;
-          }
-          .wt-links a {
-            font-size: 11px;
-            padding: 8px 10px;
           }
         }
       `}</style>
@@ -182,6 +216,12 @@ export default function WaterTrackerLayout({ children }: { children: React.React
             <Link href="/products">All Products</Link>
           </nav>
         </div>
+        <nav className="wt-mobile-nav" aria-label="Water Tracker pages mobile">
+          <Link href="/watertracker">Overview</Link>
+          <Link href="/watertracker/guide">How To Use</Link>
+          <Link href="/watertracker/benefits">Health Benefits</Link>
+          <Link href="/products">All Products</Link>
+        </nav>
       </header>
 
       <main className="wt-main">{children}</main>

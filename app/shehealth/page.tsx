@@ -681,8 +681,8 @@ export default function SheHealthPage() {
           <h2 className="sh-h2 sh-font-display">Start Tracking.<br /><em>Stay Private.</em></h2>
           <p>Download She Health for free today. No sign-up, no cloud, no compromise on your privacy.</p>
           <div className="sh-cta-actions">
-            <a href="#" className="sh-btn-white">🍎 App Store</a>
-            <a href="#" className="sh-btn-white">▶ Google Play</a>
+            <a href="https://apps.apple.com/app/id6743358136" className="sh-btn-white">🍎 App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.subrata.shehealth" className="sh-btn-white">▶ Google Play</a>
           </div>
         </section>
 

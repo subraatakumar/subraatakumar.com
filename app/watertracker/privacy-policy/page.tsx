@@ -104,6 +104,22 @@ export default function PrivacyPolicyPage() {
 
   return (
     <div>
+      <style>{`
+        @media (max-width: 760px) {
+          .wt-pp-sidebar   { display: none !important; }
+          .wt-pp-body      { flex-direction: column !important; }
+          .wt-pp-content   { padding: 24px 18px !important; }
+          .wt-pp-header    { padding: 24px 20px !important; }
+          .wt-pp-h1        { font-size: 30px !important; }
+          .wt-pp-email-box { min-width: 0 !important; flex: 1 1 220px !important; }
+          .wt-pp-email-btn {
+            white-space: normal !important;
+            word-break: break-all;
+            font-size: 12px !important;
+          }
+          .wt-pp-contact-box { padding: 24px 20px !important; }
+        }
+      `}</style>
       {/* Header Card */}
       <div style={{
         background: 'var(--wt-card)',
@@ -112,14 +128,14 @@ export default function PrivacyPolicyPage() {
         padding: '36px 40px',
         marginBottom: 28,
         boxShadow: '0 8px 32px rgba(16,36,79,0.07)',
-      }}>
+      }} className="wt-pp-header">
         <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'flex-start', justifyContent: 'space-between', gap: 20 }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, color: 'var(--wt-navy-700)', fontWeight: 800, fontSize: 13, letterSpacing: '0.04em', textTransform: 'uppercase', marginBottom: 10 }}>
               <Droplets style={{ width: 16, height: 16 }} />
               <span>Water Tracker N Reminder</span>
             </div>
-            <h1 className="wt-font-display" style={{ fontSize: 44, fontWeight: 800, color: 'var(--wt-navy-900)', margin: 0, letterSpacing: '-0.02em', lineHeight: 1.1 }}>
+            <h1 className="wt-font-display wt-pp-h1" style={{ fontSize: 44, fontWeight: 800, color: 'var(--wt-navy-900)', margin: 0, letterSpacing: '-0.02em', lineHeight: 1.1 }}>
               Privacy Policy
             </h1>
             <p style={{ color: 'var(--wt-muted)', marginTop: 12, display: 'flex', alignItems: 'center', gap: 6, fontSize: 13, fontWeight: 600 }}>
@@ -133,7 +149,7 @@ export default function PrivacyPolicyPage() {
             borderRadius: 16,
             padding: '18px 22px',
             minWidth: 260,
-          }}>
+          }} className="wt-pp-email-box">
             <p style={{ fontSize: 12, fontWeight: 800, color: 'var(--wt-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', margin: '0 0 6px' }}>Privacy Questions?</p>
             <a
               href="mailto:subraatakumar+watertracker@gmail.com"
@@ -153,10 +169,10 @@ export default function PrivacyPolicyPage() {
       </div>
 
       {/* Body: sidebar + content */}
-      <div style={{ display: 'flex', gap: 24, alignItems: 'flex-start' }}>
+      <div style={{ display: 'flex', gap: 24, alignItems: 'flex-start' }} className="wt-pp-body">
 
         {/* Sidebar */}
-        <aside style={{ width: 220, flexShrink: 0, position: 'sticky', top: 84 }}>
+        <aside style={{ width: 220, flexShrink: 0, position: 'sticky', top: 84 }} className="wt-pp-sidebar">
           <p style={{ fontSize: 11, fontWeight: 800, color: 'var(--wt-muted)', textTransform: 'uppercase', letterSpacing: '0.09em', padding: '0 12px', marginBottom: 10 }}>
             Policy Sections
           </p>
@@ -203,7 +219,7 @@ export default function PrivacyPolicyPage() {
           borderRadius: 24,
           padding: '40px 44px',
           boxShadow: '0 8px 32px rgba(16,36,79,0.06)',
-        }}>
+        }} className="wt-pp-content">
 
           <PolicySection id="offline-architecture" title="Offline-First Architecture" icon={<HardDrive style={{ width: 18, height: 18 }} />}>
             <p style={{ margin: '0 0 16px' }}>
@@ -375,7 +391,7 @@ export default function PrivacyPolicyPage() {
               color: '#fff',
               position: 'relative',
               overflow: 'hidden',
-            }}>
+            }} className="wt-pp-contact-box">
               <div style={{ position: 'absolute', top: -40, right: -40, width: 120, height: 120, background: 'rgba(79,136,255,0.35)', borderRadius: '50%', filter: 'blur(40px)' }} />
               <div style={{ position: 'relative', zIndex: 1 }}>
                 <h4 style={{ fontSize: 18, fontWeight: 800, margin: '0 0 8px', color: '#fff' }}>Developer Contact</h4>
@@ -390,7 +406,9 @@ export default function PrivacyPolicyPage() {
                     padding: '11px 22px', borderRadius: 12,
                     fontWeight: 800, fontSize: 13, textDecoration: 'none',
                     boxShadow: '0 4px 14px rgba(16,36,79,0.18)',
+                    whiteSpace: 'nowrap',
                   }}
+                  className="wt-pp-email-btn"
                 >
                   <Mail style={{ width: 15, height: 15 }} />
                   subraatakumar+watertracker@gmail.com

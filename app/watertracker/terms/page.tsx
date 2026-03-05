@@ -30,7 +30,7 @@ const SECTIONS = [
   { id: 'contact',      title: 'Contact Us',              icon: <Mail className="w-4 h-4" /> },
 ];
 
-const HighlightCard = ({ icon, title, description }) => (
+const HighlightCard: React.FC<{ icon: React.ReactNode; title: string; description: string }> = ({ icon, title, description }) => (
   <div style={{
     background: 'rgba(255,255,255,0.72)',
     border: '1px solid rgba(16,36,79,0.10)',
@@ -51,8 +51,8 @@ const HighlightCard = ({ icon, title, description }) => (
       {icon}
     </div>
     <div>
-      <h4 style={{ fontWeight: 800, color: 'var(--wt-navy-900)', margin: '0 0 4px', fontSize: 14 }}>{title}</h4>
-      <p style={{ fontSize: 13, color: 'var(--wt-muted)', margin: 0, lineHeight: 1.5 }}>{description}</p>
+      <h4>{title}</h4>
+      <p>{description}</p>
     </div>
   </div>
 );
@@ -61,7 +61,7 @@ const Divider = () => (
   <div style={{ height: 1, background: 'rgba(16,36,79,0.07)', margin: '0 0 48px' }} />
 );
 
-const PolicySection = ({ id, title, children, icon }) => (
+const PolicySection: React.FC<{ id: string; title: string; children: React.ReactNode; icon: React.ReactNode }> = ({ id, title, children, icon }) => (
   <section id={id} style={{ scrollMarginTop: 96, marginBottom: 52 }}>
     <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 20 }}>
       <div style={{
@@ -82,14 +82,14 @@ const PolicySection = ({ id, title, children, icon }) => (
   </section>
 );
 
-const BulletItem = ({ children }) => (
+const BulletItem: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <div style={{ display: 'flex', alignItems: 'flex-start', gap: 12, marginBottom: 10 }}>
     <div style={{ width: 7, height: 7, borderRadius: '50%', background: 'linear-gradient(140deg, #4f88ff, #3ec1ff)', flexShrink: 0, marginTop: 7 }} />
     <span style={{ fontSize: 14 }}>{children}</span>
   </div>
 );
 
-const InfoCard = ({ children, accent = false }) => (
+const InfoCard: React.FC<{ children: React.ReactNode; accent?: boolean }> = ({ children, accent = false }) => (
   <div style={{
     padding: '16px 20px',
     border: `1px solid ${accent ? 'rgba(251,146,60,0.25)' : 'rgba(16,36,79,0.09)'}`,
@@ -128,6 +128,21 @@ export default function TermsOfUsePage() {
 
   return (
     <div>
+      <style>{`
+        @media (max-width: 760px) {
+          .wt-terms-sidebar { display: none !important; }
+          .wt-terms-body { flex-direction: column !important; }
+          .wt-terms-content { padding: 24px 18px !important; }
+          .wt-terms-header { padding: 24px 20px !important; }
+          .wt-terms-contact-box { padding: 24px 20px !important; }
+          .wt-terms-email-btn {
+            word-break: break-all;
+            white-space: normal !important;
+            font-size: 12px !important;
+          }
+          .wt-terms-h1 { font-size: 30px !important; }
+        }
+      `}</style>
       {/* Header Card */}
       <div style={{
         background: 'var(--wt-card)',
@@ -136,14 +151,14 @@ export default function TermsOfUsePage() {
         padding: '36px 40px',
         marginBottom: 28,
         boxShadow: '0 8px 32px rgba(16,36,79,0.07)',
-      }}>
+      }} className="wt-terms-header">
         <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'flex-start', justifyContent: 'space-between', gap: 20 }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, color: 'var(--wt-navy-700)', fontWeight: 800, fontSize: 13, letterSpacing: '0.04em', textTransform: 'uppercase', marginBottom: 10 }}>
               <Droplets style={{ width: 16, height: 16 }} />
               <span>Water Tracker N Reminder</span>
             </div>
-            <h1 className="wt-font-display" style={{ fontSize: 44, fontWeight: 800, color: 'var(--wt-navy-900)', margin: 0, letterSpacing: '-0.02em', lineHeight: 1.1 }}>
+            <h1 className="wt-font-display wt-terms-h1" style={{ fontSize: 44, fontWeight: 800, color: 'var(--wt-navy-900)', margin: 0, letterSpacing: '-0.02em', lineHeight: 1.1 }}>
               Terms of Use
             </h1>
             <p style={{ color: 'var(--wt-muted)', marginTop: 12, display: 'flex', alignItems: 'center', gap: 6, fontSize: 13, fontWeight: 600 }}>
@@ -156,7 +171,8 @@ export default function TermsOfUsePage() {
             border: '1px solid rgba(79,136,255,0.18)',
             borderRadius: 16,
             padding: '18px 22px',
-            minWidth: 260,
+            minWidth: 0,
+            flex: '1 1 220px',
           }}>
             <p style={{ fontSize: 12, fontWeight: 800, color: 'var(--wt-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', margin: '0 0 6px' }}>Questions?</p>
             <a
@@ -177,10 +193,10 @@ export default function TermsOfUsePage() {
       </div>
 
       {/* Body */}
-      <div style={{ display: 'flex', gap: 24, alignItems: 'flex-start' }}>
+      <div style={{ display: 'flex', gap: 24, alignItems: 'flex-start' }} className="wt-terms-body">
 
-        {/* Sidebar */}
-        <aside style={{ width: 220, flexShrink: 0, position: 'sticky', top: 84 }}>
+        {/* Sidebar — hidden on mobile via inline media workaround */}
+        <aside style={{ width: 220, flexShrink: 0, position: 'sticky', top: 84 }} className="wt-terms-sidebar">
           <p style={{ fontSize: 11, fontWeight: 800, color: 'var(--wt-muted)', textTransform: 'uppercase', letterSpacing: '0.09em', padding: '0 12px', marginBottom: 10 }}>
             Sections
           </p>
@@ -227,7 +243,7 @@ export default function TermsOfUsePage() {
           borderRadius: 24,
           padding: '40px 44px',
           boxShadow: '0 8px 32px rgba(16,36,79,0.06)',
-        }}>
+        }} className="wt-terms-content">
 
           <PolicySection id="acceptance" title="Acceptance of Terms" icon={<FileText style={{ width: 18, height: 18 }} />}>
             <p style={{ margin: '0 0 14px' }}>
@@ -387,7 +403,7 @@ export default function TermsOfUsePage() {
               color: '#fff',
               position: 'relative',
               overflow: 'hidden',
-            }}>
+            }} className="wt-terms-contact-box">
               <div style={{ position: 'absolute', top: -40, right: -40, width: 120, height: 120, background: 'rgba(79,136,255,0.35)', borderRadius: '50%', filter: 'blur(40px)' }} />
               <div style={{ position: 'relative', zIndex: 1 }}>
                 <h4 style={{ fontSize: 18, fontWeight: 800, margin: '0 0 8px', color: '#fff' }}>Developer Contact</h4>
@@ -402,7 +418,9 @@ export default function TermsOfUsePage() {
                     padding: '11px 22px', borderRadius: 12,
                     fontWeight: 800, fontSize: 13, textDecoration: 'none',
                     boxShadow: '0 4px 14px rgba(16,36,79,0.18)',
+                    whiteSpace: 'nowrap',
                   }}
+                  className="wt-terms-email-btn"
                 >
                   <Mail style={{ width: 15, height: 15 }} />
                   subraatakumar+watertracker@gmail.com

@@ -105,7 +105,7 @@ export default function SheHealthPrivacyPage() {
         /* ── layout ── */
         .shp-wrap {
           max-width: 1120px; margin: 0 auto;
-          padding: 36px 24px 80px;
+          padding: 36px 0 80px;
           display: flex; gap: 36px; align-items: flex-start;
         }
 
@@ -176,6 +176,8 @@ export default function SheHealthPrivacyPage() {
           background: #fff; border: 1px solid rgba(196,122,90,0.12);
           border-radius: 22px; padding: 38px 42px;
           box-shadow: 0 6px 24px rgba(90,31,47,0.05);
+          overflow-x: hidden; /* FIX: contain overflow */
+          word-break: break-word; /* FIX: wrap long emails/URLs */
         }
 
         /* ── policy sections ── */
@@ -250,6 +252,7 @@ export default function SheHealthPrivacyPage() {
           padding: 10px 20px; border-radius: 10px;
           font-size: 13px; font-weight: 700; text-decoration: none;
           transition: background 0.2s;
+          word-break: break-all; /* FIX: break long email address */
         }
         .shp-contact-link:hover { background: var(--sh-cream); }
 
@@ -267,15 +270,23 @@ export default function SheHealthPrivacyPage() {
 
         /* ── responsive ── */
         @media (max-width: 860px) {
-          .shp-wrap { flex-direction: column; padding: 20px 16px 60px; gap: 20px; }
+          .shp-wrap { flex-direction: column; padding: 20px 0 60px; gap: 20px; }
           .shp-sidebar { width: 100%; position: static; }
           .shp-sidebar-nav { flex-direction: row; flex-wrap: wrap; }
-          .shp-header-card { padding: 22px; }
-          .shp-h1 { font-size: 34px; }
+          .shp-header-card { padding: 20px 18px; }
+          .shp-h1 { font-size: 30px; }
           .shp-highlights { grid-template-columns: 1fr; }
-          .shp-content-card { padding: 22px; }
+          .shp-content-card { padding: 20px 18px; border-radius: 16px; }
           .shp-info-grid { grid-template-columns: 1fr; }
           .shp-platform-links { grid-template-columns: 1fr; }
+          .shp-contact-card { padding: 20px 18px; }
+        }
+
+        @media (max-width: 480px) {
+          .shp-h1 { font-size: 26px; }
+          .shp-h2 { font-size: 20px; }
+          .shp-content-card { padding: 16px 14px; }
+          .shp-header-card { padding: 16px 14px; }
         }
       `}</style>
 
