@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
 a:I[68027,[],"default"]
-:HL["/_next/static/chunks/d05f816532caee33.css","style"]
+:HL["/_next/static/chunks/9cf115693455d5be.css","style"]
 :HL["/_next/static/chunks/67d266141b06bb08.css","style"]
 :HL["/_next/static/media/0c89a48fa5027cee-s.p.4564287c.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/a343f882a40d2cc9-s.p.71e1367e.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
@@ -224,12 +224,12 @@ a:I[68027,[],"default"]
             .sk-nav-mobile { display: block; }
             .sk-page-heading { font-size: 2.2rem; }
           }
-        0:{"P":null,"b":"aHRogxiJLFUHzorn3BLeI","c":["","watertracker","privacy-policy",""],"q":"","i":false,"f":[[["",{"children":["watertracker",{"children":["privacy-policy",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/d05f816532caee33.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+        0:{"P":null,"b":"O5iLLtGkXobjxsIQvxWxJ","c":["","watertracker","privacy-policy",""],"q":"","i":false,"f":[[["",{"children":["watertracker",{"children":["privacy-policy",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/9cf115693455d5be.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
 b:I[22016,["/_next/static/chunks/7c92e96509cd355e.js"],""]
 c:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
 d:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
 12:I[47257,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"ClientPageRoot"]
-13:I[28456,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/0177db2bda435f65.js"],"default"]
+13:I[28456,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/df09bdb87f7a000f.js"],"default"]
 16:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
 17:"$Sreact.suspense"
 19:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"ViewportBoundary"]
@@ -237,7 +237,7 @@ d:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f
 3:["$","header",null,{"className":"sk-header","children":[["$","div",null,{"className":"sk-header-inner","children":[["$","$Lb",null,{"href":"/","className":"sk-logo","children":"SKD_"}],["$","nav",null,{"aria-label":"Primary","children":["$","ul",null,{"className":"sk-nav-links","children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]]}],["$","div",null,{"className":"sk-nav-mobile","children":["$","nav",null,{"aria-label":"Mobile","children":["$","ul",null,{"children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]}]]}]
 4:["$","main",null,{"style":{"width":"100%"},"children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
 5:["$","footer",null,{"className":"sk-footer","children":["© ",2026," Subrata Kumar Das. All rights reserved. ·"," ",["$","$Lb",null,{"href":"/for-ai","children":"For AI/Crawlers"}]]}]
-e:T1146,
+e:T157e,
         body:has(.wt-shell) .sk-header,
         body:has(.wt-shell) .sk-footer {
           display: none !important;
@@ -320,6 +320,7 @@ e:T1146,
           border-radius: 10px;
           text-transform: uppercase;
           letter-spacing: 0.05em;
+          white-space: nowrap;
         }
         .wt-links a:hover {
           background: rgba(79, 136, 255, 0.14);
@@ -375,9 +376,46 @@ e:T1146,
         .wt-font-display {
           font-family: 'Space Grotesk', 'Space Grotesk Fallback';
         }
+        .wt-mobile-nav {
+          display: none;
+        }
         @media (max-width: 760px) {
           .wt-nav-inner {
             padding: 0 14px;
+            height: 56px;
+          }
+          .wt-links {
+            display: none;
+          }
+          .wt-mobile-nav {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            overflow-x: auto;
+            padding: 0 14px 10px;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            border-bottom: 1px solid rgba(16, 36, 79, 0.1);
+          }
+          .wt-mobile-nav::-webkit-scrollbar {
+            display: none;
+          }
+          .wt-mobile-nav a {
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: 800;
+            color: var(--wt-navy-900);
+            padding: 7px 11px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            white-space: nowrap;
+            border: 1px solid rgba(16, 36, 79, 0.18);
+            background: rgba(255,255,255,0.7);
+          }
+          .wt-mobile-nav a:hover {
+            background: rgba(79, 136, 255, 0.14);
+            border-color: rgba(31, 79, 157, 0.35);
           }
           .wt-main {
             padding: 22px 14px 54px;
@@ -385,16 +423,12 @@ e:T1146,
           .wt-footer-inner {
             padding: 14px 14px 18px;
           }
-          .wt-links a {
-            font-size: 11px;
-            padding: 8px 10px;
-          }
         }
       6:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/67d266141b06bb08.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","div",null,{"className":"wt-shell manrope_65508a06-module__rzDLfa__className","children":[["$","style",null,{"children":"$e"}],"$Lf","$L10","$L11"]}]]}]
 7:["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
-8:["$","$1","c",{"children":[["$","$L12",null,{"Component":"$13","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@14","$@15"]}}],[["$","script","script-0",{"src":"/_next/static/chunks/0177db2bda435f65.js","async":true,"nonce":"$undefined"}]],["$","$L16",null,{"children":["$","$17",null,{"name":"Next.MetadataOutlet","children":"$@18"}]}]]}]
+8:["$","$1","c",{"children":[["$","$L12",null,{"Component":"$13","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@14","$@15"]}}],[["$","script","script-0",{"src":"/_next/static/chunks/df09bdb87f7a000f.js","async":true,"nonce":"$undefined"}]],["$","$L16",null,{"children":["$","$17",null,{"name":"Next.MetadataOutlet","children":"$@18"}]}]]}]
 9:["$","$1","h",{"children":[null,["$","$L19",null,{"children":"$L1a"}],["$","div",null,{"hidden":true,"children":["$","$L1b",null,{"children":["$","$17",null,{"name":"Next.Metadata","children":"$L1c"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
-f:["$","header",null,{"className":"wt-nav","children":["$","div",null,{"className":"wt-nav-inner","children":[["$","$Lb",null,{"href":"/watertracker","className":"wt-logo","children":[["$","span",null,{"className":"wt-logo-mark","children":"WT"}],["$","span",null,{"className":"wt-logo-text wt-font-display","children":"WaterTracker"}]]}],["$","nav",null,{"className":"wt-links","aria-label":"Water Tracker pages","children":[["$","$Lb",null,{"href":"/watertracker","children":"Overview"}],["$","$Lb",null,{"href":"/watertracker/guide","children":"How To Use"}],["$","$Lb",null,{"href":"/watertracker/benefits","children":"Health Benefits"}],["$","$Lb",null,{"href":"/products","children":"All Products"}]]}]]}]}]
+f:["$","header",null,{"className":"wt-nav","children":[["$","div",null,{"className":"wt-nav-inner","children":[["$","$Lb",null,{"href":"/watertracker","className":"wt-logo","children":[["$","span",null,{"className":"wt-logo-mark","children":"WT"}],["$","span",null,{"className":"wt-logo-text wt-font-display","children":"WaterTracker"}]]}],["$","nav",null,{"className":"wt-links","aria-label":"Water Tracker pages","children":[["$","$Lb",null,{"href":"/watertracker","children":"Overview"}],["$","$Lb",null,{"href":"/watertracker/guide","children":"How To Use"}],["$","$Lb",null,{"href":"/watertracker/benefits","children":"Health Benefits"}],["$","$Lb",null,{"href":"/products","children":"All Products"}]]}]]}],["$","nav",null,{"className":"wt-mobile-nav","aria-label":"Water Tracker pages mobile","children":[["$","$Lb",null,{"href":"/watertracker","children":"Overview"}],["$","$Lb",null,{"href":"/watertracker/guide","children":"How To Use"}],["$","$Lb",null,{"href":"/watertracker/benefits","children":"Health Benefits"}],["$","$Lb",null,{"href":"/products","children":"All Products"}]]}]]}]
 10:["$","main",null,{"className":"wt-main","children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}]
 11:["$","footer",null,{"className":"wt-footer","children":["$","div",null,{"className":"wt-footer-inner","children":[["$","p",null,{"className":"wt-footer-copy","children":["© ",2026," WaterTracker"]}],["$","div",null,{"className":"wt-footer-links","children":[["$","$Lb",null,{"href":"/watertracker","children":"Overview"}],["$","$Lb",null,{"href":"/watertracker/guide","children":"How To Use"}],["$","$Lb",null,{"href":"/watertracker/benefits","children":"Health Benefits"}],["$","$Lb",null,{"href":"/contact","children":"Support"}],["$","$Lb",null,{"href":"/watertracker/privacy-policy","children":"Privacy Policy"}],["$","$Lb",null,{"href":"/watertracker/terms","children":"Terms of Use"}]]}]]}]}]
 14:{}

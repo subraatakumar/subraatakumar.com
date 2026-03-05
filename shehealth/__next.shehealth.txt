@@ -3,7 +3,7 @@
 7:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
 8:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
 :HL["/_next/static/chunks/9278265219d44b9f.css","style"]
-2:T1433,
+2:T15ec,
         body:has(.sh-shell) .sk-header,
         body:has(.sh-shell) .sk-footer {
           display: none !important;
@@ -23,6 +23,7 @@
           --sh-card:     rgba(255, 255, 255, 0.88);
 
           min-height: 100vh;
+          overflow-x: hidden; /* FIX: prevent horizontal scroll */
           color: var(--sh-charcoal);
           background:
             radial-gradient(circle at 8% 10%, rgba(196, 122, 90, 0.14), transparent 42%),
@@ -59,6 +60,7 @@
           gap: 10px;
           color: var(--sh-maroon);
           text-decoration: none;
+          flex-shrink: 0; /* FIX: prevent logo from squishing */
         }
         .sh-logo-mark {
           width: 34px;
@@ -93,6 +95,7 @@
           border-radius: 10px;
           letter-spacing: 0.02em;
           transition: background 0.18s, color 0.18s;
+          white-space: nowrap; /* FIX: prevent link text wrapping */
         }
         .sh-links a:hover {
           background: rgba(196, 122, 90, 0.12);
@@ -108,6 +111,11 @@
         }
         .sh-links a.sh-nav-cta:hover {
           background: var(--sh-maroon-d);
+        }
+
+        /* FIX: hide secondary nav links on mobile, keep only CTA */
+        .sh-links a.sh-nav-secondary {
+          display: inline-flex;
         }
 
         /* MAIN */
@@ -176,15 +184,18 @@
           .sh-footer-inner {
             padding: 14px 14px 18px;
           }
-          .sh-links a {
-            font-size: 12px;
-            padding: 8px 10px;
+
+          /* FIX: hide secondary nav links on mobile — only show CTA */
+          .sh-links a.sh-nav-secondary {
+            display: none;
           }
+
           .sh-links a.sh-nav-cta {
-            padding: 8px 14px;
+            padding: 9px 16px;
+            font-size: 13px;
           }
         }
-      0:{"buildId":"aHRogxiJLFUHzorn3BLeI","rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/9278265219d44b9f.css","precedence":"next"}]],["$","div",null,{"className":"sh-shell dm_sans_80a0ab86-module__6HYvaW__className","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}],"loading":null,"isPartial":false}
-3:["$","header",null,{"className":"sh-nav","children":["$","div",null,{"className":"sh-nav-inner","children":[["$","$L6",null,{"href":"/shehealth","className":"sh-logo","children":[["$","span",null,{"className":"sh-logo-mark","children":"SH"}],["$","span",null,{"className":"sh-logo-text","children":"She Health"}]]}],["$","nav",null,{"className":"sh-links","aria-label":"She Health pages","children":[["$","$L6",null,{"href":"/shehealth","children":"Overview"}],["$","$L6",null,{"href":"/shehealth/privacy-policy","children":"Privacy Policy"}],["$","$L6",null,{"href":"/shehealth/terms","children":"Terms of Use"}],["$","$L6",null,{"href":"/products","children":"All Products"}],["$","$L6",null,{"href":"/shehealth#download","className":"sh-nav-cta","children":"Download Free"}]]}]]}]}]
+      0:{"buildId":"O5iLLtGkXobjxsIQvxWxJ","rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/9278265219d44b9f.css","precedence":"next"}]],["$","div",null,{"className":"sh-shell dm_sans_80a0ab86-module__6HYvaW__className","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}],"loading":null,"isPartial":false}
+3:["$","header",null,{"className":"sh-nav","children":["$","div",null,{"className":"sh-nav-inner","children":[["$","$L6",null,{"href":"/shehealth","className":"sh-logo","children":[["$","span",null,{"className":"sh-logo-mark","children":"SH"}],["$","span",null,{"className":"sh-logo-text","children":"She Health"}]]}],["$","nav",null,{"className":"sh-links","aria-label":"She Health pages","children":[["$","$L6",null,{"href":"/shehealth","className":"sh-nav-secondary","children":"Overview"}],["$","$L6",null,{"href":"/shehealth/privacy-policy","className":"sh-nav-secondary","children":"Privacy Policy"}],["$","$L6",null,{"href":"/shehealth/terms","className":"sh-nav-secondary","children":"Terms of Use"}],["$","$L6",null,{"href":"/products","className":"sh-nav-secondary","children":"All Products"}],["$","$L6",null,{"href":"/shehealth#download","className":"sh-nav-cta","children":"Download Free"}]]}]]}]}]
 4:["$","main",null,{"className":"sh-main","children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]}]
 5:["$","footer",null,{"className":"sh-footer","children":["$","div",null,{"className":"sh-footer-inner","children":[["$","p",null,{"className":"sh-footer-copy","children":["© ",2026," She Health"]}],["$","div",null,{"className":"sh-footer-links","children":[["$","$L6",null,{"href":"/shehealth","children":"Overview"}],["$","$L6",null,{"href":"/shehealth/privacy-policy","children":"Privacy Policy"}],["$","$L6",null,{"href":"/shehealth/terms","children":"Terms of Use"}],["$","$L6",null,{"href":"/contact","children":"Support"}]]}]]}]}]
