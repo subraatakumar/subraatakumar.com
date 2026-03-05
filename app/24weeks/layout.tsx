@@ -1,0 +1,363 @@
+import Link from "next/link";
+
+// This layout intentionally resets the global sketchy styles
+// and applies its own amber/dark theme for the 180 Days section.
+export default function Days180Layout({ children }: { children: React.ReactNode }) {
+  return (
+    <div style={{ all: "revert" }}>
+      <style>{`
+        /* ── Reset sketchy globals for this subtree ── */
+        body:has(#days180-root) .sk-header,
+        body:has(#days180-root) .sk-footer {
+          display: none !important;
+        }
+
+        #days180-root,
+        #days180-root * {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+          box-sizing: border-box;
+        }
+
+        /* ── 180 Days design tokens ── */
+        #days180-root {
+          --amber: #16d0ec;
+          --amber-light: #fef3c7;
+          --slate-950: #020617;
+          --slate-900: #0f172a;
+          --slate-800: #1e293b;
+          --slate-700: #334155;
+          --slate-500: #64748b;
+          --slate-400: #94a3b8;
+          --slate-300: #cbd5e1;
+          --slate-200: #e2e8f0;
+          --slate-100: #f1f5f9;
+          --slate-50:  #f8fafc;
+          --white: #ffffff;
+
+          min-height: 100vh;
+          background: var(--white);
+          color: var(--slate-900);
+        }
+
+        /* ── Header ── */
+        .d180-header {
+          position: sticky;
+          top: 0;
+          z-index: 100;
+          background: rgba(255,255,255,0.92);
+          backdrop-filter: blur(16px);
+          border-bottom: 1px solid var(--slate-200);
+        }
+        .d180-header-inner {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 32px;
+          height: 64px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .d180-logo-badge {
+          width: 32px;
+          height: 32px;
+          background: var(--amber);
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 900;
+          font-size: 13px;
+          color: var(--slate-900);
+          box-shadow: 0 4px 12px rgba(245,158,11,0.25);
+        }
+        .d180-logo-label {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.18em;
+          color: var(--slate-500);
+        }
+        .d180-back-btn {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          padding: 8px 16px;
+          background: var(--slate-100);
+          border-radius: 8px;
+          color: var(--slate-900);
+          text-decoration: none;
+          transition: background 0.15s;
+        }
+        .d180-back-btn:hover { background: var(--slate-200); }
+
+        /* ── Hero ── */
+        .d180-hero {
+          border-bottom: 1px solid var(--slate-200);
+          background: linear-gradient(to bottom, var(--slate-50), var(--white));
+        }
+        .d180-hero-inner {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 64px 32px;
+        }
+        .d180-hero h1 {
+          font-size: clamp(2.8rem, 6vw, 4.5rem);
+          font-weight: 900;
+          letter-spacing: -0.03em;
+          line-height: 1.0;
+          color: var(--slate-950);
+          margin: 0 0 12px;
+        }
+        .d180-hero h1 span { color: var(--amber); }
+        .d180-meta {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          margin-bottom: 20px;
+        }
+        .d180-meta-label {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+          color: var(--slate-400);
+        }
+        .d180-meta-dot {
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background: var(--slate-300);
+          display: inline-block;
+        }
+        .d180-meta-series {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+          color: var(--amber);
+        }
+        .d180-hero p {
+          font-size: 1.15rem;
+          color: var(--slate-500);
+          line-height: 1.7;
+          max-width: 500px;
+          margin: 0;
+        }
+
+        /* ── Progress bar ── */
+        .d180-progress-wrap {
+          margin-top: 40px;
+          max-width: 320px;
+        }
+        .d180-progress-labels {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 8px;
+        }
+        .d180-progress-labels span {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.15em;
+          color: var(--slate-400);
+        }
+        .d180-progress-labels span:last-child { color: var(--amber); }
+        .d180-progress-track {
+          width: 100%;
+          height: 8px;
+          background: var(--slate-200);
+          border-radius: 999px;
+          overflow: hidden;
+        }
+        .d180-progress-fill {
+          height: 100%;
+          background: var(--amber);
+          border-radius: 999px;
+          transition: width 0.7s ease;
+        }
+        .d180-progress-pct {
+          margin-top: 6px;
+          font-size: 11px;
+          color: var(--slate-400);
+          font-weight: 500;
+        }
+
+        /* ── Main content ── */
+        .d180-main {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 48px 32px 80px;
+        }
+
+        /* ── Stats row ── */
+        .d180-stats {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 16px;
+          margin-bottom: 48px;
+        }
+        .d180-stat-card {
+          background: var(--slate-50);
+          border: 1px solid var(--slate-200);
+          border-radius: 16px;
+          padding: 20px;
+        }
+        .d180-stat-num {
+          font-size: clamp(1.6rem, 3vw, 2rem);
+          font-weight: 900;
+          color: var(--slate-950);
+          letter-spacing: -0.02em;
+        }
+        .d180-stat-lbl {
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.15em;
+          color: var(--slate-400);
+          margin-top: 4px;
+        }
+
+        /* ── Entry list ── */
+        .d180-entry-list {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+        .d180-entry {
+          display: flex;
+          align-items: flex-start;
+          gap: 20px;
+          padding: 20px;
+          border-radius: 16px;
+          border: 1px solid var(--slate-200);
+          background: var(--white);
+          text-decoration: none;
+          color: inherit;
+          transition: border-color 0.2s, background 0.2s, transform 0.15s;
+        }
+        .d180-entry:hover {
+          border-color: var(--amber);
+          background: var(--slate-50);
+          transform: translateX(3px);
+        }
+        .d180-day-badge {
+          flex-shrink: 0;
+          width: 48px;
+          height: 48px;
+          border-radius: 12px;
+          background: var(--slate-100);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          color: var(--slate-500);
+          transition: background 0.2s, color 0.2s;
+        }
+        .d180-entry:hover .d180-day-badge {
+          background: var(--amber);
+          color: var(--slate-900);
+        }
+        .d180-entry-body { flex: 1; min-width: 0; }
+        .d180-entry-title {
+          font-size: 1rem;
+          font-weight: 700;
+          color: var(--slate-900);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          transition: color 0.2s;
+        }
+        .d180-entry:hover .d180-entry-title { color: var(--amber); }
+        .d180-entry-desc {
+          font-size: 0.875rem;
+          color: var(--slate-500);
+          margin-top: 4px;
+          line-height: 1.5;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+        }
+        .d180-entry-meta {
+          flex-shrink: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 8px;
+        }
+        .d180-entry-date {
+          font-size: 11px;
+          font-weight: 500;
+          color: var(--slate-400);
+        }
+        .d180-entry-arrow {
+          font-size: 14px;
+          color: var(--slate-300);
+          transition: color 0.2s;
+        }
+        .d180-entry:hover .d180-entry-arrow { color: var(--amber); }
+
+        /* ── Footer ── */
+        .d180-footer {
+          border-top: 1px solid var(--slate-200);
+          background: var(--white);
+        }
+        .d180-footer-inner {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 20px 32px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+        .d180-footer-copy {
+          font-size: 11px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.12em;
+          color: var(--slate-400);
+        }
+        .d180-footer-home {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          padding: 8px 12px;
+          border-radius: 8px;
+          background: var(--slate-100);
+          color: var(--slate-900);
+          text-decoration: none;
+        }
+        .d180-footer-home:hover {
+          background: var(--amber-light);
+          color: #b45309;
+        }
+
+        @media (max-width: 640px) {
+          .d180-header-inner { padding: 0 16px; }
+          .d180-hero-inner { padding: 40px 16px; }
+          .d180-main { padding: 32px 16px 60px; }
+          .d180-footer-inner { padding: 16px; }
+          .d180-stats { grid-template-columns: 1fr; }
+        }
+      `}</style>
+
+      <div id="days180-root">
+        {children}
+        <footer className="d180-footer">
+          <div className="d180-footer-inner">
+            <p className="d180-footer-copy">
+              Subrata Kumar Das • 180 Days Mentoring Journey
+            </p>
+            <Link href="/" className="d180-footer-home">Main Home</Link>
+          </div>
+        </footer>
+      </div>
+    </div>
+  );
+}

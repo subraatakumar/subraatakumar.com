@@ -355,6 +355,13 @@ export default function SubrataLabsPage() {
             </p>
             <Link href="/180days" className="lp-mini-btn">Open 180Days</Link>
           </div>
+          <div className="lp-live-box" style={{ marginTop: "14px" }}>
+            <strong>Live Track: 24-Weeks to AI-Native</strong>
+            <p>
+              Mapping the blueprint for the 2030 stack through 24 weeks of hands-on, autonomous agent and infrastructure builds. Follow along as I open-source the architectural trade-offs, failures, and breakthroughs of engineering in the AI era.
+            </p>
+            <Link href="/24weeks" className="lp-mini-btn">Open 24Weeks</Link>
+          </div>          
         </div>
 
         {/* Right: Coming Next */}
