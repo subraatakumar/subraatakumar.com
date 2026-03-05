@@ -1,0 +1,162 @@
+1:"$Sreact.fragment"
+6:I[22016,["/_next/static/chunks/7c92e96509cd355e.js"],""]
+7:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+8:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+:HL["/_next/static/chunks/67d266141b06bb08.css","style"]
+2:T1146,
+        body:has(.wt-shell) .sk-header,
+        body:has(.wt-shell) .sk-footer {
+          display: none !important;
+        }
+
+        .wt-shell {
+          --wt-navy-900: #0f2458;
+          --wt-navy-800: #14336f;
+          --wt-navy-700: #1f4f9d;
+          --wt-sky-400: #7fc3ff;
+          --wt-sky-300: #b9e3ff;
+          --wt-cyan-200: #d8f5ff;
+          --wt-card: rgba(255, 255, 255, 0.88);
+          --wt-ink: #10244f;
+          --wt-muted: #4a5f8c;
+          min-height: 100vh;
+          color: var(--wt-ink);
+          background:
+            radial-gradient(circle at 8% 10%, rgba(125, 196, 255, 0.25), transparent 42%),
+            radial-gradient(circle at 92% 22%, rgba(174, 229, 255, 0.24), transparent 35%),
+            linear-gradient(140deg, #eaf6ff 0%, #dff2ff 30%, #cfe8ff 100%);
+        }
+        .wt-shell * {
+          box-sizing: border-box;
+        }
+        .wt-nav {
+          position: sticky;
+          top: 0;
+          z-index: 60;
+          border-bottom: 1px solid rgba(16, 36, 79, 0.1);
+          background: rgba(239, 249, 255, 0.85);
+          backdrop-filter: blur(12px);
+        }
+        .wt-nav-inner {
+          max-width: 1120px;
+          margin: 0 auto;
+          padding: 0 24px;
+          height: 68px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        }
+        .wt-logo {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          color: var(--wt-navy-900);
+          text-decoration: none;
+        }
+        .wt-logo-mark {
+          width: 34px;
+          height: 34px;
+          border-radius: 10px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 800;
+          color: #fff;
+          background: linear-gradient(140deg, #4f88ff, #3ec1ff);
+          box-shadow: 0 8px 16px rgba(31, 79, 157, 0.22);
+        }
+        .wt-logo-text {
+          font-size: 14px;
+          font-weight: 800;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+        }
+        .wt-links {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .wt-links a {
+          text-decoration: none;
+          font-size: 13px;
+          font-weight: 800;
+          color: var(--wt-navy-900);
+          padding: 10px 12px;
+          border-radius: 10px;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+        }
+        .wt-links a:hover {
+          background: rgba(79, 136, 255, 0.14);
+          color: var(--wt-navy-700);
+        }
+        .wt-main {
+          max-width: 1120px;
+          margin: 0 auto;
+          padding: 26px 24px 70px;
+        }
+        .wt-footer {
+          border-top: 1px solid rgba(16, 36, 79, 0.12);
+          background: rgba(235, 247, 255, 0.78);
+        }
+        .wt-footer-inner {
+          max-width: 1120px;
+          margin: 0 auto;
+          padding: 16px 24px 22px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+        .wt-footer-copy {
+          color: var(--wt-muted);
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0.03em;
+        }
+        .wt-footer-links {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          flex-wrap: wrap;
+        }
+        .wt-footer-links a {
+          text-decoration: none;
+          font-size: 11px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          color: var(--wt-navy-900);
+          border: 1px solid rgba(16, 36, 79, 0.15);
+          border-radius: 9px;
+          padding: 7px 10px;
+          background: #fff;
+        }
+        .wt-footer-links a:hover {
+          border-color: rgba(31, 79, 157, 0.45);
+          color: var(--wt-navy-700);
+        }
+        .wt-font-display {
+          font-family: 'Space Grotesk', 'Space Grotesk Fallback';
+        }
+        @media (max-width: 760px) {
+          .wt-nav-inner {
+            padding: 0 14px;
+          }
+          .wt-main {
+            padding: 22px 14px 54px;
+          }
+          .wt-footer-inner {
+            padding: 14px 14px 18px;
+          }
+          .wt-links a {
+            font-size: 11px;
+            padding: 8px 10px;
+          }
+        }
+      0:{"buildId":"aHRogxiJLFUHzorn3BLeI","rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/67d266141b06bb08.css","precedence":"next"}]],["$","div",null,{"className":"wt-shell manrope_65508a06-module__rzDLfa__className","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}],"loading":null,"isPartial":false}
+3:["$","header",null,{"className":"wt-nav","children":["$","div",null,{"className":"wt-nav-inner","children":[["$","$L6",null,{"href":"/watertracker","className":"wt-logo","children":[["$","span",null,{"className":"wt-logo-mark","children":"WT"}],["$","span",null,{"className":"wt-logo-text wt-font-display","children":"WaterTracker"}]]}],["$","nav",null,{"className":"wt-links","aria-label":"Water Tracker pages","children":[["$","$L6",null,{"href":"/watertracker","children":"Overview"}],["$","$L6",null,{"href":"/watertracker/guide","children":"How To Use"}],["$","$L6",null,{"href":"/watertracker/benefits","children":"Health Benefits"}],["$","$L6",null,{"href":"/products","children":"All Products"}]]}]]}]}]
+4:["$","main",null,{"className":"wt-main","children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]}]
+5:["$","footer",null,{"className":"wt-footer","children":["$","div",null,{"className":"wt-footer-inner","children":[["$","p",null,{"className":"wt-footer-copy","children":["© ",2026," WaterTracker"]}],["$","div",null,{"className":"wt-footer-links","children":[["$","$L6",null,{"href":"/watertracker","children":"Overview"}],["$","$L6",null,{"href":"/watertracker/guide","children":"How To Use"}],["$","$L6",null,{"href":"/watertracker/benefits","children":"Health Benefits"}],["$","$L6",null,{"href":"/contact","children":"Support"}],["$","$L6",null,{"href":"/watertracker/privacy-policy","children":"Privacy Policy"}],["$","$L6",null,{"href":"/watertracker/terms","children":"Terms of Use"}]]}]]}]}]

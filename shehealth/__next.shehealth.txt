@@ -1,0 +1,190 @@
+1:"$Sreact.fragment"
+6:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/d87b716920d553cc.js"],""]
+7:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+8:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+:HL["/_next/static/chunks/9278265219d44b9f.css","style"]
+2:T1433,
+        body:has(.sh-shell) .sk-header,
+        body:has(.sh-shell) .sk-footer {
+          display: none !important;
+        }
+
+        .sh-shell {
+          --sh-cream:    #fdf6f0;
+          --sh-blush:    #f5e8e0;
+          --sh-rose:     #e8c4b0;
+          --sh-terra:    #c47a5a;
+          --sh-terra-d:  #a35e40;
+          --sh-maroon:   #7b2d42;
+          --sh-maroon-d: #5a1f2f;
+          --sh-charcoal: #2c2320;
+          --sh-muted:    #8a6b5e;
+          --sh-gold:     #c9963a;
+          --sh-card:     rgba(255, 255, 255, 0.88);
+
+          min-height: 100vh;
+          color: var(--sh-charcoal);
+          background:
+            radial-gradient(circle at 8% 10%, rgba(196, 122, 90, 0.14), transparent 42%),
+            radial-gradient(circle at 92% 22%, rgba(232, 196, 176, 0.18), transparent 35%),
+            linear-gradient(140deg, #fdf6f0 0%, #f8ede4 40%, #f2e0d4 100%);
+        }
+
+        .sh-shell * {
+          box-sizing: border-box;
+        }
+
+        /* NAV */
+        .sh-nav {
+          position: sticky;
+          top: 0;
+          z-index: 60;
+          border-bottom: 1px solid rgba(196, 122, 90, 0.15);
+          background: rgba(253, 246, 240, 0.88);
+          backdrop-filter: blur(14px);
+        }
+        .sh-nav-inner {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 24px;
+          height: 68px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        }
+        .sh-logo {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          color: var(--sh-maroon);
+          text-decoration: none;
+        }
+        .sh-logo-mark {
+          width: 34px;
+          height: 34px;
+          border-radius: 10px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 700;
+          font-size: 13px;
+          color: #fff;
+          background: linear-gradient(140deg, #c47a5a, #7b2d42);
+          box-shadow: 0 8px 16px rgba(123, 45, 66, 0.25);
+        }
+        .sh-logo-text {
+          font-size: 18px;
+          font-weight: 700;
+          font-family: 'Cormorant Garamond', 'Cormorant Garamond Fallback';
+          letter-spacing: 0.01em;
+        }
+        .sh-links {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+        }
+        .sh-links a {
+          text-decoration: none;
+          font-size: 13px;
+          font-weight: 600;
+          color: var(--sh-charcoal);
+          padding: 9px 13px;
+          border-radius: 10px;
+          letter-spacing: 0.02em;
+          transition: background 0.18s, color 0.18s;
+        }
+        .sh-links a:hover {
+          background: rgba(196, 122, 90, 0.12);
+          color: var(--sh-terra-d);
+        }
+        .sh-links a.sh-nav-cta {
+          background: var(--sh-maroon);
+          color: #fff !important;
+          border-radius: 10px;
+          padding: 9px 18px;
+          font-weight: 700;
+          box-shadow: 0 4px 12px rgba(123, 45, 66, 0.22);
+        }
+        .sh-links a.sh-nav-cta:hover {
+          background: var(--sh-maroon-d);
+        }
+
+        /* MAIN */
+        .sh-main {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 26px 24px 70px;
+        }
+
+        /* FOOTER */
+        .sh-footer {
+          border-top: 1px solid rgba(196, 122, 90, 0.15);
+          background: rgba(245, 232, 224, 0.6);
+        }
+        .sh-footer-inner {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 18px 24px 24px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+        .sh-footer-copy {
+          color: var(--sh-muted);
+          font-size: 12px;
+          font-weight: 600;
+          letter-spacing: 0.03em;
+        }
+        .sh-footer-links {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          flex-wrap: wrap;
+        }
+        .sh-footer-links a {
+          text-decoration: none;
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          color: var(--sh-maroon);
+          border: 1px solid rgba(123, 45, 66, 0.18);
+          border-radius: 9px;
+          padding: 7px 10px;
+          background: rgba(255, 255, 255, 0.8);
+          transition: border-color 0.18s, color 0.18s;
+        }
+        .sh-footer-links a:hover {
+          border-color: rgba(123, 45, 66, 0.45);
+          color: var(--sh-maroon-d);
+        }
+
+        .sh-font-display {
+          font-family: 'Cormorant Garamond', 'Cormorant Garamond Fallback';
+        }
+
+        @media (max-width: 760px) {
+          .sh-nav-inner {
+            padding: 0 14px;
+          }
+          .sh-main {
+            padding: 20px 14px 54px;
+          }
+          .sh-footer-inner {
+            padding: 14px 14px 18px;
+          }
+          .sh-links a {
+            font-size: 12px;
+            padding: 8px 10px;
+          }
+          .sh-links a.sh-nav-cta {
+            padding: 8px 14px;
+          }
+        }
+      0:{"buildId":"aHRogxiJLFUHzorn3BLeI","rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/9278265219d44b9f.css","precedence":"next"}]],["$","div",null,{"className":"sh-shell dm_sans_80a0ab86-module__6HYvaW__className","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}],"loading":null,"isPartial":false}
+3:["$","header",null,{"className":"sh-nav","children":["$","div",null,{"className":"sh-nav-inner","children":[["$","$L6",null,{"href":"/shehealth","className":"sh-logo","children":[["$","span",null,{"className":"sh-logo-mark","children":"SH"}],["$","span",null,{"className":"sh-logo-text","children":"She Health"}]]}],["$","nav",null,{"className":"sh-links","aria-label":"She Health pages","children":[["$","$L6",null,{"href":"/shehealth","children":"Overview"}],["$","$L6",null,{"href":"/shehealth/privacy-policy","children":"Privacy Policy"}],["$","$L6",null,{"href":"/shehealth/terms","children":"Terms of Use"}],["$","$L6",null,{"href":"/products","children":"All Products"}],["$","$L6",null,{"href":"/shehealth#download","className":"sh-nav-cta","children":"Download Free"}]]}]]}]}]
+4:["$","main",null,{"className":"sh-main","children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]}]
+5:["$","footer",null,{"className":"sh-footer","children":["$","div",null,{"className":"sh-footer-inner","children":[["$","p",null,{"className":"sh-footer-copy","children":["© ",2026," She Health"]}],["$","div",null,{"className":"sh-footer-links","children":[["$","$L6",null,{"href":"/shehealth","children":"Overview"}],["$","$L6",null,{"href":"/shehealth/privacy-policy","children":"Privacy Policy"}],["$","$L6",null,{"href":"/shehealth/terms","children":"Terms of Use"}],["$","$L6",null,{"href":"/contact","children":"Support"}]]}]]}]}]
