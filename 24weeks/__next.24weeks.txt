@@ -342,5 +342,5 @@
           .d180-footer-inner { padding: 16px; }
           .d180-stats { grid-template-columns: 1fr; }
         }
-      0:{"buildId":"O5iLLtGkXobjxsIQvxWxJ","rsc":["$","$1","c",{"children":[null,["$","div",null,{"style":{"all":"revert"},"children":[["$","style",null,{"children":"$2"}],"$L3"]}]]}],"loading":null,"isPartial":false}
+      0:{"buildId":"-K7rsViS2IZfk8erWeGj0","rsc":["$","$1","c",{"children":[null,["$","div",null,{"style":{"all":"revert"},"children":[["$","style",null,{"children":"$2"}],"$L3"]}]]}],"loading":null,"isPartial":false}
 3:["$","div",null,{"id":"days180-root","children":[["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}],["$","footer",null,{"className":"d180-footer","children":["$","div",null,{"className":"d180-footer-inner","children":[["$","p",null,{"className":"d180-footer-copy","children":"Subrata Kumar Das • 180 Days Mentoring Journey"}],["$","$L6",null,{"href":"/","className":"d180-footer-home","children":"Main Home"}]]}]}]]}]

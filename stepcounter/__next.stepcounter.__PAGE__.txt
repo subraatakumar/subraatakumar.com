@@ -1,0 +1,185 @@
+1:"$Sreact.fragment"
+3:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/d87b716920d553cc.js"],""]
+4:I[5500,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/d87b716920d553cc.js"],"Image"]
+d:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+2:T75f,
+
+html{scroll-behavior:smooth}
+
+.sc-page{
+background:#F4F6FA;
+color:#2E3E54;
+overflow-x:hidden;
+}
+
+.sc-section{
+padding:90px 24px;
+}
+
+.sc-inner{
+max-width:1200px;
+margin:auto;
+}
+
+/* HERO */
+
+.sc-hero{
+min-height:calc(100vh - 70px);
+display:flex;
+align-items:center;
+}
+
+.sc-hero-inner{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.sc-h1{
+font-size:64px;
+font-weight:800;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.sc-h1 em{
+font-style:normal;
+color:#6B7B8C;
+}
+
+.sc-sub{
+font-size:18px;
+color:#6B7B8C;
+line-height:1.6;
+margin-bottom:30px;
+max-width:520px;
+}
+
+.sc-btn{
+display:inline-flex;
+align-items:center;
+gap:8px;
+background:#2E3E54;
+color:white;
+padding:14px 28px;
+border-radius:14px;
+text-decoration:none;
+font-weight:700;
+}
+
+.sc-btn.secondary{
+background:white;
+border:1px solid #D6DBE4;
+color:#2E3E54;
+}
+
+/* FEATURES */
+
+.sc-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
+}
+
+.sc-card{
+background:white;
+padding:26px;
+border-radius:18px;
+border:1px solid #E3E6ED;
+}
+
+.sc-card-icon{
+font-size:26px;
+margin-bottom:10px;
+}
+
+.sc-card h3{
+font-size:18px;
+margin-bottom:6px;
+}
+
+.sc-card p{
+font-size:14px;
+color:#6B7B8C;
+}
+
+/* PRIVACY */
+
+.sc-privacy{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.sc-privacy-card{
+display:flex;
+gap:14px;
+background:white;
+border-radius:14px;
+padding:16px;
+border:1px solid #E3E6ED;
+margin-bottom:12px;
+}
+
+/* CTA */
+
+.sc-cta{
+background:#2E3E54;
+color:white;
+text-align:center;
+padding:80px 24px;
+}
+
+.sc-cta h2{
+font-size:46px;
+margin-bottom:16px;
+}
+
+.sc-cta p{
+opacity:.8;
+margin-bottom:30px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.sc-hero-inner{
+grid-template-columns:1fr;
+}
+
+.sc-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.sc-privacy{
+grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:600px){
+
+.sc-grid{
+grid-template-columns:1fr;
+}
+
+.sc-h1{
+font-size:42px;
+}
+
+}
+
+0:{"buildId":"-K7rsViS2IZfk8erWeGj0","rsc":["$","$1","c",{"children":[[["$","style",null,{"children":"$2"}],["$","div",null,{"className":"sc-page","children":[["$","section",null,{"className":"sc-section sc-hero","children":["$","div",null,{"className":"sc-inner sc-hero-inner","children":[["$","div",null,{"children":[["$","h1",null,{"className":"sc-h1","children":["Walk More.",["$","br",null,{}],["$","em",null,{"children":"Track Better."}]]}],["$","p",null,{"className":"sc-sub","children":"Step Counter N Walking Tracker helps you monitor your daily activity, track walking distance, log water intake, and stay consistent with your health goals."}],["$","div",null,{"style":{"display":"flex","gap":12,"flexWrap":"wrap"},"children":[["$","$L3",null,{"href":"#download","className":"sc-btn","children":"Download Free"}],["$","$L3",null,{"href":"#features","className":"sc-btn secondary","children":"Explore Features"}]]}]]}],["$","div",null,{"style":{"textAlign":"center"},"children":["$","$L4",null,{"src":"/stepcounter/screenshots/1.png","width":260,"height":540,"alt":"Step Counter App"}]}]]}]}],["$","section",null,{"className":"sc-section","id":"features","children":["$","div",null,{"className":"sc-inner","children":[["$","h2",null,{"style":{"fontSize":42,"fontWeight":800,"marginBottom":40},"children":"Everything You Need to Stay Active"}],["$","div",null,{"className":"sc-grid","children":[["$","div","Automatic Step Counter",{"className":"sc-card","children":[["$","div",null,{"className":"sc-card-icon","children":"👣"}],["$","h3",null,{"children":"Automatic Step Counter"}],["$","p",null,{"children":"Track your daily steps automatically using your phone sensors."}]]}],["$","div","Walking Distance",{"className":"sc-card","children":[["$","div",null,{"className":"sc-card-icon","children":"🚶"}],["$","h3",null,{"children":"Walking Distance"}],["$","p",null,{"children":"See how far you walk each day with detailed activity statistics."}]]}],"$L5","$L6","$L7","$L8"]}]]}]}],"$L9","$La"]}]],["$Lb"],"$Lc"]}],"loading":null,"isPartial":false}
+5:["$","div","Activity Charts",{"className":"sc-card","children":[["$","div",null,{"className":"sc-card-icon","children":"📊"}],["$","h3",null,{"children":"Activity Charts"}],["$","p",null,{"children":"View your walking trends and daily progress with simple charts."}]]}]
+6:["$","div","Water Intake",{"className":"sc-card","children":[["$","div",null,{"className":"sc-card-icon","children":"💧"}],["$","h3",null,{"children":"Water Intake"}],["$","p",null,{"children":"Log daily water intake and maintain healthy hydration habits."}]]}]
+7:["$","div","Weight Tracker",{"className":"sc-card","children":[["$","div",null,{"className":"sc-card-icon","children":"⚖️"}],["$","h3",null,{"children":"Weight Tracker"}],["$","p",null,{"children":"Track body weight over time and monitor your progress."}]]}]
+8:["$","div","Backup & Restore",{"className":"sc-card","children":[["$","div",null,{"className":"sc-card-icon","children":"☁️"}],["$","h3",null,{"children":"Backup & Restore"}],["$","p",null,{"children":"Securely backup your activity data to your personal cloud account."}]]}]
+9:["$","section",null,{"className":"sc-section","children":["$","div",null,{"className":"sc-inner sc-privacy","children":[["$","div",null,{"children":[["$","h2",null,{"style":{"fontSize":42,"fontWeight":800,"marginBottom":20},"children":["Your Data",["$","br",null,{}],"Stays Private"]}],["$","p",null,{"className":"sc-sub","children":"Step Counter is designed with privacy in mind. Your activity data is stored locally and never shared without your control."}],["$","$L3",null,{"href":"/stepcounter/privacy-policy","className":"sc-btn secondary","children":"Read Privacy Policy"}]]}],["$","div",null,{"children":[["$","div","No Login Required",{"className":"sc-privacy-card","children":[["$","div",null,{"style":{"fontSize":22},"children":"🔒"}],["$","div",null,{"children":[["$","h4",null,{"children":"No Login Required"}],["$","p",null,{"style":{"fontSize":13,"color":"#6B7B8C"},"children":"No email, no account, no personal data collection."}]]}]]}],["$","div","On Device Storage",{"className":"sc-privacy-card","children":[["$","div",null,{"style":{"fontSize":22},"children":"📱"}],["$","div",null,{"children":[["$","h4",null,{"children":"On Device Storage"}],["$","p",null,{"style":{"fontSize":13,"color":"#6B7B8C"},"children":"All step and health data stays locally on your phone."}]]}]]}],["$","div","Private Backups",{"className":"sc-privacy-card","children":[["$","div",null,{"style":{"fontSize":22},"children":"☁️"}],["$","div",null,{"children":[["$","h4",null,{"children":"Private Backups"}],["$","p",null,{"style":{"fontSize":13,"color":"#6B7B8C"},"children":"Optional backups to your own iCloud or Google Drive."}]]}]]}]]}]]}]}]
+a:["$","section",null,{"className":"sc-cta","id":"download","children":[["$","h2",null,{"children":"Start Walking Today"}],["$","p",null,{"children":"Download Step Counter N Walking Tracker and build healthier daily habits."}],["$","div",null,{"style":{"display":"flex","gap":14,"justifyContent":"center","flexWrap":"wrap"},"children":[["$","a",null,{"href":"#","className":"sc-btn","style":{"background":"white","color":"#2E3E54"},"children":"App Store"}],["$","a",null,{"href":"#","className":"sc-btn","style":{"background":"white","color":"#2E3E54"},"children":"Google Play"}]]}]]}]
+b:["$","script","script-0",{"src":"/_next/static/chunks/d87b716920d553cc.js","async":true}]
+c:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null
