@@ -1,6 +1,6 @@
 # subraatakumar.com
 
-![Visitors](https://komarev.com/ghpvc/?username=subraatakumar&color=blue)
+![Visitors](https://komarev.com/ghpvc/?username=subraatakumar&color=blue) ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=subraatakumar.subraatakumar.com)
 
 Official website of **Subrata Kumar Das** – Tech Lead, React Native Architect, and Founder.
 
