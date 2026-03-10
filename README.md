@@ -2,6 +2,8 @@
 
 ![Visitors](https://komarev.com/ghpvc/?username=subraatakumar&color=blue) ![Page Views](https://visitor-badge.laobi.icu/badge?page_id=subraatakumar.subraatakumar.com&label=Page%20Views)
 
+![Profile Views](https://komarev.com/ghpvc/?username=subraatakumar&label=Profile%20Views&color=brightgreen)
+
 Official website of **Subrata Kumar Das** – Tech Lead, React Native Architect, and Founder.
 
 This repository powers the personal portfolio, product microsites, and the 180 Days OfflineLifeArchive series.
