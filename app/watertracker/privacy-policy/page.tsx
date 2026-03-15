@@ -22,6 +22,7 @@ import {
 const SECTIONS = [
   { id: 'offline-architecture', title: 'Offline Architecture', icon: <HardDrive className="w-4 h-4" /> },
   { id: 'collection', title: 'Data We Collect', icon: <Database className="w-4 h-4" /> },
+  { id: 'advertising', title: 'Rewarded Ads (AdMob)', icon: <Share2 className="w-4 h-4" /> },
   { id: 'purchases', title: 'Subscriptions & IAP', icon: <CreditCard className="w-4 h-4" /> },
   { id: 'backups', title: 'Cloud Backups', icon: <Cloud className="w-4 h-4" /> },
   { id: 'platforms', title: 'Platform Providers', icon: <Share2 className="w-4 h-4" /> },
@@ -140,7 +141,7 @@ export default function PrivacyPolicyPage() {
             </h1>
             <p style={{ color: 'var(--wt-muted)', marginTop: 12, display: 'flex', alignItems: 'center', gap: 6, fontSize: 13, fontWeight: 600 }}>
               <Clock style={{ width: 14, height: 14 }} />
-              Last updated: March 5, 2026
+              Last updated: March 15, 2026
             </p>
           </div>
           <div style={{
@@ -162,7 +163,7 @@ export default function PrivacyPolicyPage() {
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 14, marginTop: 28 }}>
-          <HighlightCard icon={<HardDrive style={{ width: 16, height: 16 }} />} title="Offline-Only" description="Your logs are stored in a local Realm database on your device." />
+          <HighlightCard icon={<HardDrive style={{ width: 16, height: 16 }} />} title="Local-First Logs" description="Your hydration logs are stored in a local Realm database on your device." />
           <HighlightCard icon={<UserCheck style={{ width: 16, height: 16 }} />} title="No Login Needed" description="We do not collect names, emails, or credentials." />
           <HighlightCard icon={<Cloud style={{ width: 16, height: 16 }} />} title="Private Backups" description="Optional backups stay in your own iCloud or Google Drive." />
         </div>
@@ -234,7 +235,7 @@ export default function PrivacyPolicyPage() {
             }}>
               <p style={{ fontWeight: 800, color: 'var(--wt-navy-900)', margin: '0 0 6px', fontSize: 14 }}>Local Storage (Realm Database)</p>
               <p style={{ margin: 0, color: 'var(--wt-muted)', fontSize: 14 }}>
-                Your fluid intake logs, hydration reminder schedules, custom beverage lists, and personal goals are stored exclusively on your device using a local Realm database. We do not have a central server that collects or stores your hydration records.
+                Your fluid intake logs, hydration reminder schedules, custom beverage lists, and personal goals are stored on your device using a local Realm database. We do not run a personal account system or a central hydration database for user profiles.
               </p>
             </div>
           </PolicySection>
@@ -242,11 +243,12 @@ export default function PrivacyPolicyPage() {
           <div style={{ height: 1, background: 'rgba(16,36,79,0.07)', margin: '0 0 48px' }} />
 
           <PolicySection id="collection" title="Data We Collect" icon={<Database style={{ width: 18, height: 18 }} />}>
-            <p style={{ margin: '0 0 16px' }}>In the absence of user accounts, we do not collect personal identifiers. The data processed remains on-device:</p>
+            <p style={{ margin: '0 0 16px' }}>In the absence of user accounts, we do not collect your name, email, or login credentials. Most hydration data remains on-device, and some technical data may be processed by platform or rewarded-ad providers:</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
               {[
                 { icon: <Droplets style={{ width: 15, height: 15 }} />, label: 'Hydration Logs', desc: 'Beverage types, volume amounts, and entry timestamps.' },
                 { icon: <Smartphone style={{ width: 15, height: 15 }} />, label: 'Anonymous Diagnostics', desc: 'We may process non-identifiable crash reports and app version data to ensure the reliability of reminders.' },
+                { icon: <Share2 style={{ width: 15, height: 15 }} />, label: 'Rewarded Ad Data (AdMob)', desc: 'Google AdMob may process advertising identifiers, device information, approximate location, IP address, and ad interaction events to deliver and measure rewarded ads.' },
               ].map((item, i) => (
                 <div key={i} style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
                   <div style={{ background: 'rgba(79,136,255,0.13)', color: 'var(--wt-navy-700)', padding: '5px', borderRadius: '50%', flexShrink: 0, marginTop: 2 }}>
@@ -256,6 +258,28 @@ export default function PrivacyPolicyPage() {
                 </div>
               ))}
             </div>
+          </PolicySection>
+
+          <div style={{ height: 1, background: 'rgba(16,36,79,0.07)', margin: '0 0 48px' }} />
+
+          <PolicySection id="advertising" title="Rewarded Ads (Google AdMob)" icon={<Share2 style={{ width: 18, height: 18 }} />}>
+            <p style={{ margin: '0 0 16px' }}>
+              The app does <strong style={{ color: 'var(--wt-navy-900)' }}>not</strong> use persistent banner ads. It may use <strong style={{ color: 'var(--wt-navy-900)' }}>rewarded ads</strong> served by Google AdMob when you choose temporary access to individual Pro features.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 14 }}>
+              {[
+                { title: 'Data Processed by AdMob', desc: 'May include advertising ID, IP address, device/app metadata, approximate location, and rewarded-ad engagement data.' },
+                { title: 'User Controls', desc: 'You can limit ad personalization through your iOS or Android privacy settings and by using any consent choices shown in-app.' },
+              ].map((card, i) => (
+                <div key={i} style={{ padding: '16px 18px', border: '1px solid rgba(16,36,79,0.10)', borderRadius: 14, background: 'rgba(79,136,255,0.04)' }}>
+                  <h4 style={{ fontWeight: 800, color: 'var(--wt-navy-900)', margin: '0 0 6px', fontSize: 14 }}>{card.title}</h4>
+                  <p style={{ fontSize: 13, margin: 0 }}>{card.desc}</p>
+                </div>
+              ))}
+            </div>
+            <p style={{ margin: '14px 0 0', fontSize: 14 }}>
+              Each rewarded ad unlocks the selected Pro feature for <strong style={{ color: 'var(--wt-navy-900)' }}>24 hours</strong>.
+            </p>
           </PolicySection>
 
           <div style={{ height: 1, background: 'rgba(16,36,79,0.07)', margin: '0 0 48px' }} />
@@ -273,6 +297,9 @@ export default function PrivacyPolicyPage() {
                 </div>
               ))}
             </div>
+            <p style={{ margin: '14px 0 0', fontSize: 14 }}>
+              Available Pro options: <strong style={{ color: 'var(--wt-navy-900)' }}>Water Tracker Pro Yearly</strong> (1 year, $9.99/year) and <strong style={{ color: 'var(--wt-navy-900)' }}>Water Tracker Pro One Time</strong> (lifetime, $49.99).
+            </p>
           </PolicySection>
 
           <div style={{ height: 1, background: 'rgba(16,36,79,0.07)', margin: '0 0 48px' }} />
@@ -302,6 +329,7 @@ export default function PrivacyPolicyPage() {
               {[
                 { label: 'Apple Privacy Policy', href: 'https://www.apple.com/legal/privacy/' },
                 { label: 'Google Privacy Policy', href: 'https://policies.google.com/privacy' },
+                { label: 'Google AdMob Privacy & Messaging', href: 'https://support.google.com/admob/answer/6128543' },
               ].map((link, i) => (
                 <a key={i} href={link.href} target="_blank" rel="noreferrer" style={{
                   display: 'flex', alignItems: 'center', justifyContent: 'space-between',
@@ -320,7 +348,7 @@ export default function PrivacyPolicyPage() {
           <div style={{ height: 1, background: 'rgba(16,36,79,0.07)', margin: '0 0 48px' }} />
 
           <PolicySection id="usage" title="How Data is Used" icon={<Info style={{ width: 18, height: 18 }} />}>
-            <p style={{ margin: '0 0 16px' }}>Data processing is restricted to local app functionality:</p>
+            <p style={{ margin: '0 0 16px' }}>Data processing supports both app functionality and ad delivery:</p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 10 }}>
               {[
                 'Calculating hydration goal completion',
@@ -328,6 +356,7 @@ export default function PrivacyPolicyPage() {
                 'Generating hydration trend charts',
                 'Restoring premium status via store receipts',
                 'Executing user-initiated cloud backups',
+                'Serving and measuring rewarded ads for 24-hour feature unlocks',
               ].map((item, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '12px 16px', border: '1px solid rgba(16,36,79,0.09)', borderRadius: 12, background: 'rgba(79,136,255,0.04)' }}>
                   <div style={{ width: 7, height: 7, borderRadius: '50%', background: 'linear-gradient(140deg, #4f88ff, #3ec1ff)', flexShrink: 0 }} />
@@ -377,7 +406,7 @@ export default function PrivacyPolicyPage() {
 
           <PolicySection id="rights" title="User Rights" icon={<UserCheck style={{ width: 18, height: 18 }} />}>
             <p style={{ margin: 0, fontSize: 14 }}>
-              As an offline app, you retain 100% ownership of your data. You may modify, delete, or export your hydration logs at any time within the app settings. We comply with global privacy standards (GDPR/CCPA) by ensuring no personal data is harvested to a central server.
+              You retain full ownership of your hydration logs. You may modify, delete, or export your data at any time within the app settings. We do not require account registration; third-party services such as app stores and AdMob process limited technical data under their own privacy terms.
             </p>
           </PolicySection>
 

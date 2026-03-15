@@ -22,6 +22,7 @@ const SECTIONS = [
   { id: 'use-of-app',   title: 'Use of the App',          icon: <ShieldCheck className="w-4 h-4" /> },
   { id: 'prohibited',   title: 'Prohibited Activities',   icon: <Ban className="w-4 h-4" /> },
   { id: 'purchases',    title: 'Subscriptions & Billing', icon: <CreditCard className="w-4 h-4" /> },
+  { id: 'ads',          title: 'Rewarded Ads Access',     icon: <Globe className="w-4 h-4" /> },
   { id: 'disclaimer',   title: 'Health Disclaimer',       icon: <AlertTriangle className="w-4 h-4" /> },
   { id: 'ip',           title: 'Intellectual Property',   icon: <Globe className="w-4 h-4" /> },
   { id: 'termination',  title: 'Termination',             icon: <RefreshCw className="w-4 h-4" /> },
@@ -163,7 +164,7 @@ export default function TermsOfUsePage() {
             </h1>
             <p style={{ color: 'var(--wt-muted)', marginTop: 12, display: 'flex', alignItems: 'center', gap: 6, fontSize: 13, fontWeight: 600 }}>
               <Clock style={{ width: 14, height: 14 }} />
-              Last updated: March 5, 2026
+              Last updated: March 15, 2026
             </p>
           </div>
           <div style={{
@@ -307,6 +308,23 @@ export default function TermsOfUsePage() {
                   <p style={{ fontSize: 13, margin: 0 }}>{card.desc}</p>
                 </div>
               ))}
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+              <BulletItem><strong style={{ color: 'var(--wt-navy-900)' }}>Water Tracker Pro Yearly</strong>: auto-renewable subscription, 1 year, priced at <strong style={{ color: 'var(--wt-navy-900)' }}>$9.99/year</strong>.</BulletItem>
+              <BulletItem><strong style={{ color: 'var(--wt-navy-900)' }}>Water Tracker Pro One Time</strong>: lifetime purchase priced at <strong style={{ color: 'var(--wt-navy-900)' }}>$49.99</strong>.</BulletItem>
+            </div>
+          </PolicySection>
+
+          <Divider />
+
+          <PolicySection id="ads" title="Rewarded Ads Access" icon={<Globe style={{ width: 18, height: 18 }} />}>
+            <p style={{ margin: '0 0 14px' }}>
+              The App does <strong style={{ color: 'var(--wt-navy-900)' }}>not</strong> display persistent banner ads. Instead, certain individual Pro features can be temporarily unlocked by watching a rewarded ad.
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+              <BulletItem>Each rewarded ad unlocks the selected feature for <strong style={{ color: 'var(--wt-navy-900)' }}>24 hours</strong>.</BulletItem>
+              <BulletItem>Rewarded ads may be served by <strong style={{ color: 'var(--wt-navy-900)' }}>Google AdMob</strong> and may vary by region, device, and platform settings.</BulletItem>
+              <BulletItem>Your use of rewarded-ad access is also subject to Google AdMob and Google privacy terms.</BulletItem>
             </div>
           </PolicySection>
 
