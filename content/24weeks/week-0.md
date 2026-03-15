@@ -1,7 +1,7 @@
 ---
 title: "24 Weeks of AI-Native SaaS: A Developer's Journey"
 description: "A 24-week curriculum for developers to master AI-native SaaS development, from LLM integration and autonomous agents to production-scale deployment and safety."
-date: "2026-03-05"
+date: "2026-03-01"
 image: "/images/24weeks/week-1.png"
 slug: "24-weeks-of-ai-native-saas"
 tags:

@@ -602,7 +602,7 @@ export default async function ArticlePage({ params }: PageProps) {
             <div className="mt-8 mb-6">
               {(() => {
                 const repoBase = process.env.NEXT_PUBLIC_GITHUB_REPO || 'https://github.com/subraatakumar/subraatakumar.com';
-                const editUrl = `${repoBase.replace(/\/+$/, '')}/edit/main/content/180days/${slug}.md`;
+                const editUrl = `${repoBase.replace(/\/+$/, '')}/edit/main/content/24weeks/${slug}.md`;
                 return (
                   <a href={editUrl} target="_blank" rel="noopener noreferrer" className="d180-edit-link">
                     Suggest a change to the content of the material
@@ -613,7 +613,7 @@ export default async function ArticlePage({ params }: PageProps) {
 
             <div className="d180-bottom-nav">
               {prevSlug ? (
-                <Link href={`/180days/${prevSlug}`} className="d180-nav-link">
+                <Link href={`/24weeks/${prevSlug}`} className="d180-nav-link">
                   <div>
                     <strong>Previous</strong>
                     <span style={{ fontSize: 14, fontWeight: 700, textTransform: "capitalize" }}>{prevSlug.replace('-', ' ')}</span>
@@ -622,7 +622,7 @@ export default async function ArticlePage({ params }: PageProps) {
               ) : <div />}
 
               {nextSlug ? (
-                <Link href={`/180days/${nextSlug}`} className="d180-nav-link next">
+                <Link href={`/24weeks/${nextSlug}`} className="d180-nav-link next">
                   <div>
                     <strong>Next Up</strong>
                     <span style={{ fontSize: 14, fontWeight: 700, textTransform: "capitalize" }}>{nextSlug.replace('-', ' ')}</span>
@@ -646,7 +646,7 @@ export default async function ArticlePage({ params }: PageProps) {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            mainEntityOfPage: absoluteUrl(`/180days/${slug}`),
+            mainEntityOfPage: absoluteUrl(`/24weeks/${slug}`),
             headline: data.title,
             datePublished: data.date,
             description: data.description,
