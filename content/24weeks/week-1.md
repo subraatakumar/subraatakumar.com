@@ -1,6 +1,6 @@
 ---
-title: "Week 1: The Multi-Model Evaluator."
-description: "Build a side-by-side comparison tool for GPT-4, Claude, and Gemini to test architectural logic."
+title: "Week 1: The Multi-Model Evaluator (Production Build)."
+description: "A deep technical learning journal for building a professional side-by-side evaluator using Next.js and AI SDK v6 with Google-first defaults, BYOK providers, streaming comparisons, and robust error handling."
 date: "2026-03-09"
 image: "/images/24weeks/week-1.png"
 slug: "24-weeks-of-ai-native-saas"
@@ -10,184 +10,456 @@ tags:
   - software-development
   - large-language-models
   - Subrata Kumar Das
-excerpt: "Embark on a 24-week journey to build and master AI-native SaaS applications. This series covers everything from integrating LLMs and building autonomous agents to ensuring enterprise-grade reliability and safety."
+excerpt: "Week 1 goes from prototype to production: model-agnostic architecture, typed API contracts, side-by-side streaming, partial-failure comparison reporting, and real-world quota troubleshooting."
 author: "Subrata Kumar Das"
-updated: "2026-03-09"
+updated: "2026-03-16"
 draft: false
-readingTime: "5 min"
----
-## **The Zero-Cost API Strategy** ![Page Views](https://visitor-badge.laobi.icu/badge?page_id=subraatakumar.subraatakumar.com&label=Page%20Views)
-
-
-You can access the models required for **Week 1** through the following free resources:
-
-* **Google AI Studio (Gemini):** Google offers a very generous free tier for **Gemini 2.0 Flash**, allowing up to **1,500 requests per day** at no cost.
-* **Groq Cloud (Llama & Mistral):** To get high-speed open-source models (like Llama 3.3) for your side-by-side comparison, Groq provides free API access with near-instant inference speeds.
-* **OpenRouter (Unified Gateway):** Instead of managing multiple separate billing accounts, use **OpenRouter**. It allows you to filter specifically for **"Free Models"** (marked as **$0.00/token**), giving you access to dozens of variations for your evaluator without a credit card.
-* **GitHub Models:** If you have a GitHub account, you have access to their **Model Sandbox**, which provides limited free API credits to test flagship models like **GPT-4o** and **Claude 3.5 Sonnet**.
-
+readingTime: "18 min"
 ---
 
-## **Week 1 Architectural Setup**
+## **Week 1 Mission: Build the Foundation Correctly** ![Page Views](https://visitor-badge.laobi.icu/badge?page_id=subraatakumar.subraatakumar.com&label=Page%20Views)
 
-Since you are **Architecting the 2030 Stack**, your goal isn't just to call an API—it's to build a **Model Agnostic** system.
+Week 1 is not just "call an LLM API and print text."
 
-* **The Build:** A simple web dashboard (using **Streamlit** or **Next.js**) where one input sends a prompt to three different models simultaneously.
-* **The Logic:** Use the **Vercel AI SDK** or a simple Python wrapper to abstract the "Provider" layer. This way, you can swap models by just changing an environment variable.
-* **The Comparison:** Use this tool to test **Architectural Logic** (e.g., asking for a microservices transition plan) to see which model handles complex system design most accurately.
+Week 1 is where we define the **architecture contract** for the entire 24-week journey:
+
+* one UI
+* multiple providers
+* typed request flow
+* streaming responses
+* graceful failure handling
+* no hard lock-in to one model vendor
+
+If this base is weak, every week after this becomes technical debt.
+
+If this base is strong, every week after this becomes compounding leverage.
+
+**Project Repository:** [24weeks-week-1-The-Multi-Model-Evaluator](https://github.com/TechCraft-By-Subrata/24weeks-week-1-The-Multi-Model-Evaluator)
 
 ---
 
-### **Your Weekend Action Plan**
+## **What We Built (Production Version)**
 
-Since we are kicking this off on **Monday, March 09**, here is your prep:
+We built a **professional side-by-side model evaluator** with:
 
-1. **Register:** Get your free API keys from **Google AI Studio** and **Groq**.
-2. **Code:** Set up a basic project folder.
-3. **Test:** Run a few "Logic Challenges" to ensure the side-by-side display works.
+* Two fixed comparison panels (Left model vs Right model)
+* Shared prompt composer
+* Provider-agnostic execution (`google | openai | anthropic`)
+* Session-only BYOK key handling (no persistence)
+* Streaming responses via AI SDK v6 patterns
+* Comparison report that still works when one model fails
+* Model status states (`Queued`, `Streaming`, `Ready`, `Error`)
+* Real-world quota error visibility and recovery
 
-## Create a NextJS Project
+---
 
+## **Why This Architecture (and not a quick hack)**
+
+### 1) **Model-Agnostic by design**
+A single request contract lets us route to Google, OpenAI, or Anthropic without rewriting UI logic.
+
+### 2) **Typed API contract**
+We enforce request shape explicitly so frontend and backend stay in sync as features grow.
+
+### 3) **Streaming-first UX**
+Users should see model output as it arrives. Perceived performance matters.
+
+### 4) **Failure is a first-class case**
+In AI systems, failures are normal: key issues, quota limits, invalid model IDs, provider downtime.
+
+### 5) **Comparison must survive partial failure**
+If one model succeeds and one fails, evaluation should still produce insight.
+
+---
+
+## **System Architecture (End-to-End)**
+
+### **UI Flow**
+1. User writes one prompt.
+2. App sends the same prompt to both panels.
+3. Each panel carries its own provider/model/key config.
+4. Each panel streams independently.
+5. UI shows per-panel output + errors + status.
+6. A final comparison report appears once both requests finish (including partial-failure cases).
+
+### **API Flow (`/api/chat`)**
+1. Accept typed payload: `messages`, `panel`, `options`.
+2. Resolve provider-specific model from `panel.provider`.
+3. Convert UI messages to model messages.
+4. Stream text with optional `systemPrompt` and `temperature`.
+5. Return UI stream response with original messages for stable message IDs.
+
+### **Error-Handling Flow**
+* Missing key -> explicit provider-specific error
+* Invalid JSON/request shape -> 400-style contract errors
+* Quota/rate-limit/provider errors -> surfaced as readable messages in panel
+* Busy-state correctness -> only `submitted`/`streaming` treated as running
+
+---
+
+## **Core API Contract (Public Interface)**
+
+This is the contract that powers the evaluator:
+
+```ts
+{
+  messages: UIMessage[]
+  panel: {
+    provider: 'google' | 'openai' | 'anthropic'
+    modelId: string
+    apiKey?: string
+  }
+  options?: {
+    systemPrompt?: string
+    temperature?: number
+  }
+}
 ```
-npx create-next-app@latest sidebyside --typescript --eslint --app
-```
 
-![](/24weeks/week1/img1.png)
+### Why this contract works
 
-Since you are **Architecting the 2030 Stack**, you definitely want to answer **Yes**.
-
-The **React Compiler** (formerly known as React Forget) is a foundational shift in how React handles performance. By 2030, manual optimization using `useMemo`, `useCallback`, and `React.memo` will be considered "legacy" work. The compiler automatically handles these optimizations at build-time, allowing you to write standard JavaScript while the engine ensures your **Architex** dashboard remains lightning-fast.
-
-For your Week 1 build, this is a great technical detail to include in your journal:
-
-> *"Starting the journey by opting into the **React Compiler**. In the 2030 stack, we move away from manual 'memoization' and let the build-chain handle performance automatically. This keeps the developer focused on architecture, not boilerplate."*
+* `messages` keeps conversation context in sync with `useChat`.
+* `panel` makes each side independently configurable.
+* `options` allows controlled tuning without breaking base payload shape.
 
 ---
 
-![](/24weeks/week1/img2.png)
+## **Implementation Walkthrough: Backend Route**
 
-For this one, **select Yes**.
+Below is the core pattern used in the app route. This is the center of the model router.
 
-Using a `src/` directory is the industry standard for production-grade Next.js applications. It separates your configuration files (like `package.json`, `tailwind.config.ts`, and `.env`) from your actual application logic.
+```ts
+import { createAnthropic } from '@ai-sdk/anthropic';
+import { createGoogleGenerativeAI } from '@ai-sdk/google';
+import { createOpenAI } from '@ai-sdk/openai';
+import {
+  convertToModelMessages,
+  streamText,
+  type UIMessage,
+  type LanguageModel,
+} from 'ai';
 
-In your **"24-Weeks to AI-Native"** journey, this is about building a clean, scalable architecture. By keeping your code in `src/`, you're following a disciplined project structure that stays organized as **Architex** grows from a simple evaluator into a complex system.
+type ProviderName = 'google' | 'openai' | 'anthropic';
 
----
+type PanelConfig = {
+  provider: ProviderName;
+  modelId: string;
+  apiKey?: string;
+};
 
-### **Your Project Selection Summary:**
+type ChatRequestBody = {
+  messages: UIMessage[];
+  panel: PanelConfig;
+  options?: {
+    systemPrompt?: string;
+    temperature?: number;
+  };
+};
 
-* **React Compiler:** Yes (Next-gen performance)
-* **Tailwind CSS:** Yes (Rapid UI building)
-* **`src/` Directory:** **Yes** (Professional organization)
-* **App Router:** Yes (Modern Next.js routing)
-* **Import Alias:** Yes (Use `@/*` for cleaner imports)
+function getModel(panel: PanelConfig): LanguageModel {
+  const modelId = panel.modelId.trim();
+  const apiKey = panel.apiKey?.trim();
 
----
+  if (!modelId) throw new Error('Model ID is required.');
 
-![](/24weeks/week1/img2.png)
+  if (panel.provider === 'google') {
+    const fallbackKey = process.env.GOOGLE_API_KEY?.trim();
+    const googleApiKey = apiKey || fallbackKey;
+    if (!googleApiKey) {
+      throw new Error('No Google API key found. Add GOOGLE_API_KEY or provide panel key.');
+    }
+    const google = createGoogleGenerativeAI({ apiKey: googleApiKey });
+    return google(modelId);
+  }
 
+  if (!apiKey) {
+    throw new Error(`API key is required for ${panel.provider}.`);
+  }
 
-This is the foundational code for your **Week 1: Multi-Model Evaluator**. It uses the **Vercel AI SDK** with **Next.js** to create a side-by-side architectural comparison tool.
+  if (panel.provider === 'openai') {
+    const openai = createOpenAI({ apiKey });
+    return openai(modelId);
+  }
 
-By using the `ai` library and `google-generative-ai` provider, you can keep your costs at **$0** using the free tier of **Google AI Studio**.
+  const anthropic = createAnthropic({ apiKey });
+  return anthropic(modelId);
+}
 
----
-
-## **1. The Backend (Route Handler)**
-
-Create a file at `app/api/chat/route.ts`. This is the "Model Router" that handles the architectural logic prompts.
-
-```typescript
-import { google } from '@ai-sdk/google';
-import { streamText } from 'ai';
-
-// Architecting the 2030 Stack: Week 1 Router
 export async function POST(req: Request) {
-  const { messages, modelChoice } = await req.json();
+  const body = (await req.json()) as ChatRequestBody;
+  const { messages, panel, options } = body;
 
-  // You can swap these based on the free tier availability
-  const model = modelChoice === 'gemini' 
-    ? google('gemini-1.5-flash') 
-    : google('gemini-2.0-flash-exp'); 
+  const model = getModel(panel);
 
-  const result = await streamText({
-    model: model,
-    messages,
-    system: "You are a Senior System Architect. Provide structured, technical comparisons for the 2030 tech stack.",
+  const result = streamText({
+    model,
+    system: options?.systemPrompt?.trim() || undefined,
+    temperature: options?.temperature,
+    messages: await convertToModelMessages(messages),
   });
 
-  return result.toDataStreamResponse();
+  return result.toUIMessageStreamResponse({ originalMessages: messages });
 }
-
 ```
+
+### Why each part matters
+
+* `getModel()` isolates provider branching to one place.
+* `convertToModelMessages()` aligns UI messages with model input format.
+* `toUIMessageStreamResponse({ originalMessages })` prevents message-duplication issues in chat UIs.
+
+### Common pitfalls
+
+* Using outdated provider packages/APIs.
+* Not validating `modelId` and key presence.
+* Returning non-UI stream response formats with `useChat`.
 
 ---
 
-## **2. The Frontend (Comparison Dashboard)**
+## **Implementation Walkthrough: Frontend Evaluator Logic**
 
-Create your page at `app/page.tsx`. This creates the side-by-side view for your "Proof of Work" showcase.
+The frontend uses AI SDK `useChat` with `DefaultChatTransport` for each panel.
 
 ```tsx
-'use client';
+const {
+  messages: leftMessages,
+  sendMessage: sendLeft,
+  status: leftStatus,
+  stop: stopLeft,
+  error: leftError,
+  clearError: clearLeftError,
+} = useChat({
+  transport: new DefaultChatTransport({ api: '/api/chat' }),
+});
 
-import { useChat } from '@ai-sdk/react';
+const {
+  messages: rightMessages,
+  sendMessage: sendRight,
+  status: rightStatus,
+  stop: stopRight,
+  error: rightError,
+  clearError: clearRightError,
+} = useChat({
+  transport: new DefaultChatTransport({ api: '/api/chat' }),
+});
+```
 
-export default function MultiModelEvaluator() {
-  const chatA = useChat({ body: { modelChoice: 'gemini' } });
-  const chatB = useChat({ body: { modelChoice: 'gemini-pro' } });
+Prompt submission sends the same user text to both chats with panel-specific body config:
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    chatA.append({ role: 'user', content: chatA.input });
-    chatB.append({ role: 'user', content: chatA.input });
-  };
+```tsx
+sendLeft(
+  { text: promptText },
+  {
+    body: {
+      panel: {
+        provider: leftPanel.provider,
+        modelId: leftPanel.modelId.trim(),
+        apiKey: leftPanel.apiKey.trim() || undefined,
+      },
+      options: {
+        systemPrompt: options.systemPrompt.trim() || undefined,
+        temperature: options.temperature,
+      },
+    },
+  },
+);
+```
 
-  return (
-    <div className="p-8 font-sans">
-      <h1 className="text-2xl font-bold mb-6">
-        24-Weeks to AI-Native: Week 1 Evaluator
-      </h1>
+### Busy-state correctness (important fix)
 
-      <form onSubmit={handleSubmit} className="mb-8">
-        <input
-          className="w-full p-4 border rounded shadow-sm"
-          value={chatA.input}
-          onChange={chatA.handleInputChange}
-          placeholder="Enter an architectural logic challenge..."
-        />
-      </form>
-
-      <div className="grid grid-cols-2 gap-6">
-        <div className="border p-4 rounded bg-gray-50">
-          <h2 className="font-bold mb-2">Model A (Gemini Flash)</h2>
-          <div className="whitespace-pre-wrap">
-            {chatA.messages[chatA.messages.length - 1]?.content}
-          </div>
-        </div>
-
-        <div className="border p-4 rounded bg-gray-50">
-          <h2 className="font-bold mb-2">Model B (Gemini Pro)</h2>
-          <div className="whitespace-pre-wrap">
-            {chatB.messages[chatB.messages.length - 1]?.content}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+```ts
+function isBusyStatus(status: string): boolean {
+  return status === 'submitted' || status === 'streaming';
 }
 
+const isRunning = isBusyStatus(leftStatus) || isBusyStatus(rightStatus);
+```
+
+Why: `error` is **not** a running state. This fix removes the stuck "Running..." bug.
+
+---
+
+## **Comparison Report Logic (Handles Partial Failure)**
+
+A key Week 1 learning: comparison should still be useful if one side fails.
+
+```ts
+function getComparisonReport({ leftText, rightText, leftError, rightError }) {
+  const leftOk = Boolean(leftText) && !leftError;
+  const rightOk = Boolean(rightText) && !rightError;
+
+  if (leftOk && rightOk) {
+    return { summary: 'Both models returned successfully.', winner: '...'};
+  }
+
+  if (leftOk && !rightOk) {
+    return { summary: 'Partial success: left model succeeded, right model failed.', winner: 'Left model by availability' };
+  }
+
+  if (!leftOk && rightOk) {
+    return { summary: 'Partial success: right model succeeded, left model failed.', winner: 'Right model by availability' };
+  }
+
+  return { summary: 'Both model runs failed.', winner: 'No winner' };
+}
+```
+
+### Why this matters
+
+Without this, users lose confidence in the evaluator when one provider fails.
+With this, users still get actionable output and next-step guidance.
+
+---
+
+## **Google Default Model Suggestions (Free-Tier Testing Focus)**
+
+In the UI we expose practical default suggestions for Google selection:
+
+```ts
+const PROVIDER_MODEL_SUGGESTIONS = {
+  google: [
+    'gemini-2.5-pro',
+    'gemini-2.5-flash',
+    'gemini-2.5-flash-lite',
+    'gemini-3-flash-preview',
+    'gemini-3.1-flash-lite-preview',
+  ],
+};
+```
+
+### Why this helps
+
+* Faster test setup for new users
+* Reduces invalid-model guesswork
+* Keeps defaults aligned with current free-tier experimentation patterns
+
+---
+
+## **What Broke During Build (and How We Fixed It)**
+
+### 1) Old `useChat({ api, body })` pattern mismatch
+**Problem:** Newer AI SDK uses transport objects.
+
+**Fix:** Move to `DefaultChatTransport` and pass per-request options with `sendMessage(..., { body })`.
+
+### 2) Old `message.content` rendering
+**Problem:** Modern UI messages expose `parts`, not single `content`.
+
+**Fix:** Render assistant text by collecting text parts from `message.parts`.
+
+### 3) Stuck running status after provider error
+**Problem:** UI considered non-ready statuses as running.
+
+**Fix:** Busy only for `submitted` and `streaming`.
+
+### 4) No comparison when one model failed
+**Problem:** Successful side had output, but no final cross-panel summary.
+
+**Fix:** Add partial-failure report path.
+
+### 5) Quota/rate-limit confusion
+**Problem:** Users thought app was broken when provider quota returned `limit: 0`.
+
+**Fix:** Surface raw provider error in panel + add quota troubleshooting guidance.
+
+---
+
+## **Hands-On Testing Checklist**
+
+Use this every time you modify the evaluator:
+
+1. **Happy path (Google + Google):** both panels stream and final report appears.
+2. **Mixed provider path (Google + OpenAI/Anthropic):** both work with proper keys.
+3. **Missing key path:** OpenAI/Anthropic panel shows explicit key-required error.
+4. **Invalid model path:** clear provider error shown in affected panel.
+5. **Quota failure path:** one panel fails with quota error, other succeeds, report still generated.
+6. **Stop behavior:** click Stop while streaming, both panels halt.
+7. **Status behavior:** no lingering `Running...` after a terminal state.
+8. **Type/lint health:**
+
+```bash
+npx tsc --noEmit
+npm run lint
 ```
 
 ---
 
-## **3. Setup Instructions (Zero-Cost)**
+## **Production Hardening: Next Steps**
 
-1. **Environment Variables:** Create a `.env.local` file and add your key: `GOOGLE_GENERATIVE_AI_API_KEY=your_free_key_here`.
-2. **Install Dependencies:** Run `npm install ai @ai-sdk/react @ai-sdk/google`.
-3. **Run:** Execute `npm run dev` to see your dashboard live.
+Week 1 production baseline is done. For Week 1.5 / Week 2 quality, add:
 
-### **The "Showcase" Tip for Monday**
+* **Judge-model scoring:** automatic ranking by factuality, completeness, clarity.
+* **Observability:** request IDs, timings, provider latency metrics, error taxonomy.
+* **Retry/backoff policy:** especially for transient 429/5xx.
+* **Provider fallback strategy:** optional automatic fallback if one provider fails.
+* **Key safety:** never persist user keys, rotate leaked keys immediately.
+* **Prompt/result logging policy:** redact sensitive inputs before storing traces.
 
-When you post your first journal entry on **Monday, March 16**, take a screen recording of this tool answering a complex question like: *"How should I handle state consistency in a distributed AI agentic workflow?"*
+---
 
-**Would you like me to draft the "Week 1 Journal Entry" text to accompany this build for your website?**
+## **Setup Snapshot (Current Working Version)**
+
+Install:
+
+```bash
+npm install
+```
+
+Env:
+
+```env
+GOOGLE_API_KEY=your_google_api_key
+```
+
+Run:
+
+```bash
+npm run dev
+```
+
+Open:
+
+```txt
+http://localhost:3000
+```
+
+---
+
+## **Read More / References (Official Docs)**
+
+### Project Code
+* Week 1 source code repository: [https://github.com/TechCraft-By-Subrata/24weeks-week-1-The-Multi-Model-Evaluator](https://github.com/TechCraft-By-Subrata/24weeks-week-1-The-Multi-Model-Evaluator)
+
+### Next.js
+* Next.js App Router: [https://nextjs.org/docs/app](https://nextjs.org/docs/app)
+* Route Handlers: [https://nextjs.org/docs/app/building-your-application/routing/route-handlers](https://nextjs.org/docs/app/building-your-application/routing/route-handlers)
+
+### AI SDK Core + UI
+* AI SDK docs home: [https://ai-sdk.dev/docs](https://ai-sdk.dev/docs)
+* `useChat` (AI SDK UI): [https://ai-sdk.dev/docs/ai-sdk-ui/chatbot](https://ai-sdk.dev/docs/ai-sdk-ui/chatbot)
+* Transport concepts: [https://ai-sdk.dev/docs/ai-sdk-ui/transport](https://ai-sdk.dev/docs/ai-sdk-ui/transport)
+* `streamText` reference: [https://ai-sdk.dev/docs/reference/ai-sdk-core/stream-text](https://ai-sdk.dev/docs/reference/ai-sdk-core/stream-text)
+* `convertToModelMessages` reference: [https://ai-sdk.dev/docs/reference/ai-sdk-core/convert-to-model-messages](https://ai-sdk.dev/docs/reference/ai-sdk-core/convert-to-model-messages)
+
+### Provider Packages
+* Google provider: [https://ai-sdk.dev/providers/ai-sdk-providers/google-generative-ai](https://ai-sdk.dev/providers/ai-sdk-providers/google-generative-ai)
+* OpenAI provider: [https://ai-sdk.dev/providers/ai-sdk-providers/openai](https://ai-sdk.dev/providers/ai-sdk-providers/openai)
+* Anthropic provider: [https://ai-sdk.dev/providers/ai-sdk-providers/anthropic](https://ai-sdk.dev/providers/ai-sdk-providers/anthropic)
+
+### Gemini Pricing + Rate Limits
+* Gemini API pricing: [https://ai.google.dev/gemini-api/docs/pricing](https://ai.google.dev/gemini-api/docs/pricing)
+* Gemini rate limits: [https://ai.google.dev/gemini-api/docs/rate-limits](https://ai.google.dev/gemini-api/docs/rate-limits)
+
+---
+
+## **Learning Outcome (Week 1 Complete)**
+
+By finishing this build, we now have a **real AI integration base layer**:
+
+* typed
+* provider-agnostic
+* streaming-capable
+* failure-aware
+* extensible for automated evaluation
+
+This is exactly the foundation needed for Week 2, where we can move from plain output comparison toward **retrieval-aware and quality-evaluated AI workflows**.
