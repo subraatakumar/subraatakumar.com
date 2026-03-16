@@ -1,246 +1,151 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 import { DEFAULT_OG_IMAGE, absoluteUrl } from "@/lib/seo";
+import BenefitsClient from "./BenefitsClient";
 
 export const metadata: Metadata = {
-  title: "Balanced Drinking Benefits",
+  title: "Hydration Benefits | Water Tracker N Reminder",
   description:
-    "Learn the practical health benefits of balanced hydration, how water intake affects focus, energy, digestion, and how to avoid over- or under-drinking.",
+    "Learn practical hydration benefits: focus, energy, digestion, performance, and how balanced water intake with reminder tracking improves consistency.",
+  keywords: [
+    "hydration benefits",
+    "benefits of drinking water",
+    "balanced hydration",
+    "water intake benefits",
+    "how much water should i drink",
+    "hydration reminder benefits",
+  ],
   alternates: {
     canonical: "/watertracker/benefits",
   },
   openGraph: {
-    title: "Balanced Hydration Benefits | WaterTracker",
+    title: "Hydration Benefits | Water Tracker N Reminder",
     description:
-      "Practical guide to balanced hydration and how consistent water intake supports daily health.",
+      "Understand balanced water intake benefits and build sustainable hydration routines.",
     url: "/watertracker/benefits",
     type: "article",
     images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Balanced Hydration Benefits | WaterTracker",
+    title: "Hydration Benefits | Water Tracker N Reminder",
     description:
-      "Practical guide to balanced hydration and how consistent water intake supports daily health.",
+      "Evidence-aligned hydration guidance for better focus, energy, recovery, and routine quality.",
     images: [DEFAULT_OG_IMAGE],
   },
 };
 
-const benefits = [
+const sections = [
   {
-    title: "Better Focus and Mental Clarity",
-    body:
-      "Mild dehydration can reduce concentration. Balanced fluid intake helps maintain attention, memory, and decision-making through the day.",
+    id: "focus-energy",
+    title: "Focus and Energy Stability",
+    summary:
+      "Mild dehydration can affect focus and perceived energy. Consistent intake through the day supports steadier mental performance.",
+    bullets: [
+      "Supports day-long concentration",
+      "Reduces irregular hydration crashes",
+      "Helps maintain stable work rhythm",
+    ],
+    image: {
+      src: "/watertrackerimages/5.png",
+      alt: "Hydration dashboard helping daily consistency",
+      caption: "Consistency support through daily tracking",
+    },
   },
   {
-    title: "Steadier Energy",
-    body:
-      "When hydration is consistent, fatigue tends to reduce and daily activity feels more sustainable, especially in long work sessions.",
+    id: "digestion-recovery",
+    title: "Digestion and Recovery Support",
+    summary:
+      "Balanced hydration supports digestion and helps your body handle daily recovery needs, especially during active routines.",
+    bullets: [
+      "Supports digestion function",
+      "Helps maintain physical comfort",
+      "Improves routine adherence for active days",
+    ],
   },
   {
-    title: "Support for Digestion and Metabolism",
-    body:
-      "Adequate water supports digestion and regular bowel function, and helps your body process nutrients effectively.",
+    id: "performance-heat",
+    title: "Performance and Heat Response",
+    summary:
+      "During warm weather or training days, hydration planning helps reduce avoidable fatigue and performance drop-offs.",
+    bullets: [
+      "Timely fluid reminders in long work/exercise blocks",
+      "Better awareness during hot conditions",
+      "Goal-based progress for high-activity days",
+    ],
+    image: {
+      src: "/watertrackerimages/4.png",
+      alt: "Hydration reminder schedule for maintaining intake",
+      caption: "Reminder-driven hydration timing",
+    },
   },
   {
-    title: "Temperature and Physical Performance",
-    body:
-      "Hydration helps regulate body temperature and supports exercise performance, especially in warm conditions.",
+    id: "habit-formation",
+    title: "Habit Formation Through Tracking",
+    summary:
+      "The strongest benefit of a water tracker app is behavioral: visibility makes habits measurable and easier to maintain.",
+    bullets: [
+      "Turns hydration into a trackable routine",
+      "Shows completion and consistency trends",
+      "Improves adherence through simple daily feedback",
+    ],
+    image: {
+      src: "/watertrackerimages/9.png",
+      alt: "Hydration trend chart for habit review",
+      caption: "Trend insight for long-term habit building",
+    },
   },
   {
-    title: "Kidney and Urinary Health Support",
-    body:
-      "Consistent hydration supports healthy urine flow and can reduce risk associated with concentrated urine patterns.",
+    id: "personalization",
+    title: "Personalized Intake Workflow",
+    summary:
+      "Different people drink different fluids in different patterns. Custom drink types and units make plans realistic.",
+    bullets: [
+      "Custom drink list with flexible volume",
+      "Track in ml or oz based on preference",
+      "Better fit for real-world routines",
+    ],
+    image: {
+      src: "/watertrackerimages/8.png",
+      alt: "Custom drink type and volume setup",
+      caption: "Personalized drink setup for practical tracking",
+    },
   },
   {
-    title: "Healthier Habit Formation",
-    body:
-      "Tracking water intake creates awareness and consistency, helping people build sustainable long-term routines.",
+    id: "safe-balanced",
+    title: "Balanced vs Excessive Intake",
+    summary:
+      "More water is not always better. The goal is appropriate intake spread through the day, not overdrinking in short windows.",
+    bullets: [
+      "Use reminders for pacing, not overloading",
+      "Adjust target with climate and activity",
+      "Follow medical advice for clinical conditions",
+    ],
   },
 ];
 
 const faq = [
   {
-    q: "What is balanced drinking?",
-    a: "Balanced drinking means meeting your body’s hydration needs consistently without going too low or too high.",
-  },
-  {
     q: "Is more water always better?",
-    a: "No. Excessive intake in short time can be harmful. Hydration should be paced across the day and aligned with your body and activity.",
+    a: "No. Hydration should be balanced and paced through the day. Excessive intake in short time can be harmful.",
   },
   {
-    q: "Does tea or coffee count as fluid intake?",
-    a: "Yes. They contribute to total fluid intake, though plain water is still the simplest base for daily hydration.",
+    q: "Does tea or coffee count toward hydration?",
+    a: "Yes, they contribute to total fluid intake for most people, though plain water remains a simple base option.",
   },
   {
-    q: "How do I find my ideal daily goal?",
-    a: "Start with a moderate goal, monitor thirst and urine color trends, then adjust for climate, activity, and health conditions.",
+    q: "What is a practical way to improve hydration?",
+    a: "Set a realistic goal, schedule reminders, use custom drinks, and review trends weekly for consistency.",
+  },
+  {
+    q: "Can a water reminder app help habit formation?",
+    a: "Yes. Reminders plus visible progress make daily hydration behavior easier to sustain.",
   },
 ];
 
 export default function WaterTrackerBenefitsPage() {
   return (
-    <article>
-      <style>{`
-        .wtb-wrap {
-          border-radius: 24px;
-          border: 1px solid rgba(16, 36, 79, 0.1);
-          background: rgba(255,255,255,0.86);
-          padding: 30px 26px;
-        }
-        .wtb-wrap h1 {
-          margin: 0;
-          font-size: clamp(2rem, 4vw, 3rem);
-          letter-spacing: -0.03em;
-          color: #0f2458;
-        }
-        .wtb-intro {
-          margin: 12px 0 20px;
-          color: #4a5f8c;
-          line-height: 1.8;
-          max-width: 900px;
-        }
-        .wtb-grid {
-          display: grid;
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: 12px;
-        }
-        .wtb-card {
-          border-radius: 16px;
-          border: 1px solid rgba(16, 36, 79, 0.1);
-          background: #fff;
-          padding: 14px;
-        }
-        .wtb-card b {
-          color: #14336f;
-          display: block;
-          margin-bottom: 5px;
-          font-size: 1rem;
-        }
-        .wtb-card p {
-          margin: 0;
-          color: #4b5f89;
-          line-height: 1.6;
-          font-size: 0.95rem;
-        }
-        .wtb-sec {
-          margin-top: 16px;
-          border-radius: 16px;
-          border: 1px solid rgba(16, 36, 79, 0.1);
-          background: #fff;
-          padding: 16px;
-        }
-        .wtb-sec h2 {
-          margin: 0 0 8px;
-          color: #0f2458;
-          font-size: 1.35rem;
-        }
-        .wtb-faq {
-          display: grid;
-          gap: 10px;
-        }
-        .wtb-faq-item {
-          border-radius: 12px;
-          border: 1px solid rgba(16, 36, 79, 0.1);
-          background: #f8fcff;
-          padding: 12px;
-        }
-        .wtb-faq-item b {
-          color: #17386f;
-          display: block;
-          margin-bottom: 4px;
-        }
-        .wtb-faq-item p {
-          margin: 0;
-          color: #4d5f86;
-          line-height: 1.6;
-        }
-        .wtb-note {
-          margin-top: 10px;
-          border-radius: 12px;
-          border: 1px solid rgba(245, 158, 11, 0.35);
-          background: #fff8eb;
-          color: #7c4a04;
-          padding: 10px 12px;
-          font-size: 0.92rem;
-          line-height: 1.6;
-        }
-        .wtb-actions {
-          margin-top: 14px;
-          display: flex;
-          gap: 10px;
-          flex-wrap: wrap;
-        }
-        .wtb-btn {
-          text-decoration: none;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          min-height: 42px;
-          padding: 0 14px;
-          border-radius: 10px;
-          font-size: 13px;
-          text-transform: uppercase;
-          font-weight: 800;
-          letter-spacing: 0.04em;
-        }
-        .wtb-btn-primary {
-          background: #3f82ff;
-          color: #fff;
-        }
-        .wtb-btn-ghost {
-          border: 1px solid rgba(16, 36, 79, 0.2);
-          color: #17386f;
-          background: #fff;
-        }
-        @media (max-width: 820px) {
-          .wtb-wrap {
-            padding: 22px 16px;
-          }
-          .wtb-grid {
-            grid-template-columns: 1fr;
-          }
-        }
-      `}</style>
-
-      <div className="wtb-wrap">
-        <h1 className="wt-font-display">Benefits of Balanced Drinking</h1>
-        <p className="wtb-intro">
-          Balanced hydration is not about drinking as much as possible. It means
-          giving your body the right amount of fluid consistently so daily functions
-          like focus, energy, digestion, and recovery stay stable.
-        </p>
-
-        <div className="wtb-grid">
-          {benefits.map((item) => (
-            <div key={item.title} className="wtb-card">
-              <b>{item.title}</b>
-              <p>{item.body}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="wtb-sec">
-          <h2 className="wt-font-display">Common Questions</h2>
-          <div className="wtb-faq">
-            {faq.map((item) => (
-              <div key={item.q} className="wtb-faq-item">
-                <b>{item.q}</b>
-                <p>{item.a}</p>
-              </div>
-            ))}
-          </div>
-          <div className="wtb-note">
-            General guidance only. If you have kidney, heart, endocrine, or other medical
-            conditions affecting fluid intake, follow your clinician’s advice.
-          </div>
-        </div>
-
-        <div className="wtb-actions">
-          <Link href="/watertracker" className="wtb-btn wtb-btn-primary">Back To Overview</Link>
-          <Link href="/watertracker/guide" className="wtb-btn wtb-btn-ghost">Open How-To Guide</Link>
-        </div>
-      </div>
+    <>
+      <BenefitsClient sections={[...sections]} faq={[...faq]} />
 
       <script
         type="application/ld+json"
@@ -250,9 +155,9 @@ export default function WaterTrackerBenefitsPage() {
             "@graph": [
               {
                 "@type": "Article",
-                headline: "Benefits of Balanced Drinking",
+                headline: "Benefits of Balanced Drinking and Hydration Tracking",
                 description:
-                  "Practical health benefits of balanced hydration and safe intake habits.",
+                  "Practical hydration benefits and safe balanced intake principles for consistent daily routine.",
                 url: absoluteUrl("/watertracker/benefits"),
                 author: {
                   "@type": "Person",
@@ -271,14 +176,31 @@ export default function WaterTrackerBenefitsPage() {
                 })),
               },
               {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Water Tracker",
+                    item: absoluteUrl("/watertracker"),
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Benefits",
+                    item: absoluteUrl("/watertracker/benefits"),
+                  },
+                ],
+              },
+              {
                 "@type": "WebPage",
-                name: "Balanced Drinking Benefits",
+                name: "Hydration Benefits | Water Tracker N Reminder",
                 url: absoluteUrl("/watertracker/benefits"),
               },
             ],
           }),
         }}
       />
-    </article>
+    </>
   );
 }

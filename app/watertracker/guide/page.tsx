@@ -3,394 +3,223 @@ import GuideClient from "./GuideClient";
 import { DEFAULT_OG_IMAGE, absoluteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "WaterTracker Guide",
+  title: "Water Tracker App Guide | Setup Reminders, Logs, and Backup",
   description:
-    "Step-by-step guide to use WaterTracker: setup goal, add drinks, log intake, configure reminders, protect data, and backup/restore.",
+    "Step-by-step Water Tracker guide: set hydration goal, add drink types, log intake, configure reminders, view trends, and use backup/restore securely.",
+  keywords: [
+    "water tracker guide",
+    "how to use water reminder app",
+    "set water reminders",
+    "track water intake in ml oz",
+    "water tracker backup restore",
+    "hydration app tutorial",
+  ],
   alternates: {
     canonical: "/watertracker/guide",
   },
   openGraph: {
-    title: "WaterTracker How-To Guide",
+    title: "Water Tracker App Guide | Setup Reminders, Logs, and Backup",
     description:
-      "Learn how to set up and use WaterTracker with reminders, custom drinks, PIN/Biometric lock, and backup flows.",
+      "Complete how-to guide for Water Tracker N Reminder with setup flows and screenshots.",
     url: "/watertracker/guide",
     type: "article",
     images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
-    title: "WaterTracker How-To Guide",
+    title: "Water Tracker App Guide | Setup Reminders, Logs, and Backup",
     description:
-      "Learn how to set up and use WaterTracker with reminders, custom drinks, PIN/Biometric lock, and backup flows.",
+      "Learn Water Tracker setup: goal, reminders, custom drinks, trends, and backup/restore.",
     images: [DEFAULT_OG_IMAGE],
   },
 };
 
-type GuideStep = {
-  title: string;
-  body: string;
-  images?: { src: string; caption: string }[];
-};
-
-const steps: GuideStep[] = [
+const sections = [
   {
-    title: "How to change the unit of measurement?",
-    body:
-      "On the Home screen, tap the 'Consumed Today' value to toggle units between milliliters (ml) and ounces (oz). The change applies immediately and updates displayed intake values and your daily goal.",
-    images: [
-      {
-        src: "/watertrackerimages/home_screen_ml.png",
-        caption: "Home screen — ml",
-      },
-      {
-        src: "/watertrackerimages/home_screen_oz.png",
-        caption: "Home screen — oz",
-      },
+    id: "start-dashboard",
+    title: "Start from Home Dashboard",
+    intro:
+      "Open the app and begin with the dashboard. It shows your current progress and helps you quickly start logging.",
+    steps: [
+      "Open Home and review your current day progress.",
+      "Tap unit area to toggle ml and oz when needed.",
+      "Use quick-add actions to log your first drink.",
     ],
+    image: {
+      src: "/watertrackerimages/5.png",
+      alt: "WaterTracker home dashboard showing intake progress",
+      caption: "Dashboard with progress ring and unit toggle",
+    },
   },
   {
-    title: "Set Daily Hydration Goal",
-    body:
-      "Open goal settings, pick your unit (ml or oz), then set a realistic daily target. Start conservative and increase over time.",
+    id: "log-drink-entry",
+    title: "Add Drink Consumed Details",
+    intro:
+      "Use Fluid Intake Entry to capture what you consumed with date/time control and per-drink quantity.",
+    steps: [
+      "Open Fluid Intake Entry from Home or quick actions.",
+      "Pick date/time if you are recording older intake.",
+      "Tap drink cards and save once the intake list is complete.",
+    ],
+    image: {
+      src: "/watertrackerimages/10.png",
+      alt: "Fluid intake entry screen for adding consumed drinks",
+      caption: "Detailed intake entry screen",
+    },
   },
   {
-    title: "Create Your Drink List",
-    body:
-      "Use Manage Drinks to add custom items with icon, color, and volume. Keep common choices at the top for faster logging.",
+    id: "set-goal-reminders",
+    title: "Set Goal and Reminder Schedule",
+    intro:
+      "Configure hydration target and reminder timings so the app can support your routine consistently.",
+    steps: [
+      "Set your daily hydration goal in preferred unit.",
+      "Add reminder times matching your day structure.",
+      "Configure follow-up and sound preference for missed reminders.",
+    ],
+    image: {
+      src: "/watertrackerimages/4.png",
+      alt: "Hydration reminder and goal setup screen",
+      caption: "Goal and reminder configuration",
+    },
   },
   {
-    title: "Log Intake Quickly",
-    body:
-      "On the intake screen, tap drink chips for the current day and save. The dashboard ring updates immediately.",
+    id: "manage-drinks",
+    title: "Manage Drink Types",
+    intro:
+      "Customize drink list to match your routine so logging becomes faster and more accurate.",
+    steps: [
+      "Open Manage Drinks from entry or settings flow.",
+      "Edit or reorder your most-used drink types.",
+      "Reset to defaults if you want to start over.",
+    ],
+    image: {
+      src: "/watertrackerimages/7.png",
+      alt: "Manage drink types screen in WaterTracker",
+      caption: "Manage drinks list and quick controls",
+    },
   },
   {
-    title: "Schedule Smart Reminders",
-    body:
-      "Add reminders based on your routine and choose alert style. Enable follow-up reminders if you often miss notifications.",
+    id: "custom-drinks",
+    title: "Create Custom Drink and Volume",
+    intro:
+      "Add your own drink type with icon, color, and volume for precise hydration tracking.",
+    steps: [
+      "Choose Add Drink in Manage Drinks.",
+      "Enter label and volume in ml/oz context.",
+      "Pick icon and color, then save and use it in logs.",
+    ],
+    image: {
+      src: "/watertrackerimages/8.png",
+      alt: "Create custom drink type and volume in WaterTracker",
+      caption: "Custom drink creation flow",
+    },
   },
   {
-    title: "Enable PIN and Biometric",
-    body:
-      "Protect your local data with a 6-digit PIN and optional biometrics for fast unlock.",
+    id: "review-trends",
+    title: "Review Hydration Trends",
+    intro:
+      "Use trend charts to see consistency and compare daily intake against your goal over time.",
+    steps: [
+      "Open Fluid Intake Trend from Home tools.",
+      "Pick range and inspect daily consumption vs goal.",
+      "Use insights to tune reminders and drink plan.",
+    ],
+    image: {
+      src: "/watertrackerimages/9.png",
+      alt: "Hydration trend chart comparing daily consumption and goal",
+      caption: "Trend dashboard for performance review",
+    },
   },
   {
-    title: "Backup and Restore",
-    body:
-      "Use cloud backup options (iCloud or Google Drive depending on device) to create restore points before switching phones.",
+    id: "backup-restore",
+    title: "Backup and Restore Data",
+    intro:
+      "Use backup and restore when changing devices or before major changes so hydration history stays safe.",
+    steps: [
+      "Open Backup & Restore screen from configuration.",
+      "Create backup and confirm latest timestamp.",
+      "Restore only from trusted backup points.",
+    ],
+    image: {
+      src: "/watertrackerimages/2.png",
+      alt: "Backup and restore page showing backup options",
+      caption: "Backup and restore workflow",
+    },
+  },
+  {
+    id: "widgets",
+    title: "Enable Fluid Widgets",
+    intro:
+      "Widgets help you check intake and stay engaged from your device home screen.",
+    steps: [
+      "Enable available fluid widget from widget settings.",
+      "Pin widget on home screen for quick glance.",
+      "Use widget as a daily habit reinforcement surface.",
+    ],
+    image: {
+      src: "/watertrackerimages/3.png",
+      alt: "Fluid intake widget preview from WaterTracker",
+      caption: "Fluid Intake widget support",
+    },
+  },
+  {
+    id: "appearance",
+    title: "Personalize Appearance",
+    intro:
+      "Choose theme and appearance options to make the app feel natural for long-term use.",
+    steps: [
+      "Open Appearance settings from Home menu.",
+      "Preview available themes and pick one that fits your style.",
+      "Apply appearance and continue tracking with same data.",
+    ],
+    image: {
+      src: "/watertrackerimages/6.png",
+      alt: "WaterTracker appearance and theme screen",
+      caption: "Appearance customization and theme choices",
+    },
+  },
+  {
+    id: "privacy-lock",
+    title: "Protect Data with Privacy Controls",
+    intro:
+      "WaterTracker follows local-first design. Add lock controls for extra protection when sharing your device.",
+    steps: [
+      "Enable PIN lock from configuration.",
+      "Enable biometric unlock after PIN is configured.",
+      "Review privacy policy and terms for the complete data model.",
+    ],
+    image: {
+      src: "/watertrackerimages/1.png",
+      alt: "WaterTracker privacy-first data protection message",
+      caption: "Privacy-first experience with lock options",
+    },
   },
 ];
 
 const faq = [
   {
     q: "Do I need an account to use WaterTracker?",
-    a: "No. Core hydration tracking works without account signup. Data is stored locally on device.",
+    a: "No. Core tracking flow is designed to work without account signup.",
   },
   {
-    q: "Where is my hydration data stored?",
-    a: "Hydration history, drink presets, and app preferences are stored in on-device storage.",
+    q: "Can I track custom drinks and custom volume values?",
+    a: "Yes. Manage Drinks lets you add your own drink types with icon, color, and volume.",
   },
   {
-    q: "Can I track custom drinks and units?",
-    a: "Yes. You can create custom drinks and use either ml or oz units depending on your preference.",
+    q: "Does WaterTracker support ml and oz?",
+    a: "Yes. Unit preference can be toggled in the app and is reflected in tracking views.",
+  },
+  {
+    q: "Where should I start if I am new?",
+    a: "Start with goal setup, then reminders, then drink list. After that, use trends weekly to improve consistency.",
   },
 ];
 
-const ldJson = JSON.stringify({
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "HowTo",
-      name: "How to use WaterTracker",
-      description: "Step-by-step setup and usage guide for WaterTracker hydration app.",
-      url: absoluteUrl("/watertracker/guide"),
-      step: steps.map((step, i) => ({
-        "@type": "HowToStep",
-        position: i + 1,
-        name: step.title,
-        text: step.body,
-        ...(step.images ? { image: step.images.map((im) => absoluteUrl(im.src)) } : {}),
-      })),
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: faq.map((item) => ({
-        "@type": "Question",
-        name: item.q,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: item.a,
-        },
-      })),
-    },
-    {
-      "@type": "WebPage",
-      name: "WaterTracker Guide",
-      url: absoluteUrl("/watertracker/guide"),
-    },
-  ],
-});
-
 export default function Page() {
   return (
-    <article>
-      <style>{`
-        .wtg-wrap {
-          border-radius: 24px;
-          border: 1px solid rgba(16, 36, 79, 0.1);
-          background: rgba(255,255,255,0.85);
-          padding: 30px 26px;
-        }
-        .wtg-wrap h1 {
-          margin: 0;
-          font-size: clamp(2rem, 4vw, 3rem);
-          letter-spacing: -0.03em;
-          color: #0f2458;
-        }
-        .wtg-intro {
-          margin: 14px 0 22px;
-          color: #4a5f8c;
-          line-height: 1.8;
-          max-width: 900px;
-        }
-        .wtg-grid {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 12px;
-        }
-        .wtg-screens {
-          display: flex;
-          gap: 12px;
-          margin-top: 14px;
-          flex-wrap: wrap;
-        }
-        .wtg-screens figure {
-          margin: 0 0 8px 0;
-          border-radius: 12px;
-          display: inline-block; /* shrink to fit image and caption */
-          vertical-align: top;
-          width: min(320px, 100%);
-          max-width: 320px;
-          min-width: 250px; /* ensure minimum placeholder width */
-        }
-        .wtg-screens img {
-          display: block;
-          width: 100%;
-          height: auto;
-        }
-        .img-wrap {
-          position: relative;
-          border-radius: 12px;
-          overflow: hidden;
-          border: 1px solid rgba(16, 36, 79, 0.03);
-          background: #fff;
-          display: block;
-          width: 100%;
-        }
-        .wtg-screens .overlay {
-          position: absolute;
-          left: 0;
-          right: 0;
-          top: 50%;
-          transform: translateY(-50%);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: #fff;
-          font-weight: 800;
-          font-size: 0.88rem;
-          line-height: 1;
-          padding: 8px 10px;
-          pointer-events: none;
-          background: rgba(0, 0, 0, 0.1);
-          transform: translateY(-50%) rotate(-45deg);
-          opacity: 1;
-        }
-        .wtg-step-header {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          margin-bottom: 8px;
-        }
-        @media (min-width: 821px) {
-          .wtg-screens figure {
-            flex: none;
-            max-width: 320px;
-            display: inline-block;
-            vertical-align: top;
-            width: min(320px, 100%);
-            min-width: 250px;
-          }
-          .wtg-screens img {
-            display: block;
-            width: 100%;
-            height: auto;
-          }
-        }
-
-        .wtg-modal {
-          position: fixed;
-          inset: 0;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background: rgba(0,0,0,0.6);
-          z-index: 1200;
-        }
-        .wtg-modal .inner {
-          max-width: 92%;
-          max-height: 92%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        .wtg-modal img {
-          max-width: 100%;
-          max-height: 85vh;
-          border-radius: 8px;
-        }
-        .wtg-modal .caption {
-          margin-top: 10px;
-          color: #fff;
-          text-align: center;
-        }
-        .wtg-modal .close {
-          position: absolute;
-          top: 18px;
-          right: 18px;
-          background: transparent;
-          border: none;
-          color: #fff;
-          font-size: 22px;
-          cursor: pointer;
-        }
-        .wtg-screens .img-wrap figcaption {
-          padding: 8px 10px;
-          font-size: 0.9rem;
-          color: #17386f;
-          text-align: center;
-          background: #f8fcff;
-          display: block;
-          width: 100%;
-          box-sizing: border-box;
-          margin: 0; /* keep tight to wrapper */
-        }
-        .wtg-step {
-          border-radius: 16px;
-          border: 1px solid rgba(16, 36, 79, 0.12);
-          background: linear-gradient(180deg, #fff, #eff7ff);
-          padding: 16px 14px;
-        }
-        .wtg-step.has-images {
-          grid-column: 1 / -1;
-        }
-        .wtg-step.has-images .n {
-          margin-bottom: 0;
-          margin-right: 10px;
-          vertical-align: middle;
-        }
-        .wtg-step.has-images b {
-          display: inline-block;
-          vertical-align: middle;
-          margin-bottom: 0;
-        }
-        .wtg-step .n {
-          width: 28px;
-          height: 28px;
-          border-radius: 999px;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          background: #3c82ff;
-          color: #fff;
-          font-weight: 800;
-          font-size: 12px;
-          margin-bottom: 8px;
-        }
-        .wtg-step b {
-          color: #14336f;
-          display: block;
-          margin-bottom: 5px;
-        }
-        .wtg-step p {
-          margin: 0;
-          color: #4b5f89;
-          line-height: 1.6;
-          font-size: 0.95rem;
-        }
-        .wtg-section {
-          margin-top: 18px;
-          border-radius: 16px;
-          border: 1px solid rgba(16, 36, 79, 0.1);
-          background: #fff;
-          padding: 16px;
-        }
-        .wtg-section h2 {
-          margin: 0 0 8px;
-          color: #0f2458;
-          font-size: 1.35rem;
-        }
-        .wtg-faq {
-          display: grid;
-          gap: 10px;
-          margin-top: 10px;
-        }
-        .wtg-faq-item {
-          border-radius: 12px;
-          border: 1px solid rgba(16, 36, 79, 0.1);
-          background: #f8fcff;
-          padding: 12px;
-        }
-        .wtg-faq-item b {
-          color: #17386f;
-          display: block;
-          margin-bottom: 4px;
-          font-size: 0.98rem;
-        }
-        .wtg-faq-item p {
-          margin: 0;
-          color: #4d5f86;
-          line-height: 1.6;
-          font-size: 0.95rem;
-        }
-        .wtg-actions {
-          margin-top: 18px;
-          display: flex;
-          flex-wrap: wrap;
-          gap: 10px;
-        }
-        .wtg-btn {
-          text-decoration: none;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          min-height: 42px;
-          padding: 0 14px;
-          border-radius: 10px;
-          font-size: 13px;
-          text-transform: uppercase;
-          font-weight: 800;
-          letter-spacing: 0.04em;
-        }
-        .wtg-btn-primary {
-          background: #3f82ff;
-          color: #fff;
-        }
-        .wtg-btn-ghost {
-          border: 1px solid rgba(16, 36, 79, 0.2);
-          color: #17386f;
-          background: #fff;
-        }
-        @media (max-width: 820px) {
-          .wtg-wrap {
-            padding: 22px 16px;
-          }
-          .wtg-grid {
-            grid-template-columns: 1fr;
-          }
-        }
-      `}</style>
-
-      <GuideClient steps={steps} faq={faq} />
+    <>
+      <GuideClient sections={[...sections]} faq={[...faq]} />
 
       <script
         type="application/ld+json"
@@ -400,16 +229,16 @@ export default function Page() {
             "@graph": [
               {
                 "@type": "HowTo",
-                name: "How to use WaterTracker",
+                name: "How to use Water Tracker N Reminder",
                 description:
-                  "Step-by-step setup and usage guide for WaterTracker hydration app.",
+                  "Step-by-step guide for setting hydration goal, reminders, drink types, trends, and backup in WaterTracker.",
                 url: absoluteUrl("/watertracker/guide"),
-                step: steps.map((step, i) => ({
+                step: sections.map((section, idx) => ({
                   "@type": "HowToStep",
-                  position: i + 1,
-                  name: step.title,
-                  text: step.body,
-                  ...(step.images ? { image: step.images.map((im) => absoluteUrl(im.src)) } : {}),
+                  position: idx + 1,
+                  name: section.title,
+                  text: section.intro,
+                  ...(section.image ? { image: absoluteUrl(section.image.src) } : {}),
                 })),
               },
               {
@@ -424,14 +253,31 @@ export default function Page() {
                 })),
               },
               {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Water Tracker",
+                    item: absoluteUrl("/watertracker"),
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Guide",
+                    item: absoluteUrl("/watertracker/guide"),
+                  },
+                ],
+              },
+              {
                 "@type": "WebPage",
-                name: "WaterTracker Guide",
+                name: "Water Tracker App Guide",
                 url: absoluteUrl("/watertracker/guide"),
               },
             ],
           }),
         }}
       />
-    </article>
+    </>
   );
 }
