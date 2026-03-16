@@ -1,0 +1,1261 @@
+<!DOCTYPE html><!--zqXMrKuuiKfQv6KyB6wVG--><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/chunks/a99ebf15a758c58a.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/5a08c9e3a78c4f9b.js"/><script src="/_next/static/chunks/2a53c54479327e33.js" async=""></script><script src="/_next/static/chunks/b387cef77c823f83.js" async=""></script><script src="/_next/static/chunks/d1e380e53588e373.js" async=""></script><script src="/_next/static/chunks/turbopack-8c9e8715d9ebd26a.js" async=""></script><script src="/_next/static/chunks/7c92e96509cd355e.js" async=""></script><script src="/_next/static/chunks/ed0ac4fd205f8cfa.js" async=""></script><script src="/_next/static/chunks/ff1a16fafef87110.js" async=""></script><script src="/_next/static/chunks/bf1f6d5df2e9b1a8.js" async=""></script><link rel="preload" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&amp;family=Caveat+Brush&amp;display=swap" as="style"/><meta name="next-size-adjust" content=""/><title>Week 2: Local RAG Architecture (LM Studio vs Microsoft Foundry Local). | Subrata Kumar Das</title><meta name="description" content="Decision-complete architecture for Week 2 Local RAG, covering both LM Studio and Microsoft Foundry Local designs, with Microsoft Foundry Local selected as the implementation path."/><meta name="keywords" content="Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"/><link rel="canonical" href="https://subraatakumar.com/24weeks/week-2/"/><meta property="og:title" content="Week 2: Local RAG Architecture (LM Studio vs Microsoft Foundry Local). | 24 Weeks"/><meta property="og:description" content="Decision-complete architecture for Week 2 Local RAG, covering both LM Studio and Microsoft Foundry Local designs, with Microsoft Foundry Local selected as the implementation path."/><meta property="og:url" content="https://subraatakumar.com/24weeks/week-2/"/><meta property="og:image" content="https://subraatakumar.com/images/interview.png"/><meta property="og:type" content="article"/><meta property="article:published_time" content="2026-03-16"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Week 2: Local RAG Architecture (LM Studio vs Microsoft Foundry Local). | 24 Weeks"/><meta name="twitter:description" content="Decision-complete architecture for Week 2 Local RAG, covering both LM Studio and Microsoft Foundry Local designs, with Microsoft Foundry Local selected as the implementation path."/><meta name="twitter:image" content="https://subraatakumar.com/images/interview.png"/><link rel="icon" href="/favicon.ico?favicon.750fd6b3.ico" sizes="48x48" type="image/x-icon"/><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&amp;family=Caveat+Brush&amp;display=swap" rel="stylesheet"/><script src="/_next/static/chunks/a6dad97d9634a72d.js" noModule=""></script></head><body style="background:#fafaf7;margin:0;font-family:&#x27;Caveat&#x27;, cursive;color:#1a1a2e"><div hidden=""><!--$--><!--/$--></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Subrata Kumar Das","url":"https://subraatakumar.com","jobTitle":"Tech Lead","sameAs":["https://github.com/subraatakumar","https://linkedin.com/in/subraatakumar"]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWorkSeries","name":"180 Days Mentoring Journey","description":"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.","url":"https://subraatakumar.com/180days","startDate":"2026-02-19","publisher":{"@type":"Organization","name":"Subrata Kumar Das","url":"https://subraatakumar.com"}}</script><style>
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+
+          body {
+            background: #fafaf7;
+            font-family: 'Caveat', cursive;
+            color: #1a1a2e;
+          }
+
+          /* ── Nav ── */
+          .sk-header {
+            background: #fff;
+            border-bottom: 2.5px solid #1a1a2e;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+          }
+          .sk-header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .sk-logo {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.55rem;
+            color: #1a1a2e;
+            text-decoration: none;
+            letter-spacing: 0.01em;
+          }
+          .sk-nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+          }
+          .sk-nav-links a {
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+            padding-bottom: 2px;
+          }
+          .sk-nav-links a:hover {
+            text-decoration: underline wavy #2563eb 2px;
+            text-underline-offset: 4px;
+          }
+          .sk-nav-mobile {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 14px;
+          }
+          .sk-nav-mobile ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+          }
+          .sk-nav-mobile a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+          }
+
+          /* ── Footer ── */
+          .sk-footer {
+            border-top: 2.5px solid #1a1a2e;
+            background: #fff;
+            padding: 24px;
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+          }
+
+          /* ── Shared section ── */
+          .sk-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+          }
+          .sk-page-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            margin-bottom: 8px;
+            line-height: 1.1;
+          }
+          .sk-section-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.9rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+          .sk-section-heading::after {
+            content: '';
+            flex: 1;
+            border-top: 2px dashed #9ca3af;
+          }
+
+          /* ── Squiggle divider ── */
+          .sk-squiggle {
+            width: 100%;
+            height: 8px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 4 Q5 0 10 4 Q15 8 20 4 Q25 0 30 4 Q35 8 40 4' stroke='%239ca3af' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") repeat-x center;
+            opacity: 0.55;
+            margin: 36px 0;
+          }
+
+          /* ── Sketch button ── */
+          .sk-btn {
+            display: inline-block;
+            padding: 10px 26px;
+            background: #2563eb;
+            color: #fff;
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 3px 3px 0 #1a1a2e;
+            transition: transform 0.1s, box-shadow 0.1s;
+          }
+          .sk-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 #1a1a2e;
+          }
+          .sk-btn-ghost {
+            background: transparent;
+            color: #1a1a2e;
+            box-shadow: 3px 3px 0 #9ca3af;
+          }
+          .sk-btn-ghost:hover {
+            box-shadow: 5px 5px 0 #9ca3af;
+          }
+
+          /* ── Tag chip ── */
+          .sk-tag {
+            display: inline-block;
+            padding: 3px 13px;
+            border: 2px solid #1a1a2e;
+            border-radius: 2px;
+            font-size: 1rem;
+            font-weight: 600;
+            background: #fff;
+            margin: 3px;
+          }
+          .sk-tag.active {
+            background: #2563eb;
+            color: #fff;
+          }
+
+          /* ── Card ── */
+          .sk-card {
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 5px 5px 0 #1a1a2e;
+            padding: 24px;
+            transition: transform 0.15s, box-shadow 0.15s;
+          }
+          .sk-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0 #1a1a2e;
+          }
+
+          /* ── Stat card ── */
+          .sk-stat {
+            flex: 1;
+            min-width: 130px;
+            text-align: center;
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 4px 4px 0 #1a1a2e;
+            padding: 20px 12px;
+          }
+          .sk-stat .num {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            color: #2563eb;
+            line-height: 1;
+          }
+          .sk-stat .lbl {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 4px;
+          }
+
+          /* ── Image placeholder ── */
+          .sk-img {
+            width: 100%;
+            height: 160px;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            background: #f3f4f6;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 16px;
+          }
+          .sk-img::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+              linear-gradient(to bottom right, transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px)),
+              linear-gradient(to bottom left,  transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px));
+          }
+
+          @media (max-width: 640px) {
+            .sk-nav-links { display: none; }
+            .sk-nav-mobile { display: block; }
+            .sk-page-heading { font-size: 2.2rem; }
+          }
+        </style><header class="sk-header"><div class="sk-header-inner"><a class="sk-logo" href="/">SKD_</a><nav aria-label="Primary"><ul class="sk-nav-links"><li><a href="/about/">About</a></li><li><a href="/products/">Products</a></li><li><a href="/contact/">Contact</a></li></ul></nav></div><div class="sk-nav-mobile"><nav aria-label="Mobile"><ul><li><a href="/about/">About</a></li><li><a href="/products/">Products</a></li><li><a href="/contact/">Contact</a></li></ul></nav></div></header><main style="width:100%"><div style="all:revert"><style>
+        /* ── Reset sketchy globals for this subtree ── */
+        body:has(#days180-root) .sk-header,
+        body:has(#days180-root) .sk-footer {
+          display: none !important;
+        }
+
+        #days180-root,
+        #days180-root * {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+          box-sizing: border-box;
+        }
+
+        /* ── 180 Days design tokens ── */
+        #days180-root {
+          --amber: #16d0ec;
+          --amber-light: #cffafe;
+          --slate-950: #020617;
+          --slate-900: #0f172a;
+          --slate-800: #1e293b;
+          --slate-700: #334155;
+          --slate-500: #64748b;
+          --slate-400: #94a3b8;
+          --slate-300: #cbd5e1;
+          --slate-200: #e2e8f0;
+          --slate-100: #f1f5f9;
+          --slate-50:  #f8fafc;
+          --white: #ffffff;
+
+          min-height: 100vh;
+          background: var(--white);
+          color: var(--slate-900);
+        }
+
+        /* ── Header ── */
+        .d180-header {
+          position: sticky;
+          top: 0;
+          z-index: 100;
+          background: rgba(255,255,255,0.92);
+          backdrop-filter: blur(16px);
+          border-bottom: 1px solid var(--slate-200);
+        }
+        .d180-header-inner {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 32px;
+          height: 64px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .d180-logo-badge {
+          width: 32px;
+          height: 32px;
+          background: var(--amber);
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 900;
+          font-size: 13px;
+          color: var(--slate-900);
+          box-shadow: 0 4px 12px rgba(22, 208, 236, 0.25);
+        }
+        .d180-logo-label {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.18em;
+          color: var(--slate-500);
+        }
+        .d180-back-btn {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          padding: 8px 16px;
+          background: var(--slate-100);
+          border-radius: 8px;
+          color: var(--slate-900);
+          text-decoration: none;
+          transition: background 0.15s;
+        }
+        .d180-back-btn:hover { background: var(--slate-200); }
+
+        /* ── Hero ── */
+        .d180-hero {
+          border-bottom: 1px solid var(--slate-200);
+          background: linear-gradient(to bottom, var(--slate-50), var(--white));
+        }
+        .d180-hero-inner {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 64px 32px;
+        }
+        .d180-hero h1 {
+          font-size: clamp(2.8rem, 6vw, 4.5rem);
+          font-weight: 900;
+          letter-spacing: -0.03em;
+          line-height: 1.0;
+          color: var(--slate-950);
+          margin: 0 0 12px;
+        }
+        .d180-hero h1 span { color: var(--amber); }
+        .d180-meta {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          margin-bottom: 20px;
+        }
+        .d180-meta-label {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+          color: var(--slate-400);
+        }
+        .d180-meta-dot {
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background: var(--slate-300);
+          display: inline-block;
+        }
+        .d180-meta-series {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+          color: var(--amber);
+        }
+        .d180-hero p {
+          font-size: 1.15rem;
+          color: var(--slate-500);
+          line-height: 1.7;
+          max-width: 500px;
+          margin: 0;
+        }
+
+        /* ── Progress bar ── */
+        .d180-progress-wrap {
+          margin-top: 40px;
+          max-width: 320px;
+        }
+        .d180-progress-labels {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 8px;
+        }
+        .d180-progress-labels span {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.15em;
+          color: var(--slate-400);
+        }
+        .d180-progress-labels span:last-child { color: var(--amber); }
+        .d180-progress-track {
+          width: 100%;
+          height: 8px;
+          background: var(--slate-200);
+          border-radius: 999px;
+          overflow: hidden;
+        }
+        .d180-progress-fill {
+          height: 100%;
+          background: var(--amber);
+          border-radius: 999px;
+          transition: width 0.7s ease;
+        }
+        .d180-progress-pct {
+          margin-top: 6px;
+          font-size: 11px;
+          color: var(--slate-400);
+          font-weight: 500;
+        }
+
+        /* ── Main content ── */
+        .d180-main {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 48px 32px 80px;
+        }
+
+        /* ── Stats row ── */
+        .d180-stats {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 16px;
+          margin-bottom: 48px;
+        }
+        .d180-stat-card {
+          background: var(--slate-50);
+          border: 1px solid var(--slate-200);
+          border-radius: 16px;
+          padding: 20px;
+        }
+        .d180-stat-num {
+          font-size: clamp(1.6rem, 3vw, 2rem);
+          font-weight: 900;
+          color: var(--slate-950);
+          letter-spacing: -0.02em;
+        }
+        .d180-stat-lbl {
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.15em;
+          color: var(--slate-400);
+          margin-top: 4px;
+        }
+
+        /* ── Entry list ── */
+        .d180-entry-list {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+        .d180-entry {
+          display: flex;
+          align-items: flex-start;
+          gap: 20px;
+          padding: 20px;
+          border-radius: 16px;
+          border: 1px solid var(--slate-200);
+          background: var(--white);
+          text-decoration: none;
+          color: inherit;
+          transition: border-color 0.2s, background 0.2s, transform 0.15s;
+        }
+        .d180-entry:hover {
+          border-color: var(--amber);
+          background: var(--slate-50);
+          transform: translateX(3px);
+        }
+        .d180-day-badge {
+          flex-shrink: 0;
+          width: 48px;
+          height: 48px;
+          border-radius: 12px;
+          background: var(--slate-100);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          color: var(--slate-500);
+          transition: background 0.2s, color 0.2s;
+        }
+        .d180-entry:hover .d180-day-badge {
+          background: var(--amber);
+          color: var(--slate-900);
+        }
+        .d180-entry-body { flex: 1; min-width: 0; }
+        .d180-entry-title {
+          font-size: 1rem;
+          font-weight: 700;
+          color: var(--slate-900);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          transition: color 0.2s;
+        }
+        .d180-entry:hover .d180-entry-title { color: var(--amber); }
+        .d180-entry-desc {
+          font-size: 0.875rem;
+          color: var(--slate-500);
+          margin-top: 4px;
+          line-height: 1.5;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+        }
+        .d180-entry-meta {
+          flex-shrink: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 8px;
+        }
+        .d180-entry-date {
+          font-size: 11px;
+          font-weight: 500;
+          color: var(--slate-400);
+        }
+        .d180-entry-arrow {
+          font-size: 14px;
+          color: var(--slate-300);
+          transition: color 0.2s;
+        }
+        .d180-entry:hover .d180-entry-arrow { color: var(--amber); }
+
+        /* ── Footer ── */
+        .d180-footer {
+          border-top: 1px solid var(--slate-200);
+          background: var(--white);
+        }
+        .d180-footer-inner {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 20px 32px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+        .d180-footer-copy {
+          font-size: 11px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.12em;
+          color: var(--slate-400);
+        }
+        .d180-footer-home {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          padding: 8px 12px;
+          border-radius: 8px;
+          background: var(--slate-100);
+          color: var(--slate-900);
+          text-decoration: none;
+        }
+        .d180-footer-home:hover {
+          background: var(--amber-light);
+          color: #155e75;
+        }
+
+        @media (max-width: 640px) {
+          .d180-header-inner { padding: 0 16px; }
+          .d180-hero-inner { padding: 40px 16px; }
+          .d180-main { padding: 32px 16px 60px; }
+          .d180-footer-inner { padding: 16px; }
+          .d180-stats { grid-template-columns: 1fr; }
+        }
+      </style><div id="days180-root"><div class="d180-article-page"><style>
+        #days180-root .d180-article-page {
+          min-height: 100vh;
+          background: #fff;
+          color: #0f172a;
+        }
+        #days180-root .d180-article-header {
+          position: sticky;
+          top: 0;
+          z-index: 80;
+          background: rgba(255,255,255,0.92);
+          backdrop-filter: blur(16px);
+          border-bottom: 1px solid #e2e8f0;
+        }
+        #days180-root .d180-article-header-inner {
+          width: 100%;
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 32px;
+          height: 64px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        }
+        #days180-root .d180-crumb {
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: .08em;
+          color: #64748b;
+          text-decoration: none;
+          background: #f1f5f9;
+          border-radius: 10px;
+          padding: 10px 14px;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+        }
+        #days180-root .d180-crumb-series {
+          transition: color .15s ease;
+        }
+        #days180-root .d180-crumb:hover .d180-crumb-series {
+          color: var(--amber);
+        }
+        #days180-root .d180-crumb strong { color: #0f172a; }
+        #days180-root .d180-pill {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          padding: 8px 12px;
+          background: #f8fafc;
+          border: 1px solid #e2e8f0;
+          border-radius: 10px;
+        }
+        #days180-root .d180-pill-track {
+          width: 90px;
+          height: 8px;
+          background: #cbd5e1;
+          border-radius: 999px;
+          overflow: hidden;
+        }
+        #days180-root .d180-pill-fill {
+          height: 100%;
+          background: var(--amber);
+          border-radius: 999px;
+        }
+        #days180-root .d180-pill b {
+          color: var(--amber);
+          font-size: 11px;
+          letter-spacing: .02em;
+        }
+        #days180-root .d180-content-wrap {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 32px;
+        }
+        #days180-root .d180-meta-line {
+          margin-top: 8px;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 8px;
+          color: #64748b;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        #days180-root .d180-meta-line .dot {
+          width: 4px;
+          height: 4px;
+          border-radius: 999px;
+          background: #94a3b8;
+          display: inline-block;
+        }
+        #days180-root .d180-post-content {
+          max-width: 780px;
+        }
+        #days180-root .d180-post-content img {
+          max-width: 100%;
+          height: auto;
+        }
+        #days180-root .d180-post-content pre code {
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+        }
+        #days180-root .d180-md-p {
+          font-size: 17px;
+          line-height: 1.85;
+          color: #334155;
+          margin: 20px 0;
+        }
+        #days180-root .d180-md-h1 {
+          font-size: clamp(2rem, 4vw, 2.4rem);
+          font-weight: 900;
+          margin: 64px 0 24px;
+          padding-bottom: 12px;
+          border-bottom: 1px solid #e2e8f0;
+          line-height: 1.2;
+          color: #020617;
+        }
+        #days180-root .d180-md-h2 {
+          font-size: clamp(1.6rem, 3vw, 1.9rem);
+          font-weight: 900;
+          margin: 56px 0 18px;
+          line-height: 1.25;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-h3 {
+          font-size: clamp(1.3rem, 2.4vw, 1.5rem);
+          font-weight: 800;
+          margin: 40px 0 14px;
+          line-height: 1.3;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-h4,
+        #days180-root .d180-md-h5,
+        #days180-root .d180-md-h6 {
+          font-size: 1.1rem;
+          font-weight: 700;
+          margin: 28px 0 10px;
+          color: #0f172a;
+        }
+        #days180-root .d180-md-ul {
+          list-style: disc;
+          padding-left: 24px;
+          margin: 18px 0;
+        }
+        #days180-root .d180-md-ol {
+          list-style: decimal;
+          padding-left: 28px;
+          margin: 18px 0;
+        }
+        #days180-root .d180-md-li {
+          margin: 8px 0;
+          line-height: 1.75;
+          color: #334155;
+        }
+        #days180-root .d180-md-blockquote {
+          margin: 26px 0;
+          padding: 14px 16px;
+          border-left: 2px solid #e2e8f0;
+          border-radius: 8px;
+          background: #f8fafc;
+          font-style: italic;
+          color: #334155;
+        }
+        #days180-root .d180-md-inline-code {
+          background: #f1f5f9;
+          color: #c2410c;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+          font-size: 0.9em;
+          padding: 3px 6px;
+          border-radius: 6px;
+        }
+        #days180-root .d180-md-hr {
+          border: 0;
+          height: 1px;
+          background: #e2e8f0;
+          margin: 48px 0;
+        }
+        #days180-root .d180-md-link {
+          color: var(--amber);
+          text-decoration: none;
+          font-weight: 600;
+        }
+        #days180-root .d180-md-link:hover {
+          text-decoration: underline;
+        }
+        #days180-root .d180-md-table-wrap {
+          overflow: auto;
+          border: 1px solid #e2e8f0;
+          border-radius: 8px;
+          margin: 24px 0;
+        }
+        #days180-root .d180-md-table {
+          min-width: 100%;
+          border-collapse: collapse;
+        }
+        #days180-root .d180-md-th {
+          text-align: left;
+          font-size: 13px;
+          font-weight: 700;
+          color: #334155;
+          background: #f8fafc;
+          padding: 10px;
+          border-bottom: 1px solid #e2e8f0;
+        }
+        #days180-root .d180-md-td {
+          font-size: 14px;
+          color: #334155;
+          padding: 10px;
+          border-bottom: 1px solid #f1f5f9;
+        }
+        #days180-root .d180-code-lang {
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: .06em;
+          color: #475569;
+          background: #f1f5f9;
+          padding: 4px 10px;
+          border-radius: 6px;
+        }
+        #days180-root .d180-copy-btn {
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: .06em;
+          color: #0f172a;
+          background: var(--amber);
+          border: 0;
+          border-radius: 6px;
+          padding: 4px 10px;
+          cursor: pointer;
+        }
+        #days180-root .d180-code-pre {
+          overflow: auto;
+          border-radius: 16px;
+          background: #0f172a;
+          color: #f8fafc;
+          padding: 18px 16px;
+        }
+        #days180-root .d180-bottom-nav {
+          margin-top: 64px;
+          padding: 24px 0 60px;
+          border-top: 1px solid #e2e8f0;
+          display: flex;
+          gap: 12px;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        #days180-root .d180-nav-link {
+          border-radius: 12px;
+          border: 1px solid #e2e8f0;
+          background: #f8fafc;
+          color: #0f172a;
+          text-decoration: none;
+          padding: 12px 16px;
+          min-width: 180px;
+        }
+        #days180-root .d180-nav-link strong {
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: .08em;
+          color: #64748b;
+          display: block;
+          margin-bottom: 4px;
+        }
+        #days180-root .d180-nav-link.next {
+          text-align: right;
+          background: #0f172a;
+          border-color: #0f172a;
+          color: #fff;
+        }
+        #days180-root .d180-nav-link.next strong {
+          color: rgba(255,255,255,0.72);
+        }
+        #days180-root .d180-edit-link {
+          display: inline-block;
+          margin-top: 16px;
+          padding: 10px 14px;
+          border: 1px solid #e2e8f0;
+          border-radius: 10px;
+          background: #f8fafc;
+          color: #334155;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        #days180-root .d180-edit-link:hover {
+          border-color: var(--amber);
+        }
+        @media (max-width: 640px) {
+          #days180-root .d180-article-header-inner,
+          #days180-root .d180-content-wrap {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+          #days180-root .d180-pill {
+            display: none;
+          }
+        }
+      </style><header class="d180-article-header"><div class="d180-article-header-inner"><div class="flex items-center gap-3 shrink-0"><a aria-label="Go to main home page" class="w-8 h-8 rounded-lg flex items-center justify-center text-slate-900 shadow-lg" style="background:var(--amber);box-shadow:0 8px 20px rgba(22, 208, 236, 0.22)" href="/"><span class="font-black text-sm">SK</span></a><nav class="hidden md:flex items-center gap-3"><a class="d180-crumb" href="/24weeks/"><span class="d180-crumb-series">24 Weeks</span> <span>/</span> <strong>Week <!-- -->week-2</strong></a><div class="d180-pill"><div class="d180-pill-track"><div class="d180-pill-fill" style="width:NaN%"></div></div><b>NaN<!-- -->%</b></div></nav></div><div class="flex items-center gap-4"><a class="d180-crumb" href="/24weeks/">← All Weeks</a></div></div></header><div class="d180-hero"><div class="d180-hero-inner d180-content-wrap" style="padding-top:56px;padding-bottom:56px"><h1 style="max-width:820px">Week 2: Local RAG Architecture (LM Studio vs Microsoft Foundry Local).</h1><p style="margin-top:14px;max-width:760px">Decision-complete architecture for Week 2 Local RAG, covering both LM Studio and Microsoft Foundry Local designs, with Microsoft Foundry Local selected as the implementation path.</p><div class="d180-meta-line"><span>2026-03-16</span><span class="dot"></span><span style="color:var(--amber)">Subrata Kumar Das</span><span class="dot"></span><span style="color:#15803d;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.08em">Complete</span></div><p style="margin-top:16px;max-width:500px;font-size:13px;line-height:1.7;color:var(--slate-700);border-left:2px solid var(--amber);padding-left:10px;font-style:italic">&quot;Consistent small steps lead to massive long-term results. Keep pushing.&quot;</p></div></div><main class="d180-content-wrap" style="padding-top:36px"><div class="flex-1"><article class="d180-post-content"><div><h2 id="week-2-mission-build-a-local-rag-engine-that-you-can-trust" class="d180-md-h2"><strong>Week 2 Mission: Build a Local RAG Engine That You Can Trust</strong></h2>
+<p class="d180-md-p">Week 1 proved we can compare model outputs.</p>
+<p class="d180-md-p">Week 2 is about <strong>grounding</strong> those outputs in your own documents.</p>
+<p class="d180-md-p">Goal: Build a Local RAG system where answers come from your files (Markdown/PDF), with visible citations and deterministic architecture.</p>
+<hr class="d180-md-hr" />
+<h2 id="what-this-plan-covers" class="d180-md-h2"><strong>What This Plan Covers</strong></h2>
+<p class="d180-md-p">This architecture plan includes both:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li"><strong>Option A: LM Studio Local RAG Architecture</strong></li>
+<li class="d180-md-li"><strong>Option B: Microsoft Foundry Local RAG Architecture</strong></li>
+</ul>
+<p class="d180-md-p">And then locks implementation choice:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li"><strong>Final build path for this project: Microsoft Foundry Local RAG</strong></li>
+</ul>
+<hr class="d180-md-hr" />
+<h2 id="decision-summary-locked" class="d180-md-h2"><strong>Decision Summary (Locked)</strong></h2>
+<h3 id="why-compare-both" class="d180-md-h3">Why compare both?</h3>
+<p class="d180-md-p">Both are local-first inference approaches, but they differ in ecosystem and operational model.</p>
+<h3 id="final-decision-for-week-2-build" class="d180-md-h3">Final decision for Week 2 build</h3>
+<p class="d180-md-p">We will implement with <strong>Microsoft Foundry Local</strong> for this project, because:</p>
+<ol class="d180-md-ol">
+<li class="d180-md-li">It aligns with your current direction and tooling interest.</li>
+<li class="d180-md-li">It gives a clear local runtime contract (CLI/SDK/REST style).</li>
+<li class="d180-md-li">It keeps a clean path to Microsoft ecosystem integration later (if needed).</li>
+</ol>
+<p class="d180-md-p">LM Studio architecture is still documented fully as a fallback/alternative.</p>
+<hr class="d180-md-hr" />
+<h2 id="shared-week-2-architecture-applies-to-both-options" class="d180-md-h2"><strong>Shared Week-2 Architecture (Applies to Both Options)</strong></h2>
+<p class="d180-md-p">Regardless of runtime, the RAG pipeline is the same:</p>
+<ol class="d180-md-ol">
+<li class="d180-md-li"><strong>Ingest files</strong> (<code class="d180-md-inline-code">.md</code>, <code class="d180-md-inline-code">.pdf</code>)</li>
+<li class="d180-md-li"><strong>Extract text</strong> and normalize content</li>
+<li class="d180-md-li"><strong>Chunk text</strong> into retrievable units</li>
+<li class="d180-md-li"><strong>Generate embeddings</strong> for each chunk</li>
+<li class="d180-md-li"><strong>Store vectors</strong> in Chroma with metadata</li>
+<li class="d180-md-li"><strong>Retrieve top-k chunks</strong> for user query</li>
+<li class="d180-md-li"><strong>Generate answer</strong> from retrieved context</li>
+<li class="d180-md-li"><strong>Return citations</strong> mapped to chunk metadata</li>
+</ol>
+<hr class="d180-md-hr" />
+<h2 id="core-data-model-minimal-locked" class="d180-md-h2"><strong>Core Data Model (Minimal, Locked)</strong></h2>
+<p class="d180-md-p">Each chunk stored in vector DB must include:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TS</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-ts">type ChunkRecord = {
+  id: string;            // e.g., source::page::chunk_index
+  source: string;        // filename or logical doc id
+  page: number | null;   // null for markdown/plain text
+  chunk_id: string;      // stable per document
+  text: string;          // chunk text
+  embedding: number[];   // vector
+  token_count: number;   // optional but recommended
+  created_at: string;    // ISO timestamp
+};
+</code></pre>
+      </div>
+    
+<hr class="d180-md-hr" />
+<h2 id="api-interfaces-locked-for-week-2" class="d180-md-h2"><strong>API Interfaces (Locked for Week 2)</strong></h2>
+<h3 id="post-apiingest" class="d180-md-h3"><code class="d180-md-inline-code">POST /api/ingest</code></h3>
+<p class="d180-md-p">Purpose: ingest one or more local files and index them into Chroma.</p>
+<p class="d180-md-p">Request:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TS</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-ts">type IngestRequest = {
+  files: Array&#x3C;{
+    name: string;
+    mimeType: 'text/markdown' | 'application/pdf' | 'text/plain';
+    contentBase64: string;
+  }>;
+  options?: {
+    chunkSize?: number;      // default: 800 chars
+    chunkOverlap?: number;   // default: 120 chars
+  };
+};
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">Response:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TS</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-ts">type IngestResponse = {
+  success: boolean;
+  documentsIndexed: number;
+  chunksIndexed: number;
+  skipped: Array&#x3C;{ name: string; reason: string }>;
+  errors: Array&#x3C;{ name: string; message: string }>;
+};
+</code></pre>
+      </div>
+    
+<h3 id="post-apichat" class="d180-md-h3"><code class="d180-md-inline-code">POST /api/chat</code></h3>
+<p class="d180-md-p">Purpose: run retrieval-grounded Q&#x26;A over indexed chunks.</p>
+<p class="d180-md-p">Request:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TS</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-ts">type ChatRequest = {
+  query: string;
+  options?: {
+    topK?: number;              // default: 5
+    minScore?: number;          // default: 0.2
+    temperature?: number;       // default: 0.2
+    systemPrompt?: string;
+  };
+};
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">Response:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TS</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-ts">type ChatResponse = {
+  answer: string;
+  citations: Array&#x3C;{
+    source: string;
+    page: number | null;
+    chunk_id: string;
+    snippet: string;
+    score: number;
+  }>;
+  retrieval: {
+    topK: number;
+    matched: number;
+    latencyMs: number;
+  };
+  warnings?: string[];
+};
+</code></pre>
+      </div>
+    
+<hr class="d180-md-hr" />
+<h2 id="chunking-strategy-locked" class="d180-md-h2"><strong>Chunking Strategy (Locked)</strong></h2>
+<ul class="d180-md-ul">
+<li class="d180-md-li"><strong>Chunk size:</strong> 800 characters</li>
+<li class="d180-md-li"><strong>Overlap:</strong> 120 characters</li>
+<li class="d180-md-li"><strong>Splitter rule:</strong> paragraph-aware first, fallback to hard-length split</li>
+<li class="d180-md-li"><strong>Normalization:</strong> collapse repeated spaces/newlines, preserve bullet and heading boundaries where possible</li>
+</ul>
+<p class="d180-md-p">Why this default:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Keeps chunks small enough for precise retrieval</li>
+<li class="d180-md-li">Preserves enough context continuity through overlap</li>
+<li class="d180-md-li">Works well for both markdown notes and extracted PDF text</li>
+</ul>
+<hr class="d180-md-hr" />
+<h2 id="retrieval-strategy-locked" class="d180-md-h2"><strong>Retrieval Strategy (Locked)</strong></h2>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Similarity search in Chroma with <code class="d180-md-inline-code">topK = 5</code></li>
+<li class="d180-md-li">Apply optional score threshold <code class="d180-md-inline-code">minScore = 0.2</code></li>
+<li class="d180-md-li">If fewer than 2 matches pass threshold, still return best 1 with a warning</li>
+<li class="d180-md-li">Inject retrieved chunks into prompt with explicit citation tags, e.g.:</li>
+</ul>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TXT</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-txt">[CTX-1] source=architecture.md page=null chunk=architecture::12
+...
+[CTX-2] source=srs.pdf page=8 chunk=srs::8::3
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">Generation must cite contexts by source and chunk.</p>
+<hr class="d180-md-hr" />
+<h2 id="citation-format-locked" class="d180-md-h2"><strong>Citation Format (Locked)</strong></h2>
+<p class="d180-md-p">Answer body will include numbered citations, and API returns structured citation objects.</p>
+<p class="d180-md-p">Example render style:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TXT</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-txt">The retrieval layer should use score-threshold fallback and deterministic chunk IDs for observability [1][2].
+
+[1] architecture.md (chunk: architecture::12)
+[2] srs.pdf (page: 8, chunk: srs::8::3)
+</code></pre>
+      </div>
+    
+<hr class="d180-md-hr" />
+<h2 id="failure-modes-and-handling-locked" class="d180-md-h2"><strong>Failure Modes and Handling (Locked)</strong></h2>
+<h3 id="ingestion-failures" class="d180-md-h3">Ingestion failures</h3>
+<ol class="d180-md-ol">
+<li class="d180-md-li"><strong>Malformed PDF / unreadable file</strong>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Skip file, return error entry in <code class="d180-md-inline-code">errors[]</code></li>
+</ul>
+</li>
+<li class="d180-md-li"><strong>Unsupported mime type</strong>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Skip with explicit reason in <code class="d180-md-inline-code">skipped[]</code></li>
+</ul>
+</li>
+<li class="d180-md-li"><strong>No extractable text</strong>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Skip and report <code class="d180-md-inline-code">empty_text</code></li>
+</ul>
+</li>
+</ol>
+<h3 id="retrievalchat-failures" class="d180-md-h3">Retrieval/chat failures</h3>
+<ol class="d180-md-ol">
+<li class="d180-md-li"><strong>Vector DB empty</strong>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Return graceful message: "No indexed documents found. Ingest files first."</li>
+</ul>
+</li>
+<li class="d180-md-li"><strong>No relevant chunks</strong>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Return low-confidence answer + warning + empty citations</li>
+</ul>
+</li>
+<li class="d180-md-li"><strong>Local model unavailable</strong>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Return actionable error: runtime not running/model not loaded</li>
+</ul>
+</li>
+<li class="d180-md-li"><strong>Timeout during generation</strong>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Return partial failure with retry suggestion</li>
+</ul>
+</li>
+</ol>
+<hr class="d180-md-hr" />
+<h2 id="option-a-lm-studio-local-rag-architecture" class="d180-md-h2"><strong>Option A: LM Studio Local RAG Architecture</strong></h2>
+<h3 id="runtime" class="d180-md-h3">Runtime</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Local generation model hosted via LM Studio local server endpoint</li>
+<li class="d180-md-li">Separate embedding model via LM Studio (if available in your setup) or fallback embedding runtime</li>
+</ul>
+<h3 id="service-wiring" class="d180-md-h3">Service wiring</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li"><code class="d180-md-inline-code">Ingest Service</code> -> parser -> chunker -> embedder -> Chroma</li>
+<li class="d180-md-li"><code class="d180-md-inline-code">Chat Service</code> -> query embed -> retrieve top-k -> prompt builder -> LM Studio generation</li>
+</ul>
+<h3 id="pros" class="d180-md-h3">Pros</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Quick start with user-friendly desktop workflow</li>
+<li class="d180-md-li">Easy model switching in UI</li>
+<li class="d180-md-li">Great for experimentation and demos</li>
+</ul>
+<h3 id="tradeoffs" class="d180-md-h3">Tradeoffs</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Environment parity across machines can vary</li>
+<li class="d180-md-li">Embedding model/runtime setup may be less standardized depending on local stack</li>
+</ul>
+<h3 id="recommended-when" class="d180-md-h3">Recommended when</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Fast prototyping and model experimentation is top priority</li>
+</ul>
+<hr class="d180-md-hr" />
+<h2 id="option-b-microsoft-foundry-local-rag-architecture-selected" class="d180-md-h2"><strong>Option B: Microsoft Foundry Local RAG Architecture (Selected)</strong></h2>
+<h3 id="runtime" class="d180-md-h3">Runtime</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Generation model served by Foundry Local runtime</li>
+<li class="d180-md-li">Embedding model also served via Foundry Local where supported by selected model set</li>
+</ul>
+<h3 id="service-wiring" class="d180-md-h3">Service wiring</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li"><code class="d180-md-inline-code">Ingest API</code> calls Foundry Local embedding endpoint for each chunk</li>
+<li class="d180-md-li">Chroma stores vectors and metadata</li>
+<li class="d180-md-li"><code class="d180-md-inline-code">Chat API</code> retrieves top-k chunks and calls Foundry Local generation endpoint with contextual prompt</li>
+</ul>
+<h3 id="pros" class="d180-md-h3">Pros</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">More standardized local runtime contract for enterprise-like workflows</li>
+<li class="d180-md-li">Clear alignment with Microsoft AI platform path</li>
+<li class="d180-md-li">Better long-term fit for structured local deployment discipline</li>
+</ul>
+<h3 id="tradeoffs" class="d180-md-h3">Tradeoffs</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Model availability varies by platform/runtime support</li>
+<li class="d180-md-li">Initial local setup can be more procedural than LM Studio</li>
+</ul>
+<h3 id="recommended-when" class="d180-md-h3">Recommended when</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">You want disciplined local architecture with Microsoft ecosystem alignment</li>
+</ul>
+<hr class="d180-md-hr" />
+<h2 id="selected-build-blueprint-microsoft-foundry-local" class="d180-md-h2"><strong>Selected Build Blueprint (Microsoft Foundry Local)</strong></h2>
+<h3 id="components" class="d180-md-h3">Components</h3>
+<ol class="d180-md-ol">
+<li class="d180-md-li"><strong>Frontend UI</strong> (Next.js page)
+<ul class="d180-md-ul">
+<li class="d180-md-li">Upload documents</li>
+<li class="d180-md-li">Ask grounded questions</li>
+<li class="d180-md-li">Render citations and retrieval info</li>
+</ul>
+</li>
+<li class="d180-md-li"><strong>Ingest API</strong> (<code class="d180-md-inline-code">POST /api/ingest</code>)
+<ul class="d180-md-ul">
+<li class="d180-md-li">Parse + chunk + embed + upsert to Chroma</li>
+</ul>
+</li>
+<li class="d180-md-li"><strong>Chat API</strong> (<code class="d180-md-inline-code">POST /api/chat</code>)
+<ul class="d180-md-ul">
+<li class="d180-md-li">Embed query + retrieve + generate + cite</li>
+</ul>
+</li>
+<li class="d180-md-li"><strong>Vector Store</strong> (Chroma)
+<ul class="d180-md-ul">
+<li class="d180-md-li">Local persistent collection</li>
+</ul>
+</li>
+<li class="d180-md-li"><strong>Foundry Local Runtime</strong>
+<ul class="d180-md-ul">
+<li class="d180-md-li">One generation model + one embedding model</li>
+</ul>
+</li>
+</ol>
+<h3 id="default-operational-values" class="d180-md-h3">Default operational values</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li"><code class="d180-md-inline-code">chunkSize = 800</code></li>
+<li class="d180-md-li"><code class="d180-md-inline-code">chunkOverlap = 120</code></li>
+<li class="d180-md-li"><code class="d180-md-inline-code">topK = 5</code></li>
+<li class="d180-md-li"><code class="d180-md-inline-code">temperature = 0.2</code></li>
+</ul>
+<h3 id="security-baseline" class="d180-md-h3">Security baseline</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Local-only storage by default</li>
+<li class="d180-md-li">No external doc upload by default</li>
+<li class="d180-md-li">No secret values written to client logs</li>
+</ul>
+<hr class="d180-md-hr" />
+<h2 id="evaluation-checklist-acceptance-criteria" class="d180-md-h2"><strong>Evaluation Checklist (Acceptance Criteria)</strong></h2>
+<p class="d180-md-p">Week-2 is complete only if all pass:</p>
+<ol class="d180-md-ol">
+<li class="d180-md-li">Upload markdown and PDF files successfully.</li>
+<li class="d180-md-li">Ingest API reports counts (<code class="d180-md-inline-code">documentsIndexed</code>, <code class="d180-md-inline-code">chunksIndexed</code>).</li>
+<li class="d180-md-li">Chat response uses retrieved context (not generic answer).</li>
+<li class="d180-md-li">Every answer includes at least one citation when retrieval matches exist.</li>
+<li class="d180-md-li">"No documents ingested" case handled gracefully.</li>
+<li class="d180-md-li">"No relevant chunks" case returns warning and safe fallback behavior.</li>
+<li class="d180-md-li">Foundry Local runtime down/not loaded case shows actionable error.</li>
+<li class="d180-md-li">End-to-end median response time is acceptable for local dev (documented by logs).</li>
+</ol>
+<hr class="d180-md-hr" />
+<h2 id="implementation-sequence-week-2-build-order" class="d180-md-h2"><strong>Implementation Sequence (Week-2 Build Order)</strong></h2>
+<ol class="d180-md-ol">
+<li class="d180-md-li">Build ingestion parser + chunker utility.</li>
+<li class="d180-md-li">Integrate Foundry Local embeddings.</li>
+<li class="d180-md-li">Upsert chunks to Chroma with metadata schema.</li>
+<li class="d180-md-li">Build retrieval pipeline and query embedding.</li>
+<li class="d180-md-li">Build answer generation with citation-aware prompt template.</li>
+<li class="d180-md-li">Add UI for upload + ask + citation rendering.</li>
+<li class="d180-md-li">Add edge-case handling and acceptance tests.</li>
+</ol>
+<hr class="d180-md-hr" />
+<h2 id="reference-links" class="d180-md-h2"><strong>Reference Links</strong></h2>
+<h3 id="local-rag-fundamentals" class="d180-md-h3">Local RAG fundamentals</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">RAG overview: <a href="https://www.pinecone.io/learn/retrieval-augmented-generation/" class="d180-md-link">https://www.pinecone.io/learn/retrieval-augmented-generation/</a></li>
+</ul>
+<h3 id="chroma" class="d180-md-h3">Chroma</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Chroma docs: <a href="https://docs.trychroma.com/" class="d180-md-link">https://docs.trychroma.com/</a></li>
+</ul>
+<h3 id="lm-studio" class="d180-md-h3">LM Studio</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">LM Studio docs: <a href="https://lmstudio.ai/docs" class="d180-md-link">https://lmstudio.ai/docs</a></li>
+</ul>
+<h3 id="microsoft-foundry-local" class="d180-md-h3">Microsoft Foundry Local</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">What is Foundry Local: <a href="https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/what-is-foundry-local" class="d180-md-link">https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/what-is-foundry-local</a></li>
+<li class="d180-md-li">Foundry Local get started: <a href="https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started" class="d180-md-link">https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started</a></li>
+<li class="d180-md-li">Foundry Local SDK reference: <a href="https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-sdk" class="d180-md-link">https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-sdk</a></li>
+</ul>
+<hr class="d180-md-hr" />
+<h2 id="week-2-outcome-target" class="d180-md-h2"><strong>Week-2 Outcome Target</strong></h2>
+<p class="d180-md-p">By the end of Week 2, you should have a fully local RAG prototype that can:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">ingest personal docs,</li>
+<li class="d180-md-li">retrieve grounded context,</li>
+<li class="d180-md-li">answer with citations,</li>
+<li class="d180-md-li">and run on Microsoft Foundry Local as the selected runtime.</li>
+</ul>
+<p class="d180-md-p">This sets up Week 3 to focus on structured outputs and validation pipelines on top of reliable retrieval-grounded generation.</p>
+</div></article><div class="mt-8 mb-6"><a href="https://github.com/subraatakumar/subraatakumar.com/edit/main/content/24weeks/week-2.md" target="_blank" rel="noopener noreferrer" class="d180-edit-link">Suggest a change to the content of the material</a></div><div class="d180-bottom-nav"><a class="d180-nav-link" href="/24weeks/week-1/"><div><strong>Previous</strong><span style="font-size:14px;font-weight:700;text-transform:capitalize">week 1</span></div></a><div></div></div></div></main><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":"https://subraatakumar.com/24weeks/week-2","headline":"Week 2: Local RAG Architecture (LM Studio vs Microsoft Foundry Local).","datePublished":"2026-03-16","description":"Decision-complete architecture for Week 2 Local RAG, covering both LM Studio and Microsoft Foundry Local designs, with Microsoft Foundry Local selected as the implementation path.","author":{"@type":"Person","name":"Subrata Kumar Das"}}</script></div><!--$--><!--/$--><footer class="d180-footer"><div class="d180-footer-inner"><p class="d180-footer-copy">Subrata Kumar Das • 180 Days Mentoring Journey</p><a class="d180-footer-home" href="/">Main Home</a></div></footer></div></div></main><footer class="sk-footer">© <!-- -->2026<!-- --> Subrata Kumar Das. All rights reserved. ·<!-- --> <a href="/for-ai/">For AI/Crawlers</a></footer><script src="/_next/static/chunks/5a08c9e3a78c4f9b.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\na:I[68027,[],\"default\"]\n:HL[\"/_next/static/chunks/a99ebf15a758c58a.css\",\"style\"]\n:HL[\"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700\u0026family=Caveat+Brush\u0026display=swap\",\"style\"]\n2:T19f5,"])</script><script>self.__next_f.push([1,"\n          * { box-sizing: border-box; margin: 0; padding: 0; }\n\n          body {\n            background: #fafaf7;\n            font-family: 'Caveat', cursive;\n            color: #1a1a2e;\n          }\n\n          /* ── Nav ── */\n          .sk-header {\n            background: #fff;\n            border-bottom: 2.5px solid #1a1a2e;\n            position: sticky;\n            top: 0;\n            z-index: 100;\n          }\n          .sk-header-inner {\n            max-width: 900px;\n            margin: 0 auto;\n            padding: 16px 24px;\n            display: flex;\n            align-items: center;\n            justify-content: space-between;\n          }\n          .sk-logo {\n            font-family: 'Caveat Brush', cursive;\n            font-size: 1.55rem;\n            color: #1a1a2e;\n            text-decoration: none;\n            letter-spacing: 0.01em;\n          }\n          .sk-nav-links {\n            display: flex;\n            gap: 32px;\n            list-style: none;\n          }\n          .sk-nav-links a {\n            font-family: 'Caveat', cursive;\n            font-size: 1.15rem;\n            font-weight: 600;\n            color: #1a1a2e;\n            text-decoration: none;\n            padding-bottom: 2px;\n          }\n          .sk-nav-links a:hover {\n            text-decoration: underline wavy #2563eb 2px;\n            text-underline-offset: 4px;\n          }\n          .sk-nav-mobile {\n            display: none;\n            max-width: 900px;\n            margin: 0 auto;\n            padding: 0 24px 14px;\n          }\n          .sk-nav-mobile ul {\n            display: flex;\n            gap: 20px;\n            list-style: none;\n          }\n          .sk-nav-mobile a {\n            font-size: 1.1rem;\n            font-weight: 600;\n            color: #1a1a2e;\n            text-decoration: none;\n          }\n\n          /* ── Footer ── */\n          .sk-footer {\n            border-top: 2.5px solid #1a1a2e;\n            background: #fff;\n            padding: 24px;\n            text-align: center;\n            font-size: 1rem;\n            color: #666;\n          }\n\n          /* ── Shared section ── */\n          .sk-page {\n            max-width: 900px;\n            margin: 0 auto;\n            padding: 60px 24px 80px;\n          }\n          .sk-page-heading {\n            font-family: 'Caveat Brush', cursive;\n            font-size: 2.8rem;\n            margin-bottom: 8px;\n            line-height: 1.1;\n          }\n          .sk-section-heading {\n            font-family: 'Caveat Brush', cursive;\n            font-size: 1.9rem;\n            margin-bottom: 16px;\n            display: flex;\n            align-items: center;\n            gap: 12px;\n          }\n          .sk-section-heading::after {\n            content: '';\n            flex: 1;\n            border-top: 2px dashed #9ca3af;\n          }\n\n          /* ── Squiggle divider ── */\n          .sk-squiggle {\n            width: 100%;\n            height: 8px;\n            background: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 4 Q5 0 10 4 Q15 8 20 4 Q25 0 30 4 Q35 8 40 4' stroke='%239ca3af' stroke-width='1.5' fill='none'/%3E%3C/svg%3E\") repeat-x center;\n            opacity: 0.55;\n            margin: 36px 0;\n          }\n\n          /* ── Sketch button ── */\n          .sk-btn {\n            display: inline-block;\n            padding: 10px 26px;\n            background: #2563eb;\n            color: #fff;\n            font-family: 'Caveat', cursive;\n            font-size: 1.15rem;\n            font-weight: 700;\n            border: 2.5px solid #1a1a2e;\n            border-radius: 2px;\n            cursor: pointer;\n            text-decoration: none;\n            box-shadow: 3px 3px 0 #1a1a2e;\n            transition: transform 0.1s, box-shadow 0.1s;\n          }\n          .sk-btn:hover {\n            transform: translate(-2px, -2px);\n            box-shadow: 5px 5px 0 #1a1a2e;\n          }\n          .sk-btn-ghost {\n            background: transparent;\n            color: #1a1a2e;\n            box-shadow: 3px 3px 0 #9ca3af;\n          }\n          .sk-btn-ghost:hover {\n            box-shadow: 5px 5px 0 #9ca3af;\n          }\n\n          /* ── Tag chip ── */\n          .sk-tag {\n            display: inline-block;\n            padding: 3px 13px;\n            border: 2px solid #1a1a2e;\n            border-radius: 2px;\n            font-size: 1rem;\n            font-weight: 600;\n            background: #fff;\n            margin: 3px;\n          }\n          .sk-tag.active {\n            background: #2563eb;\n            color: #fff;\n          }\n\n          /* ── Card ── */\n          .sk-card {\n            background: #fff;\n            border: 2.5px solid #1a1a2e;\n            border-radius: 2px;\n            box-shadow: 5px 5px 0 #1a1a2e;\n            padding: 24px;\n            transition: transform 0.15s, box-shadow 0.15s;\n          }\n          .sk-card:hover {\n            transform: translate(-3px, -3px);\n            box-shadow: 8px 8px 0 #1a1a2e;\n          }\n\n          /* ── Stat card ── */\n          .sk-stat {\n            flex: 1;\n            min-width: 130px;\n            text-align: center;\n            background: #fff;\n            border: 2.5px solid #1a1a2e;\n            border-radius: 2px;\n            box-shadow: 4px 4px 0 #1a1a2e;\n            padding: 20px 12px;\n          }\n          .sk-stat .num {\n            font-family: 'Caveat Brush', cursive;\n            font-size: 2.8rem;\n            color: #2563eb;\n            line-height: 1;\n          }\n          .sk-stat .lbl {\n            font-size: 1rem;\n            color: #555;\n            margin-top: 4px;\n          }\n\n          /* ── Image placeholder ── */\n          .sk-img {\n            width: 100%;\n            height: 160px;\n            border: 2.5px solid #1a1a2e;\n            border-radius: 2px;\n            background: #f3f4f6;\n            position: relative;\n            overflow: hidden;\n            margin-bottom: 16px;\n          }\n          .sk-img::before {\n            content: '';\n            position: absolute;\n            inset: 0;\n            background:\n              linear-gradient(to bottom right, transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px)),\n              linear-gradient(to bottom left,  transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px));\n          }\n\n          @media (max-width: 640px) {\n            .sk-nav-links { display: none; }\n            .sk-nav-mobile { display: block; }\n            .sk-page-heading { font-size: 2.2rem; }\n          }\n        "])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"zqXMrKuuiKfQv6KyB6wVG\",\"c\":[\"\",\"24weeks\",\"week-2\",\"\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"24weeks\",{\"children\":[[\"slug\",\"week-2\",\"d\"],{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",true],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/a99ebf15a758c58a.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/7c92e96509cd355e.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[[\"$\",\"head\",null,{\"children\":[\"$\",\"link\",null,{\"href\":\"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700\u0026family=Caveat+Brush\u0026display=swap\",\"rel\":\"stylesheet\"}]}],[\"$\",\"body\",null,{\"style\":{\"background\":\"#fafaf7\",\"margin\":0,\"fontFamily\":\"'Caveat', cursive\",\"color\":\"#1a1a2e\"},\"children\":[[\"$\",\"script\",null,{\"type\":\"application/ld+json\",\"dangerouslySetInnerHTML\":{\"__html\":\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Subrata Kumar Das\\\",\\\"url\\\":\\\"https://subraatakumar.com\\\",\\\"jobTitle\\\":\\\"Tech Lead\\\",\\\"sameAs\\\":[\\\"https://github.com/subraatakumar\\\",\\\"https://linkedin.com/in/subraatakumar\\\"]}\"}}],[\"$\",\"script\",null,{\"type\":\"application/ld+json\",\"dangerouslySetInnerHTML\":{\"__html\":\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"CreativeWorkSeries\\\",\\\"name\\\":\\\"180 Days Mentoring Journey\\\",\\\"description\\\":\\\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\\\",\\\"url\\\":\\\"https://subraatakumar.com/180days\\\",\\\"startDate\\\":\\\"2026-02-19\\\",\\\"publisher\\\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"Subrata Kumar Das\\\",\\\"url\\\":\\\"https://subraatakumar.com\\\"}}\"}}],[\"$\",\"style\",null,{\"children\":\"$2\"}],\"$L3\",\"$L4\",\"$L5\"]}]]}]]}],{\"children\":[\"$L6\",{\"children\":[\"$L7\",{\"children\":[\"$L8\",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],\"$L9\",false]],\"m\":\"$undefined\",\"G\":[\"$a\",[]],\"S\":true}\n"])</script><script>self.__next_f.push([1,"b:I[22016,[\"/_next/static/chunks/7c92e96509cd355e.js\",\"/_next/static/chunks/ed0ac4fd205f8cfa.js\"],\"\"]\nc:I[39756,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"default\"]\nd:I[37457,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"default\"]\n11:I[97367,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"OutletBoundary\"]\n12:\"$Sreact.suspense\"\n14:I[97367,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"ViewportBoundary\"]\n16:I[97367,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"MetadataBoundary\"]\n3:[\"$\",\"header\",null,{\"className\":\"sk-header\",\"children\":[[\"$\",\"div\",null,{\"className\":\"sk-header-inner\",\"children\":[[\"$\",\"$Lb\",null,{\"href\":\"/\",\"className\":\"sk-logo\",\"children\":\"SKD_\"}],[\"$\",\"nav\",null,{\"aria-label\":\"Primary\",\"children\":[\"$\",\"ul\",null,{\"className\":\"sk-nav-links\",\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/about\",\"children\":\"About\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/products\",\"children\":\"Products\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/contact\",\"children\":\"Contact\"}]}]]}]}]]}],[\"$\",\"div\",null,{\"className\":\"sk-nav-mobile\",\"children\":[\"$\",\"nav\",null,{\"aria-label\":\"Mobile\",\"children\":[\"$\",\"ul\",null,{\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/about\",\"children\":\"About\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/products\",\"children\":\"Products\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/contact\",\"children\":\"Contact\"}]}]]}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"4:[\"$\",\"main\",null,{\"style\":{\"width\":\"100%\"},\"children\":[\"$\",\"$Lc\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Ld\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]\n"])</script><script>self.__next_f.push([1,"5:[\"$\",\"footer\",null,{\"className\":\"sk-footer\",\"children\":[\"© \",2026,\" Subrata Kumar Das. All rights reserved. ·\",\" \",[\"$\",\"$Lb\",null,{\"href\":\"/for-ai\",\"children\":\"For AI/Crawlers\"}]]}]\ne:T2680,"])</script><script>self.__next_f.push([1,"\n        /* ── Reset sketchy globals for this subtree ── */\n        body:has(#days180-root) .sk-header,\n        body:has(#days180-root) .sk-footer {\n          display: none !important;\n        }\n\n        #days180-root,\n        #days180-root * {\n          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;\n          box-sizing: border-box;\n        }\n\n        /* ── 180 Days design tokens ── */\n        #days180-root {\n          --amber: #16d0ec;\n          --amber-light: #cffafe;\n          --slate-950: #020617;\n          --slate-900: #0f172a;\n          --slate-800: #1e293b;\n          --slate-700: #334155;\n          --slate-500: #64748b;\n          --slate-400: #94a3b8;\n          --slate-300: #cbd5e1;\n          --slate-200: #e2e8f0;\n          --slate-100: #f1f5f9;\n          --slate-50:  #f8fafc;\n          --white: #ffffff;\n\n          min-height: 100vh;\n          background: var(--white);\n          color: var(--slate-900);\n        }\n\n        /* ── Header ── */\n        .d180-header {\n          position: sticky;\n          top: 0;\n          z-index: 100;\n          background: rgba(255,255,255,0.92);\n          backdrop-filter: blur(16px);\n          border-bottom: 1px solid var(--slate-200);\n        }\n        .d180-header-inner {\n          max-width: 1100px;\n          margin: 0 auto;\n          padding: 0 32px;\n          height: 64px;\n          display: flex;\n          align-items: center;\n          justify-content: space-between;\n        }\n        .d180-logo-badge {\n          width: 32px;\n          height: 32px;\n          background: var(--amber);\n          border-radius: 8px;\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          font-weight: 900;\n          font-size: 13px;\n          color: var(--slate-900);\n          box-shadow: 0 4px 12px rgba(22, 208, 236, 0.25);\n        }\n        .d180-logo-label {\n          font-size: 11px;\n          font-weight: 900;\n          text-transform: uppercase;\n          letter-spacing: 0.18em;\n          color: var(--slate-500);\n        }\n        .d180-back-btn {\n          font-size: 11px;\n          font-weight: 900;\n          text-transform: uppercase;\n          letter-spacing: 0.05em;\n          padding: 8px 16px;\n          background: var(--slate-100);\n          border-radius: 8px;\n          color: var(--slate-900);\n          text-decoration: none;\n          transition: background 0.15s;\n        }\n        .d180-back-btn:hover { background: var(--slate-200); }\n\n        /* ── Hero ── */\n        .d180-hero {\n          border-bottom: 1px solid var(--slate-200);\n          background: linear-gradient(to bottom, var(--slate-50), var(--white));\n        }\n        .d180-hero-inner {\n          max-width: 1100px;\n          margin: 0 auto;\n          padding: 64px 32px;\n        }\n        .d180-hero h1 {\n          font-size: clamp(2.8rem, 6vw, 4.5rem);\n          font-weight: 900;\n          letter-spacing: -0.03em;\n          line-height: 1.0;\n          color: var(--slate-950);\n          margin: 0 0 12px;\n        }\n        .d180-hero h1 span { color: var(--amber); }\n        .d180-meta {\n          display: flex;\n          align-items: center;\n          gap: 8px;\n          margin-bottom: 20px;\n        }\n        .d180-meta-label {\n          font-size: 11px;\n          font-weight: 900;\n          text-transform: uppercase;\n          letter-spacing: 0.2em;\n          color: var(--slate-400);\n        }\n        .d180-meta-dot {\n          width: 4px;\n          height: 4px;\n          border-radius: 50%;\n          background: var(--slate-300);\n          display: inline-block;\n        }\n        .d180-meta-series {\n          font-size: 11px;\n          font-weight: 900;\n          text-transform: uppercase;\n          letter-spacing: 0.2em;\n          color: var(--amber);\n        }\n        .d180-hero p {\n          font-size: 1.15rem;\n          color: var(--slate-500);\n          line-height: 1.7;\n          max-width: 500px;\n          margin: 0;\n        }\n\n        /* ── Progress bar ── */\n        .d180-progress-wrap {\n          margin-top: 40px;\n          max-width: 320px;\n        }\n        .d180-progress-labels {\n          display: flex;\n          justify-content: space-between;\n          margin-bottom: 8px;\n        }\n        .d180-progress-labels span {\n          font-size: 11px;\n          font-weight: 900;\n          text-transform: uppercase;\n          letter-spacing: 0.15em;\n          color: var(--slate-400);\n        }\n        .d180-progress-labels span:last-child { color: var(--amber); }\n        .d180-progress-track {\n          width: 100%;\n          height: 8px;\n          background: var(--slate-200);\n          border-radius: 999px;\n          overflow: hidden;\n        }\n        .d180-progress-fill {\n          height: 100%;\n          background: var(--amber);\n          border-radius: 999px;\n          transition: width 0.7s ease;\n        }\n        .d180-progress-pct {\n          margin-top: 6px;\n          font-size: 11px;\n          color: var(--slate-400);\n          font-weight: 500;\n        }\n\n        /* ── Main content ── */\n        .d180-main {\n          max-width: 1100px;\n          margin: 0 auto;\n          padding: 48px 32px 80px;\n        }\n\n        /* ── Stats row ── */\n        .d180-stats {\n          display: grid;\n          grid-template-columns: repeat(3, 1fr);\n          gap: 16px;\n          margin-bottom: 48px;\n        }\n        .d180-stat-card {\n          background: var(--slate-50);\n          border: 1px solid var(--slate-200);\n          border-radius: 16px;\n          padding: 20px;\n        }\n        .d180-stat-num {\n          font-size: clamp(1.6rem, 3vw, 2rem);\n          font-weight: 900;\n          color: var(--slate-950);\n          letter-spacing: -0.02em;\n        }\n        .d180-stat-lbl {\n          font-size: 11px;\n          font-weight: 700;\n          text-transform: uppercase;\n          letter-spacing: 0.15em;\n          color: var(--slate-400);\n          margin-top: 4px;\n        }\n\n        /* ── Entry list ── */\n        .d180-entry-list {\n          display: flex;\n          flex-direction: column;\n          gap: 12px;\n        }\n        .d180-entry {\n          display: flex;\n          align-items: flex-start;\n          gap: 20px;\n          padding: 20px;\n          border-radius: 16px;\n          border: 1px solid var(--slate-200);\n          background: var(--white);\n          text-decoration: none;\n          color: inherit;\n          transition: border-color 0.2s, background 0.2s, transform 0.15s;\n        }\n        .d180-entry:hover {\n          border-color: var(--amber);\n          background: var(--slate-50);\n          transform: translateX(3px);\n        }\n        .d180-day-badge {\n          flex-shrink: 0;\n          width: 48px;\n          height: 48px;\n          border-radius: 12px;\n          background: var(--slate-100);\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          font-size: 11px;\n          font-weight: 900;\n          text-transform: uppercase;\n          color: var(--slate-500);\n          transition: background 0.2s, color 0.2s;\n        }\n        .d180-entry:hover .d180-day-badge {\n          background: var(--amber);\n          color: var(--slate-900);\n        }\n        .d180-entry-body { flex: 1; min-width: 0; }\n        .d180-entry-title {\n          font-size: 1rem;\n          font-weight: 700;\n          color: var(--slate-900);\n          white-space: nowrap;\n          overflow: hidden;\n          text-overflow: ellipsis;\n          transition: color 0.2s;\n        }\n        .d180-entry:hover .d180-entry-title { color: var(--amber); }\n        .d180-entry-desc {\n          font-size: 0.875rem;\n          color: var(--slate-500);\n          margin-top: 4px;\n          line-height: 1.5;\n          overflow: hidden;\n          display: -webkit-box;\n          -webkit-line-clamp: 1;\n          -webkit-box-orient: vertical;\n        }\n        .d180-entry-meta {\n          flex-shrink: 0;\n          display: flex;\n          flex-direction: column;\n          align-items: flex-end;\n          gap: 8px;\n        }\n        .d180-entry-date {\n          font-size: 11px;\n          font-weight: 500;\n          color: var(--slate-400);\n        }\n        .d180-entry-arrow {\n          font-size: 14px;\n          color: var(--slate-300);\n          transition: color 0.2s;\n        }\n        .d180-entry:hover .d180-entry-arrow { color: var(--amber); }\n\n        /* ── Footer ── */\n        .d180-footer {\n          border-top: 1px solid var(--slate-200);\n          background: var(--white);\n        }\n        .d180-footer-inner {\n          max-width: 1100px;\n          margin: 0 auto;\n          padding: 20px 32px;\n          display: flex;\n          align-items: center;\n          justify-content: space-between;\n          gap: 12px;\n          flex-wrap: wrap;\n        }\n        .d180-footer-copy {\n          font-size: 11px;\n          font-weight: 800;\n          text-transform: uppercase;\n          letter-spacing: 0.12em;\n          color: var(--slate-400);\n        }\n        .d180-footer-home {\n          font-size: 11px;\n          font-weight: 900;\n          text-transform: uppercase;\n          letter-spacing: 0.08em;\n          padding: 8px 12px;\n          border-radius: 8px;\n          background: var(--slate-100);\n          color: var(--slate-900);\n          text-decoration: none;\n        }\n        .d180-footer-home:hover {\n          background: var(--amber-light);\n          color: #155e75;\n        }\n\n        @media (max-width: 640px) {\n          .d180-header-inner { padding: 0 16px; }\n          .d180-hero-inner { padding: 40px 16px; }\n          .d180-main { padding: 32px 16px 60px; }\n          .d180-footer-inner { padding: 16px; }\n          .d180-stats { grid-template-columns: 1fr; }\n        }\n      "])</script><script>self.__next_f.push([1,"6:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"div\",null,{\"style\":{\"all\":\"revert\"},\"children\":[[\"$\",\"style\",null,{\"children\":\"$e\"}],\"$Lf\"]}]]}]\n7:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$Lc\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Ld\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n8:[\"$\",\"$1\",\"c\",{\"children\":[\"$L10\",[[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/ed0ac4fd205f8cfa.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"$L11\",null,{\"children\":[\"$\",\"$12\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@13\"}]}]]}]\n9:[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$L14\",null,{\"children\":\"$L15\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$L16\",null,{\"children\":[\"$\",\"$12\",null,{\"name\":\"Next.Metadata\",\"children\":\"$L17\"}]}]}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}]\n"])</script><script>self.__next_f.push([1,"f:[\"$\",\"div\",null,{\"id\":\"days180-root\",\"children\":[[\"$\",\"$Lc\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Ld\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}],[\"$\",\"footer\",null,{\"className\":\"d180-footer\",\"children\":[\"$\",\"div\",null,{\"className\":\"d180-footer-inner\",\"children\":[[\"$\",\"p\",null,{\"className\":\"d180-footer-copy\",\"children\":\"Subrata Kumar Das • 180 Days Mentoring Journey\"}],[\"$\",\"$Lb\",null,{\"href\":\"/\",\"className\":\"d180-footer-home\",\"children\":\"Main Home\"}]]}]}]]}]\n"])</script><script>self.__next_f.push([1,"18:T227c,"])</script><script>self.__next_f.push([1,"\n        #days180-root .d180-article-page {\n          min-height: 100vh;\n          background: #fff;\n          color: #0f172a;\n        }\n        #days180-root .d180-article-header {\n          position: sticky;\n          top: 0;\n          z-index: 80;\n          background: rgba(255,255,255,0.92);\n          backdrop-filter: blur(16px);\n          border-bottom: 1px solid #e2e8f0;\n        }\n        #days180-root .d180-article-header-inner {\n          width: 100%;\n          max-width: 1100px;\n          margin: 0 auto;\n          padding: 0 32px;\n          height: 64px;\n          display: flex;\n          align-items: center;\n          justify-content: space-between;\n          gap: 16px;\n        }\n        #days180-root .d180-crumb {\n          font-size: 11px;\n          font-weight: 900;\n          text-transform: uppercase;\n          letter-spacing: .08em;\n          color: #64748b;\n          text-decoration: none;\n          background: #f1f5f9;\n          border-radius: 10px;\n          padding: 10px 14px;\n          display: inline-flex;\n          align-items: center;\n          gap: 8px;\n        }\n        #days180-root .d180-crumb-series {\n          transition: color .15s ease;\n        }\n        #days180-root .d180-crumb:hover .d180-crumb-series {\n          color: var(--amber);\n        }\n        #days180-root .d180-crumb strong { color: #0f172a; }\n        #days180-root .d180-pill {\n          display: inline-flex;\n          align-items: center;\n          gap: 10px;\n          padding: 8px 12px;\n          background: #f8fafc;\n          border: 1px solid #e2e8f0;\n          border-radius: 10px;\n        }\n        #days180-root .d180-pill-track {\n          width: 90px;\n          height: 8px;\n          background: #cbd5e1;\n          border-radius: 999px;\n          overflow: hidden;\n        }\n        #days180-root .d180-pill-fill {\n          height: 100%;\n          background: var(--amber);\n          border-radius: 999px;\n        }\n        #days180-root .d180-pill b {\n          color: var(--amber);\n          font-size: 11px;\n          letter-spacing: .02em;\n        }\n        #days180-root .d180-content-wrap {\n          max-width: 1100px;\n          margin: 0 auto;\n          padding: 0 32px;\n        }\n        #days180-root .d180-meta-line {\n          margin-top: 8px;\n          display: flex;\n          flex-wrap: wrap;\n          align-items: center;\n          gap: 8px;\n          color: #64748b;\n          font-size: 14px;\n          font-weight: 600;\n        }\n        #days180-root .d180-meta-line .dot {\n          width: 4px;\n          height: 4px;\n          border-radius: 999px;\n          background: #94a3b8;\n          display: inline-block;\n        }\n        #days180-root .d180-post-content {\n          max-width: 780px;\n        }\n        #days180-root .d180-post-content img {\n          max-width: 100%;\n          height: auto;\n        }\n        #days180-root .d180-post-content pre code {\n          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace !important;\n        }\n        #days180-root .d180-md-p {\n          font-size: 17px;\n          line-height: 1.85;\n          color: #334155;\n          margin: 20px 0;\n        }\n        #days180-root .d180-md-h1 {\n          font-size: clamp(2rem, 4vw, 2.4rem);\n          font-weight: 900;\n          margin: 64px 0 24px;\n          padding-bottom: 12px;\n          border-bottom: 1px solid #e2e8f0;\n          line-height: 1.2;\n          color: #020617;\n        }\n        #days180-root .d180-md-h2 {\n          font-size: clamp(1.6rem, 3vw, 1.9rem);\n          font-weight: 900;\n          margin: 56px 0 18px;\n          line-height: 1.25;\n          color: #0f172a;\n        }\n        #days180-root .d180-md-h3 {\n          font-size: clamp(1.3rem, 2.4vw, 1.5rem);\n          font-weight: 800;\n          margin: 40px 0 14px;\n          line-height: 1.3;\n          color: #0f172a;\n        }\n        #days180-root .d180-md-h4,\n        #days180-root .d180-md-h5,\n        #days180-root .d180-md-h6 {\n          font-size: 1.1rem;\n          font-weight: 700;\n          margin: 28px 0 10px;\n          color: #0f172a;\n        }\n        #days180-root .d180-md-ul {\n          list-style: disc;\n          padding-left: 24px;\n          margin: 18px 0;\n        }\n        #days180-root .d180-md-ol {\n          list-style: decimal;\n          padding-left: 28px;\n          margin: 18px 0;\n        }\n        #days180-root .d180-md-li {\n          margin: 8px 0;\n          line-height: 1.75;\n          color: #334155;\n        }\n        #days180-root .d180-md-blockquote {\n          margin: 26px 0;\n          padding: 14px 16px;\n          border-left: 2px solid #e2e8f0;\n          border-radius: 8px;\n          background: #f8fafc;\n          font-style: italic;\n          color: #334155;\n        }\n        #days180-root .d180-md-inline-code {\n          background: #f1f5f9;\n          color: #c2410c;\n          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace;\n          font-size: 0.9em;\n          padding: 3px 6px;\n          border-radius: 6px;\n        }\n        #days180-root .d180-md-hr {\n          border: 0;\n          height: 1px;\n          background: #e2e8f0;\n          margin: 48px 0;\n        }\n        #days180-root .d180-md-link {\n          color: var(--amber);\n          text-decoration: none;\n          font-weight: 600;\n        }\n        #days180-root .d180-md-link:hover {\n          text-decoration: underline;\n        }\n        #days180-root .d180-md-table-wrap {\n          overflow: auto;\n          border: 1px solid #e2e8f0;\n          border-radius: 8px;\n          margin: 24px 0;\n        }\n        #days180-root .d180-md-table {\n          min-width: 100%;\n          border-collapse: collapse;\n        }\n        #days180-root .d180-md-th {\n          text-align: left;\n          font-size: 13px;\n          font-weight: 700;\n          color: #334155;\n          background: #f8fafc;\n          padding: 10px;\n          border-bottom: 1px solid #e2e8f0;\n        }\n        #days180-root .d180-md-td {\n          font-size: 14px;\n          color: #334155;\n          padding: 10px;\n          border-bottom: 1px solid #f1f5f9;\n        }\n        #days180-root .d180-code-lang {\n          font-size: 11px;\n          font-weight: 700;\n          text-transform: uppercase;\n          letter-spacing: .06em;\n          color: #475569;\n          background: #f1f5f9;\n          padding: 4px 10px;\n          border-radius: 6px;\n        }\n        #days180-root .d180-copy-btn {\n          font-size: 11px;\n          font-weight: 700;\n          text-transform: uppercase;\n          letter-spacing: .06em;\n          color: #0f172a;\n          background: var(--amber);\n          border: 0;\n          border-radius: 6px;\n          padding: 4px 10px;\n          cursor: pointer;\n        }\n        #days180-root .d180-code-pre {\n          overflow: auto;\n          border-radius: 16px;\n          background: #0f172a;\n          color: #f8fafc;\n          padding: 18px 16px;\n        }\n        #days180-root .d180-bottom-nav {\n          margin-top: 64px;\n          padding: 24px 0 60px;\n          border-top: 1px solid #e2e8f0;\n          display: flex;\n          gap: 12px;\n          flex-wrap: wrap;\n          justify-content: space-between;\n        }\n        #days180-root .d180-nav-link {\n          border-radius: 12px;\n          border: 1px solid #e2e8f0;\n          background: #f8fafc;\n          color: #0f172a;\n          text-decoration: none;\n          padding: 12px 16px;\n          min-width: 180px;\n        }\n        #days180-root .d180-nav-link strong {\n          font-size: 11px;\n          text-transform: uppercase;\n          letter-spacing: .08em;\n          color: #64748b;\n          display: block;\n          margin-bottom: 4px;\n        }\n        #days180-root .d180-nav-link.next {\n          text-align: right;\n          background: #0f172a;\n          border-color: #0f172a;\n          color: #fff;\n        }\n        #days180-root .d180-nav-link.next strong {\n          color: rgba(255,255,255,0.72);\n        }\n        #days180-root .d180-edit-link {\n          display: inline-block;\n          margin-top: 16px;\n          padding: 10px 14px;\n          border: 1px solid #e2e8f0;\n          border-radius: 10px;\n          background: #f8fafc;\n          color: #334155;\n          text-decoration: none;\n          font-size: 14px;\n          font-weight: 600;\n        }\n        #days180-root .d180-edit-link:hover {\n          border-color: var(--amber);\n        }\n        @media (max-width: 640px) {\n          #days180-root .d180-article-header-inner,\n          #days180-root .d180-content-wrap {\n            padding-left: 16px;\n            padding-right: 16px;\n          }\n          #days180-root .d180-pill {\n            display: none;\n          }\n        }\n      "])</script><script>self.__next_f.push([1,"10:[\"$\",\"div\",null,{\"className\":\"d180-article-page\",\"children\":[[\"$\",\"style\",null,{\"children\":\"$18\"}],\"$L19\",\"$L1a\",\"$L1b\",\"$L1c\"]}]\n"])</script><script>self.__next_f.push([1,"19:[\"$\",\"header\",null,{\"className\":\"d180-article-header\",\"children\":[\"$\",\"div\",null,{\"className\":\"d180-article-header-inner\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex items-center gap-3 shrink-0\",\"children\":[[\"$\",\"$Lb\",null,{\"href\":\"/\",\"aria-label\":\"Go to main home page\",\"className\":\"w-8 h-8 rounded-lg flex items-center justify-center text-slate-900 shadow-lg\",\"style\":{\"background\":\"var(--amber)\",\"boxShadow\":\"0 8px 20px rgba(22, 208, 236, 0.22)\"},\"children\":[\"$\",\"span\",null,{\"className\":\"font-black text-sm\",\"children\":\"SK\"}]}],[\"$\",\"nav\",null,{\"className\":\"hidden md:flex items-center gap-3\",\"children\":[[\"$\",\"$Lb\",null,{\"href\":\"/24weeks\",\"className\":\"d180-crumb\",\"children\":[[\"$\",\"span\",null,{\"className\":\"d180-crumb-series\",\"children\":\"24 Weeks\"}],\" \",[\"$\",\"span\",null,{\"children\":\"/\"}],\" \",[\"$\",\"strong\",null,{\"children\":[\"Week \",\"week-2\"]}]]}],[\"$\",\"div\",null,{\"className\":\"d180-pill\",\"children\":[[\"$\",\"div\",null,{\"className\":\"d180-pill-track\",\"children\":[\"$\",\"div\",null,{\"className\":\"d180-pill-fill\",\"style\":{\"width\":\"NaN%\"}}]}],[\"$\",\"b\",null,{\"children\":[\"$NaN\",\"%\"]}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"flex items-center gap-4\",\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/24weeks\",\"className\":\"d180-crumb\",\"children\":\"← All Weeks\"}]}]]}]}]\n1a:[\"$\",\"div\",null,{\"className\":\"d180-hero\",\"children\":[\"$\",\"div\",null,{\"className\":\"d180-hero-inner d180-content-wrap\",\"style\":{\"paddingTop\":56,\"paddingBottom\":56},\"children\":[[\"$\",\"h1\",null,{\"style\":{\"maxWidth\":820},\"children\":\"Week 2: Local RAG Architecture (LM Studio vs Microsoft Foundry Local).\"}],[\"$\",\"p\",null,{\"style\":{\"marginTop\":14,\"maxWidth\":760},\"children\":\"Decision-complete architecture for Week 2 Local RAG, covering both LM Studio and Microsoft Foundry Local designs, with Microsoft Foundry Local selected as the implementation path.\"}],[\"$\",\"div\",null,{\"className\":\"d180-meta-line\",\"children\":[[\"$\",\"span\",null,{\"children\":\"2026-03-16\"}],[\"$\",\"span\",null,{\"className\":\"dot\"}],[\"$\",\"span\",null,{\"style\":{\"color\":\"var(--amber)\"},\"children\":\"Subrata Kumar Das\"}],[\"$\",\"span\",null,{\"className\":\"dot\"}],[\"$\",\"span\",null,{\"style\":{\"color\":\"#15803d\",\"fontSize\":11,\"fontWeight\":800,\"textTransform\":\"uppercase\",\"letterSpacing\":\".08em\"},\"children\":\"Complete\"}]]}],[\"$\",\"p\",null,{\"style\":{\"marginTop\":16,\"maxWidth\":500,\"fontSize\":13,\"lineHeight\":1.7,\"color\":\"var(--slate-700)\",\"borderLeft\":\"2px solid var(--amber)\",\"paddingLeft\":10,\"fontStyle\":\"italic\"},\"children\":\"\\\"Consistent small steps lead to massive long-term results. Keep pushing.\\\"\"}]]}]}]\n1d:T5355,"])</script><script>self.__next_f.push([1,"\u003ch2 id=\"week-2-mission-build-a-local-rag-engine-that-you-can-trust\" class=\"d180-md-h2\"\u003e\u003cstrong\u003eWeek 2 Mission: Build a Local RAG Engine That You Can Trust\u003c/strong\u003e\u003c/h2\u003e\n\u003cp class=\"d180-md-p\"\u003eWeek 1 proved we can compare model outputs.\u003c/p\u003e\n\u003cp class=\"d180-md-p\"\u003eWeek 2 is about \u003cstrong\u003egrounding\u003c/strong\u003e those outputs in your own documents.\u003c/p\u003e\n\u003cp class=\"d180-md-p\"\u003eGoal: Build a Local RAG system where answers come from your files (Markdown/PDF), with visible citations and deterministic architecture.\u003c/p\u003e\n\u003chr class=\"d180-md-hr\" /\u003e\n\u003ch2 id=\"what-this-plan-covers\" class=\"d180-md-h2\"\u003e\u003cstrong\u003eWhat This Plan Covers\u003c/strong\u003e\u003c/h2\u003e\n\u003cp class=\"d180-md-p\"\u003eThis architecture plan includes both:\u003c/p\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eOption A: LM Studio Local RAG Architecture\u003c/strong\u003e\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eOption B: Microsoft Foundry Local RAG Architecture\u003c/strong\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp class=\"d180-md-p\"\u003eAnd then locks implementation choice:\u003c/p\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eFinal build path for this project: Microsoft Foundry Local RAG\u003c/strong\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr class=\"d180-md-hr\" /\u003e\n\u003ch2 id=\"decision-summary-locked\" class=\"d180-md-h2\"\u003e\u003cstrong\u003eDecision Summary (Locked)\u003c/strong\u003e\u003c/h2\u003e\n\u003ch3 id=\"why-compare-both\" class=\"d180-md-h3\"\u003eWhy compare both?\u003c/h3\u003e\n\u003cp class=\"d180-md-p\"\u003eBoth are local-first inference approaches, but they differ in ecosystem and operational model.\u003c/p\u003e\n\u003ch3 id=\"final-decision-for-week-2-build\" class=\"d180-md-h3\"\u003eFinal decision for Week 2 build\u003c/h3\u003e\n\u003cp class=\"d180-md-p\"\u003eWe will implement with \u003cstrong\u003eMicrosoft Foundry Local\u003c/strong\u003e for this project, because:\u003c/p\u003e\n\u003col class=\"d180-md-ol\"\u003e\n\u003cli class=\"d180-md-li\"\u003eIt aligns with your current direction and tooling interest.\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eIt gives a clear local runtime contract (CLI/SDK/REST style).\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eIt keeps a clean path to Microsoft ecosystem integration later (if needed).\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp class=\"d180-md-p\"\u003eLM Studio architecture is still documented fully as a fallback/alternative.\u003c/p\u003e\n\u003chr class=\"d180-md-hr\" /\u003e\n\u003ch2 id=\"shared-week-2-architecture-applies-to-both-options\" class=\"d180-md-h2\"\u003e\u003cstrong\u003eShared Week-2 Architecture (Applies to Both Options)\u003c/strong\u003e\u003c/h2\u003e\n\u003cp class=\"d180-md-p\"\u003eRegardless of runtime, the RAG pipeline is the same:\u003c/p\u003e\n\u003col class=\"d180-md-ol\"\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eIngest files\u003c/strong\u003e (\u003ccode class=\"d180-md-inline-code\"\u003e.md\u003c/code\u003e, \u003ccode class=\"d180-md-inline-code\"\u003e.pdf\u003c/code\u003e)\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eExtract text\u003c/strong\u003e and normalize content\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eChunk text\u003c/strong\u003e into retrievable units\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eGenerate embeddings\u003c/strong\u003e for each chunk\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eStore vectors\u003c/strong\u003e in Chroma with metadata\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eRetrieve top-k chunks\u003c/strong\u003e for user query\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eGenerate answer\u003c/strong\u003e from retrieved context\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eReturn citations\u003c/strong\u003e mapped to chunk metadata\u003c/li\u003e\n\u003c/ol\u003e\n\u003chr class=\"d180-md-hr\" /\u003e\n\u003ch2 id=\"core-data-model-minimal-locked\" class=\"d180-md-h2\"\u003e\u003cstrong\u003eCore Data Model (Minimal, Locked)\u003c/strong\u003e\u003c/h2\u003e\n\u003cp class=\"d180-md-p\"\u003eEach chunk stored in vector DB must include:\u003c/p\u003e\n\n      \u003cdiv class=\"relative my-6 code-block\"\u003e\n        \u003cdiv class=\"absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto\"\u003e\n          \u003cspan class=\"d180-code-lang\"\u003eTS\u003c/span\u003e\n          \u003cbutton data-copy class=\"copy-btn d180-copy-btn\"\u003eCopy\u003c/button\u003e\n        \u003c/div\u003e\n        \u003cpre class=\"d180-code-pre line-numbers\"\u003e\u003ccode class=\"language-ts\"\u003etype ChunkRecord = {\n  id: string;            // e.g., source::page::chunk_index\n  source: string;        // filename or logical doc id\n  page: number | null;   // null for markdown/plain text\n  chunk_id: string;      // stable per document\n  text: string;          // chunk text\n  embedding: number[];   // vector\n  token_count: number;   // optional but recommended\n  created_at: string;    // ISO timestamp\n};\n\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \n\u003chr class=\"d180-md-hr\" /\u003e\n\u003ch2 id=\"api-interfaces-locked-for-week-2\" class=\"d180-md-h2\"\u003e\u003cstrong\u003eAPI Interfaces (Locked for Week 2)\u003c/strong\u003e\u003c/h2\u003e\n\u003ch3 id=\"post-apiingest\" class=\"d180-md-h3\"\u003e\u003ccode class=\"d180-md-inline-code\"\u003ePOST /api/ingest\u003c/code\u003e\u003c/h3\u003e\n\u003cp class=\"d180-md-p\"\u003ePurpose: ingest one or more local files and index them into Chroma.\u003c/p\u003e\n\u003cp class=\"d180-md-p\"\u003eRequest:\u003c/p\u003e\n\n      \u003cdiv class=\"relative my-6 code-block\"\u003e\n        \u003cdiv class=\"absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto\"\u003e\n          \u003cspan class=\"d180-code-lang\"\u003eTS\u003c/span\u003e\n          \u003cbutton data-copy class=\"copy-btn d180-copy-btn\"\u003eCopy\u003c/button\u003e\n        \u003c/div\u003e\n        \u003cpre class=\"d180-code-pre line-numbers\"\u003e\u003ccode class=\"language-ts\"\u003etype IngestRequest = {\n  files: Array\u0026#x3C;{\n    name: string;\n    mimeType: 'text/markdown' | 'application/pdf' | 'text/plain';\n    contentBase64: string;\n  }\u003e;\n  options?: {\n    chunkSize?: number;      // default: 800 chars\n    chunkOverlap?: number;   // default: 120 chars\n  };\n};\n\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \n\u003cp class=\"d180-md-p\"\u003eResponse:\u003c/p\u003e\n\n      \u003cdiv class=\"relative my-6 code-block\"\u003e\n        \u003cdiv class=\"absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto\"\u003e\n          \u003cspan class=\"d180-code-lang\"\u003eTS\u003c/span\u003e\n          \u003cbutton data-copy class=\"copy-btn d180-copy-btn\"\u003eCopy\u003c/button\u003e\n        \u003c/div\u003e\n        \u003cpre class=\"d180-code-pre line-numbers\"\u003e\u003ccode class=\"language-ts\"\u003etype IngestResponse = {\n  success: boolean;\n  documentsIndexed: number;\n  chunksIndexed: number;\n  skipped: Array\u0026#x3C;{ name: string; reason: string }\u003e;\n  errors: Array\u0026#x3C;{ name: string; message: string }\u003e;\n};\n\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \n\u003ch3 id=\"post-apichat\" class=\"d180-md-h3\"\u003e\u003ccode class=\"d180-md-inline-code\"\u003ePOST /api/chat\u003c/code\u003e\u003c/h3\u003e\n\u003cp class=\"d180-md-p\"\u003ePurpose: run retrieval-grounded Q\u0026#x26;A over indexed chunks.\u003c/p\u003e\n\u003cp class=\"d180-md-p\"\u003eRequest:\u003c/p\u003e\n\n      \u003cdiv class=\"relative my-6 code-block\"\u003e\n        \u003cdiv class=\"absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto\"\u003e\n          \u003cspan class=\"d180-code-lang\"\u003eTS\u003c/span\u003e\n          \u003cbutton data-copy class=\"copy-btn d180-copy-btn\"\u003eCopy\u003c/button\u003e\n        \u003c/div\u003e\n        \u003cpre class=\"d180-code-pre line-numbers\"\u003e\u003ccode class=\"language-ts\"\u003etype ChatRequest = {\n  query: string;\n  options?: {\n    topK?: number;              // default: 5\n    minScore?: number;          // default: 0.2\n    temperature?: number;       // default: 0.2\n    systemPrompt?: string;\n  };\n};\n\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \n\u003cp class=\"d180-md-p\"\u003eResponse:\u003c/p\u003e\n\n      \u003cdiv class=\"relative my-6 code-block\"\u003e\n        \u003cdiv class=\"absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto\"\u003e\n          \u003cspan class=\"d180-code-lang\"\u003eTS\u003c/span\u003e\n          \u003cbutton data-copy class=\"copy-btn d180-copy-btn\"\u003eCopy\u003c/button\u003e\n        \u003c/div\u003e\n        \u003cpre class=\"d180-code-pre line-numbers\"\u003e\u003ccode class=\"language-ts\"\u003etype ChatResponse = {\n  answer: string;\n  citations: Array\u0026#x3C;{\n    source: string;\n    page: number | null;\n    chunk_id: string;\n    snippet: string;\n    score: number;\n  }\u003e;\n  retrieval: {\n    topK: number;\n    matched: number;\n    latencyMs: number;\n  };\n  warnings?: string[];\n};\n\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \n\u003chr class=\"d180-md-hr\" /\u003e\n\u003ch2 id=\"chunking-strategy-locked\" class=\"d180-md-h2\"\u003e\u003cstrong\u003eChunking Strategy (Locked)\u003c/strong\u003e\u003c/h2\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eChunk size:\u003c/strong\u003e 800 characters\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eOverlap:\u003c/strong\u003e 120 characters\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eSplitter rule:\u003c/strong\u003e paragraph-aware first, fallback to hard-length split\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eNormalization:\u003c/strong\u003e collapse repeated spaces/newlines, preserve bullet and heading boundaries where possible\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp class=\"d180-md-p\"\u003eWhy this default:\u003c/p\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eKeeps chunks small enough for precise retrieval\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003ePreserves enough context continuity through overlap\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eWorks well for both markdown notes and extracted PDF text\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr class=\"d180-md-hr\" /\u003e\n\u003ch2 id=\"retrieval-strategy-locked\" class=\"d180-md-h2\"\u003e\u003cstrong\u003eRetrieval Strategy (Locked)\u003c/strong\u003e\u003c/h2\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eSimilarity search in Chroma with \u003ccode class=\"d180-md-inline-code\"\u003etopK = 5\u003c/code\u003e\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eApply optional score threshold \u003ccode class=\"d180-md-inline-code\"\u003eminScore = 0.2\u003c/code\u003e\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eIf fewer than 2 matches pass threshold, still return best 1 with a warning\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eInject retrieved chunks into prompt with explicit citation tags, e.g.:\u003c/li\u003e\n\u003c/ul\u003e\n\n      \u003cdiv class=\"relative my-6 code-block\"\u003e\n        \u003cdiv class=\"absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto\"\u003e\n          \u003cspan class=\"d180-code-lang\"\u003eTXT\u003c/span\u003e\n          \u003cbutton data-copy class=\"copy-btn d180-copy-btn\"\u003eCopy\u003c/button\u003e\n        \u003c/div\u003e\n        \u003cpre class=\"d180-code-pre line-numbers\"\u003e\u003ccode class=\"language-txt\"\u003e[CTX-1] source=architecture.md page=null chunk=architecture::12\n...\n[CTX-2] source=srs.pdf page=8 chunk=srs::8::3\n\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \n\u003cp class=\"d180-md-p\"\u003eGeneration must cite contexts by source and chunk.\u003c/p\u003e\n\u003chr class=\"d180-md-hr\" /\u003e\n\u003ch2 id=\"citation-format-locked\" class=\"d180-md-h2\"\u003e\u003cstrong\u003eCitation Format (Locked)\u003c/strong\u003e\u003c/h2\u003e\n\u003cp class=\"d180-md-p\"\u003eAnswer body will include numbered citations, and API returns structured citation objects.\u003c/p\u003e\n\u003cp class=\"d180-md-p\"\u003eExample render style:\u003c/p\u003e\n\n      \u003cdiv class=\"relative my-6 code-block\"\u003e\n        \u003cdiv class=\"absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto\"\u003e\n          \u003cspan class=\"d180-code-lang\"\u003eTXT\u003c/span\u003e\n          \u003cbutton data-copy class=\"copy-btn d180-copy-btn\"\u003eCopy\u003c/button\u003e\n        \u003c/div\u003e\n        \u003cpre class=\"d180-code-pre line-numbers\"\u003e\u003ccode class=\"language-txt\"\u003eThe retrieval layer should use score-threshold fallback and deterministic chunk IDs for observability [1][2].\n\n[1] architecture.md (chunk: architecture::12)\n[2] srs.pdf (page: 8, chunk: srs::8::3)\n\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \n\u003chr class=\"d180-md-hr\" /\u003e\n\u003ch2 id=\"failure-modes-and-handling-locked\" class=\"d180-md-h2\"\u003e\u003cstrong\u003eFailure Modes and Handling (Locked)\u003c/strong\u003e\u003c/h2\u003e\n\u003ch3 id=\"ingestion-failures\" class=\"d180-md-h3\"\u003eIngestion failures\u003c/h3\u003e\n\u003col class=\"d180-md-ol\"\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eMalformed PDF / unreadable file\u003c/strong\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eSkip file, return error entry in \u003ccode class=\"d180-md-inline-code\"\u003eerrors[]\u003c/code\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eUnsupported mime type\u003c/strong\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eSkip with explicit reason in \u003ccode class=\"d180-md-inline-code\"\u003eskipped[]\u003c/code\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eNo extractable text\u003c/strong\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eSkip and report \u003ccode class=\"d180-md-inline-code\"\u003eempty_text\u003c/code\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3 id=\"retrievalchat-failures\" class=\"d180-md-h3\"\u003eRetrieval/chat failures\u003c/h3\u003e\n\u003col class=\"d180-md-ol\"\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eVector DB empty\u003c/strong\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eReturn graceful message: \"No indexed documents found. Ingest files first.\"\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eNo relevant chunks\u003c/strong\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eReturn low-confidence answer + warning + empty citations\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eLocal model unavailable\u003c/strong\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eReturn actionable error: runtime not running/model not loaded\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eTimeout during generation\u003c/strong\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eReturn partial failure with retry suggestion\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003chr class=\"d180-md-hr\" /\u003e\n\u003ch2 id=\"option-a-lm-studio-local-rag-architecture\" class=\"d180-md-h2\"\u003e\u003cstrong\u003eOption A: LM Studio Local RAG Architecture\u003c/strong\u003e\u003c/h2\u003e\n\u003ch3 id=\"runtime\" class=\"d180-md-h3\"\u003eRuntime\u003c/h3\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eLocal generation model hosted via LM Studio local server endpoint\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eSeparate embedding model via LM Studio (if available in your setup) or fallback embedding runtime\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"service-wiring\" class=\"d180-md-h3\"\u003eService wiring\u003c/h3\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003ccode class=\"d180-md-inline-code\"\u003eIngest Service\u003c/code\u003e -\u003e parser -\u003e chunker -\u003e embedder -\u003e Chroma\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003ccode class=\"d180-md-inline-code\"\u003eChat Service\u003c/code\u003e -\u003e query embed -\u003e retrieve top-k -\u003e prompt builder -\u003e LM Studio generation\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"pros\" class=\"d180-md-h3\"\u003ePros\u003c/h3\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eQuick start with user-friendly desktop workflow\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eEasy model switching in UI\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eGreat for experimentation and demos\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"tradeoffs\" class=\"d180-md-h3\"\u003eTradeoffs\u003c/h3\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eEnvironment parity across machines can vary\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eEmbedding model/runtime setup may be less standardized depending on local stack\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"recommended-when\" class=\"d180-md-h3\"\u003eRecommended when\u003c/h3\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eFast prototyping and model experimentation is top priority\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr class=\"d180-md-hr\" /\u003e\n\u003ch2 id=\"option-b-microsoft-foundry-local-rag-architecture-selected\" class=\"d180-md-h2\"\u003e\u003cstrong\u003eOption B: Microsoft Foundry Local RAG Architecture (Selected)\u003c/strong\u003e\u003c/h2\u003e\n\u003ch3 id=\"runtime\" class=\"d180-md-h3\"\u003eRuntime\u003c/h3\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eGeneration model served by Foundry Local runtime\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eEmbedding model also served via Foundry Local where supported by selected model set\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"service-wiring\" class=\"d180-md-h3\"\u003eService wiring\u003c/h3\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003ccode class=\"d180-md-inline-code\"\u003eIngest API\u003c/code\u003e calls Foundry Local embedding endpoint for each chunk\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eChroma stores vectors and metadata\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003ccode class=\"d180-md-inline-code\"\u003eChat API\u003c/code\u003e retrieves top-k chunks and calls Foundry Local generation endpoint with contextual prompt\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"pros\" class=\"d180-md-h3\"\u003ePros\u003c/h3\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eMore standardized local runtime contract for enterprise-like workflows\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eClear alignment with Microsoft AI platform path\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eBetter long-term fit for structured local deployment discipline\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"tradeoffs\" class=\"d180-md-h3\"\u003eTradeoffs\u003c/h3\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eModel availability varies by platform/runtime support\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eInitial local setup can be more procedural than LM Studio\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"recommended-when\" class=\"d180-md-h3\"\u003eRecommended when\u003c/h3\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eYou want disciplined local architecture with Microsoft ecosystem alignment\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr class=\"d180-md-hr\" /\u003e\n\u003ch2 id=\"selected-build-blueprint-microsoft-foundry-local\" class=\"d180-md-h2\"\u003e\u003cstrong\u003eSelected Build Blueprint (Microsoft Foundry Local)\u003c/strong\u003e\u003c/h2\u003e\n\u003ch3 id=\"components\" class=\"d180-md-h3\"\u003eComponents\u003c/h3\u003e\n\u003col class=\"d180-md-ol\"\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eFrontend UI\u003c/strong\u003e (Next.js page)\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eUpload documents\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eAsk grounded questions\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eRender citations and retrieval info\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eIngest API\u003c/strong\u003e (\u003ccode class=\"d180-md-inline-code\"\u003ePOST /api/ingest\u003c/code\u003e)\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eParse + chunk + embed + upsert to Chroma\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eChat API\u003c/strong\u003e (\u003ccode class=\"d180-md-inline-code\"\u003ePOST /api/chat\u003c/code\u003e)\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eEmbed query + retrieve + generate + cite\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eVector Store\u003c/strong\u003e (Chroma)\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eLocal persistent collection\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003cstrong\u003eFoundry Local Runtime\u003c/strong\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eOne generation model + one embedding model\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3 id=\"default-operational-values\" class=\"d180-md-h3\"\u003eDefault operational values\u003c/h3\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003ccode class=\"d180-md-inline-code\"\u003echunkSize = 800\u003c/code\u003e\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003ccode class=\"d180-md-inline-code\"\u003echunkOverlap = 120\u003c/code\u003e\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003ccode class=\"d180-md-inline-code\"\u003etopK = 5\u003c/code\u003e\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\u003ccode class=\"d180-md-inline-code\"\u003etemperature = 0.2\u003c/code\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"security-baseline\" class=\"d180-md-h3\"\u003eSecurity baseline\u003c/h3\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eLocal-only storage by default\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eNo external doc upload by default\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eNo secret values written to client logs\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr class=\"d180-md-hr\" /\u003e\n\u003ch2 id=\"evaluation-checklist-acceptance-criteria\" class=\"d180-md-h2\"\u003e\u003cstrong\u003eEvaluation Checklist (Acceptance Criteria)\u003c/strong\u003e\u003c/h2\u003e\n\u003cp class=\"d180-md-p\"\u003eWeek-2 is complete only if all pass:\u003c/p\u003e\n\u003col class=\"d180-md-ol\"\u003e\n\u003cli class=\"d180-md-li\"\u003eUpload markdown and PDF files successfully.\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eIngest API reports counts (\u003ccode class=\"d180-md-inline-code\"\u003edocumentsIndexed\u003c/code\u003e, \u003ccode class=\"d180-md-inline-code\"\u003echunksIndexed\u003c/code\u003e).\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eChat response uses retrieved context (not generic answer).\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eEvery answer includes at least one citation when retrieval matches exist.\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\"No documents ingested\" case handled gracefully.\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003e\"No relevant chunks\" case returns warning and safe fallback behavior.\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eFoundry Local runtime down/not loaded case shows actionable error.\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eEnd-to-end median response time is acceptable for local dev (documented by logs).\u003c/li\u003e\n\u003c/ol\u003e\n\u003chr class=\"d180-md-hr\" /\u003e\n\u003ch2 id=\"implementation-sequence-week-2-build-order\" class=\"d180-md-h2\"\u003e\u003cstrong\u003eImplementation Sequence (Week-2 Build Order)\u003c/strong\u003e\u003c/h2\u003e\n\u003col class=\"d180-md-ol\"\u003e\n\u003cli class=\"d180-md-li\"\u003eBuild ingestion parser + chunker utility.\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eIntegrate Foundry Local embeddings.\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eUpsert chunks to Chroma with metadata schema.\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eBuild retrieval pipeline and query embedding.\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eBuild answer generation with citation-aware prompt template.\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eAdd UI for upload + ask + citation rendering.\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eAdd edge-case handling and acceptance tests.\u003c/li\u003e\n\u003c/ol\u003e\n\u003chr class=\"d180-md-hr\" /\u003e\n\u003ch2 id=\"reference-links\" class=\"d180-md-h2\"\u003e\u003cstrong\u003eReference Links\u003c/strong\u003e\u003c/h2\u003e\n\u003ch3 id=\"local-rag-fundamentals\" class=\"d180-md-h3\"\u003eLocal RAG fundamentals\u003c/h3\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eRAG overview: \u003ca href=\"https://www.pinecone.io/learn/retrieval-augmented-generation/\" class=\"d180-md-link\"\u003ehttps://www.pinecone.io/learn/retrieval-augmented-generation/\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"chroma\" class=\"d180-md-h3\"\u003eChroma\u003c/h3\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eChroma docs: \u003ca href=\"https://docs.trychroma.com/\" class=\"d180-md-link\"\u003ehttps://docs.trychroma.com/\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"lm-studio\" class=\"d180-md-h3\"\u003eLM Studio\u003c/h3\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eLM Studio docs: \u003ca href=\"https://lmstudio.ai/docs\" class=\"d180-md-link\"\u003ehttps://lmstudio.ai/docs\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"microsoft-foundry-local\" class=\"d180-md-h3\"\u003eMicrosoft Foundry Local\u003c/h3\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eWhat is Foundry Local: \u003ca href=\"https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/what-is-foundry-local\" class=\"d180-md-link\"\u003ehttps://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/what-is-foundry-local\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eFoundry Local get started: \u003ca href=\"https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started\" class=\"d180-md-link\"\u003ehttps://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eFoundry Local SDK reference: \u003ca href=\"https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-sdk\" class=\"d180-md-link\"\u003ehttps://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-sdk\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr class=\"d180-md-hr\" /\u003e\n\u003ch2 id=\"week-2-outcome-target\" class=\"d180-md-h2\"\u003e\u003cstrong\u003eWeek-2 Outcome Target\u003c/strong\u003e\u003c/h2\u003e\n\u003cp class=\"d180-md-p\"\u003eBy the end of Week 2, you should have a fully local RAG prototype that can:\u003c/p\u003e\n\u003cul class=\"d180-md-ul\"\u003e\n\u003cli class=\"d180-md-li\"\u003eingest personal docs,\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eretrieve grounded context,\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eanswer with citations,\u003c/li\u003e\n\u003cli class=\"d180-md-li\"\u003eand run on Microsoft Foundry Local as the selected runtime.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp class=\"d180-md-p\"\u003eThis sets up Week 3 to focus on structured outputs and validation pipelines on top of reliable retrieval-grounded generation.\u003c/p\u003e\n"])</script><script>self.__next_f.push([1,"1b:[\"$\",\"main\",null,{\"className\":\"d180-content-wrap\",\"style\":{\"paddingTop\":36},\"children\":[\"$\",\"div\",null,{\"className\":\"flex-1\",\"children\":[[\"$\",\"article\",null,{\"className\":\"d180-post-content\",\"children\":[[\"$\",\"div\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"$1d\"}}],\"$L1e\"]}],\"$L1f\",\"$L20\"]}]}]\n1c:[\"$\",\"script\",null,{\"type\":\"application/ld+json\",\"dangerouslySetInnerHTML\":{\"__html\":\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"mainEntityOfPage\\\":\\\"https://subraatakumar.com/24weeks/week-2\\\",\\\"headline\\\":\\\"Week 2: Local RAG Architecture (LM Studio vs Microsoft Foundry Local).\\\",\\\"datePublished\\\":\\\"2026-03-16\\\",\\\"description\\\":\\\"Decision-complete architecture for Week 2 Local RAG, covering both LM Studio and Microsoft Foundry Local designs, with Microsoft Foundry Local selected as the implementation path.\\\",\\\"author\\\":{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Subrata Kumar Das\\\"}}\"}}]\n"])</script><script>self.__next_f.push([1,"21:I[21675,[\"/_next/static/chunks/7c92e96509cd355e.js\",\"/_next/static/chunks/ed0ac4fd205f8cfa.js\"],\"default\"]\n1e:[\"$\",\"$L21\",null,{}]\n1f:[\"$\",\"div\",null,{\"className\":\"mt-8 mb-6\",\"children\":[\"$\",\"a\",null,{\"href\":\"https://github.com/subraatakumar/subraatakumar.com/edit/main/content/24weeks/week-2.md\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"d180-edit-link\",\"children\":\"Suggest a change to the content of the material\"}]}]\n20:[\"$\",\"div\",null,{\"className\":\"d180-bottom-nav\",\"children\":[[\"$\",\"$Lb\",null,{\"href\":\"/24weeks/week-1\",\"className\":\"d180-nav-link\",\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"strong\",null,{\"children\":\"Previous\"}],[\"$\",\"span\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":700,\"textTransform\":\"capitalize\"},\"children\":\"week 1\"}]]}]}],[\"$\",\"div\",null,{}]]}]\n"])</script><script>self.__next_f.push([1,"15:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n"])</script><script>self.__next_f.push([1,"22:I[27201,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"IconMark\"]\n13:null\n"])</script><script>self.__next_f.push([1,"17:[[\"$\",\"title\",\"0\",{\"children\":\"Week 2: Local RAG Architecture (LM Studio vs Microsoft Foundry Local). | Subrata Kumar Das\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Decision-complete architecture for Week 2 Local RAG, covering both LM Studio and Microsoft Foundry Local designs, with Microsoft Foundry Local selected as the implementation path.\"}],[\"$\",\"meta\",\"2\",{\"name\":\"keywords\",\"content\":\"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer\"}],[\"$\",\"link\",\"3\",{\"rel\":\"canonical\",\"href\":\"https://subraatakumar.com/24weeks/week-2/\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:title\",\"content\":\"Week 2: Local RAG Architecture (LM Studio vs Microsoft Foundry Local). | 24 Weeks\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:description\",\"content\":\"Decision-complete architecture for Week 2 Local RAG, covering both LM Studio and Microsoft Foundry Local designs, with Microsoft Foundry Local selected as the implementation path.\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:url\",\"content\":\"https://subraatakumar.com/24weeks/week-2/\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:image\",\"content\":\"https://subraatakumar.com/images/interview.png\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"9\",{\"property\":\"article:published_time\",\"content\":\"2026-03-16\"}],[\"$\",\"meta\",\"10\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"11\",{\"name\":\"twitter:title\",\"content\":\"Week 2: Local RAG Architecture (LM Studio vs Microsoft Foundry Local). | 24 Weeks\"}],[\"$\",\"meta\",\"12\",{\"name\":\"twitter:description\",\"content\":\"Decision-complete architecture for Week 2 Local RAG, covering both LM Studio and Microsoft Foundry Local designs, with Microsoft Foundry Local selected as the implementation path.\"}],[\"$\",\"meta\",\"13\",{\"name\":\"twitter:image\",\"content\":\"https://subraatakumar.com/images/interview.png\"}],[\"$\",\"link\",\"14\",{\"rel\":\"icon\",\"href\":\"/favicon.ico?favicon.750fd6b3.ico\",\"sizes\":\"48x48\",\"type\":\"image/x-icon\"}],[\"$\",\"$L22\",\"15\",{}]]\n"])</script></body></html>

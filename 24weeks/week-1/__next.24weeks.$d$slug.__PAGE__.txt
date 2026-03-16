@@ -304,177 +304,478 @@ f:"$Sreact.suspense"
             display: none;
           }
         }
-      0:{"buildId":"lcmdEQ_b1I7Biw1m5CPtQ","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5","$L6"]}],["$L7"],"$L8"]}],"loading":null,"isPartial":false}
+      0:{"buildId":"zqXMrKuuiKfQv6KyB6wVG","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5","$L6"]}],["$L7"],"$L8"]}],"loading":null,"isPartial":false}
 3:["$","header",null,{"className":"d180-article-header","children":["$","div",null,{"className":"d180-article-header-inner","children":[["$","div",null,{"className":"flex items-center gap-3 shrink-0","children":[["$","$L9",null,{"href":"/","aria-label":"Go to main home page","className":"w-8 h-8 rounded-lg flex items-center justify-center text-slate-900 shadow-lg","style":{"background":"var(--amber)","boxShadow":"0 8px 20px rgba(22, 208, 236, 0.22)"},"children":["$","span",null,{"className":"font-black text-sm","children":"SK"}]}],["$","nav",null,{"className":"hidden md:flex items-center gap-3","children":[["$","$L9",null,{"href":"/24weeks","className":"d180-crumb","children":[["$","span",null,{"className":"d180-crumb-series","children":"24 Weeks"}]," ",["$","span",null,{"children":"/"}]," ",["$","strong",null,{"children":["Week ","week-1"]}]]}],["$","div",null,{"className":"d180-pill","children":[["$","div",null,{"className":"d180-pill-track","children":["$","div",null,{"className":"d180-pill-fill","style":{"width":"NaN%"}}]}],["$","b",null,{"children":["$NaN","%"]}]]}]]}]]}],["$","div",null,{"className":"flex items-center gap-4","children":["$","$L9",null,{"href":"/24weeks","className":"d180-crumb","children":"← All Weeks"}]}]]}]}]
-4:["$","div",null,{"className":"d180-hero","children":["$","div",null,{"className":"d180-hero-inner d180-content-wrap","style":{"paddingTop":56,"paddingBottom":56},"children":[["$","h1",null,{"style":{"maxWidth":820},"children":"Week 1: The Multi-Model Evaluator."}],["$","p",null,{"style":{"marginTop":14,"maxWidth":760},"children":"Build a side-by-side comparison tool for GPT-4, Claude, and Gemini to test architectural logic."}],["$","div",null,{"className":"d180-meta-line","children":[["$","span",null,{"children":"2026-03-09"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"var(--amber)"},"children":"Subrata Kumar Das"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#15803d","fontSize":11,"fontWeight":800,"textTransform":"uppercase","letterSpacing":".08em"},"children":"Complete"}]]}],["$","p",null,{"style":{"marginTop":16,"maxWidth":500,"fontSize":13,"lineHeight":1.7,"color":"var(--slate-700)","borderLeft":"2px solid var(--amber)","paddingLeft":10,"fontStyle":"italic"},"children":"\"Consistent small steps lead to massive long-term results. Keep pushing.\""}]]}]}]
-a:T2f5b,<h2 id="the-zero-cost-api-strategy-" class="d180-md-h2"><strong>The Zero-Cost API Strategy</strong> <img src="https://visitor-badge.laobi.icu/badge?page_id=subraatakumar.subraatakumar.com&#x26;label=Page%20Views" class="rounded-md shadow-sm mx-auto block" alt="Page Views"></h2>
-<p class="d180-md-p">You can access the models required for <strong>Week 1</strong> through the following free resources:</p>
+4:["$","div",null,{"className":"d180-hero","children":["$","div",null,{"className":"d180-hero-inner d180-content-wrap","style":{"paddingTop":56,"paddingBottom":56},"children":[["$","h1",null,{"style":{"maxWidth":820},"children":"Week 1: The Multi-Model Evaluator (Production Build)."}],["$","p",null,{"style":{"marginTop":14,"maxWidth":760},"children":"A deep technical learning journal for building a professional side-by-side evaluator using Next.js and AI SDK v6 with Google-first defaults, BYOK providers, streaming comparisons, and robust error handling."}],["$","div",null,{"className":"d180-meta-line","children":[["$","span",null,{"children":"2026-03-09"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"var(--amber)"},"children":"Subrata Kumar Das"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#15803d","fontSize":11,"fontWeight":800,"textTransform":"uppercase","letterSpacing":".08em"},"children":"Complete"}]]}],["$","p",null,{"style":{"marginTop":16,"maxWidth":500,"fontSize":13,"lineHeight":1.7,"color":"var(--slate-700)","borderLeft":"2px solid var(--amber)","paddingLeft":10,"fontStyle":"italic"},"children":"\"Consistent small steps lead to massive long-term results. Keep pushing.\""}]]}]}]
+a:T68aa,<h2 id="week-1-mission-build-the-foundation-correctly-" class="d180-md-h2"><strong>Week 1 Mission: Build the Foundation Correctly</strong> <img src="https://visitor-badge.laobi.icu/badge?page_id=subraatakumar.subraatakumar.com&#x26;label=Page%20Views" class="rounded-md shadow-sm mx-auto block" alt="Page Views"></h2>
+<p class="d180-md-p">Week 1 is not just "call an LLM API and print text."</p>
+<p class="d180-md-p">Week 1 is where we define the <strong>architecture contract</strong> for the entire 24-week journey:</p>
 <ul class="d180-md-ul">
-<li class="d180-md-li"><strong>Google AI Studio (Gemini):</strong> Google offers a very generous free tier for <strong>Gemini 2.0 Flash</strong>, allowing up to <strong>1,500 requests per day</strong> at no cost.</li>
-<li class="d180-md-li"><strong>Groq Cloud (Llama &#x26; Mistral):</strong> To get high-speed open-source models (like Llama 3.3) for your side-by-side comparison, Groq provides free API access with near-instant inference speeds.</li>
-<li class="d180-md-li"><strong>OpenRouter (Unified Gateway):</strong> Instead of managing multiple separate billing accounts, use <strong>OpenRouter</strong>. It allows you to filter specifically for <strong>"Free Models"</strong> (marked as <strong>$0.00/token</strong>), giving you access to dozens of variations for your evaluator without a credit card.</li>
-<li class="d180-md-li"><strong>GitHub Models:</strong> If you have a GitHub account, you have access to their <strong>Model Sandbox</strong>, which provides limited free API credits to test flagship models like <strong>GPT-4o</strong> and <strong>Claude 3.5 Sonnet</strong>.</li>
+<li class="d180-md-li">one UI</li>
+<li class="d180-md-li">multiple providers</li>
+<li class="d180-md-li">typed request flow</li>
+<li class="d180-md-li">streaming responses</li>
+<li class="d180-md-li">graceful failure handling</li>
+<li class="d180-md-li">no hard lock-in to one model vendor</li>
+</ul>
+<p class="d180-md-p">If this base is weak, every week after this becomes technical debt.</p>
+<p class="d180-md-p">If this base is strong, every week after this becomes compounding leverage.</p>
+<p class="d180-md-p"><strong>Project Repository:</strong> <a href="https://github.com/TechCraft-By-Subrata/24weeks-week-1-The-Multi-Model-Evaluator" class="d180-md-link">24weeks-week-1-The-Multi-Model-Evaluator</a></p>
+<hr class="d180-md-hr" />
+<h2 id="what-we-built-production-version" class="d180-md-h2"><strong>What We Built (Production Version)</strong></h2>
+<p class="d180-md-p">We built a <strong>professional side-by-side model evaluator</strong> with:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Two fixed comparison panels (Left model vs Right model)</li>
+<li class="d180-md-li">Shared prompt composer</li>
+<li class="d180-md-li">Provider-agnostic execution (<code class="d180-md-inline-code">google | openai | anthropic</code>)</li>
+<li class="d180-md-li">Session-only BYOK key handling (no persistence)</li>
+<li class="d180-md-li">Streaming responses via AI SDK v6 patterns</li>
+<li class="d180-md-li">Comparison report that still works when one model fails</li>
+<li class="d180-md-li">Model status states (<code class="d180-md-inline-code">Queued</code>, <code class="d180-md-inline-code">Streaming</code>, <code class="d180-md-inline-code">Ready</code>, <code class="d180-md-inline-code">Error</code>)</li>
+<li class="d180-md-li">Real-world quota error visibility and recovery</li>
 </ul>
 <hr class="d180-md-hr" />
-<h2 id="week-1-architectural-setup" class="d180-md-h2"><strong>Week 1 Architectural Setup</strong></h2>
-<p class="d180-md-p">Since you are <strong>Architecting the 2030 Stack</strong>, your goal isn't just to call an API—it's to build a <strong>Model Agnostic</strong> system.</p>
-<ul class="d180-md-ul">
-<li class="d180-md-li"><strong>The Build:</strong> A simple web dashboard (using <strong>Streamlit</strong> or <strong>Next.js</strong>) where one input sends a prompt to three different models simultaneously.</li>
-<li class="d180-md-li"><strong>The Logic:</strong> Use the <strong>Vercel AI SDK</strong> or a simple Python wrapper to abstract the "Provider" layer. This way, you can swap models by just changing an environment variable.</li>
-<li class="d180-md-li"><strong>The Comparison:</strong> Use this tool to test <strong>Architectural Logic</strong> (e.g., asking for a microservices transition plan) to see which model handles complex system design most accurately.</li>
-</ul>
+<h2 id="why-this-architecture-and-not-a-quick-hack" class="d180-md-h2"><strong>Why This Architecture (and not a quick hack)</strong></h2>
+<h3 id="1-model-agnostic-by-design" class="d180-md-h3">1) <strong>Model-Agnostic by design</strong></h3>
+<p class="d180-md-p">A single request contract lets us route to Google, OpenAI, or Anthropic without rewriting UI logic.</p>
+<h3 id="2-typed-api-contract" class="d180-md-h3">2) <strong>Typed API contract</strong></h3>
+<p class="d180-md-p">We enforce request shape explicitly so frontend and backend stay in sync as features grow.</p>
+<h3 id="3-streaming-first-ux" class="d180-md-h3">3) <strong>Streaming-first UX</strong></h3>
+<p class="d180-md-p">Users should see model output as it arrives. Perceived performance matters.</p>
+<h3 id="4-failure-is-a-first-class-case" class="d180-md-h3">4) <strong>Failure is a first-class case</strong></h3>
+<p class="d180-md-p">In AI systems, failures are normal: key issues, quota limits, invalid model IDs, provider downtime.</p>
+<h3 id="5-comparison-must-survive-partial-failure" class="d180-md-h3">5) <strong>Comparison must survive partial failure</strong></h3>
+<p class="d180-md-p">If one model succeeds and one fails, evaluation should still produce insight.</p>
 <hr class="d180-md-hr" />
-<h3 id="your-weekend-action-plan" class="d180-md-h3"><strong>Your Weekend Action Plan</strong></h3>
-<p class="d180-md-p">Since we are kicking this off on <strong>Monday, March 09</strong>, here is your prep:</p>
+<h2 id="system-architecture-end-to-end" class="d180-md-h2"><strong>System Architecture (End-to-End)</strong></h2>
+<h3 id="ui-flow" class="d180-md-h3"><strong>UI Flow</strong></h3>
 <ol class="d180-md-ol">
-<li class="d180-md-li"><strong>Register:</strong> Get your free API keys from <strong>Google AI Studio</strong> and <strong>Groq</strong>.</li>
-<li class="d180-md-li"><strong>Code:</strong> Set up a basic project folder.</li>
-<li class="d180-md-li"><strong>Test:</strong> Run a few "Logic Challenges" to ensure the side-by-side display works.</li>
+<li class="d180-md-li">User writes one prompt.</li>
+<li class="d180-md-li">App sends the same prompt to both panels.</li>
+<li class="d180-md-li">Each panel carries its own provider/model/key config.</li>
+<li class="d180-md-li">Each panel streams independently.</li>
+<li class="d180-md-li">UI shows per-panel output + errors + status.</li>
+<li class="d180-md-li">A final comparison report appears once both requests finish (including partial-failure cases).</li>
 </ol>
-<h2 id="create-a-nextjs-project" class="d180-md-h2">Create a NextJS Project</h2>
+<h3 id="api-flow-apichat" class="d180-md-h3"><strong>API Flow (<code class="d180-md-inline-code">/api/chat</code>)</strong></h3>
+<ol class="d180-md-ol">
+<li class="d180-md-li">Accept typed payload: <code class="d180-md-inline-code">messages</code>, <code class="d180-md-inline-code">panel</code>, <code class="d180-md-inline-code">options</code>.</li>
+<li class="d180-md-li">Resolve provider-specific model from <code class="d180-md-inline-code">panel.provider</code>.</li>
+<li class="d180-md-li">Convert UI messages to model messages.</li>
+<li class="d180-md-li">Stream text with optional <code class="d180-md-inline-code">systemPrompt</code> and <code class="d180-md-inline-code">temperature</code>.</li>
+<li class="d180-md-li">Return UI stream response with original messages for stable message IDs.</li>
+</ol>
+<h3 id="error-handling-flow" class="d180-md-h3"><strong>Error-Handling Flow</strong></h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Missing key -> explicit provider-specific error</li>
+<li class="d180-md-li">Invalid JSON/request shape -> 400-style contract errors</li>
+<li class="d180-md-li">Quota/rate-limit/provider errors -> surfaced as readable messages in panel</li>
+<li class="d180-md-li">Busy-state correctness -> only <code class="d180-md-inline-code">submitted</code>/<code class="d180-md-inline-code">streaming</code> treated as running</li>
+</ul>
+<hr class="d180-md-hr" />
+<h2 id="core-api-contract-public-interface" class="d180-md-h2"><strong>Core API Contract (Public Interface)</strong></h2>
+<p class="d180-md-p">This is the contract that powers the evaluator:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          
+          <span class="d180-code-lang">TS</span>
           <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="d180-code-pre line-numbers"><code>npx create-next-app@latest sidebyside --typescript --eslint --app
+        <pre class="d180-code-pre line-numbers"><code class="language-ts">{
+  messages: UIMessage[]
+  panel: {
+    provider: 'google' | 'openai' | 'anthropic'
+    modelId: string
+    apiKey?: string
+  }
+  options?: {
+    systemPrompt?: string
+    temperature?: number
+  }
+}
 </code></pre>
       </div>
     
-<p class="d180-md-p"><img src="/24weeks/week1/img1.png" class="rounded-md shadow-sm mx-auto block" alt=""></p>
-<p class="d180-md-p">Since you are <strong>Architecting the 2030 Stack</strong>, you definitely want to answer <strong>Yes</strong>.</p>
-<p class="d180-md-p">The <strong>React Compiler</strong> (formerly known as React Forget) is a foundational shift in how React handles performance. By 2030, manual optimization using <code class="d180-md-inline-code">useMemo</code>, <code class="d180-md-inline-code">useCallback</code>, and <code class="d180-md-inline-code">React.memo</code> will be considered "legacy" work. The compiler automatically handles these optimizations at build-time, allowing you to write standard JavaScript while the engine ensures your <strong>Architex</strong> dashboard remains lightning-fast.</p>
-<p class="d180-md-p">For your Week 1 build, this is a great technical detail to include in your journal:</p>
-<blockquote class="d180-md-blockquote">
-<p class="d180-md-p"><em>"Starting the journey by opting into the <strong>React Compiler</strong>. In the 2030 stack, we move away from manual 'memoization' and let the build-chain handle performance automatically. This keeps the developer focused on architecture, not boilerplate."</em></p>
-</blockquote>
-<hr class="d180-md-hr" />
-<p class="d180-md-p"><img src="/24weeks/week1/img2.png" class="rounded-md shadow-sm mx-auto block" alt=""></p>
-<p class="d180-md-p">For this one, <strong>select Yes</strong>.</p>
-<p class="d180-md-p">Using a <code class="d180-md-inline-code">src/</code> directory is the industry standard for production-grade Next.js applications. It separates your configuration files (like <code class="d180-md-inline-code">package.json</code>, <code class="d180-md-inline-code">tailwind.config.ts</code>, and <code class="d180-md-inline-code">.env</code>) from your actual application logic.</p>
-<p class="d180-md-p">In your <strong>"24-Weeks to AI-Native"</strong> journey, this is about building a clean, scalable architecture. By keeping your code in <code class="d180-md-inline-code">src/</code>, you're following a disciplined project structure that stays organized as <strong>Architex</strong> grows from a simple evaluator into a complex system.</p>
-<hr class="d180-md-hr" />
-<h3 id="your-project-selection-summary" class="d180-md-h3"><strong>Your Project Selection Summary:</strong></h3>
+<h3 id="why-this-contract-works" class="d180-md-h3">Why this contract works</h3>
 <ul class="d180-md-ul">
-<li class="d180-md-li"><strong>React Compiler:</strong> Yes (Next-gen performance)</li>
-<li class="d180-md-li"><strong>Tailwind CSS:</strong> Yes (Rapid UI building)</li>
-<li class="d180-md-li"><strong><code class="d180-md-inline-code">src/</code> Directory:</strong> <strong>Yes</strong> (Professional organization)</li>
-<li class="d180-md-li"><strong>App Router:</strong> Yes (Modern Next.js routing)</li>
-<li class="d180-md-li"><strong>Import Alias:</strong> Yes (Use <code class="d180-md-inline-code">@/*</code> for cleaner imports)</li>
+<li class="d180-md-li"><code class="d180-md-inline-code">messages</code> keeps conversation context in sync with <code class="d180-md-inline-code">useChat</code>.</li>
+<li class="d180-md-li"><code class="d180-md-inline-code">panel</code> makes each side independently configurable.</li>
+<li class="d180-md-li"><code class="d180-md-inline-code">options</code> allows controlled tuning without breaking base payload shape.</li>
 </ul>
 <hr class="d180-md-hr" />
-<p class="d180-md-p"><img src="/24weeks/week1/img2.png" class="rounded-md shadow-sm mx-auto block" alt=""></p>
-<p class="d180-md-p">This is the foundational code for your <strong>Week 1: Multi-Model Evaluator</strong>. It uses the <strong>Vercel AI SDK</strong> with <strong>Next.js</strong> to create a side-by-side architectural comparison tool.</p>
-<p class="d180-md-p">By using the <code class="d180-md-inline-code">ai</code> library and <code class="d180-md-inline-code">google-generative-ai</code> provider, you can keep your costs at <strong>$0</strong> using the free tier of <strong>Google AI Studio</strong>.</p>
-<hr class="d180-md-hr" />
-<h2 id="1-the-backend-route-handler" class="d180-md-h2"><strong>1. The Backend (Route Handler)</strong></h2>
-<p class="d180-md-p">Create a file at <code class="d180-md-inline-code">app/api/chat/route.ts</code>. This is the "Model Router" that handles the architectural logic prompts.</p>
+<h2 id="implementation-walkthrough-backend-route" class="d180-md-h2"><strong>Implementation Walkthrough: Backend Route</strong></h2>
+<p class="d180-md-p">Below is the core pattern used in the app route. This is the center of the model router.</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          <span class="d180-code-lang">TYPESCRIPT</span>
+          <span class="d180-code-lang">TS</span>
           <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="d180-code-pre line-numbers"><code class="language-typescript">import { google } from '@ai-sdk/google';
-import { streamText } from 'ai';
+        <pre class="d180-code-pre line-numbers"><code class="language-ts">import { createAnthropic } from '@ai-sdk/anthropic';
+import { createGoogleGenerativeAI } from '@ai-sdk/google';
+import { createOpenAI } from '@ai-sdk/openai';
+import {
+  convertToModelMessages,
+  streamText,
+  type UIMessage,
+  type LanguageModel,
+} from 'ai';
 
-// Architecting the 2030 Stack: Week 1 Router
-export async function POST(req: Request) {
-  const { messages, modelChoice } = await req.json();
+type ProviderName = 'google' | 'openai' | 'anthropic';
 
-  // You can swap these based on the free tier availability
-  const model = modelChoice === 'gemini' 
-    ? google('gemini-1.5-flash') 
-    : google('gemini-2.0-flash-exp'); 
+type PanelConfig = {
+  provider: ProviderName;
+  modelId: string;
+  apiKey?: string;
+};
 
-  const result = await streamText({
-    model: model,
-    messages,
-    system: "You are a Senior System Architect. Provide structured, technical comparisons for the 2030 tech stack.",
-  });
+type ChatRequestBody = {
+  messages: UIMessage[];
+  panel: PanelConfig;
+  options?: {
+    systemPrompt?: string;
+    temperature?: number;
+  };
+};
 
-  return result.toDataStreamResponse();
+function getModel(panel: PanelConfig): LanguageModel {
+  const modelId = panel.modelId.trim();
+  const apiKey = panel.apiKey?.trim();
+
+  if (!modelId) throw new Error('Model ID is required.');
+
+  if (panel.provider === 'google') {
+    const fallbackKey = process.env.GOOGLE_API_KEY?.trim();
+    const googleApiKey = apiKey || fallbackKey;
+    if (!googleApiKey) {
+      throw new Error('No Google API key found. Add GOOGLE_API_KEY or provide panel key.');
+    }
+    const google = createGoogleGenerativeAI({ apiKey: googleApiKey });
+    return google(modelId);
+  }
+
+  if (!apiKey) {
+    throw new Error(`API key is required for ${panel.provider}.`);
+  }
+
+  if (panel.provider === 'openai') {
+    const openai = createOpenAI({ apiKey });
+    return openai(modelId);
+  }
+
+  const anthropic = createAnthropic({ apiKey });
+  return anthropic(modelId);
 }
 
+export async function POST(req: Request) {
+  const body = (await req.json()) as ChatRequestBody;
+  const { messages, panel, options } = body;
+
+  const model = getModel(panel);
+
+  const result = streamText({
+    model,
+    system: options?.systemPrompt?.trim() || undefined,
+    temperature: options?.temperature,
+    messages: await convertToModelMessages(messages),
+  });
+
+  return result.toUIMessageStreamResponse({ originalMessages: messages });
+}
 </code></pre>
       </div>
     
+<h3 id="why-each-part-matters" class="d180-md-h3">Why each part matters</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li"><code class="d180-md-inline-code">getModel()</code> isolates provider branching to one place.</li>
+<li class="d180-md-li"><code class="d180-md-inline-code">convertToModelMessages()</code> aligns UI messages with model input format.</li>
+<li class="d180-md-li"><code class="d180-md-inline-code">toUIMessageStreamResponse({ originalMessages })</code> prevents message-duplication issues in chat UIs.</li>
+</ul>
+<h3 id="common-pitfalls" class="d180-md-h3">Common pitfalls</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Using outdated provider packages/APIs.</li>
+<li class="d180-md-li">Not validating <code class="d180-md-inline-code">modelId</code> and key presence.</li>
+<li class="d180-md-li">Returning non-UI stream response formats with <code class="d180-md-inline-code">useChat</code>.</li>
+</ul>
 <hr class="d180-md-hr" />
-<h2 id="2-the-frontend-comparison-dashboard" class="d180-md-h2"><strong>2. The Frontend (Comparison Dashboard)</strong></h2>
-<p class="d180-md-p">Create your page at <code class="d180-md-inline-code">app/page.tsx</code>. This creates the side-by-side view for your "Proof of Work" showcase.</p>
+<h2 id="implementation-walkthrough-frontend-evaluator-logic" class="d180-md-h2"><strong>Implementation Walkthrough: Frontend Evaluator Logic</strong></h2>
+<p class="d180-md-p">The frontend uses AI SDK <code class="d180-md-inline-code">useChat</code> with <code class="d180-md-inline-code">DefaultChatTransport</code> for each panel.</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
           <span class="d180-code-lang">TSX</span>
           <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="d180-code-pre line-numbers"><code class="language-tsx">'use client';
+        <pre class="d180-code-pre line-numbers"><code class="language-tsx">const {
+  messages: leftMessages,
+  sendMessage: sendLeft,
+  status: leftStatus,
+  stop: stopLeft,
+  error: leftError,
+  clearError: clearLeftError,
+} = useChat({
+  transport: new DefaultChatTransport({ api: '/api/chat' }),
+});
 
-import { useChat } from '@ai-sdk/react';
+const {
+  messages: rightMessages,
+  sendMessage: sendRight,
+  status: rightStatus,
+  stop: stopRight,
+  error: rightError,
+  clearError: clearRightError,
+} = useChat({
+  transport: new DefaultChatTransport({ api: '/api/chat' }),
+});
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">Prompt submission sends the same user text to both chats with panel-specific body config:</p>
 
-export default function MultiModelEvaluator() {
-  const chatA = useChat({ body: { modelChoice: 'gemini' } });
-  const chatB = useChat({ body: { modelChoice: 'gemini-pro' } });
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TSX</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-tsx">sendLeft(
+  { text: promptText },
+  {
+    body: {
+      panel: {
+        provider: leftPanel.provider,
+        modelId: leftPanel.modelId.trim(),
+        apiKey: leftPanel.apiKey.trim() || undefined,
+      },
+      options: {
+        systemPrompt: options.systemPrompt.trim() || undefined,
+        temperature: options.temperature,
+      },
+    },
+  },
+);
+</code></pre>
+      </div>
+    
+<h3 id="busy-state-correctness-important-fix" class="d180-md-h3">Busy-state correctness (important fix)</h3>
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    chatA.append({ role: 'user', content: chatA.input });
-    chatB.append({ role: 'user', content: chatA.input });
-  };
-
-  return (
-    &#x3C;div className="p-8 font-sans">
-      &#x3C;h1 className="text-2xl font-bold mb-6">
-        24-Weeks to AI-Native: Week 1 Evaluator
-      &#x3C;/h1>
-
-      &#x3C;form onSubmit={handleSubmit} className="mb-8">
-        &#x3C;input
-          className="w-full p-4 border rounded shadow-sm"
-          value={chatA.input}
-          onChange={chatA.handleInputChange}
-          placeholder="Enter an architectural logic challenge..."
-        />
-      &#x3C;/form>
-
-      &#x3C;div className="grid grid-cols-2 gap-6">
-        &#x3C;div className="border p-4 rounded bg-gray-50">
-          &#x3C;h2 className="font-bold mb-2">Model A (Gemini Flash)&#x3C;/h2>
-          &#x3C;div className="whitespace-pre-wrap">
-            {chatA.messages[chatA.messages.length - 1]?.content}
-          &#x3C;/div>
-        &#x3C;/div>
-
-        &#x3C;div className="border p-4 rounded bg-gray-50">
-          &#x3C;h2 className="font-bold mb-2">Model B (Gemini Pro)&#x3C;/h2>
-          &#x3C;div className="whitespace-pre-wrap">
-            {chatB.messages[chatB.messages.length - 1]?.content}
-          &#x3C;/div>
-        &#x3C;/div>
-      &#x3C;/div>
-    &#x3C;/div>
-  );
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TS</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-ts">function isBusyStatus(status: string): boolean {
+  return status === 'submitted' || status === 'streaming';
 }
 
+const isRunning = isBusyStatus(leftStatus) || isBusyStatus(rightStatus);
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">Why: <code class="d180-md-inline-code">error</code> is <strong>not</strong> a running state. This fix removes the stuck "Running..." bug.</p>
+<hr class="d180-md-hr" />
+<h2 id="comparison-report-logic-handles-partial-failure" class="d180-md-h2"><strong>Comparison Report Logic (Handles Partial Failure)</strong></h2>
+<p class="d180-md-p">A key Week 1 learning: comparison should still be useful if one side fails.</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TS</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-ts">function getComparisonReport({ leftText, rightText, leftError, rightError }) {
+  const leftOk = Boolean(leftText) &#x26;&#x26; !leftError;
+  const rightOk = Boolean(rightText) &#x26;&#x26; !rightError;
+
+  if (leftOk &#x26;&#x26; rightOk) {
+    return { summary: 'Both models returned successfully.', winner: '...'};
+  }
+
+  if (leftOk &#x26;&#x26; !rightOk) {
+    return { summary: 'Partial success: left model succeeded, right model failed.', winner: 'Left model by availability' };
+  }
+
+  if (!leftOk &#x26;&#x26; rightOk) {
+    return { summary: 'Partial success: right model succeeded, left model failed.', winner: 'Right model by availability' };
+  }
+
+  return { summary: 'Both model runs failed.', winner: 'No winner' };
+}
+</code></pre>
+      </div>
+    
+<h3 id="why-this-matters" class="d180-md-h3">Why this matters</h3>
+<p class="d180-md-p">Without this, users lose confidence in the evaluator when one provider fails.
+With this, users still get actionable output and next-step guidance.</p>
+<hr class="d180-md-hr" />
+<h2 id="google-default-model-suggestions-free-tier-testing-focus" class="d180-md-h2"><strong>Google Default Model Suggestions (Free-Tier Testing Focus)</strong></h2>
+<p class="d180-md-p">In the UI we expose practical default suggestions for Google selection:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TS</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-ts">const PROVIDER_MODEL_SUGGESTIONS = {
+  google: [
+    'gemini-2.5-pro',
+    'gemini-2.5-flash',
+    'gemini-2.5-flash-lite',
+    'gemini-3-flash-preview',
+    'gemini-3.1-flash-lite-preview',
+  ],
+};
+</code></pre>
+      </div>
+    
+<h3 id="why-this-helps" class="d180-md-h3">Why this helps</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Faster test setup for new users</li>
+<li class="d180-md-li">Reduces invalid-model guesswork</li>
+<li class="d180-md-li">Keeps defaults aligned with current free-tier experimentation patterns</li>
+</ul>
+<hr class="d180-md-hr" />
+<h2 id="what-broke-during-build-and-how-we-fixed-it" class="d180-md-h2"><strong>What Broke During Build (and How We Fixed It)</strong></h2>
+<h3 id="1-old-usechat-api-body-pattern-mismatch" class="d180-md-h3">1) Old <code class="d180-md-inline-code">useChat({ api, body })</code> pattern mismatch</h3>
+<p class="d180-md-p"><strong>Problem:</strong> Newer AI SDK uses transport objects.</p>
+<p class="d180-md-p"><strong>Fix:</strong> Move to <code class="d180-md-inline-code">DefaultChatTransport</code> and pass per-request options with <code class="d180-md-inline-code">sendMessage(..., { body })</code>.</p>
+<h3 id="2-old-messagecontent-rendering" class="d180-md-h3">2) Old <code class="d180-md-inline-code">message.content</code> rendering</h3>
+<p class="d180-md-p"><strong>Problem:</strong> Modern UI messages expose <code class="d180-md-inline-code">parts</code>, not single <code class="d180-md-inline-code">content</code>.</p>
+<p class="d180-md-p"><strong>Fix:</strong> Render assistant text by collecting text parts from <code class="d180-md-inline-code">message.parts</code>.</p>
+<h3 id="3-stuck-running-status-after-provider-error" class="d180-md-h3">3) Stuck running status after provider error</h3>
+<p class="d180-md-p"><strong>Problem:</strong> UI considered non-ready statuses as running.</p>
+<p class="d180-md-p"><strong>Fix:</strong> Busy only for <code class="d180-md-inline-code">submitted</code> and <code class="d180-md-inline-code">streaming</code>.</p>
+<h3 id="4-no-comparison-when-one-model-failed" class="d180-md-h3">4) No comparison when one model failed</h3>
+<p class="d180-md-p"><strong>Problem:</strong> Successful side had output, but no final cross-panel summary.</p>
+<p class="d180-md-p"><strong>Fix:</strong> Add partial-failure report path.</p>
+<h3 id="5-quotarate-limit-confusion" class="d180-md-h3">5) Quota/rate-limit confusion</h3>
+<p class="d180-md-p"><strong>Problem:</strong> Users thought app was broken when provider quota returned <code class="d180-md-inline-code">limit: 0</code>.</p>
+<p class="d180-md-p"><strong>Fix:</strong> Surface raw provider error in panel + add quota troubleshooting guidance.</p>
+<hr class="d180-md-hr" />
+<h2 id="hands-on-testing-checklist" class="d180-md-h2"><strong>Hands-On Testing Checklist</strong></h2>
+<p class="d180-md-p">Use this every time you modify the evaluator:</p>
+<ol class="d180-md-ol">
+<li class="d180-md-li"><strong>Happy path (Google + Google):</strong> both panels stream and final report appears.</li>
+<li class="d180-md-li"><strong>Mixed provider path (Google + OpenAI/Anthropic):</strong> both work with proper keys.</li>
+<li class="d180-md-li"><strong>Missing key path:</strong> OpenAI/Anthropic panel shows explicit key-required error.</li>
+<li class="d180-md-li"><strong>Invalid model path:</strong> clear provider error shown in affected panel.</li>
+<li class="d180-md-li"><strong>Quota failure path:</strong> one panel fails with quota error, other succeeds, report still generated.</li>
+<li class="d180-md-li"><strong>Stop behavior:</strong> click Stop while streaming, both panels halt.</li>
+<li class="d180-md-li"><strong>Status behavior:</strong> no lingering <code class="d180-md-inline-code">Running...</code> after a terminal state.</li>
+<li class="d180-md-li"><strong>Type/lint health:</strong></li>
+</ol>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">BASH</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-bash">npx tsc --noEmit
+npm run lint
 </code></pre>
       </div>
     
 <hr class="d180-md-hr" />
-<h2 id="3-setup-instructions-zero-cost" class="d180-md-h2"><strong>3. Setup Instructions (Zero-Cost)</strong></h2>
-<ol class="d180-md-ol">
-<li class="d180-md-li"><strong>Environment Variables:</strong> Create a <code class="d180-md-inline-code">.env.local</code> file and add your key: <code class="d180-md-inline-code">GOOGLE_GENERATIVE_AI_API_KEY=your_free_key_here</code>.</li>
-<li class="d180-md-li"><strong>Install Dependencies:</strong> Run <code class="d180-md-inline-code">npm install ai @ai-sdk/react @ai-sdk/google</code>.</li>
-<li class="d180-md-li"><strong>Run:</strong> Execute <code class="d180-md-inline-code">npm run dev</code> to see your dashboard live.</li>
-</ol>
-<h3 id="the-showcase-tip-for-monday" class="d180-md-h3"><strong>The "Showcase" Tip for Monday</strong></h3>
-<p class="d180-md-p">When you post your first journal entry on <strong>Monday, March 16</strong>, take a screen recording of this tool answering a complex question like: <em>"How should I handle state consistency in a distributed AI agentic workflow?"</em></p>
-<p class="d180-md-p"><strong>Would you like me to draft the "Week 1 Journal Entry" text to accompany this build for your website?</strong></p>
+<h2 id="production-hardening-next-steps" class="d180-md-h2"><strong>Production Hardening: Next Steps</strong></h2>
+<p class="d180-md-p">Week 1 production baseline is done. For Week 1.5 / Week 2 quality, add:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li"><strong>Judge-model scoring:</strong> automatic ranking by factuality, completeness, clarity.</li>
+<li class="d180-md-li"><strong>Observability:</strong> request IDs, timings, provider latency metrics, error taxonomy.</li>
+<li class="d180-md-li"><strong>Retry/backoff policy:</strong> especially for transient 429/5xx.</li>
+<li class="d180-md-li"><strong>Provider fallback strategy:</strong> optional automatic fallback if one provider fails.</li>
+<li class="d180-md-li"><strong>Key safety:</strong> never persist user keys, rotate leaked keys immediately.</li>
+<li class="d180-md-li"><strong>Prompt/result logging policy:</strong> redact sensitive inputs before storing traces.</li>
+</ul>
+<hr class="d180-md-hr" />
+<h2 id="setup-snapshot-current-working-version" class="d180-md-h2"><strong>Setup Snapshot (Current Working Version)</strong></h2>
+<p class="d180-md-p">Install:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">BASH</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-bash">npm install
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">Env:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">ENV</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-env">GOOGLE_API_KEY=your_google_api_key
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">Run:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">BASH</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-bash">npm run dev
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">Open:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TXT</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-txt">http://localhost:3000
+</code></pre>
+      </div>
+    
+<hr class="d180-md-hr" />
+<h2 id="read-more-references-official-docs" class="d180-md-h2"><strong>Read More / References (Official Docs)</strong></h2>
+<h3 id="project-code" class="d180-md-h3">Project Code</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Week 1 source code repository: <a href="https://github.com/TechCraft-By-Subrata/24weeks-week-1-The-Multi-Model-Evaluator" class="d180-md-link">https://github.com/TechCraft-By-Subrata/24weeks-week-1-The-Multi-Model-Evaluator</a></li>
+</ul>
+<h3 id="nextjs" class="d180-md-h3">Next.js</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Next.js App Router: <a href="https://nextjs.org/docs/app" class="d180-md-link">https://nextjs.org/docs/app</a></li>
+<li class="d180-md-li">Route Handlers: <a href="https://nextjs.org/docs/app/building-your-application/routing/route-handlers" class="d180-md-link">https://nextjs.org/docs/app/building-your-application/routing/route-handlers</a></li>
+</ul>
+<h3 id="ai-sdk-core-ui" class="d180-md-h3">AI SDK Core + UI</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">AI SDK docs home: <a href="https://ai-sdk.dev/docs" class="d180-md-link">https://ai-sdk.dev/docs</a></li>
+<li class="d180-md-li"><code class="d180-md-inline-code">useChat</code> (AI SDK UI): <a href="https://ai-sdk.dev/docs/ai-sdk-ui/chatbot" class="d180-md-link">https://ai-sdk.dev/docs/ai-sdk-ui/chatbot</a></li>
+<li class="d180-md-li">Transport concepts: <a href="https://ai-sdk.dev/docs/ai-sdk-ui/transport" class="d180-md-link">https://ai-sdk.dev/docs/ai-sdk-ui/transport</a></li>
+<li class="d180-md-li"><code class="d180-md-inline-code">streamText</code> reference: <a href="https://ai-sdk.dev/docs/reference/ai-sdk-core/stream-text" class="d180-md-link">https://ai-sdk.dev/docs/reference/ai-sdk-core/stream-text</a></li>
+<li class="d180-md-li"><code class="d180-md-inline-code">convertToModelMessages</code> reference: <a href="https://ai-sdk.dev/docs/reference/ai-sdk-core/convert-to-model-messages" class="d180-md-link">https://ai-sdk.dev/docs/reference/ai-sdk-core/convert-to-model-messages</a></li>
+</ul>
+<h3 id="provider-packages" class="d180-md-h3">Provider Packages</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Google provider: <a href="https://ai-sdk.dev/providers/ai-sdk-providers/google-generative-ai" class="d180-md-link">https://ai-sdk.dev/providers/ai-sdk-providers/google-generative-ai</a></li>
+<li class="d180-md-li">OpenAI provider: <a href="https://ai-sdk.dev/providers/ai-sdk-providers/openai" class="d180-md-link">https://ai-sdk.dev/providers/ai-sdk-providers/openai</a></li>
+<li class="d180-md-li">Anthropic provider: <a href="https://ai-sdk.dev/providers/ai-sdk-providers/anthropic" class="d180-md-link">https://ai-sdk.dev/providers/ai-sdk-providers/anthropic</a></li>
+</ul>
+<h3 id="gemini-pricing-rate-limits" class="d180-md-h3">Gemini Pricing + Rate Limits</h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Gemini API pricing: <a href="https://ai.google.dev/gemini-api/docs/pricing" class="d180-md-link">https://ai.google.dev/gemini-api/docs/pricing</a></li>
+<li class="d180-md-li">Gemini rate limits: <a href="https://ai.google.dev/gemini-api/docs/rate-limits" class="d180-md-link">https://ai.google.dev/gemini-api/docs/rate-limits</a></li>
+</ul>
+<hr class="d180-md-hr" />
+<h2 id="learning-outcome-week-1-complete" class="d180-md-h2"><strong>Learning Outcome (Week 1 Complete)</strong></h2>
+<p class="d180-md-p">By finishing this build, we now have a <strong>real AI integration base layer</strong>:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li">typed</li>
+<li class="d180-md-li">provider-agnostic</li>
+<li class="d180-md-li">streaming-capable</li>
+<li class="d180-md-li">failure-aware</li>
+<li class="d180-md-li">extensible for automated evaluation</li>
+</ul>
+<p class="d180-md-p">This is exactly the foundation needed for Week 2, where we can move from plain output comparison toward <strong>retrieval-aware and quality-evaluated AI workflows</strong>.</p>
 5:["$","main",null,{"className":"d180-content-wrap","style":{"paddingTop":36},"children":["$","div",null,{"className":"flex-1","children":[["$","article",null,{"className":"d180-post-content","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$a"}}],"$Lb"]}],"$Lc","$Ld"]}]}]
-6:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"mainEntityOfPage\":\"https://subraatakumar.com/24weeks/week-1\",\"headline\":\"Week 1: The Multi-Model Evaluator.\",\"datePublished\":\"2026-03-09\",\"description\":\"Build a side-by-side comparison tool for GPT-4, Claude, and Gemini to test architectural logic.\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\"}}"}}]
+6:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"mainEntityOfPage\":\"https://subraatakumar.com/24weeks/week-1\",\"headline\":\"Week 1: The Multi-Model Evaluator (Production Build).\",\"datePublished\":\"2026-03-09\",\"description\":\"A deep technical learning journal for building a professional side-by-side evaluator using Next.js and AI SDK v6 with Google-first defaults, BYOK providers, streaming comparisons, and robust error handling.\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\"}}"}}]
 7:["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true}]
 8:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
 b:["$","$L11",null,{}]
 c:["$","div",null,{"className":"mt-8 mb-6","children":["$","a",null,{"href":"https://github.com/subraatakumar/subraatakumar.com/edit/main/content/24weeks/week-1.md","target":"_blank","rel":"noopener noreferrer","className":"d180-edit-link","children":"Suggest a change to the content of the material"}]}]
-d:["$","div",null,{"className":"d180-bottom-nav","children":[["$","$L9",null,{"href":"/24weeks/week-0","className":"d180-nav-link","children":["$","div",null,{"children":[["$","strong",null,{"children":"Previous"}],["$","span",null,{"style":{"fontSize":14,"fontWeight":700,"textTransform":"capitalize"},"children":"week 0"}]]}]}],["$","div",null,{}]]}]
+d:["$","div",null,{"className":"d180-bottom-nav","children":[["$","$L9",null,{"href":"/24weeks/week-0","className":"d180-nav-link","children":["$","div",null,{"children":[["$","strong",null,{"children":"Previous"}],["$","span",null,{"style":{"fontSize":14,"fontWeight":700,"textTransform":"capitalize"},"children":"week 0"}]]}]}],["$","$L9",null,{"href":"/24weeks/week-2","className":"d180-nav-link next","children":["$","div",null,{"children":[["$","strong",null,{"children":"Next Up"}],["$","span",null,{"style":{"fontSize":14,"fontWeight":700,"textTransform":"capitalize"},"children":"week 2"}]]}]}]]}]
 10:null
