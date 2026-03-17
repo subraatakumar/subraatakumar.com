@@ -60,6 +60,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: canonicalPath,
       type: "article",
       publishedTime: data.date,
+      modifiedTime: data.updated ?? data.date,
       images: [DEFAULT_OG_IMAGE],
     },
     twitter: {
@@ -228,9 +229,18 @@ export default async function ArticlePage({ params }: PageProps) {
   const prevSlug = allSlugs[currentIndex - 1];
   const nextSlug = allSlugs[currentIndex + 1];
 
-  // derive day number and progress for sidebar
-  const dayNumber = slug.replace("day-", "");
-  const progress = Math.round((Number(dayNumber) / 180) * 100);
+  // derive week number and progress for sidebar
+  const totalWeeks = 24;
+  const weekMatch = slug.match(/^week-(\d+)$/);
+  const weekNumber = weekMatch ? Number(weekMatch[1]) : 0;
+  const progressRaw = weekNumber > 0 ? Math.round((weekNumber / totalWeeks) * 100) : 0;
+  const progress = Math.min(100, Math.max(0, progressRaw));
+  const headline = typeof data.title === "string" ? data.title : `Week ${weekNumber}`;
+  const summary = typeof data.description === "string" ? data.description : undefined;
+  const datePublished = typeof data.date === "string" ? data.date : undefined;
+  const dateModified = typeof data.updated === "string" ? data.updated : datePublished;
+  const keywords = Array.isArray(data.tags) ? data.tags.map((tag: unknown) => String(tag)) : undefined;
+  const articleImage = typeof data.image === "string" ? absoluteUrl(data.image) : DEFAULT_OG_IMAGE;
 
   return (
     <div className="d180-article-page">
@@ -550,7 +560,7 @@ export default async function ArticlePage({ params }: PageProps) {
             </Link>
             <nav className="hidden md:flex items-center gap-3">
               <Link href="/24weeks" className="d180-crumb">
-                <span className="d180-crumb-series">24 Weeks</span> <span>/</span> <strong>Week {dayNumber}</strong>
+                <span className="d180-crumb-series">24 Weeks</span> <span>/</span> <strong>Week {weekNumber || "?"}</strong>
               </Link>
               <div className="d180-pill">
                 <div className="d180-pill-track">
@@ -645,14 +655,23 @@ export default async function ArticlePage({ params }: PageProps) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Article",
+            "@type": "BlogPosting",
             mainEntityOfPage: absoluteUrl(`/24weeks/${slug}`),
-            headline: data.title,
-            datePublished: data.date,
-            description: data.description,
+            headline,
+            description: summary,
+            datePublished,
+            dateModified,
+            image: articleImage,
+            keywords,
             author: {
               "@type": "Person",
               name: "Subrata Kumar Das",
+              url: "https://subraatakumar.com",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Subrata Kumar Das",
+              url: "https://subraatakumar.com",
             },
           }),
         }}

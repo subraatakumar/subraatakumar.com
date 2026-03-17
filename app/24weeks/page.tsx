@@ -10,7 +10,7 @@ type Post = {
   title: string;
   date: string;
   description?: string;
-  dayNumber: number;
+  weekNumber: number;
 };
 
 const contentDirectory = path.join(process.cwd(), "content/24weeks");
@@ -49,22 +49,23 @@ export default function DaysIndex() {
     const filePath = path.join(contentDirectory, filename);
     const fileContents = fs.readFileSync(filePath, "utf8");
     const { data } = matter(fileContents);
-    const dayNumber = Number(slug.replace("day-", "")) || 0;
+    const weekMatch = slug.match(/^week-(\d+)$/);
+    const weekNumber = weekMatch ? Number(weekMatch[1]) : 0;
 
     return {
       slug,
       title: data.title ?? slug,
       date: data.date ?? "",
       description: data.description ?? "",
-      dayNumber,
+      weekNumber,
     };
   });
 
-  posts.sort((a, b) => a.dayNumber - b.dayNumber);
+  posts.sort((a, b) => a.weekNumber - b.weekNumber);
 
   const totalWeeks = 24; // 24 weeks
-  const completedWeeks = posts.length;
-  const progressPercent = Math.round((completedWeeks / totalWeeks) * 100);
+  const currentWeek = posts.reduce((maxWeek, post) => Math.max(maxWeek, post.weekNumber), 0);
+  const progressPercent = Math.round((currentWeek / totalWeeks) * 100);
 
   return (
     <>
@@ -101,7 +102,7 @@ export default function DaysIndex() {
           <div className="d180-progress-wrap">
             <div className="d180-progress-labels">
               <span>Progress</span>
-              <span>{completedWeeks} / {totalWeeks} weeks</span>
+              <span>{currentWeek} / {totalWeeks} weeks</span>
             </div>
             <div className="d180-progress-track">
               <div className="d180-progress-fill" style={{ width: `${progressPercent}%` }} />
@@ -117,8 +118,8 @@ export default function DaysIndex() {
         {/* Stats */}
         <div className="d180-stats">
           {[
-            { label: "Weeks Logged",     value: completedWeeks },
-            { label: "Weeks Remaining",  value: totalWeeks - completedWeeks },
+            { label: "Weeks Logged",     value: currentWeek },
+            { label: "Weeks Remaining",  value: Math.max(0, totalWeeks - currentWeek) },
             { label: "Completion",      value: `${progressPercent}%` },
           ].map((s) => (
             <div key={s.label} className="d180-stat-card">
@@ -132,7 +133,7 @@ export default function DaysIndex() {
         <div className="d180-entry-list">
           {posts.map((post) => (
             <Link key={post.slug} href={`/24weeks/${post.slug}`} className="d180-entry">
-              <div className="d180-day-badge">{post.dayNumber}</div>
+              <div className="d180-day-badge">{post.weekNumber}</div>
 
               <div className="d180-entry-body">
                 <h2 className="d180-entry-title">{post.title}</h2>
@@ -160,6 +161,12 @@ export default function DaysIndex() {
             description:
               "Mapping the blueprint for the 2030 stack through 24 weeks of hands-on, autonomous agent and infrastructure builds. Follow along as I open-source the architectural trade-offs, failures, and breakthroughs of engineering in the AI era.",
             url: "https://subraatakumar.com/24weeks",
+            about: ["AI Engineering", "AI-Native SaaS", "RAG", "LLM Application Development"],
+            author: {
+              "@type": "Person",
+              name: "Subrata Kumar Das",
+              url: "https://subraatakumar.com",
+            },
             numberOfItems: posts.length,
             mainEntity: {
               "@type": "ItemList",

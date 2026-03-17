@@ -1,6 +1,6 @@
 ---
-title: "Week 2: Local RAG Architecture (LM Studio vs Microsoft Foundry Local)."
-description: "Decision-complete architecture for Week 2 Local RAG, covering both LM Studio and Microsoft Foundry Local designs, with Microsoft Foundry Local selected as the implementation path."
+title: "Week 2: Building a Local RAG System with Next.js and Foundry"
+description: "A practical, implementation-focused chapter on building a local-first RAG pipeline with ingestion, chunking, embeddings, retrieval, grounded answers, and citation-ready output."
 date: "2026-03-16"
 image: "/images/24weeks/week-2.png"
 slug: "24-weeks-of-ai-native-saas"
@@ -10,96 +10,120 @@ tags:
   - software-development
   - large-language-models
   - rag
+  - nextjs
   - Subrata Kumar Das
-excerpt: "Week 2 defines a production-ready Local RAG architecture with ingestion, chunking, embeddings, retrieval, citations, and failure handling, comparing LM Studio and Foundry Local before choosing Foundry Local for build execution."
+excerpt: "Week 2 moves from generic model outputs to grounded answers by building a complete Local RAG system using Next.js, ChromaDB, and Foundry Local."
 author: "Subrata Kumar Das"
-updated: "2026-03-16"
+updated: "2026-03-17"
 draft: false
-readingTime: "16 min"
+readingTime: "17 min"
 ---
 
-## **Week 2 Mission: Build a Local RAG Engine That You Can Trust**
+## **Chapter 2: Building a Local RAG System with Next.js and Foundry**
 
-Week 1 proved we can compare model outputs.
+Welcome to Week 2.
 
-Week 2 is about **grounding** those outputs in your own documents.
+In Week 1, we compared model outputs.
+In Week 2, we make those outputs trustworthy by grounding them in our own documents.
 
-Goal: Build a Local RAG system where answers come from your files (Markdown/PDF), with visible citations and deterministic architecture.
+This chapter documents a complete local-first Retrieval Augmented Generation (RAG) system that can ingest files, index them, retrieve relevant context, and answer with citations.
 
----
-
-## **What This Plan Covers**
-
-This architecture plan includes both:
-
-* **Option A: LM Studio Local RAG Architecture**
-* **Option B: Microsoft Foundry Local RAG Architecture**
-
-And then locks implementation choice:
-
-* **Final build path for this project: Microsoft Foundry Local RAG**
+**Project Repository:** [24weeks-week-2-Local-RAG-Studio](https://github.com/TechCraft-By-Subrata/24weeks-week-2-Local-RAG-Studio)
 
 ---
 
-## **Decision Summary (Locked)**
+## **How This Fits This Repository**
 
-### Why compare both?
+This website repository (`subraatakumar.com`) is intentionally static:
 
-Both are local-first inference approaches, but they differ in ecosystem and operational model.
+- Next.js App Router
+- TypeScript + Tailwind CSS
+- static export (`output: "export"`)
+- no backend runtime APIs in this repo
 
-### Final decision for Week 2 build
+So this chapter is a technical build journal for the **Week 2 companion project** (the Local RAG app), while this site remains the publishing layer.
 
-We will implement with **Microsoft Foundry Local** for this project, because:
+That separation is intentional:
 
-1. It aligns with your current direction and tooling interest.
-2. It gives a clear local runtime contract (CLI/SDK/REST style).
-3. It keeps a clean path to Microsoft ecosystem integration later (if needed).
-
-LM Studio architecture is still documented fully as a fallback/alternative.
-
----
-
-## **Shared Week-2 Architecture (Applies to Both Options)**
-
-Regardless of runtime, the RAG pipeline is the same:
-
-1. **Ingest files** (`.md`, `.pdf`)
-2. **Extract text** and normalize content
-3. **Chunk text** into retrievable units
-4. **Generate embeddings** for each chunk
-5. **Store vectors** in Chroma with metadata
-6. **Retrieve top-k chunks** for user query
-7. **Generate answer** from retrieved context
-8. **Return citations** mapped to chunk metadata
+- the site stays fast, stable, SEO-friendly
+- experimental AI systems evolve in dedicated implementation repos
 
 ---
 
-## **Core Data Model (Minimal, Locked)**
+## **The Why: Why Local RAG Matters**
 
-Each chunk stored in vector DB must include:
+LLMs are powerful, but they are not connected to your private, latest documents by default.
+
+RAG solves this by retrieving relevant chunks from your corpus and injecting them into the prompt at answer time.
+
+Benefits:
+
+- **Lower hallucination risk:** answers are anchored to retrieved context.
+- **Fresh knowledge:** you can query documents created after model training.
+- **Privacy:** files can stay local when ingestion, retrieval, and generation run on your machine.
+
+---
+
+## **System Overview**
+
+The architecture has two loops: **Ingestion** and **Retrieval/Chat**.
+
+![Local RAG architecture overview](/24weeks/week2/local_rag.png)
+
+### **Phase 1: Ingestion**
+
+1. User uploads `.pdf`, `.md`, or `.txt`.
+2. Frontend sends content to `POST /api/ingest`.
+3. Backend extracts text and applies chunking.
+4. Chunks are embedded using `nomic-embed-text-v1` via Foundry Local.
+5. Chunk text + vectors + metadata are stored in Chroma.
+
+### **Phase 2: Retrieval + Answer**
+
+1. User submits a question.
+2. Frontend calls `POST /api/chat`.
+3. Query is embedded with the same embedding model.
+4. Chroma runs vector similarity search (`topK`, optional threshold).
+5. Retrieved chunks are passed to local generation runtime.
+6. API returns grounded answer + citations.
+7. If generation fails, API falls back to retrieved excerpts.
+
+---
+
+## **Architecture Contract (Week 2 Locked Defaults)**
+
+### **Chunking Defaults**
+
+- `chunkSize = 800`
+- `chunkOverlap = 120`
+- paragraph-aware split first, hard split fallback
+
+### **Retrieval Defaults**
+
+- `topK = 5`
+- `minScore = 0.2`
+- return best available context with warning if strict threshold gives low matches
+
+### **Core Stored Record**
 
 ```ts
 type ChunkRecord = {
-  id: string;            // e.g., source::page::chunk_index
-  source: string;        // filename or logical doc id
-  page: number | null;   // null for markdown/plain text
-  chunk_id: string;      // stable per document
-  text: string;          // chunk text
-  embedding: number[];   // vector
-  token_count: number;   // optional but recommended
-  created_at: string;    // ISO timestamp
+  id: string;
+  source: string;
+  page: number | null;
+  chunk_id: string;
+  text: string;
+  embedding: number[];
+  token_count?: number;
+  created_at: string;
 };
 ```
 
 ---
 
-## **API Interfaces (Locked for Week 2)**
+## **API Design**
 
-### `POST /api/ingest`
-
-Purpose: ingest one or more local files and index them into Chroma.
-
-Request:
+### **`POST /api/ingest`**
 
 ```ts
 type IngestRequest = {
@@ -109,15 +133,11 @@ type IngestRequest = {
     contentBase64: string;
   }>;
   options?: {
-    chunkSize?: number;      // default: 800 chars
-    chunkOverlap?: number;   // default: 120 chars
+    chunkSize?: number;
+    chunkOverlap?: number;
   };
 };
-```
 
-Response:
-
-```ts
 type IngestResponse = {
   success: boolean;
   documentsIndexed: number;
@@ -127,27 +147,19 @@ type IngestResponse = {
 };
 ```
 
-### `POST /api/chat`
-
-Purpose: run retrieval-grounded Q&A over indexed chunks.
-
-Request:
+### **`POST /api/chat`**
 
 ```ts
 type ChatRequest = {
   query: string;
   options?: {
-    topK?: number;              // default: 5
-    minScore?: number;          // default: 0.2
-    temperature?: number;       // default: 0.2
+    topK?: number;
+    minScore?: number;
+    temperature?: number;
     systemPrompt?: string;
   };
 };
-```
 
-Response:
-
-```ts
 type ChatResponse = {
   answer: string;
   citations: Array<{
@@ -168,220 +180,222 @@ type ChatResponse = {
 
 ---
 
-## **Chunking Strategy (Locked)**
+## **Code Walkthrough**
 
-* **Chunk size:** 800 characters
-* **Overlap:** 120 characters
-* **Splitter rule:** paragraph-aware first, fallback to hard-length split
-* **Normalization:** collapse repeated spaces/newlines, preserve bullet and heading boundaries where possible
+### **1) RAG Store (`src/lib/rag-store.ts`)**
 
-Why this default:
+This module owns chunking + vector storage lifecycle.
 
-* Keeps chunks small enough for precise retrieval
-* Preserves enough context continuity through overlap
-* Works well for both markdown notes and extracted PDF text
+```ts
+import { ChromaClient, type Collection } from 'chromadb';
 
----
+const CHROMA_COLLECTION_NAME = 'rag-studio-collection';
+let collection: Collection | null = null;
 
-## **Retrieval Strategy (Locked)**
+async function getCollection(): Promise<Collection> {
+  if (collection) return collection;
 
-* Similarity search in Chroma with `topK = 5`
-* Apply optional score threshold `minScore = 0.2`
-* If fewer than 2 matches pass threshold, still return best 1 with a warning
-* Inject retrieved chunks into prompt with explicit citation tags, e.g.:
-
-```txt
-[CTX-1] source=architecture.md page=null chunk=architecture::12
-...
-[CTX-2] source=srs.pdf page=8 chunk=srs::8::3
+  const client = new ChromaClient({ path: process.env.CHROMA_URL || 'http://localhost:8000' });
+  collection = await client.getOrCreateCollection({ name: CHROMA_COLLECTION_NAME });
+  return collection;
+}
 ```
 
-Generation must cite contexts by source and chunk.
+Ingestion pipeline:
+
+```ts
+import { getEmbeddings } from './model-runtime';
+
+export async function ingestDocument(args: {
+  source: string;
+  text: string;
+  chunkSize: number;
+  chunkOverlap: number;
+}) {
+  const parts = chunkText(args.text, args.chunkSize, args.chunkOverlap);
+  if (parts.length === 0) return [];
+
+  const embeddings = await getEmbeddings(parts);
+  const collection = await getCollection();
+
+  const records = parts.map((part, index) => {
+    const chunkId = `${args.source}::${index}`;
+    return {
+      id: chunkId,
+      chunk_id: chunkId,
+      source: args.source,
+      page: null,
+      text: part,
+      created_at: new Date().toISOString(),
+    };
+  });
+
+  await collection.add({
+    ids: records.map((r) => r.id),
+    embeddings,
+    documents: records.map((r) => r.text),
+    metadatas: records.map((r) => ({
+      source: r.source,
+      page: r.page,
+      chunk_id: r.chunk_id,
+      created_at: r.created_at,
+    })),
+  });
+
+  return records;
+}
+```
+
+### **2) Model Runtime (`src/lib/model-runtime.ts`)**
+
+This module bridges app code to local model execution.
+
+```ts
+export async function getEmbeddings(texts: string[]): Promise<number[][]> {
+  const modelId = 'nomic-embed-text-v1';
+  const payload = JSON.stringify({ texts });
+
+  const result = await runCommandWithInput(
+    'foundry',
+    ['model', 'run', modelId],
+    payload,
+  );
+
+  if (!result.ok) {
+    throw new Error(`Failed to get embeddings: ${result.stderr}`);
+  }
+
+  return parseEmbeddings(result.stdout);
+}
+```
+
+### **3) Retrieval Path (`/api/chat/route.ts`)**
+
+```ts
+import { searchChunks } from '@/lib/rag-store';
+
+export async function POST(req: Request) {
+  const { query, options } = await req.json();
+  const topK = options?.topK ?? 5;
+  const minScore = options?.minScore ?? 0.2;
+
+  const hits = await searchChunks(query, topK, minScore);
+
+  // Build context prompt + generate answer with citations.
+  // Fallback: return ranked excerpts if generation is unavailable.
+  return Response.json({ hits });
+}
+```
 
 ---
 
-## **Citation Format (Locked)**
+## **Citation Contract**
 
-Answer body will include numbered citations, and API returns structured citation objects.
+Citation quality is not optional in RAG.
 
-Example render style:
+Target output style:
 
 ```txt
-The retrieval layer should use score-threshold fallback and deterministic chunk IDs for observability [1][2].
+The retrieval layer should use deterministic chunk IDs and score-threshold fallback [1][2].
 
 [1] architecture.md (chunk: architecture::12)
 [2] srs.pdf (page: 8, chunk: srs::8::3)
 ```
 
----
-
-## **Failure Modes and Handling (Locked)**
-
-### Ingestion failures
-
-1. **Malformed PDF / unreadable file**
-   * Skip file, return error entry in `errors[]`
-2. **Unsupported mime type**
-   * Skip with explicit reason in `skipped[]`
-3. **No extractable text**
-   * Skip and report `empty_text`
-
-### Retrieval/chat failures
-
-1. **Vector DB empty**
-   * Return graceful message: "No indexed documents found. Ingest files first."
-2. **No relevant chunks**
-   * Return low-confidence answer + warning + empty citations
-3. **Local model unavailable**
-   * Return actionable error: runtime not running/model not loaded
-4. **Timeout during generation**
-   * Return partial failure with retry suggestion
+This gives users traceability and makes debugging retrieval quality practical.
 
 ---
 
-## **Option A: LM Studio Local RAG Architecture**
+## **Failure Modes We Handle Explicitly**
 
-### Runtime
+### **Ingestion**
 
-* Local generation model hosted via LM Studio local server endpoint
-* Separate embedding model via LM Studio (if available in your setup) or fallback embedding runtime
+- malformed PDF -> skip + report `errors[]`
+- unsupported MIME type -> `skipped[]`
+- empty extracted text -> skip with reason
 
-### Service wiring
+### **Chat/Retrieval**
 
-* `Ingest Service` -> parser -> chunker -> embedder -> Chroma
-* `Chat Service` -> query embed -> retrieve top-k -> prompt builder -> LM Studio generation
-
-### Pros
-
-* Quick start with user-friendly desktop workflow
-* Easy model switching in UI
-* Great for experimentation and demos
-
-### Tradeoffs
-
-* Environment parity across machines can vary
-* Embedding model/runtime setup may be less standardized depending on local stack
-
-### Recommended when
-
-* Fast prototyping and model experimentation is top priority
+- empty vector store -> clear message: ingest documents first
+- no relevant chunks -> warning + safe fallback response
+- runtime unavailable -> actionable error (start Foundry/LM Studio)
+- generation timeout -> partial failure + retry guidance
 
 ---
 
-## **Option B: Microsoft Foundry Local RAG Architecture (Selected)**
+## **Getting Started (Week 2 Companion Project)**
 
-### Runtime
+### **Prerequisites**
 
-* Generation model served by Foundry Local runtime
-* Embedding model also served via Foundry Local where supported by selected model set
+- Node.js
+- Chroma server (default expected URL: `http://localhost:8000`)
+- Foundry Local installed
+- embedding model available: `nomic-embed-text-v1`
+- optional LM Studio runtime if you want `runtime=lmstudio`
 
-### Service wiring
+Run Chroma:
 
-* `Ingest API` calls Foundry Local embedding endpoint for each chunk
-* Chroma stores vectors and metadata
-* `Chat API` retrieves top-k chunks and calls Foundry Local generation endpoint with contextual prompt
+```bash
+docker run -p 8000:8000 chromadb/chroma
+```
 
-### Pros
+Download embedding model:
 
-* More standardized local runtime contract for enterprise-like workflows
-* Clear alignment with Microsoft AI platform path
-* Better long-term fit for structured local deployment discipline
+```bash
+foundry model download nomic-embed-text-v1
+```
 
-### Tradeoffs
+(Optional) start LM Studio server:
 
-* Model availability varies by platform/runtime support
-* Initial local setup can be more procedural than LM Studio
+```bash
+lms server start
+```
 
-### Recommended when
+### **Install + Run**
 
-* You want disciplined local architecture with Microsoft ecosystem alignment
+```bash
+npm install
+npm run dev
+```
 
----
+Optional `.env.local` override:
 
-## **Selected Build Blueprint (Microsoft Foundry Local)**
-
-### Components
-
-1. **Frontend UI** (Next.js page)
-   * Upload documents
-   * Ask grounded questions
-   * Render citations and retrieval info
-2. **Ingest API** (`POST /api/ingest`)
-   * Parse + chunk + embed + upsert to Chroma
-3. **Chat API** (`POST /api/chat`)
-   * Embed query + retrieve + generate + cite
-4. **Vector Store** (Chroma)
-   * Local persistent collection
-5. **Foundry Local Runtime**
-   * One generation model + one embedding model
-
-### Default operational values
-
-* `chunkSize = 800`
-* `chunkOverlap = 120`
-* `topK = 5`
-* `temperature = 0.2`
-
-### Security baseline
-
-* Local-only storage by default
-* No external doc upload by default
-* No secret values written to client logs
+```bash
+CHROMA_URL=http://localhost:8000
+```
 
 ---
 
-## **Evaluation Checklist (Acceptance Criteria)**
+## **Week 2 Acceptance Criteria**
 
-Week-2 is complete only if all pass:
+Week 2 is complete when all are true:
 
-1. Upload markdown and PDF files successfully.
-2. Ingest API reports counts (`documentsIndexed`, `chunksIndexed`).
-3. Chat response uses retrieved context (not generic answer).
-4. Every answer includes at least one citation when retrieval matches exist.
-5. "No documents ingested" case handled gracefully.
-6. "No relevant chunks" case returns warning and safe fallback behavior.
-7. Foundry Local runtime down/not loaded case shows actionable error.
-8. End-to-end median response time is acceptable for local dev (documented by logs).
+1. Markdown and PDF ingestion works.
+2. Ingest API returns `documentsIndexed` and `chunksIndexed`.
+3. Answers are retrieval-grounded, not generic.
+4. Citations appear whenever matches exist.
+5. Empty-index and no-match paths are graceful.
+6. Runtime-down errors are actionable.
 
 ---
 
-## **Implementation Sequence (Week-2 Build Order)**
+## **What Week 2 Unlocks**
 
-1. Build ingestion parser + chunker utility.
-2. Integrate Foundry Local embeddings.
-3. Upsert chunks to Chroma with metadata schema.
-4. Build retrieval pipeline and query embedding.
-5. Build answer generation with citation-aware prompt template.
-6. Add UI for upload + ask + citation rendering.
-7. Add edge-case handling and acceptance tests.
+Week 2 gives us a usable local knowledge layer.
 
----
+That unlocks Week 3 work on:
 
-## **Reference Links**
-
-### Local RAG fundamentals
-* RAG overview: [https://www.pinecone.io/learn/retrieval-augmented-generation/](https://www.pinecone.io/learn/retrieval-augmented-generation/)
-
-### Chroma
-* Chroma docs: [https://docs.trychroma.com/](https://docs.trychroma.com/)
-
-### LM Studio
-* LM Studio docs: [https://lmstudio.ai/docs](https://lmstudio.ai/docs)
-
-### Microsoft Foundry Local
-* What is Foundry Local: [https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/what-is-foundry-local](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/what-is-foundry-local)
-* Foundry Local get started: [https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started)
-* Foundry Local SDK reference: [https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-sdk](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-sdk)
+- structured outputs
+- validation pipelines
+- higher-confidence agent behavior on top of grounded context
 
 ---
 
-## **Week-2 Outcome Target**
+## **References**
 
-By the end of Week 2, you should have a fully local RAG prototype that can:
-
-* ingest personal docs,
-* retrieve grounded context,
-* answer with citations,
-* and run on Microsoft Foundry Local as the selected runtime.
-
-This sets up Week 3 to focus on structured outputs and validation pipelines on top of reliable retrieval-grounded generation.
+- Chroma docs: [https://docs.trychroma.com/](https://docs.trychroma.com/)
+- Foundry Local docs: [https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/)
+- Foundry Local get started: [https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started)
+- LM Studio docs: [https://lmstudio.ai/docs](https://lmstudio.ai/docs)
+- `nomic-embed-text-v1` model card: [https://huggingface.co/nomic-ai/nomic-embed-text-v1](https://huggingface.co/nomic-ai/nomic-embed-text-v1)
+- RAG primer: [https://research.ibm.com/blog/retrieval-augmented-generation](https://research.ibm.com/blog/retrieval-augmented-generation)
