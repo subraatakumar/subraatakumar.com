@@ -304,52 +304,77 @@ f:"$Sreact.suspense"
             display: none;
           }
         }
-      0:{"buildId":"zqXMrKuuiKfQv6KyB6wVG","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5","$L6"]}],["$L7"],"$L8"]}],"loading":null,"isPartial":false}
-3:["$","header",null,{"className":"d180-article-header","children":["$","div",null,{"className":"d180-article-header-inner","children":[["$","div",null,{"className":"flex items-center gap-3 shrink-0","children":[["$","$L9",null,{"href":"/","aria-label":"Go to main home page","className":"w-8 h-8 rounded-lg flex items-center justify-center text-slate-900 shadow-lg","style":{"background":"var(--amber)","boxShadow":"0 8px 20px rgba(22, 208, 236, 0.22)"},"children":["$","span",null,{"className":"font-black text-sm","children":"SK"}]}],["$","nav",null,{"className":"hidden md:flex items-center gap-3","children":[["$","$L9",null,{"href":"/24weeks","className":"d180-crumb","children":[["$","span",null,{"className":"d180-crumb-series","children":"24 Weeks"}]," ",["$","span",null,{"children":"/"}]," ",["$","strong",null,{"children":["Week ","week-2"]}]]}],["$","div",null,{"className":"d180-pill","children":[["$","div",null,{"className":"d180-pill-track","children":["$","div",null,{"className":"d180-pill-fill","style":{"width":"NaN%"}}]}],["$","b",null,{"children":["$NaN","%"]}]]}]]}]]}],["$","div",null,{"className":"flex items-center gap-4","children":["$","$L9",null,{"href":"/24weeks","className":"d180-crumb","children":"← All Weeks"}]}]]}]}]
-4:["$","div",null,{"className":"d180-hero","children":["$","div",null,{"className":"d180-hero-inner d180-content-wrap","style":{"paddingTop":56,"paddingBottom":56},"children":[["$","h1",null,{"style":{"maxWidth":820},"children":"Week 2: Local RAG Architecture (LM Studio vs Microsoft Foundry Local)."}],["$","p",null,{"style":{"marginTop":14,"maxWidth":760},"children":"Decision-complete architecture for Week 2 Local RAG, covering both LM Studio and Microsoft Foundry Local designs, with Microsoft Foundry Local selected as the implementation path."}],["$","div",null,{"className":"d180-meta-line","children":[["$","span",null,{"children":"2026-03-16"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"var(--amber)"},"children":"Subrata Kumar Das"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#15803d","fontSize":11,"fontWeight":800,"textTransform":"uppercase","letterSpacing":".08em"},"children":"Complete"}]]}],["$","p",null,{"style":{"marginTop":16,"maxWidth":500,"fontSize":13,"lineHeight":1.7,"color":"var(--slate-700)","borderLeft":"2px solid var(--amber)","paddingLeft":10,"fontStyle":"italic"},"children":"\"Consistent small steps lead to massive long-term results. Keep pushing.\""}]]}]}]
-a:T5355,<h2 id="week-2-mission-build-a-local-rag-engine-that-you-can-trust" class="d180-md-h2"><strong>Week 2 Mission: Build a Local RAG Engine That You Can Trust</strong></h2>
-<p class="d180-md-p">Week 1 proved we can compare model outputs.</p>
-<p class="d180-md-p">Week 2 is about <strong>grounding</strong> those outputs in your own documents.</p>
-<p class="d180-md-p">Goal: Build a Local RAG system where answers come from your files (Markdown/PDF), with visible citations and deterministic architecture.</p>
+      0:{"buildId":"wBU4HjgJxt9CYoe9e-p9Z","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5","$L6"]}],["$L7"],"$L8"]}],"loading":null,"isPartial":false}
+3:["$","header",null,{"className":"d180-article-header","children":["$","div",null,{"className":"d180-article-header-inner","children":[["$","div",null,{"className":"flex items-center gap-3 shrink-0","children":[["$","$L9",null,{"href":"/","aria-label":"Go to main home page","className":"w-8 h-8 rounded-lg flex items-center justify-center text-slate-900 shadow-lg","style":{"background":"var(--amber)","boxShadow":"0 8px 20px rgba(22, 208, 236, 0.22)"},"children":["$","span",null,{"className":"font-black text-sm","children":"SK"}]}],["$","nav",null,{"className":"hidden md:flex items-center gap-3","children":[["$","$L9",null,{"href":"/24weeks","className":"d180-crumb","children":[["$","span",null,{"className":"d180-crumb-series","children":"24 Weeks"}]," ",["$","span",null,{"children":"/"}]," ",["$","strong",null,{"children":["Week ",2]}]]}],["$","div",null,{"className":"d180-pill","children":[["$","div",null,{"className":"d180-pill-track","children":["$","div",null,{"className":"d180-pill-fill","style":{"width":"8%"}}]}],["$","b",null,{"children":[8,"%"]}]]}]]}]]}],["$","div",null,{"className":"flex items-center gap-4","children":["$","$L9",null,{"href":"/24weeks","className":"d180-crumb","children":"← All Weeks"}]}]]}]}]
+4:["$","div",null,{"className":"d180-hero","children":["$","div",null,{"className":"d180-hero-inner d180-content-wrap","style":{"paddingTop":56,"paddingBottom":56},"children":[["$","h1",null,{"style":{"maxWidth":820},"children":"Week 2: Building a Local RAG System with Next.js and Foundry"}],["$","p",null,{"style":{"marginTop":14,"maxWidth":760},"children":"A practical, implementation-focused chapter on building a local-first RAG pipeline with ingestion, chunking, embeddings, retrieval, grounded answers, and citation-ready output."}],["$","div",null,{"className":"d180-meta-line","children":[["$","span",null,{"children":"2026-03-16"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"var(--amber)"},"children":"Subrata Kumar Das"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#15803d","fontSize":11,"fontWeight":800,"textTransform":"uppercase","letterSpacing":".08em"},"children":"Complete"}]]}],["$","p",null,{"style":{"marginTop":16,"maxWidth":500,"fontSize":13,"lineHeight":1.7,"color":"var(--slate-700)","borderLeft":"2px solid var(--amber)","paddingLeft":10,"fontStyle":"italic"},"children":"\"Consistent small steps lead to massive long-term results. Keep pushing.\""}]]}]}]
+a:T4e79,<h2 id="chapter-2-building-a-local-rag-system-with-nextjs-and-foundry" class="d180-md-h2"><strong>Chapter 2: Building a Local RAG System with Next.js and Foundry</strong></h2>
+<p class="d180-md-p">Welcome to Week 2.</p>
+<p class="d180-md-p">In Week 1, we compared model outputs.
+In Week 2, we make those outputs trustworthy by grounding them in our own documents.</p>
+<p class="d180-md-p">This chapter documents a complete local-first Retrieval Augmented Generation (RAG) system that can ingest files, index them, retrieve relevant context, and answer with citations.</p>
+<p class="d180-md-p"><strong>Project Repository:</strong> <a href="https://github.com/TechCraft-By-Subrata/24weeks-week-2-Local-RAG-Studio" class="d180-md-link">24weeks-week-2-Local-RAG-Studio</a></p>
 <hr class="d180-md-hr" />
-<h2 id="what-this-plan-covers" class="d180-md-h2"><strong>What This Plan Covers</strong></h2>
-<p class="d180-md-p">This architecture plan includes both:</p>
+<h2 id="how-this-fits-this-repository" class="d180-md-h2"><strong>How This Fits This Repository</strong></h2>
+<p class="d180-md-p">This website repository (<code class="d180-md-inline-code">subraatakumar.com</code>) is intentionally static:</p>
 <ul class="d180-md-ul">
-<li class="d180-md-li"><strong>Option A: LM Studio Local RAG Architecture</strong></li>
-<li class="d180-md-li"><strong>Option B: Microsoft Foundry Local RAG Architecture</strong></li>
+<li class="d180-md-li">Next.js App Router</li>
+<li class="d180-md-li">TypeScript + Tailwind CSS</li>
+<li class="d180-md-li">static export (<code class="d180-md-inline-code">output: "export"</code>)</li>
+<li class="d180-md-li">no backend runtime APIs in this repo</li>
 </ul>
-<p class="d180-md-p">And then locks implementation choice:</p>
+<p class="d180-md-p">So this chapter is a technical build journal for the <strong>Week 2 companion project</strong> (the Local RAG app), while this site remains the publishing layer.</p>
+<p class="d180-md-p">That separation is intentional:</p>
 <ul class="d180-md-ul">
-<li class="d180-md-li"><strong>Final build path for this project: Microsoft Foundry Local RAG</strong></li>
+<li class="d180-md-li">the site stays fast, stable, SEO-friendly</li>
+<li class="d180-md-li">experimental AI systems evolve in dedicated implementation repos</li>
 </ul>
 <hr class="d180-md-hr" />
-<h2 id="decision-summary-locked" class="d180-md-h2"><strong>Decision Summary (Locked)</strong></h2>
-<h3 id="why-compare-both" class="d180-md-h3">Why compare both?</h3>
-<p class="d180-md-p">Both are local-first inference approaches, but they differ in ecosystem and operational model.</p>
-<h3 id="final-decision-for-week-2-build" class="d180-md-h3">Final decision for Week 2 build</h3>
-<p class="d180-md-p">We will implement with <strong>Microsoft Foundry Local</strong> for this project, because:</p>
-<ol class="d180-md-ol">
-<li class="d180-md-li">It aligns with your current direction and tooling interest.</li>
-<li class="d180-md-li">It gives a clear local runtime contract (CLI/SDK/REST style).</li>
-<li class="d180-md-li">It keeps a clean path to Microsoft ecosystem integration later (if needed).</li>
-</ol>
-<p class="d180-md-p">LM Studio architecture is still documented fully as a fallback/alternative.</p>
+<h2 id="the-why-why-local-rag-matters" class="d180-md-h2"><strong>The Why: Why Local RAG Matters</strong></h2>
+<p class="d180-md-p">LLMs are powerful, but they are not connected to your private, latest documents by default.</p>
+<p class="d180-md-p">RAG solves this by retrieving relevant chunks from your corpus and injecting them into the prompt at answer time.</p>
+<p class="d180-md-p">Benefits:</p>
+<ul class="d180-md-ul">
+<li class="d180-md-li"><strong>Lower hallucination risk:</strong> answers are anchored to retrieved context.</li>
+<li class="d180-md-li"><strong>Fresh knowledge:</strong> you can query documents created after model training.</li>
+<li class="d180-md-li"><strong>Privacy:</strong> files can stay local when ingestion, retrieval, and generation run on your machine.</li>
+</ul>
 <hr class="d180-md-hr" />
-<h2 id="shared-week-2-architecture-applies-to-both-options" class="d180-md-h2"><strong>Shared Week-2 Architecture (Applies to Both Options)</strong></h2>
-<p class="d180-md-p">Regardless of runtime, the RAG pipeline is the same:</p>
+<h2 id="system-overview" class="d180-md-h2"><strong>System Overview</strong></h2>
+<p class="d180-md-p">The architecture has two loops: <strong>Ingestion</strong> and <strong>Retrieval/Chat</strong>.</p>
+<p class="d180-md-p"><img src="/24weeks/week2/local_rag.png" class="rounded-md shadow-sm mx-auto block" alt="Local RAG architecture overview"></p>
+<h3 id="phase-1-ingestion" class="d180-md-h3"><strong>Phase 1: Ingestion</strong></h3>
 <ol class="d180-md-ol">
-<li class="d180-md-li"><strong>Ingest files</strong> (<code class="d180-md-inline-code">.md</code>, <code class="d180-md-inline-code">.pdf</code>)</li>
-<li class="d180-md-li"><strong>Extract text</strong> and normalize content</li>
-<li class="d180-md-li"><strong>Chunk text</strong> into retrievable units</li>
-<li class="d180-md-li"><strong>Generate embeddings</strong> for each chunk</li>
-<li class="d180-md-li"><strong>Store vectors</strong> in Chroma with metadata</li>
-<li class="d180-md-li"><strong>Retrieve top-k chunks</strong> for user query</li>
-<li class="d180-md-li"><strong>Generate answer</strong> from retrieved context</li>
-<li class="d180-md-li"><strong>Return citations</strong> mapped to chunk metadata</li>
+<li class="d180-md-li">User uploads <code class="d180-md-inline-code">.pdf</code>, <code class="d180-md-inline-code">.md</code>, or <code class="d180-md-inline-code">.txt</code>.</li>
+<li class="d180-md-li">Frontend sends content to <code class="d180-md-inline-code">POST /api/ingest</code>.</li>
+<li class="d180-md-li">Backend extracts text and applies chunking.</li>
+<li class="d180-md-li">Chunks are embedded using <code class="d180-md-inline-code">nomic-embed-text-v1</code> via Foundry Local.</li>
+<li class="d180-md-li">Chunk text + vectors + metadata are stored in Chroma.</li>
+</ol>
+<h3 id="phase-2-retrieval-answer" class="d180-md-h3"><strong>Phase 2: Retrieval + Answer</strong></h3>
+<ol class="d180-md-ol">
+<li class="d180-md-li">User submits a question.</li>
+<li class="d180-md-li">Frontend calls <code class="d180-md-inline-code">POST /api/chat</code>.</li>
+<li class="d180-md-li">Query is embedded with the same embedding model.</li>
+<li class="d180-md-li">Chroma runs vector similarity search (<code class="d180-md-inline-code">topK</code>, optional threshold).</li>
+<li class="d180-md-li">Retrieved chunks are passed to local generation runtime.</li>
+<li class="d180-md-li">API returns grounded answer + citations.</li>
+<li class="d180-md-li">If generation fails, API falls back to retrieved excerpts.</li>
 </ol>
 <hr class="d180-md-hr" />
-<h2 id="core-data-model-minimal-locked" class="d180-md-h2"><strong>Core Data Model (Minimal, Locked)</strong></h2>
-<p class="d180-md-p">Each chunk stored in vector DB must include:</p>
+<h2 id="architecture-contract-week-2-locked-defaults" class="d180-md-h2"><strong>Architecture Contract (Week 2 Locked Defaults)</strong></h2>
+<h3 id="chunking-defaults" class="d180-md-h3"><strong>Chunking Defaults</strong></h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li"><code class="d180-md-inline-code">chunkSize = 800</code></li>
+<li class="d180-md-li"><code class="d180-md-inline-code">chunkOverlap = 120</code></li>
+<li class="d180-md-li">paragraph-aware split first, hard split fallback</li>
+</ul>
+<h3 id="retrieval-defaults" class="d180-md-h3"><strong>Retrieval Defaults</strong></h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li"><code class="d180-md-inline-code">topK = 5</code></li>
+<li class="d180-md-li"><code class="d180-md-inline-code">minScore = 0.2</code></li>
+<li class="d180-md-li">return best available context with warning if strict threshold gives low matches</li>
+</ul>
+<h3 id="core-stored-record" class="d180-md-h3"><strong>Core Stored Record</strong></h3>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
@@ -357,23 +382,21 @@ a:T5355,<h2 id="week-2-mission-build-a-local-rag-engine-that-you-can-trust" clas
           <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
         <pre class="d180-code-pre line-numbers"><code class="language-ts">type ChunkRecord = {
-  id: string;            // e.g., source::page::chunk_index
-  source: string;        // filename or logical doc id
-  page: number | null;   // null for markdown/plain text
-  chunk_id: string;      // stable per document
-  text: string;          // chunk text
-  embedding: number[];   // vector
-  token_count: number;   // optional but recommended
-  created_at: string;    // ISO timestamp
+  id: string;
+  source: string;
+  page: number | null;
+  chunk_id: string;
+  text: string;
+  embedding: number[];
+  token_count?: number;
+  created_at: string;
 };
 </code></pre>
       </div>
     
 <hr class="d180-md-hr" />
-<h2 id="api-interfaces-locked-for-week-2" class="d180-md-h2"><strong>API Interfaces (Locked for Week 2)</strong></h2>
-<h3 id="post-apiingest" class="d180-md-h3"><code class="d180-md-inline-code">POST /api/ingest</code></h3>
-<p class="d180-md-p">Purpose: ingest one or more local files and index them into Chroma.</p>
-<p class="d180-md-p">Request:</p>
+<h2 id="api-design" class="d180-md-h2"><strong>API Design</strong></h2>
+<h3 id="post-apiingest" class="d180-md-h3"><strong><code class="d180-md-inline-code">POST /api/ingest</code></strong></h3>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
@@ -387,21 +410,12 @@ a:T5355,<h2 id="week-2-mission-build-a-local-rag-engine-that-you-can-trust" clas
     contentBase64: string;
   }>;
   options?: {
-    chunkSize?: number;      // default: 800 chars
-    chunkOverlap?: number;   // default: 120 chars
+    chunkSize?: number;
+    chunkOverlap?: number;
   };
 };
-</code></pre>
-      </div>
-    
-<p class="d180-md-p">Response:</p>
 
-      <div class="relative my-6 code-block">
-        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          <span class="d180-code-lang">TS</span>
-          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
-        </div>
-        <pre class="d180-code-pre line-numbers"><code class="language-ts">type IngestResponse = {
+type IngestResponse = {
   success: boolean;
   documentsIndexed: number;
   chunksIndexed: number;
@@ -411,9 +425,7 @@ a:T5355,<h2 id="week-2-mission-build-a-local-rag-engine-that-you-can-trust" clas
 </code></pre>
       </div>
     
-<h3 id="post-apichat" class="d180-md-h3"><code class="d180-md-inline-code">POST /api/chat</code></h3>
-<p class="d180-md-p">Purpose: run retrieval-grounded Q&#x26;A over indexed chunks.</p>
-<p class="d180-md-p">Request:</p>
+<h3 id="post-apichat" class="d180-md-h3"><strong><code class="d180-md-inline-code">POST /api/chat</code></strong></h3>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
@@ -423,23 +435,14 @@ a:T5355,<h2 id="week-2-mission-build-a-local-rag-engine-that-you-can-trust" clas
         <pre class="d180-code-pre line-numbers"><code class="language-ts">type ChatRequest = {
   query: string;
   options?: {
-    topK?: number;              // default: 5
-    minScore?: number;          // default: 0.2
-    temperature?: number;       // default: 0.2
+    topK?: number;
+    minScore?: number;
+    temperature?: number;
     systemPrompt?: string;
   };
 };
-</code></pre>
-      </div>
-    
-<p class="d180-md-p">Response:</p>
 
-      <div class="relative my-6 code-block">
-        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          <span class="d180-code-lang">TS</span>
-          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
-        </div>
-        <pre class="d180-code-pre line-numbers"><code class="language-ts">type ChatResponse = {
+type ChatResponse = {
   answer: string;
   citations: Array&#x3C;{
     source: string;
@@ -459,256 +462,261 @@ a:T5355,<h2 id="week-2-mission-build-a-local-rag-engine-that-you-can-trust" clas
       </div>
     
 <hr class="d180-md-hr" />
-<h2 id="chunking-strategy-locked" class="d180-md-h2"><strong>Chunking Strategy (Locked)</strong></h2>
-<ul class="d180-md-ul">
-<li class="d180-md-li"><strong>Chunk size:</strong> 800 characters</li>
-<li class="d180-md-li"><strong>Overlap:</strong> 120 characters</li>
-<li class="d180-md-li"><strong>Splitter rule:</strong> paragraph-aware first, fallback to hard-length split</li>
-<li class="d180-md-li"><strong>Normalization:</strong> collapse repeated spaces/newlines, preserve bullet and heading boundaries where possible</li>
-</ul>
-<p class="d180-md-p">Why this default:</p>
-<ul class="d180-md-ul">
-<li class="d180-md-li">Keeps chunks small enough for precise retrieval</li>
-<li class="d180-md-li">Preserves enough context continuity through overlap</li>
-<li class="d180-md-li">Works well for both markdown notes and extracted PDF text</li>
-</ul>
-<hr class="d180-md-hr" />
-<h2 id="retrieval-strategy-locked" class="d180-md-h2"><strong>Retrieval Strategy (Locked)</strong></h2>
-<ul class="d180-md-ul">
-<li class="d180-md-li">Similarity search in Chroma with <code class="d180-md-inline-code">topK = 5</code></li>
-<li class="d180-md-li">Apply optional score threshold <code class="d180-md-inline-code">minScore = 0.2</code></li>
-<li class="d180-md-li">If fewer than 2 matches pass threshold, still return best 1 with a warning</li>
-<li class="d180-md-li">Inject retrieved chunks into prompt with explicit citation tags, e.g.:</li>
-</ul>
+<h2 id="code-walkthrough" class="d180-md-h2"><strong>Code Walkthrough</strong></h2>
+<h3 id="1-rag-store-srclibrag-storets" class="d180-md-h3"><strong>1) RAG Store (<code class="d180-md-inline-code">src/lib/rag-store.ts</code>)</strong></h3>
+<p class="d180-md-p">This module owns chunking + vector storage lifecycle.</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
-          <span class="d180-code-lang">TXT</span>
+          <span class="d180-code-lang">TS</span>
           <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="d180-code-pre line-numbers"><code class="language-txt">[CTX-1] source=architecture.md page=null chunk=architecture::12
-...
-[CTX-2] source=srs.pdf page=8 chunk=srs::8::3
+        <pre class="d180-code-pre line-numbers"><code class="language-ts">import { ChromaClient, type Collection } from 'chromadb';
+
+const CHROMA_COLLECTION_NAME = 'rag-studio-collection';
+let collection: Collection | null = null;
+
+async function getCollection(): Promise&#x3C;Collection> {
+  if (collection) return collection;
+
+  const client = new ChromaClient({ path: process.env.CHROMA_URL || 'http://localhost:8000' });
+  collection = await client.getOrCreateCollection({ name: CHROMA_COLLECTION_NAME });
+  return collection;
+}
 </code></pre>
       </div>
     
-<p class="d180-md-p">Generation must cite contexts by source and chunk.</p>
+<p class="d180-md-p">Ingestion pipeline:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TS</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-ts">import { getEmbeddings } from './model-runtime';
+
+export async function ingestDocument(args: {
+  source: string;
+  text: string;
+  chunkSize: number;
+  chunkOverlap: number;
+}) {
+  const parts = chunkText(args.text, args.chunkSize, args.chunkOverlap);
+  if (parts.length === 0) return [];
+
+  const embeddings = await getEmbeddings(parts);
+  const collection = await getCollection();
+
+  const records = parts.map((part, index) => {
+    const chunkId = `${args.source}::${index}`;
+    return {
+      id: chunkId,
+      chunk_id: chunkId,
+      source: args.source,
+      page: null,
+      text: part,
+      created_at: new Date().toISOString(),
+    };
+  });
+
+  await collection.add({
+    ids: records.map((r) => r.id),
+    embeddings,
+    documents: records.map((r) => r.text),
+    metadatas: records.map((r) => ({
+      source: r.source,
+      page: r.page,
+      chunk_id: r.chunk_id,
+      created_at: r.created_at,
+    })),
+  });
+
+  return records;
+}
+</code></pre>
+      </div>
+    
+<h3 id="2-model-runtime-srclibmodel-runtimets" class="d180-md-h3"><strong>2) Model Runtime (<code class="d180-md-inline-code">src/lib/model-runtime.ts</code>)</strong></h3>
+<p class="d180-md-p">This module bridges app code to local model execution.</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TS</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-ts">export async function getEmbeddings(texts: string[]): Promise&#x3C;number[][]> {
+  const modelId = 'nomic-embed-text-v1';
+  const payload = JSON.stringify({ texts });
+
+  const result = await runCommandWithInput(
+    'foundry',
+    ['model', 'run', modelId],
+    payload,
+  );
+
+  if (!result.ok) {
+    throw new Error(`Failed to get embeddings: ${result.stderr}`);
+  }
+
+  return parseEmbeddings(result.stdout);
+}
+</code></pre>
+      </div>
+    
+<h3 id="3-retrieval-path-apichatroutets" class="d180-md-h3"><strong>3) Retrieval Path (<code class="d180-md-inline-code">/api/chat/route.ts</code>)</strong></h3>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">TS</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-ts">import { searchChunks } from '@/lib/rag-store';
+
+export async function POST(req: Request) {
+  const { query, options } = await req.json();
+  const topK = options?.topK ?? 5;
+  const minScore = options?.minScore ?? 0.2;
+
+  const hits = await searchChunks(query, topK, minScore);
+
+  // Build context prompt + generate answer with citations.
+  // Fallback: return ranked excerpts if generation is unavailable.
+  return Response.json({ hits });
+}
+</code></pre>
+      </div>
+    
 <hr class="d180-md-hr" />
-<h2 id="citation-format-locked" class="d180-md-h2"><strong>Citation Format (Locked)</strong></h2>
-<p class="d180-md-p">Answer body will include numbered citations, and API returns structured citation objects.</p>
-<p class="d180-md-p">Example render style:</p>
+<h2 id="citation-contract" class="d180-md-h2"><strong>Citation Contract</strong></h2>
+<p class="d180-md-p">Citation quality is not optional in RAG.</p>
+<p class="d180-md-p">Target output style:</p>
 
       <div class="relative my-6 code-block">
         <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
           <span class="d180-code-lang">TXT</span>
           <button data-copy class="copy-btn d180-copy-btn">Copy</button>
         </div>
-        <pre class="d180-code-pre line-numbers"><code class="language-txt">The retrieval layer should use score-threshold fallback and deterministic chunk IDs for observability [1][2].
+        <pre class="d180-code-pre line-numbers"><code class="language-txt">The retrieval layer should use deterministic chunk IDs and score-threshold fallback [1][2].
 
 [1] architecture.md (chunk: architecture::12)
 [2] srs.pdf (page: 8, chunk: srs::8::3)
 </code></pre>
       </div>
     
+<p class="d180-md-p">This gives users traceability and makes debugging retrieval quality practical.</p>
 <hr class="d180-md-hr" />
-<h2 id="failure-modes-and-handling-locked" class="d180-md-h2"><strong>Failure Modes and Handling (Locked)</strong></h2>
-<h3 id="ingestion-failures" class="d180-md-h3">Ingestion failures</h3>
+<h2 id="failure-modes-we-handle-explicitly" class="d180-md-h2"><strong>Failure Modes We Handle Explicitly</strong></h2>
+<h3 id="ingestion" class="d180-md-h3"><strong>Ingestion</strong></h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">malformed PDF -> skip + report <code class="d180-md-inline-code">errors[]</code></li>
+<li class="d180-md-li">unsupported MIME type -> <code class="d180-md-inline-code">skipped[]</code></li>
+<li class="d180-md-li">empty extracted text -> skip with reason</li>
+</ul>
+<h3 id="chatretrieval" class="d180-md-h3"><strong>Chat/Retrieval</strong></h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">empty vector store -> clear message: ingest documents first</li>
+<li class="d180-md-li">no relevant chunks -> warning + safe fallback response</li>
+<li class="d180-md-li">runtime unavailable -> actionable error (start Foundry/LM Studio)</li>
+<li class="d180-md-li">generation timeout -> partial failure + retry guidance</li>
+</ul>
+<hr class="d180-md-hr" />
+<h2 id="getting-started-week-2-companion-project" class="d180-md-h2"><strong>Getting Started (Week 2 Companion Project)</strong></h2>
+<h3 id="prerequisites" class="d180-md-h3"><strong>Prerequisites</strong></h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">Node.js</li>
+<li class="d180-md-li">Chroma server (default expected URL: <code class="d180-md-inline-code">http://localhost:8000</code>)</li>
+<li class="d180-md-li">Foundry Local installed</li>
+<li class="d180-md-li">embedding model available: <code class="d180-md-inline-code">nomic-embed-text-v1</code></li>
+<li class="d180-md-li">optional LM Studio runtime if you want <code class="d180-md-inline-code">runtime=lmstudio</code></li>
+</ul>
+<p class="d180-md-p">Run Chroma:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">BASH</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-bash">docker run -p 8000:8000 chromadb/chroma
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">Download embedding model:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">BASH</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-bash">foundry model download nomic-embed-text-v1
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">(Optional) start LM Studio server:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">BASH</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-bash">lms server start
+</code></pre>
+      </div>
+    
+<h3 id="install-run" class="d180-md-h3"><strong>Install + Run</strong></h3>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">BASH</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-bash">npm install
+npm run dev
+</code></pre>
+      </div>
+    
+<p class="d180-md-p">Optional <code class="d180-md-inline-code">.env.local</code> override:</p>
+
+      <div class="relative my-6 code-block">
+        <div class="absolute right-3 top-3 flex items-center gap-2 z-50 pointer-events-auto">
+          <span class="d180-code-lang">BASH</span>
+          <button data-copy class="copy-btn d180-copy-btn">Copy</button>
+        </div>
+        <pre class="d180-code-pre line-numbers"><code class="language-bash">CHROMA_URL=http://localhost:8000
+</code></pre>
+      </div>
+    
+<hr class="d180-md-hr" />
+<h2 id="week-2-acceptance-criteria" class="d180-md-h2"><strong>Week 2 Acceptance Criteria</strong></h2>
+<p class="d180-md-p">Week 2 is complete when all are true:</p>
 <ol class="d180-md-ol">
-<li class="d180-md-li"><strong>Malformed PDF / unreadable file</strong>
-<ul class="d180-md-ul">
-<li class="d180-md-li">Skip file, return error entry in <code class="d180-md-inline-code">errors[]</code></li>
-</ul>
-</li>
-<li class="d180-md-li"><strong>Unsupported mime type</strong>
-<ul class="d180-md-ul">
-<li class="d180-md-li">Skip with explicit reason in <code class="d180-md-inline-code">skipped[]</code></li>
-</ul>
-</li>
-<li class="d180-md-li"><strong>No extractable text</strong>
-<ul class="d180-md-ul">
-<li class="d180-md-li">Skip and report <code class="d180-md-inline-code">empty_text</code></li>
-</ul>
-</li>
-</ol>
-<h3 id="retrievalchat-failures" class="d180-md-h3">Retrieval/chat failures</h3>
-<ol class="d180-md-ol">
-<li class="d180-md-li"><strong>Vector DB empty</strong>
-<ul class="d180-md-ul">
-<li class="d180-md-li">Return graceful message: "No indexed documents found. Ingest files first."</li>
-</ul>
-</li>
-<li class="d180-md-li"><strong>No relevant chunks</strong>
-<ul class="d180-md-ul">
-<li class="d180-md-li">Return low-confidence answer + warning + empty citations</li>
-</ul>
-</li>
-<li class="d180-md-li"><strong>Local model unavailable</strong>
-<ul class="d180-md-ul">
-<li class="d180-md-li">Return actionable error: runtime not running/model not loaded</li>
-</ul>
-</li>
-<li class="d180-md-li"><strong>Timeout during generation</strong>
-<ul class="d180-md-ul">
-<li class="d180-md-li">Return partial failure with retry suggestion</li>
-</ul>
-</li>
-</ol>
-<hr class="d180-md-hr" />
-<h2 id="option-a-lm-studio-local-rag-architecture" class="d180-md-h2"><strong>Option A: LM Studio Local RAG Architecture</strong></h2>
-<h3 id="runtime" class="d180-md-h3">Runtime</h3>
-<ul class="d180-md-ul">
-<li class="d180-md-li">Local generation model hosted via LM Studio local server endpoint</li>
-<li class="d180-md-li">Separate embedding model via LM Studio (if available in your setup) or fallback embedding runtime</li>
-</ul>
-<h3 id="service-wiring" class="d180-md-h3">Service wiring</h3>
-<ul class="d180-md-ul">
-<li class="d180-md-li"><code class="d180-md-inline-code">Ingest Service</code> -> parser -> chunker -> embedder -> Chroma</li>
-<li class="d180-md-li"><code class="d180-md-inline-code">Chat Service</code> -> query embed -> retrieve top-k -> prompt builder -> LM Studio generation</li>
-</ul>
-<h3 id="pros" class="d180-md-h3">Pros</h3>
-<ul class="d180-md-ul">
-<li class="d180-md-li">Quick start with user-friendly desktop workflow</li>
-<li class="d180-md-li">Easy model switching in UI</li>
-<li class="d180-md-li">Great for experimentation and demos</li>
-</ul>
-<h3 id="tradeoffs" class="d180-md-h3">Tradeoffs</h3>
-<ul class="d180-md-ul">
-<li class="d180-md-li">Environment parity across machines can vary</li>
-<li class="d180-md-li">Embedding model/runtime setup may be less standardized depending on local stack</li>
-</ul>
-<h3 id="recommended-when" class="d180-md-h3">Recommended when</h3>
-<ul class="d180-md-ul">
-<li class="d180-md-li">Fast prototyping and model experimentation is top priority</li>
-</ul>
-<hr class="d180-md-hr" />
-<h2 id="option-b-microsoft-foundry-local-rag-architecture-selected" class="d180-md-h2"><strong>Option B: Microsoft Foundry Local RAG Architecture (Selected)</strong></h2>
-<h3 id="runtime" class="d180-md-h3">Runtime</h3>
-<ul class="d180-md-ul">
-<li class="d180-md-li">Generation model served by Foundry Local runtime</li>
-<li class="d180-md-li">Embedding model also served via Foundry Local where supported by selected model set</li>
-</ul>
-<h3 id="service-wiring" class="d180-md-h3">Service wiring</h3>
-<ul class="d180-md-ul">
-<li class="d180-md-li"><code class="d180-md-inline-code">Ingest API</code> calls Foundry Local embedding endpoint for each chunk</li>
-<li class="d180-md-li">Chroma stores vectors and metadata</li>
-<li class="d180-md-li"><code class="d180-md-inline-code">Chat API</code> retrieves top-k chunks and calls Foundry Local generation endpoint with contextual prompt</li>
-</ul>
-<h3 id="pros" class="d180-md-h3">Pros</h3>
-<ul class="d180-md-ul">
-<li class="d180-md-li">More standardized local runtime contract for enterprise-like workflows</li>
-<li class="d180-md-li">Clear alignment with Microsoft AI platform path</li>
-<li class="d180-md-li">Better long-term fit for structured local deployment discipline</li>
-</ul>
-<h3 id="tradeoffs" class="d180-md-h3">Tradeoffs</h3>
-<ul class="d180-md-ul">
-<li class="d180-md-li">Model availability varies by platform/runtime support</li>
-<li class="d180-md-li">Initial local setup can be more procedural than LM Studio</li>
-</ul>
-<h3 id="recommended-when" class="d180-md-h3">Recommended when</h3>
-<ul class="d180-md-ul">
-<li class="d180-md-li">You want disciplined local architecture with Microsoft ecosystem alignment</li>
-</ul>
-<hr class="d180-md-hr" />
-<h2 id="selected-build-blueprint-microsoft-foundry-local" class="d180-md-h2"><strong>Selected Build Blueprint (Microsoft Foundry Local)</strong></h2>
-<h3 id="components" class="d180-md-h3">Components</h3>
-<ol class="d180-md-ol">
-<li class="d180-md-li"><strong>Frontend UI</strong> (Next.js page)
-<ul class="d180-md-ul">
-<li class="d180-md-li">Upload documents</li>
-<li class="d180-md-li">Ask grounded questions</li>
-<li class="d180-md-li">Render citations and retrieval info</li>
-</ul>
-</li>
-<li class="d180-md-li"><strong>Ingest API</strong> (<code class="d180-md-inline-code">POST /api/ingest</code>)
-<ul class="d180-md-ul">
-<li class="d180-md-li">Parse + chunk + embed + upsert to Chroma</li>
-</ul>
-</li>
-<li class="d180-md-li"><strong>Chat API</strong> (<code class="d180-md-inline-code">POST /api/chat</code>)
-<ul class="d180-md-ul">
-<li class="d180-md-li">Embed query + retrieve + generate + cite</li>
-</ul>
-</li>
-<li class="d180-md-li"><strong>Vector Store</strong> (Chroma)
-<ul class="d180-md-ul">
-<li class="d180-md-li">Local persistent collection</li>
-</ul>
-</li>
-<li class="d180-md-li"><strong>Foundry Local Runtime</strong>
-<ul class="d180-md-ul">
-<li class="d180-md-li">One generation model + one embedding model</li>
-</ul>
-</li>
-</ol>
-<h3 id="default-operational-values" class="d180-md-h3">Default operational values</h3>
-<ul class="d180-md-ul">
-<li class="d180-md-li"><code class="d180-md-inline-code">chunkSize = 800</code></li>
-<li class="d180-md-li"><code class="d180-md-inline-code">chunkOverlap = 120</code></li>
-<li class="d180-md-li"><code class="d180-md-inline-code">topK = 5</code></li>
-<li class="d180-md-li"><code class="d180-md-inline-code">temperature = 0.2</code></li>
-</ul>
-<h3 id="security-baseline" class="d180-md-h3">Security baseline</h3>
-<ul class="d180-md-ul">
-<li class="d180-md-li">Local-only storage by default</li>
-<li class="d180-md-li">No external doc upload by default</li>
-<li class="d180-md-li">No secret values written to client logs</li>
-</ul>
-<hr class="d180-md-hr" />
-<h2 id="evaluation-checklist-acceptance-criteria" class="d180-md-h2"><strong>Evaluation Checklist (Acceptance Criteria)</strong></h2>
-<p class="d180-md-p">Week-2 is complete only if all pass:</p>
-<ol class="d180-md-ol">
-<li class="d180-md-li">Upload markdown and PDF files successfully.</li>
-<li class="d180-md-li">Ingest API reports counts (<code class="d180-md-inline-code">documentsIndexed</code>, <code class="d180-md-inline-code">chunksIndexed</code>).</li>
-<li class="d180-md-li">Chat response uses retrieved context (not generic answer).</li>
-<li class="d180-md-li">Every answer includes at least one citation when retrieval matches exist.</li>
-<li class="d180-md-li">"No documents ingested" case handled gracefully.</li>
-<li class="d180-md-li">"No relevant chunks" case returns warning and safe fallback behavior.</li>
-<li class="d180-md-li">Foundry Local runtime down/not loaded case shows actionable error.</li>
-<li class="d180-md-li">End-to-end median response time is acceptable for local dev (documented by logs).</li>
+<li class="d180-md-li">Markdown and PDF ingestion works.</li>
+<li class="d180-md-li">Ingest API returns <code class="d180-md-inline-code">documentsIndexed</code> and <code class="d180-md-inline-code">chunksIndexed</code>.</li>
+<li class="d180-md-li">Answers are retrieval-grounded, not generic.</li>
+<li class="d180-md-li">Citations appear whenever matches exist.</li>
+<li class="d180-md-li">Empty-index and no-match paths are graceful.</li>
+<li class="d180-md-li">Runtime-down errors are actionable.</li>
 </ol>
 <hr class="d180-md-hr" />
-<h2 id="implementation-sequence-week-2-build-order" class="d180-md-h2"><strong>Implementation Sequence (Week-2 Build Order)</strong></h2>
-<ol class="d180-md-ol">
-<li class="d180-md-li">Build ingestion parser + chunker utility.</li>
-<li class="d180-md-li">Integrate Foundry Local embeddings.</li>
-<li class="d180-md-li">Upsert chunks to Chroma with metadata schema.</li>
-<li class="d180-md-li">Build retrieval pipeline and query embedding.</li>
-<li class="d180-md-li">Build answer generation with citation-aware prompt template.</li>
-<li class="d180-md-li">Add UI for upload + ask + citation rendering.</li>
-<li class="d180-md-li">Add edge-case handling and acceptance tests.</li>
-</ol>
-<hr class="d180-md-hr" />
-<h2 id="reference-links" class="d180-md-h2"><strong>Reference Links</strong></h2>
-<h3 id="local-rag-fundamentals" class="d180-md-h3">Local RAG fundamentals</h3>
+<h2 id="what-week-2-unlocks" class="d180-md-h2"><strong>What Week 2 Unlocks</strong></h2>
+<p class="d180-md-p">Week 2 gives us a usable local knowledge layer.</p>
+<p class="d180-md-p">That unlocks Week 3 work on:</p>
 <ul class="d180-md-ul">
-<li class="d180-md-li">RAG overview: <a href="https://www.pinecone.io/learn/retrieval-augmented-generation/" class="d180-md-link">https://www.pinecone.io/learn/retrieval-augmented-generation/</a></li>
+<li class="d180-md-li">structured outputs</li>
+<li class="d180-md-li">validation pipelines</li>
+<li class="d180-md-li">higher-confidence agent behavior on top of grounded context</li>
 </ul>
-<h3 id="chroma" class="d180-md-h3">Chroma</h3>
+<hr class="d180-md-hr" />
+<h2 id="references" class="d180-md-h2"><strong>References</strong></h2>
 <ul class="d180-md-ul">
 <li class="d180-md-li">Chroma docs: <a href="https://docs.trychroma.com/" class="d180-md-link">https://docs.trychroma.com/</a></li>
-</ul>
-<h3 id="lm-studio" class="d180-md-h3">LM Studio</h3>
-<ul class="d180-md-ul">
-<li class="d180-md-li">LM Studio docs: <a href="https://lmstudio.ai/docs" class="d180-md-link">https://lmstudio.ai/docs</a></li>
-</ul>
-<h3 id="microsoft-foundry-local" class="d180-md-h3">Microsoft Foundry Local</h3>
-<ul class="d180-md-ul">
-<li class="d180-md-li">What is Foundry Local: <a href="https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/what-is-foundry-local" class="d180-md-link">https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/what-is-foundry-local</a></li>
+<li class="d180-md-li">Foundry Local docs: <a href="https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/" class="d180-md-link">https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/</a></li>
 <li class="d180-md-li">Foundry Local get started: <a href="https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started" class="d180-md-link">https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started</a></li>
-<li class="d180-md-li">Foundry Local SDK reference: <a href="https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-sdk" class="d180-md-link">https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-sdk</a></li>
+<li class="d180-md-li">LM Studio docs: <a href="https://lmstudio.ai/docs" class="d180-md-link">https://lmstudio.ai/docs</a></li>
+<li class="d180-md-li"><code class="d180-md-inline-code">nomic-embed-text-v1</code> model card: <a href="https://huggingface.co/nomic-ai/nomic-embed-text-v1" class="d180-md-link">https://huggingface.co/nomic-ai/nomic-embed-text-v1</a></li>
+<li class="d180-md-li">RAG primer: <a href="https://research.ibm.com/blog/retrieval-augmented-generation" class="d180-md-link">https://research.ibm.com/blog/retrieval-augmented-generation</a></li>
 </ul>
-<hr class="d180-md-hr" />
-<h2 id="week-2-outcome-target" class="d180-md-h2"><strong>Week-2 Outcome Target</strong></h2>
-<p class="d180-md-p">By the end of Week 2, you should have a fully local RAG prototype that can:</p>
-<ul class="d180-md-ul">
-<li class="d180-md-li">ingest personal docs,</li>
-<li class="d180-md-li">retrieve grounded context,</li>
-<li class="d180-md-li">answer with citations,</li>
-<li class="d180-md-li">and run on Microsoft Foundry Local as the selected runtime.</li>
-</ul>
-<p class="d180-md-p">This sets up Week 3 to focus on structured outputs and validation pipelines on top of reliable retrieval-grounded generation.</p>
 5:["$","main",null,{"className":"d180-content-wrap","style":{"paddingTop":36},"children":["$","div",null,{"className":"flex-1","children":[["$","article",null,{"className":"d180-post-content","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$a"}}],"$Lb"]}],"$Lc","$Ld"]}]}]
-6:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"mainEntityOfPage\":\"https://subraatakumar.com/24weeks/week-2\",\"headline\":\"Week 2: Local RAG Architecture (LM Studio vs Microsoft Foundry Local).\",\"datePublished\":\"2026-03-16\",\"description\":\"Decision-complete architecture for Week 2 Local RAG, covering both LM Studio and Microsoft Foundry Local designs, with Microsoft Foundry Local selected as the implementation path.\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\"}}"}}]
+6:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"mainEntityOfPage\":\"https://subraatakumar.com/24weeks/week-2\",\"headline\":\"Week 2: Building a Local RAG System with Next.js and Foundry\",\"description\":\"A practical, implementation-focused chapter on building a local-first RAG pipeline with ingestion, chunking, embeddings, retrieval, grounded answers, and citation-ready output.\",\"datePublished\":\"2026-03-16\",\"dateModified\":\"2026-03-17\",\"image\":\"https://subraatakumar.com/images/24weeks/week-2.png\",\"keywords\":[\"ai\",\"saas\",\"software-development\",\"large-language-models\",\"rag\",\"nextjs\",\"Subrata Kumar Das\"],\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}]
 7:["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true}]
 8:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
 b:["$","$L11",null,{}]
