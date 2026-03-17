@@ -14,12 +14,10 @@ tags:
   - Subrata Kumar Das
 excerpt: "Week 2 moves from generic model outputs to grounded answers by building a complete Local RAG system using Next.js, ChromaDB, and Foundry Local."
 author: "Subrata Kumar Das"
-updated: "2026-03-17"
+updated: "2026-03-16"
 draft: false
 readingTime: "17 min"
 ---
-
-## **Chapter 2: Building a Local RAG System with Next.js and Foundry**
 
 Welcome to Week 2.
 
