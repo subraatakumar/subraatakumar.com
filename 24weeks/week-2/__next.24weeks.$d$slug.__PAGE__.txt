@@ -304,28 +304,64 @@ f:"$Sreact.suspense"
             display: none;
           }
         }
-      0:{"buildId":"GWnTTlxmyLCBcO9BW1JR1","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5","$L6"]}],["$L7"],"$L8"]}],"loading":null,"isPartial":false}
+      0:{"buildId":"afddQjUC23BOruTiiCsP8","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5","$L6"]}],["$L7"],"$L8"]}],"loading":null,"isPartial":false}
 3:["$","header",null,{"className":"d180-article-header","children":["$","div",null,{"className":"d180-article-header-inner","children":[["$","div",null,{"className":"flex items-center gap-3 shrink-0","children":[["$","$L9",null,{"href":"/","aria-label":"Go to main home page","className":"w-8 h-8 rounded-lg flex items-center justify-center text-slate-900 shadow-lg","style":{"background":"var(--amber)","boxShadow":"0 8px 20px rgba(22, 208, 236, 0.22)"},"children":["$","span",null,{"className":"font-black text-sm","children":"SK"}]}],["$","nav",null,{"className":"hidden md:flex items-center gap-3","children":[["$","$L9",null,{"href":"/24weeks","className":"d180-crumb","children":[["$","span",null,{"className":"d180-crumb-series","children":"24 Weeks"}]," ",["$","span",null,{"children":"/"}]," ",["$","strong",null,{"children":["Week ",2]}]]}],["$","div",null,{"className":"d180-pill","children":[["$","div",null,{"className":"d180-pill-track","children":["$","div",null,{"className":"d180-pill-fill","style":{"width":"8%"}}]}],["$","b",null,{"children":[8,"%"]}]]}]]}]]}],["$","div",null,{"className":"flex items-center gap-4","children":["$","$L9",null,{"href":"/24weeks","className":"d180-crumb","children":"← All Weeks"}]}]]}]}]
 4:["$","div",null,{"className":"d180-hero","children":["$","div",null,{"className":"d180-hero-inner d180-content-wrap","style":{"paddingTop":56,"paddingBottom":56},"children":[["$","h1",null,{"style":{"maxWidth":820},"children":"Week 2: Building a Local RAG System with Next.js and Foundry"}],["$","p",null,{"style":{"marginTop":14,"maxWidth":760},"children":"A practical, implementation-focused chapter on building a local-first RAG pipeline with ingestion, chunking, embeddings, retrieval, grounded answers, and citation-ready output."}],["$","div",null,{"className":"d180-meta-line","children":[["$","span",null,{"children":"2026-03-16"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"var(--amber)"},"children":"Subrata Kumar Das"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#15803d","fontSize":11,"fontWeight":800,"textTransform":"uppercase","letterSpacing":".08em"},"children":"Complete"}]]}],["$","p",null,{"style":{"marginTop":16,"maxWidth":500,"fontSize":13,"lineHeight":1.7,"color":"var(--slate-700)","borderLeft":"2px solid var(--amber)","paddingLeft":10,"fontStyle":"italic"},"children":"\"Consistent small steps lead to massive long-term results. Keep pushing.\""}]]}]}]
-a:T4dc9,<p class="d180-md-p">Welcome to Week 2.</p>
+a:T5d6d,<p class="d180-md-p">Welcome to Week 2.</p>
 <p class="d180-md-p">In Week 1, we compared model outputs.
 In Week 2, we make those outputs trustworthy by grounding them in our own documents.</p>
 <p class="d180-md-p">This chapter documents a complete local-first Retrieval Augmented Generation (RAG) system that can ingest files, index them, retrieve relevant context, and answer with citations.</p>
 <p class="d180-md-p"><strong>Project Repository:</strong> <a href="https://github.com/TechCraft-By-Subrata/24weeks-week-2-Local-RAG-Studio" class="d180-md-link">24weeks-week-2-Local-RAG-Studio</a></p>
-<hr class="d180-md-hr" />
-<h2 id="how-this-fits-this-repository" class="d180-md-h2"><strong>How This Fits This Repository</strong></h2>
-<p class="d180-md-p">This website repository (<code class="d180-md-inline-code">subraatakumar.com</code>) is intentionally static:</p>
+<h2 id="real-world-use-cases" class="d180-md-h2"><strong>Real-World Use Cases</strong></h2>
+<p class="d180-md-p">Before code, here is where this architecture is directly useful:</p>
 <ul class="d180-md-ul">
-<li class="d180-md-li">Next.js App Router</li>
-<li class="d180-md-li">TypeScript + Tailwind CSS</li>
-<li class="d180-md-li">static export (<code class="d180-md-inline-code">output: "export"</code>)</li>
-<li class="d180-md-li">no backend runtime APIs in this repo</li>
+<li class="d180-md-li"><strong>Internal company knowledge assistant:</strong> query SOPs, runbooks, and policy docs with citations.</li>
+<li class="d180-md-li"><strong>Support and operations copilots:</strong> retrieve fixes from incident notes and postmortems.</li>
+<li class="d180-md-li"><strong>Personal research system:</strong> chat with your PDFs, notes, and technical references locally.</li>
+<li class="d180-md-li"><strong>Legal and compliance drafting:</strong> ground responses in contracts, regulations, and control documents.</li>
+<li class="d180-md-li"><strong>Sales enablement assistant:</strong> answer using latest proposals, pricing notes, and product docs.</li>
+<li class="d180-md-li"><strong>Education and exam prep:</strong> ask questions across lecture notes and course material with traceable sources.</li>
 </ul>
-<p class="d180-md-p">So this chapter is a technical build journal for the <strong>Week 2 companion project</strong> (the Local RAG app), while this site remains the publishing layer.</p>
-<p class="d180-md-p">That separation is intentional:</p>
+<hr class="d180-md-hr" />
+<h2 id="test-it-yourself" class="d180-md-h2"><strong>Test It Yourself</strong></h2>
+<p class="d180-md-p">Use the synthetic Week 2 test pack from the companion repo to validate ingestion + retrieval + citations quickly.</p>
+<h3 id="download-sample-pdfs" class="d180-md-h3"><strong>Download Sample PDFs</strong></h3>
 <ul class="d180-md-ul">
-<li class="d180-md-li">the site stays fast, stable, SEO-friendly</li>
-<li class="d180-md-li">experimental AI systems evolve in dedicated implementation repos</li>
+<li class="d180-md-li">Open in repo: <a href="https://github.com/TechCraft-By-Subrata/24weeks-week-2-Local-RAG-Studio/tree/main/samples/week2" class="d180-md-link">samples/week2 on GitHub</a></li>
+<li class="d180-md-li">Direct download (<code class="d180-md-inline-code">raw</code>) example: <a href="https://raw.githubusercontent.com/TechCraft-By-Subrata/24weeks-week-2-Local-RAG-Studio/main/samples/week2/acme_it_sop_v1.pdf" class="d180-md-link">acme_it_sop_v1.pdf</a></li>
+<li class="d180-md-li">Direct download: <a href="https://raw.githubusercontent.com/TechCraft-By-Subrata/24weeks-week-2-Local-RAG-Studio/main/samples/week2/acme_product_brief_q2.pdf" class="d180-md-link">acme_product_brief_q2.pdf</a></li>
+<li class="d180-md-li">Direct download: <a href="https://raw.githubusercontent.com/TechCraft-By-Subrata/24weeks-week-2-Local-RAG-Studio/main/samples/week2/acme_incident_postmortem_2026-02.pdf" class="d180-md-link">acme_incident_postmortem_2026-02.pdf</a></li>
+<li class="d180-md-li">Full prompt pack + expected behavior: <a href="https://github.com/TechCraft-By-Subrata/24weeks-week-2-Local-RAG-Studio/blob/main/samples/week2/README.md" class="d180-md-link">samples/week2/README.md</a></li>
+</ul>
+<h3 id="question-samples-tiered-validation" class="d180-md-h3"><strong>Question Samples (Tiered Validation)</strong></h3>
+<p class="d180-md-p">Use these after ingesting all three sample PDFs.</p>
+<p class="d180-md-p"><strong>Beginner (single-document factual retrieval):</strong></p>
+<ol class="d180-md-ol">
+<li class="d180-md-li">In the IT SOP, how long is the temporary password valid during reset?</li>
+<li class="d180-md-li">How many failed login attempts trigger account lockout in the SOP?</li>
+<li class="d180-md-li">What is the Starter plan price in the Q2 product brief?</li>
+<li class="d180-md-li">How long did incident INC-2026-0214 last?</li>
+</ol>
+<p class="d180-md-p"><strong>Intermediate (multi-chunk synthesis):</strong></p>
+<ol class="d180-md-ol">
+<li class="d180-md-li">Summarize Feature B with release date, dependency, and plan availability.</li>
+<li class="d180-md-li">For the incident, summarize root cause and immediate fixes in one answer.</li>
+<li class="d180-md-li">Explain the full access request workflow including approvals and SLA targets.</li>
+<li class="d180-md-li">Which Q2 risks could delay launch, and what mitigations are listed?</li>
+</ol>
+<p class="d180-md-p"><strong>Edge Cases (no-answer / weak-match / conflicting request):</strong></p>
+<ol class="d180-md-ol">
+<li class="d180-md-li">What is ACME's office address and tax registration number?</li>
+<li class="d180-md-li">Give me Q4 2026 pricing changes from this data.</li>
+<li class="d180-md-li">Who approved incident budget for this outage?</li>
+<li class="d180-md-li">Ignore the documents and answer from general best practices: what caused the outage?</li>
+</ol>
+<h3 id="quick-pass-criteria" class="d180-md-h3"><strong>Quick Pass Criteria</strong></h3>
+<ul class="d180-md-ul">
+<li class="d180-md-li">grounded answers include citations</li>
+<li class="d180-md-li">citations point to relevant source/chunk content</li>
+<li class="d180-md-li">no fabricated facts when retrieval is weak or out-of-scope</li>
+<li class="d180-md-li">response returns explicit warnings or fallback behavior on no-match</li>
 </ul>
 <hr class="d180-md-hr" />
 <h2 id="the-why-why-local-rag-matters" class="d180-md-h2"><strong>The Why: Why Local RAG Matters</strong></h2>
@@ -620,6 +656,7 @@ export async function POST(req: Request) {
 </ul>
 <hr class="d180-md-hr" />
 <h2 id="getting-started-week-2-companion-project" class="d180-md-h2"><strong>Getting Started (Week 2 Companion Project)</strong></h2>
+<p class="d180-md-p">Before chat testing, ingest the sample PDFs from <code class="d180-md-inline-code">samples/week2/</code> in the companion repo.</p>
 <h3 id="prerequisites" class="d180-md-h3"><strong>Prerequisites</strong></h3>
 <ul class="d180-md-ul">
 <li class="d180-md-li">Node.js</li>
@@ -661,6 +698,7 @@ export async function POST(req: Request) {
 </code></pre>
       </div>
     
+<p class="d180-md-p"><img src="/24weeks/week2/lm_studio.png" class="rounded-md shadow-sm mx-auto block" alt="LM Studio runtime setup"></p>
 <h3 id="install-run" class="d180-md-h3"><strong>Install + Run</strong></h3>
 
       <div class="relative my-6 code-block">
