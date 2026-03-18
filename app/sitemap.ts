@@ -7,6 +7,7 @@ export const dynamic = "force-static";
 
 const contentDirectory180Days = path.join(process.cwd(), "content/180days");
 const contentDirectory24Weeks = path.join(process.cwd(), "content/24weeks");
+const contentDirectoryBlog = path.join(process.cwd(), "content/blog");
 
 function get180DayPaths() {
   if (!fs.existsSync(contentDirectory180Days)) return [];
@@ -30,6 +31,16 @@ function get24WeekPaths() {
     .map((slug) => `/24weeks/${slug}`);
 }
 
+function getBlogPaths() {
+  if (!fs.existsSync(contentDirectoryBlog)) return [];
+
+  return fs
+    .readdirSync(contentDirectoryBlog)
+    .filter((file) => file.endsWith(".md"))
+    .map((file) => file.replace(".md", ""))
+    .map((slug) => `/blog/${slug}`);
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const staticPaths = [
@@ -46,9 +57,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tcbs-cli",
     "/180days",
     "/24weeks",
+    "/blog",
   ];
 
-  const allPaths = [...staticPaths, ...get180DayPaths(), ...get24WeekPaths()];
+  const allPaths = [...staticPaths, ...get180DayPaths(), ...get24WeekPaths(), ...getBlogPaths()];
 
   return allPaths.map((route) => ({
     url: new URL(route, SITE_URL).toString(),
@@ -58,14 +70,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ? "daily"
         : route.startsWith("/24weeks/week-")
           ? "weekly"
+          : route.startsWith("/blog/")
+            ? "weekly"
           : "weekly",
     priority:
       route === "/"
         ? 1
-        : route === "/180days" || route === "/24weeks"
+        : route === "/180days" || route === "/24weeks" || route === "/blog"
           ? 0.9
-          : route.startsWith("/24weeks/week-")
+        : route.startsWith("/24weeks/week-")
             ? 0.85
+            : route.startsWith("/blog/")
+              ? 0.85
             : 0.8,
   }));
 }

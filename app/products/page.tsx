@@ -30,13 +30,19 @@ const products = [
     desc: "Execution Studio for practical AI products, systems, and developer ecosystems. Current live track: 180Days.",
     tags: ["AI Products", "Developer Ecosystem", "Learning Tracks", "180Days"],
     layout: "full",
-  },  
+  },
+  {
+    title: "Blog",
+    slug: "blog",
+    desc: "A modern markdown-powered blog for engineering notes, architecture decisions, and practical product build logs.",
+    tags: ["Markdown", "Engineering Notes", "Architecture", "Product Thinking"],
+  },
   {
     title: "Offline Life Archive",
     slug: "offline-life-archive",
     desc: "A personal project to document and reflect on life experiences, learnings, and growth through a private digital journal app.",
     tags: ["React Native", "Realm", "Personal", "Journal", "Privacy", "Self-Reflection", "Offline-First"],
-  },   
+  },
   {
     title: "Water Tracker",
     slug: "watertracker",
