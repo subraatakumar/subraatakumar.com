@@ -30,24 +30,6 @@ This chapter documents a complete local-first Retrieval Augmented Generation (RA
 
 ---
 
-## **How This Fits This Repository**
-
-This website repository (`subraatakumar.com`) is intentionally static:
-
-- Next.js App Router
-- TypeScript + Tailwind CSS
-- static export (`output: "export"`)
-- no backend runtime APIs in this repo
-
-So this chapter is a technical build journal for the **Week 2 companion project** (the Local RAG app), while this site remains the publishing layer.
-
-That separation is intentional:
-
-- the site stays fast, stable, SEO-friendly
-- experimental AI systems evolve in dedicated implementation repos
-
----
-
 ## **The Why: Why Local RAG Matters**
 
 LLMs are powerful, but they are not connected to your private, latest documents by default.
@@ -348,6 +330,8 @@ foundry model download nomic-embed-text-v1
 ```bash
 lms server start
 ```
+
+![LM Studio runtime setup](/24weeks/week2/lm_studio.png)
 
 ### **Install + Run**
 
