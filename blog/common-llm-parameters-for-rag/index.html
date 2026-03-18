@@ -1,0 +1,828 @@
+<!DOCTYPE html><!--MmOABvg5HYon4BpeKbwWV--><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/chunks/a99ebf15a758c58a.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/5a08c9e3a78c4f9b.js"/><script src="/_next/static/chunks/2a53c54479327e33.js" async=""></script><script src="/_next/static/chunks/b387cef77c823f83.js" async=""></script><script src="/_next/static/chunks/d1e380e53588e373.js" async=""></script><script src="/_next/static/chunks/turbopack-8c9e8715d9ebd26a.js" async=""></script><script src="/_next/static/chunks/7c92e96509cd355e.js" async=""></script><script src="/_next/static/chunks/ed0ac4fd205f8cfa.js" async=""></script><script src="/_next/static/chunks/ff1a16fafef87110.js" async=""></script><script src="/_next/static/chunks/bf1f6d5df2e9b1a8.js" async=""></script><link rel="preload" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&amp;family=Caveat+Brush&amp;display=swap" as="style"/><meta name="next-size-adjust" content=""/><title>Common LLM Parameters To Know For RAG | Subrata Kumar Das</title><meta name="description" content="A practical, provider-neutral guide to the key retrieval and generation parameters that control RAG quality, latency, and cost."/><meta name="keywords" content="Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"/><link rel="canonical" href="https://subraatakumar.com/blog/common-llm-parameters-for-rag/"/><meta property="og:title" content="Common LLM Parameters To Know For RAG | Blog"/><meta property="og:description" content="A practical, provider-neutral guide to the key retrieval and generation parameters that control RAG quality, latency, and cost. • 8 min"/><meta property="og:url" content="https://subraatakumar.com/blog/common-llm-parameters-for-rag/"/><meta property="og:image" content="https://subraatakumar.com/images/interview.png"/><meta property="og:type" content="article"/><meta property="article:published_time" content="2026-03-18"/><meta property="article:modified_time" content="2026-03-18"/><meta property="article:tag" content="llm"/><meta property="article:tag" content="rag"/><meta property="article:tag" content="ai"/><meta property="article:tag" content="retrieval"/><meta property="article:tag" content="prompt-engineering"/><meta property="article:tag" content="software-development"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Common LLM Parameters To Know For RAG | Blog"/><meta name="twitter:description" content="A practical, provider-neutral guide to the key retrieval and generation parameters that control RAG quality, latency, and cost. • 8 min"/><meta name="twitter:image" content="https://subraatakumar.com/images/interview.png"/><link rel="icon" href="/favicon.ico?favicon.750fd6b3.ico" sizes="48x48" type="image/x-icon"/><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&amp;family=Caveat+Brush&amp;display=swap" rel="stylesheet"/><script src="/_next/static/chunks/a6dad97d9634a72d.js" noModule=""></script></head><body style="background:#fafaf7;margin:0;font-family:&#x27;Caveat&#x27;, cursive;color:#1a1a2e"><div hidden=""><!--$--><!--/$--></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Subrata Kumar Das","url":"https://subraatakumar.com","jobTitle":"Tech Lead","sameAs":["https://github.com/subraatakumar","https://linkedin.com/in/subraatakumar"]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWorkSeries","name":"180 Days Mentoring Journey","description":"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.","url":"https://subraatakumar.com/180days","startDate":"2026-02-19","publisher":{"@type":"Organization","name":"Subrata Kumar Das","url":"https://subraatakumar.com"}}</script><style>
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+
+          body {
+            background: #fafaf7;
+            font-family: 'Caveat', cursive;
+            color: #1a1a2e;
+          }
+
+          /* ── Nav ── */
+          .sk-header {
+            background: #fff;
+            border-bottom: 2.5px solid #1a1a2e;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+          }
+          .sk-header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .sk-logo {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.55rem;
+            color: #1a1a2e;
+            text-decoration: none;
+            letter-spacing: 0.01em;
+          }
+          .sk-nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+          }
+          .sk-nav-links a {
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+            padding-bottom: 2px;
+          }
+          .sk-nav-links a:hover {
+            text-decoration: underline wavy #2563eb 2px;
+            text-underline-offset: 4px;
+          }
+          .sk-nav-mobile {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 14px;
+          }
+          .sk-nav-mobile ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+          }
+          .sk-nav-mobile a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+          }
+
+          /* ── Footer ── */
+          .sk-footer {
+            border-top: 2.5px solid #1a1a2e;
+            background: #fff;
+            padding: 24px;
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+          }
+
+          /* ── Shared section ── */
+          .sk-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+          }
+          .sk-page-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            margin-bottom: 8px;
+            line-height: 1.1;
+          }
+          .sk-section-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.9rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+          .sk-section-heading::after {
+            content: '';
+            flex: 1;
+            border-top: 2px dashed #9ca3af;
+          }
+
+          /* ── Squiggle divider ── */
+          .sk-squiggle {
+            width: 100%;
+            height: 8px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 4 Q5 0 10 4 Q15 8 20 4 Q25 0 30 4 Q35 8 40 4' stroke='%239ca3af' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") repeat-x center;
+            opacity: 0.55;
+            margin: 36px 0;
+          }
+
+          /* ── Sketch button ── */
+          .sk-btn {
+            display: inline-block;
+            padding: 10px 26px;
+            background: #2563eb;
+            color: #fff;
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 3px 3px 0 #1a1a2e;
+            transition: transform 0.1s, box-shadow 0.1s;
+          }
+          .sk-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 #1a1a2e;
+          }
+          .sk-btn-ghost {
+            background: transparent;
+            color: #1a1a2e;
+            box-shadow: 3px 3px 0 #9ca3af;
+          }
+          .sk-btn-ghost:hover {
+            box-shadow: 5px 5px 0 #9ca3af;
+          }
+
+          /* ── Tag chip ── */
+          .sk-tag {
+            display: inline-block;
+            padding: 3px 13px;
+            border: 2px solid #1a1a2e;
+            border-radius: 2px;
+            font-size: 1rem;
+            font-weight: 600;
+            background: #fff;
+            margin: 3px;
+          }
+          .sk-tag.active {
+            background: #2563eb;
+            color: #fff;
+          }
+
+          /* ── Card ── */
+          .sk-card {
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 5px 5px 0 #1a1a2e;
+            padding: 24px;
+            transition: transform 0.15s, box-shadow 0.15s;
+          }
+          .sk-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0 #1a1a2e;
+          }
+
+          /* ── Stat card ── */
+          .sk-stat {
+            flex: 1;
+            min-width: 130px;
+            text-align: center;
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 4px 4px 0 #1a1a2e;
+            padding: 20px 12px;
+          }
+          .sk-stat .num {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            color: #2563eb;
+            line-height: 1;
+          }
+          .sk-stat .lbl {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 4px;
+          }
+
+          /* ── Image placeholder ── */
+          .sk-img {
+            width: 100%;
+            height: 160px;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            background: #f3f4f6;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 16px;
+          }
+          .sk-img::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+              linear-gradient(to bottom right, transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px)),
+              linear-gradient(to bottom left,  transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px));
+          }
+
+          @media (max-width: 640px) {
+            .sk-nav-links { display: none; }
+            .sk-nav-mobile { display: block; }
+            .sk-page-heading { font-size: 2.2rem; }
+          }
+        </style><header class="sk-header"><div class="sk-header-inner"><a class="sk-logo" href="/">SKD_</a><nav aria-label="Primary"><ul class="sk-nav-links"><li><a href="/about/">About</a></li><li><a href="/products/">Products</a></li><li><a href="/contact/">Contact</a></li></ul></nav></div><div class="sk-nav-mobile"><nav aria-label="Mobile"><ul><li><a href="/about/">About</a></li><li><a href="/products/">Products</a></li><li><a href="/contact/">Contact</a></li></ul></nav></div></header><main style="width:100%"><div style="all:revert"><style>
+        body:has(#blog-root) .sk-header,
+        body:has(#blog-root) .sk-footer {
+          display: none !important;
+        }
+
+        #blog-root,
+        #blog-root * {
+          box-sizing: border-box;
+        }
+
+        #blog-root {
+          --blog-ink: #101828;
+          --blog-muted: #667085;
+          --blog-line: #e4e7ec;
+          --blog-card: #ffffff;
+          --blog-accent: #0ea5e9;
+          --blog-accent-warm: #fb7185;
+          --blog-bg: radial-gradient(circle at 10% 0%, #dff6ff 0%, transparent 40%),
+            radial-gradient(circle at 100% 10%, #ffe8ec 0%, transparent 35%),
+            #f8fafc;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+          background: var(--blog-bg);
+          color: var(--blog-ink);
+          font-family: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
+        }
+
+        #blog-root .blog-shell-header {
+          position: sticky;
+          top: 0;
+          z-index: 100;
+          backdrop-filter: blur(10px);
+          background: rgba(248, 250, 252, 0.78);
+          border-bottom: 1px solid var(--blog-line);
+        }
+        #blog-root .blog-shell-header-inner {
+          width: 100%;
+          height: 66px;
+          padding: 0 clamp(16px, 4vw, 48px);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        }
+        #blog-root .blog-shell-main {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+        #blog-root .blog-brand {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          text-decoration: none;
+          color: var(--blog-ink);
+        }
+        #blog-root .blog-brand-mark {
+          width: 32px;
+          height: 32px;
+          border-radius: 10px;
+          background: linear-gradient(135deg, var(--blog-accent), var(--blog-accent-warm));
+          color: #fff;
+          display: grid;
+          place-items: center;
+          font-weight: 900;
+          font-size: 12px;
+          letter-spacing: 0.03em;
+          box-shadow: 0 10px 24px rgba(14, 165, 233, 0.28);
+        }
+        #blog-root .blog-brand-text {
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-weight: 700;
+          font-size: 1.1rem;
+          letter-spacing: 0.01em;
+        }
+        #blog-root .blog-shell-nav {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+        }
+        #blog-root .blog-shell-nav a {
+          text-decoration: none;
+          color: var(--blog-ink);
+          font-size: 0.8rem;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          padding: 10px 12px;
+          border-radius: 10px;
+          transition: background 0.2s ease;
+        }
+        #blog-root .blog-shell-nav a:hover {
+          background: #eef2f6;
+        }
+
+        #blog-root .blog-shell-footer {
+          margin-top: auto;
+          border-top: 1px solid var(--blog-line);
+          background: rgba(255, 255, 255, 0.64);
+        }
+        #blog-root .blog-shell-footer-inner {
+          width: 100%;
+          padding: 20px clamp(16px, 4vw, 48px) 24px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+        #blog-root .blog-shell-copy {
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: 0.12em;
+          color: var(--blog-muted);
+          font-weight: 700;
+        }
+        #blog-root .blog-shell-footer a {
+          text-decoration: none;
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: 0.05em;
+          color: #0b6ba8;
+        }
+
+        @media (max-width: 700px) {
+          #blog-root .blog-shell-header-inner,
+          #blog-root .blog-shell-footer-inner {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+          #blog-root .blog-shell-nav a {
+            padding: 8px 10px;
+            font-size: 0.72rem;
+          }
+        }
+      </style><div id="blog-root"><header class="blog-shell-header"><div class="blog-shell-header-inner"><a class="blog-brand" href="/blog/"><span class="blog-brand-mark">SK</span><span class="blog-brand-text">TechCraft Blog</span></a><nav class="blog-shell-nav"><a href="/products/">Products</a><a href="/">Home</a></nav></div></header><main class="blog-shell-main"><main><style>
+        #blog-root .blog-post-wrap {
+          max-width: 880px;
+          margin: 0 auto;
+          padding: 30px 24px 0;
+        }
+        #blog-root .blog-post-kicker {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          color: #175cd3;
+          border: 1px solid #cfe1fa;
+          border-radius: 999px;
+          padding: 8px 12px;
+          background: #fff;
+          text-decoration: none;
+        }
+        #blog-root .blog-post-wrap h1 {
+          margin-top: 18px;
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-size: clamp(2rem, 4.6vw, 3.2rem);
+          line-height: 1.08;
+          letter-spacing: -0.02em;
+        }
+        #blog-root .blog-post-meta {
+          margin-top: 16px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 8px;
+          color: #667085;
+          font-size: 12px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.07em;
+        }
+        #blog-root .blog-post-desc {
+          margin-top: 14px;
+          font-size: 1.04rem;
+          line-height: 1.8;
+          color: #475467;
+        }
+        #blog-root .blog-tag-row {
+          margin-top: 12px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+        #blog-root .blog-tag-row span {
+          background: #f2f4f7;
+          color: #344054;
+          font-size: 11px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          padding: 6px 10px;
+          border-radius: 999px;
+        }
+        #blog-root .blog-article {
+          margin-top: 26px;
+          border-top: 1px solid #e4e7ec;
+          padding-top: 24px;
+          padding-bottom: 20px;
+        }
+        #blog-root .blog-md-p {
+          margin: 18px 0;
+          font-size: 1.03rem;
+          line-height: 1.95;
+          color: #1d2939;
+        }
+        #blog-root .blog-md-h1 {
+          margin: 56px 0 16px;
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-size: 2rem;
+          line-height: 1.18;
+        }
+        #blog-root .blog-md-h2 {
+          margin: 46px 0 14px;
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-size: 1.7rem;
+          line-height: 1.24;
+        }
+        #blog-root .blog-md-h3 {
+          margin: 36px 0 10px;
+          font-weight: 800;
+          font-size: 1.28rem;
+          line-height: 1.34;
+        }
+        #blog-root .blog-md-h4,
+        #blog-root .blog-md-h5,
+        #blog-root .blog-md-h6 {
+          margin: 28px 0 8px;
+          font-size: 1.08rem;
+          font-weight: 800;
+        }
+        #blog-root .blog-md-ul {
+          list-style: disc;
+          padding-left: 24px;
+          margin: 18px 0;
+        }
+        #blog-root .blog-md-ol {
+          list-style: decimal;
+          padding-left: 28px;
+          margin: 18px 0;
+        }
+        #blog-root .blog-md-li {
+          margin: 8px 0;
+          line-height: 1.8;
+          color: #344054;
+        }
+        #blog-root .blog-md-quote {
+          margin: 22px 0;
+          border-left: 3px solid #7cd4ff;
+          background: #f5fbff;
+          border-radius: 10px;
+          padding: 14px 16px;
+          color: #344054;
+          font-style: italic;
+        }
+        #blog-root .blog-md-link {
+          color: #0b6ba8;
+          text-decoration: none;
+          font-weight: 700;
+        }
+        #blog-root .blog-md-link:hover {
+          text-decoration: underline;
+        }
+        #blog-root .blog-md-inline-code {
+          background: #f2f4f7;
+          color: #7a271a;
+          border-radius: 6px;
+          padding: 2px 6px;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+          font-size: 0.9em;
+        }
+        #blog-root .blog-code-wrap {
+          margin: 24px 0;
+          border-radius: 14px;
+          overflow: hidden;
+          border: 1px solid #d0d5dd;
+        }
+        #blog-root .blog-code-head {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: #101828;
+          padding: 8px 10px;
+        }
+        #blog-root .blog-code-lang {
+          font-size: 11px;
+          font-weight: 800;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          color: #d1e9ff;
+        }
+        #blog-root .blog-copy-btn {
+          border: 0;
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          border-radius: 8px;
+          padding: 5px 10px;
+          background: #d1e9ff;
+          color: #0c2d6b;
+          cursor: pointer;
+        }
+        #blog-root .blog-md-pre {
+          margin: 0;
+          background: #182230;
+          color: #f8fafc;
+          padding: 14px;
+          overflow: auto;
+        }
+        #blog-root .blog-md-image {
+          max-width: 100%;
+          height: auto;
+          border-radius: 12px;
+          margin: 16px 0;
+          border: 1px solid #e4e7ec;
+        }
+        #blog-root .blog-md-hr {
+          border: 0;
+          height: 1px;
+          background: #e4e7ec;
+          margin: 44px 0;
+        }
+        #blog-root .blog-md-table-wrap {
+          overflow: auto;
+          border: 1px solid #e4e7ec;
+          border-radius: 12px;
+          margin: 20px 0;
+        }
+        #blog-root .blog-md-table {
+          border-collapse: collapse;
+          min-width: 100%;
+        }
+        #blog-root .blog-md-th {
+          background: #f9fafb;
+          text-align: left;
+          font-size: 12px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          color: #475467;
+          padding: 10px;
+          border-bottom: 1px solid #e4e7ec;
+        }
+        #blog-root .blog-md-td {
+          padding: 10px;
+          border-bottom: 1px solid #f2f4f7;
+          color: #344054;
+          font-size: 14px;
+        }
+        #blog-root .blog-post-nav {
+          margin-top: 20px;
+          padding-top: 20px;
+          border-top: 1px solid #e4e7ec;
+          display: flex;
+          gap: 10px;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+        #blog-root .blog-post-nav a {
+          text-decoration: none;
+          border: 1px solid #d0d5dd;
+          background: #fff;
+          color: #101828;
+          border-radius: 10px;
+          padding: 10px 14px;
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+        }
+        @media (max-width: 700px) {
+          #blog-root .blog-post-wrap {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+        }
+      </style><section class="blog-post-wrap"><a class="blog-post-kicker" href="/blog/">Back to blog</a><h1>Common LLM Parameters To Know For RAG</h1><div class="blog-post-meta"><span>March 18, 2026</span><span>•</span><span>8 min</span><span>•</span><span>Subrata Kumar Das</span></div><p class="blog-post-desc">A practical, provider-neutral guide to the key retrieval and generation parameters that control RAG quality, latency, and cost.</p><div class="blog-tag-row"><span>llm</span><span>rag</span><span>ai</span><span>retrieval</span><span>prompt-engineering</span><span>software-development</span></div><article class="blog-article"><div><p class="blog-md-p">RAG quality is not only about model choice.</p>
+<p class="blog-md-p">In practice, your results depend heavily on <strong>how you tune parameters</strong> across both retrieval and generation.
+The wrong knobs can cause hallucinations, missed context, slow responses, and higher cost.
+The right knobs make your assistant grounded, fast, and reliable.</p>
+<p class="blog-md-p">This guide is provider-neutral and focuses on the most practical parameters to tune first.</p>
+<hr class="blog-md-hr" />
+<h2 id="a-retrieval-parameters-what-context-you-fetch" class="blog-md-h2">A) Retrieval Parameters (What Context You Fetch)</h2>
+<h3 id="1-topk" class="blog-md-h3">1) <code class="blog-md-inline-code">topK</code></h3>
+<p class="blog-md-p">How many chunks/documents you retrieve before generation.</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">Too low: you may miss relevant evidence.</li>
+<li class="blog-md-li">Too high: you flood context with noise and increase latency/cost.</li>
+</ul>
+<p class="blog-md-p">Practical default: <code class="blog-md-inline-code">topK</code> between <code class="blog-md-inline-code">4</code> and <code class="blog-md-inline-code">8</code> for most QA cases.</p>
+<h3 id="2-scorethreshold-or-minsimilarity" class="blog-md-h3">2) <code class="blog-md-inline-code">score_threshold</code> (or <code class="blog-md-inline-code">min_similarity</code>)</h3>
+<p class="blog-md-p">Minimum relevance score required to keep a retrieved chunk.</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">Higher threshold: cleaner but fewer chunks.</li>
+<li class="blog-md-li">Lower threshold: more coverage but more irrelevant context.</li>
+</ul>
+<p class="blog-md-p">Use this to improve precision when retrieval returns weak matches.</p>
+<h3 id="3-reranktopn" class="blog-md-h3">3) <code class="blog-md-inline-code">rerank_top_n</code></h3>
+<p class="blog-md-p">Number of retrieved items sent to a reranker model to improve ordering.</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">Useful when semantic search returns mixed quality in top results.</li>
+<li class="blog-md-li">Often better than blindly increasing <code class="blog-md-inline-code">topK</code>.</li>
+</ul>
+<p class="blog-md-p">Example: retrieve 20, rerank, keep top 5.</p>
+<h3 id="4-chunksize" class="blog-md-h3">4) <code class="blog-md-inline-code">chunk_size</code></h3>
+<p class="blog-md-p">How large each chunk is when indexing documents.</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">Small chunks: precise retrieval but risk losing broader context.</li>
+<li class="blog-md-li">Large chunks: richer context but lower precision and more token usage.</li>
+</ul>
+<p class="blog-md-p">Typical starting range: <code class="blog-md-inline-code">300-800</code> tokens.</p>
+<h3 id="5-chunkoverlap" class="blog-md-h3">5) <code class="blog-md-inline-code">chunk_overlap</code></h3>
+<p class="blog-md-p">How much neighboring chunk text repeats.</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">Helps preserve meaning across chunk boundaries.</li>
+<li class="blog-md-li">Too much overlap increases index size and near-duplicate retrieval.</li>
+</ul>
+<p class="blog-md-p">Typical starting range: <code class="blog-md-inline-code">50-120</code> tokens.</p>
+<h3 id="6-context-budget" class="blog-md-h3">6) Context Budget</h3>
+<p class="blog-md-p">How many retrieved tokens you actually include in the final prompt.</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">Even good retrieval can fail if you overfill context.</li>
+<li class="blog-md-li">Reserve space for system instructions and output tokens.</li>
+</ul>
+<p class="blog-md-p">Treat context as a budget, not an unlimited buffer.</p>
+<hr class="blog-md-hr" />
+<h2 id="b-generation-parameters-how-the-model-responds" class="blog-md-h2">B) Generation Parameters (How The Model Responds)</h2>
+<h3 id="1-temperature" class="blog-md-h3">1) <code class="blog-md-inline-code">temperature</code></h3>
+<p class="blog-md-p">Controls randomness.</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">Lower (<code class="blog-md-inline-code">0.0-0.3</code>): more deterministic, good for factual RAG.</li>
+<li class="blog-md-li">Higher (<code class="blog-md-inline-code">0.6+</code>): more creative, but higher hallucination risk.</li>
+</ul>
+<h3 id="2-topp-nucleus-sampling" class="blog-md-h3">2) <code class="blog-md-inline-code">top_p</code> (nucleus sampling)</h3>
+<p class="blog-md-p">Chooses from the smallest set of tokens whose cumulative probability reaches <code class="blog-md-inline-code">p</code>.</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">Lower <code class="blog-md-inline-code">top_p</code>: more conservative output.</li>
+<li class="blog-md-li">Higher <code class="blog-md-inline-code">top_p</code>: broader token exploration.</li>
+</ul>
+<p class="blog-md-p">Common practical range: <code class="blog-md-inline-code">0.8-1.0</code>.</p>
+<h3 id="3-topk-if-supported" class="blog-md-h3">3) <code class="blog-md-inline-code">top_k</code> (if supported)</h3>
+<p class="blog-md-p">Restricts next-token sampling to the top <code class="blog-md-inline-code">k</code> candidates.</p>
+<p class="blog-md-p">Important: this is a <strong>generation</strong> parameter, different from retrieval <code class="blog-md-inline-code">topK</code>.</p>
+<h3 id="4-maxoutputtokens-or-maxtokens" class="blog-md-h3">4) <code class="blog-md-inline-code">max_output_tokens</code> (or <code class="blog-md-inline-code">max_tokens</code>)</h3>
+<p class="blog-md-p">Caps output length.</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">Too low: answers get cut off.</li>
+<li class="blog-md-li">Too high: unnecessary cost and slower responses.</li>
+</ul>
+<p class="blog-md-p">Set this based on expected answer style (short QA vs long explanation).</p>
+<h3 id="5-stopsequences" class="blog-md-h3">5) <code class="blog-md-inline-code">stop_sequences</code></h3>
+<p class="blog-md-p">Defines where generation should stop.</p>
+<p class="blog-md-p">Useful for:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">forcing concise answers,</li>
+<li class="blog-md-li">separating answer/citation sections,</li>
+<li class="blog-md-li">reducing verbose drift.</li>
+</ul>
+<hr class="blog-md-hr" />
+<h2 id="c-starter-presets-provider-neutral" class="blog-md-h2">C) Starter Presets (Provider-Neutral)</h2>
+<p class="blog-md-p">These are practical starting points, not strict rules.</p>
+<h3 id="1-factual-rag-qa" class="blog-md-h3">1) Factual RAG QA</h3>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">JSON</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-json">{
+  "retrieval": {
+    "topK": 6,
+    "score_threshold": 0.35,
+    "chunk_size": 500,
+    "chunk_overlap": 80
+  },
+  "generation": {
+    "temperature": 0.2,
+    "top_p": 0.9,
+    "max_output_tokens": 500
+  }
+}
+</code></pre>
+      </div>
+    
+<h3 id="2-summarization-across-multiple-docs" class="blog-md-h3">2) Summarization Across Multiple Docs</h3>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">JSON</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-json">{
+  "retrieval": {
+    "topK": 10,
+    "score_threshold": 0.25,
+    "chunk_size": 700,
+    "chunk_overlap": 100,
+    "rerank_top_n": 15
+  },
+  "generation": {
+    "temperature": 0.3,
+    "top_p": 0.95,
+    "max_output_tokens": 900
+  }
+}
+</code></pre>
+      </div>
+    
+<h3 id="3-drafting-with-retrieved-context" class="blog-md-h3">3) Drafting With Retrieved Context</h3>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">JSON</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-json">{
+  "retrieval": {
+    "topK": 8,
+    "score_threshold": 0.2,
+    "chunk_size": 600,
+    "chunk_overlap": 90
+  },
+  "generation": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "max_output_tokens": 1200
+  }
+}
+</code></pre>
+      </div>
+    
+<hr class="blog-md-hr" />
+<h2 id="d-debug-checklist-symptom-likely-cause-first-fix" class="blog-md-h2">D) Debug Checklist (Symptom -> Likely Cause -> First Fix)</h2>
+<ol class="blog-md-ol">
+<li class="blog-md-li"><strong>Hallucinations despite RAG</strong> -> noisy retrieval -> increase <code class="blog-md-inline-code">score_threshold</code> and reduce <code class="blog-md-inline-code">topK</code>.</li>
+<li class="blog-md-li"><strong>Correct answer exists but is missed</strong> -> low recall -> raise <code class="blog-md-inline-code">topK</code> or improve chunking.</li>
+<li class="blog-md-li"><strong>Answer is too generic</strong> -> weak grounding -> tighten prompt to require citations and reduce temperature.</li>
+<li class="blog-md-li"><strong>Response is slow</strong> -> too much context -> lower <code class="blog-md-inline-code">topK</code>, reduce chunk size, apply reranking.</li>
+<li class="blog-md-li"><strong>Answer is cut mid-sentence</strong> -> output cap too low -> increase <code class="blog-md-inline-code">max_output_tokens</code>.</li>
+<li class="blog-md-li"><strong>Repeated near-duplicate evidence</strong> -> overlap too high -> reduce <code class="blog-md-inline-code">chunk_overlap</code>.</li>
+<li class="blog-md-li"><strong>Inconsistent answers run-to-run</strong> -> high randomness -> lower <code class="blog-md-inline-code">temperature</code> and keep <code class="blog-md-inline-code">top_p</code> stable.</li>
+</ol>
+<hr class="blog-md-hr" />
+<h2 id="e-minimal-provider-neutral-config-pattern" class="blog-md-h2">E) Minimal Provider-Neutral Config Pattern</h2>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">JSON</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-json">{
+  "retrieval": {
+    "topK": 6,
+    "score_threshold": 0.3,
+    "chunk_size": 500,
+    "chunk_overlap": 80,
+    "rerank_top_n": 12,
+    "context_budget_tokens": 3500
+  },
+  "generation": {
+    "temperature": 0.2,
+    "top_p": 0.9,
+    "top_k": 40,
+    "max_output_tokens": 700,
+    "stop_sequences": ["\n\n###", "&#x3C;END>"]
+  }
+}
+</code></pre>
+      </div>
+    
+<p class="blog-md-p">Recommended tuning order:</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li">Fix chunking (<code class="blog-md-inline-code">chunk_size</code>, <code class="blog-md-inline-code">chunk_overlap</code>).</li>
+<li class="blog-md-li">Tune retrieval (<code class="blog-md-inline-code">topK</code>, threshold, rerank).</li>
+<li class="blog-md-li">Tune generation (<code class="blog-md-inline-code">temperature</code>, <code class="blog-md-inline-code">top_p</code>, output cap).</li>
+<li class="blog-md-li">Re-check with a stable eval set.</li>
+</ol>
+<hr class="blog-md-hr" />
+<h2 id="10-questions-to-check-your-understanding" class="blog-md-h2">10 Questions To Check Your Understanding</h2>
+<ol class="blog-md-ol">
+<li class="blog-md-li">What is the difference between retrieval <code class="blog-md-inline-code">topK</code> and generation <code class="blog-md-inline-code">top_k</code>?</li>
+<li class="blog-md-li">When should you increase <code class="blog-md-inline-code">score_threshold</code> instead of reducing <code class="blog-md-inline-code">topK</code>?</li>
+<li class="blog-md-li">How can very large <code class="blog-md-inline-code">chunk_size</code> hurt answer quality?</li>
+<li class="blog-md-li">Why is increasing <code class="blog-md-inline-code">chunk_overlap</code> not always better?</li>
+<li class="blog-md-li">What happens if <code class="blog-md-inline-code">temperature</code> is high in a factual RAG assistant?</li>
+<li class="blog-md-li">Why should you usually tune <code class="blog-md-inline-code">temperature</code> and <code class="blog-md-inline-code">top_p</code> one at a time?</li>
+<li class="blog-md-li">How does <code class="blog-md-inline-code">max_output_tokens</code> affect cost and truncation risk?</li>
+<li class="blog-md-li">When is reranking more useful than simply increasing retrieval <code class="blog-md-inline-code">topK</code>?</li>
+<li class="blog-md-li">What symptoms indicate your context budget is too small?</li>
+<li class="blog-md-li">In what order should you tune parameters when starting from defaults?</li>
+</ol>
+<hr class="blog-md-hr" />
+<h2 id="further-reading-documentation" class="blog-md-h2">Further Reading / Documentation</h2>
+<ul class="blog-md-ul">
+<li class="blog-md-li">OpenAI Text Generation docs: <a href="https://platform.openai.com/docs/guides/text-generation" class="blog-md-link">https://platform.openai.com/docs/guides/text-generation</a></li>
+<li class="blog-md-li">OpenAI Responses API docs: <a href="https://platform.openai.com/docs/api-reference/responses" class="blog-md-link">https://platform.openai.com/docs/api-reference/responses</a></li>
+<li class="blog-md-li">Anthropic Messages API docs: <a href="https://docs.anthropic.com/en/api/messages" class="blog-md-link">https://docs.anthropic.com/en/api/messages</a></li>
+<li class="blog-md-li">Google Gemini API docs: <a href="https://ai.google.dev/gemini-api/docs" class="blog-md-link">https://ai.google.dev/gemini-api/docs</a></li>
+<li class="blog-md-li">Azure AI Search RAG overview: <a href="https://learn.microsoft.com/azure/search/retrieval-augmented-generation-overview" class="blog-md-link">https://learn.microsoft.com/azure/search/retrieval-augmented-generation-overview</a></li>
+<li class="blog-md-li">LangChain Retrieval conceptual guide: <a href="https://python.langchain.com/docs/concepts/retrieval/" class="blog-md-link">https://python.langchain.com/docs/concepts/retrieval/</a></li>
+<li class="blog-md-li">LlamaIndex RAG guide: <a href="https://docs.llamaindex.ai/en/stable/understanding/rag/" class="blog-md-link">https://docs.llamaindex.ai/en/stable/understanding/rag/</a></li>
+</ul>
+</div></article><div class="blog-post-nav"><span></span><span></span></div></section><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":"https://subraatakumar.com/blog/common-llm-parameters-for-rag","headline":"Common LLM Parameters To Know For RAG","description":"A practical, provider-neutral guide to the key retrieval and generation parameters that control RAG quality, latency, and cost.","datePublished":"2026-03-18","dateModified":"2026-03-18","image":"https://subraatakumar.com/images/interview.png","keywords":["llm","rag","ai","retrieval","prompt-engineering","software-development"],"author":{"@type":"Person","name":"Subrata Kumar Das","url":"https://subraatakumar.com/"},"publisher":{"@type":"Organization","name":"Subrata Kumar Das","url":"https://subraatakumar.com/"}}</script></main><!--$--><!--/$--></main><footer class="blog-shell-footer"><div class="blog-shell-footer-inner"><p class="blog-shell-copy">Subrata Kumar Das • Blog</p><a href="/blog/">All Posts</a></div></footer></div></div></main><footer class="sk-footer">© <!-- -->2026<!-- --> Subrata Kumar Das. All rights reserved. ·<!-- --> <a href="/for-ai/">For AI/Crawlers</a></footer><script src="/_next/static/chunks/5a08c9e3a78c4f9b.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\na:I[68027,[],\"default\"]\n:HL[\"/_next/static/chunks/a99ebf15a758c58a.css\",\"style\"]\n:HL[\"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700\u0026family=Caveat+Brush\u0026display=swap\",\"style\"]\n2:T19f5,"])</script><script>self.__next_f.push([1,"\n          * { box-sizing: border-box; margin: 0; padding: 0; }\n\n          body {\n            background: #fafaf7;\n            font-family: 'Caveat', cursive;\n            color: #1a1a2e;\n          }\n\n          /* ── Nav ── */\n          .sk-header {\n            background: #fff;\n            border-bottom: 2.5px solid #1a1a2e;\n            position: sticky;\n            top: 0;\n            z-index: 100;\n          }\n          .sk-header-inner {\n            max-width: 900px;\n            margin: 0 auto;\n            padding: 16px 24px;\n            display: flex;\n            align-items: center;\n            justify-content: space-between;\n          }\n          .sk-logo {\n            font-family: 'Caveat Brush', cursive;\n            font-size: 1.55rem;\n            color: #1a1a2e;\n            text-decoration: none;\n            letter-spacing: 0.01em;\n          }\n          .sk-nav-links {\n            display: flex;\n            gap: 32px;\n            list-style: none;\n          }\n          .sk-nav-links a {\n            font-family: 'Caveat', cursive;\n            font-size: 1.15rem;\n            font-weight: 600;\n            color: #1a1a2e;\n            text-decoration: none;\n            padding-bottom: 2px;\n          }\n          .sk-nav-links a:hover {\n            text-decoration: underline wavy #2563eb 2px;\n            text-underline-offset: 4px;\n          }\n          .sk-nav-mobile {\n            display: none;\n            max-width: 900px;\n            margin: 0 auto;\n            padding: 0 24px 14px;\n          }\n          .sk-nav-mobile ul {\n            display: flex;\n            gap: 20px;\n            list-style: none;\n          }\n          .sk-nav-mobile a {\n            font-size: 1.1rem;\n            font-weight: 600;\n            color: #1a1a2e;\n            text-decoration: none;\n          }\n\n          /* ── Footer ── */\n          .sk-footer {\n            border-top: 2.5px solid #1a1a2e;\n            background: #fff;\n            padding: 24px;\n            text-align: center;\n            font-size: 1rem;\n            color: #666;\n          }\n\n          /* ── Shared section ── */\n          .sk-page {\n            max-width: 900px;\n            margin: 0 auto;\n            padding: 60px 24px 80px;\n          }\n          .sk-page-heading {\n            font-family: 'Caveat Brush', cursive;\n            font-size: 2.8rem;\n            margin-bottom: 8px;\n            line-height: 1.1;\n          }\n          .sk-section-heading {\n            font-family: 'Caveat Brush', cursive;\n            font-size: 1.9rem;\n            margin-bottom: 16px;\n            display: flex;\n            align-items: center;\n            gap: 12px;\n          }\n          .sk-section-heading::after {\n            content: '';\n            flex: 1;\n            border-top: 2px dashed #9ca3af;\n          }\n\n          /* ── Squiggle divider ── */\n          .sk-squiggle {\n            width: 100%;\n            height: 8px;\n            background: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 4 Q5 0 10 4 Q15 8 20 4 Q25 0 30 4 Q35 8 40 4' stroke='%239ca3af' stroke-width='1.5' fill='none'/%3E%3C/svg%3E\") repeat-x center;\n            opacity: 0.55;\n            margin: 36px 0;\n          }\n\n          /* ── Sketch button ── */\n          .sk-btn {\n            display: inline-block;\n            padding: 10px 26px;\n            background: #2563eb;\n            color: #fff;\n            font-family: 'Caveat', cursive;\n            font-size: 1.15rem;\n            font-weight: 700;\n            border: 2.5px solid #1a1a2e;\n            border-radius: 2px;\n            cursor: pointer;\n            text-decoration: none;\n            box-shadow: 3px 3px 0 #1a1a2e;\n            transition: transform 0.1s, box-shadow 0.1s;\n          }\n          .sk-btn:hover {\n            transform: translate(-2px, -2px);\n            box-shadow: 5px 5px 0 #1a1a2e;\n          }\n          .sk-btn-ghost {\n            background: transparent;\n            color: #1a1a2e;\n            box-shadow: 3px 3px 0 #9ca3af;\n          }\n          .sk-btn-ghost:hover {\n            box-shadow: 5px 5px 0 #9ca3af;\n          }\n\n          /* ── Tag chip ── */\n          .sk-tag {\n            display: inline-block;\n            padding: 3px 13px;\n            border: 2px solid #1a1a2e;\n            border-radius: 2px;\n            font-size: 1rem;\n            font-weight: 600;\n            background: #fff;\n            margin: 3px;\n          }\n          .sk-tag.active {\n            background: #2563eb;\n            color: #fff;\n          }\n\n          /* ── Card ── */\n          .sk-card {\n            background: #fff;\n            border: 2.5px solid #1a1a2e;\n            border-radius: 2px;\n            box-shadow: 5px 5px 0 #1a1a2e;\n            padding: 24px;\n            transition: transform 0.15s, box-shadow 0.15s;\n          }\n          .sk-card:hover {\n            transform: translate(-3px, -3px);\n            box-shadow: 8px 8px 0 #1a1a2e;\n          }\n\n          /* ── Stat card ── */\n          .sk-stat {\n            flex: 1;\n            min-width: 130px;\n            text-align: center;\n            background: #fff;\n            border: 2.5px solid #1a1a2e;\n            border-radius: 2px;\n            box-shadow: 4px 4px 0 #1a1a2e;\n            padding: 20px 12px;\n          }\n          .sk-stat .num {\n            font-family: 'Caveat Brush', cursive;\n            font-size: 2.8rem;\n            color: #2563eb;\n            line-height: 1;\n          }\n          .sk-stat .lbl {\n            font-size: 1rem;\n            color: #555;\n            margin-top: 4px;\n          }\n\n          /* ── Image placeholder ── */\n          .sk-img {\n            width: 100%;\n            height: 160px;\n            border: 2.5px solid #1a1a2e;\n            border-radius: 2px;\n            background: #f3f4f6;\n            position: relative;\n            overflow: hidden;\n            margin-bottom: 16px;\n          }\n          .sk-img::before {\n            content: '';\n            position: absolute;\n            inset: 0;\n            background:\n              linear-gradient(to bottom right, transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px)),\n              linear-gradient(to bottom left,  transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px));\n          }\n\n          @media (max-width: 640px) {\n            .sk-nav-links { display: none; }\n            .sk-nav-mobile { display: block; }\n            .sk-page-heading { font-size: 2.2rem; }\n          }\n        "])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"MmOABvg5HYon4BpeKbwWV\",\"c\":[\"\",\"blog\",\"common-llm-parameters-for-rag\",\"\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"blog\",{\"children\":[[\"slug\",\"common-llm-parameters-for-rag\",\"d\"],{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",true],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/a99ebf15a758c58a.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/7c92e96509cd355e.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[[\"$\",\"head\",null,{\"children\":[\"$\",\"link\",null,{\"href\":\"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700\u0026family=Caveat+Brush\u0026display=swap\",\"rel\":\"stylesheet\"}]}],[\"$\",\"body\",null,{\"style\":{\"background\":\"#fafaf7\",\"margin\":0,\"fontFamily\":\"'Caveat', cursive\",\"color\":\"#1a1a2e\"},\"children\":[[\"$\",\"script\",null,{\"type\":\"application/ld+json\",\"dangerouslySetInnerHTML\":{\"__html\":\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Subrata Kumar Das\\\",\\\"url\\\":\\\"https://subraatakumar.com\\\",\\\"jobTitle\\\":\\\"Tech Lead\\\",\\\"sameAs\\\":[\\\"https://github.com/subraatakumar\\\",\\\"https://linkedin.com/in/subraatakumar\\\"]}\"}}],[\"$\",\"script\",null,{\"type\":\"application/ld+json\",\"dangerouslySetInnerHTML\":{\"__html\":\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"CreativeWorkSeries\\\",\\\"name\\\":\\\"180 Days Mentoring Journey\\\",\\\"description\\\":\\\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\\\",\\\"url\\\":\\\"https://subraatakumar.com/180days\\\",\\\"startDate\\\":\\\"2026-02-19\\\",\\\"publisher\\\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"Subrata Kumar Das\\\",\\\"url\\\":\\\"https://subraatakumar.com\\\"}}\"}}],[\"$\",\"style\",null,{\"children\":\"$2\"}],\"$L3\",\"$L4\",\"$L5\"]}]]}]]}],{\"children\":[\"$L6\",{\"children\":[\"$L7\",{\"children\":[\"$L8\",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],\"$L9\",false]],\"m\":\"$undefined\",\"G\":[\"$a\",[]],\"S\":true}\n"])</script><script>self.__next_f.push([1,"b:I[22016,[\"/_next/static/chunks/7c92e96509cd355e.js\",\"/_next/static/chunks/ed0ac4fd205f8cfa.js\"],\"\"]\nc:I[39756,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"default\"]\nd:I[37457,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"default\"]\n11:I[97367,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"OutletBoundary\"]\n12:\"$Sreact.suspense\"\n14:I[97367,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"ViewportBoundary\"]\n16:I[97367,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"MetadataBoundary\"]\n3:[\"$\",\"header\",null,{\"className\":\"sk-header\",\"children\":[[\"$\",\"div\",null,{\"className\":\"sk-header-inner\",\"children\":[[\"$\",\"$Lb\",null,{\"href\":\"/\",\"className\":\"sk-logo\",\"children\":\"SKD_\"}],[\"$\",\"nav\",null,{\"aria-label\":\"Primary\",\"children\":[\"$\",\"ul\",null,{\"className\":\"sk-nav-links\",\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/about\",\"children\":\"About\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/products\",\"children\":\"Products\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/contact\",\"children\":\"Contact\"}]}]]}]}]]}],[\"$\",\"div\",null,{\"className\":\"sk-nav-mobile\",\"children\":[\"$\",\"nav\",null,{\"aria-label\":\"Mobile\",\"children\":[\"$\",\"ul\",null,{\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/about\",\"children\":\"About\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/products\",\"children\":\"Products\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/contact\",\"children\":\"Contact\"}]}]]}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"4:[\"$\",\"main\",null,{\"style\":{\"width\":\"100%\"},\"children\":[\"$\",\"$Lc\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Ld\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]\n"])</script><script>self.__next_f.push([1,"5:[\"$\",\"footer\",null,{\"className\":\"sk-footer\",\"children\":[\"© \",2026,\" Subrata Kumar Das. All rights reserved. ·\",\" \",[\"$\",\"$Lb\",null,{\"href\":\"/for-ai\",\"children\":\"For AI/Crawlers\"}]]}]\ne:T1027,"])</script><script>self.__next_f.push([1,"\n        body:has(#blog-root) .sk-header,\n        body:has(#blog-root) .sk-footer {\n          display: none !important;\n        }\n\n        #blog-root,\n        #blog-root * {\n          box-sizing: border-box;\n        }\n\n        #blog-root {\n          --blog-ink: #101828;\n          --blog-muted: #667085;\n          --blog-line: #e4e7ec;\n          --blog-card: #ffffff;\n          --blog-accent: #0ea5e9;\n          --blog-accent-warm: #fb7185;\n          --blog-bg: radial-gradient(circle at 10% 0%, #dff6ff 0%, transparent 40%),\n            radial-gradient(circle at 100% 10%, #ffe8ec 0%, transparent 35%),\n            #f8fafc;\n          display: flex;\n          flex-direction: column;\n          min-height: 100vh;\n          background: var(--blog-bg);\n          color: var(--blog-ink);\n          font-family: \"Manrope\", \"Avenir Next\", \"Segoe UI\", sans-serif;\n        }\n\n        #blog-root .blog-shell-header {\n          position: sticky;\n          top: 0;\n          z-index: 100;\n          backdrop-filter: blur(10px);\n          background: rgba(248, 250, 252, 0.78);\n          border-bottom: 1px solid var(--blog-line);\n        }\n        #blog-root .blog-shell-header-inner {\n          width: 100%;\n          height: 66px;\n          padding: 0 clamp(16px, 4vw, 48px);\n          display: flex;\n          align-items: center;\n          justify-content: space-between;\n          gap: 16px;\n        }\n        #blog-root .blog-shell-main {\n          flex: 1;\n          display: flex;\n          flex-direction: column;\n        }\n        #blog-root .blog-brand {\n          display: inline-flex;\n          align-items: center;\n          gap: 10px;\n          text-decoration: none;\n          color: var(--blog-ink);\n        }\n        #blog-root .blog-brand-mark {\n          width: 32px;\n          height: 32px;\n          border-radius: 10px;\n          background: linear-gradient(135deg, var(--blog-accent), var(--blog-accent-warm));\n          color: #fff;\n          display: grid;\n          place-items: center;\n          font-weight: 900;\n          font-size: 12px;\n          letter-spacing: 0.03em;\n          box-shadow: 0 10px 24px rgba(14, 165, 233, 0.28);\n        }\n        #blog-root .blog-brand-text {\n          font-family: \"Fraunces\", \"Iowan Old Style\", serif;\n          font-weight: 700;\n          font-size: 1.1rem;\n          letter-spacing: 0.01em;\n        }\n        #blog-root .blog-shell-nav {\n          display: inline-flex;\n          align-items: center;\n          gap: 8px;\n        }\n        #blog-root .blog-shell-nav a {\n          text-decoration: none;\n          color: var(--blog-ink);\n          font-size: 0.8rem;\n          font-weight: 800;\n          text-transform: uppercase;\n          letter-spacing: 0.08em;\n          padding: 10px 12px;\n          border-radius: 10px;\n          transition: background 0.2s ease;\n        }\n        #blog-root .blog-shell-nav a:hover {\n          background: #eef2f6;\n        }\n\n        #blog-root .blog-shell-footer {\n          margin-top: auto;\n          border-top: 1px solid var(--blog-line);\n          background: rgba(255, 255, 255, 0.64);\n        }\n        #blog-root .blog-shell-footer-inner {\n          width: 100%;\n          padding: 20px clamp(16px, 4vw, 48px) 24px;\n          display: flex;\n          align-items: center;\n          justify-content: space-between;\n          gap: 12px;\n          flex-wrap: wrap;\n        }\n        #blog-root .blog-shell-copy {\n          font-size: 11px;\n          text-transform: uppercase;\n          letter-spacing: 0.12em;\n          color: var(--blog-muted);\n          font-weight: 700;\n        }\n        #blog-root .blog-shell-footer a {\n          text-decoration: none;\n          font-size: 12px;\n          font-weight: 800;\n          letter-spacing: 0.05em;\n          color: #0b6ba8;\n        }\n\n        @media (max-width: 700px) {\n          #blog-root .blog-shell-header-inner,\n          #blog-root .blog-shell-footer-inner {\n            padding-left: 16px;\n            padding-right: 16px;\n          }\n          #blog-root .blog-shell-nav a {\n            padding: 8px 10px;\n            font-size: 0.72rem;\n          }\n        }\n      "])</script><script>self.__next_f.push([1,"6:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"div\",null,{\"style\":{\"all\":\"revert\"},\"children\":[[\"$\",\"style\",null,{\"children\":\"$e\"}],\"$Lf\"]}]]}]\n7:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$Lc\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Ld\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n8:[\"$\",\"$1\",\"c\",{\"children\":[\"$L10\",[[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/ed0ac4fd205f8cfa.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"$L11\",null,{\"children\":[\"$\",\"$12\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@13\"}]}]]}]\n9:[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$L14\",null,{\"children\":\"$L15\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$L16\",null,{\"children\":[\"$\",\"$12\",null,{\"name\":\"Next.Metadata\",\"children\":\"$L17\"}]}]}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}]\n"])</script><script>self.__next_f.push([1,"f:[\"$\",\"div\",null,{\"id\":\"blog-root\",\"children\":[[\"$\",\"header\",null,{\"className\":\"blog-shell-header\",\"children\":[\"$\",\"div\",null,{\"className\":\"blog-shell-header-inner\",\"children\":[[\"$\",\"$Lb\",null,{\"href\":\"/blog\",\"className\":\"blog-brand\",\"children\":[[\"$\",\"span\",null,{\"className\":\"blog-brand-mark\",\"children\":\"SK\"}],[\"$\",\"span\",null,{\"className\":\"blog-brand-text\",\"children\":\"TechCraft Blog\"}]]}],[\"$\",\"nav\",null,{\"className\":\"blog-shell-nav\",\"children\":[[\"$\",\"$Lb\",null,{\"href\":\"/products\",\"children\":\"Products\"}],[\"$\",\"$Lb\",null,{\"href\":\"/\",\"children\":\"Home\"}]]}]]}]}],[\"$\",\"main\",null,{\"className\":\"blog-shell-main\",\"children\":[\"$\",\"$Lc\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Ld\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"footer\",null,{\"className\":\"blog-shell-footer\",\"children\":[\"$\",\"div\",null,{\"className\":\"blog-shell-footer-inner\",\"children\":[[\"$\",\"p\",null,{\"className\":\"blog-shell-copy\",\"children\":\"Subrata Kumar Das • Blog\"}],[\"$\",\"$Lb\",null,{\"href\":\"/blog\",\"children\":\"All Posts\"}]]}]}]]}]\n"])</script><script>self.__next_f.push([1,"18:T1b2e,"])</script><script>self.__next_f.push([1,"\n        #blog-root .blog-post-wrap {\n          max-width: 880px;\n          margin: 0 auto;\n          padding: 30px 24px 0;\n        }\n        #blog-root .blog-post-kicker {\n          display: inline-flex;\n          align-items: center;\n          gap: 10px;\n          font-size: 11px;\n          font-weight: 900;\n          text-transform: uppercase;\n          letter-spacing: 0.1em;\n          color: #175cd3;\n          border: 1px solid #cfe1fa;\n          border-radius: 999px;\n          padding: 8px 12px;\n          background: #fff;\n          text-decoration: none;\n        }\n        #blog-root .blog-post-wrap h1 {\n          margin-top: 18px;\n          font-family: \"Fraunces\", \"Iowan Old Style\", serif;\n          font-size: clamp(2rem, 4.6vw, 3.2rem);\n          line-height: 1.08;\n          letter-spacing: -0.02em;\n        }\n        #blog-root .blog-post-meta {\n          margin-top: 16px;\n          display: flex;\n          align-items: center;\n          flex-wrap: wrap;\n          gap: 8px;\n          color: #667085;\n          font-size: 12px;\n          font-weight: 700;\n          text-transform: uppercase;\n          letter-spacing: 0.07em;\n        }\n        #blog-root .blog-post-desc {\n          margin-top: 14px;\n          font-size: 1.04rem;\n          line-height: 1.8;\n          color: #475467;\n        }\n        #blog-root .blog-tag-row {\n          margin-top: 12px;\n          display: flex;\n          flex-wrap: wrap;\n          gap: 8px;\n        }\n        #blog-root .blog-tag-row span {\n          background: #f2f4f7;\n          color: #344054;\n          font-size: 11px;\n          font-weight: 800;\n          text-transform: uppercase;\n          letter-spacing: 0.05em;\n          padding: 6px 10px;\n          border-radius: 999px;\n        }\n        #blog-root .blog-article {\n          margin-top: 26px;\n          border-top: 1px solid #e4e7ec;\n          padding-top: 24px;\n          padding-bottom: 20px;\n        }\n        #blog-root .blog-md-p {\n          margin: 18px 0;\n          font-size: 1.03rem;\n          line-height: 1.95;\n          color: #1d2939;\n        }\n        #blog-root .blog-md-h1 {\n          margin: 56px 0 16px;\n          font-family: \"Fraunces\", \"Iowan Old Style\", serif;\n          font-size: 2rem;\n          line-height: 1.18;\n        }\n        #blog-root .blog-md-h2 {\n          margin: 46px 0 14px;\n          font-family: \"Fraunces\", \"Iowan Old Style\", serif;\n          font-size: 1.7rem;\n          line-height: 1.24;\n        }\n        #blog-root .blog-md-h3 {\n          margin: 36px 0 10px;\n          font-weight: 800;\n          font-size: 1.28rem;\n          line-height: 1.34;\n        }\n        #blog-root .blog-md-h4,\n        #blog-root .blog-md-h5,\n        #blog-root .blog-md-h6 {\n          margin: 28px 0 8px;\n          font-size: 1.08rem;\n          font-weight: 800;\n        }\n        #blog-root .blog-md-ul {\n          list-style: disc;\n          padding-left: 24px;\n          margin: 18px 0;\n        }\n        #blog-root .blog-md-ol {\n          list-style: decimal;\n          padding-left: 28px;\n          margin: 18px 0;\n        }\n        #blog-root .blog-md-li {\n          margin: 8px 0;\n          line-height: 1.8;\n          color: #344054;\n        }\n        #blog-root .blog-md-quote {\n          margin: 22px 0;\n          border-left: 3px solid #7cd4ff;\n          background: #f5fbff;\n          border-radius: 10px;\n          padding: 14px 16px;\n          color: #344054;\n          font-style: italic;\n        }\n        #blog-root .blog-md-link {\n          color: #0b6ba8;\n          text-decoration: none;\n          font-weight: 700;\n        }\n        #blog-root .blog-md-link:hover {\n          text-decoration: underline;\n        }\n        #blog-root .blog-md-inline-code {\n          background: #f2f4f7;\n          color: #7a271a;\n          border-radius: 6px;\n          padding: 2px 6px;\n          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Courier New\", monospace;\n          font-size: 0.9em;\n        }\n        #blog-root .blog-code-wrap {\n          margin: 24px 0;\n          border-radius: 14px;\n          overflow: hidden;\n          border: 1px solid #d0d5dd;\n        }\n        #blog-root .blog-code-head {\n          display: flex;\n          align-items: center;\n          justify-content: space-between;\n          background: #101828;\n          padding: 8px 10px;\n        }\n        #blog-root .blog-code-lang {\n          font-size: 11px;\n          font-weight: 800;\n          letter-spacing: 0.06em;\n          text-transform: uppercase;\n          color: #d1e9ff;\n        }\n        #blog-root .blog-copy-btn {\n          border: 0;\n          font-size: 11px;\n          font-weight: 900;\n          text-transform: uppercase;\n          letter-spacing: 0.06em;\n          border-radius: 8px;\n          padding: 5px 10px;\n          background: #d1e9ff;\n          color: #0c2d6b;\n          cursor: pointer;\n        }\n        #blog-root .blog-md-pre {\n          margin: 0;\n          background: #182230;\n          color: #f8fafc;\n          padding: 14px;\n          overflow: auto;\n        }\n        #blog-root .blog-md-image {\n          max-width: 100%;\n          height: auto;\n          border-radius: 12px;\n          margin: 16px 0;\n          border: 1px solid #e4e7ec;\n        }\n        #blog-root .blog-md-hr {\n          border: 0;\n          height: 1px;\n          background: #e4e7ec;\n          margin: 44px 0;\n        }\n        #blog-root .blog-md-table-wrap {\n          overflow: auto;\n          border: 1px solid #e4e7ec;\n          border-radius: 12px;\n          margin: 20px 0;\n        }\n        #blog-root .blog-md-table {\n          border-collapse: collapse;\n          min-width: 100%;\n        }\n        #blog-root .blog-md-th {\n          background: #f9fafb;\n          text-align: left;\n          font-size: 12px;\n          font-weight: 800;\n          text-transform: uppercase;\n          letter-spacing: 0.06em;\n          color: #475467;\n          padding: 10px;\n          border-bottom: 1px solid #e4e7ec;\n        }\n        #blog-root .blog-md-td {\n          padding: 10px;\n          border-bottom: 1px solid #f2f4f7;\n          color: #344054;\n          font-size: 14px;\n        }\n        #blog-root .blog-post-nav {\n          margin-top: 20px;\n          padding-top: 20px;\n          border-top: 1px solid #e4e7ec;\n          display: flex;\n          gap: 10px;\n          justify-content: space-between;\n          flex-wrap: wrap;\n        }\n        #blog-root .blog-post-nav a {\n          text-decoration: none;\n          border: 1px solid #d0d5dd;\n          background: #fff;\n          color: #101828;\n          border-radius: 10px;\n          padding: 10px 14px;\n          font-size: 12px;\n          font-weight: 800;\n          letter-spacing: 0.06em;\n          text-transform: uppercase;\n        }\n        @media (max-width: 700px) {\n          #blog-root .blog-post-wrap {\n            padding-left: 16px;\n            padding-right: 16px;\n          }\n        }\n      "])</script><script>self.__next_f.push([1,"10:[\"$\",\"main\",null,{\"children\":[[\"$\",\"style\",null,{\"children\":\"$18\"}],\"$L19\",\"$L1a\"]}]\n"])</script><script>self.__next_f.push([1,"1b:T3723,"])</script><script>self.__next_f.push([1,"\u003cp class=\"blog-md-p\"\u003eRAG quality is not only about model choice.\u003c/p\u003e\n\u003cp class=\"blog-md-p\"\u003eIn practice, your results depend heavily on \u003cstrong\u003ehow you tune parameters\u003c/strong\u003e across both retrieval and generation.\nThe wrong knobs can cause hallucinations, missed context, slow responses, and higher cost.\nThe right knobs make your assistant grounded, fast, and reliable.\u003c/p\u003e\n\u003cp class=\"blog-md-p\"\u003eThis guide is provider-neutral and focuses on the most practical parameters to tune first.\u003c/p\u003e\n\u003chr class=\"blog-md-hr\" /\u003e\n\u003ch2 id=\"a-retrieval-parameters-what-context-you-fetch\" class=\"blog-md-h2\"\u003eA) Retrieval Parameters (What Context You Fetch)\u003c/h2\u003e\n\u003ch3 id=\"1-topk\" class=\"blog-md-h3\"\u003e1) \u003ccode class=\"blog-md-inline-code\"\u003etopK\u003c/code\u003e\u003c/h3\u003e\n\u003cp class=\"blog-md-p\"\u003eHow many chunks/documents you retrieve before generation.\u003c/p\u003e\n\u003cul class=\"blog-md-ul\"\u003e\n\u003cli class=\"blog-md-li\"\u003eToo low: you may miss relevant evidence.\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eToo high: you flood context with noise and increase latency/cost.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp class=\"blog-md-p\"\u003ePractical default: \u003ccode class=\"blog-md-inline-code\"\u003etopK\u003c/code\u003e between \u003ccode class=\"blog-md-inline-code\"\u003e4\u003c/code\u003e and \u003ccode class=\"blog-md-inline-code\"\u003e8\u003c/code\u003e for most QA cases.\u003c/p\u003e\n\u003ch3 id=\"2-scorethreshold-or-minsimilarity\" class=\"blog-md-h3\"\u003e2) \u003ccode class=\"blog-md-inline-code\"\u003escore_threshold\u003c/code\u003e (or \u003ccode class=\"blog-md-inline-code\"\u003emin_similarity\u003c/code\u003e)\u003c/h3\u003e\n\u003cp class=\"blog-md-p\"\u003eMinimum relevance score required to keep a retrieved chunk.\u003c/p\u003e\n\u003cul class=\"blog-md-ul\"\u003e\n\u003cli class=\"blog-md-li\"\u003eHigher threshold: cleaner but fewer chunks.\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eLower threshold: more coverage but more irrelevant context.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp class=\"blog-md-p\"\u003eUse this to improve precision when retrieval returns weak matches.\u003c/p\u003e\n\u003ch3 id=\"3-reranktopn\" class=\"blog-md-h3\"\u003e3) \u003ccode class=\"blog-md-inline-code\"\u003ererank_top_n\u003c/code\u003e\u003c/h3\u003e\n\u003cp class=\"blog-md-p\"\u003eNumber of retrieved items sent to a reranker model to improve ordering.\u003c/p\u003e\n\u003cul class=\"blog-md-ul\"\u003e\n\u003cli class=\"blog-md-li\"\u003eUseful when semantic search returns mixed quality in top results.\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eOften better than blindly increasing \u003ccode class=\"blog-md-inline-code\"\u003etopK\u003c/code\u003e.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp class=\"blog-md-p\"\u003eExample: retrieve 20, rerank, keep top 5.\u003c/p\u003e\n\u003ch3 id=\"4-chunksize\" class=\"blog-md-h3\"\u003e4) \u003ccode class=\"blog-md-inline-code\"\u003echunk_size\u003c/code\u003e\u003c/h3\u003e\n\u003cp class=\"blog-md-p\"\u003eHow large each chunk is when indexing documents.\u003c/p\u003e\n\u003cul class=\"blog-md-ul\"\u003e\n\u003cli class=\"blog-md-li\"\u003eSmall chunks: precise retrieval but risk losing broader context.\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eLarge chunks: richer context but lower precision and more token usage.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp class=\"blog-md-p\"\u003eTypical starting range: \u003ccode class=\"blog-md-inline-code\"\u003e300-800\u003c/code\u003e tokens.\u003c/p\u003e\n\u003ch3 id=\"5-chunkoverlap\" class=\"blog-md-h3\"\u003e5) \u003ccode class=\"blog-md-inline-code\"\u003echunk_overlap\u003c/code\u003e\u003c/h3\u003e\n\u003cp class=\"blog-md-p\"\u003eHow much neighboring chunk text repeats.\u003c/p\u003e\n\u003cul class=\"blog-md-ul\"\u003e\n\u003cli class=\"blog-md-li\"\u003eHelps preserve meaning across chunk boundaries.\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eToo much overlap increases index size and near-duplicate retrieval.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp class=\"blog-md-p\"\u003eTypical starting range: \u003ccode class=\"blog-md-inline-code\"\u003e50-120\u003c/code\u003e tokens.\u003c/p\u003e\n\u003ch3 id=\"6-context-budget\" class=\"blog-md-h3\"\u003e6) Context Budget\u003c/h3\u003e\n\u003cp class=\"blog-md-p\"\u003eHow many retrieved tokens you actually include in the final prompt.\u003c/p\u003e\n\u003cul class=\"blog-md-ul\"\u003e\n\u003cli class=\"blog-md-li\"\u003eEven good retrieval can fail if you overfill context.\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eReserve space for system instructions and output tokens.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp class=\"blog-md-p\"\u003eTreat context as a budget, not an unlimited buffer.\u003c/p\u003e\n\u003chr class=\"blog-md-hr\" /\u003e\n\u003ch2 id=\"b-generation-parameters-how-the-model-responds\" class=\"blog-md-h2\"\u003eB) Generation Parameters (How The Model Responds)\u003c/h2\u003e\n\u003ch3 id=\"1-temperature\" class=\"blog-md-h3\"\u003e1) \u003ccode class=\"blog-md-inline-code\"\u003etemperature\u003c/code\u003e\u003c/h3\u003e\n\u003cp class=\"blog-md-p\"\u003eControls randomness.\u003c/p\u003e\n\u003cul class=\"blog-md-ul\"\u003e\n\u003cli class=\"blog-md-li\"\u003eLower (\u003ccode class=\"blog-md-inline-code\"\u003e0.0-0.3\u003c/code\u003e): more deterministic, good for factual RAG.\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eHigher (\u003ccode class=\"blog-md-inline-code\"\u003e0.6+\u003c/code\u003e): more creative, but higher hallucination risk.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"2-topp-nucleus-sampling\" class=\"blog-md-h3\"\u003e2) \u003ccode class=\"blog-md-inline-code\"\u003etop_p\u003c/code\u003e (nucleus sampling)\u003c/h3\u003e\n\u003cp class=\"blog-md-p\"\u003eChooses from the smallest set of tokens whose cumulative probability reaches \u003ccode class=\"blog-md-inline-code\"\u003ep\u003c/code\u003e.\u003c/p\u003e\n\u003cul class=\"blog-md-ul\"\u003e\n\u003cli class=\"blog-md-li\"\u003eLower \u003ccode class=\"blog-md-inline-code\"\u003etop_p\u003c/code\u003e: more conservative output.\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eHigher \u003ccode class=\"blog-md-inline-code\"\u003etop_p\u003c/code\u003e: broader token exploration.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp class=\"blog-md-p\"\u003eCommon practical range: \u003ccode class=\"blog-md-inline-code\"\u003e0.8-1.0\u003c/code\u003e.\u003c/p\u003e\n\u003ch3 id=\"3-topk-if-supported\" class=\"blog-md-h3\"\u003e3) \u003ccode class=\"blog-md-inline-code\"\u003etop_k\u003c/code\u003e (if supported)\u003c/h3\u003e\n\u003cp class=\"blog-md-p\"\u003eRestricts next-token sampling to the top \u003ccode class=\"blog-md-inline-code\"\u003ek\u003c/code\u003e candidates.\u003c/p\u003e\n\u003cp class=\"blog-md-p\"\u003eImportant: this is a \u003cstrong\u003egeneration\u003c/strong\u003e parameter, different from retrieval \u003ccode class=\"blog-md-inline-code\"\u003etopK\u003c/code\u003e.\u003c/p\u003e\n\u003ch3 id=\"4-maxoutputtokens-or-maxtokens\" class=\"blog-md-h3\"\u003e4) \u003ccode class=\"blog-md-inline-code\"\u003emax_output_tokens\u003c/code\u003e (or \u003ccode class=\"blog-md-inline-code\"\u003emax_tokens\u003c/code\u003e)\u003c/h3\u003e\n\u003cp class=\"blog-md-p\"\u003eCaps output length.\u003c/p\u003e\n\u003cul class=\"blog-md-ul\"\u003e\n\u003cli class=\"blog-md-li\"\u003eToo low: answers get cut off.\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eToo high: unnecessary cost and slower responses.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp class=\"blog-md-p\"\u003eSet this based on expected answer style (short QA vs long explanation).\u003c/p\u003e\n\u003ch3 id=\"5-stopsequences\" class=\"blog-md-h3\"\u003e5) \u003ccode class=\"blog-md-inline-code\"\u003estop_sequences\u003c/code\u003e\u003c/h3\u003e\n\u003cp class=\"blog-md-p\"\u003eDefines where generation should stop.\u003c/p\u003e\n\u003cp class=\"blog-md-p\"\u003eUseful for:\u003c/p\u003e\n\u003cul class=\"blog-md-ul\"\u003e\n\u003cli class=\"blog-md-li\"\u003eforcing concise answers,\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eseparating answer/citation sections,\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003ereducing verbose drift.\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr class=\"blog-md-hr\" /\u003e\n\u003ch2 id=\"c-starter-presets-provider-neutral\" class=\"blog-md-h2\"\u003eC) Starter Presets (Provider-Neutral)\u003c/h2\u003e\n\u003cp class=\"blog-md-p\"\u003eThese are practical starting points, not strict rules.\u003c/p\u003e\n\u003ch3 id=\"1-factual-rag-qa\" class=\"blog-md-h3\"\u003e1) Factual RAG QA\u003c/h3\u003e\n\n      \u003cdiv class=\"blog-code-wrap\"\u003e\n        \u003cdiv class=\"blog-code-head\"\u003e\n          \u003cspan class=\"blog-code-lang\"\u003eJSON\u003c/span\u003e\n          \u003cbutton data-copy class=\"blog-copy-btn\"\u003eCopy\u003c/button\u003e\n        \u003c/div\u003e\n        \u003cpre class=\"blog-md-pre\"\u003e\u003ccode class=\"language-json\"\u003e{\n  \"retrieval\": {\n    \"topK\": 6,\n    \"score_threshold\": 0.35,\n    \"chunk_size\": 500,\n    \"chunk_overlap\": 80\n  },\n  \"generation\": {\n    \"temperature\": 0.2,\n    \"top_p\": 0.9,\n    \"max_output_tokens\": 500\n  }\n}\n\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \n\u003ch3 id=\"2-summarization-across-multiple-docs\" class=\"blog-md-h3\"\u003e2) Summarization Across Multiple Docs\u003c/h3\u003e\n\n      \u003cdiv class=\"blog-code-wrap\"\u003e\n        \u003cdiv class=\"blog-code-head\"\u003e\n          \u003cspan class=\"blog-code-lang\"\u003eJSON\u003c/span\u003e\n          \u003cbutton data-copy class=\"blog-copy-btn\"\u003eCopy\u003c/button\u003e\n        \u003c/div\u003e\n        \u003cpre class=\"blog-md-pre\"\u003e\u003ccode class=\"language-json\"\u003e{\n  \"retrieval\": {\n    \"topK\": 10,\n    \"score_threshold\": 0.25,\n    \"chunk_size\": 700,\n    \"chunk_overlap\": 100,\n    \"rerank_top_n\": 15\n  },\n  \"generation\": {\n    \"temperature\": 0.3,\n    \"top_p\": 0.95,\n    \"max_output_tokens\": 900\n  }\n}\n\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \n\u003ch3 id=\"3-drafting-with-retrieved-context\" class=\"blog-md-h3\"\u003e3) Drafting With Retrieved Context\u003c/h3\u003e\n\n      \u003cdiv class=\"blog-code-wrap\"\u003e\n        \u003cdiv class=\"blog-code-head\"\u003e\n          \u003cspan class=\"blog-code-lang\"\u003eJSON\u003c/span\u003e\n          \u003cbutton data-copy class=\"blog-copy-btn\"\u003eCopy\u003c/button\u003e\n        \u003c/div\u003e\n        \u003cpre class=\"blog-md-pre\"\u003e\u003ccode class=\"language-json\"\u003e{\n  \"retrieval\": {\n    \"topK\": 8,\n    \"score_threshold\": 0.2,\n    \"chunk_size\": 600,\n    \"chunk_overlap\": 90\n  },\n  \"generation\": {\n    \"temperature\": 0.6,\n    \"top_p\": 0.95,\n    \"max_output_tokens\": 1200\n  }\n}\n\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \n\u003chr class=\"blog-md-hr\" /\u003e\n\u003ch2 id=\"d-debug-checklist-symptom-likely-cause-first-fix\" class=\"blog-md-h2\"\u003eD) Debug Checklist (Symptom -\u003e Likely Cause -\u003e First Fix)\u003c/h2\u003e\n\u003col class=\"blog-md-ol\"\u003e\n\u003cli class=\"blog-md-li\"\u003e\u003cstrong\u003eHallucinations despite RAG\u003c/strong\u003e -\u003e noisy retrieval -\u003e increase \u003ccode class=\"blog-md-inline-code\"\u003escore_threshold\u003c/code\u003e and reduce \u003ccode class=\"blog-md-inline-code\"\u003etopK\u003c/code\u003e.\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003e\u003cstrong\u003eCorrect answer exists but is missed\u003c/strong\u003e -\u003e low recall -\u003e raise \u003ccode class=\"blog-md-inline-code\"\u003etopK\u003c/code\u003e or improve chunking.\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003e\u003cstrong\u003eAnswer is too generic\u003c/strong\u003e -\u003e weak grounding -\u003e tighten prompt to require citations and reduce temperature.\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003e\u003cstrong\u003eResponse is slow\u003c/strong\u003e -\u003e too much context -\u003e lower \u003ccode class=\"blog-md-inline-code\"\u003etopK\u003c/code\u003e, reduce chunk size, apply reranking.\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003e\u003cstrong\u003eAnswer is cut mid-sentence\u003c/strong\u003e -\u003e output cap too low -\u003e increase \u003ccode class=\"blog-md-inline-code\"\u003emax_output_tokens\u003c/code\u003e.\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003e\u003cstrong\u003eRepeated near-duplicate evidence\u003c/strong\u003e -\u003e overlap too high -\u003e reduce \u003ccode class=\"blog-md-inline-code\"\u003echunk_overlap\u003c/code\u003e.\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003e\u003cstrong\u003eInconsistent answers run-to-run\u003c/strong\u003e -\u003e high randomness -\u003e lower \u003ccode class=\"blog-md-inline-code\"\u003etemperature\u003c/code\u003e and keep \u003ccode class=\"blog-md-inline-code\"\u003etop_p\u003c/code\u003e stable.\u003c/li\u003e\n\u003c/ol\u003e\n\u003chr class=\"blog-md-hr\" /\u003e\n\u003ch2 id=\"e-minimal-provider-neutral-config-pattern\" class=\"blog-md-h2\"\u003eE) Minimal Provider-Neutral Config Pattern\u003c/h2\u003e\n\n      \u003cdiv class=\"blog-code-wrap\"\u003e\n        \u003cdiv class=\"blog-code-head\"\u003e\n          \u003cspan class=\"blog-code-lang\"\u003eJSON\u003c/span\u003e\n          \u003cbutton data-copy class=\"blog-copy-btn\"\u003eCopy\u003c/button\u003e\n        \u003c/div\u003e\n        \u003cpre class=\"blog-md-pre\"\u003e\u003ccode class=\"language-json\"\u003e{\n  \"retrieval\": {\n    \"topK\": 6,\n    \"score_threshold\": 0.3,\n    \"chunk_size\": 500,\n    \"chunk_overlap\": 80,\n    \"rerank_top_n\": 12,\n    \"context_budget_tokens\": 3500\n  },\n  \"generation\": {\n    \"temperature\": 0.2,\n    \"top_p\": 0.9,\n    \"top_k\": 40,\n    \"max_output_tokens\": 700,\n    \"stop_sequences\": [\"\\n\\n###\", \"\u0026#x3C;END\u003e\"]\n  }\n}\n\u003c/code\u003e\u003c/pre\u003e\n      \u003c/div\u003e\n    \n\u003cp class=\"blog-md-p\"\u003eRecommended tuning order:\u003c/p\u003e\n\u003col class=\"blog-md-ol\"\u003e\n\u003cli class=\"blog-md-li\"\u003eFix chunking (\u003ccode class=\"blog-md-inline-code\"\u003echunk_size\u003c/code\u003e, \u003ccode class=\"blog-md-inline-code\"\u003echunk_overlap\u003c/code\u003e).\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eTune retrieval (\u003ccode class=\"blog-md-inline-code\"\u003etopK\u003c/code\u003e, threshold, rerank).\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eTune generation (\u003ccode class=\"blog-md-inline-code\"\u003etemperature\u003c/code\u003e, \u003ccode class=\"blog-md-inline-code\"\u003etop_p\u003c/code\u003e, output cap).\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eRe-check with a stable eval set.\u003c/li\u003e\n\u003c/ol\u003e\n\u003chr class=\"blog-md-hr\" /\u003e\n\u003ch2 id=\"10-questions-to-check-your-understanding\" class=\"blog-md-h2\"\u003e10 Questions To Check Your Understanding\u003c/h2\u003e\n\u003col class=\"blog-md-ol\"\u003e\n\u003cli class=\"blog-md-li\"\u003eWhat is the difference between retrieval \u003ccode class=\"blog-md-inline-code\"\u003etopK\u003c/code\u003e and generation \u003ccode class=\"blog-md-inline-code\"\u003etop_k\u003c/code\u003e?\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eWhen should you increase \u003ccode class=\"blog-md-inline-code\"\u003escore_threshold\u003c/code\u003e instead of reducing \u003ccode class=\"blog-md-inline-code\"\u003etopK\u003c/code\u003e?\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eHow can very large \u003ccode class=\"blog-md-inline-code\"\u003echunk_size\u003c/code\u003e hurt answer quality?\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eWhy is increasing \u003ccode class=\"blog-md-inline-code\"\u003echunk_overlap\u003c/code\u003e not always better?\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eWhat happens if \u003ccode class=\"blog-md-inline-code\"\u003etemperature\u003c/code\u003e is high in a factual RAG assistant?\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eWhy should you usually tune \u003ccode class=\"blog-md-inline-code\"\u003etemperature\u003c/code\u003e and \u003ccode class=\"blog-md-inline-code\"\u003etop_p\u003c/code\u003e one at a time?\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eHow does \u003ccode class=\"blog-md-inline-code\"\u003emax_output_tokens\u003c/code\u003e affect cost and truncation risk?\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eWhen is reranking more useful than simply increasing retrieval \u003ccode class=\"blog-md-inline-code\"\u003etopK\u003c/code\u003e?\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eWhat symptoms indicate your context budget is too small?\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eIn what order should you tune parameters when starting from defaults?\u003c/li\u003e\n\u003c/ol\u003e\n\u003chr class=\"blog-md-hr\" /\u003e\n\u003ch2 id=\"further-reading-documentation\" class=\"blog-md-h2\"\u003eFurther Reading / Documentation\u003c/h2\u003e\n\u003cul class=\"blog-md-ul\"\u003e\n\u003cli class=\"blog-md-li\"\u003eOpenAI Text Generation docs: \u003ca href=\"https://platform.openai.com/docs/guides/text-generation\" class=\"blog-md-link\"\u003ehttps://platform.openai.com/docs/guides/text-generation\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eOpenAI Responses API docs: \u003ca href=\"https://platform.openai.com/docs/api-reference/responses\" class=\"blog-md-link\"\u003ehttps://platform.openai.com/docs/api-reference/responses\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eAnthropic Messages API docs: \u003ca href=\"https://docs.anthropic.com/en/api/messages\" class=\"blog-md-link\"\u003ehttps://docs.anthropic.com/en/api/messages\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eGoogle Gemini API docs: \u003ca href=\"https://ai.google.dev/gemini-api/docs\" class=\"blog-md-link\"\u003ehttps://ai.google.dev/gemini-api/docs\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eAzure AI Search RAG overview: \u003ca href=\"https://learn.microsoft.com/azure/search/retrieval-augmented-generation-overview\" class=\"blog-md-link\"\u003ehttps://learn.microsoft.com/azure/search/retrieval-augmented-generation-overview\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eLangChain Retrieval conceptual guide: \u003ca href=\"https://python.langchain.com/docs/concepts/retrieval/\" class=\"blog-md-link\"\u003ehttps://python.langchain.com/docs/concepts/retrieval/\u003c/a\u003e\u003c/li\u003e\n\u003cli class=\"blog-md-li\"\u003eLlamaIndex RAG guide: \u003ca href=\"https://docs.llamaindex.ai/en/stable/understanding/rag/\" class=\"blog-md-link\"\u003ehttps://docs.llamaindex.ai/en/stable/understanding/rag/\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n"])</script><script>self.__next_f.push([1,"19:[\"$\",\"section\",null,{\"className\":\"blog-post-wrap\",\"children\":[[\"$\",\"$Lb\",null,{\"href\":\"/blog\",\"className\":\"blog-post-kicker\",\"children\":\"Back to blog\"}],[\"$\",\"h1\",null,{\"children\":\"Common LLM Parameters To Know For RAG\"}],[\"$\",\"div\",null,{\"className\":\"blog-post-meta\",\"children\":[[\"$\",\"span\",null,{\"children\":\"March 18, 2026\"}],[\"$\",\"span\",null,{\"children\":\"•\"}],[\"$\",\"span\",null,{\"children\":\"8 min\"}],[\"$\",\"span\",null,{\"children\":\"•\"}],[\"$\",\"span\",null,{\"children\":\"Subrata Kumar Das\"}]]}],[\"$\",\"p\",null,{\"className\":\"blog-post-desc\",\"children\":\"A practical, provider-neutral guide to the key retrieval and generation parameters that control RAG quality, latency, and cost.\"}],[\"$\",\"div\",null,{\"className\":\"blog-tag-row\",\"children\":[[\"$\",\"span\",\"llm\",{\"children\":\"llm\"}],[\"$\",\"span\",\"rag\",{\"children\":\"rag\"}],[\"$\",\"span\",\"ai\",{\"children\":\"ai\"}],[\"$\",\"span\",\"retrieval\",{\"children\":\"retrieval\"}],[\"$\",\"span\",\"prompt-engineering\",{\"children\":\"prompt-engineering\"}],[\"$\",\"span\",\"software-development\",{\"children\":\"software-development\"}]]}],[\"$\",\"article\",null,{\"className\":\"blog-article\",\"children\":[[\"$\",\"div\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"$1b\"}}],\"$L1c\"]}],\"$L1d\"]}]\n1a:[\"$\",\"script\",null,{\"type\":\"application/ld+json\",\"dangerouslySetInnerHTML\":{\"__html\":\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"BlogPosting\\\",\\\"mainEntityOfPage\\\":\\\"https://subraatakumar.com/blog/common-llm-parameters-for-rag\\\",\\\"headline\\\":\\\"Common LLM Parameters To Know For RAG\\\",\\\"description\\\":\\\"A practical, provider-neutral guide to the key retrieval and generation parameters that control RAG quality, latency, and cost.\\\",\\\"datePublished\\\":\\\"2026-03-18\\\",\\\"dateModified\\\":\\\"2026-03-18\\\",\\\"image\\\":\\\"https://subraatakumar.com/images/interview.png\\\",\\\"keywords\\\":[\\\"llm\\\",\\\"rag\\\",\\\"ai\\\",\\\"retrieval\\\",\\\"prompt-engineering\\\",\\\"software-development\\\"],\\\"author\\\":{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Subrata Kumar Das\\\",\\\"url\\\":\\\"https://subraatakumar.com/\\\"},\\\"publisher\\\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"Subrata Kumar Das\\\",\\\"url\\\":\\\"https://subraatakumar.com/\\\"}}\"}}]\n"])</script><script>self.__next_f.push([1,"1e:I[21675,[\"/_next/static/chunks/7c92e96509cd355e.js\",\"/_next/static/chunks/ed0ac4fd205f8cfa.js\"],\"default\"]\n1c:[\"$\",\"$L1e\",null,{}]\n1d:[\"$\",\"div\",null,{\"className\":\"blog-post-nav\",\"children\":[[\"$\",\"span\",null,{}],[\"$\",\"span\",null,{}]]}]\n"])</script><script>self.__next_f.push([1,"15:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n"])</script><script>self.__next_f.push([1,"1f:I[27201,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"IconMark\"]\n13:null\n"])</script><script>self.__next_f.push([1,"17:[[\"$\",\"title\",\"0\",{\"children\":\"Common LLM Parameters To Know For RAG | Subrata Kumar Das\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"A practical, provider-neutral guide to the key retrieval and generation parameters that control RAG quality, latency, and cost.\"}],[\"$\",\"meta\",\"2\",{\"name\":\"keywords\",\"content\":\"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer\"}],[\"$\",\"link\",\"3\",{\"rel\":\"canonical\",\"href\":\"https://subraatakumar.com/blog/common-llm-parameters-for-rag/\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:title\",\"content\":\"Common LLM Parameters To Know For RAG | Blog\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:description\",\"content\":\"A practical, provider-neutral guide to the key retrieval and generation parameters that control RAG quality, latency, and cost. • 8 min\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:url\",\"content\":\"https://subraatakumar.com/blog/common-llm-parameters-for-rag/\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:image\",\"content\":\"https://subraatakumar.com/images/interview.png\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"9\",{\"property\":\"article:published_time\",\"content\":\"2026-03-18\"}],[\"$\",\"meta\",\"10\",{\"property\":\"article:modified_time\",\"content\":\"2026-03-18\"}],[\"$\",\"meta\",\"11\",{\"property\":\"article:tag\",\"content\":\"llm\"}],[\"$\",\"meta\",\"12\",{\"property\":\"article:tag\",\"content\":\"rag\"}],[\"$\",\"meta\",\"13\",{\"property\":\"article:tag\",\"content\":\"ai\"}],[\"$\",\"meta\",\"14\",{\"property\":\"article:tag\",\"content\":\"retrieval\"}],[\"$\",\"meta\",\"15\",{\"property\":\"article:tag\",\"content\":\"prompt-engineering\"}],[\"$\",\"meta\",\"16\",{\"property\":\"article:tag\",\"content\":\"software-development\"}],[\"$\",\"meta\",\"17\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"18\",{\"name\":\"twitter:title\",\"content\":\"Common LLM Parameters To Know For RAG | Blog\"}],[\"$\",\"meta\",\"19\",{\"name\":\"twitter:description\",\"content\":\"A practical, provider-neutral guide to the key retrieval and generation parameters that control RAG quality, latency, and cost. • 8 min\"}],[\"$\",\"meta\",\"20\",{\"name\":\"twitter:image\",\"content\":\"https://subraatakumar.com/images/interview.png\"}],[\"$\",\"link\",\"21\",{\"rel\":\"icon\",\"href\":\"/favicon.ico?favicon.750fd6b3.ico\",\"sizes\":\"48x48\",\"type\":\"image/x-icon\"}],[\"$\",\"$L1f\",\"22\",{}]]\n"])</script></body></html>
