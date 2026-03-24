@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useState, useEffect } from "react";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -12,7 +11,8 @@ type Section = { id: string; icon: string; label: string };
 const SECTIONS: Section[] = [
   { id: "offline",     icon: "📱", label: "Offline Architecture"  },
   { id: "collection",  icon: "🗂️", label: "Data We Collect"       },
-  { id: "purchases",   icon: "💳", label: "Subscriptions"         },
+  { id: "advertising", icon: "📢", label: "Advertising (AdMob)"    },
+  { id: "purchases",   icon: "💳", label: "Pro Purchases"          },
   { id: "backups",     icon: "☁️", label: "Cloud Backups"         },
   { id: "platforms",   icon: "🔗", label: "Platform Links"        },
   { id: "usage",       icon: "ℹ️", label: "How Data Is Used"      },
@@ -359,32 +359,46 @@ export default function SheHealthPrivacyPage() {
                 <><strong>Contact Vault:</strong> Names, professions, notes, and messaging links you choose to store in the private contact vault.</>,
                 <><strong>Anonymous Diagnostics:</strong> We may process non-identifiable crash reports and app version data to improve reliability. These are never linked to your identity.</>,
               ]} />
-              <p>We do not collect location data, device identifiers, or any other personal information beyond what you explicitly enter into the app.</p>
+              <p>Your health content stays on-device. Advertising and purchase providers may process limited technical identifiers as described below.</p>
             </div>
 
             <Divider />
 
-            {/* 3 — Subscriptions & IAP */}
-            <div className="shp-policy-section" id="purchases">
-              <SectionHead icon="💳" title="Subscriptions & In-App Purchases" />
-              <p>She Health offers two types of premium purchases, both processed entirely through Apple or Google. We never receive or store your billing information.</p>
-              <Callout title="Drive Backup — Yearly Subscription">
-                An auto-renewing annual subscription that unlocks cloud backup. On Android, data backs up to your private Google Drive &ldquo;App Data&rdquo; folder. On iOS, data backs up to your private iCloud Drive container. We have no access to these files.
-              </Callout>
-              <Callout title="Color Schemes — One-Time In-App Purchases ($4.99 each)" gold>
-                Individual color schemes are sold as non-consumable one-time purchases at <strong>$4.99</strong> each. <strong>Terracotta</strong> is the default scheme and is completely free. <strong>Teal Gold</strong> can be previewed in-app but has no trial period — purchase required to activate. <strong>Plum Cream, Champagne Midnight, and Navy Silver</strong> each include a <strong>free 30-day trial</strong> before any payment is required. Once purchased, a scheme is yours permanently with no further charges.
-              </Callout>
+            {/* 3 — Advertising */}
+            <div className="shp-policy-section" id="advertising">
+              <SectionHead icon="📢" title="Advertising (Google AdMob)" />
+              <p>She Health may show ads in the free experience using Google AdMob. We do not provide your private health logs to ad networks.</p>
               <InfoGrid>
-                <InfoBox title="Secure Payments">All transactions are processed by Apple App Store (iOS) or Google Play (Android). The developer never sees or stores your credit card or billing details.</InfoBox>
-                <InfoBox title="Purchase Verification">The app uses anonymous, cryptographically signed store receipts to unlock premium features locally on your device.</InfoBox>
-                <InfoBox title="Subscription Renewal">The Drive Backup subscription auto-renews annually unless cancelled at least 24 hours before the end of the current period.</InfoBox>
-                <InfoBox title="Refunds">All refund requests for subscriptions and one-time purchases are handled by Apple or Google through their standard refund processes.</InfoBox>
+                <InfoBox title="Ad Provider">Ads are served by Google AdMob. AdMob may process device identifiers, approximate location, IP address, and ad interaction events according to Google policies.</InfoBox>
+                <InfoBox title="Data Separation">Your period logs, incontinence records, hydration entries, secure gallery items, and contacts are not shared with AdMob for ad targeting.</InfoBox>
+                <InfoBox title="Controls">You can remove ads by upgrading to Pro through in-app purchases, subject to store and app behavior.</InfoBox>
+                <InfoBox title="Provider Policy">Please review Google policies for details on how AdMob handles ad-related data.</InfoBox>
               </InfoGrid>
             </div>
 
             <Divider />
 
-            {/* 4 — Cloud Backups */}
+            {/* 4 — Pro Purchases */}
+            <div className="shp-policy-section" id="purchases">
+              <SectionHead icon="💳" title="Pro Subscription & One-Time Purchase" />
+              <p>She Health provides one recurring Pro subscription and one one-time Pro purchase option. Both are processed entirely through Apple or Google. We never receive or store your billing information.</p>
+              <Callout title="Pro Subscription">
+                The auto-renewing Pro subscription unlocks all premium themes for appearance personalization, advanced period log trends, advanced incontinence log trends, and removes ads for all features. It also enables backup capabilities: on Android, data backs up to your private Google Drive &ldquo;App Data&rdquo; folder; on iOS, data backs up to your private iCloud Drive container. We have no access to these files.
+              </Callout>
+              <Callout title="One-Time Purchase (Lifetime Pro)" gold>
+                A non-consumable one-time purchase is also available to unlock the same Pro capabilities without recurring renewal: all premium themes, advanced period log trends, advanced incontinence log trends, and no ads for any feature.
+              </Callout>
+              <InfoGrid>
+                <InfoBox title="Secure Payments">All transactions are processed by Apple App Store (iOS) or Google Play (Android). The developer never sees or stores your credit card or billing details.</InfoBox>
+                <InfoBox title="Purchase Verification">The app uses anonymous, cryptographically signed store receipts to unlock Pro features locally on your device.</InfoBox>
+                <InfoBox title="Subscription Renewal">Pro subscriptions auto-renew unless cancelled at least 24 hours before the current period ends.</InfoBox>
+                <InfoBox title="Refunds">All refund requests for Pro subscriptions and the one-time purchase are handled by Apple or Google through their standard refund processes.</InfoBox>
+              </InfoGrid>
+            </div>
+
+            <Divider />
+
+            {/* 5 — Cloud Backups */}
             <div className="shp-policy-section" id="backups">
               <SectionHead icon="☁️" title="User-Managed Cloud Backups" />
               <p>To protect against data loss, She Health offers an <strong>optional</strong> backup feature managed entirely by you. We do not access, view, or store your backup files.</p>
@@ -397,7 +411,7 @@ export default function SheHealthPrivacyPage() {
 
             <Divider />
 
-            {/* 5 — Platforms */}
+            {/* 6 — Platforms */}
             <div className="shp-policy-section" id="platforms">
               <SectionHead icon="🔗" title="Platform & Privacy Links" />
               <p>She Health relies on the following platform services. For details on how they handle data, please review their privacy policies:</p>
@@ -408,28 +422,32 @@ export default function SheHealthPrivacyPage() {
                 <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer" className="shp-platform-link">
                   Google Privacy Policy <span>↗</span>
                 </a>
+                <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noreferrer" className="shp-platform-link">
+                  Google Ads & AdMob Policy <span>↗</span>
+                </a>
               </div>
             </div>
 
             <Divider />
 
-            {/* 6 — How Data Is Used */}
+            {/* 7 — How Data Is Used */}
             <div className="shp-policy-section" id="usage">
               <SectionHead icon="ℹ️" title="How Data Is Used" />
-              <p>All data processing occurs locally on your device. Data is used exclusively for:</p>
+              <p>Health-data processing occurs locally on your device. Data is used for:</p>
               <BulletList items={[
                 "Calculating cycle predictions and hydration goal completion.",
                 "Scheduling local push notification reminders.",
                 "Generating health trend charts within the app.",
                 "Restoring premium status via store receipts.",
                 "Executing user-initiated cloud backups.",
+                "Serving ads in the free tier through Google AdMob.",
               ]} />
-              <p>We do not use your data for advertising, analytics, profiling, or any purpose other than providing app functionality to you.</p>
+              <p>We do not use your private health logs for advertising or profiling. Ad delivery and ad measurement are handled by AdMob under Google policies.</p>
             </div>
 
             <Divider />
 
-            {/* 7 — App Permissions */}
+            {/* 8 — App Permissions */}
             <div className="shp-policy-section" id="permissions">
               <SectionHead icon="🔔" title="App Permissions" />
               <p>She Health may request the following device permissions:</p>
@@ -443,7 +461,7 @@ export default function SheHealthPrivacyPage() {
 
             <Divider />
 
-            {/* 8 — Security & Retention */}
+            {/* 9 — Security & Retention */}
             <div className="shp-policy-section" id="security">
               <SectionHead icon="🔒" title="Security & Retention" />
               <InfoGrid>
@@ -455,7 +473,7 @@ export default function SheHealthPrivacyPage() {
 
             <Divider />
 
-            {/* 9 — User Rights */}
+            {/* 10 — User Rights */}
             <div className="shp-policy-section" id="rights">
               <SectionHead icon="✅" title="User Rights" />
               <p>As an offline-first app, you retain complete ownership and control of your data at all times.</p>
@@ -470,7 +488,7 @@ export default function SheHealthPrivacyPage() {
 
             <Divider />
 
-            {/* 10 — Contact */}
+            {/* 11 — Contact */}
             <div className="shp-policy-section" id="contact">
               <SectionHead icon="✉️" title="Contact Us" />
               <div className="shp-contact-card">

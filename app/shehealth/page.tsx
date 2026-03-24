@@ -55,54 +55,6 @@ const PRIVACY_CARDS = [
   { icon: "☁️", title: "Optional Private Backups", desc: "Backups go only to your personal iCloud or Google Drive." },
 ];
 
-const SCHEMES = [
-  {
-    name: "Terracotta",
-    bg: "linear-gradient(135deg,#f5e8e0,#e8c4b0)",
-    dots: ["#c47a5a", "#7b2d42", "#fdf6f0"],
-    price: "Free",
-    tag: "Default",
-    tagStyle: { color: "var(--sh-terra-d)", background: "rgba(196,122,90,0.12)" },
-    priceStyle: { color: "var(--sh-terra-d)" },
-  },
-  {
-    name: "Teal Gold",
-    bg: "linear-gradient(135deg,#e0f4f2,#c8ece8)",
-    dots: ["#2a9d8f", "#c9963a", "#f0faf9"],
-    price: "$4.99",
-    tag: "Preview only",
-    tagStyle: {},
-    priceStyle: {},
-  },
-  {
-    name: "Plum Cream",
-    bg: "linear-gradient(135deg,#f5f0f8,#e8daf2)",
-    dots: ["#6d3a7e", "#3d1a4a", "#fdf8ff"],
-    price: "$4.99",
-    tag: "30-day trial",
-    tagStyle: {},
-    priceStyle: {},
-  },
-  {
-    name: "Champagne Midnight",
-    bg: "linear-gradient(135deg,#1c1a14,#2e2a1e)",
-    dots: ["#d4b896", "#f0e0c8", "#2a2418"],
-    price: "$4.99",
-    tag: "30-day trial",
-    tagStyle: {},
-    priceStyle: {},
-  },
-  {
-    name: "Navy Silver",
-    bg: "linear-gradient(135deg,#0d1b2e,#1a2f4a)",
-    dots: ["#1a3a5c", "#c0cdd8", "#e8eef4"],
-    price: "$4.99",
-    tag: "30-day trial",
-    tagStyle: {},
-    priceStyle: {},
-  },
-];
-
 const WHO = [
   { icon: "🌸", title: "Cycle Trackers", desc: "Women who want simple, private menstrual cycle logging without giving data to third parties." },
   { icon: "💧", title: "Incontinence Management", desc: "Users maintaining a bladder diary to observe patterns and track Kegel exercise progress." },
@@ -358,50 +310,30 @@ export default function SheHealthPage() {
         .sh-price-card.featured .sh-btn-price { background: #fff; color: var(--sh-maroon); }
         .sh-price-card.featured .sh-btn-price:hover { background: var(--sh-blush); }
 
-        /* scheme banner */
-        .sh-scheme-banner {
+        .sh-one-time-banner {
           border-radius: 20px; border: 1.5px solid rgba(201,150,58,0.28);
           background: linear-gradient(135deg, rgba(201,150,58,0.06), rgba(196,122,90,0.06));
           padding: 30px 34px;
         }
-        .sh-scheme-banner-top {
-          display: flex; align-items: flex-start; justify-content: space-between;
-          gap: 20px; flex-wrap: wrap; margin-bottom: 24px;
-        }
-        .sh-scheme-banner h3 {
+        .sh-one-time-banner h3 {
           font-family: var(--sh-font-display, serif);
-          font-size: 26px; font-weight: 700; color: var(--sh-maroon-d); margin-bottom: 6px;
+          font-size: 26px; font-weight: 700; color: var(--sh-maroon-d); margin-bottom: 8px;
         }
-        .sh-scheme-banner p { font-size: 14px; color: var(--sh-muted); line-height: 1.6; max-width: 480px; }
-        .sh-scheme-iap-badge {
-          display: inline-flex; align-items: center; gap: 6px;
-          background: rgba(201,150,58,0.15); border: 1px solid rgba(201,150,58,0.3);
-          border-radius: 100px; padding: 5px 12px;
-          font-size: 12px; font-weight: 700; color: #9a6e10; white-space: nowrap;
+        .sh-one-time-banner p { font-size: 14px; color: var(--sh-muted); line-height: 1.6; max-width: 760px; }
+        .sh-one-time-features {
+          list-style: none;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 10px 18px;
+          margin-top: 16px;
         }
-        .sh-scheme-trial-pill {
-          display: inline-flex; align-items: center; gap: 6px;
-          background: rgba(123,45,66,0.08); border: 1px solid rgba(123,45,66,0.15);
-          border-radius: 100px; padding: 5px 12px; margin-top: 10px;
-          font-size: 12px; font-weight: 700; color: var(--sh-maroon);
-        }
-        .sh-schemes-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 13px; }
-        .sh-scheme-card {
-          border-radius: 16px; overflow: hidden;
-          border: 1.5px solid rgba(196,122,90,0.18); background: #fff;
-          transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .sh-scheme-card:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(90,31,47,0.12); }
-        .sh-swatch { height: 68px; display: flex; align-items: center; justify-content: center; gap: 5px; }
-        .sh-swatch-dot { width: 21px; height: 21px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.55); }
-        .sh-scheme-info { padding: 11px 13px; }
-        .sh-scheme-name { font-size: 12px; font-weight: 700; color: var(--sh-maroon); margin-bottom: 5px; }
-        .sh-scheme-price-row { display: flex; align-items: center; justify-content: space-between; gap: 4px; }
-        .sh-scheme-price { font-size: 13px; font-weight: 700; color: var(--sh-terra-d); }
-        .sh-scheme-tag {
-          font-size: 9px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
-          color: var(--sh-gold); background: rgba(201,150,58,0.12);
-          padding: 2px 6px; border-radius: 5px; white-space: nowrap;
+        .sh-one-time-features li {
+          display: flex;
+          align-items: flex-start;
+          gap: 8px;
+          font-size: 14px;
+          color: var(--sh-charcoal);
+          line-height: 1.5;
         }
         .sh-pricing-note { font-size: 12px; color: var(--sh-muted); margin-top: 18px; line-height: 1.6; max-width: 660px; }
 
@@ -448,12 +380,11 @@ export default function SheHealthPage() {
           .sh-privacy-grid   { grid-template-columns: 1fr; }
           .sh-pricing-top    { grid-template-columns: 1fr; }
           .sh-who-grid       { grid-template-columns: 1fr 1fr; }
-          .sh-schemes-grid   { grid-template-columns: repeat(3, 1fr); }
+          .sh-one-time-features { grid-template-columns: 1fr; }
         }
         @media (max-width: 600px) {
           .sh-features-grid  { grid-template-columns: 1fr; }
           .sh-who-grid       { grid-template-columns: 1fr; }
-          .sh-schemes-grid   { grid-template-columns: repeat(2, 1fr); }
           .sh-section        { padding: 60px 16px; }
         }
       `}</style>
@@ -471,7 +402,7 @@ export default function SheHealthPage() {
               </h1>
               <p className="sh-hero-sub">
                 She Health is a private wellness tracking app for women. Period tracking, incontinence logs,
-                hydration, secure gallery — all in one beautifully simple app. No login, no cloud, no compromise.
+                hydration, secure gallery — all in one beautifully simple app. No login, no centralized health-data cloud, no compromise.
               </p>
               <div className="sh-hero-actions">
                 <Link href="#download" className="sh-btn-primary">⬇ Download Free</Link>
@@ -582,14 +513,14 @@ export default function SheHealthPage() {
           <div className="sh-section-inner">
             <span className="sh-label">Premium</span>
             <h2 className="sh-h2 sh-font-display">Two Ways to <em>Go Premium</em></h2>
-            <p className="sh-sub">All core tracking features are completely free. Premium adds cloud backup via subscription, and beautiful color schemes as one-time purchases.</p>
+            <p className="sh-sub">All core tracking features are free. Free usage may include Google AdMob ads. Premium is available as one Pro subscription or one one-time Pro purchase.</p>
 
             {/* Free + Backup */}
             <div className="sh-pricing-top">
               <div className="sh-price-card">
                 <div className="sh-price-label">Free Forever</div>
                 <div className="sh-price-amount">$0</div>
-                <div className="sh-price-period">All core features included</div>
+                <div className="sh-price-period">All core features included · may show Google AdMob ads</div>
                 <ul className="sh-price-features">
                   {["Period & cycle tracking", "Incontinence & Kegel log", "Water intake tracker", "Secure gallery & contacts", "PIN & biometric lock", "Light, Dark & System theme"].map((f) => (
                     <li key={f}><span className="sh-price-check">✓</span> {f}</li>
@@ -600,11 +531,15 @@ export default function SheHealthPage() {
                 </Link>
               </div>
               <div className="sh-price-card featured">
-                <div className="sh-price-label">Drive Backup — Yearly Subscription</div>
+                <div className="sh-price-label">Pro Subscription</div>
                 <div className="sh-price-amount">$4.99</div>
                 <div className="sh-price-period">per year · auto-renews · cancel anytime</div>
                 <ul className="sh-price-features">
                   <li><span className="sh-price-check">✓</span> Everything in Free</li>
+                  <li><span className="sh-price-check">✓</span> All premium themes to personalize your app appearance</li>
+                  <li><span className="sh-price-check">✓</span> Advanced period log trends</li>
+                  <li><span className="sh-price-check">✓</span> Advanced incontinence log trends</li>
+                  <li><span className="sh-price-check">✓</span> No ads anymore for any feature</li>
                   <li><span className="sh-price-check">✓</span><span><strong>Google Drive backup</strong> on Android — saved to your private App Data folder</span></li>
                   <li><span className="sh-price-check">✓</span><span><strong>iCloud Drive backup</strong> on iOS — stored in your private iCloud container</span></li>
                   <li><span className="sh-price-check">✓</span> Backup includes health logs & gallery photos</li>
@@ -614,46 +549,27 @@ export default function SheHealthPage() {
               </div>
             </div>
 
-            {/* Color Schemes */}
-            <div className="sh-scheme-banner">
-              <div className="sh-scheme-banner-top">
-                <div>
-                  <h3>🎨 Color Schemes</h3>
-                  <p>
-                    Personalize She Health with a color scheme that matches your style. Each scheme is a{" "}
-                    <strong>one-time purchase at $4.99</strong>. Terracotta is free and included by default.
-                    Teal Gold can be previewed but has no trial. All other schemes include a{" "}
-                    <strong>free 30-day trial</strong> before you commit.
-                  </p>
-                  <div className="sh-scheme-trial-pill">🕐 3 out of 4 paid schemes include a free 30-day trial</div>
-                </div>
-                <div className="sh-scheme-iap-badge">✦ In-App Purchase · One-Time</div>
-              </div>
-              <div className="sh-schemes-grid">
-                {SCHEMES.map((s) => (
-                  <div key={s.name} className="sh-scheme-card">
-                    <div className="sh-swatch" style={{ background: s.bg }}>
-                      {s.dots.map((d, i) => (
-                        <div key={i} className="sh-swatch-dot" style={{ background: d }} />
-                      ))}
-                    </div>
-                    <div className="sh-scheme-info">
-                      <div className="sh-scheme-name">{s.name}</div>
-                      <div className="sh-scheme-price-row">
-                        <span className="sh-scheme-price" style={s.priceStyle}>{s.price}</span>
-                        <span className="sh-scheme-tag" style={s.tagStyle}>{s.tag}</span>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+            <div className="sh-one-time-banner">
+              <h3>⭐ One-Time Purchase (Lifetime Pro)</h3>
+              <p>
+                Prefer a non-recurring option? She Health also provides a one-time purchase to unlock Pro access without auto-renewal.
+                This purchase is processed by Apple App Store or Google Play.
+              </p>
+              <ul className="sh-one-time-features">
+                <li><span className="sh-price-check">✓</span> Single payment, no recurring renewal</li>
+                <li><span className="sh-price-check">✓</span> Unlocks all premium themes to personalize your app appearance</li>
+                <li><span className="sh-price-check">✓</span> Unlocks advanced period log trends</li>
+                <li><span className="sh-price-check">✓</span> Unlocks advanced incontinence log trends</li>
+                <li><span className="sh-price-check">✓</span> No ads anymore for any feature</li>
+                <li><span className="sh-price-check">✓</span> Works with secure store receipt verification</li>
+                <li><span className="sh-price-check">✓</span> Includes backup and restore Pro capabilities</li>
+              </ul>
             </div>
 
             <p className="sh-pricing-note">
               Backup subscription: Payment charged at confirmation. Auto-renews annually unless cancelled 24h before period end.
-              Color schemes: one-time purchase of $4.99 each, no recurring charges. Terracotta is free and default.
-              Teal Gold: preview only, no trial. Plum Cream, Champagne Midnight, Navy Silver: 30-day free trial included before purchase.
-              Prices in USD; local pricing may vary.
+              One-time purchase: non-consumable purchase option for Pro access without recurring renewal.
+              AdMob ads may appear in free usage. Prices and availability can vary by platform and region.
             </p>
           </div>
         </section>
@@ -679,7 +595,7 @@ export default function SheHealthPage() {
         {/* ── CTA ── */}
         <section className="sh-cta-banner" id="download">
           <h2 className="sh-h2 sh-font-display">Start Tracking.<br /><em>Stay Private.</em></h2>
-          <p>Download She Health for free today. No sign-up, no cloud, no compromise on your privacy.</p>
+          <p>Download She Health for free today. No sign-up, no mandatory health-data cloud, no compromise on your privacy.</p>
           <div className="sh-cta-actions">
             <a href="https://apps.apple.com/app/id6743358136" className="sh-btn-white">🍎 App Store</a>
             <a href="https://play.google.com/store/apps/details?id=com.subrata.shehealth" className="sh-btn-white">▶ Google Play</a>

@@ -13,6 +13,7 @@ const SECTIONS: Section[] = [
   { id: "use",         icon: "✅", label: "Use of App"          },
   { id: "prohibited",  icon: "🚫", label: "Prohibited"          },
   { id: "purchases",   icon: "💳", label: "Billing"             },
+  { id: "ads",         icon: "📢", label: "AdMob Ads"           },
   { id: "disclaimer",  icon: "⚠️", label: "Health Disclaimer"   },
   { id: "ip",          icon: "🌐", label: "Intellectual Property"},
   { id: "termination", icon: "🔄", label: "Termination"         },
@@ -419,24 +420,21 @@ export default function SheHealthTermsPage() {
 
             {/* 4 — Billing */}
             <div className="sht-policy-section" id="purchases">
-              <SectionHead icon="💳" title="Subscriptions & Billing" />
+              <SectionHead icon="💳" title="Pro Subscription & Billing" />
               <p>
-                She Health offers two types of premium purchases processed through Apple or Google&apos;s
+                She Health offers one Pro subscription and one one-time Pro purchase, processed through Apple or Google&apos;s
                 native commerce systems.
               </p>
               <InfoGrid>
-                <InfoBox title="☁️ Drive Backup — Yearly Subscription" accentColor="rgba(123,45,66,0.2)">
-                  An annual auto-renewing subscription. Backs up your data to{" "}
+                <InfoBox title="☁️ Pro Subscription" accentColor="rgba(123,45,66,0.2)">
+                  The auto-renewing Pro subscription unlocks all premium themes for appearance personalization, advanced period log trends, advanced incontinence log trends, and removes ads for all features. It also enables cloud backup and backs up your data to{" "}
                   <strong>Google Drive</strong> (Android) or <strong>iCloud Drive</strong> (iOS) — your
-                  private storage only. Renews each year unless cancelled at least 24 hours before the
+                  private storage only. It renews automatically unless cancelled at least 24 hours before the
                   end of the current period.
                 </InfoBox>
-                <InfoBox title="🎨 Color Schemes — One-Time Purchase ($4.99 each)" accentColor="rgba(201,150,58,0.25)">
-                  Non-consumable one-time in-app purchases at <strong>$4.99</strong> each.{" "}
-                  <strong>Terracotta</strong> is free and the default. <strong>Teal Gold</strong> offers
-                  in-app preview only — no trial. <strong>Plum Cream, Champagne Midnight, and Navy Silver</strong>{" "}
-                  each include a <strong>free 30-day trial</strong> with no payment required until you choose to buy.
-                  Once purchased, the scheme is yours permanently.
+                <InfoBox title="⭐ One-Time Purchase (Lifetime Pro)" accentColor="rgba(201,150,58,0.25)">
+                  A non-consumable one-time purchase is available to unlock Pro access without recurring renewal, including all premium themes, advanced period log trends, advanced incontinence log trends, and no ads for any feature.
+                  Once purchased, it remains available on your eligible account per store rules.
                 </InfoBox>
               </InfoGrid>
               <InfoGrid>
@@ -444,29 +442,43 @@ export default function SheHealthTermsPage() {
                   All charges are processed by Apple App Store or Google Play. The developer does not
                   handle your payment information directly.
                 </InfoBox>
-                <InfoBox title="Trials">
-                  Plum Cream, Champagne Midnight, and Navy Silver each include a free 30-day trial — no
-                  payment required during the trial. Teal Gold has no trial; it requires purchase to
-                  activate. Terracotta is always free.
-                </InfoBox>
                 <InfoBox title="Cancellation">
-                  Cancel the backup subscription at any time via your App Store or Google Play account
+                  Cancel the Pro subscription at any time via your App Store or Google Play account
                   settings. Cancellation stops future renewals but does not delete your data.
                 </InfoBox>
                 <InfoBox title="Refunds">
                   Refund requests must be directed to Apple or Google in accordance with their respective
                   refund policies.
                 </InfoBox>
+                <InfoBox title="Receipt Validation">
+                  Premium access is unlocked using cryptographically signed receipts provided by Apple or Google.
+                </InfoBox>
               </InfoGrid>
               <p>
-                Purchasing a color scheme or subscribing to Drive Backup does not affect the privacy of
+                Purchasing Pro via subscription or one-time purchase does not affect the privacy of
                 your health data — all data remains on-device.
               </p>
             </div>
 
             <Divider />
 
-            {/* 5 — Health Disclaimer */}
+            {/* 5 — AdMob Ads */}
+            <div className="sht-policy-section" id="ads">
+              <SectionHead icon="📢" title="AdMob Ads in Free Experience" />
+              <p>
+                The free version of She Health may display ads using Google AdMob. We do not share your
+                private health logs with ad networks.
+              </p>
+              <BulletList items={[
+                "AdMob may process ad identifiers, device data, approximate location, IP address, and ad interaction events under Google policies.",
+                "Health content you enter in the app is not used by us for ad targeting.",
+                "Upgrading to Pro removes ads for all features.",
+              ]} />
+            </div>
+
+            <Divider />
+
+            {/* 6 — Health Disclaimer */}
             <div className="sht-policy-section" id="disclaimer">
               <SectionHead icon="⚠️" title="Health Disclaimer" />
               <Callout title="⚠️ Not a Medical Device" warn>
@@ -484,7 +496,7 @@ export default function SheHealthTermsPage() {
 
             <Divider />
 
-            {/* 6 — Intellectual Property */}
+            {/* 7 — Intellectual Property */}
             <div className="sht-policy-section" id="ip">
               <SectionHead icon="🌐" title="Intellectual Property" />
               <p>
@@ -506,7 +518,7 @@ export default function SheHealthTermsPage() {
 
             <Divider />
 
-            {/* 7 — Termination */}
+            {/* 8 — Termination */}
             <div className="sht-policy-section" id="termination">
               <SectionHead icon="🔄" title="Termination" />
               <p>
@@ -523,7 +535,7 @@ export default function SheHealthTermsPage() {
 
             <Divider />
 
-            {/* 8 — Liability */}
+            {/* 9 — Liability */}
             <div className="sht-policy-section" id="liability">
               <SectionHead icon="⚖️" title="Limitation of Liability" />
               <p>
@@ -545,7 +557,7 @@ export default function SheHealthTermsPage() {
 
             <Divider />
 
-            {/* 9 — Your Rights */}
+            {/* 10 — Your Rights */}
             <div className="sht-policy-section" id="rights">
               <SectionHead icon="👤" title="Your Rights" />
               <p>
@@ -572,7 +584,7 @@ export default function SheHealthTermsPage() {
 
             <Divider />
 
-            {/* 10 — Contact */}
+            {/* 11 — Contact */}
             <div className="sht-policy-section" id="contact">
               <SectionHead icon="✉️" title="Contact Us" />
               <p>If you have questions about these Terms or the App, please reach out to the developer:</p>
@@ -582,8 +594,8 @@ export default function SheHealthTermsPage() {
                   We&apos;re happy to clarify any aspect of these Terms or assist with any issues you
                   may have with the App.
                 </p>
-                <a href="mailto:support@shehealth.app" className="sht-contact-link">
-                  ✉️ support@shehealth.app
+                <a href="mailto:subraatakumar+shehealth@gmail.com" className="sht-contact-link">
+                  ✉️ subraatakumar+shehealth@gmail.com
                 </a>
               </div>
             </div>
