@@ -1,0 +1,1030 @@
+1:"$Sreact.fragment"
+a:I[68027,[],"default"]
+:HL["/_next/static/chunks/a99ebf15a758c58a.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","style"]
+2:T19f5,
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+
+          body {
+            background: #fafaf7;
+            font-family: 'Caveat', cursive;
+            color: #1a1a2e;
+          }
+
+          /* ── Nav ── */
+          .sk-header {
+            background: #fff;
+            border-bottom: 2.5px solid #1a1a2e;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+          }
+          .sk-header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .sk-logo {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.55rem;
+            color: #1a1a2e;
+            text-decoration: none;
+            letter-spacing: 0.01em;
+          }
+          .sk-nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+          }
+          .sk-nav-links a {
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+            padding-bottom: 2px;
+          }
+          .sk-nav-links a:hover {
+            text-decoration: underline wavy #2563eb 2px;
+            text-underline-offset: 4px;
+          }
+          .sk-nav-mobile {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 14px;
+          }
+          .sk-nav-mobile ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+          }
+          .sk-nav-mobile a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+          }
+
+          /* ── Footer ── */
+          .sk-footer {
+            border-top: 2.5px solid #1a1a2e;
+            background: #fff;
+            padding: 24px;
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+          }
+
+          /* ── Shared section ── */
+          .sk-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+          }
+          .sk-page-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            margin-bottom: 8px;
+            line-height: 1.1;
+          }
+          .sk-section-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.9rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+          .sk-section-heading::after {
+            content: '';
+            flex: 1;
+            border-top: 2px dashed #9ca3af;
+          }
+
+          /* ── Squiggle divider ── */
+          .sk-squiggle {
+            width: 100%;
+            height: 8px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 4 Q5 0 10 4 Q15 8 20 4 Q25 0 30 4 Q35 8 40 4' stroke='%239ca3af' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") repeat-x center;
+            opacity: 0.55;
+            margin: 36px 0;
+          }
+
+          /* ── Sketch button ── */
+          .sk-btn {
+            display: inline-block;
+            padding: 10px 26px;
+            background: #2563eb;
+            color: #fff;
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 3px 3px 0 #1a1a2e;
+            transition: transform 0.1s, box-shadow 0.1s;
+          }
+          .sk-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 #1a1a2e;
+          }
+          .sk-btn-ghost {
+            background: transparent;
+            color: #1a1a2e;
+            box-shadow: 3px 3px 0 #9ca3af;
+          }
+          .sk-btn-ghost:hover {
+            box-shadow: 5px 5px 0 #9ca3af;
+          }
+
+          /* ── Tag chip ── */
+          .sk-tag {
+            display: inline-block;
+            padding: 3px 13px;
+            border: 2px solid #1a1a2e;
+            border-radius: 2px;
+            font-size: 1rem;
+            font-weight: 600;
+            background: #fff;
+            margin: 3px;
+          }
+          .sk-tag.active {
+            background: #2563eb;
+            color: #fff;
+          }
+
+          /* ── Card ── */
+          .sk-card {
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 5px 5px 0 #1a1a2e;
+            padding: 24px;
+            transition: transform 0.15s, box-shadow 0.15s;
+          }
+          .sk-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0 #1a1a2e;
+          }
+
+          /* ── Stat card ── */
+          .sk-stat {
+            flex: 1;
+            min-width: 130px;
+            text-align: center;
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 4px 4px 0 #1a1a2e;
+            padding: 20px 12px;
+          }
+          .sk-stat .num {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            color: #2563eb;
+            line-height: 1;
+          }
+          .sk-stat .lbl {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 4px;
+          }
+
+          /* ── Image placeholder ── */
+          .sk-img {
+            width: 100%;
+            height: 160px;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            background: #f3f4f6;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 16px;
+          }
+          .sk-img::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+              linear-gradient(to bottom right, transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px)),
+              linear-gradient(to bottom left,  transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px));
+          }
+
+          @media (max-width: 640px) {
+            .sk-nav-links { display: none; }
+            .sk-nav-mobile { display: block; }
+            .sk-page-heading { font-size: 2.2rem; }
+          }
+        0:{"P":null,"b":"-VQ__Ju2LTVagIe25cZhK","c":["","blog","the-right-model-for-your-job",""],"q":"","i":false,"f":[[["",{"children":["blog",{"children":[["slug","the-right-model-for-your-job","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/a99ebf15a758c58a.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+b:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
+c:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+d:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+11:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+14:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"ViewportBoundary"]
+16:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"MetadataBoundary"]
+3:["$","header",null,{"className":"sk-header","children":[["$","div",null,{"className":"sk-header-inner","children":[["$","$Lb",null,{"href":"/","className":"sk-logo","children":"SKD_"}],["$","nav",null,{"aria-label":"Primary","children":["$","ul",null,{"className":"sk-nav-links","children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]]}],["$","div",null,{"className":"sk-nav-mobile","children":["$","nav",null,{"aria-label":"Mobile","children":["$","ul",null,{"children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]}]]}]
+4:["$","main",null,{"style":{"width":"100%"},"children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
+5:["$","footer",null,{"className":"sk-footer","children":["© ",2026," Subrata Kumar Das. All rights reserved. ·"," ",["$","$Lb",null,{"href":"/for-ai","children":"For AI/Crawlers"}]]}]
+e:T1027,
+        body:has(#blog-root) .sk-header,
+        body:has(#blog-root) .sk-footer {
+          display: none !important;
+        }
+
+        #blog-root,
+        #blog-root * {
+          box-sizing: border-box;
+        }
+
+        #blog-root {
+          --blog-ink: #101828;
+          --blog-muted: #667085;
+          --blog-line: #e4e7ec;
+          --blog-card: #ffffff;
+          --blog-accent: #0ea5e9;
+          --blog-accent-warm: #fb7185;
+          --blog-bg: radial-gradient(circle at 10% 0%, #dff6ff 0%, transparent 40%),
+            radial-gradient(circle at 100% 10%, #ffe8ec 0%, transparent 35%),
+            #f8fafc;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+          background: var(--blog-bg);
+          color: var(--blog-ink);
+          font-family: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
+        }
+
+        #blog-root .blog-shell-header {
+          position: sticky;
+          top: 0;
+          z-index: 100;
+          backdrop-filter: blur(10px);
+          background: rgba(248, 250, 252, 0.78);
+          border-bottom: 1px solid var(--blog-line);
+        }
+        #blog-root .blog-shell-header-inner {
+          width: 100%;
+          height: 66px;
+          padding: 0 clamp(16px, 4vw, 48px);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        }
+        #blog-root .blog-shell-main {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+        #blog-root .blog-brand {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          text-decoration: none;
+          color: var(--blog-ink);
+        }
+        #blog-root .blog-brand-mark {
+          width: 32px;
+          height: 32px;
+          border-radius: 10px;
+          background: linear-gradient(135deg, var(--blog-accent), var(--blog-accent-warm));
+          color: #fff;
+          display: grid;
+          place-items: center;
+          font-weight: 900;
+          font-size: 12px;
+          letter-spacing: 0.03em;
+          box-shadow: 0 10px 24px rgba(14, 165, 233, 0.28);
+        }
+        #blog-root .blog-brand-text {
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-weight: 700;
+          font-size: 1.1rem;
+          letter-spacing: 0.01em;
+        }
+        #blog-root .blog-shell-nav {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+        }
+        #blog-root .blog-shell-nav a {
+          text-decoration: none;
+          color: var(--blog-ink);
+          font-size: 0.8rem;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          padding: 10px 12px;
+          border-radius: 10px;
+          transition: background 0.2s ease;
+        }
+        #blog-root .blog-shell-nav a:hover {
+          background: #eef2f6;
+        }
+
+        #blog-root .blog-shell-footer {
+          margin-top: auto;
+          border-top: 1px solid var(--blog-line);
+          background: rgba(255, 255, 255, 0.64);
+        }
+        #blog-root .blog-shell-footer-inner {
+          width: 100%;
+          padding: 20px clamp(16px, 4vw, 48px) 24px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+        #blog-root .blog-shell-copy {
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: 0.12em;
+          color: var(--blog-muted);
+          font-weight: 700;
+        }
+        #blog-root .blog-shell-footer a {
+          text-decoration: none;
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: 0.05em;
+          color: #0b6ba8;
+        }
+
+        @media (max-width: 700px) {
+          #blog-root .blog-shell-header-inner,
+          #blog-root .blog-shell-footer-inner {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+          #blog-root .blog-shell-nav a {
+            padding: 8px 10px;
+            font-size: 0.72rem;
+          }
+        }
+      6:["$","$1","c",{"children":[null,["$","div",null,{"style":{"all":"revert"},"children":[["$","style",null,{"children":"$e"}],"$Lf"]}]]}]
+7:["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+9:["$","$1","h",{"children":[null,["$","$L14",null,{"children":"$L15"}],["$","div",null,{"hidden":true,"children":["$","$L16",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L17"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+f:["$","div",null,{"id":"blog-root","children":[["$","header",null,{"className":"blog-shell-header","children":["$","div",null,{"className":"blog-shell-header-inner","children":[["$","$Lb",null,{"href":"/blog","className":"blog-brand","children":[["$","span",null,{"className":"blog-brand-mark","children":"SK"}],["$","span",null,{"className":"blog-brand-text","children":"TechCraft Blog"}]]}],["$","nav",null,{"className":"blog-shell-nav","children":[["$","$Lb",null,{"href":"/products","children":"Products"}],["$","$Lb",null,{"href":"/","children":"Home"}]]}]]}]}],["$","main",null,{"className":"blog-shell-main","children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"blog-shell-footer","children":["$","div",null,{"className":"blog-shell-footer-inner","children":[["$","p",null,{"className":"blog-shell-copy","children":"Subrata Kumar Das • Blog"}],["$","$Lb",null,{"href":"/blog","children":"All Posts"}]]}]}]]}]
+18:T1b2e,
+        #blog-root .blog-post-wrap {
+          max-width: 880px;
+          margin: 0 auto;
+          padding: 30px 24px 0;
+        }
+        #blog-root .blog-post-kicker {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          color: #175cd3;
+          border: 1px solid #cfe1fa;
+          border-radius: 999px;
+          padding: 8px 12px;
+          background: #fff;
+          text-decoration: none;
+        }
+        #blog-root .blog-post-wrap h1 {
+          margin-top: 18px;
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-size: clamp(2rem, 4.6vw, 3.2rem);
+          line-height: 1.08;
+          letter-spacing: -0.02em;
+        }
+        #blog-root .blog-post-meta {
+          margin-top: 16px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 8px;
+          color: #667085;
+          font-size: 12px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.07em;
+        }
+        #blog-root .blog-post-desc {
+          margin-top: 14px;
+          font-size: 1.04rem;
+          line-height: 1.8;
+          color: #475467;
+        }
+        #blog-root .blog-tag-row {
+          margin-top: 12px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+        #blog-root .blog-tag-row span {
+          background: #f2f4f7;
+          color: #344054;
+          font-size: 11px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          padding: 6px 10px;
+          border-radius: 999px;
+        }
+        #blog-root .blog-article {
+          margin-top: 26px;
+          border-top: 1px solid #e4e7ec;
+          padding-top: 24px;
+          padding-bottom: 20px;
+        }
+        #blog-root .blog-md-p {
+          margin: 18px 0;
+          font-size: 1.03rem;
+          line-height: 1.95;
+          color: #1d2939;
+        }
+        #blog-root .blog-md-h1 {
+          margin: 56px 0 16px;
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-size: 2rem;
+          line-height: 1.18;
+        }
+        #blog-root .blog-md-h2 {
+          margin: 46px 0 14px;
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-size: 1.7rem;
+          line-height: 1.24;
+        }
+        #blog-root .blog-md-h3 {
+          margin: 36px 0 10px;
+          font-weight: 800;
+          font-size: 1.28rem;
+          line-height: 1.34;
+        }
+        #blog-root .blog-md-h4,
+        #blog-root .blog-md-h5,
+        #blog-root .blog-md-h6 {
+          margin: 28px 0 8px;
+          font-size: 1.08rem;
+          font-weight: 800;
+        }
+        #blog-root .blog-md-ul {
+          list-style: disc;
+          padding-left: 24px;
+          margin: 18px 0;
+        }
+        #blog-root .blog-md-ol {
+          list-style: decimal;
+          padding-left: 28px;
+          margin: 18px 0;
+        }
+        #blog-root .blog-md-li {
+          margin: 8px 0;
+          line-height: 1.8;
+          color: #344054;
+        }
+        #blog-root .blog-md-quote {
+          margin: 22px 0;
+          border-left: 3px solid #7cd4ff;
+          background: #f5fbff;
+          border-radius: 10px;
+          padding: 14px 16px;
+          color: #344054;
+          font-style: italic;
+        }
+        #blog-root .blog-md-link {
+          color: #0b6ba8;
+          text-decoration: none;
+          font-weight: 700;
+        }
+        #blog-root .blog-md-link:hover {
+          text-decoration: underline;
+        }
+        #blog-root .blog-md-inline-code {
+          background: #f2f4f7;
+          color: #7a271a;
+          border-radius: 6px;
+          padding: 2px 6px;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+          font-size: 0.9em;
+        }
+        #blog-root .blog-code-wrap {
+          margin: 24px 0;
+          border-radius: 14px;
+          overflow: hidden;
+          border: 1px solid #d0d5dd;
+        }
+        #blog-root .blog-code-head {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: #101828;
+          padding: 8px 10px;
+        }
+        #blog-root .blog-code-lang {
+          font-size: 11px;
+          font-weight: 800;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          color: #d1e9ff;
+        }
+        #blog-root .blog-copy-btn {
+          border: 0;
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          border-radius: 8px;
+          padding: 5px 10px;
+          background: #d1e9ff;
+          color: #0c2d6b;
+          cursor: pointer;
+        }
+        #blog-root .blog-md-pre {
+          margin: 0;
+          background: #182230;
+          color: #f8fafc;
+          padding: 14px;
+          overflow: auto;
+        }
+        #blog-root .blog-md-image {
+          max-width: 100%;
+          height: auto;
+          border-radius: 12px;
+          margin: 16px 0;
+          border: 1px solid #e4e7ec;
+        }
+        #blog-root .blog-md-hr {
+          border: 0;
+          height: 1px;
+          background: #e4e7ec;
+          margin: 44px 0;
+        }
+        #blog-root .blog-md-table-wrap {
+          overflow: auto;
+          border: 1px solid #e4e7ec;
+          border-radius: 12px;
+          margin: 20px 0;
+        }
+        #blog-root .blog-md-table {
+          border-collapse: collapse;
+          min-width: 100%;
+        }
+        #blog-root .blog-md-th {
+          background: #f9fafb;
+          text-align: left;
+          font-size: 12px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          color: #475467;
+          padding: 10px;
+          border-bottom: 1px solid #e4e7ec;
+        }
+        #blog-root .blog-md-td {
+          padding: 10px;
+          border-bottom: 1px solid #f2f4f7;
+          color: #344054;
+          font-size: 14px;
+        }
+        #blog-root .blog-post-nav {
+          margin-top: 20px;
+          padding-top: 20px;
+          border-top: 1px solid #e4e7ec;
+          display: flex;
+          gap: 10px;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+        #blog-root .blog-post-nav a {
+          text-decoration: none;
+          border: 1px solid #d0d5dd;
+          background: #fff;
+          color: #101828;
+          border-radius: 10px;
+          padding: 10px 14px;
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+        }
+        @media (max-width: 700px) {
+          #blog-root .blog-post-wrap {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+        }
+      10:["$","main",null,{"children":[["$","style",null,{"children":"$18"}],"$L19","$L1a"]}]
+1b:T538b,<p class="blog-md-p">The Right Tool for the Job: A Guide to AI Models by Data Type</p>
+<p class="blog-md-p">In the world of AI runtimes like Foundry, LM Studio, and OpenAI, we often talk about "models" as a single category. But just as you wouldn't use a calculator to write a novel, different AI models are built to handle specific types of data.</p>
+<p class="blog-md-p">If you are building an application or setting up a local workflow, understanding these categories is the first step to success. Here is a breakdown of AI models categorized by the data they process.</p>
+<hr class="blog-md-hr" />
+<h2 id="a-text-x26-language-models-the-brains" class="blog-md-h2">A) Text &#x26; Language Models (The "Brains")</h2>
+<p class="blog-md-p">These are the most common models you’ll encounter in LM Studio and OpenAI. They process strings of text to understand intent or create content.</p>
+<h3 id="1-chatllms-large-language-models" class="blog-md-h3">1) Chat/LLMs (Large Language Models)</h3>
+<p class="blog-md-p">Designed for conversation and reasoning.</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><strong>Examples</strong>: Llama 3 (Meta), phi-4 (Microsoft), GPT-4o (OpenAI).</li>
+<li class="blog-md-li"><strong>Use Case</strong>: Writing emails, coding, or summarizing a long report.</li>
+</ul>
+<h3 id="2-embedding-models" class="blog-md-h3">2) Embedding Models</h3>
+<p class="blog-md-p">These turn text into math (vectors) so computers can "search" by meaning rather than just keywords.</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><strong>Examples</strong>: nomic-embed-text, text-embedding-3-small.</li>
+<li class="blog-md-li"><strong>Use Case</strong>: Powering a search engine that understands what you mean, even if you don't use the exact words.</li>
+</ul>
+<hr class="blog-md-hr" />
+<h2 id="b-vision-models-the-eyes" class="blog-md-h2">B) Vision Models (The "Eyes")</h2>
+<p class="blog-md-p">Vision models allow AI to interpret the physical world through pixels. These are becoming standard in runtimes like Foundry.</p>
+<h3 id="1-vision-language-models-vlm" class="blog-md-h3">1) Vision-Language Models (VLM)</h3>
+<p class="blog-md-p">These are "multimodal," meaning they can look at an image and then talk about it in a chat interface.</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><strong>Examples</strong>: Qwen2.5-VL, GPT-4o with Vision.</li>
+<li class="blog-md-li"><strong>Use Case</strong>: Uploading a screenshot of a complex chart and asking the AI to "Explain the trend in this data."</li>
+</ul>
+<h3 id="2-image-generation" class="blog-md-h3">2) Image Generation</h3>
+<p class="blog-md-p">These turn text descriptions into brand-new visuals.</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><strong>Examples</strong>: DALL·E 3, Stable Diffusion.</li>
+</ul>
+<hr class="blog-md-hr" />
+<h2 id="c-audio-x26-speech-models-the-ears-x26-voice" class="blog-md-h2">C) Audio &#x26; Speech Models (The "Ears &#x26; Voice")</h2>
+<p class="blog-md-p">These models bridge the gap between sound waves and digital text.</p>
+<h3 id="1-speech-to-text-stt" class="blog-md-h3">1) Speech-to-Text (STT)</h3>
+<p class="blog-md-p">High-speed transcription.</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><strong>Example</strong>: Whisper (OpenAI).</li>
+<li class="blog-md-li"><strong>Use Case</strong>: Automatically creating subtitles for a video or transcribing a meeting in real-time.</li>
+</ul>
+<h3 id="2-text-to-speech-tts" class="blog-md-h3">2) Text-to-Speech (TTS)</h3>
+<p class="blog-md-p">Turning digital text into natural human voices.</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><strong>Use Case</strong>: Narrating an audiobook or providing a voice for a virtual assistant.</li>
+</ul>
+<hr class="blog-md-hr" />
+<h2 id="d-reasoning-x26-structured-data-models-the-logic" class="blog-md-h2">D) Reasoning &#x26; Structured Data Models (The "Logic")</h2>
+<p class="blog-md-p">Sometimes you don't need a chatty AI; you need a logical one that can handle math or massive tables of data.</p>
+<h3 id="1-reasoning-models" class="blog-md-h3">1) Reasoning Models</h3>
+<p class="blog-md-p">These use "Chain of Thought" processing. They pause to "think" through a logical sequence before giving an answer.</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><strong>Examples</strong>: DeepSeek-R1, o1-preview.</li>
+<li class="blog-md-li"><strong>Use Case</strong>: Solving complex math problems or debugging deep architectural flaws in code.</li>
+</ul>
+<h3 id="2-rerank-models" class="blog-md-h3">2) Rerank Models</h3>
+<p class="blog-md-p">These specialize in sorting. They take a list of data and re-order it based on exact relevance.</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><strong>Example</strong>: Cohere-rerank.</li>
+</ul>
+<hr class="blog-md-hr" />
+<h2 id="e-summary-which-one-do-you-need" class="blog-md-h2">E) Summary: Which One Do You Need?</h2>
+<div class="blog-md-table-wrap"><table class="blog-md-table">
+<thead>
+<tr>
+<th class="blog-md-th">If your data is...</th>
+<th class="blog-md-th">Use this Model Type</th>
+<th class="blog-md-th">Popular Choice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="blog-md-td">A conversation</td>
+<td class="blog-md-td">Chat/LLM</td>
+<td class="blog-md-td">Llama 3.1</td>
+</tr>
+<tr>
+<td class="blog-md-td">A library of PDFs</td>
+<td class="blog-md-td">Embedding</td>
+<td class="blog-md-td">nomic-embed</td>
+</tr>
+<tr>
+<td class="blog-md-td">A photo or chart</td>
+<td class="blog-md-td">Vision (VLM)</td>
+<td class="blog-md-td">phi-4-multimodal</td>
+</tr>
+<tr>
+<td class="blog-md-td">An audio recording</td>
+<td class="blog-md-td">STT</td>
+<td class="blog-md-td">Whisper</td>
+</tr>
+<tr>
+<td class="blog-md-td">A complex math problem</td>
+<td class="blog-md-td">Reasoning</td>
+<td class="blog-md-td">DeepSeek-R1</td>
+</tr>
+</tbody>
+</table></div>
+<hr class="blog-md-hr" />
+<h2 id="f-the-future-is-multimodal" class="blog-md-h2">F) The Future is Multimodal</h2>
+<p class="blog-md-p">The most exciting trend in runtimes like Foundry is the move toward Multimodal models. Instead of needing four different models for text, images, and audio, a single model like GPT-4o or Phi-4 can process all of them at once.</p>
+<hr class="blog-md-hr" />
+<h2 id="g-example-designing-a-private-corporate-brain" class="blog-md-h2">G) Example: Designing a Private Corporate Brain</h2>
+<p class="blog-md-p">Let’s design a Private Corporate Brain—a system that allows employees to upload internal documents (PDFs, Excel, Wiki pages) and ask questions about them securely.
+This is a classic RAG (Retrieval-Augmented Generation) system. Here is the high-level design broken down by the flow of data.</p>
+<hr class="blog-md-hr" />
+<h3 id="phase-1-the-ingestion-pipeline-data-to-math" class="blog-md-h3">Phase 1: The Ingestion Pipeline (Data to Math)</h3>
+<p class="blog-md-p">This happens behind the scenes before you ever start chatting.</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li"><strong>The Product Action</strong>: You upload a 100-page HR Policy PDF.</li>
+<li class="blog-md-li"><strong>System Design</strong>:
+<ul class="blog-md-ul">
+<li><strong>Parser</strong>: A script (like PyPDF) reads the text.</li>
+<li class="blog-md-li"><strong>Chunker</strong>: The system breaks the 100 pages into 500 small "snippets" of 200 words each.</li>
+<li class="blog-md-li"><strong>Model Used</strong>: Embedding Model.
+<ul>
+<li><strong>Choice</strong>: nomic-embed-text (Local/Foundry) or text-embedding-3 (OpenAI).</li>
+<li class="blog-md-li"><strong>Role</strong>: It turns each snippet into a vector (a string of numbers).</li>
+</ul>
+</li>
+<li class="blog-md-li"><strong>Storage</strong>: These vectors are saved in a Vector Database (like ChromaDB or Pinecone).</li>
+</ul>
+</li>
+</ol>
+<hr class="blog-md-hr" />
+<h3 id="phase-2-the-retrieval-step-search" class="blog-md-h3">Phase 2: The Retrieval Step (Search)</h3>
+<p class="blog-md-p">This happens the moment you type a question.</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li"><strong>The Product Action</strong>: You type: "What is the maternity leave policy?"</li>
+<li class="blog-md-li"><strong>System Design</strong>:
+<ul class="blog-md-ul">
+<li><strong>Model Used</strong>: Embedding Model (Same one as Phase 1).
+<ul>
+<li><strong>Role</strong>: It turns your question into a vector.</li>
+<li class="blog-md-li"><strong>Vector Search</strong>: The system compares your "question vector" against the "snippet vectors" in the database.</li>
+<li class="blog-md-li"><strong>Result</strong>: It pulls the top 3 most mathematically similar snippets from your HR PDF.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr class="blog-md-hr" />
+<h3 id="phase-3-the-generation-step-the-answer" class="blog-md-h3">Phase 3: The Generation Step (The Answer)</h3>
+<p class="blog-md-p">This is where the AI actually "talks."</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li"><strong>The Product Action</strong>: The UI displays a natural language answer.</li>
+<li class="blog-md-li"><strong>System Design</strong>:
+<ul class="blog-md-ul">
+<li><strong>The Prompt</strong>: The system sends a hidden instruction to the LLM: "Here is some context from our files: [Snippet 1, Snippet 2]. Based ONLY on this, answer the user's question: What is the maternity leave policy?"</li>
+<li class="blog-md-li"><strong>Model Used</strong>: Chat/LLM Model.
+<ul>
+<li><strong>Choice</strong>: phi-4 (Local/Foundry) for privacy, or gpt-4o (OpenAI) for complex logic.</li>
+<li class="blog-md-li"><strong>Role</strong>: It reads the context and writes a polite, accurate response.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr class="blog-md-hr" />
+<h3 id="summary-of-models-used" class="blog-md-h3">Summary of Models Used</h3>
+<div class="blog-md-table-wrap"><table class="blog-md-table">
+<thead>
+<tr>
+<th class="blog-md-th">Component</th>
+<th class="blog-md-th">Model Category</th>
+<th class="blog-md-th">Specific Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="blog-md-td">Indexing/Search</td>
+<td class="blog-md-td">Embedding Model</td>
+<td class="blog-md-td">nomic-embed-text</td>
+</tr>
+<tr>
+<td class="blog-md-td">Refining Search</td>
+<td class="blog-md-td">Rerank Model (Optional)</td>
+<td class="blog-md-td">bge-reranker</td>
+</tr>
+<tr>
+<td class="blog-md-td">Generating Answer</td>
+<td class="blog-md-td">Chat/LLM Model</td>
+<td class="blog-md-td">gpt-4o or Llama 3.1</td>
+</tr>
+<tr>
+<td class="blog-md-td">Analyzing Images</td>
+<td class="blog-md-td">Vision Model</td>
+<td class="blog-md-td">phi-4-multimodal</td>
+</tr>
+</tbody>
+</table></div>
+<p class="blog-md-p">Would you like a diagram of this flow, or should we look at the specific Python libraries (like LangChain) used to build this?</p>
+<p class="blog-md-p">For a hands-on example of building a Retrieval-Augmented Generation (RAG) system, check out our <a href="https://subraatakumar.com/24weeks/week-2/" class="blog-md-link">Local RAG Studio</a> created in Week 2 of the 24 Weeks project.</p>
+<hr class="blog-md-hr" />
+<h2 id="h-example-building-an-automated-data-extraction-pipeline" class="blog-md-h2">H) Example: Building an Automated Data Extraction Pipeline</h2>
+<p class="blog-md-p">This product is an Automated Data Extraction Pipeline (often called an "Intelligent Document Processor" or IDP). It is designed to take "messy" data like an email thread or a photo of a crumpled receipt and turn it into a clean, machine-readable JSON file that your accounting software can understand.</p>
+<hr class="blog-md-hr" />
+<h3 id="phase-1-the-input-x26-recognition-the-eyes" class="blog-md-h3">Phase 1: The Input &#x26; Recognition (The "Eyes")</h3>
+<p class="blog-md-p">Before the data can be turned into JSON, the system must "see" it properly.</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li"><strong>The Product Action</strong>: An employee uploads a photo of a taxi receipt or forwards a vendor email.</li>
+<li class="blog-md-li"><strong>System Design</strong>:
+<ul class="blog-md-ul">
+<li><strong>OCR (Optical Character Recognition)</strong>: If it’s an image, the system extracts the text.</li>
+<li class="blog-md-li"><strong>Vision Model (VLM)</strong>: Modern systems use a vision model to understand the layout (e.g., recognizing that the number at the bottom right is the "Total").
+<ul>
+<li><strong>Model Used</strong>: Vision-Language Model.</li>
+<li class="blog-md-li"><strong>Choice</strong>: gpt-4o (OpenAI) or Qwen2-VL (Local/LM Studio).
+<ul>
+<li><strong>Role</strong>: It looks at the image and converts it into a structured text description.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr class="blog-md-hr" />
+<h3 id="phase-2-schema-based-parsing-the-logic" class="blog-md-h3">Phase 2: Schema-Based Parsing (The "Logic")</h3>
+<p class="blog-md-p">This is where the unstructured text is forced into a specific JSON format (e.g., {"vendor": "Uber", "amount": 25.50}).</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li"><strong>The Product Action</strong>: The system maps the text to your database fields.</li>
+<li class="blog-md-li"><strong>System Design</strong>:
+<ul class="blog-md-ul">
+<li><strong>Function Calling / Structured Output</strong>: You provide the model with a JSON Schema (a blueprint of the fields you need).
+<ul>
+<li><strong>Model Used</strong>: Reasoning or Small Language Model (SLM).</li>
+<li class="blog-md-li"><strong>Choice</strong>: gpt-4o-mini (OpenAI) for high accuracy/low cost, or phi-4 (Foundry) for local processing.
+<ul>
+<li><strong>Role</strong>: It acts as a "translator," ignoring the fluff (like "Regards, John") and extracting only the required keys: Date, Vendor, Total, and Currency.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr class="blog-md-hr" />
+<h3 id="phase-3-validation-x26-error-handling-the-checker" class="blog-md-h3">Phase 3: Validation &#x26; Error Handling (The "Checker")</h3>
+<p class="blog-md-p">AI can sometimes hallucinate, so the system must validate the JSON against your business rules.</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li"><strong>The Product Action</strong>: The system flags a receipt if the "Tax" + "Subtotal" does not equal the "Total."</li>
+<li class="blog-md-li"><strong>System Design</strong>:
+<ul class="blog-md-ul">
+<li><strong>Code Interpreter / Logic Layer</strong>: A simple Python script validates the math.
+<ul>
+<li><strong>Model Used</strong>: Reasoning Model.</li>
+<li class="blog-md-li"><strong>Choice</strong>: o1-mini (OpenAI) or DeepSeek-R1 (Local).
+<ul>
+<li><strong>Role</strong>: If the validation fails, this model "thinks" through the error to see if it misread a number (e.g., mistaking an '8' for a 'B').</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr class="blog-md-hr" />
+<h3 id="summary-of-models-used-for-data-extraction" class="blog-md-h3">Summary of Models Used for Data Extraction</h3>
+<div class="blog-md-table-wrap"><table class="blog-md-table">
+<thead>
+<tr>
+<th class="blog-md-th">Component</th>
+<th class="blog-md-th">Model Category</th>
+<th class="blog-md-th">Specific Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="blog-md-td">Reading the Image</td>
+<td class="blog-md-td">Vision Model</td>
+<td class="blog-md-td">gpt-4o or Qwen2-VL</td>
+</tr>
+<tr>
+<td class="blog-md-td">JSON Extraction</td>
+<td class="blog-md-td">Chat/LLM (Structured)</td>
+<td class="blog-md-td">gpt-4o-mini or phi-4</td>
+</tr>
+<tr>
+<td class="blog-md-td">Math/Logic Check</td>
+<td class="blog-md-td">Reasoning Model</td>
+<td class="blog-md-td">o1-mini or DeepSeek-R1</td>
+</tr>
+</tbody>
+</table></div>
+<p class="blog-md-p">Why use different models?
+You wouldn't use a massive model like GPT-4o just to check if 10 + 5 = 15. You use a Vision model to see, a Small model (like phi-4) to format the JSON cheaply, and a Reasoning model only when the logic gets complicated.</p>
+<p class="blog-md-p">For a hands-on example of building an Automated Data Extraction Pipeline, check out our <a href="https://subraatakumar.com/24weeks/week-3/" class="blog-md-link">Week 3 project</a> from the 24 Weeks series.</p>
+<hr class="blog-md-hr" />
+<h2 id="i-example-voice-to-workflow-pipeline" class="blog-md-h2">I) Example: Voice-to-Workflow Pipeline</h2>
+<p class="blog-md-p">Transform voice input into structured tasks such as tickets or notes.</p>
+<p class="blog-md-p">This product is a Digital Chief of Staff. It’s designed for the "busy hands" professional—like a doctor finishing a surgery or a construction manager on-site—who needs to speak a stream of consciousness and have it turn into organized, actionable data (like a Jira ticket or a CRM entry).</p>
+<hr class="blog-md-hr" />
+<h3 id="phase-1-the-transcription-the-ears" class="blog-md-h3">Phase 1: The Transcription (The "Ears")</h3>
+<p class="blog-md-p">The system first needs to turn raw audio waves into highly accurate text, filtering out background noise and "umms/ahhs."</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li"><strong>The Product Action</strong>: You tap a button and say: "Hey, remind me to follow up with Sarah from Hooli about the API migration, set a high priority, and link it to the Q3 Project."</li>
+<li class="blog-md-li"><strong>System Design</strong>:
+<ul class="blog-md-ul">
+<li><strong>STT (Speech-to-Text)</strong>: The audio file is sent to a transcription engine.
+<ul>
+<li><strong>Diarization</strong>: If multiple people are talking, the system identifies "Who said what."</li>
+<li class="blog-md-li"><strong>Model Used</strong>: Audio/Speech Model.
+<ul>
+<li><strong>Choice</strong>: Whisper (OpenAI) or Deepgram.
+<ul>
+<li><strong>Role</strong>: It creates a perfect text transcript of your voice.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr class="blog-md-hr" />
+<h3 id="phase-2-intent-extraction-the-brain" class="blog-md-h3">Phase 2: Intent Extraction (The "Brain")</h3>
+<p class="blog-md-p">This is the most critical step. The AI must figure out that "Sarah from Hooli" is a Contact, "API migration" is the Subject, and "High" is the Priority.</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li"><strong>The Product Action</strong>: The system maps your "messy" speech into a structured format.</li>
+<li class="blog-md-li"><strong>System Design</strong>:
+<ul class="blog-md-ul">
+<li><strong>NER (Named Entity Recognition)</strong>: The model identifies people, companies, and dates.
+<ul>
+<li><strong>Instruction Following</strong>: The model is told: "Extract the task, the person involved, and the urgency from this text."</li>
+<li class="blog-md-li"><strong>Model Used</strong>: Chat/LLM Model (Optimized for Extraction).
+<ul>
+<li><strong>Choice</strong>: gpt-4o-mini (OpenAI), Claude 3.5 Haiku (Anthropic), or phi-4 (Foundry).
+<ul>
+<li><strong>Role</strong>: It outputs a JSON block like {"task": "Follow up", "contact": "Sarah", "urgency": "High"}.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr class="blog-md-hr" />
+<h3 id="phase-3-the-execution-the-hands" class="blog-md-h3">Phase 3: The Execution (The "Hands")</h3>
+<p class="blog-md-p">The structured data is then "pushed" into the actual software tools you use.</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li"><strong>The Product Action</strong>: A new ticket appears in your project management tool (like Jira, Trello, or Notion) with all fields pre-filled.</li>
+<li class="blog-md-li"><strong>System Design</strong>:
+<ul class="blog-md-ul">
+<li><strong>Function Calling / Tool Use</strong>: The AI model is given access to "Tools" (APIs). It doesn't just write the text; it triggers a command like create_jira_ticket(title, priority).
+<ul>
+<li><strong>Model Used</strong>: Agentic/Action Model.
+<ul>
+<li><strong>Choice</strong>: gpt-4o (OpenAI) or Claude 3.5 Sonnet.
+<ul>
+<li><strong>Role</strong>: It decides which tool to use (e.g., "This sounds like a calendar event, not a ticket") and executes the API call.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr class="blog-md-hr" />
+<h3 id="summary-of-models-used" class="blog-md-h3">Summary of Models Used</h3>
+<div class="blog-md-table-wrap"><table class="blog-md-table">
+<thead>
+<tr>
+<th class="blog-md-th">Component</th>
+<th class="blog-md-th">Model Category</th>
+<th class="blog-md-th">Specific Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="blog-md-td">Audio to Text</td>
+<td class="blog-md-td">Speech-to-Text (STT)</td>
+<td class="blog-md-td">Whisper v3</td>
+</tr>
+<tr>
+<td class="blog-md-td">Understanding Intent</td>
+<td class="blog-md-td">Chat/LLM (Structured)</td>
+<td class="blog-md-td">gpt-4o-mini</td>
+</tr>
+<tr>
+<td class="blog-md-td">Taking Action</td>
+<td class="blog-md-td">Agentic/Tool Use</td>
+<td class="blog-md-td">Claude 3.5 Sonnet</td>
+</tr>
+</tbody>
+</table></div>
+<hr class="blog-md-hr" />
+<h3 id="available-products" class="blog-md-h3">Available Products</h3>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><strong>OpenAI</strong>: The Realtime API allows the creation of "Voice-to-Action" apps with minimal delay.</li>
+<li class="blog-md-li"><strong>Google</strong>: Vertex AI Agent Builder can connect Gemini to enterprise data and voice interfaces.</li>
+<li class="blog-md-li"><strong>Consumer Apps</strong>: Apps like Granola and AudioPen transform voice notes into structured summaries or tasks.</li>
+</ul>
+<p class="blog-md-p">For a hands-on example of building a Voice-to-Workflow Pipeline, check out our <a href="https://subraatakumar.com/24weeks/week-4/" class="blog-md-link">Week 4 project</a> from the 24 Weeks series.</p>
+19:["$","section",null,{"className":"blog-post-wrap","children":[["$","$Lb",null,{"href":"/blog","className":"blog-post-kicker","children":"Back to blog"}],["$","h1",null,{"children":"The Right Tool for the Job: A Guide to AI Models by Data Type"}],["$","div",null,{"className":"blog-post-meta","children":[["$","span",null,{"children":"March 25, 2026"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"7 min"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"Subrata Kumar Das"}]]}],["$","p",null,{"className":"blog-post-desc","children":"Understand the different types of AI models and their ideal use cases, from text to vision to audio."}],["$","div",null,{"className":"blog-tag-row","children":[["$","span","ai",{"children":"ai"}],["$","span","models",{"children":"models"}],["$","span","text",{"children":"text"}],["$","span","vision",{"children":"vision"}],["$","span","audio",{"children":"audio"}],["$","span","reasoning",{"children":"reasoning"}],["$","span","multimodal",{"children":"multimodal"}]]}],["$","article",null,{"className":"blog-article","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$1b"}}],"$L1c"]}],"$L1d"]}]
+1a:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"mainEntityOfPage\":\"https://subraatakumar.com/blog/the-right-model-for-your-job\",\"headline\":\"The Right Tool for the Job: A Guide to AI Models by Data Type\",\"description\":\"Understand the different types of AI models and their ideal use cases, from text to vision to audio.\",\"datePublished\":\"2026-03-25\",\"dateModified\":\"2026-03-25\",\"image\":\"https://subraatakumar.com/images/interview.png\",\"keywords\":[\"ai\",\"models\",\"text\",\"vision\",\"audio\",\"reasoning\",\"multimodal\"],\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com/\"}}"}}]
+1e:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]
+1c:["$","$L1e",null,{}]
+1d:["$","div",null,{"className":"blog-post-nav","children":[["$","$Lb",null,{"href":"/blog/common-llm-parameters-for-rag","children":"Previous"}],["$","span",null,{}]]}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"IconMark"]
+13:null
+17:[["$","title","0",{"children":"The Right Tool for the Job: A Guide to AI Models by Data Type | Subrata Kumar Das"}],["$","meta","1",{"name":"description","content":"Understand the different types of AI models and their ideal use cases, from text to vision to audio."}],["$","meta","2",{"name":"keywords","content":"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"}],["$","link","3",{"rel":"canonical","href":"https://subraatakumar.com/blog/the-right-model-for-your-job/"}],["$","meta","4",{"property":"og:title","content":"The Right Tool for the Job: A Guide to AI Models by Data Type | Blog"}],["$","meta","5",{"property":"og:description","content":"Understand the different types of AI models and their ideal use cases, from text to vision to audio. • 7 min"}],["$","meta","6",{"property":"og:url","content":"https://subraatakumar.com/blog/the-right-model-for-your-job/"}],["$","meta","7",{"property":"og:image","content":"https://subraatakumar.com/images/interview.png"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"property":"article:published_time","content":"2026-03-25"}],["$","meta","10",{"property":"article:modified_time","content":"2026-03-25"}],["$","meta","11",{"property":"article:tag","content":"ai"}],["$","meta","12",{"property":"article:tag","content":"models"}],["$","meta","13",{"property":"article:tag","content":"text"}],["$","meta","14",{"property":"article:tag","content":"vision"}],["$","meta","15",{"property":"article:tag","content":"audio"}],["$","meta","16",{"property":"article:tag","content":"reasoning"}],["$","meta","17",{"property":"article:tag","content":"multimodal"}],["$","meta","18",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","19",{"name":"twitter:title","content":"The Right Tool for the Job: A Guide to AI Models by Data Type | Blog"}],["$","meta","20",{"name":"twitter:description","content":"Understand the different types of AI models and their ideal use cases, from text to vision to audio. • 7 min"}],["$","meta","21",{"name":"twitter:image","content":"https://subraatakumar.com/images/interview.png"}],["$","link","22",{"rel":"icon","href":"/favicon.ico?favicon.750fd6b3.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L1f","23",{}]]
