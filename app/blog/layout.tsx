@@ -146,7 +146,7 @@ export default function BlogLayout({ children }: { children: React.ReactNode }) 
         <header className="blog-shell-header">
           <div className="blog-shell-header-inner">
             <Link href="/blog" className="blog-brand">
-              <span className="blog-brand-mark">SK</span>
+              <span className="blog-brand-mark"><Link href="/" aria-label="Go to main home page">SK</Link></span>
               <span className="blog-brand-text">TechCraft Blog</span>
             </Link>
             <nav className="blog-shell-nav">
