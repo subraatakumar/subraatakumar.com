@@ -50,6 +50,12 @@ const products = [
     tags: ["React Native", "Health"],
   },
   {
+    title: "PillTracker",
+    slug: "pilltracker",
+    desc: "An offline-first medicine reminder app with timeline logging, inventory bills, and privacy-first local Realm storage.",
+    tags: ["React Native", "Health", "Offline-First", "Realm"],
+  },
+  {
     title: "She Health",
     slug: "shehealth",
     desc: "A women-first health platform delivering personalised care journeys and secure health tracking.",
