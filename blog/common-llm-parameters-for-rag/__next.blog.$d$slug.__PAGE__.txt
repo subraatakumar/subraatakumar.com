@@ -248,7 +248,7 @@ e:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0a
             padding-right: 16px;
           }
         }
-      0:{"buildId":"aW_OrKlMps0ZWrMpC4aNm","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
+      0:{"buildId":"WHtchxXQpywsD44uDh4w0","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
 8:T3723,<p class="blog-md-p">RAG quality is not only about model choice.</p>
 <p class="blog-md-p">In practice, your results depend heavily on <strong>how you tune parameters</strong> across both retrieval and generation.
 The wrong knobs can cause hallucinations, missed context, slow responses, and higher cost.
