@@ -88,7 +88,7 @@ const sections = [
       "Use timeline history for better conversations",
       "Share clearer context when needed",
       "Reduce “I don’t know how I felt” moments",
-    },
+    ],
   },
   {
     id: "privacy",

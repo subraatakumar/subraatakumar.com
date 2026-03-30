@@ -88,7 +88,7 @@ const sections = [
       "Open the Trends view from Home.",
       "Choose weekly or monthly range.",
       "Look for repeating triggers and recovery patterns.",
-    },
+    ],
   },
   {
     id: "backup-restore",
