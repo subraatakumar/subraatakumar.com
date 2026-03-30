@@ -3,165 +3,103 @@ import GuideClient from "./GuideClient";
 import { DEFAULT_OG_IMAGE, absoluteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Water Tracker App Guide | Setup Reminders, Logs, and Backup",
+  title: "Mood Tracker Guide | Setup Check-ins, Reminders, and Insights",
   description:
-    "Step-by-step Water Tracker guide: set hydration goal, add drink types, log intake, configure reminders, view trends, and use backup/restore securely.",
+    "Step-by-step MoodTracker guide: create mood labels, log check-ins, configure reminders, review trends, and use backup/restore securely.",
   keywords: [
-    "water tracker guide",
-    "how to use water reminder app",
-    "set water reminders",
-    "track water intake in ml oz",
-    "water tracker backup restore",
-    "hydration app tutorial",
+    "mood tracker guide",
+    "how to use mood tracker app",
+    "set mood reminders",
+    "daily mood check in",
+    "mood tracker backup restore",
+    "mood app tutorial",
   ],
   alternates: {
-    canonical: "/watertracker/guide",
+    canonical: "/moodtracker/guide",
   },
   openGraph: {
-    title: "Water Tracker App Guide | Setup Reminders, Logs, and Backup",
+    title: "Mood Tracker Guide | Setup Check-ins, Reminders, and Insights",
     description:
-      "Complete how-to guide for Water Tracker N Reminder with setup flows and screenshots.",
-    url: "/watertracker/guide",
+      "Complete how-to guide for MoodTracker with setup flow and best-practice usage tips.",
+    url: "/moodtracker/guide",
     type: "article",
     images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Water Tracker App Guide | Setup Reminders, Logs, and Backup",
+    title: "Mood Tracker Guide | Setup Check-ins, Reminders, and Insights",
     description:
-      "Learn Water Tracker setup: goal, reminders, custom drinks, trends, and backup/restore.",
+      "Learn MoodTracker setup: labels, reminders, check-ins, trends, and backup/restore.",
     images: [DEFAULT_OG_IMAGE],
   },
 };
 
 const sections = [
   {
-    id: "start-dashboard",
-    title: "Start from Home Dashboard",
+    id: "start-home",
+    title: "Start From Home Screen",
     intro:
-      "Open the app and begin with the dashboard. It shows your current progress and helps you quickly start logging.",
+      "Open the app and begin with the home screen. It shows your latest mood activity and quick actions.",
     steps: [
-      "Open Home and review your current day progress.",
-      "Tap unit area to toggle ml and oz when needed.",
-      "Use quick-add actions to log your first drink.",
+      "Open Home and review today's mood timeline.",
+      "Tap quick add to log your current mood.",
+      "Add a short note if you want more context.",
     ],
-    image: {
-      src: "/watertrackerimages/5.png",
-      alt: "WaterTracker home dashboard showing intake progress",
-      caption: "Dashboard with progress ring and unit toggle",
-    },
   },
   {
-    id: "log-drink-entry",
-    title: "Add Drink Consumed Details",
+    id: "mood-entry",
+    title: "Create A Mood Entry",
     intro:
-      "Use Fluid Intake Entry to capture what you consumed with date/time control and per-drink quantity.",
+      "Use the mood entry flow to capture how you feel with optional tags and notes.",
     steps: [
-      "Open Fluid Intake Entry from Home or quick actions.",
-      "Pick date/time if you are recording older intake.",
-      "Tap drink cards and save once the intake list is complete.",
+      "Choose your mood label from presets or custom labels.",
+      "Set date/time if recording a past moment.",
+      "Add optional note and save the entry.",
     ],
-    image: {
-      src: "/watertrackerimages/10.png",
-      alt: "Fluid intake entry screen for adding consumed drinks",
-      caption: "Detailed intake entry screen",
-    },
   },
   {
-    id: "set-goal-reminders",
-    title: "Set Goal and Reminder Schedule",
+    id: "set-reminders",
+    title: "Set Reminder Schedule",
     intro:
-      "Configure hydration target and reminder timings so the app can support your routine consistently.",
+      "Configure check-in reminders so the app supports your daily emotional awareness routine.",
     steps: [
-      "Set your daily hydration goal in preferred unit.",
-      "Add reminder times matching your day structure.",
-      "Configure follow-up and sound preference for missed reminders.",
+      "Add reminder times aligned with your day.",
+      "Set follow-up reminders for missed check-ins.",
+      "Choose notification style: silent or sound.",
     ],
-    image: {
-      src: "/watertrackerimages/4.png",
-      alt: "Hydration reminder and goal setup screen",
-      caption: "Goal and reminder configuration",
-    },
   },
   {
-    id: "manage-drinks",
-    title: "Manage Drink Types",
+    id: "manage-labels",
+    title: "Manage Mood Labels",
     intro:
-      "Customize drink list to match your routine so logging becomes faster and more accurate.",
+      "Customize your mood labels so logging feels personal and meaningful.",
     steps: [
-      "Open Manage Drinks from entry or settings flow.",
-      "Edit or reorder your most-used drink types.",
-      "Reset to defaults if you want to start over.",
+      "Open Manage Labels from settings.",
+      "Add, edit, or reorder mood labels.",
+      "Assign colors to improve visual scanning.",
     ],
-    image: {
-      src: "/watertrackerimages/7.png",
-      alt: "Manage drink types screen in WaterTracker",
-      caption: "Manage drinks list and quick controls",
-    },
-  },
-  {
-    id: "custom-drinks",
-    title: "Create Custom Drink and Volume",
-    intro:
-      "Add your own drink type with icon, color, and volume for precise hydration tracking.",
-    steps: [
-      "Choose Add Drink in Manage Drinks.",
-      "Enter label and volume in ml/oz context.",
-      "Pick icon and color, then save and use it in logs.",
-    ],
-    image: {
-      src: "/watertrackerimages/8.png",
-      alt: "Create custom drink type and volume in WaterTracker",
-      caption: "Custom drink creation flow",
-    },
   },
   {
     id: "review-trends",
-    title: "Review Hydration Trends",
+    title: "Review Mood Trends",
     intro:
-      "Use trend charts to see consistency and compare daily intake against your goal over time.",
+      "Use trend charts to understand emotional patterns over time.",
     steps: [
-      "Open Fluid Intake Trend from Home tools.",
-      "Pick range and inspect daily consumption vs goal.",
-      "Use insights to tune reminders and drink plan.",
-    ],
-    image: {
-      src: "/watertrackerimages/9.png",
-      alt: "Hydration trend chart comparing daily consumption and goal",
-      caption: "Trend dashboard for performance review",
+      "Open the Trends view from Home.",
+      "Choose weekly or monthly range.",
+      "Look for repeating triggers and recovery patterns.",
     },
   },
   {
     id: "backup-restore",
     title: "Backup and Restore Data",
     intro:
-      "Use backup and restore when changing devices or before major changes so hydration history stays safe.",
+      "Use backup and restore when changing devices so your mood history stays safe.",
     steps: [
       "Open Backup & Restore screen from configuration.",
       "Create backup and confirm latest timestamp.",
       "Restore only from trusted backup points.",
     ],
-    image: {
-      src: "/watertrackerimages/2.png",
-      alt: "Backup and restore page showing backup options",
-      caption: "Backup and restore workflow",
-    },
-  },
-  {
-    id: "widgets",
-    title: "Enable Fluid Widgets",
-    intro:
-      "Widgets help you check intake and stay engaged from your device home screen.",
-    steps: [
-      "Enable available fluid widget from widget settings.",
-      "Pin widget on home screen for quick glance.",
-      "Use widget as a daily habit reinforcement surface.",
-    ],
-    image: {
-      src: "/watertrackerimages/3.png",
-      alt: "Fluid intake widget preview from WaterTracker",
-      caption: "Fluid Intake widget support",
-    },
   },
   {
     id: "appearance",
@@ -173,46 +111,36 @@ const sections = [
       "Preview available themes and pick one that fits your style.",
       "Apply appearance and continue tracking with same data.",
     ],
-    image: {
-      src: "/watertrackerimages/6.png",
-      alt: "WaterTracker appearance and theme screen",
-      caption: "Appearance customization and theme choices",
-    },
   },
   {
     id: "privacy-lock",
     title: "Protect Data with Privacy Controls",
     intro:
-      "WaterTracker follows local-first design. Add lock controls for extra protection when sharing your device.",
+      "MoodTracker follows local-first design. Add lock controls for extra protection when sharing your device.",
     steps: [
       "Enable PIN lock from configuration.",
       "Enable biometric unlock after PIN is configured.",
       "Review privacy policy and terms for the complete data model.",
     ],
-    image: {
-      src: "/watertrackerimages/1.png",
-      alt: "WaterTracker privacy-first data protection message",
-      caption: "Privacy-first experience with lock options",
-    },
   },
 ];
 
 const faq = [
   {
-    q: "Do I need an account to use WaterTracker?",
+    q: "Do I need an account to use MoodTracker?",
     a: "No. Core tracking flow is designed to work without account signup.",
   },
   {
-    q: "Can I track custom drinks and custom volume values?",
-    a: "Yes. Manage Drinks lets you add your own drink types with icon, color, and volume.",
+    q: "Can I customize mood labels?",
+    a: "Yes. Manage Labels lets you add your own mood labels with color and ordering controls.",
   },
   {
-    q: "Does WaterTracker support ml and oz?",
-    a: "Yes. Unit preference can be toggled in the app and is reflected in tracking views.",
+    q: "Can I add notes to each mood check-in?",
+    a: "Yes. Entries support optional notes so you can capture context around how you felt.",
   },
   {
     q: "Where should I start if I am new?",
-    a: "Start with goal setup, then reminders, then drink list. After that, use trends weekly to improve consistency.",
+    a: "Start with reminder setup, then your label list, then daily check-ins. After that, review trends weekly.",
   },
 ];
 
@@ -229,16 +157,15 @@ export default function Page() {
             "@graph": [
               {
                 "@type": "HowTo",
-                name: "How to use Water Tracker N Reminder",
+                name: "How to use MoodTracker",
                 description:
-                  "Step-by-step guide for setting hydration goal, reminders, drink types, trends, and backup in WaterTracker.",
-                url: absoluteUrl("/watertracker/guide"),
+                  "Step-by-step guide for setting up mood labels, reminders, trends, and backup in MoodTracker.",
+                url: absoluteUrl("/moodtracker/guide"),
                 step: sections.map((section, idx) => ({
                   "@type": "HowToStep",
                   position: idx + 1,
                   name: section.title,
                   text: section.intro,
-                  ...(section.image ? { image: absoluteUrl(section.image.src) } : {}),
                 })),
               },
               {
@@ -258,21 +185,21 @@ export default function Page() {
                   {
                     "@type": "ListItem",
                     position: 1,
-                    name: "Water Tracker",
-                    item: absoluteUrl("/watertracker"),
+                    name: "Mood Tracker",
+                    item: absoluteUrl("/moodtracker"),
                   },
                   {
                     "@type": "ListItem",
                     position: 2,
                     name: "Guide",
-                    item: absoluteUrl("/watertracker/guide"),
+                    item: absoluteUrl("/moodtracker/guide"),
                   },
                 ],
               },
               {
                 "@type": "WebPage",
-                name: "Water Tracker App Guide",
-                url: absoluteUrl("/watertracker/guide"),
+                name: "Mood Tracker Guide",
+                url: absoluteUrl("/moodtracker/guide"),
               },
             ],
           }),

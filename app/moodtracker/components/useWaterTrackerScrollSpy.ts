@@ -47,3 +47,5 @@ export function useWaterTrackerScrollSpy(sectionIds: string[], initialId?: strin
 
   return { activeSection, jumpTo };
 }
+
+export const useMoodTrackerScrollSpy = useWaterTrackerScrollSpy;

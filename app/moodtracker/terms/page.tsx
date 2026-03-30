@@ -157,7 +157,7 @@ export default function TermsOfUsePage() {
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, color: 'var(--wt-navy-700)', fontWeight: 800, fontSize: 13, letterSpacing: '0.04em', textTransform: 'uppercase', marginBottom: 10 }}>
               <Droplets style={{ width: 16, height: 16 }} />
-              <span>Water Tracker N Reminder</span>
+              <span>MoodTracker</span>
             </div>
             <h1 className="wt-font-display wt-terms-h1" style={{ fontSize: 44, fontWeight: 800, color: 'var(--wt-navy-900)', margin: 0, letterSpacing: '-0.02em', lineHeight: 1.1 }}>
               Terms of Use
@@ -177,10 +177,10 @@ export default function TermsOfUsePage() {
           }}>
             <p style={{ fontSize: 12, fontWeight: 800, color: 'var(--wt-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', margin: '0 0 6px' }}>Questions?</p>
             <a
-              href="mailto:subraatakumar+watertracker@gmail.com"
+              href="mailto:subraatakumar+moodtracker@gmail.com"
               style={{ color: 'var(--wt-navy-700)', fontWeight: 800, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 4, fontSize: 13, wordBreak: 'break-all' }}
             >
-              subraatakumar+watertracker@gmail.com
+              subraatakumar+moodtracker@gmail.com
               <ChevronRight style={{ width: 14, height: 14, flexShrink: 0 }} />
             </a>
           </div>
@@ -189,7 +189,7 @@ export default function TermsOfUsePage() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 14, marginTop: 28 }}>
           <HighlightCard icon={<FileText style={{ width: 16, height: 16 }} />} title="Clear Agreement" description="By using the app, you agree to these terms. Please read them carefully." />
           <HighlightCard icon={<ShieldCheck style={{ width: 16, height: 16 }} />} title="Privacy First" description="These terms work alongside our Privacy Policy to protect your data." />
-          <HighlightCard icon={<Scale style={{ width: 16, height: 16 }} />} title="Fair Use" description="Use the app for personal hydration tracking only, as intended." />
+          <HighlightCard icon={<Scale style={{ width: 16, height: 16 }} />} title="Fair Use" description="Use the app for personal mood tracking only, as intended." />
         </div>
       </div>
 
@@ -248,7 +248,7 @@ export default function TermsOfUsePage() {
 
           <PolicySection id="acceptance" title="Acceptance of Terms" icon={<FileText style={{ width: 18, height: 18 }} />}>
             <p style={{ margin: '0 0 14px' }}>
-              By downloading, installing, or using <strong style={{ color: 'var(--wt-navy-900)' }}>Water Tracker N Reminder</strong> ("the App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, please do not use the App.
+              By downloading, installing, or using <strong style={{ color: 'var(--wt-navy-900)' }}>MoodTracker</strong> ("the App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, please do not use the App.
             </p>
             <InfoCard>
               These Terms apply to all versions of the App available on the Apple App Store and Google Play Store. We may update these Terms from time to time — continued use of the App after changes constitutes your acceptance of the revised Terms.
@@ -259,7 +259,7 @@ export default function TermsOfUsePage() {
 
           <PolicySection id="use-of-app" title="Use of the App" icon={<ShieldCheck style={{ width: 18, height: 18 }} />}>
             <p style={{ margin: '0 0 14px' }}>
-              Water Tracker N Reminder is a personal hydration tracking tool intended for individual, non-commercial use. You agree to use the App only for its intended purpose and in compliance with all applicable laws.
+              MoodTracker is a personal mood tracking tool intended for individual, non-commercial use. You agree to use the App only for its intended purpose and in compliance with all applicable laws.
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
               <BulletItem>You must be at least 13 years of age to use the App.</BulletItem>
@@ -310,8 +310,8 @@ export default function TermsOfUsePage() {
               ))}
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-              <BulletItem><strong style={{ color: 'var(--wt-navy-900)' }}>Water Tracker Pro Yearly</strong>: auto-renewable subscription, 1 year, priced at <strong style={{ color: 'var(--wt-navy-900)' }}>$9.99/year</strong>.</BulletItem>
-              <BulletItem><strong style={{ color: 'var(--wt-navy-900)' }}>Water Tracker Pro One Time</strong>: lifetime purchase priced at <strong style={{ color: 'var(--wt-navy-900)' }}>$49.99</strong>.</BulletItem>
+              <BulletItem><strong style={{ color: 'var(--wt-navy-900)' }}>MoodTracker Pro Yearly</strong>: auto-renewable subscription, 1 year, priced at <strong style={{ color: 'var(--wt-navy-900)' }}>$9.99/year</strong>.</BulletItem>
+              <BulletItem><strong style={{ color: 'var(--wt-navy-900)' }}>MoodTracker Pro One Time</strong>: lifetime purchase priced at <strong style={{ color: 'var(--wt-navy-900)' }}>$49.99</strong>.</BulletItem>
             </div>
           </PolicySection>
 
@@ -336,13 +336,13 @@ export default function TermsOfUsePage() {
                 <AlertTriangle style={{ width: 18, height: 18, color: '#f97316', flexShrink: 0, marginTop: 2 }} />
                 <div>
                   <strong style={{ color: 'var(--wt-navy-900)', display: 'block', marginBottom: 6 }}>Not a Medical Device</strong>
-                  Water Tracker N Reminder is a general wellness tool and is <strong style={{ color: 'var(--wt-navy-900)' }}>not</strong> a medical device. It does not provide medical advice, diagnosis, or treatment. Hydration recommendations within the App are general guidelines only.
+                  MoodTracker is a general wellness tool and is <strong style={{ color: 'var(--wt-navy-900)' }}>not</strong> a medical device. It does not provide medical advice, diagnosis, or treatment. Insights and reminders within the App are general guidance only.
                 </div>
               </div>
             </InfoCard>
             <div style={{ marginTop: 14, display: 'flex', flexDirection: 'column', gap: 8 }}>
               <BulletItem>Always consult a qualified healthcare professional for medical concerns.</BulletItem>
-              <BulletItem>Individual hydration needs vary — the App's suggestions are not a substitute for professional medical advice.</BulletItem>
+              <BulletItem>Mental health needs vary — the App's suggestions are not a substitute for professional advice.</BulletItem>
               <BulletItem>The developer is not liable for any health outcomes resulting from use of the App.</BulletItem>
             </div>
           </PolicySection>
@@ -356,7 +356,7 @@ export default function TermsOfUsePage() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 12 }}>
               <InfoCard>
                 <strong style={{ color: 'var(--wt-navy-900)', display: 'block', marginBottom: 4 }}>Your Data</strong>
-                All hydration data you enter belongs solely to you. We do not claim ownership of any personal content you create within the App.
+                All mood data you enter belongs solely to you. We do not claim ownership of any personal content you create within the App.
               </InfoCard>
               <InfoCard>
                 <strong style={{ color: 'var(--wt-navy-900)', display: 'block', marginBottom: 4 }}>App Content</strong>
@@ -398,9 +398,9 @@ export default function TermsOfUsePage() {
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 10 }}>
               {[
-                { title: 'Access', desc: 'View all your hydration data directly within the App at any time.' },
+                { title: 'Access', desc: 'View all your mood data directly within the App at any time.' },
                 { title: 'Deletion', desc: 'Delete individual logs or all data from within the App settings.' },
-                { title: 'Export', desc: 'Export your hydration records via the App\'s export feature.' },
+                { title: 'Export', desc: 'Export your mood records via the App\'s export feature.' },
                 { title: 'Portability', desc: 'Back up and restore your data using your own iCloud or Google Drive.' },
               ].map((item, i) => (
                 <div key={i} style={{ padding: '14px 16px', border: '1px solid rgba(16,36,79,0.09)', borderRadius: 14, background: 'rgba(79,136,255,0.04)' }}>
@@ -429,7 +429,7 @@ export default function TermsOfUsePage() {
                   For questions about these Terms or the App, please reach out to the developer directly:
                 </p>
                 <a
-                  href="mailto:subraatakumar+watertracker@gmail.com"
+                  href="mailto:subraatakumar+moodtracker@gmail.com"
                   style={{
                     display: 'inline-flex', alignItems: 'center', gap: 8,
                     background: '#fff', color: 'var(--wt-navy-900)',
@@ -441,7 +441,7 @@ export default function TermsOfUsePage() {
                   className="wt-terms-email-btn"
                 >
                   <Mail style={{ width: 15, height: 15 }} />
-                  subraatakumar+watertracker@gmail.com
+                  subraatakumar+moodtracker@gmail.com
                 </a>
               </div>
             </div>
@@ -449,7 +449,7 @@ export default function TermsOfUsePage() {
 
           <div style={{ marginTop: 52, paddingTop: 24, borderTop: '1px solid rgba(16,36,79,0.08)', textAlign: 'center' }}>
             <p style={{ fontSize: 11, fontWeight: 800, color: 'var(--wt-muted)', textTransform: 'uppercase', letterSpacing: '0.09em', margin: '0 0 4px' }}>
-              Water Tracker N Reminder
+              MoodTracker
             </p>
             <p style={{ fontSize: 12, color: 'var(--wt-muted)', margin: 0 }}>
               &copy; {new Date().getFullYear()} subraatakumar. All rights reserved.

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Manrope, Space_Grotesk } from "next/font/google";
 
 const manrope = Manrope({
@@ -11,7 +12,7 @@ const spaceGrotesk = Space_Grotesk({
   weight: ["600", "700"],
 });
 
-export default function WaterTrackerLayout({ children }: { children: React.ReactNode }) {
+export default function MoodTrackerLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className={`wt-shell ${manrope.className}`}>
       <style>{`
@@ -21,21 +22,21 @@ export default function WaterTrackerLayout({ children }: { children: React.React
         }
 
         .wt-shell {
-          --wt-navy-900: #0f2458;
-          --wt-navy-800: #14336f;
-          --wt-navy-700: #1f4f9d;
-          --wt-sky-400: #7fc3ff;
-          --wt-sky-300: #b9e3ff;
-          --wt-cyan-200: #d8f5ff;
+          --wt-navy-900: #372356;
+          --wt-navy-800: #4e2f7a;
+          --wt-navy-700: #6d3fb0;
+          --wt-sky-400: #c18bff;
+          --wt-sky-300: #e2c8ff;
+          --wt-cyan-200: #f4e7ff;
           --wt-card: rgba(255, 255, 255, 0.88);
-          --wt-ink: #10244f;
-          --wt-muted: #4a5f8c;
+          --wt-ink: #2e1f48;
+          --wt-muted: #624b86;
           min-height: 100vh;
           color: var(--wt-ink);
           background:
-            radial-gradient(circle at 8% 10%, rgba(125, 196, 255, 0.25), transparent 42%),
-            radial-gradient(circle at 92% 22%, rgba(174, 229, 255, 0.24), transparent 35%),
-            linear-gradient(140deg, #eaf6ff 0%, #dff2ff 30%, #cfe8ff 100%);
+            radial-gradient(circle at 8% 10%, rgba(212, 166, 255, 0.25), transparent 42%),
+            radial-gradient(circle at 92% 22%, rgba(255, 202, 235, 0.24), transparent 35%),
+            linear-gradient(140deg, #f8f0ff 0%, #f4ebff 34%, #f9eefe 100%);
         }
         .wt-shell * {
           box-sizing: border-box;
@@ -72,10 +73,9 @@ export default function WaterTrackerLayout({ children }: { children: React.React
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          font-weight: 800;
-          color: #fff;
-          background: linear-gradient(140deg, #4f88ff, #3ec1ff);
-          box-shadow: 0 8px 16px rgba(31, 79, 157, 0.22);
+          overflow: hidden;
+          background: linear-gradient(140deg, #8c58d9, #de6cb6);
+          box-shadow: 0 8px 16px rgba(109, 63, 176, 0.22);
         }
         .wt-logo-text {
           font-size: 14px;
@@ -100,7 +100,7 @@ export default function WaterTrackerLayout({ children }: { children: React.React
           white-space: nowrap;
         }
         .wt-links a:hover {
-          background: rgba(79, 136, 255, 0.14);
+          background: rgba(140, 88, 217, 0.14);
           color: var(--wt-navy-700);
         }
         .wt-main {
@@ -110,7 +110,7 @@ export default function WaterTrackerLayout({ children }: { children: React.React
         }
         .wt-footer {
           border-top: 1px solid rgba(16, 36, 79, 0.12);
-          background: rgba(235, 247, 255, 0.78);
+          background: rgba(251, 243, 255, 0.82);
         }
         .wt-footer-inner {
           max-width: 1120px;
@@ -191,8 +191,8 @@ export default function WaterTrackerLayout({ children }: { children: React.React
             background: rgba(255,255,255,0.7);
           }
           .wt-mobile-nav a:hover {
-            background: rgba(79, 136, 255, 0.14);
-            border-color: rgba(31, 79, 157, 0.35);
+            background: rgba(140, 88, 217, 0.14);
+            border-color: rgba(109, 63, 176, 0.35);
           }
           .wt-main {
             padding: 22px 14px 54px;
@@ -205,21 +205,23 @@ export default function WaterTrackerLayout({ children }: { children: React.React
 
       <header className="wt-nav">
         <div className="wt-nav-inner">
-          <Link href="/watertracker" className="wt-logo">
-            <span className="wt-logo-mark">WT</span>
-            <span className="wt-logo-text wt-font-display">WaterTracker</span>
+          <Link href="/moodtracker" className="wt-logo">
+            <span className="wt-logo-mark">
+              <Image src="/moodtracker/logo.png" alt="Mood Tracker logo" width={34} height={34} priority />
+            </span>
+            <span className="wt-logo-text wt-font-display">MoodTracker</span>
           </Link>
-          <nav className="wt-links" aria-label="Water Tracker pages">
-            <Link href="/watertracker">Overview</Link>
-            <Link href="/watertracker/guide">How To Use</Link>
-            <Link href="/watertracker/benefits">Health Benefits</Link>
+          <nav className="wt-links" aria-label="Mood Tracker pages">
+            <Link href="/moodtracker">Overview</Link>
+            <Link href="/moodtracker/guide">How To Use</Link>
+            <Link href="/moodtracker/benefits">Benefits</Link>
             <Link href="/products">All Products</Link>
           </nav>
         </div>
-        <nav className="wt-mobile-nav" aria-label="Water Tracker pages mobile">
-          <Link href="/watertracker">Overview</Link>
-          <Link href="/watertracker/guide">How To Use</Link>
-          <Link href="/watertracker/benefits">Health Benefits</Link>
+        <nav className="wt-mobile-nav" aria-label="Mood Tracker pages mobile">
+          <Link href="/moodtracker">Overview</Link>
+          <Link href="/moodtracker/guide">How To Use</Link>
+          <Link href="/moodtracker/benefits">Benefits</Link>
           <Link href="/products">All Products</Link>
         </nav>
       </header>
@@ -227,14 +229,14 @@ export default function WaterTrackerLayout({ children }: { children: React.React
       <main className="wt-main">{children}</main>
       <footer className="wt-footer">
         <div className="wt-footer-inner">
-          <p className="wt-footer-copy">© {new Date().getFullYear()} WaterTracker</p>
+          <p className="wt-footer-copy">© {new Date().getFullYear()} MoodTracker</p>
           <div className="wt-footer-links">
-            <Link href="/watertracker">Overview</Link>
-            <Link href="/watertracker/guide">How To Use</Link>
-            <Link href="/watertracker/benefits">Health Benefits</Link>
+            <Link href="/moodtracker">Overview</Link>
+            <Link href="/moodtracker/guide">How To Use</Link>
+            <Link href="/moodtracker/benefits">Benefits</Link>
             <Link href="/contact">Support</Link>
-            <Link href="/watertracker/privacy-policy">Privacy Policy</Link>
-            <Link href="/watertracker/terms">Terms of Use</Link>
+            <Link href="/moodtracker/privacy-policy">Privacy Policy</Link>
+            <Link href="/moodtracker/terms">Terms of Use</Link>
           </div>
         </div>
       </footer>

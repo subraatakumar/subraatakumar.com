@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Droplets, ShieldCheck, BellRing, LineChart, Paintbrush2, Cloud, Smartphone, ChevronRight } from "lucide-react";
-import { useWaterTrackerScrollSpy } from "./components/useWaterTrackerScrollSpy";
+import { Smile, ShieldCheck, BellRing, LineChart, Palette, Cloud, Smartphone, ChevronRight, Brain, MoonStar } from "lucide-react";
+import { useMoodTrackerScrollSpy } from "./components/useWaterTrackerScrollSpy";
 
 type HomeSection = {
   id: string;
@@ -19,119 +19,106 @@ type HomeSection = {
 
 const SECTIONS: HomeSection[] = [
   {
-    id: "daily-tracking",
-    title: "Track Intake In Seconds",
+    id: "daily-checkins",
+    title: "Log Mood In Seconds",
     summary:
-      "Quick-add logging keeps hydration tracking fast. Switch between ml and oz anytime and see progress update instantly.",
+      "Quick check-ins keep reflection easy. Add mood, note the moment, and build a clear emotional timeline over time.",
     bullets: [
-      "One-tap drink entry for daily consistency",
-      "Supports ml and oz without resetting your data",
-      "Clear progress view to stay on target",
+      "One-tap mood entry for daily consistency",
+      "Add short notes for context behind each mood",
+      "Simple timeline view to spot emotional patterns",
     ],
-    image: {
-      src: "/watertrackerimages/5.png",
-      alt: "Water Tracker home dashboard with hydration progress",
-      caption: "Home dashboard with quick logging and unit toggle",
-    },
   },
   {
     id: "reminders",
-    title: "Reminder Schedule That Fits Your Day",
+    title: "Gentle Reminder Schedule",
     summary:
-      "Set reminder times, lead-time nudges, and optional follow-up alerts to build a reliable hydration routine.",
+      "Set reminder windows and optional follow-up nudges so you remember to check in, even on busy days.",
     bullets: [
-      "Custom reminder time slots",
-      "Lead-time and follow-up reminder options",
-      "Sound and silent reminder modes",
+      "Custom reminder slots",
+      "Flexible reminder frequency",
+      "Silent and sound notification modes",
     ],
-    image: {
-      src: "/watertrackerimages/4.png",
-      alt: "Hydration reminder schedule screen in Water Tracker",
-      caption: "Hydration goal and reminders on your schedule",
-    },
   },
   {
-    id: "drink-management",
-    title: "Your Drinks, Your Volumes",
+    id: "mood-management",
+    title: "Your Mood Labels, Your Style",
     summary:
-      "Create and manage drink types with custom volume, icon, and color so logging matches what you actually drink.",
+      "Create custom mood labels, colors, and tags so tracking reflects your real life and emotional vocabulary.",
     bullets: [
-      "Manage drink types list",
-      "Custom icon and color per drink",
-      "Volume controls for realistic tracking",
+      "Manage custom mood tags",
+      "Color-coded mood categories",
+      "Personalized logging experience",
     ],
-    image: {
-      src: "/watertrackerimages/7.png",
-      alt: "Manage drink types list in Water Tracker",
-      caption: "Manage and personalize your drink list",
-    },
   },
   {
     id: "insights",
-    title: "Trend Insights, Not Guesswork",
+    title: "Trends You Can Understand",
     summary:
-      "Visual trends help you understand consistency and daily performance so you can improve hydration habits over time.",
+      "Trend charts help you identify what improves your mood and what patterns need attention across days and weeks.",
     bullets: [
-      "Daily consumption vs goal visualization",
-      "History for habit review",
-      "Actionable progress patterns",
+      "Daily and weekly mood trend visuals",
+      "Streak and consistency history",
+      "Pattern signals for better self-awareness",
     ],
-    image: {
-      src: "/watertrackerimages/9.png",
-      alt: "Hydration trend chart screen in Water Tracker",
-      caption: "Trend charts to measure consistency",
-    },
   },
   {
     id: "privacy",
     title: "Privacy-First By Default",
     summary:
-      "No mandatory account. Hydration logs stay on-device with optional local protection like PIN and biometric unlock.",
+      "No mandatory account. Mood logs stay on-device with optional protection such as PIN and biometric unlock.",
     bullets: [
-      "No login required for core tracking",
+      "No login needed for core usage",
       "Local-first data model",
       "PIN and biometric protection options",
     ],
-    image: {
-      src: "/watertrackerimages/1.png",
-      alt: "Water Tracker privacy message screen",
-      caption: "Built around local data privacy",
-    },
   },
   {
-    id: "backup-widgets",
-    title: "Backup, Widgets, and Personalization",
+    id: "backup-personalization",
+    title: "Backup and Personalization",
     summary:
-      "Backup and restore support, fluid widgets, and appearance themes make the app practical for long-term daily use.",
+      "Backup and restore support plus appearance themes make MoodTracker practical for long-term use.",
     bullets: [
       "Backup and restore tools",
-      "Fluid intake widget support",
+      "Optional widget support",
       "Appearance themes and customization",
     ],
-    image: {
-      src: "/watertrackerimages/2.png",
-      alt: "Backup and restore screen in Water Tracker",
-      caption: "Backup and restore support for safer continuity",
-    },
   },
 ];
 
 export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; androidUrl?: string }) {
-  const { activeSection, jumpTo } = useWaterTrackerScrollSpy(SECTIONS.map((section) => section.id), SECTIONS[0].id);
+  const { activeSection, jumpTo } = useMoodTrackerScrollSpy(SECTIONS.map((section) => section.id), SECTIONS[0].id);
 
   return (
     <section>
       <style>{`
         .wth-hero {
           border-radius: 26px;
-          border: 1px solid rgba(16, 36, 79, 0.12);
+          border: 1px solid rgba(78, 47, 122, 0.18);
           background:
-            radial-gradient(circle at 7% 8%, rgba(111, 192, 255, 0.26), transparent 36%),
-            radial-gradient(circle at 92% 84%, rgba(98, 201, 255, 0.24), transparent 34%),
-            linear-gradient(145deg, #0e2a66 0%, #1a4a98 46%, #2d73d1 100%);
-          padding: 38px;
-          color: #eaf7ff;
+            radial-gradient(circle at 7% 8%, rgba(221, 177, 255, 0.28), transparent 36%),
+            radial-gradient(circle at 92% 84%, rgba(255, 182, 220, 0.24), transparent 34%),
+            linear-gradient(145deg, #3c245e 0%, #5f33a0 46%, #9541b5 100%);
+          padding: 34px;
+          color: #fff2ff;
           margin-bottom: 26px;
+        }
+        .wth-brand {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          margin-bottom: 16px;
+        }
+        .wth-brand img {
+          border-radius: 12px;
+          box-shadow: 0 8px 20px rgba(44, 21, 74, 0.35);
+        }
+        .wth-brand span {
+          font-size: 13px;
+          text-transform: uppercase;
+          font-weight: 800;
+          letter-spacing: 0.06em;
+          color: #fbe8ff;
         }
         .wth-badges {
           display: flex;
@@ -144,10 +131,13 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
           font-weight: 800;
           letter-spacing: 0.06em;
           text-transform: uppercase;
-          border: 1px solid rgba(234, 247, 255, 0.36);
+          border: 1px solid rgba(255, 239, 255, 0.38);
           border-radius: 999px;
-          background: rgba(234, 247, 255, 0.12);
+          background: rgba(255, 239, 255, 0.14);
           padding: 6px 10px;
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
         }
         .wth-hero h1 {
           margin: 0;
@@ -157,7 +147,7 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
         }
         .wth-hero p {
           margin: 14px 0 0;
-          color: #cce9ff;
+          color: #f4d8ff;
           line-height: 1.7;
           max-width: 760px;
           font-size: 1.03rem;
@@ -183,14 +173,14 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
           border: 1px solid transparent;
         }
         .wth-btn-primary {
-          background: #b7e8ff;
-          color: #0f326b;
-          box-shadow: 0 8px 20px rgba(8, 17, 42, 0.32);
+          background: #ffd8f5;
+          color: #4e2f7a;
+          box-shadow: 0 8px 20px rgba(35, 16, 56, 0.32);
         }
         .wth-btn-secondary {
           background: transparent;
-          color: #eaf7ff;
-          border-color: rgba(234, 247, 255, 0.4);
+          color: #fff2ff;
+          border-color: rgba(255, 239, 255, 0.4);
         }
         .wth-layout {
           display: flex;
@@ -231,12 +221,12 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
           transition: 0.2s ease;
         }
         .wth-nav-item:hover {
-          background: rgba(79, 136, 255, 0.1);
+          background: rgba(140, 88, 217, 0.1);
         }
         .wth-nav-item.active {
           color: #fff;
-          background: linear-gradient(140deg, #4f88ff, #3ec1ff);
-          box-shadow: 0 5px 14px rgba(31, 79, 157, 0.2);
+          background: linear-gradient(140deg, #8c58d9, #de6cb6);
+          box-shadow: 0 5px 14px rgba(95, 51, 160, 0.2);
         }
         .wth-content {
           flex: 1;
@@ -282,7 +272,7 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
           height: 8px;
           border-radius: 999px;
           margin-top: 6px;
-          background: linear-gradient(140deg, #4f88ff, #3ec1ff);
+          background: linear-gradient(140deg, #8c58d9, #de6cb6);
           flex-shrink: 0;
         }
         .wth-shot {
@@ -308,9 +298,9 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
         }
         .wth-faq {
           margin-top: 16px;
-          border: 1px solid rgba(16, 36, 79, 0.09);
+          border: 1px solid rgba(78, 47, 122, 0.13);
           border-radius: 14px;
-          background: #f8fcff;
+          background: #fff8ff;
           padding: 14px;
         }
         .wth-faq h3 {
@@ -341,7 +331,7 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
         }
         .wth-bottom-cta p {
           margin: 7px 0 0;
-          color: #d6edff;
+          color: #f5deff;
           max-width: 620px;
         }
         .wth-mobile-jumps {
@@ -379,15 +369,19 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
       `}</style>
 
       <div className="wth-hero">
-        <div className="wth-badges" aria-label="Water tracker highlights">
-          <span className="wth-badge"><Droplets size={12} /> Privacy-First</span>
-          <span className="wth-badge"><BellRing size={12} /> Smart Reminders</span>
+        <div className="wth-brand">
+          <Image src="/moodtracker/logo.png" alt="Mood Tracker" width={48} height={48} priority />
+          <span>Mood Tracker</span>
+        </div>
+        <div className="wth-badges" aria-label="Mood tracker highlights">
+          <span className="wth-badge"><Smile size={12} /> Daily Check-ins</span>
+          <span className="wth-badge"><BellRing size={12} /> Gentle Reminders</span>
           <span className="wth-badge"><ShieldCheck size={12} /> Local-First Logs</span>
         </div>
-        <h1 className="wt-font-display">Best Water Tracker App For Daily Hydration Consistency</h1>
+        <h1 className="wt-font-display">Mood Tracker App For Daily Emotional Awareness</h1>
         <p>
-          Water Tracker N Reminder helps you log intake fast, set reminder schedules, and keep control of hydration data.
-          No mandatory account, flexible ml/oz units, and practical tools for reminders, trends, backups, and personalization.
+          MoodTracker helps you log mood quickly, schedule check-in reminders, and understand emotional trends.
+          No mandatory account, local-first privacy, and practical tools for reflection, patterns, and consistency.
         </p>
         <div className="wth-cta-row">
           {iosUrl ? (
@@ -400,8 +394,8 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
           ) : (
             <span className="wth-btn wth-btn-secondary">Play Store Under Review</span>
           )}
-          <Link href="/watertracker/guide" className="wth-btn wth-btn-secondary">How To Use</Link>
-          <Link href="/watertracker/benefits" className="wth-btn wth-btn-secondary">Hydration Benefits</Link>
+          <Link href="/moodtracker/guide" className="wth-btn wth-btn-secondary">How To Use</Link>
+          <Link href="/moodtracker/benefits" className="wth-btn wth-btn-secondary">Mental Wellness Benefits</Link>
         </div>
       </div>
 
@@ -414,7 +408,7 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
       </div>
 
       <div className="wth-layout">
-        <aside className="wth-sidebar" aria-label="Water tracker sections">
+        <aside className="wth-sidebar" aria-label="Mood tracker sections">
           <p className="wth-sidebar-title">Explore</p>
           <div className="wth-nav-list">
             {SECTIONS.map((section) => (
@@ -457,48 +451,48 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
           ))}
 
           <div className="wth-faq">
-            <h3>Is this a good water reminder app for daily use?</h3>
+            <h3>Is this a good mood tracker for daily use?</h3>
             <p>
-              Yes. It is built for practical daily tracking with quick drink logging, schedule-based hydration reminders,
+              Yes. It is built for practical daily tracking with quick mood logging, schedule-based reminders,
               and privacy-first local storage.
             </p>
           </div>
 
           <div className="wth-bottom-cta">
             <div>
-              <h2 className="wt-font-display">Ready To Build Better Hydration Habits?</h2>
+              <h2 className="wt-font-display">Ready To Build Better Emotional Habits?</h2>
               <p>
-                Open the full guide for setup steps, then review hydration benefits to make your intake plan sustainable.
+                Open the full guide for setup steps, then review benefits to make mood tracking simple and sustainable.
               </p>
             </div>
             <div className="wth-cta-row" style={{ marginTop: 0 }}>
-              <Link href="/watertracker/guide" className="wth-btn wth-btn-primary">
+              <Link href="/moodtracker/guide" className="wth-btn wth-btn-primary">
                 Open Guide <ChevronRight size={14} />
               </Link>
-              <Link href="/watertracker/benefits" className="wth-btn wth-btn-secondary">Read Benefits</Link>
+              <Link href="/moodtracker/benefits" className="wth-btn wth-btn-secondary">Read Benefits</Link>
             </div>
           </div>
 
           <div className="wth-faq">
-            <h3>How is this different from a basic water tracker app?</h3>
+            <h3>How is this different from a basic mood app?</h3>
             <p>
-              Water Tracker N Reminder combines reminders, custom drinks, trend insights, backup support, widgets,
-              and on-device privacy controls in one app flow.
+              MoodTracker combines reminders, custom labels, trend insights, backup support, widgets,
+              and on-device privacy controls in one flow.
             </p>
           </div>
 
           <div className="wth-faq">
             <h3>Need implementation-level walkthrough?</h3>
             <p>
-              See the complete <Link href="/watertracker/guide" style={{ color: "var(--wt-navy-700)", fontWeight: 800 }}>WaterTracker guide</Link> to set goals,
-              reminders, drink types, and backup options from start to finish.
+              See the complete <Link href="/moodtracker/guide" style={{ color: "var(--wt-navy-700)", fontWeight: 800 }}>MoodTracker guide</Link> to set reminders,
+              customize mood labels, and configure backup options from start to finish.
             </p>
           </div>
 
           <div className="wth-faq" style={{ display: "flex", gap: 10, alignItems: "center" }}>
             <Smartphone size={16} />
             <p style={{ margin: 0 }}>
-              Looking for balanced hydration science? Read <Link href="/watertracker/benefits" style={{ color: "var(--wt-navy-700)", fontWeight: 800 }}>Benefits of Balanced Drinking</Link>.
+              Want practical mental wellness guidance? Read <Link href="/moodtracker/benefits" style={{ color: "var(--wt-navy-700)", fontWeight: 800 }}>Benefits of Daily Mood Tracking</Link>.
             </p>
           </div>
 
@@ -510,16 +504,30 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
           </div>
 
           <div className="wth-faq" style={{ display: "flex", gap: 10, alignItems: "center" }}>
-            <Paintbrush2 size={16} />
+            <Palette size={16} />
             <p style={{ margin: 0 }}>
-              Personalization includes themes and appearance controls to match your routine and preference.
+              Personalization includes themes and appearance controls to match your mood tracking style.
             </p>
           </div>
 
           <div className="wth-faq" style={{ display: "flex", gap: 10, alignItems: "center" }}>
             <LineChart size={16} />
             <p style={{ margin: 0 }}>
-              Trend charts turn logs into insights, helping you see consistency and improve over time.
+              Trend charts turn entries into insights, helping you improve self-awareness over time.
+            </p>
+          </div>
+
+          <div className="wth-faq" style={{ display: "flex", gap: 10, alignItems: "center" }}>
+            <Brain size={16} />
+            <p style={{ margin: 0 }}>
+              Reflective notes help connect moods with triggers, activities, and routines.
+            </p>
+          </div>
+
+          <div className="wth-faq" style={{ display: "flex", gap: 10, alignItems: "center" }}>
+            <MoonStar size={16} />
+            <p style={{ margin: 0 }}>
+              Track day vs night mood shifts to better understand sleep and routine impact.
             </p>
           </div>
         </div>

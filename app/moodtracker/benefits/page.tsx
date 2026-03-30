@@ -3,146 +3,126 @@ import { DEFAULT_OG_IMAGE, absoluteUrl } from "@/lib/seo";
 import BenefitsClient from "./BenefitsClient";
 
 export const metadata: Metadata = {
-  title: "Hydration Benefits | Water Tracker N Reminder",
+  title: "Mood Tracking Benefits | MoodTracker",
   description:
-    "Learn practical hydration benefits: focus, energy, digestion, performance, and how balanced water intake with reminder tracking improves consistency.",
+    "Learn practical mood tracking benefits: emotional awareness, stress pattern recognition, communication clarity, and stronger self-care consistency.",
   keywords: [
-    "hydration benefits",
-    "benefits of drinking water",
-    "balanced hydration",
-    "water intake benefits",
-    "how much water should i drink",
-    "hydration reminder benefits",
+    "mood tracking benefits",
+    "daily mood journal benefits",
+    "mental wellness tracking",
+    "emotional awareness app",
+    "mood trend insights",
+    "self reflection app",
   ],
   alternates: {
-    canonical: "/watertracker/benefits",
+    canonical: "/moodtracker/benefits",
   },
   openGraph: {
-    title: "Hydration Benefits | Water Tracker N Reminder",
+    title: "Mood Tracking Benefits | MoodTracker",
     description:
-      "Understand balanced water intake benefits and build sustainable hydration routines.",
-    url: "/watertracker/benefits",
+      "Understand how mood tracking supports daily awareness and better emotional habits.",
+    url: "/moodtracker/benefits",
     type: "article",
     images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hydration Benefits | Water Tracker N Reminder",
+    title: "Mood Tracking Benefits | MoodTracker",
     description:
-      "Evidence-aligned hydration guidance for better focus, energy, recovery, and routine quality.",
+      "Practical guidance on mood tracking for better awareness, communication, and routine quality.",
     images: [DEFAULT_OG_IMAGE],
   },
 };
 
 const sections = [
   {
-    id: "focus-energy",
-    title: "Focus and Energy Stability",
+    id: "self-awareness",
+    title: "Higher Emotional Awareness",
     summary:
-      "Mild dehydration can affect focus and perceived energy. Consistent intake through the day supports steadier mental performance.",
+      "Logging mood regularly helps you notice emotional shifts earlier and respond with intention instead of reacting late.",
     bullets: [
-      "Supports day-long concentration",
-      "Reduces irregular hydration crashes",
-      "Helps maintain stable work rhythm",
-    ],
-    image: {
-      src: "/watertrackerimages/5.png",
-      alt: "Hydration dashboard helping daily consistency",
-      caption: "Consistency support through daily tracking",
-    },
-  },
-  {
-    id: "digestion-recovery",
-    title: "Digestion and Recovery Support",
-    summary:
-      "Balanced hydration supports digestion and helps your body handle daily recovery needs, especially during active routines.",
-    bullets: [
-      "Supports digestion function",
-      "Helps maintain physical comfort",
-      "Improves routine adherence for active days",
+      "Recognize changes before they escalate",
+      "Build language around your feelings",
+      "Improve day-to-day emotional clarity",
     ],
   },
   {
-    id: "performance-heat",
-    title: "Performance and Heat Response",
+    id: "trigger-patterns",
+    title: "Recognize Triggers and Patterns",
     summary:
-      "During warm weather or training days, hydration planning helps reduce avoidable fatigue and performance drop-offs.",
+      "Trend history makes recurring triggers more visible, helping you adjust routines and boundaries with real data.",
     bullets: [
-      "Timely fluid reminders in long work/exercise blocks",
-      "Better awareness during hot conditions",
-      "Goal-based progress for high-activity days",
+      "Identify patterns tied to sleep, work, or social events",
+      "Spot better and worse days over time",
+      "Make proactive changes with confidence",
     ],
-    image: {
-      src: "/watertrackerimages/4.png",
-      alt: "Hydration reminder schedule for maintaining intake",
-      caption: "Reminder-driven hydration timing",
-    },
+  },
+  {
+    id: "stress-management",
+    title: "Better Stress Management",
+    summary:
+      "When stress is tracked consistently, coping actions become easier to evaluate and improve.",
+    bullets: [
+      "Use reminders to pause and check in",
+      "Track what helps during difficult moments",
+      "Build repeatable calming routines",
+    ],
   },
   {
     id: "habit-formation",
-    title: "Habit Formation Through Tracking",
+    title: "Habit Formation Through Check-ins",
     summary:
-      "The strongest benefit of a water tracker app is behavioral: visibility makes habits measurable and easier to maintain.",
+      "The strongest benefit of a mood tracker is behavioral: consistency turns reflection into a lasting habit.",
     bullets: [
-      "Turns hydration into a trackable routine",
+      "Turns reflection into a trackable routine",
       "Shows completion and consistency trends",
       "Improves adherence through simple daily feedback",
     ],
-    image: {
-      src: "/watertrackerimages/9.png",
-      alt: "Hydration trend chart for habit review",
-      caption: "Trend insight for long-term habit building",
+  },
+  {
+    id: "communication",
+    title: "Clearer Communication",
+    summary:
+      "Mood logs make it easier to communicate what you feel to trusted people, including therapists or support circles.",
+    bullets: [
+      "Use timeline history for better conversations",
+      "Share clearer context when needed",
+      "Reduce “I don’t know how I felt” moments",
     },
   },
   {
-    id: "personalization",
-    title: "Personalized Intake Workflow",
+    id: "privacy",
+    title: "Private Reflection Space",
     summary:
-      "Different people drink different fluids in different patterns. Custom drink types and units make plans realistic.",
+      "A local-first design encourages honesty. Private mood notes are easier to maintain when you trust where data lives.",
     bullets: [
-      "Custom drink list with flexible volume",
-      "Track in ml or oz based on preference",
-      "Better fit for real-world routines",
-    ],
-    image: {
-      src: "/watertrackerimages/8.png",
-      alt: "Custom drink type and volume setup",
-      caption: "Personalized drink setup for practical tracking",
-    },
-  },
-  {
-    id: "safe-balanced",
-    title: "Balanced vs Excessive Intake",
-    summary:
-      "More water is not always better. The goal is appropriate intake spread through the day, not overdrinking in short windows.",
-    bullets: [
-      "Use reminders for pacing, not overloading",
-      "Adjust target with climate and activity",
-      "Follow medical advice for clinical conditions",
+      "Local-first storage for personal confidence",
+      "Optional lock protection",
+      "More consistent journaling with stronger trust",
     ],
   },
 ];
 
 const faq = [
   {
-    q: "Is more water always better?",
-    a: "No. Hydration should be balanced and paced through the day. Excessive intake in short time can be harmful.",
+    q: "Do I need to write long notes each time?",
+    a: "No. Even quick one-tap entries are useful. Notes are optional and can be added when needed.",
   },
   {
-    q: "Does tea or coffee count toward hydration?",
-    a: "Yes, they contribute to total fluid intake for most people, though plain water remains a simple base option.",
+    q: "How often should I track mood?",
+    a: "Most users benefit from 2-4 check-ins per day, plus extra logs during major emotional shifts.",
   },
   {
-    q: "What is a practical way to improve hydration?",
-    a: "Set a realistic goal, schedule reminders, use custom drinks, and review trends weekly for consistency.",
+    q: "Can mood tracking replace therapy?",
+    a: "No. Mood tracking is a supportive self-awareness tool, not a replacement for professional mental health care.",
   },
   {
-    q: "Can a water reminder app help habit formation?",
-    a: "Yes. Reminders plus visible progress make daily hydration behavior easier to sustain.",
+    q: "Can reminders help consistency?",
+    a: "Yes. Gentle reminders significantly improve check-in consistency for most users.",
   },
 ];
 
-export default function WaterTrackerBenefitsPage() {
+export default function MoodTrackerBenefitsPage() {
   return (
     <>
       <BenefitsClient sections={[...sections]} faq={[...faq]} />
@@ -155,10 +135,10 @@ export default function WaterTrackerBenefitsPage() {
             "@graph": [
               {
                 "@type": "Article",
-                headline: "Benefits of Balanced Drinking and Hydration Tracking",
+                headline: "Benefits of Daily Mood Tracking",
                 description:
-                  "Practical hydration benefits and safe balanced intake principles for consistent daily routine.",
-                url: absoluteUrl("/watertracker/benefits"),
+                  "Practical mood tracking benefits for emotional awareness, pattern recognition, and healthier routines.",
+                url: absoluteUrl("/moodtracker/benefits"),
                 author: {
                   "@type": "Person",
                   name: "Subrata Kumar Das",
@@ -181,21 +161,21 @@ export default function WaterTrackerBenefitsPage() {
                   {
                     "@type": "ListItem",
                     position: 1,
-                    name: "Water Tracker",
-                    item: absoluteUrl("/watertracker"),
+                    name: "Mood Tracker",
+                    item: absoluteUrl("/moodtracker"),
                   },
                   {
                     "@type": "ListItem",
                     position: 2,
                     name: "Benefits",
-                    item: absoluteUrl("/watertracker/benefits"),
+                    item: absoluteUrl("/moodtracker/benefits"),
                   },
                 ],
               },
               {
                 "@type": "WebPage",
-                name: "Hydration Benefits | Water Tracker N Reminder",
-                url: absoluteUrl("/watertracker/benefits"),
+                name: "Mood Tracking Benefits | MoodTracker",
+                url: absoluteUrl("/moodtracker/benefits"),
               },
             ],
           }),

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useWaterTrackerScrollSpy } from "../components/useWaterTrackerScrollSpy";
+import { useMoodTrackerScrollSpy } from "../components/useWaterTrackerScrollSpy";
 
 type BenefitSection = {
   id: string;
@@ -22,7 +22,7 @@ type BenefitFaq = {
 };
 
 export default function BenefitsClient({ sections, faq }: { sections: BenefitSection[]; faq: BenefitFaq[] }) {
-  const { activeSection, jumpTo } = useWaterTrackerScrollSpy(sections.map((section) => section.id), sections[0]?.id);
+  const { activeSection, jumpTo } = useMoodTrackerScrollSpy(sections.map((section) => section.id), sections[0]?.id);
 
   return (
     <article>
@@ -87,12 +87,12 @@ export default function BenefitsClient({ sections, faq }: { sections: BenefitSec
           background: transparent;
         }
         .wtb-nav-btn:hover {
-          background: rgba(79, 136, 255, 0.1);
+          background: rgba(140, 88, 217, 0.1);
         }
         .wtb-nav-btn.active {
           color: #fff;
-          background: linear-gradient(140deg, #4f88ff, #3ec1ff);
-          box-shadow: 0 5px 14px rgba(31, 79, 157, 0.2);
+          background: linear-gradient(140deg, #8c58d9, #de6cb6);
+          box-shadow: 0 5px 14px rgba(95, 51, 160, 0.2);
         }
         .wtb-content {
           flex: 1;
@@ -137,7 +137,7 @@ export default function BenefitsClient({ sections, faq }: { sections: BenefitSec
           height: 8px;
           border-radius: 999px;
           margin-top: 6px;
-          background: linear-gradient(140deg, #4f88ff, #3ec1ff);
+          background: linear-gradient(140deg, #8c58d9, #de6cb6);
           flex-shrink: 0;
         }
         .wtb-shot {
@@ -223,7 +223,7 @@ export default function BenefitsClient({ sections, faq }: { sections: BenefitSec
           border: 1px solid transparent;
         }
         .wtb-btn-primary {
-          background: #3f82ff;
+          background: #8c58d9;
           color: #fff;
         }
         .wtb-btn-ghost {
@@ -263,10 +263,10 @@ export default function BenefitsClient({ sections, faq }: { sections: BenefitSec
       `}</style>
 
       <div className="wtb-hero">
-        <h1 className="wt-font-display">Benefits of Balanced Drinking and Hydration Tracking</h1>
+        <h1 className="wt-font-display">Benefits of Daily Mood Tracking</h1>
         <p>
-          Better hydration is not about drinking endlessly. It is about consistency, timing, and awareness.
-          This page explains practical hydration benefits and how a water tracker app helps build sustainable habits.
+          Better emotional health starts with awareness. This page explains how consistent mood tracking
+          supports reflection, clarity, and better day-to-day decisions.
         </p>
       </div>
 
@@ -329,12 +329,12 @@ export default function BenefitsClient({ sections, faq }: { sections: BenefitSec
               </div>
             ))}
             <div className="wtb-note">
-              General wellness information only. If you have kidney, heart, endocrine, or medically restricted fluid needs,
-              follow your clinician guidance for hydration targets.
+              General wellness information only. Mood tracking is supportive and not a substitute for professional care.
+              If your symptoms are severe or persistent, consult a qualified mental health professional.
             </div>
             <div className="wtb-actions">
-              <Link href="/watertracker" className="wtb-btn wtb-btn-primary">Back To Overview</Link>
-              <Link href="/watertracker/guide" className="wtb-btn wtb-btn-ghost">Open How-To Guide</Link>
+              <Link href="/moodtracker" className="wtb-btn wtb-btn-primary">Back To Overview</Link>
+              <Link href="/moodtracker/guide" className="wtb-btn wtb-btn-ghost">Open How-To Guide</Link>
             </div>
           </div>
         </div>

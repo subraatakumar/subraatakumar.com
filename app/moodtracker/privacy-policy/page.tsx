@@ -134,7 +134,7 @@ export default function PrivacyPolicyPage() {
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, color: 'var(--wt-navy-700)', fontWeight: 800, fontSize: 13, letterSpacing: '0.04em', textTransform: 'uppercase', marginBottom: 10 }}>
               <Droplets style={{ width: 16, height: 16 }} />
-              <span>Water Tracker N Reminder</span>
+              <span>MoodTracker</span>
             </div>
             <h1 className="wt-font-display wt-pp-h1" style={{ fontSize: 44, fontWeight: 800, color: 'var(--wt-navy-900)', margin: 0, letterSpacing: '-0.02em', lineHeight: 1.1 }}>
               Privacy Policy
@@ -153,17 +153,17 @@ export default function PrivacyPolicyPage() {
           }} className="wt-pp-email-box">
             <p style={{ fontSize: 12, fontWeight: 800, color: 'var(--wt-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', margin: '0 0 6px' }}>Privacy Questions?</p>
             <a
-              href="mailto:subraatakumar+watertracker@gmail.com"
+              href="mailto:subraatakumar+moodtracker@gmail.com"
               style={{ color: 'var(--wt-navy-700)', fontWeight: 800, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 4, fontSize: 13, wordBreak: 'break-all' }}
             >
-              subraatakumar+watertracker@gmail.com
+              subraatakumar+moodtracker@gmail.com
               <ChevronRight style={{ width: 14, height: 14, flexShrink: 0 }} />
             </a>
           </div>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 14, marginTop: 28 }}>
-          <HighlightCard icon={<HardDrive style={{ width: 16, height: 16 }} />} title="Local-First Logs" description="Your hydration logs are stored in a local Realm database on your device." />
+          <HighlightCard icon={<HardDrive style={{ width: 16, height: 16 }} />} title="Local-First Logs" description="Your mood logs are stored in a local database on your device." />
           <HighlightCard icon={<UserCheck style={{ width: 16, height: 16 }} />} title="No Login Needed" description="We do not collect names, emails, or credentials." />
           <HighlightCard icon={<Cloud style={{ width: 16, height: 16 }} />} title="Private Backups" description="Optional backups stay in your own iCloud or Google Drive." />
         </div>
@@ -224,7 +224,7 @@ export default function PrivacyPolicyPage() {
 
           <PolicySection id="offline-architecture" title="Offline-First Architecture" icon={<HardDrive style={{ width: 18, height: 18 }} />}>
             <p style={{ margin: '0 0 16px' }}>
-              <strong style={{ color: 'var(--wt-navy-900)' }}>Water Tracker N Reminder</strong> is built with a core philosophy of local privacy. Unlike traditional tracking apps, we do not require any account registration, email submission, or social media login to function.
+              <strong style={{ color: 'var(--wt-navy-900)' }}>MoodTracker</strong> is built with a core philosophy of local privacy. Unlike traditional tracking apps, we do not require any account registration, email submission, or social media login to function.
             </p>
             <div style={{
               background: 'rgba(79,136,255,0.07)',
@@ -235,7 +235,7 @@ export default function PrivacyPolicyPage() {
             }}>
               <p style={{ fontWeight: 800, color: 'var(--wt-navy-900)', margin: '0 0 6px', fontSize: 14 }}>Local Storage (Realm Database)</p>
               <p style={{ margin: 0, color: 'var(--wt-muted)', fontSize: 14 }}>
-                Your fluid intake logs, hydration reminder schedules, custom beverage lists, and personal goals are stored on your device using a local Realm database. We do not run a personal account system or a central hydration database for user profiles.
+                Your mood logs, reminder schedules, mood labels, and personal preferences are stored on your device using a local database. We do not run a personal account system or a central database for user profiles.
               </p>
             </div>
           </PolicySection>
@@ -243,10 +243,10 @@ export default function PrivacyPolicyPage() {
           <div style={{ height: 1, background: 'rgba(16,36,79,0.07)', margin: '0 0 48px' }} />
 
           <PolicySection id="collection" title="Data We Collect" icon={<Database style={{ width: 18, height: 18 }} />}>
-            <p style={{ margin: '0 0 16px' }}>In the absence of user accounts, we do not collect your name, email, or login credentials. Most hydration data remains on-device, and some technical data may be processed by platform or rewarded-ad providers:</p>
+            <p style={{ margin: '0 0 16px' }}>In the absence of user accounts, we do not collect your name, email, or login credentials. Most mood data remains on-device, and some technical data may be processed by platform or rewarded-ad providers:</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
               {[
-                { icon: <Droplets style={{ width: 15, height: 15 }} />, label: 'Hydration Logs', desc: 'Beverage types, volume amounts, and entry timestamps.' },
+                { icon: <Droplets style={{ width: 15, height: 15 }} />, label: 'Mood Logs', desc: 'Mood selections, optional notes, and entry timestamps.' },
                 { icon: <Smartphone style={{ width: 15, height: 15 }} />, label: 'Anonymous Diagnostics', desc: 'We may process non-identifiable crash reports and app version data to ensure the reliability of reminders.' },
                 { icon: <Share2 style={{ width: 15, height: 15 }} />, label: 'Rewarded Ad Data (AdMob)', desc: 'Google AdMob may process advertising identifiers, device information, approximate location, IP address, and ad interaction events to deliver and measure rewarded ads.' },
               ].map((item, i) => (
@@ -285,7 +285,7 @@ export default function PrivacyPolicyPage() {
           <div style={{ height: 1, background: 'rgba(16,36,79,0.07)', margin: '0 0 48px' }} />
 
           <PolicySection id="purchases" title="Subscriptions & In-App Purchases" icon={<CreditCard style={{ width: 18, height: 18 }} />}>
-            <p style={{ margin: '0 0 16px' }}><strong style={{ color: 'var(--wt-navy-900)' }}>Water Tracker N Reminder</strong> provides premium features through the platform's native commerce systems.</p>
+            <p style={{ margin: '0 0 16px' }}><strong style={{ color: 'var(--wt-navy-900)' }}>MoodTracker</strong> provides premium features through the platform's native commerce systems.</p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 14 }}>
               {[
                 { title: 'Secure Payments', desc: 'All transactions are processed by Apple (iOS) or Google (Android). The developer never sees or stores your credit card or billing details.' },
@@ -298,7 +298,7 @@ export default function PrivacyPolicyPage() {
               ))}
             </div>
             <p style={{ margin: '14px 0 0', fontSize: 14 }}>
-              Available Pro options: <strong style={{ color: 'var(--wt-navy-900)' }}>Water Tracker Pro Yearly</strong> (1 year, $9.99/year) and <strong style={{ color: 'var(--wt-navy-900)' }}>Water Tracker Pro One Time</strong> (lifetime, $49.99).
+              Available Pro options: <strong style={{ color: 'var(--wt-navy-900)' }}>MoodTracker Pro Yearly</strong> (1 year, $9.99/year) and <strong style={{ color: 'var(--wt-navy-900)' }}>MoodTracker Pro One Time</strong> (lifetime, $49.99).
             </p>
           </PolicySection>
 
@@ -351,9 +351,9 @@ export default function PrivacyPolicyPage() {
             <p style={{ margin: '0 0 16px' }}>Data processing supports both app functionality and ad delivery:</p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 10 }}>
               {[
-                'Calculating hydration goal completion',
+                'Calculating mood consistency and trend summaries',
                 'Scheduling local push notification reminders',
-                'Generating hydration trend charts',
+                'Generating mood trend charts',
                 'Restoring premium status via store receipts',
                 'Executing user-initiated cloud backups',
                 'Serving and measuring rewarded ads for 24-hour feature unlocks',
@@ -372,7 +372,7 @@ export default function PrivacyPolicyPage() {
             <p style={{ margin: '0 0 16px' }}>To provide a full experience, the app may request:</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
               {[
-                { label: 'Notifications', desc: 'Allows the app to send hydration reminders according to your schedule.' },
+                { label: 'Notifications', desc: 'Allows the app to send mood check-in reminders according to your schedule.' },
                 { label: 'Cloud Storage', desc: 'Allows the app to write backup files to your own iCloud or Google Drive account.' },
               ].map((p, i) => (
                 <div key={i} style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: 12, padding: '14px 18px', borderRadius: 14, background: 'rgba(79,136,255,0.05)', border: '1px solid rgba(16,36,79,0.09)' }}>
@@ -406,7 +406,7 @@ export default function PrivacyPolicyPage() {
 
           <PolicySection id="rights" title="User Rights" icon={<UserCheck style={{ width: 18, height: 18 }} />}>
             <p style={{ margin: 0, fontSize: 14 }}>
-              You retain full ownership of your hydration logs. You may modify, delete, or export your data at any time within the app settings. We do not require account registration; third-party services such as app stores and AdMob process limited technical data under their own privacy terms.
+              You retain full ownership of your mood logs. You may modify, delete, or export your data at any time within the app settings. We do not require account registration; third-party services such as app stores and AdMob process limited technical data under their own privacy terms.
             </p>
           </PolicySection>
 
@@ -428,7 +428,7 @@ export default function PrivacyPolicyPage() {
                   For any inquiries regarding this policy or the app's privacy architecture, please contact the developer:
                 </p>
                 <a
-                  href="mailto:subraatakumar+watertracker@gmail.com"
+                  href="mailto:subraatakumar+moodtracker@gmail.com"
                   style={{
                     display: 'inline-flex', alignItems: 'center', gap: 8,
                     background: '#fff', color: 'var(--wt-navy-900)',
@@ -440,7 +440,7 @@ export default function PrivacyPolicyPage() {
                   className="wt-pp-email-btn"
                 >
                   <Mail style={{ width: 15, height: 15 }} />
-                  subraatakumar+watertracker@gmail.com
+                  subraatakumar+moodtracker@gmail.com
                 </a>
               </div>
             </div>
@@ -448,7 +448,7 @@ export default function PrivacyPolicyPage() {
 
           <div style={{ marginTop: 52, paddingTop: 24, borderTop: '1px solid rgba(16,36,79,0.08)', textAlign: 'center' }}>
             <p style={{ fontSize: 11, fontWeight: 800, color: 'var(--wt-muted)', textTransform: 'uppercase', letterSpacing: '0.09em', margin: '0 0 4px' }}>
-              Water Tracker N Reminder
+              MoodTracker
             </p>
             <p style={{ fontSize: 12, color: 'var(--wt-muted)', margin: 0 }}>
               &copy; {new Date().getFullYear()} subraatakumar. All rights reserved.

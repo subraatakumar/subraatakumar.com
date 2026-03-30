@@ -3,66 +3,64 @@ import { DEFAULT_OG_IMAGE, absoluteUrl } from "@/lib/seo";
 import HomeClient from "./HomeClient";
 
 const IOS_URL =
-  process.env.NEXT_PUBLIC_WATERTRACKER_IOS_URL ??
-  "https://apps.apple.com/app/id6759248297";
+  process.env.NEXT_PUBLIC_MOODTRACKER_IOS_URL;
 const ANDROID_URL =
-  process.env.NEXT_PUBLIC_WATERTRACKER_ANDROID_URL ??
-  "https://play.google.com/store/apps/details?id=com.subraatakumar.watertracker";
+  process.env.NEXT_PUBLIC_MOODTRACKER_ANDROID_URL;
 
 const faq = [
   {
-    q: "What makes Water Tracker N Reminder a good water tracker app?",
-    a: "It combines quick logging, reminder schedules, trend insights, and local-first privacy controls without mandatory account setup.",
+    q: "What makes MoodTracker useful for daily mental wellness?",
+    a: "It combines quick mood logging, reminder schedules, trend insights, and local-first privacy controls without mandatory account setup.",
   },
   {
-    q: "Does this water reminder app support both ml and oz?",
-    a: "Yes, users can switch between ml and oz and track hydration with their preferred unit.",
+    q: "Can I log moods quickly during a busy day?",
+    a: "Yes. MoodTracker is designed for fast check-ins with optional notes, so entries stay lightweight and consistent.",
   },
   {
-    q: "Can I back up my hydration data?",
+    q: "Can I back up my mood history?",
     a: "Yes. The app supports backup and restore flows to help with device migration and data continuity.",
   },
   {
-    q: "Is WaterTracker privacy-first?",
-    a: "Core hydration data is designed for local-first storage, and users can enable PIN/biometric protection options.",
+    q: "Is MoodTracker privacy-first?",
+    a: "Core mood data is designed for local-first storage, and users can enable PIN/biometric protection options.",
   },
 ];
 
 export const metadata: Metadata = {
-  title: "Best Water Tracker App | Water Tracker N Reminder",
+  title: "Mood Tracker App | Daily Mood Journal & Insights",
   description:
-    "Water Tracker N Reminder is a privacy-first water tracker and water reminder app with quick logging, ml/oz support, reminders, trends, backup, and widget tools.",
+    "MoodTracker is a privacy-first mood tracker app with quick check-ins, reminders, trend insights, backup tools, and customizable mood labels.",
   keywords: [
-    "best water tracker app",
-    "best water reminder app",
-    "water tracker app",
-    "water reminder app",
-    "drink water reminder app",
-    "hydration reminder app",
-    "water intake tracker",
-    "Water Tracker N Reminder",
+    "mood tracker app",
+    "daily mood tracker",
+    "mood journal app",
+    "emotional wellness tracker",
+    "mental health tracking app",
+    "mood check in app",
+    "mood insights app",
+    "MoodTracker",
   ],
   alternates: {
-    canonical: "/watertracker",
+    canonical: "/moodtracker",
   },
   openGraph: {
-    title: "Best Water Tracker App | Water Tracker N Reminder",
+    title: "Mood Tracker App | Daily Mood Journal & Insights",
     description:
-      "Track water intake, set hydration reminders, and protect your logs with a privacy-first water tracker app.",
-    url: "/watertracker",
+      "Track mood, set gentle reminders, and protect your logs with a privacy-first mood tracker app.",
+    url: "/moodtracker",
     type: "website",
     images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Water Tracker App | Water Tracker N Reminder",
+    title: "Mood Tracker App | Daily Mood Journal & Insights",
     description:
-      "Water tracker + reminder app with custom drinks, trends, backup support, and local-first data model.",
+      "Mood tracker + reminder app with custom labels, trends, backup support, and local-first data model.",
     images: [DEFAULT_OG_IMAGE],
   },
 };
 
-export default function WaterTrackerPage() {
+export default function MoodTrackerPage() {
   return (
     <>
       <HomeClient iosUrl={IOS_URL} androidUrl={ANDROID_URL} />
@@ -74,16 +72,16 @@ export default function WaterTrackerPage() {
             "@graph": [
               {
                 "@type": "SoftwareApplication",
-                name: "Water Tracker N Reminder",
+                name: "MoodTracker",
                 applicationCategory: "HealthApplication",
                 operatingSystem: "iOS, Android",
-                url: absoluteUrl("/watertracker"),
+                url: absoluteUrl("/moodtracker"),
                 description:
-                  "Water tracker and water reminder app with custom drinks, ml/oz support, hydration trends, backup, and local-first privacy architecture.",
+                  "Mood tracker app with quick check-ins, reminders, trend insights, backup support, and local-first privacy architecture.",
                 featureList: [
-                  "Quick hydration logging",
+                  "Quick mood logging",
                   "Reminder scheduling",
-                  "Custom drink management",
+                  "Custom mood labels",
                   "Trend dashboard",
                   "PIN and biometric options",
                   "Backup and restore",
@@ -111,10 +109,10 @@ export default function WaterTrackerPage() {
               },
               {
                 "@type": "WebPage",
-                name: "Best Water Tracker App | Water Tracker N Reminder",
-                url: absoluteUrl("/watertracker"),
+                name: "Mood Tracker App | Daily Mood Journal & Insights",
+                url: absoluteUrl("/moodtracker"),
                 description:
-                  "Overview page for Water Tracker N Reminder with feature walkthrough, screenshots, and download links.",
+                  "Overview page for MoodTracker with feature walkthrough, benefits, and download links.",
               },
             ],
           }),

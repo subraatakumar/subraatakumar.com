@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useWaterTrackerScrollSpy } from "../components/useWaterTrackerScrollSpy";
+import { useMoodTrackerScrollSpy } from "../components/useWaterTrackerScrollSpy";
 
 type GuideSection = {
   id: string;
@@ -22,7 +22,7 @@ type GuideFaq = {
 };
 
 export default function GuideClient({ sections, faq }: { sections: GuideSection[]; faq: GuideFaq[] }) {
-  const { activeSection, jumpTo } = useWaterTrackerScrollSpy(sections.map((section) => section.id), sections[0]?.id);
+  const { activeSection, jumpTo } = useMoodTrackerScrollSpy(sections.map((section) => section.id), sections[0]?.id);
 
   return (
     <article>
@@ -88,12 +88,12 @@ export default function GuideClient({ sections, faq }: { sections: GuideSection[
           background: transparent;
         }
         .wtg-nav-btn:hover {
-          background: rgba(79, 136, 255, 0.1);
+          background: rgba(140, 88, 217, 0.1);
         }
         .wtg-nav-btn.active {
           color: #fff;
-          background: linear-gradient(140deg, #4f88ff, #3ec1ff);
-          box-shadow: 0 5px 14px rgba(31, 79, 157, 0.2);
+          background: linear-gradient(140deg, #8c58d9, #de6cb6);
+          box-shadow: 0 5px 14px rgba(95, 51, 160, 0.2);
         }
         .wtg-content {
           flex: 1;
@@ -132,7 +132,7 @@ export default function GuideClient({ sections, faq }: { sections: GuideSection[
           padding: 9px 10px;
           border-radius: 10px;
           background: rgba(79, 136, 255, 0.06);
-          border: 1px solid rgba(79, 136, 255, 0.12);
+          border: 1px solid rgba(140, 88, 217, 0.16);
           color: var(--wt-navy-900);
           font-size: 14px;
           font-weight: 700;
@@ -141,7 +141,7 @@ export default function GuideClient({ sections, faq }: { sections: GuideSection[
           width: 22px;
           height: 22px;
           border-radius: 999px;
-          background: linear-gradient(140deg, #4f88ff, #3ec1ff);
+          background: linear-gradient(140deg, #8c58d9, #de6cb6);
           color: #fff;
           font-size: 12px;
           font-weight: 800;
@@ -224,7 +224,7 @@ export default function GuideClient({ sections, faq }: { sections: GuideSection[
           border: 1px solid transparent;
         }
         .wtg-btn-primary {
-          background: #3f82ff;
+          background: #8c58d9;
           color: #fff;
         }
         .wtg-btn-ghost {
@@ -264,10 +264,10 @@ export default function GuideClient({ sections, faq }: { sections: GuideSection[
       `}</style>
 
       <div className="wtg-header">
-        <h1 className="wt-font-display">WaterTracker Setup and Usage Guide</h1>
+        <h1 className="wt-font-display">MoodTracker Setup and Usage Guide</h1>
         <p>
-          This guide mirrors the real WaterTracker app flow: setup goal, configure reminders,
-          manage drinks, log intake, monitor trends, and secure/backup your data.
+          This guide mirrors the real MoodTracker app flow: setup reminders,
+          create mood labels, log check-ins, monitor patterns, and secure/backup your data.
         </p>
       </div>
 
@@ -330,8 +330,8 @@ export default function GuideClient({ sections, faq }: { sections: GuideSection[
               </div>
             ))}
             <div className="wtg-actions">
-              <Link href="/watertracker" className="wtg-btn wtg-btn-primary">Back To Overview</Link>
-              <Link href="/watertracker/benefits" className="wtg-btn wtg-btn-ghost">Hydration Benefits</Link>
+              <Link href="/moodtracker" className="wtg-btn wtg-btn-primary">Back To Overview</Link>
+              <Link href="/moodtracker/benefits" className="wtg-btn wtg-btn-ghost">Mood Tracking Benefits</Link>
               <Link href="/contact" className="wtg-btn wtg-btn-ghost">Contact Support</Link>
             </div>
           </div>
