@@ -32,10 +32,10 @@ const products = [
     layout: "full",
   },
   {
-    title: "Blog",
-    slug: "blog",
-    desc: "A modern markdown-powered blog for engineering notes, architecture decisions, and practical product build logs.",
-    tags: ["Markdown", "Engineering Notes", "Architecture", "Product Thinking"],
+    title: "TCBS CLI",
+    slug: "tcbs-cli",
+    desc: "A developer CLI tool for managing build workflows and automating common mobile release tasks.",
+    tags: ["Node.js", "CLI"],
   },
   {
     title: "Offline Life Archive",
@@ -46,13 +46,19 @@ const products = [
   {
     title: "Water Tracker",
     slug: "watertracker",
-    desc: "A mobile app to track daily water intake with reminders and analytics for healthy hydration habits.",
+    desc: "A hydration app built on offline-first architecture with biometric security, iCloud/Google Drive backup, freemium monetisation, and custom reminder systems.",
     tags: ["React Native", "Health"],
+  },
+  {
+    title: "Mood Tracker",
+    slug: "moodtracker",
+    desc: "A mood tracking app built on offline-first architecture with biometric security, iCloud/Google Drive backup, freemium monetisation, and custom reminder systems.",
+    tags: ["React Native", "Health", "Privacy-First", "Wellbeing"],
   },
   {
     title: "PillTracker",
     slug: "pilltracker",
-    desc: "An offline-first medicine reminder app with timeline logging, inventory bills, and privacy-first local Realm storage.",
+    desc: "A medicine reminder app built on offline-first architecture with biometric security, iCloud/Google Drive backup, freemium monetisation, and custom reminder systems.",
     tags: ["React Native", "Health", "Offline-First", "Realm"],
   },
   {
@@ -60,12 +66,6 @@ const products = [
     slug: "shehealth",
     desc: "A women-first health platform delivering personalised care journeys and secure health tracking.",
     tags: ["React Native", "Firebase"],
-  },
-  {
-    title: "TCBS CLI",
-    slug: "tcbs-cli",
-    desc: "A developer CLI tool for managing build workflows and automating common mobile release tasks.",
-    tags: ["Node.js", "CLI"],
   },
 ];
 

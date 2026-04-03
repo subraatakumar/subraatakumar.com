@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import { DEFAULT_OG_IMAGE, absoluteUrl } from "@/lib/seo";
+import storeLinks from "@/config/store-links.json";
 import HomeClient from "./HomeClient";
 
-const IOS_URL =
-  process.env.NEXT_PUBLIC_MOODTRACKER_IOS_URL;
-const ANDROID_URL =
-  process.env.NEXT_PUBLIC_MOODTRACKER_ANDROID_URL;
+const IOS_URL = storeLinks.moodtracker.ios;
+const ANDROID_URL = storeLinks.moodtracker.android;
 
 const faq = [
   {

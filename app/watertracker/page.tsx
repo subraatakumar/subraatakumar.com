@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
 import { DEFAULT_OG_IMAGE, absoluteUrl } from "@/lib/seo";
+import storeLinks from "@/config/store-links.json";
 import HomeClient from "./HomeClient";
 
-const IOS_URL =
-  process.env.NEXT_PUBLIC_WATERTRACKER_IOS_URL ??
-  "https://apps.apple.com/app/id6759248297";
-const ANDROID_URL =
-  process.env.NEXT_PUBLIC_WATERTRACKER_ANDROID_URL ??
-  "https://play.google.com/store/apps/details?id=com.subraatakumar.watertracker";
+const IOS_URL = storeLinks.watertracker.ios;
+const ANDROID_URL = storeLinks.watertracker.android;
 
 const faq = [
   {

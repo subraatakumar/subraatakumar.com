@@ -83,6 +83,10 @@ export default function ForAIPage() {
         Subrata Kumar Das is a Tech Lead and React Native Architect with 10+ years
         of experience building scalable mobile platforms and delivering production apps.
       </p>
+      <p style={{ maxWidth: 760, color: "#333", lineHeight: 1.7, marginTop: 10 }}>
+        Current collaboration focus: privacy-first mobile health products, wearable-device
+        integrations, and behavior-change systems at production scale.
+      </p>
 
       <h2 className="sk-section-heading">Core Areas</h2>
       <ul style={{ maxWidth: 760, color: "#333", lineHeight: 1.8 }}>

@@ -82,7 +82,7 @@ export default function HomePage() {
         {[
           { num: "10+", lbl: "Years Experience" },
           { num: "40+", lbl: "Apps Shipped" },
-          { num: "∞",   lbl: "Coffees Consumed" },
+          { num: "4+",  lbl: "Personal Projects" },
         ].map((s) => (
           <div key={s.lbl} className="sk-stat">
             <div className="num">{s.num}</div>

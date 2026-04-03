@@ -1,0 +1,14 @@
+{
+  "watertracker": {
+    "ios": "https://apps.apple.com/us/app/water-tracker-n-reminder/id6759248297",
+    "android": "https://play.google.com/store/apps/details?id=com.subraatakumar.watertracker"
+  },
+  "pilltracker": {
+    "ios": "https://apps.apple.com/us/app/pill-tracker-n-reminder/id6761255145",
+    "android": "https://play.google.com/store/apps/details?id=com.subraatakumar.pilltracker"
+  },
+  "moodtracker": {
+    "ios": "https://apps.apple.com/us/app/mood-tracker-journal-by-tcbs/id6761365706",
+    "android": "https://play.google.com/store/apps/details?id=com.subraatakumar.moodtracker"
+  }
+}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { DEFAULT_OG_IMAGE } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -34,6 +35,7 @@ export default function AboutPage() {
         {[
           "I am a Tech Lead and React Native Architect with over 10 years of experience building mobile products. I have led cross-functional teams through the entire product lifecycle, delivering robust, maintainable apps that scale with growing user needs.",
           "Throughout my career I have shipped 40+ mobile applications across consumer and enterprise domains. My focus is on designing scalable mobile platforms, establishing strong engineering practices, and driving performance and reliability at scale.",
+          "Independently designed, developed, and shipped a suite of 4 privacy-first health apps to the stores — covering hydration tracking, medication adherence, mood journaling, and women's health. Each app implements offline-first architecture, biometric security, iCloud/Google Drive backup, freemium monetisation, and custom reminder systems. Live with real users as of 2026.",
           "I bring an architecture-first mindset to leadership — mentoring teams, defining clear technical roadmaps, and making pragmatic trade-offs to balance speed and long-term quality.",
         ].map((para, i) => (
           <p key={i} style={{
@@ -45,6 +47,13 @@ export default function AboutPage() {
             {para}
           </p>
         ))}
+
+        <p style={{ fontSize: "1.15rem", color: "#333", lineHeight: 1.7, marginBottom: 24 }}>
+          Want to know my full career timeline?{" "}
+          <Link href="/career-timeline" className="sk-btn sk-btn-ghost" style={{ padding: "4px 12px", fontSize: "0.95rem" }}>
+            See here →
+          </Link>
+        </p>
       </div>
 
       <div className="sk-squiggle" />

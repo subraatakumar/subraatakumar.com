@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import { DEFAULT_OG_IMAGE, absoluteUrl } from "@/lib/seo";
+import storeLinks from "@/config/store-links.json";
 import HomeClient from "./HomeClient";
 
-const IOS_URL = process.env.NEXT_PUBLIC_PILLTRACKER_IOS_URL;
-const ANDROID_URL =
-  process.env.NEXT_PUBLIC_PILLTRACKER_ANDROID_URL ??
-  "https://play.google.com/store/apps/details?id=com.subraatakumar.pilltracker";
+const IOS_URL = storeLinks.pilltracker.ios;
+const ANDROID_URL = storeLinks.pilltracker.android;
 
 const featureList = [
   "Medication management with reminder scheduling",
