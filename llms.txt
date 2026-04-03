@@ -7,6 +7,9 @@
 Subrata Kumar Das is a Tech Lead and React Native Architect with 10+ years of experience building scalable mobile platforms.
 The website contains portfolio pages, an active 180-day technical mentorship writing series, and a 24-week AI-native engineering build series.
 
+## Collaboration Focus
+Collaboration focus: selective work with teams building consumer health, quantified-self, and habit-formation platforms (mobile + data + AI).
+
 ## High-value pages
 - Home: https://subraatakumar.com/
 - About: https://subraatakumar.com/about

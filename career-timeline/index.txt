@@ -1,0 +1,257 @@
+1:"$Sreact.fragment"
+9:I[68027,[],"default"]
+:HL["/_next/static/chunks/a99ebf15a758c58a.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","style"]
+2:T19f5,
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+
+          body {
+            background: #fafaf7;
+            font-family: 'Caveat', cursive;
+            color: #1a1a2e;
+          }
+
+          /* ── Nav ── */
+          .sk-header {
+            background: #fff;
+            border-bottom: 2.5px solid #1a1a2e;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+          }
+          .sk-header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .sk-logo {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.55rem;
+            color: #1a1a2e;
+            text-decoration: none;
+            letter-spacing: 0.01em;
+          }
+          .sk-nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+          }
+          .sk-nav-links a {
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+            padding-bottom: 2px;
+          }
+          .sk-nav-links a:hover {
+            text-decoration: underline wavy #2563eb 2px;
+            text-underline-offset: 4px;
+          }
+          .sk-nav-mobile {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 14px;
+          }
+          .sk-nav-mobile ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+          }
+          .sk-nav-mobile a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+          }
+
+          /* ── Footer ── */
+          .sk-footer {
+            border-top: 2.5px solid #1a1a2e;
+            background: #fff;
+            padding: 24px;
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+          }
+
+          /* ── Shared section ── */
+          .sk-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+          }
+          .sk-page-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            margin-bottom: 8px;
+            line-height: 1.1;
+          }
+          .sk-section-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.9rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+          .sk-section-heading::after {
+            content: '';
+            flex: 1;
+            border-top: 2px dashed #9ca3af;
+          }
+
+          /* ── Squiggle divider ── */
+          .sk-squiggle {
+            width: 100%;
+            height: 8px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 4 Q5 0 10 4 Q15 8 20 4 Q25 0 30 4 Q35 8 40 4' stroke='%239ca3af' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") repeat-x center;
+            opacity: 0.55;
+            margin: 36px 0;
+          }
+
+          /* ── Sketch button ── */
+          .sk-btn {
+            display: inline-block;
+            padding: 10px 26px;
+            background: #2563eb;
+            color: #fff;
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 3px 3px 0 #1a1a2e;
+            transition: transform 0.1s, box-shadow 0.1s;
+          }
+          .sk-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 #1a1a2e;
+          }
+          .sk-btn-ghost {
+            background: transparent;
+            color: #1a1a2e;
+            box-shadow: 3px 3px 0 #9ca3af;
+          }
+          .sk-btn-ghost:hover {
+            box-shadow: 5px 5px 0 #9ca3af;
+          }
+
+          /* ── Tag chip ── */
+          .sk-tag {
+            display: inline-block;
+            padding: 3px 13px;
+            border: 2px solid #1a1a2e;
+            border-radius: 2px;
+            font-size: 1rem;
+            font-weight: 600;
+            background: #fff;
+            margin: 3px;
+          }
+          .sk-tag.active {
+            background: #2563eb;
+            color: #fff;
+          }
+
+          /* ── Card ── */
+          .sk-card {
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 5px 5px 0 #1a1a2e;
+            padding: 24px;
+            transition: transform 0.15s, box-shadow 0.15s;
+          }
+          .sk-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0 #1a1a2e;
+          }
+
+          /* ── Stat card ── */
+          .sk-stat {
+            flex: 1;
+            min-width: 130px;
+            text-align: center;
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 4px 4px 0 #1a1a2e;
+            padding: 20px 12px;
+          }
+          .sk-stat .num {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            color: #2563eb;
+            line-height: 1;
+          }
+          .sk-stat .lbl {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 4px;
+          }
+
+          /* ── Image placeholder ── */
+          .sk-img {
+            width: 100%;
+            height: 160px;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            background: #f3f4f6;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 16px;
+          }
+          .sk-img::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+              linear-gradient(to bottom right, transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px)),
+              linear-gradient(to bottom left,  transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px));
+          }
+
+          @media (max-width: 640px) {
+            .sk-nav-links { display: none; }
+            .sk-nav-mobile { display: block; }
+            .sk-page-heading { font-size: 2.2rem; }
+          }
+        0:{"P":null,"b":"IYcthc9b6gNt6RWXZHMCS","c":["","career-timeline",""],"q":"","i":false,"f":[[["",{"children":["career-timeline",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/a99ebf15a758c58a.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{},null,false,false]},null,false,false]},null,false,false],"$L8",false]],"m":"$undefined","G":["$9",[]],"S":true}
+a:I[22016,["/_next/static/chunks/7c92e96509cd355e.js"],""]
+b:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+c:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+1d:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"ViewportBoundary"]
+1f:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"MetadataBoundary"]
+20:"$Sreact.suspense"
+3:["$","header",null,{"className":"sk-header","children":[["$","div",null,{"className":"sk-header-inner","children":[["$","$La",null,{"href":"/","className":"sk-logo","children":"SKD_"}],["$","nav",null,{"aria-label":"Primary","children":["$","ul",null,{"className":"sk-nav-links","children":[["$","li",null,{"children":["$","$La",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/contact","children":"Contact"}]}]]}]}]]}],["$","div",null,{"className":"sk-nav-mobile","children":["$","nav",null,{"aria-label":"Mobile","children":["$","ul",null,{"children":[["$","li",null,{"children":["$","$La",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/contact","children":"Contact"}]}]]}]}]}]]}]
+4:["$","main",null,{"style":{"width":"100%"},"children":["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
+5:["$","footer",null,{"className":"sk-footer","children":["© ",2026," Subrata Kumar Das. All rights reserved. ·"," ",["$","$La",null,{"href":"/for-ai","children":"For AI/Crawlers"}]]}]
+6:["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+7:["$","$1","c",{"children":[["$","div",null,{"className":"sk-page","children":[["$","h1",null,{"className":"sk-page-heading","children":"Full Career Timeline"}],["$","p",null,{"style":{"fontSize":"1.1rem","color":"#555","marginTop":8,"marginBottom":0},"children":"A detailed timeline of education, transitions, and roles from 1996 to present."}],["$","div",null,{"className":"sk-squiggle","style":{"marginTop":16}}],["$","div",null,{"style":{"border":"2px solid #1f2937","background":"#fff"},"children":["$","table",null,{"style":{"width":"100%","borderCollapse":"collapse","tableLayout":"fixed"},"children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th","Period",{"style":{"textAlign":"left","padding":"12px 14px","border":"2px solid #1f2937","fontSize":"1rem","letterSpacing":"0.04em","textTransform":"uppercase","color":"#1f2937"},"children":"Period"}],["$","th","Role",{"style":{"textAlign":"left","padding":"12px 14px","border":"2px solid #1f2937","fontSize":"1rem","letterSpacing":"0.04em","textTransform":"uppercase","color":"#1f2937"},"children":"Role"}],["$","th","Organisation",{"style":{"textAlign":"left","padding":"12px 14px","border":"2px solid #1f2937","fontSize":"1rem","letterSpacing":"0.04em","textTransform":"uppercase","color":"#1f2937"},"children":"Organisation"}]]}]}],["$","tbody",null,{"children":[["$","tr","1996-Mechanical Diploma",{"children":[["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"18%","fontWeight":700,"background":"#edf4ff"},"children":"1996"}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"47%","lineHeight":1.45,"background":"#edf4ff"},"children":[["$","div",null,{"style":{"fontWeight":700,"marginBottom":0},"children":"Mechanical Diploma"}],null]}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"35%","lineHeight":1.45,"background":"#edf4ff"},"children":"SMIT"}]]}],["$","tr","1996–1997-Supervisor",{"children":[["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"18%","fontWeight":700,"background":"#fff"},"children":"1996–1997"}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"47%","lineHeight":1.45,"background":"#fff"},"children":[["$","div",null,{"style":{"fontWeight":700,"marginBottom":0},"children":"Supervisor"}],null]}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"35%","lineHeight":1.45,"background":"#fff"},"children":"BPCL vendor, Mumbai"}]]}],["$","tr","1997-Health crisis → returned to Odisha",{"children":[["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"18%","fontWeight":700,"background":"#fff"},"children":"1997"}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"47%","lineHeight":1.45,"background":"#fff"},"children":[["$","div",null,{"style":{"fontWeight":700,"marginBottom":0},"children":"Health crisis → returned to Odisha"}],null]}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"35%","lineHeight":1.45,"background":"#fff"},"children":"—"}]]}],["$","tr","1997–2004-C Programming Teacher",{"children":[["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"18%","fontWeight":700,"background":"#fff"},"children":"1997–2004"}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"47%","lineHeight":1.45,"background":"#fff"},"children":[["$","div",null,{"style":{"fontWeight":700,"marginBottom":0},"children":"C Programming Teacher"}],null]}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"35%","lineHeight":1.45,"background":"#fff"},"children":"Lakhotia Computer Center"}]]}],["$","tr","1997-6-month computer course",{"children":[["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"18%","fontWeight":700,"background":"#edf4ff"},"children":"1997"}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"47%","lineHeight":1.45,"background":"#edf4ff"},"children":[["$","div",null,{"style":{"fontWeight":700,"marginBottom":0},"children":"6-month computer course"}],null]}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"35%","lineHeight":1.45,"background":"#edf4ff"},"children":"APTECH"}]]}],["$","tr","2004-2006-Officer (data)",{"children":["$Ld","$Le","$Lf"]}],"$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18","$L19","$L1a","$L1b"]}]]}]}]]}],null,"$L1c"]}]
+8:["$","$1","h",{"children":[null,["$","$L1d",null,{"children":"$L1e"}],["$","div",null,{"hidden":true,"children":["$","$L1f",null,{"children":["$","$20",null,{"name":"Next.Metadata","children":"$L21"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+22:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+d:["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"18%","fontWeight":700,"background":"#fff"},"children":"2004-2006"}]
+e:["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"47%","lineHeight":1.45,"background":"#fff"},"children":[["$","div",null,{"style":{"fontWeight":700,"marginBottom":0},"children":"Officer (data)"}],null]}]
+f:["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"35%","lineHeight":1.45,"background":"#fff"},"children":"Sahara India Financial Corp"}]
+10:["$","tr","2006–2009-Sr. Officer (audit + data)",{"children":[["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"18%","fontWeight":700,"background":"#fff"},"children":"2006–2009"}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"47%","lineHeight":1.45,"background":"#fff"},"children":[["$","div",null,{"style":{"fontWeight":700,"marginBottom":0},"children":"Sr. Officer (audit + data)"}],null]}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"35%","lineHeight":1.45,"background":"#fff"},"children":"Sahara India Financial Corp"}]]}]
+11:["$","tr","2009–2014-Jr. Executive / Asst. Sector Manager (4 branches)",{"children":[["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"18%","fontWeight":700,"background":"#fff"},"children":"2009–2014"}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"47%","lineHeight":1.45,"background":"#fff"},"children":[["$","div",null,{"style":{"fontWeight":700,"marginBottom":0},"children":"Jr. Executive / Asst. Sector Manager (4 branches)"}],null]}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"35%","lineHeight":1.45,"background":"#fff"},"children":"Sahara India Financial Corp"}]]}]
+12:["$","tr","2009–2011-BSc IT — while working at Sahara",{"children":[["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"18%","fontWeight":700,"background":"#edf4ff"},"children":"2009–2011"}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"47%","lineHeight":1.45,"background":"#edf4ff"},"children":[["$","div",null,{"style":{"fontWeight":700,"marginBottom":0},"children":"BSc IT — while working at Sahara"}],null]}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"35%","lineHeight":1.45,"background":"#edf4ff"},"children":"Disha College / Punjab Technical University (Evening Class)"}]]}]
+13:["$","tr","2011-2013-MSc IT — while working at Sahara",{"children":[["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"18%","fontWeight":700,"background":"#edf4ff"},"children":"2011-2013"}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"47%","lineHeight":1.45,"background":"#edf4ff"},"children":[["$","div",null,{"style":{"fontWeight":700,"marginBottom":0},"children":"MSc IT — while working at Sahara"}],null]}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"35%","lineHeight":1.45,"background":"#edf4ff"},"children":"Disha College / Punjab Technical University (Evening Class)"}]]}]
+14:["$","tr","2014-Left Sahara (SEBI/RBI issue)",{"children":[["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"18%","fontWeight":700,"background":"#fff"},"children":"2014"}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"47%","lineHeight":1.45,"background":"#fff"},"children":[["$","div",null,{"style":{"fontWeight":700,"marginBottom":0},"children":"Left Sahara (SEBI/RBI issue)"}],null]}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"35%","lineHeight":1.45,"background":"#fff"},"children":"—"}]]}]
+15:["$","tr","2014–2020-Co-Founder & Tech Lead; shipped 40 Android apps across 40 cities in Odisha",{"children":[["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"18%","fontWeight":700,"background":"#fff"},"children":"2014–2020"}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"47%","lineHeight":1.45,"background":"#fff"},"children":[["$","div",null,{"style":{"fontWeight":700,"marginBottom":0},"children":"Co-Founder & Tech Lead; shipped 40 Android apps across 40 cities in Odisha"}],null]}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"35%","lineHeight":1.45,"background":"#fff"},"children":"Tankadhar Training & Research Center (EdTech)"}]]}]
+16:["$","tr","2020–2021-Covid pause — transition to mobile dev jobs",{"children":[["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"18%","fontWeight":700,"background":"#fff"},"children":"2020–2021"}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"47%","lineHeight":1.45,"background":"#fff"},"children":[["$","div",null,{"style":{"fontWeight":700,"marginBottom":0},"children":"Covid pause — transition to mobile dev jobs"}],null]}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"35%","lineHeight":1.45,"background":"#fff"},"children":"—"}]]}]
+17:["$","tr","2021–2022-React Native Developer (remote)",{"children":[["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"18%","fontWeight":700,"background":"#fff"},"children":"2021–2022"}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"47%","lineHeight":1.45,"background":"#fff"},"children":[["$","div",null,{"style":{"fontWeight":700,"marginBottom":0},"children":"React Native Developer (remote)"}],null]}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"35%","lineHeight":1.45,"background":"#fff"},"children":"Skin Theory, Berlin"}]]}]
+18:["$","tr","2022–2023-Sr. Software Engineer (remote);",{"children":[["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"18%","fontWeight":700,"background":"#fff"},"children":"2022–2023"}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"47%","lineHeight":1.45,"background":"#fff"},"children":[["$","div",null,{"style":{"fontWeight":700,"marginBottom":0},"children":"Sr. Software Engineer (remote);"}],null]}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"35%","lineHeight":1.45,"background":"#fff"},"children":"NeoSoft Technologies (Indian Insurance client)"}]]}]
+19:["$","tr","2022–2024-M.Tech CS (AI & ML) — while working",{"children":[["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"18%","fontWeight":700,"background":"#edf4ff"},"children":"2022–2024"}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"47%","lineHeight":1.45,"background":"#edf4ff"},"children":[["$","div",null,{"style":{"fontWeight":700,"marginBottom":0},"children":"M.Tech CS (AI & ML) — while working"}],null]}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"35%","lineHeight":1.45,"background":"#edf4ff"},"children":"Mangalayatan University WILP"}]]}]
+1a:["$","tr","2023–2024-Sr. Software Engineer (remote)",{"children":[["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"18%","fontWeight":700,"background":"#fff"},"children":"2023–2024"}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"47%","lineHeight":1.45,"background":"#fff"},"children":[["$","div",null,{"style":{"fontWeight":700,"marginBottom":0},"children":"Sr. Software Engineer (remote)"}],null]}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"35%","lineHeight":1.45,"background":"#fff"},"children":"RIKTAM Technologies (Philipines Ecommerce client)"}]]}]
+1b:["$","tr","2024–Present-Tech Lead (remote)",{"children":[["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"18%","fontWeight":700,"background":"#fff"},"children":"2024–Present"}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"47%","lineHeight":1.45,"background":"#fff"},"children":[["$","div",null,{"style":{"fontWeight":700,"marginBottom":8},"children":"Tech Lead (remote)"}],["$","ul",null,{"style":{"margin":0,"paddingLeft":18},"children":[["$","li","BLE medical device integration (blood pressure monitors, bladder sensors) in React Native",{"style":{"marginBottom":6},"children":"BLE medical device integration (blood pressure monitors, bladder sensors) in React Native"}],["$","li","FedRAMP Moderate + HIPAA-aligned encryption and secure storage implementation",{"style":{"marginBottom":6},"children":"FedRAMP Moderate + HIPAA-aligned encryption and secure storage implementation"}],["$","li","On-device AI integration for medical device interpretation in React Native app",{"style":{"marginBottom":6},"children":"On-device AI integration for medical device interpretation in React Native app"}],["$","li","React Native version migration 0.59 → 0.76.6 (full New Architecture migration)",{"style":{"marginBottom":6},"children":"React Native version migration 0.59 → 0.76.6 (full New Architecture migration)"}]]}]]}],["$","td",null,{"style":{"border":"2px solid #1f2937","padding":"12px 14px","verticalAlign":"top","width":"35%","lineHeight":1.45,"background":"#fff"},"children":"Krish Services Group (US healthcare client)"}]]}]
+1c:["$","$L22",null,{"children":["$","$20",null,{"name":"Next.MetadataOutlet","children":"$@23"}]}]
+1e:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+24:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"IconMark"]
+21:[["$","title","0",{"children":"Career Timeline | Subrata Kumar Das"}],["$","meta","1",{"name":"description","content":"Full career timeline of Subrata Kumar Das."}],["$","meta","2",{"name":"keywords","content":"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"}],["$","link","3",{"rel":"canonical","href":"https://subraatakumar.com/career-timeline/"}],["$","meta","4",{"property":"og:title","content":"Career Timeline | Subrata Kumar Das"}],["$","meta","5",{"property":"og:description","content":"Full career timeline of Subrata Kumar Das."}],["$","meta","6",{"property":"og:url","content":"https://subraatakumar.com/career-timeline/"}],["$","meta","7",{"property":"og:image","content":"https://subraatakumar.com/images/interview.png"}],["$","meta","8",{"property":"og:type","content":"profile"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"Career Timeline | Subrata Kumar Das"}],["$","meta","11",{"name":"twitter:description","content":"Full career timeline of Subrata Kumar Das."}],["$","meta","12",{"name":"twitter:image","content":"https://subraatakumar.com/images/interview.png"}],["$","link","13",{"rel":"icon","href":"/favicon.ico?favicon.750fd6b3.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L24","14",{}]]
+23:null
