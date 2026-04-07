@@ -436,28 +436,43 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
           }
           .wth-hero-panel {
             width: min(96%, 520px);
-            margin-left: 0;
+            margin-left: -70px;
             background: transparent;
             border-color: transparent;
             box-shadow: none;
+            margin-top: -30px;
           }
           .wth-feature-ribbon {
             margin-top: 14px;
+            margin-left: -40px;
           }
           .wth-feature-badges {
             display: grid;
-            gap: 8px;
-            justify-items: center;
+            gap: 10px;
+            justify-items: start;
+            width: auto;
           }
           .wth-feature-badge-row {
-            width: clamp(230px, 62vw, 320px);
-            min-height: clamp(132px, 32vw, 196px);
+            width: clamp(220px, 58vw, 290px);
+            min-height: clamp(132px, 34vw, 188px);
+            justify-self: start;
+            justify-content: center;
           }
           .wth-feature-badge-row::before {
-            background-size: clamp(202px, 55.2vw, 300px) auto;
+            inset: 0;
+            left: auto;
+            top: auto;
+            transform: none;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: 100% auto;
           }
           .wth-feature-badge {
             font-size: 11px;
+            width: 62%;
+            margin: 0 auto;
+            line-height: 1.28;
           }
           .wth-store-row {
             flex-direction: column;
