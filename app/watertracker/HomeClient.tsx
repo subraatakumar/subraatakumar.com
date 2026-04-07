@@ -438,6 +438,10 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
             height: 62px;
             flex: 0 0 auto;
           }
+          .wth-store-button-play {
+            transform: scale(1.33);
+            transform-origin: center;
+          }
           .wth-layout { flex-direction: column; }
           .wth-sidebar { display: none; }
           .wth-mobile-jumps {
