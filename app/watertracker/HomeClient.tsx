@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Droplets, ShieldCheck, BellRing, LineChart, Paintbrush2, Cloud, Smartphone, ChevronRight } from "lucide-react";
+import { LineChart, Paintbrush2, Cloud, Smartphone, ChevronRight } from "lucide-react";
 import { useWaterTrackerScrollSpy } from "./components/useWaterTrackerScrollSpy";
 
 type HomeSection = {
@@ -123,44 +123,109 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
     <section>
       <style>{`
         .wth-hero {
-          border-radius: 26px;
-          border: 1px solid rgba(16, 36, 79, 0.12);
+          position: relative;
+          overflow: hidden;
+          border-radius: 0;
+          border: none;
           background:
-            radial-gradient(circle at 7% 8%, rgba(111, 192, 255, 0.26), transparent 36%),
-            radial-gradient(circle at 92% 84%, rgba(98, 201, 255, 0.24), transparent 34%),
-            linear-gradient(145deg, #0e2a66 0%, #1a4a98 46%, #2d73d1 100%);
-          padding: 38px;
-          color: #eaf7ff;
+            linear-gradient(106deg, rgba(3, 18, 48, 0.12) 12%, rgba(4, 24, 66, 0.42) 40%, rgba(8, 39, 92, 0.74) 68%, rgba(10, 51, 114, 0.86) 100%),
+            url("/watertrackerimages/home_page_img1.png");
+          background-size: cover;
+          background-position: center;
+          min-height: calc(100vh - 68px);
+          padding: clamp(22px, 4vw, 42px);
+          margin-left: calc(50% - 50vw);
+          margin-right: calc(50% - 50vw);
+          margin-top: -26px;
           margin-bottom: 26px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
         }
-        .wth-badges {
+        .wth-hero-panel {
+          width: min(530px, 100%);
+          border: 1px solid rgba(228, 242, 255, 0.3);
+          border-radius: 20px;
+          background: linear-gradient(160deg, rgba(6, 26, 66, 0.72) 0%, rgba(9, 45, 106, 0.84) 100%);
+          box-shadow: 0 18px 42px rgba(6, 20, 48, 0.34);
+          padding: clamp(18px, 3vw, 30px);
+          color: #eff8ff;
+          margin-left: clamp(12px, 5vw, 110px);
+        }
+        .wth-hero-title {
+          margin: 0;
+          font-size: clamp(1.7rem, 3.8vw, 3rem);
+          line-height: 1.06;
+          letter-spacing: -0.03em;
+          text-wrap: balance;
+        }
+        .wth-feature-ribbon {
+          margin-top: 16px;
+          display: grid;
+          grid-template-columns: auto 1fr auto;
+          align-items: center;
+          gap: 10px;
+        }
+        .wth-laurel {
+          width: clamp(42px, 6vw, 84px);
+          height: auto;
+          opacity: 0.9;
+          filter: drop-shadow(0 6px 14px rgba(5, 19, 44, 0.45));
+        }
+        .wth-laurel-right {
+          transform: scaleX(-1);
+        }
+        .wth-feature-badges {
           display: flex;
           flex-wrap: wrap;
           gap: 8px;
-          margin-bottom: 16px;
+          justify-content: center;
         }
-        .wth-badge {
+        .wth-feature-badge {
           font-size: 11px;
           font-weight: 800;
           letter-spacing: 0.06em;
           text-transform: uppercase;
           border: 1px solid rgba(234, 247, 255, 0.36);
-          border-radius: 999px;
-          background: rgba(234, 247, 255, 0.12);
-          padding: 6px 10px;
+          border-radius: 10px;
+          background: rgba(223, 244, 255, 0.14);
+          padding: 7px 10px;
+          color: #e7f5ff;
+          text-align: center;
         }
-        .wth-hero h1 {
-          margin: 0;
-          font-size: clamp(2rem, 4.8vw, 3.9rem);
-          letter-spacing: -0.03em;
-          line-height: 1.03;
+        .wth-store-row {
+          margin-top: 18px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          gap: 10px;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
         }
-        .wth-hero p {
-          margin: 14px 0 0;
-          color: #cce9ff;
-          line-height: 1.7;
-          max-width: 760px;
-          font-size: 1.03rem;
+        .wth-store-link {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          flex: 0 0 calc((100% - 10px) / 2);
+          min-width: 0;
+          width: calc((100% - 10px) / 2);
+          height: 64px;
+          border-radius: 12px;
+          transition: transform 0.15s ease, filter 0.15s ease;
+        }
+        .wth-store-link:hover {
+          transform: translateY(-1px);
+          filter: brightness(1.04);
+        }
+        .wth-store-button {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+        .wth-store-button-play {
+          transform: scale(1.5);
+          transform-origin: center;
         }
         .wth-cta-row {
           margin-top: 20px;
@@ -348,7 +413,31 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
           display: none;
         }
         @media (max-width: 860px) {
-          .wth-hero { padding: 28px 18px; }
+          .wth-hero {
+            justify-content: center;
+            min-height: calc(100vh - 56px);
+          }
+          .wth-hero-panel {
+            width: min(96%, 520px);
+            margin-left: 0;
+          }
+          .wth-feature-ribbon {
+            grid-template-columns: 1fr;
+            gap: 7px;
+          }
+          .wth-laurel {
+            display: none;
+          }
+          .wth-store-row {
+            flex-direction: column;
+            align-items: stretch;
+          }
+          .wth-store-link {
+            justify-content: center;
+            width: 210px;
+            height: 62px;
+            flex: 0 0 auto;
+          }
           .wth-layout { flex-direction: column; }
           .wth-sidebar { display: none; }
           .wth-mobile-jumps {
@@ -376,32 +465,53 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
           }
           .wth-card { padding: 22px 16px; }
         }
+        @media (max-width: 760px) {
+          .wth-hero {
+            margin-top: -22px;
+          }
+          .wth-store-link {
+            width: 196px;
+            height: 58px;
+          }
+        }
       `}</style>
 
       <div className="wth-hero">
-        <div className="wth-badges" aria-label="Water tracker highlights">
-          <span className="wth-badge"><Droplets size={12} /> Privacy-First</span>
-          <span className="wth-badge"><BellRing size={12} /> Smart Reminders</span>
-          <span className="wth-badge"><ShieldCheck size={12} /> Local-First Logs</span>
-        </div>
-        <h1 className="wt-font-display">Best Water Tracker App For Daily Hydration Consistency</h1>
-        <p>
-          Water Tracker N Reminder helps you log intake fast, set reminder schedules, and keep control of hydration data.
-          No mandatory account, flexible ml/oz units, and practical tools for reminders, trends, backups, and personalization.
-        </p>
-        <div className="wth-cta-row">
-          {iosUrl ? (
-            <a href={iosUrl} target="_blank" rel="noopener noreferrer" className="wth-btn wth-btn-primary">Download on App Store</a>
-          ) : (
-            <span className="wth-btn wth-btn-secondary">App Store Link Pending</span>
-          )}
-          {androidUrl ? (
-            <a href={androidUrl} target="_blank" rel="noopener noreferrer" className="wth-btn wth-btn-secondary">Get it on Play Store</a>
-          ) : (
-            <span className="wth-btn wth-btn-secondary">Play Store Under Review</span>
-          )}
-          <Link href="/watertracker/guide" className="wth-btn wth-btn-secondary">How To Use</Link>
-          <Link href="/watertracker/benefits" className="wth-btn wth-btn-secondary">Hydration Benefits</Link>
+        <div className="wth-hero-panel">
+          <h1 className="wt-font-display wth-hero-title">Water Tracker N Reminder</h1>
+          <div className="wth-feature-ribbon" aria-label="Water Tracker core features">
+            <Image src="/images/png-tree-award.png" alt="" aria-hidden width={4961} height={3543} className="wth-laurel" />
+            <div className="wth-feature-badges">
+              <span className="wth-feature-badge">Offline • No Login • Private</span>
+              <span className="wth-feature-badge">Smart Reminders</span>
+              <span className="wth-feature-badge">Insightful Trend Charts</span>
+            </div>
+            <Image src="/images/png-tree-award.png" alt="" aria-hidden width={4961} height={3543} className="wth-laurel wth-laurel-right" />
+          </div>
+          <div className="wth-store-row">
+            {iosUrl ? (
+              <a href={iosUrl} target="_blank" rel="noopener noreferrer" className="wth-store-link" aria-label="Download on the App Store">
+                <Image
+                  src="/images/appstore-button-download.svg"
+                  alt="Download on the App Store"
+                  width={240}
+                  height={80}
+                  className="wth-store-button"
+                />
+              </a>
+            ) : null}
+            {androidUrl ? (
+              <a href={androidUrl} target="_blank" rel="noopener noreferrer" className="wth-store-link" aria-label="Get it on Google Play">
+                <Image
+                  src="/images/playstore-button-download.png"
+                  alt="Get it on Google Play"
+                  width={646}
+                  height={250}
+                  className="wth-store-button wth-store-button-play"
+                />
+              </a>
+            ) : null}
+          </div>
         </div>
       </div>
 

@@ -150,6 +150,22 @@ export default function WaterTrackerLayout({ children }: { children: React.React
           border-color: rgba(31, 79, 157, 0.45);
           color: var(--wt-navy-700);
         }
+        .wt-footer-attribution {
+          width: 100%;
+          margin: 2px 0 0;
+          color: var(--wt-muted);
+          font-size: 11px;
+          font-weight: 600;
+        }
+        .wt-footer-attribution a {
+          color: var(--wt-navy-700);
+          text-decoration: underline;
+          text-decoration-thickness: 1px;
+          text-underline-offset: 2px;
+        }
+        .wt-footer-attribution a:hover {
+          color: var(--wt-navy-900);
+        }
         .wt-font-display {
           font-family: ${spaceGrotesk.style.fontFamily};
         }
@@ -200,6 +216,9 @@ export default function WaterTrackerLayout({ children }: { children: React.React
           .wt-footer-inner {
             padding: 14px 14px 18px;
           }
+          .wt-footer-attribution {
+            font-size: 10px;
+          }
         }
       `}</style>
 
@@ -236,6 +255,9 @@ export default function WaterTrackerLayout({ children }: { children: React.React
             <Link href="/watertracker/privacy-policy">Privacy Policy</Link>
             <Link href="/watertracker/terms">Terms of Use</Link>
           </div>
+          <p className="wt-footer-attribution">
+            <a href="https://pngtree.com/freepng/silver-laurel-wreaths-for-awards_20564144.html">png image from pngtree.com/</a>
+          </p>
         </div>
       </footer>
     </div>
