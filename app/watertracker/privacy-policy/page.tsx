@@ -248,6 +248,7 @@ export default function PrivacyPolicyPage() {
               {[
                 { icon: <Droplets style={{ width: 15, height: 15 }} />, label: 'Hydration Logs', desc: 'Beverage types, volume amounts, and entry timestamps.' },
                 { icon: <Smartphone style={{ width: 15, height: 15 }} />, label: 'Anonymous Diagnostics', desc: 'We may process non-identifiable crash reports and app version data to ensure the reliability of reminders.' },
+                { icon: <Info style={{ width: 15, height: 15 }} />, label: 'Product Analytics (Firebase Analytics)', desc: 'We may use Firebase Analytics to process aggregated app interaction events, device/app metadata, and approximate region-level usage signals to improve app quality and feature decisions.' },
                 { icon: <Share2 style={{ width: 15, height: 15 }} />, label: 'Rewarded Ad Data (AdMob)', desc: 'Google AdMob may process advertising identifiers, device information, approximate location, IP address, and ad interaction events to deliver and measure rewarded ads.' },
               ].map((item, i) => (
                 <div key={i} style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
@@ -329,6 +330,7 @@ export default function PrivacyPolicyPage() {
               {[
                 { label: 'Apple Privacy Policy', href: 'https://www.apple.com/legal/privacy/' },
                 { label: 'Google Privacy Policy', href: 'https://policies.google.com/privacy' },
+                { label: 'Firebase Privacy & Security', href: 'https://firebase.google.com/support/privacy' },
                 { label: 'Google AdMob Privacy & Messaging', href: 'https://support.google.com/admob/answer/6128543' },
               ].map((link, i) => (
                 <a key={i} href={link.href} target="_blank" rel="noreferrer" style={{
@@ -356,6 +358,7 @@ export default function PrivacyPolicyPage() {
                 'Generating hydration trend charts',
                 'Restoring premium status via store receipts',
                 'Executing user-initiated cloud backups',
+                'Reviewing aggregated feature usage through Firebase Analytics to improve reliability and UX',
                 'Serving and measuring rewarded ads for 24-hour feature unlocks',
               ].map((item, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '12px 16px', border: '1px solid rgba(16,36,79,0.09)', borderRadius: 12, background: 'rgba(79,136,255,0.04)' }}>
@@ -406,7 +409,7 @@ export default function PrivacyPolicyPage() {
 
           <PolicySection id="rights" title="User Rights" icon={<UserCheck style={{ width: 18, height: 18 }} />}>
             <p style={{ margin: 0, fontSize: 14 }}>
-              You retain full ownership of your hydration logs. You may modify, delete, or export your data at any time within the app settings. We do not require account registration; third-party services such as app stores and AdMob process limited technical data under their own privacy terms.
+              You retain full ownership of your hydration logs. You may modify, delete, or export your data at any time within the app settings. We do not require account registration; third-party services such as app stores, Firebase Analytics, and AdMob process limited technical data under their own privacy terms.
             </p>
           </PolicySection>
 

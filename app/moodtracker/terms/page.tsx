@@ -323,8 +323,10 @@ export default function TermsOfUsePage() {
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
               <BulletItem>Each rewarded ad unlocks the selected feature for <strong style={{ color: 'var(--wt-navy-900)' }}>24 hours</strong>.</BulletItem>
+              <BulletItem>The App may use <strong style={{ color: 'var(--wt-navy-900)' }}>Firebase Analytics</strong> to process aggregated, non-identifiable usage events for product improvement and reliability monitoring.</BulletItem>
               <BulletItem>Rewarded ads may be served by <strong style={{ color: 'var(--wt-navy-900)' }}>Google AdMob</strong> and may vary by region, device, and platform settings.</BulletItem>
               <BulletItem>Your use of rewarded-ad access is also subject to Google AdMob and Google privacy terms.</BulletItem>
+              <BulletItem>Use of Firebase services is also subject to applicable Google and Firebase terms and privacy policies.</BulletItem>
             </div>
           </PolicySection>
 
