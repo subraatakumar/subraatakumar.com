@@ -161,37 +161,54 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
         }
         .wth-feature-ribbon {
           margin-top: 16px;
-          display: grid;
-          grid-template-columns: auto 1fr auto;
-          align-items: center;
-          gap: 10px;
-        }
-        .wth-laurel {
-          width: clamp(42px, 6vw, 84px);
-          height: auto;
-          opacity: 0.9;
-          filter: drop-shadow(0 6px 14px rgba(5, 19, 44, 0.45));
-        }
-        .wth-laurel-right {
-          transform: scaleX(-1);
+          display: block;
         }
         .wth-feature-badges {
           display: flex;
-          flex-wrap: wrap;
           gap: 8px;
+          width: 100%;
+          justify-content: space-between;
+        }
+        .wth-feature-badge-row {
+          position: relative;
+          display: inline-flex;
+          align-items: center;
           justify-content: center;
+          flex: 1 1 0;
+          min-width: 0;
+          min-height: clamp(100px, 10vw, 136px);
+          padding: 8px 10px;
+        }
+        .wth-feature-badge-row::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background-image: url("/images/png-tree-award.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: clamp(120px, 100vw, 195px) auto;
+          opacity: 0.95;
+          filter: drop-shadow(0 5px 12px rgba(5, 19, 44, 0.42));
+          pointer-events: none;
         }
         .wth-feature-badge {
-          font-size: 11px;
+          position: relative;
+          z-index: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 2px;
+          font-size: 10px;
           font-weight: 800;
           letter-spacing: 0.06em;
           text-transform: uppercase;
-          border: 1px solid rgba(234, 247, 255, 0.36);
-          border-radius: 10px;
-          background: rgba(223, 244, 255, 0.14);
-          padding: 7px 10px;
+          border: none;
+          background: transparent;
+          padding: 0;
           color: #e7f5ff;
           text-align: center;
+          text-shadow: 0 2px 8px rgba(4, 22, 54, 0.74);
         }
         .wth-store-row {
           margin-top: 18px;
@@ -422,11 +439,22 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
             margin-left: 0;
           }
           .wth-feature-ribbon {
-            grid-template-columns: 1fr;
-            gap: 7px;
+            margin-top: 14px;
           }
-          .wth-laurel {
-            display: none;
+          .wth-feature-badges {
+            display: grid;
+            gap: 8px;
+            justify-items: center;
+          }
+          .wth-feature-badge-row {
+            width: clamp(230px, 62vw, 320px);
+            min-height: clamp(86px, 20vw, 126px);
+          }
+          .wth-feature-badge-row::before {
+            background-size: clamp(128px, 34vw, 190px) auto;
+          }
+          .wth-feature-badge {
+            font-size: 11px;
           }
           .wth-store-row {
             flex-direction: column;
@@ -484,13 +512,28 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
         <div className="wth-hero-panel">
           <h1 className="wt-font-display wth-hero-title">Water Tracker N Reminder</h1>
           <div className="wth-feature-ribbon" aria-label="Water Tracker core features">
-            <Image src="/images/png-tree-award.png" alt="" aria-hidden width={4961} height={3543} className="wth-laurel" />
             <div className="wth-feature-badges">
-              <span className="wth-feature-badge">Offline • No Login • Private</span>
-              <span className="wth-feature-badge">Smart Reminders</span>
-              <span className="wth-feature-badge">Insightful Trend Charts</span>
+              <div className="wth-feature-badge-row">
+                <span className="wth-feature-badge">
+                  <span>Offline</span>
+                  <span>No Login</span>
+                  <span>Private</span>
+                </span>
+              </div>
+              <div className="wth-feature-badge-row">
+                <span className="wth-feature-badge">
+                  <span>Smart</span>
+                  <span>Reminders</span>
+                </span>
+              </div>
+              <div className="wth-feature-badge-row">
+                <span className="wth-feature-badge">
+                  <span>Insightful</span>
+                  <span>Trend</span>
+                  <span>Charts</span>
+                </span>
+              </div>
             </div>
-            <Image src="/images/png-tree-award.png" alt="" aria-hidden width={4961} height={3543} className="wth-laurel wth-laurel-right" />
           </div>
           <div className="wth-store-row">
             {iosUrl ? (
