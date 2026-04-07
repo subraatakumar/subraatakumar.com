@@ -448,10 +448,10 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
           }
           .wth-feature-badge-row {
             width: clamp(230px, 62vw, 320px);
-            min-height: clamp(86px, 20vw, 126px);
+            min-height: clamp(132px, 32vw, 196px);
           }
           .wth-feature-badge-row::before {
-            background-size: clamp(128px, 34vw, 190px) auto;
+            background-size: clamp(202px, 55.2vw, 300px) auto;
           }
           .wth-feature-badge {
             font-size: 11px;
