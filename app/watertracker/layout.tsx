@@ -173,6 +173,9 @@ export default function WaterTrackerLayout({ children }: { children: React.React
           display: none;
         }
         @media (max-width: 760px) {
+          .wt-nav {
+            display: none;
+          }
           .wt-nav-inner {
             padding: 0 14px;
             height: 56px;

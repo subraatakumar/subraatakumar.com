@@ -437,6 +437,9 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
           .wth-hero-panel {
             width: min(96%, 520px);
             margin-left: 0;
+            background: transparent;
+            border-color: transparent;
+            box-shadow: none;
           }
           .wth-feature-ribbon {
             margin-top: 14px;
