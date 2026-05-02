@@ -248,8 +248,8 @@ e:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0a
             padding-right: 16px;
           }
         }
-      0:{"buildId":"OEE16u9Yx1TIlZsTJEMmq","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
-8:T4af1,<h2 id="introduction-to-cocoapods" class="blog-md-h2">Introduction to CocoaPods</h2>
+      0:{"buildId":"i5nunNagaWd4-3DbfUiKr","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
+8:T48d5,<h2 id="introduction-to-cocoapods" class="blog-md-h2">Introduction to CocoaPods</h2>
 <p class="blog-md-p">Before Swift Package Manager (SPM) became the native standard, the iOS world belonged to CocoaPods.</p>
 <h2 id="what-is-cocoapods" class="blog-md-h2">What is CocoaPods?</h2>
 <p class="blog-md-p">CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. In simple terms, it’s a tool that automates the process of adding, updating, and managing third-party libraries (like Firebase, Alamofire, or Lottie) in your Xcode projects. Instead of manually dragging source files into your project and worrying about build settings, you define what you need in a single text file called a Podfile.</p>
@@ -364,8 +364,6 @@ With the rollout of the New Architecture (TurboModules and Fabric) becoming the 
 </tr>
 </tbody>
 </table></div>
-<hr class="blog-md-hr" />
-<p class="blog-md-p">(Note for Dev.to readers: Knowing the change is coming is only half the battle. If you want to see the exact code snippets for Method A (<code class="blog-md-inline-code">spm_dependency</code>), learn how React Native handles Autolinking with SPM, discover how to handle legacy libraries that won't update, and follow a step-by-step migration guide for your bare React Native apps, <strong><a href="#" class="blog-md-link">read the full technical migration guide on my blog</a></strong>.)</p>
 <hr class="blog-md-hr" />
 <h2 id="the-technical-deep-dive-transitioning-from-cocoapods-to-spm" class="blog-md-h2">The Technical Deep Dive: Transitioning from CocoaPods to SPM</h2>
 <p class="blog-md-p"><em>(The following sections dive deep into the code and mechanics of the migration. Welcome to the technical guide!)</em></p>
