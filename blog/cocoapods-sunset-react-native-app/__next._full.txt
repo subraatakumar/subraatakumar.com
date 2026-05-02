@@ -1,0 +1,833 @@
+1:"$Sreact.fragment"
+a:I[68027,[],"default"]
+:HL["/_next/static/chunks/73857f047b5eee22.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","style"]
+2:T19f5,
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+
+          body {
+            background: #fafaf7;
+            font-family: 'Caveat', cursive;
+            color: #1a1a2e;
+          }
+
+          /* ── Nav ── */
+          .sk-header {
+            background: #fff;
+            border-bottom: 2.5px solid #1a1a2e;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+          }
+          .sk-header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .sk-logo {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.55rem;
+            color: #1a1a2e;
+            text-decoration: none;
+            letter-spacing: 0.01em;
+          }
+          .sk-nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+          }
+          .sk-nav-links a {
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+            padding-bottom: 2px;
+          }
+          .sk-nav-links a:hover {
+            text-decoration: underline wavy #2563eb 2px;
+            text-underline-offset: 4px;
+          }
+          .sk-nav-mobile {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 14px;
+          }
+          .sk-nav-mobile ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+          }
+          .sk-nav-mobile a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+          }
+
+          /* ── Footer ── */
+          .sk-footer {
+            border-top: 2.5px solid #1a1a2e;
+            background: #fff;
+            padding: 24px;
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+          }
+
+          /* ── Shared section ── */
+          .sk-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+          }
+          .sk-page-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            margin-bottom: 8px;
+            line-height: 1.1;
+          }
+          .sk-section-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.9rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+          .sk-section-heading::after {
+            content: '';
+            flex: 1;
+            border-top: 2px dashed #9ca3af;
+          }
+
+          /* ── Squiggle divider ── */
+          .sk-squiggle {
+            width: 100%;
+            height: 8px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 4 Q5 0 10 4 Q15 8 20 4 Q25 0 30 4 Q35 8 40 4' stroke='%239ca3af' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") repeat-x center;
+            opacity: 0.55;
+            margin: 36px 0;
+          }
+
+          /* ── Sketch button ── */
+          .sk-btn {
+            display: inline-block;
+            padding: 10px 26px;
+            background: #2563eb;
+            color: #fff;
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 3px 3px 0 #1a1a2e;
+            transition: transform 0.1s, box-shadow 0.1s;
+          }
+          .sk-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 #1a1a2e;
+          }
+          .sk-btn-ghost {
+            background: transparent;
+            color: #1a1a2e;
+            box-shadow: 3px 3px 0 #9ca3af;
+          }
+          .sk-btn-ghost:hover {
+            box-shadow: 5px 5px 0 #9ca3af;
+          }
+
+          /* ── Tag chip ── */
+          .sk-tag {
+            display: inline-block;
+            padding: 3px 13px;
+            border: 2px solid #1a1a2e;
+            border-radius: 2px;
+            font-size: 1rem;
+            font-weight: 600;
+            background: #fff;
+            margin: 3px;
+          }
+          .sk-tag.active {
+            background: #2563eb;
+            color: #fff;
+          }
+
+          /* ── Card ── */
+          .sk-card {
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 5px 5px 0 #1a1a2e;
+            padding: 24px;
+            transition: transform 0.15s, box-shadow 0.15s;
+          }
+          .sk-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0 #1a1a2e;
+          }
+
+          /* ── Stat card ── */
+          .sk-stat {
+            flex: 1;
+            min-width: 130px;
+            text-align: center;
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 4px 4px 0 #1a1a2e;
+            padding: 20px 12px;
+          }
+          .sk-stat .num {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            color: #2563eb;
+            line-height: 1;
+          }
+          .sk-stat .lbl {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 4px;
+          }
+
+          /* ── Image placeholder ── */
+          .sk-img {
+            width: 100%;
+            height: 160px;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            background: #f3f4f6;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 16px;
+          }
+          .sk-img::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+              linear-gradient(to bottom right, transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px)),
+              linear-gradient(to bottom left,  transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px));
+          }
+
+          @media (max-width: 640px) {
+            .sk-nav-links { display: none; }
+            .sk-nav-mobile { display: block; }
+            .sk-page-heading { font-size: 2.2rem; }
+          }
+        0:{"P":null,"b":"OEE16u9Yx1TIlZsTJEMmq","c":["","blog","cocoapods-sunset-react-native-app",""],"q":"","i":false,"f":[[["",{"children":["blog",{"children":[["slug","cocoapods-sunset-react-native-app","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/73857f047b5eee22.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+b:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
+c:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+d:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+11:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+14:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"ViewportBoundary"]
+16:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"MetadataBoundary"]
+3:["$","header",null,{"className":"sk-header","children":[["$","div",null,{"className":"sk-header-inner","children":[["$","$Lb",null,{"href":"/","className":"sk-logo","children":"SKD_"}],["$","nav",null,{"aria-label":"Primary","children":["$","ul",null,{"className":"sk-nav-links","children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]]}],["$","div",null,{"className":"sk-nav-mobile","children":["$","nav",null,{"aria-label":"Mobile","children":["$","ul",null,{"children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]}]]}]
+4:["$","main",null,{"style":{"width":"100%"},"children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
+5:["$","footer",null,{"className":"sk-footer","children":["© ",2026," Subrata Kumar Das. All rights reserved. ·"," ",["$","$Lb",null,{"href":"/for-ai","children":"For AI/Crawlers"}]]}]
+e:T1027,
+        body:has(#blog-root) .sk-header,
+        body:has(#blog-root) .sk-footer {
+          display: none !important;
+        }
+
+        #blog-root,
+        #blog-root * {
+          box-sizing: border-box;
+        }
+
+        #blog-root {
+          --blog-ink: #101828;
+          --blog-muted: #667085;
+          --blog-line: #e4e7ec;
+          --blog-card: #ffffff;
+          --blog-accent: #0ea5e9;
+          --blog-accent-warm: #fb7185;
+          --blog-bg: radial-gradient(circle at 10% 0%, #dff6ff 0%, transparent 40%),
+            radial-gradient(circle at 100% 10%, #ffe8ec 0%, transparent 35%),
+            #f8fafc;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+          background: var(--blog-bg);
+          color: var(--blog-ink);
+          font-family: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
+        }
+
+        #blog-root .blog-shell-header {
+          position: sticky;
+          top: 0;
+          z-index: 100;
+          backdrop-filter: blur(10px);
+          background: rgba(248, 250, 252, 0.78);
+          border-bottom: 1px solid var(--blog-line);
+        }
+        #blog-root .blog-shell-header-inner {
+          width: 100%;
+          height: 66px;
+          padding: 0 clamp(16px, 4vw, 48px);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        }
+        #blog-root .blog-shell-main {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+        #blog-root .blog-brand {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          text-decoration: none;
+          color: var(--blog-ink);
+        }
+        #blog-root .blog-brand-mark {
+          width: 32px;
+          height: 32px;
+          border-radius: 10px;
+          background: linear-gradient(135deg, var(--blog-accent), var(--blog-accent-warm));
+          color: #fff;
+          display: grid;
+          place-items: center;
+          font-weight: 900;
+          font-size: 12px;
+          letter-spacing: 0.03em;
+          box-shadow: 0 10px 24px rgba(14, 165, 233, 0.28);
+        }
+        #blog-root .blog-brand-text {
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-weight: 700;
+          font-size: 1.1rem;
+          letter-spacing: 0.01em;
+        }
+        #blog-root .blog-shell-nav {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+        }
+        #blog-root .blog-shell-nav a {
+          text-decoration: none;
+          color: var(--blog-ink);
+          font-size: 0.8rem;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          padding: 10px 12px;
+          border-radius: 10px;
+          transition: background 0.2s ease;
+        }
+        #blog-root .blog-shell-nav a:hover {
+          background: #eef2f6;
+        }
+
+        #blog-root .blog-shell-footer {
+          margin-top: auto;
+          border-top: 1px solid var(--blog-line);
+          background: rgba(255, 255, 255, 0.64);
+        }
+        #blog-root .blog-shell-footer-inner {
+          width: 100%;
+          padding: 20px clamp(16px, 4vw, 48px) 24px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+        #blog-root .blog-shell-copy {
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: 0.12em;
+          color: var(--blog-muted);
+          font-weight: 700;
+        }
+        #blog-root .blog-shell-footer a {
+          text-decoration: none;
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: 0.05em;
+          color: #0b6ba8;
+        }
+
+        @media (max-width: 700px) {
+          #blog-root .blog-shell-header-inner,
+          #blog-root .blog-shell-footer-inner {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+          #blog-root .blog-shell-nav a {
+            padding: 8px 10px;
+            font-size: 0.72rem;
+          }
+        }
+      6:["$","$1","c",{"children":[null,["$","div",null,{"style":{"all":"revert"},"children":[["$","style",null,{"children":"$e"}],"$Lf"]}]]}]
+7:["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+9:["$","$1","h",{"children":[null,["$","$L14",null,{"children":"$L15"}],["$","div",null,{"hidden":true,"children":["$","$L16",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L17"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+f:["$","div",null,{"id":"blog-root","children":[["$","header",null,{"className":"blog-shell-header","children":["$","div",null,{"className":"blog-shell-header-inner","children":[["$","$Lb",null,{"href":"/blog","className":"blog-brand","children":[["$","span",null,{"className":"blog-brand-mark","children":["$","$Lb",null,{"href":"/","aria-label":"Go to main home page","children":"SK"}]}],["$","span",null,{"className":"blog-brand-text","children":"TechCraft Blog"}]]}],["$","nav",null,{"className":"blog-shell-nav","children":[["$","$Lb",null,{"href":"/products","children":"Products"}],["$","$Lb",null,{"href":"/","children":"Home"}]]}]]}]}],["$","main",null,{"className":"blog-shell-main","children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"blog-shell-footer","children":["$","div",null,{"className":"blog-shell-footer-inner","children":[["$","p",null,{"className":"blog-shell-copy","children":"Subrata Kumar Das • Blog"}],["$","$Lb",null,{"href":"/blog","children":"All Posts"}]]}]}]]}]
+18:T1b2e,
+        #blog-root .blog-post-wrap {
+          max-width: 880px;
+          margin: 0 auto;
+          padding: 30px 24px 0;
+        }
+        #blog-root .blog-post-kicker {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          color: #175cd3;
+          border: 1px solid #cfe1fa;
+          border-radius: 999px;
+          padding: 8px 12px;
+          background: #fff;
+          text-decoration: none;
+        }
+        #blog-root .blog-post-wrap h1 {
+          margin-top: 18px;
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-size: clamp(2rem, 4.6vw, 3.2rem);
+          line-height: 1.08;
+          letter-spacing: -0.02em;
+        }
+        #blog-root .blog-post-meta {
+          margin-top: 16px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 8px;
+          color: #667085;
+          font-size: 12px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.07em;
+        }
+        #blog-root .blog-post-desc {
+          margin-top: 14px;
+          font-size: 1.04rem;
+          line-height: 1.8;
+          color: #475467;
+        }
+        #blog-root .blog-tag-row {
+          margin-top: 12px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+        #blog-root .blog-tag-row span {
+          background: #f2f4f7;
+          color: #344054;
+          font-size: 11px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          padding: 6px 10px;
+          border-radius: 999px;
+        }
+        #blog-root .blog-article {
+          margin-top: 26px;
+          border-top: 1px solid #e4e7ec;
+          padding-top: 24px;
+          padding-bottom: 20px;
+        }
+        #blog-root .blog-md-p {
+          margin: 18px 0;
+          font-size: 1.03rem;
+          line-height: 1.95;
+          color: #1d2939;
+        }
+        #blog-root .blog-md-h1 {
+          margin: 56px 0 16px;
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-size: 2rem;
+          line-height: 1.18;
+        }
+        #blog-root .blog-md-h2 {
+          margin: 46px 0 14px;
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-size: 1.7rem;
+          line-height: 1.24;
+        }
+        #blog-root .blog-md-h3 {
+          margin: 36px 0 10px;
+          font-weight: 800;
+          font-size: 1.28rem;
+          line-height: 1.34;
+        }
+        #blog-root .blog-md-h4,
+        #blog-root .blog-md-h5,
+        #blog-root .blog-md-h6 {
+          margin: 28px 0 8px;
+          font-size: 1.08rem;
+          font-weight: 800;
+        }
+        #blog-root .blog-md-ul {
+          list-style: disc;
+          padding-left: 24px;
+          margin: 18px 0;
+        }
+        #blog-root .blog-md-ol {
+          list-style: decimal;
+          padding-left: 28px;
+          margin: 18px 0;
+        }
+        #blog-root .blog-md-li {
+          margin: 8px 0;
+          line-height: 1.8;
+          color: #344054;
+        }
+        #blog-root .blog-md-quote {
+          margin: 22px 0;
+          border-left: 3px solid #7cd4ff;
+          background: #f5fbff;
+          border-radius: 10px;
+          padding: 14px 16px;
+          color: #344054;
+          font-style: italic;
+        }
+        #blog-root .blog-md-link {
+          color: #0b6ba8;
+          text-decoration: none;
+          font-weight: 700;
+        }
+        #blog-root .blog-md-link:hover {
+          text-decoration: underline;
+        }
+        #blog-root .blog-md-inline-code {
+          background: #f2f4f7;
+          color: #7a271a;
+          border-radius: 6px;
+          padding: 2px 6px;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+          font-size: 0.9em;
+        }
+        #blog-root .blog-code-wrap {
+          margin: 24px 0;
+          border-radius: 14px;
+          overflow: hidden;
+          border: 1px solid #d0d5dd;
+        }
+        #blog-root .blog-code-head {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: #101828;
+          padding: 8px 10px;
+        }
+        #blog-root .blog-code-lang {
+          font-size: 11px;
+          font-weight: 800;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          color: #d1e9ff;
+        }
+        #blog-root .blog-copy-btn {
+          border: 0;
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          border-radius: 8px;
+          padding: 5px 10px;
+          background: #d1e9ff;
+          color: #0c2d6b;
+          cursor: pointer;
+        }
+        #blog-root .blog-md-pre {
+          margin: 0;
+          background: #182230;
+          color: #f8fafc;
+          padding: 14px;
+          overflow: auto;
+        }
+        #blog-root .blog-md-image {
+          max-width: 100%;
+          height: auto;
+          border-radius: 12px;
+          margin: 16px 0;
+          border: 1px solid #e4e7ec;
+        }
+        #blog-root .blog-md-hr {
+          border: 0;
+          height: 1px;
+          background: #e4e7ec;
+          margin: 44px 0;
+        }
+        #blog-root .blog-md-table-wrap {
+          overflow: auto;
+          border: 1px solid #e4e7ec;
+          border-radius: 12px;
+          margin: 20px 0;
+        }
+        #blog-root .blog-md-table {
+          border-collapse: collapse;
+          min-width: 100%;
+        }
+        #blog-root .blog-md-th {
+          background: #f9fafb;
+          text-align: left;
+          font-size: 12px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          color: #475467;
+          padding: 10px;
+          border-bottom: 1px solid #e4e7ec;
+        }
+        #blog-root .blog-md-td {
+          padding: 10px;
+          border-bottom: 1px solid #f2f4f7;
+          color: #344054;
+          font-size: 14px;
+        }
+        #blog-root .blog-post-nav {
+          margin-top: 20px;
+          padding-top: 20px;
+          border-top: 1px solid #e4e7ec;
+          display: flex;
+          gap: 10px;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+        #blog-root .blog-post-nav a {
+          text-decoration: none;
+          border: 1px solid #d0d5dd;
+          background: #fff;
+          color: #101828;
+          border-radius: 10px;
+          padding: 10px 14px;
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+        }
+        @media (max-width: 700px) {
+          #blog-root .blog-post-wrap {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+        }
+      10:["$","main",null,{"children":[["$","style",null,{"children":"$18"}],"$L19","$L1a"]}]
+1b:T4af1,<h2 id="introduction-to-cocoapods" class="blog-md-h2">Introduction to CocoaPods</h2>
+<p class="blog-md-p">Before Swift Package Manager (SPM) became the native standard, the iOS world belonged to CocoaPods.</p>
+<h2 id="what-is-cocoapods" class="blog-md-h2">What is CocoaPods?</h2>
+<p class="blog-md-p">CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. In simple terms, it’s a tool that automates the process of adding, updating, and managing third-party libraries (like Firebase, Alamofire, or Lottie) in your Xcode projects. Instead of manually dragging source files into your project and worrying about build settings, you define what you need in a single text file called a Podfile.</p>
+<h2 id="who-created-and-manages-it" class="blog-md-h2">Who Created and Manages It?</h2>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><strong>Founders:</strong> It was started by Eloy Durán and Fabio Pelosin.</li>
+<li class="blog-md-li"><strong>Management:</strong> The project is maintained by a core team of volunteers, including developers like Samuel Giddins, Danielle Lancashire, and others, with contributions from the broader open-source community.</li>
+<li class="blog-md-li"><strong>Governance:</strong> While it is an open-source project hosted on <a href="https://github.com/cocoapods/cocoapods" class="blog-md-link">GitHub</a>, it operates through a centralized registry called the CocoaPods Trunk.</li>
+</ul>
+<h2 id="when-did-it-start" class="blog-md-h2">When Did It Start?</h2>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><strong>Release Date:</strong> Development began in August 2011, and the first public release was on September 1, 2011.</li>
+<li class="blog-md-li"><strong>Inspiration:</strong> It was heavily inspired by the Ruby community's dependency managers, RubyGems and Bundler. This is why CocoaPods itself is built with Ruby and installed as a "gem".</li>
+</ul>
+<h2 id="where-and-how-is-it-used" class="blog-md-h2">Where and How is it Used?</h2>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><strong>Platforms:</strong> It supports almost the entire Apple ecosystem: iOS, macOS, watchOS, and tvOS.</li>
+<li class="blog-md-li"><strong>The Workflow:</strong>
+<ol class="blog-md-ol">
+<li>Create a <code class="blog-md-inline-code">Podfile</code> in your project directory.</li>
+<li class="blog-md-li">List your dependencies (e.g., <code class="blog-md-inline-code">pod 'Alamofire'</code>).</li>
+<li class="blog-md-li">Run <code class="blog-md-inline-code">pod install</code> in your terminal.</li>
+<li class="blog-md-li">CocoaPods creates an <code class="blog-md-inline-code">.xcworkspace</code> file, which you must use instead of the standard <code class="blog-md-inline-code">.xcodeproj</code> to ensure all libraries are linked correctly.</li>
+</ol>
+</li>
+</ul>
+<h2 id="why-was-it-a-game-changer" class="blog-md-h2">Why was it a Game-Changer?</h2>
+<p class="blog-md-p">Before CocoaPods, integrating a library was a manual "nightmare" of copying files, managing header search paths, and manually linking frameworks. CocoaPods centralized this into a searchable hub (cocoapods.org) that now hosts over 100,000 libraries and is used in over 3 million apps.</p>
+<hr class="blog-md-hr" />
+<h1 id="the-sunset-era" class="blog-md-h1">The Sunset Era</h1>
+<p class="blog-md-p">Yes, CocoaPods is scheduled to move to a permanent read-only state on <strong>December 2, 2026</strong>.
+After this date, the <a href="https://guides.cocoapods.org/making/getting-setup-with-trunk.html" class="blog-md-link">CocoaPods Trunk</a> (the central registry) will no longer accept new Podspecs or updates to existing ones.</p>
+<h2 id="why-is-cocoapods-sunsetting" class="blog-md-h2">Why is CocoaPods Sunsetting?</h2>
+<p class="blog-md-p">Maintaining a package manager that serves millions of apps is a massive undertaking.</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><strong>Volunteer Burnout:</strong> The project relies entirely on volunteers. The burden of keeping the infrastructure running, fixing bugs, and updating for every new Xcode release has outpaced the available resources.</li>
+<li class="blog-md-li"><strong>Server Costs:</strong> Hosting the global CDN for hundreds of thousands of packages is incredibly expensive.</li>
+<li class="blog-md-li"><strong>The Rise of SPM:</strong> Apple introduced Swift Package Manager (SPM) built directly into Xcode. With SPM now mature enough to handle complex dependency graphs, the community no longer needs a third-party tool for this primary function.</li>
+</ul>
+<h2 id="key-impact-on-developers" class="blog-md-h2">Key Impact on Developers</h2>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><strong>Existing Projects:</strong> Your current apps will not break immediately. Existing versions of libraries will remain accessible for installation as long as <a href="https://github.com/" class="blog-md-link">GitHub</a> and <a href="https://www.jsdelivr.com/" class="blog-md-link">jsDelivr</a> stay operational.</li>
+<li class="blog-md-li"><strong>New Updates:</strong> You will no longer be able to push new versions of your own libraries or receive updates for third-party dependencies through the official trunk.</li>
+<li class="blog-md-li"><strong>Security &#x26; Compatibility:</strong> Since no new versions can be published, critical security patches or fixes for new iOS versions will eventually stop being delivered via CocoaPods.</li>
+</ul>
+<h2 id="migration-x26-next-steps" class="blog-md-h2">Migration &#x26; Next Steps</h2>
+<p class="blog-md-p">The CocoaPods team and major library maintainers like <a href="https://firebase.google.com/docs/ios/cocoapods-deprecation" class="blog-md-link">Firebase</a> recommend migrating to Swift Package Manager (SPM), which is Apple’s official and natively integrated solution for managing dependencies.</p>
+<p class="blog-md-p"><strong>Timeline for 2026 Transition:</strong></p>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><strong>September–October 2026:</strong> Second round of notification emails to all contributors.</li>
+<li class="blog-md-li"><strong>November 1–7, 2026:</strong> A test run of the read-only mode to identify potential automation breaks.</li>
+<li class="blog-md-li"><strong>December 2, 2026:</strong> The Trunk becomes permanently read-only.</li>
+</ul>
+<hr class="blog-md-hr" />
+<h1 id="impact-on-react-native-apps" class="blog-md-h1">Impact on React Native Apps</h1>
+<p class="blog-md-p">For React Native projects, the 2026 CocoaPods read-only transition is a major shift because React Native has heavily relied on CocoaPods for iOS dependency management. However, the ecosystem is already pivoting to adapt.</p>
+<h2 id="immediate-impact-on-react-native-apps" class="blog-md-h2">Immediate Impact on React Native Apps</h2>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><strong>No Immediate Breakage:</strong> Your existing React Native apps using CocoaPods will continue to build and run after December 2026. The read-only state just means you cannot publish new Pods.</li>
+<li class="blog-md-li"><strong><code class="blog-md-inline-code">pod install</code> Still Works:</strong> You will still be able to install existing versions of libraries. The underlying infrastructure (specs repo, CDN) will remain online.</li>
+<li class="blog-md-li"><strong>Update Freeze:</strong> The real risk is that critical native modules (like <code class="blog-md-inline-code">react-native-maps</code>, <code class="blog-md-inline-code">@react-native-firebase/app</code>) will eventually stop receiving updates via CocoaPods. You won't get security patches or compatibility fixes for future iOS versions if you stay on CocoaPods.</li>
+</ul>
+<h2 id="the-path-forward-react-native-x26-spm" class="blog-md-h2">The Path Forward: React Native &#x26; SPM</h2>
+<p class="blog-md-p">The React Native community and core team are actively moving towards Swift Package Manager (SPM) as the new standard.</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li">
+<p class="blog-md-p"><strong>React Native 0.76+ and the New Architecture:</strong>
+With the rollout of the New Architecture (TurboModules and Fabric) becoming the default, library maintainers are rewriting their native code layers anyway. This provides the perfect window to drop CocoaPods support and adopt SPM entirely. Future versions of the React Native template will default to or strongly encourage SPM for native modules.</p>
+</li>
+<li class="blog-md-li">
+<p class="blog-md-p"><strong>Library Migration:</strong></p>
+<ul class="blog-md-ul">
+<li>Major libraries like <a href="https://firebase.google.com/docs/ios/cocoapods-deprecation" class="blog-md-link">Firebase</a> have already announced they will stop publishing to CocoaPods in October 2026 and require SPM for updates.</li>
+<li class="blog-md-li">Popular community libraries (<code class="blog-md-inline-code">react-native-maps</code>, <code class="blog-md-inline-code">sentry-react-native</code>) are following suit, adding SPM support to their iOS installation instructions.</li>
+</ul>
+</li>
+</ol>
+<h2 id="summary-of-the-shift" class="blog-md-h2">Summary of the Shift</h2>
+<div class="blog-md-table-wrap"><table class="blog-md-table">
+<thead>
+<tr>
+<th class="blog-md-th">Feature</th>
+<th class="blog-md-th">Earlier (CocoaPods)</th>
+<th class="blog-md-th">After SPM Transition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="blog-md-td">Tooling</td>
+<td class="blog-md-td">Requires Ruby, Gem, and CocoaPods</td>
+<td class="blog-md-td">Built directly into Xcode/Swift</td>
+</tr>
+<tr>
+<td class="blog-md-td">Primary File</td>
+<td class="blog-md-td"><code class="blog-md-inline-code">Podfile</code> &#x26; <code class="blog-md-inline-code">Podfile.lock</code></td>
+<td class="blog-md-td"><code class="blog-md-inline-code">Package.swift</code> or Xcode Project settings</td>
+</tr>
+<tr>
+<td class="blog-md-td">Install Step</td>
+<td class="blog-md-td"><code class="blog-md-inline-code">cd ios &#x26;&#x26; pod install</code></td>
+<td class="blog-md-td">Automatic (on open) or CLI-handled via Autolinking</td>
+</tr>
+<tr>
+<td class="blog-md-td">Project File</td>
+<td class="blog-md-td">Must use <code class="blog-md-inline-code">.xcworkspace</code></td>
+<td class="blog-md-td">Can go back to <code class="blog-md-inline-code">.xcodeproj</code></td>
+</tr>
+<tr>
+<td class="blog-md-td">Maintenance</td>
+<td class="blog-md-td">Managed by community volunteers</td>
+<td class="blog-md-td">Managed by Apple natively</td>
+</tr>
+</tbody>
+</table></div>
+<hr class="blog-md-hr" />
+<p class="blog-md-p">(Note for Dev.to readers: Knowing the change is coming is only half the battle. If you want to see the exact code snippets for Method A (<code class="blog-md-inline-code">spm_dependency</code>), learn how React Native handles Autolinking with SPM, discover how to handle legacy libraries that won't update, and follow a step-by-step migration guide for your bare React Native apps, <strong><a href="#" class="blog-md-link">read the full technical migration guide on my blog</a></strong>.)</p>
+<hr class="blog-md-hr" />
+<h2 id="the-technical-deep-dive-transitioning-from-cocoapods-to-spm" class="blog-md-h2">The Technical Deep Dive: Transitioning from CocoaPods to SPM</h2>
+<p class="blog-md-p"><em>(The following sections dive deep into the code and mechanics of the migration. Welcome to the technical guide!)</em></p>
+<p class="blog-md-p">The transition from CocoaPods to Swift Package Manager (SPM) changes how native iOS code is linked to your React Native app. In the "old" way, everything happened in a separate terminal process, whereas the "new" way is integrated directly into Xcode or handled automatically by the React Native CLI.</p>
+<h2 id="how-autolinking-changes-with-spm" class="blog-md-h2">How Autolinking Changes with SPM</h2>
+<p class="blog-md-p">React Native developers rarely wrote <code class="blog-md-inline-code">pod '...'</code> manually because of <strong>Autolinking</strong>. The <code class="blog-md-inline-code">@react-native-community/cli</code> historically scanned your <code class="blog-md-inline-code">node_modules</code>, found <code class="blog-md-inline-code">.podspec</code> files, and dynamically added them to your Podfile.</p>
+<p class="blog-md-p">With the move to SPM, Autolinking is evolving. The CLI will now either generate Xcode project configurations, utilize local Swift packages, or inject dependencies into a generated <code class="blog-md-inline-code">Package.swift</code> file—entirely bypassing Ruby and CocoaPods.</p>
+<h2 id="the-earlier-way-cocoapods-manual-x26-terminal-heavy" class="blog-md-h2">The "Earlier" Way: CocoaPods (Manual &#x26; Terminal-Heavy)</h2>
+<p class="blog-md-p">In older versions of React Native, you had to manage a separate environment (Ruby) just to install iOS dependencies.
+Example: Installing <code class="blog-md-inline-code">react-native-device-info</code></p>
+<ol class="blog-md-ol">
+<li class="blog-md-li"><strong>Install via JS:</strong> You’d run <code class="blog-md-inline-code">npm install react-native-device-info</code>.</li>
+<li class="blog-md-li"><strong>Edit the Podfile (pre-autolinking):</strong> You would navigate to the <code class="blog-md-inline-code">ios/</code> folder and find a text file called <code class="blog-md-inline-code">Podfile</code>.
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">RUBY</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-ruby"># ios/Podfile
+target 'MyApp' do
+  pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
+end
+</code></pre>
+      </div>
+    
+</li>
+<li class="blog-md-li"><strong>Run Command:</strong> You had to run <code class="blog-md-inline-code">pod install</code> in your terminal.</li>
+<li class="blog-md-li"><strong>The Result:</strong> CocoaPods created a <code class="blog-md-inline-code">.xcworkspace</code> file. You could no longer use the standard <code class="blog-md-inline-code">.xcodeproj</code> file to build your app; you were forced to use the workspace.</li>
+</ol>
+<h2 id="the-new-way-spm-integrated-x26-native" class="blog-md-h2">The "New" Way: SPM (Integrated &#x26; Native)</h2>
+<p class="blog-md-p">With the transition starting in React Native 0.75 and becoming standard in upcoming versions, the process is becoming frictionless.</p>
+<h3 id="method-a-the-spmdependency-helper-since-v075" class="blog-md-h3">Method A: The <code class="blog-md-inline-code">spm_dependency</code> Helper (Since v0.75)</h3>
+<p class="blog-md-p">React Native introduced a bridge so you can use SPM packages inside your existing Podfile setup without needing a <code class="blog-md-inline-code">.podspec</code> for every single library. This is crucial for the transition phase.</p>
+<p class="blog-md-p">Example in <code class="blog-md-inline-code">ios/Podfile</code>:</p>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">RUBY</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-ruby"># New helper introduced for the transition
+spm_dependency(
+  'Atomics', 
+  url: 'https://github.com/apple/swift-atomics.git', 
+  requirement: { kind: 'upToNextMajorVersion', minimumVersion: '1.1.0' }
+)
+</code></pre>
+      </div>
+    
+<h3 id="method-b-pure-spm-futurefull-migration" class="blog-md-h3">Method B: Pure SPM (Future/Full Migration)</h3>
+<p class="blog-md-p">In a fully migrated or "Pure SPM" React Native app, the <code class="blog-md-inline-code">ios/</code> folder becomes much cleaner:</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li"><strong>No Ruby/Gems:</strong> You don't need to install CocoaPods or manage Ruby versions on your machine.</li>
+<li class="blog-md-li"><strong>No <code class="blog-md-inline-code">pod install</code>:</strong> You simply open the project in Xcode. Xcode automatically detects the dependencies, downloads them, and links them natively.</li>
+<li class="blog-md-li"><strong>Xcode GUI:</strong> You can add packages by going to <em>File > Add Packages</em> and pasting a GitHub URL.</li>
+<li class="blog-md-li"><strong>Faster CI:</strong> Build times are often 30–40% faster because the entire "install pods" phase is eliminated from your build pipelines.</li>
+</ol>
+<h2 id="edge-cases-gotchas-and-unmaintained-libraries" class="blog-md-h2">Edge Cases, Gotchas, and Unmaintained Libraries</h2>
+<p class="blog-md-p">The transition won't be completely smooth for everyone. Here are the primary issues you will face:</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li"><strong>Legacy / Abandoned Libraries:</strong>
+What happens if an older library you depend on (e.g., an obscure Bluetooth module) is abandoned by its creator and never gets a <code class="blog-md-inline-code">Package.swift</code> file?
+<ul class="blog-md-ul">
+<li><em>Solution:</em> You will likely need to fork the repository, add a basic <code class="blog-md-inline-code">Package.swift</code> file yourself to expose its native code, and point your <code class="blog-md-inline-code">package.json</code> to your GitHub fork instead of the npm registry.</li>
+</ul>
+</li>
+<li class="blog-md-li"><strong>Mixing CocoaPods and SPM (Duplicate Symbols):</strong>
+During the transition, you might have some libraries installed via CocoaPods and some via SPM. If an SPM package and a CocoaPod both depend on the <em>same</em> underlying C/C++ library, you will get "Duplicate Symbol" linker errors.
+<ul class="blog-md-ul">
+<li><em>Solution:</em> You must ensure strict dependency resolution, often forcing one package manager to defer to the other, or accelerating your migration so everything uses SPM.</li>
+</ul>
+</li>
+</ol>
+<h2 id="action-plan-for-react-native-developers" class="blog-md-h2">Action Plan for React Native Developers</h2>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><strong>Expo Users:</strong> If you are using Expo (especially with <a href="https://docs.expo.dev/workflow/continuous-native-generation/" class="blog-md-link">CNG - Continuous Native Generation</a>), much of this complexity is abstracted away. Expo manages the native iOS project generation and is migrating its internal templates to be compatible with these changes. You largely just need to keep your Expo SDK version updated.</li>
+<li class="blog-md-li"><strong>For Bare Workflow / CLI Users:</strong>
+<ul>
+<li><strong>Audit Dependencies:</strong> Check your <code class="blog-md-inline-code">package.json</code> and native dependencies. Look for "Installation" sections in their docs—if they support SPM, they will list it.</li>
+<li class="blog-md-li"><strong>Plan for SPM:</strong> Start experimenting with moving native dependencies to SPM where supported using the <code class="blog-md-inline-code">spm_dependency</code> macro.</li>
+<li class="blog-md-li"><strong>Watch for React Native Updates:</strong> Keep your React Native version up to date. The tooling to automate this migration will improve significantly in upcoming releases (0.76+ and beyond).</li>
+</ul>
+</li>
+</ul>
+19:["$","section",null,{"className":"blog-post-wrap","children":[["$","$Lb",null,{"href":"/blog","className":"blog-post-kicker","children":"Back to blog"}],["$","h1",null,{"children":"The CocoaPods Sunset: What Dec 2, 2026 Means for Your React Native App"}],["$","div",null,{"className":"blog-post-meta","children":[["$","span",null,{"children":"May 2, 2026"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"10 min"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"Subrata Kumar Das"}]]}],["$","p",null,{"className":"blog-post-desc","children":"Explore what the CocoaPods read-only transition on December 2, 2026, means for React Native apps, the shift to Swift Package Manager (SPM), and how to prepare your projects."}],["$","div",null,{"className":"blog-tag-row","children":[["$","span","cocoapods",{"children":"cocoapods"}],["$","span","react-native",{"children":"react-native"}],["$","span","ios",{"children":"ios"}],["$","span","swift",{"children":"swift"}],["$","span","software-development",{"children":"software-development"}]]}],["$","article",null,{"className":"blog-article","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$1b"}}],"$L1c"]}],"$L1d"]}]
+1a:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"mainEntityOfPage\":\"https://subraatakumar.com/blog/cocoapods-sunset-react-native-app\",\"headline\":\"The CocoaPods Sunset: What Dec 2, 2026 Means for Your React Native App\",\"description\":\"Explore what the CocoaPods read-only transition on December 2, 2026, means for React Native apps, the shift to Swift Package Manager (SPM), and how to prepare your projects.\",\"datePublished\":\"2026-05-02\",\"dateModified\":\"2026-05-02\",\"image\":\"https://subraatakumar.com/images/interview.png\",\"keywords\":[\"cocoapods\",\"react-native\",\"ios\",\"swift\",\"software-development\"],\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com/\"}}"}}]
+1e:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]
+1c:["$","$L1e",null,{}]
+1d:["$","div",null,{"className":"blog-post-nav","children":[["$","span",null,{}],["$","$Lb",null,{"href":"/blog/common-llm-parameters-for-rag","children":"Next"}]]}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"IconMark"]
+13:null
+17:[["$","title","0",{"children":"The CocoaPods Sunset: What Dec 2, 2026 Means for Your React Native App | Subrata Kumar Das"}],["$","meta","1",{"name":"description","content":"Explore what the CocoaPods read-only transition on December 2, 2026, means for React Native apps, the shift to Swift Package Manager (SPM), and how to prepare your projects."}],["$","meta","2",{"name":"keywords","content":"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"}],["$","link","3",{"rel":"canonical","href":"https://subraatakumar.com/blog/cocoapods-sunset-react-native-app/"}],["$","meta","4",{"property":"og:title","content":"The CocoaPods Sunset: What Dec 2, 2026 Means for Your React Native App | Blog"}],["$","meta","5",{"property":"og:description","content":"Explore what the CocoaPods read-only transition on December 2, 2026, means for React Native apps, the shift to Swift Package Manager (SPM), and how to prepare your projects. • 10 min"}],["$","meta","6",{"property":"og:url","content":"https://subraatakumar.com/blog/cocoapods-sunset-react-native-app/"}],["$","meta","7",{"property":"og:image","content":"https://subraatakumar.com/images/interview.png"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"property":"article:published_time","content":"2026-05-02"}],["$","meta","10",{"property":"article:modified_time","content":"2026-05-02"}],["$","meta","11",{"property":"article:tag","content":"cocoapods"}],["$","meta","12",{"property":"article:tag","content":"react-native"}],["$","meta","13",{"property":"article:tag","content":"ios"}],["$","meta","14",{"property":"article:tag","content":"swift"}],["$","meta","15",{"property":"article:tag","content":"software-development"}],["$","meta","16",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","17",{"name":"twitter:title","content":"The CocoaPods Sunset: What Dec 2, 2026 Means for Your React Native App | Blog"}],["$","meta","18",{"name":"twitter:description","content":"Explore what the CocoaPods read-only transition on December 2, 2026, means for React Native apps, the shift to Swift Package Manager (SPM), and how to prepare your projects. • 10 min"}],["$","meta","19",{"name":"twitter:image","content":"https://subraatakumar.com/images/interview.png"}],["$","link","20",{"rel":"icon","href":"/favicon.ico?favicon.750fd6b3.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L1f","21",{}]]
