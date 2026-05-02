@@ -107,10 +107,6 @@ The React Native community and core team are actively moving towards Swift Packa
 
 ---
 
-(Note for Dev.to readers: Knowing the change is coming is only half the battle. If you want to see the exact code snippets for Method A (`spm_dependency`), learn how React Native handles Autolinking with SPM, discover how to handle legacy libraries that won't update, and follow a step-by-step migration guide for your bare React Native apps, **[read the full technical migration guide on my blog](#)**.)
-
----
-
 ## The Technical Deep Dive: Transitioning from CocoaPods to SPM
 
 *(The following sections dive deep into the code and mechanics of the migration. Welcome to the technical guide!)*
