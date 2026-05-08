@@ -1,0 +1,949 @@
+1:"$Sreact.fragment"
+a:I[68027,[],"default"]
+:HL["/_next/static/chunks/73857f047b5eee22.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","style"]
+2:T19f5,
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+
+          body {
+            background: #fafaf7;
+            font-family: 'Caveat', cursive;
+            color: #1a1a2e;
+          }
+
+          /* ── Nav ── */
+          .sk-header {
+            background: #fff;
+            border-bottom: 2.5px solid #1a1a2e;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+          }
+          .sk-header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .sk-logo {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.55rem;
+            color: #1a1a2e;
+            text-decoration: none;
+            letter-spacing: 0.01em;
+          }
+          .sk-nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+          }
+          .sk-nav-links a {
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+            padding-bottom: 2px;
+          }
+          .sk-nav-links a:hover {
+            text-decoration: underline wavy #2563eb 2px;
+            text-underline-offset: 4px;
+          }
+          .sk-nav-mobile {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 14px;
+          }
+          .sk-nav-mobile ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+          }
+          .sk-nav-mobile a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+          }
+
+          /* ── Footer ── */
+          .sk-footer {
+            border-top: 2.5px solid #1a1a2e;
+            background: #fff;
+            padding: 24px;
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+          }
+
+          /* ── Shared section ── */
+          .sk-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+          }
+          .sk-page-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            margin-bottom: 8px;
+            line-height: 1.1;
+          }
+          .sk-section-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.9rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+          .sk-section-heading::after {
+            content: '';
+            flex: 1;
+            border-top: 2px dashed #9ca3af;
+          }
+
+          /* ── Squiggle divider ── */
+          .sk-squiggle {
+            width: 100%;
+            height: 8px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 4 Q5 0 10 4 Q15 8 20 4 Q25 0 30 4 Q35 8 40 4' stroke='%239ca3af' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") repeat-x center;
+            opacity: 0.55;
+            margin: 36px 0;
+          }
+
+          /* ── Sketch button ── */
+          .sk-btn {
+            display: inline-block;
+            padding: 10px 26px;
+            background: #2563eb;
+            color: #fff;
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 3px 3px 0 #1a1a2e;
+            transition: transform 0.1s, box-shadow 0.1s;
+          }
+          .sk-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 #1a1a2e;
+          }
+          .sk-btn-ghost {
+            background: transparent;
+            color: #1a1a2e;
+            box-shadow: 3px 3px 0 #9ca3af;
+          }
+          .sk-btn-ghost:hover {
+            box-shadow: 5px 5px 0 #9ca3af;
+          }
+
+          /* ── Tag chip ── */
+          .sk-tag {
+            display: inline-block;
+            padding: 3px 13px;
+            border: 2px solid #1a1a2e;
+            border-radius: 2px;
+            font-size: 1rem;
+            font-weight: 600;
+            background: #fff;
+            margin: 3px;
+          }
+          .sk-tag.active {
+            background: #2563eb;
+            color: #fff;
+          }
+
+          /* ── Card ── */
+          .sk-card {
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 5px 5px 0 #1a1a2e;
+            padding: 24px;
+            transition: transform 0.15s, box-shadow 0.15s;
+          }
+          .sk-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0 #1a1a2e;
+          }
+
+          /* ── Stat card ── */
+          .sk-stat {
+            flex: 1;
+            min-width: 130px;
+            text-align: center;
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 4px 4px 0 #1a1a2e;
+            padding: 20px 12px;
+          }
+          .sk-stat .num {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            color: #2563eb;
+            line-height: 1;
+          }
+          .sk-stat .lbl {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 4px;
+          }
+
+          /* ── Image placeholder ── */
+          .sk-img {
+            width: 100%;
+            height: 160px;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            background: #f3f4f6;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 16px;
+          }
+          .sk-img::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+              linear-gradient(to bottom right, transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px)),
+              linear-gradient(to bottom left,  transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px));
+          }
+
+          @media (max-width: 640px) {
+            .sk-nav-links { display: none; }
+            .sk-nav-mobile { display: block; }
+            .sk-page-heading { font-size: 2.2rem; }
+          }
+        0:{"P":null,"b":"sqtFNnTMaUtBmcDJtkGR1","c":["","blog","how-to-build-a-liveness-check-login-with-face-api-js-and-react",""],"q":"","i":false,"f":[[["",{"children":["blog",{"children":[["slug","how-to-build-a-liveness-check-login-with-face-api-js-and-react","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/73857f047b5eee22.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+b:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
+c:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+d:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+11:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+14:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"ViewportBoundary"]
+16:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"MetadataBoundary"]
+3:["$","header",null,{"className":"sk-header","children":[["$","div",null,{"className":"sk-header-inner","children":[["$","$Lb",null,{"href":"/","className":"sk-logo","children":"SKD_"}],["$","nav",null,{"aria-label":"Primary","children":["$","ul",null,{"className":"sk-nav-links","children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]]}],["$","div",null,{"className":"sk-nav-mobile","children":["$","nav",null,{"aria-label":"Mobile","children":["$","ul",null,{"children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]}]]}]
+4:["$","main",null,{"style":{"width":"100%"},"children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
+5:["$","footer",null,{"className":"sk-footer","children":["© ",2026," Subrata Kumar Das. All rights reserved. ·"," ",["$","$Lb",null,{"href":"/for-ai","children":"For AI/Crawlers"}]]}]
+e:T1027,
+        body:has(#blog-root) .sk-header,
+        body:has(#blog-root) .sk-footer {
+          display: none !important;
+        }
+
+        #blog-root,
+        #blog-root * {
+          box-sizing: border-box;
+        }
+
+        #blog-root {
+          --blog-ink: #101828;
+          --blog-muted: #667085;
+          --blog-line: #e4e7ec;
+          --blog-card: #ffffff;
+          --blog-accent: #0ea5e9;
+          --blog-accent-warm: #fb7185;
+          --blog-bg: radial-gradient(circle at 10% 0%, #dff6ff 0%, transparent 40%),
+            radial-gradient(circle at 100% 10%, #ffe8ec 0%, transparent 35%),
+            #f8fafc;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+          background: var(--blog-bg);
+          color: var(--blog-ink);
+          font-family: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
+        }
+
+        #blog-root .blog-shell-header {
+          position: sticky;
+          top: 0;
+          z-index: 100;
+          backdrop-filter: blur(10px);
+          background: rgba(248, 250, 252, 0.78);
+          border-bottom: 1px solid var(--blog-line);
+        }
+        #blog-root .blog-shell-header-inner {
+          width: 100%;
+          height: 66px;
+          padding: 0 clamp(16px, 4vw, 48px);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        }
+        #blog-root .blog-shell-main {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+        #blog-root .blog-brand {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          text-decoration: none;
+          color: var(--blog-ink);
+        }
+        #blog-root .blog-brand-mark {
+          width: 32px;
+          height: 32px;
+          border-radius: 10px;
+          background: linear-gradient(135deg, var(--blog-accent), var(--blog-accent-warm));
+          color: #fff;
+          display: grid;
+          place-items: center;
+          font-weight: 900;
+          font-size: 12px;
+          letter-spacing: 0.03em;
+          box-shadow: 0 10px 24px rgba(14, 165, 233, 0.28);
+        }
+        #blog-root .blog-brand-text {
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-weight: 700;
+          font-size: 1.1rem;
+          letter-spacing: 0.01em;
+        }
+        #blog-root .blog-shell-nav {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+        }
+        #blog-root .blog-shell-nav a {
+          text-decoration: none;
+          color: var(--blog-ink);
+          font-size: 0.8rem;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          padding: 10px 12px;
+          border-radius: 10px;
+          transition: background 0.2s ease;
+        }
+        #blog-root .blog-shell-nav a:hover {
+          background: #eef2f6;
+        }
+
+        #blog-root .blog-shell-footer {
+          margin-top: auto;
+          border-top: 1px solid var(--blog-line);
+          background: rgba(255, 255, 255, 0.64);
+        }
+        #blog-root .blog-shell-footer-inner {
+          width: 100%;
+          padding: 20px clamp(16px, 4vw, 48px) 24px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+        #blog-root .blog-shell-copy {
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: 0.12em;
+          color: var(--blog-muted);
+          font-weight: 700;
+        }
+        #blog-root .blog-shell-footer a {
+          text-decoration: none;
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: 0.05em;
+          color: #0b6ba8;
+        }
+
+        @media (max-width: 700px) {
+          #blog-root .blog-shell-header-inner,
+          #blog-root .blog-shell-footer-inner {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+          #blog-root .blog-shell-nav a {
+            padding: 8px 10px;
+            font-size: 0.72rem;
+          }
+        }
+      6:["$","$1","c",{"children":[null,["$","div",null,{"style":{"all":"revert"},"children":[["$","style",null,{"children":"$e"}],"$Lf"]}]]}]
+7:["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+9:["$","$1","h",{"children":[null,["$","$L14",null,{"children":"$L15"}],["$","div",null,{"hidden":true,"children":["$","$L16",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L17"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+f:["$","div",null,{"id":"blog-root","children":[["$","header",null,{"className":"blog-shell-header","children":["$","div",null,{"className":"blog-shell-header-inner","children":[["$","$Lb",null,{"href":"/blog","className":"blog-brand","children":[["$","span",null,{"className":"blog-brand-mark","children":["$","$Lb",null,{"href":"/","aria-label":"Go to main home page","children":"SK"}]}],["$","span",null,{"className":"blog-brand-text","children":"TechCraft Blog"}]]}],["$","nav",null,{"className":"blog-shell-nav","children":[["$","$Lb",null,{"href":"/products","children":"Products"}],["$","$Lb",null,{"href":"/","children":"Home"}]]}]]}]}],["$","main",null,{"className":"blog-shell-main","children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"blog-shell-footer","children":["$","div",null,{"className":"blog-shell-footer-inner","children":[["$","p",null,{"className":"blog-shell-copy","children":"Subrata Kumar Das • Blog"}],["$","$Lb",null,{"href":"/blog","children":"All Posts"}]]}]}]]}]
+18:T1b2e,
+        #blog-root .blog-post-wrap {
+          max-width: 880px;
+          margin: 0 auto;
+          padding: 30px 24px 0;
+        }
+        #blog-root .blog-post-kicker {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          color: #175cd3;
+          border: 1px solid #cfe1fa;
+          border-radius: 999px;
+          padding: 8px 12px;
+          background: #fff;
+          text-decoration: none;
+        }
+        #blog-root .blog-post-wrap h1 {
+          margin-top: 18px;
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-size: clamp(2rem, 4.6vw, 3.2rem);
+          line-height: 1.08;
+          letter-spacing: -0.02em;
+        }
+        #blog-root .blog-post-meta {
+          margin-top: 16px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 8px;
+          color: #667085;
+          font-size: 12px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.07em;
+        }
+        #blog-root .blog-post-desc {
+          margin-top: 14px;
+          font-size: 1.04rem;
+          line-height: 1.8;
+          color: #475467;
+        }
+        #blog-root .blog-tag-row {
+          margin-top: 12px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+        #blog-root .blog-tag-row span {
+          background: #f2f4f7;
+          color: #344054;
+          font-size: 11px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          padding: 6px 10px;
+          border-radius: 999px;
+        }
+        #blog-root .blog-article {
+          margin-top: 26px;
+          border-top: 1px solid #e4e7ec;
+          padding-top: 24px;
+          padding-bottom: 20px;
+        }
+        #blog-root .blog-md-p {
+          margin: 18px 0;
+          font-size: 1.03rem;
+          line-height: 1.95;
+          color: #1d2939;
+        }
+        #blog-root .blog-md-h1 {
+          margin: 56px 0 16px;
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-size: 2rem;
+          line-height: 1.18;
+        }
+        #blog-root .blog-md-h2 {
+          margin: 46px 0 14px;
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-size: 1.7rem;
+          line-height: 1.24;
+        }
+        #blog-root .blog-md-h3 {
+          margin: 36px 0 10px;
+          font-weight: 800;
+          font-size: 1.28rem;
+          line-height: 1.34;
+        }
+        #blog-root .blog-md-h4,
+        #blog-root .blog-md-h5,
+        #blog-root .blog-md-h6 {
+          margin: 28px 0 8px;
+          font-size: 1.08rem;
+          font-weight: 800;
+        }
+        #blog-root .blog-md-ul {
+          list-style: disc;
+          padding-left: 24px;
+          margin: 18px 0;
+        }
+        #blog-root .blog-md-ol {
+          list-style: decimal;
+          padding-left: 28px;
+          margin: 18px 0;
+        }
+        #blog-root .blog-md-li {
+          margin: 8px 0;
+          line-height: 1.8;
+          color: #344054;
+        }
+        #blog-root .blog-md-quote {
+          margin: 22px 0;
+          border-left: 3px solid #7cd4ff;
+          background: #f5fbff;
+          border-radius: 10px;
+          padding: 14px 16px;
+          color: #344054;
+          font-style: italic;
+        }
+        #blog-root .blog-md-link {
+          color: #0b6ba8;
+          text-decoration: none;
+          font-weight: 700;
+        }
+        #blog-root .blog-md-link:hover {
+          text-decoration: underline;
+        }
+        #blog-root .blog-md-inline-code {
+          background: #f2f4f7;
+          color: #7a271a;
+          border-radius: 6px;
+          padding: 2px 6px;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+          font-size: 0.9em;
+        }
+        #blog-root .blog-code-wrap {
+          margin: 24px 0;
+          border-radius: 14px;
+          overflow: hidden;
+          border: 1px solid #d0d5dd;
+        }
+        #blog-root .blog-code-head {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: #101828;
+          padding: 8px 10px;
+        }
+        #blog-root .blog-code-lang {
+          font-size: 11px;
+          font-weight: 800;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          color: #d1e9ff;
+        }
+        #blog-root .blog-copy-btn {
+          border: 0;
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          border-radius: 8px;
+          padding: 5px 10px;
+          background: #d1e9ff;
+          color: #0c2d6b;
+          cursor: pointer;
+        }
+        #blog-root .blog-md-pre {
+          margin: 0;
+          background: #182230;
+          color: #f8fafc;
+          padding: 14px;
+          overflow: auto;
+        }
+        #blog-root .blog-md-image {
+          max-width: 100%;
+          height: auto;
+          border-radius: 12px;
+          margin: 16px 0;
+          border: 1px solid #e4e7ec;
+        }
+        #blog-root .blog-md-hr {
+          border: 0;
+          height: 1px;
+          background: #e4e7ec;
+          margin: 44px 0;
+        }
+        #blog-root .blog-md-table-wrap {
+          overflow: auto;
+          border: 1px solid #e4e7ec;
+          border-radius: 12px;
+          margin: 20px 0;
+        }
+        #blog-root .blog-md-table {
+          border-collapse: collapse;
+          min-width: 100%;
+        }
+        #blog-root .blog-md-th {
+          background: #f9fafb;
+          text-align: left;
+          font-size: 12px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          color: #475467;
+          padding: 10px;
+          border-bottom: 1px solid #e4e7ec;
+        }
+        #blog-root .blog-md-td {
+          padding: 10px;
+          border-bottom: 1px solid #f2f4f7;
+          color: #344054;
+          font-size: 14px;
+        }
+        #blog-root .blog-post-nav {
+          margin-top: 20px;
+          padding-top: 20px;
+          border-top: 1px solid #e4e7ec;
+          display: flex;
+          gap: 10px;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+        #blog-root .blog-post-nav a {
+          text-decoration: none;
+          border: 1px solid #d0d5dd;
+          background: #fff;
+          color: #101828;
+          border-radius: 10px;
+          padding: 10px 14px;
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+        }
+        @media (max-width: 700px) {
+          #blog-root .blog-post-wrap {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+        }
+      10:["$","main",null,{"children":[["$","style",null,{"children":"$18"}],"$L19","$L1a"]}]
+1b:T5869,<blockquote class="blog-md-quote">
+<p class="blog-md-p"><em>"What if your login page could tell the difference between a real person and a photo of one?"</em></p>
+</blockquote>
+<p class="blog-md-p">That's the idea we're going to explore today. We'll look at how to build an <strong>anti-spoofing face login</strong> — a login system that asks users to do something like <em>"blink twice"</em> or <em>"turn your head left"</em> before letting them in. This makes it nearly impossible for someone to bypass the system by just holding up a photo.</p>
+<p class="blog-md-p">By the end of this article, you'll understand:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">What <code class="blog-md-inline-code">face-api.js</code> is and why it's perfect for this</li>
+<li class="blog-md-li">How face recognition works in the browser (no server needed!)</li>
+<li class="blog-md-li">What a real prototype of this looks like</li>
+<li class="blog-md-li">How to extend it into a fullstack project with anti-spoofing</li>
+</ul>
+<hr class="blog-md-hr" />
+<h2 id="the-problem-with-regular-face-login" class="blog-md-h2">The Problem with Regular Face Login</h2>
+<p class="blog-md-p">Imagine you build a face login. A user looks at their webcam, the app recognises them, and they're in. Sounds secure, right?</p>
+<p class="blog-md-p">Not quite. What if someone just <strong>holds up a photo</strong> of the registered user? A basic face recognition system won't know the difference. It sees a face, matches it, and logs in the attacker. This is called a <strong>spoofing attack</strong>.</p>
+<p class="blog-md-p">The fix is a <strong>liveness check</strong> — asking the user to perform a real-time action that a photo simply cannot replicate. Things like:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">Blink twice</li>
+<li class="blog-md-li">Smile</li>
+<li class="blog-md-li">Turn your head to the left</li>
+<li class="blog-md-li">Open your mouth</li>
+</ul>
+<p class="blog-md-p">This is what makes face login actually secure. And the good news? We can implement all of this <strong>entirely in the browser</strong>, for free, using open-source tools.</p>
+<hr class="blog-md-hr" />
+<h2 id="meet-face-apijs" class="blog-md-h2">Meet face-api.js</h2>
+<p class="blog-md-p"><a href="https://github.com/justadudewhohacks/face-api.js/" class="blog-md-link"><code class="blog-md-inline-code">face-api.js</code></a> is an open-source JavaScript library for face detection and recognition. It runs directly in the browser (or Node.js) and is built on top of <strong>TensorFlow.js</strong> — which means it uses your device's GPU for fast, smooth performance.</p>
+<p class="blog-md-p">The best part for privacy-conscious apps? <strong>Everything runs on the client side.</strong> The user's face data never leaves their device.</p>
+<p class="blog-md-p">Here's a quick overview of what it can do:</p>
+<div class="blog-md-table-wrap"><table class="blog-md-table">
+<thead>
+<tr>
+<th class="blog-md-th">Feature</th>
+<th class="blog-md-th">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="blog-md-td"><strong>Face Detection</strong></td>
+<td class="blog-md-td">Finds faces in an image or video and returns bounding boxes</td>
+</tr>
+<tr>
+<td class="blog-md-td"><strong>Face Recognition</strong></td>
+<td class="blog-md-td">Identifies <em>who</em> the person is by comparing 128-point face descriptors</td>
+</tr>
+<tr>
+<td class="blog-md-td"><strong>Landmark Detection</strong></td>
+<td class="blog-md-td">Locates 68 key points on the face — eyes, nose, mouth, jaw</td>
+</tr>
+<tr>
+<td class="blog-md-td"><strong>Expression Recognition</strong></td>
+<td class="blog-md-td">Detects emotions like happiness, sadness, anger, surprise</td>
+</tr>
+<tr>
+<td class="blog-md-td"><strong>Age &#x26; Gender Estimation</strong></td>
+<td class="blog-md-td">Predicts approximate age and gender</td>
+</tr>
+</tbody>
+</table></div>
+<p class="blog-md-p">For our anti-spoofing login, the <strong>landmark detection</strong> is the star. Those 68 points tell us exactly where the eyes, eyelids, and mouth corners are — which is exactly what we need to detect a blink or a smile.</p>
+<hr class="blog-md-hr" />
+<h2 id="how-does-face-recognition-actually-work" class="blog-md-h2">How Does Face Recognition Actually Work?</h2>
+<p class="blog-md-p">Let's demystify the process before we write any code.</p>
+<h3 id="step-1-register-a-user" class="blog-md-h3">Step 1 — Register a User</h3>
+<p class="blog-md-p">When a user signs up, your app:</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li">Opens their webcam</li>
+<li class="blog-md-li">Detects their face using <code class="blog-md-inline-code">face-api.js</code></li>
+<li class="blog-md-li">Generates a <strong>face descriptor</strong> — a 128-number array (think of it as a mathematical fingerprint of that face)</li>
+<li class="blog-md-li">Saves this descriptor (in the browser, localStorage, or a database)</li>
+</ol>
+<h3 id="step-2-login-attempt" class="blog-md-h3">Step 2 — Login Attempt</h3>
+<p class="blog-md-p">When the same user tries to log in:</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li">The webcam opens again</li>
+<li class="blog-md-li">A new face descriptor is generated from the live feed</li>
+<li class="blog-md-li">The app compares the new descriptor against all saved ones using <strong>Euclidean distance</strong> (how "far apart" two descriptors are)</li>
+<li class="blog-md-li">If the distance is small enough (below a threshold, usually <code class="blog-md-inline-code">0.6</code>), it's a match</li>
+</ol>
+<h3 id="step-3-the-liveness-check-anti-spoofing" class="blog-md-h3">Step 3 — The Liveness Check (Anti-Spoofing)</h3>
+<p class="blog-md-p">This is the extra layer. Before or after recognition, your app:</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li">Shows a random challenge — <em>"Please blink twice"</em></li>
+<li class="blog-md-li">Watches the landmark data from the video stream in real time</li>
+<li class="blog-md-li">Checks if the eyes actually closed and opened (or the mouth opened for a smile)</li>
+<li class="blog-md-li">Only approves the login if the challenge is passed</li>
+</ol>
+<p class="blog-md-p">A printed photo cannot blink. A video playing on a screen <em>could</em> fool a basic version, but adding randomised challenges makes even that impractical.</p>
+<hr class="blog-md-hr" />
+<h2 id="the-models-behind-the-magic" class="blog-md-h2">The Models Behind the Magic</h2>
+<p class="blog-md-p"><code class="blog-md-inline-code">face-api.js</code> ships with several pre-trained neural network models. You load the ones you need:</p>
+<p class="blog-md-p"><strong>SSD Mobilenet V1</strong> — The default, high-accuracy detector. Great when precision matters.</p>
+<p class="blog-md-p"><strong>Tiny Face Detector</strong> — Roughly 190 KB. Built for real-time performance on mobile or low-powered devices. This is usually your go-to for a live video stream.</p>
+<p class="blog-md-p"><strong>FaceLandmark68Net</strong> — Detects 68 key points on the face. This is what enables liveness detection.</p>
+<p class="blog-md-p"><strong>FaceRecognitionNet</strong> — A ResNet-34-like architecture that generates the 128-number face descriptor used for identity matching.</p>
+<p class="blog-md-p"><strong>FaceExpressionNet</strong> — Detects emotions. Useful if your liveness challenge is <em>"please smile."</em></p>
+<p class="blog-md-p">You load them like this:</p>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">JAVASCRIPT</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-javascript">await faceapi.nets.tinyFaceDetector.loadFromUri('/models');
+await faceapi.nets.faceLandmark68Net.loadFromUri('/models');
+await faceapi.nets.faceRecognitionNet.loadFromUri('/models');
+await faceapi.nets.faceExpressionNet.loadFromUri('/models');
+</code></pre>
+      </div>
+    
+<p class="blog-md-p">The models are stored as a <code class="blog-md-inline-code">model.json</code> (the architecture blueprint) and <code class="blog-md-inline-code">.bin</code> files (the learned weights). They're split into small ~4 MB chunks so the browser can download them in parallel and start working quickly.</p>
+<hr class="blog-md-hr" />
+<h2 id="a-look-at-the-prototype" class="blog-md-h2">A Look at the Prototype</h2>
+<p class="blog-md-p">I built a working prototype to demonstrate the core concept. You can find it here:</p>
+<p class="blog-md-p">👉 <strong><a href="https://subraatakumar.github.io/face-recognition-authentication-system-prototype/" class="blog-md-link">Live Demo</a></strong><br>
+👉 <strong><a href="https://github.com/subraatakumar/face-recognition-authentication-system-prototype" class="blog-md-link">GitHub Repository</a></strong></p>
+<p class="blog-md-p">The prototype is built with <strong>React + face-api.js + Tailwind CSS</strong> and runs entirely in the browser. Here's what it does:</p>
+<p class="blog-md-p"><strong>Add a User</strong> — You register your face. The app captures your face descriptor and saves it locally.</p>
+<p class="blog-md-p"><strong>Login with Face</strong> — You look at the camera, and the app scans your face in real time, matching you against saved users.</p>
+<p class="blog-md-p"><strong>Client-Side Only</strong> — No server, no database, no face data leaving your machine. This makes it a perfect starting point for understanding the concept before adding a backend.</p>
+<p class="blog-md-p">To run it locally:</p>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">BASH</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-bash">git clone git@github.com:subraatakumar/face-recognition-authentication-system-prototype.git
+cd face-recognition-authentication-system-prototype
+npm install
+npm run dev
+</code></pre>
+      </div>
+    
+<p class="blog-md-p">Then open <code class="blog-md-inline-code">http://127.0.0.1:5173/</code> in your browser.</p>
+<hr class="blog-md-hr" />
+<h2 id="detecting-a-blink-the-core-of-anti-spoofing" class="blog-md-h2">Detecting a Blink — The Core of Anti-Spoofing</h2>
+<p class="blog-md-p">So how do we actually detect a blink? The <code class="blog-md-inline-code">faceLandmark68Net</code> model gives us the positions of all 68 points on a face. Eyes occupy specific indices in that array.</p>
+<p class="blog-md-p">A common technique is called the <strong>Eye Aspect Ratio (EAR)</strong>:</p>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span></span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code>       |p2 - p6| + |p3 - p5|
+EAR = ─────────────────────────
+            2 * |p1 - p4|
+</code></pre>
+      </div>
+    
+<p class="blog-md-p">When the eye is open, EAR is around <code class="blog-md-inline-code">0.3</code>. When it closes (a blink), EAR drops close to <code class="blog-md-inline-code">0</code>. By watching this value frame by frame on the video stream, you can reliably detect blinks.</p>
+<p class="blog-md-p">Here's a simplified implementation:</p>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">JAVASCRIPT</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-javascript">function getEAR(eyePoints) {
+  const vertical1 = Math.abs(eyePoints[1].y - eyePoints[5].y);
+  const vertical2 = Math.abs(eyePoints[2].y - eyePoints[4].y);
+  const horizontal = Math.abs(eyePoints[0].x - eyePoints[3].x);
+  return (vertical1 + vertical2) / (2.0 * horizontal);
+}
+
+// In your video loop:
+const detections = await faceapi
+  .detectSingleFace(video, new faceapi.TinyFaceDetectorOptions())
+  .withFaceLandmarks();
+
+if (detections) {
+  const landmarks = detections.landmarks;
+  const leftEye = landmarks.getLeftEye();
+  const rightEye = landmarks.getRightEye();
+  
+  const leftEAR = getEAR(leftEye);
+  const rightEAR = getEAR(rightEye);
+  const avgEAR = (leftEAR + rightEAR) / 2;
+
+  if (avgEAR &#x3C; 0.25) {
+    // Eye is closed — a blink is happening!
+    blinkCount++;
+  }
+}
+</code></pre>
+      </div>
+    
+<p class="blog-md-p">A full liveness check waits for <code class="blog-md-inline-code">blinkCount >= 2</code> within a time window (say, 5 seconds) before approving the session.</p>
+<hr class="blog-md-hr" />
+<h2 id="extending-this-into-a-fullstack-project" class="blog-md-h2">Extending This into a Fullstack Project</h2>
+<p class="blog-md-p">The prototype is client-side only, which is fine for learning — but a real production system needs a backend. Here's how you'd extend it:</p>
+<h3 id="on-the-frontend-react" class="blog-md-h3">On the Frontend (React)</h3>
+<ol class="blog-md-ol">
+<li class="blog-md-li">Capture the user's face descriptor using <code class="blog-md-inline-code">face-api.js</code></li>
+<li class="blog-md-li">Run the liveness challenge (e.g., blink detection)</li>
+<li class="blog-md-li">Only if the challenge passes, send the descriptor to the server</li>
+</ol>
+<h3 id="on-the-backend-nodejs-any-language" class="blog-md-h3">On the Backend (Node.js / any language)</h3>
+<ol class="blog-md-ol">
+<li class="blog-md-li">During <strong>registration</strong>: receive the face descriptor, associate it with a user account, store it in a database</li>
+<li class="blog-md-li">During <strong>login</strong>: receive the live descriptor, query all saved descriptors for that user (or look them up by username first), compute distances, and return success/failure</li>
+</ol>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">JAVASCRIPT</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-javascript">// Pseudocode — backend login check
+app.post('/login', async (req, res) => {
+  const { username, liveDescriptor, livenessVerified } = req.body;
+
+  if (!livenessVerified) {
+    return res.status(401).json({ error: 'Liveness check failed' });
+  }
+
+  const user = await db.findUser(username);
+  const distance = faceapi.euclideanDistance(liveDescriptor, user.faceDescriptor);
+
+  if (distance &#x3C; 0.6) {
+    return res.json({ success: true, token: generateJWT(user) });
+  }
+
+  return res.status(401).json({ error: 'Face not recognised' });
+});
+</code></pre>
+      </div>
+    
+<h3 id="security-considerations" class="blog-md-h3">Security Considerations</h3>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><strong>Never trust the client</strong> to tell the server that liveness passed. Re-verify server-side where possible, or at minimum use a signed token from the liveness check step.</li>
+<li class="blog-md-li"><strong>Encrypt stored face descriptors.</strong> They're mathematical data, not photos, but they're still biometric.</li>
+<li class="blog-md-li"><strong>Add rate limiting.</strong> Prevent brute-force attempts against the face matcher.</li>
+<li class="blog-md-li"><strong>Use HTTPS always.</strong> Webcam access requires a secure context.</li>
+</ul>
+<hr class="blog-md-hr" />
+<h2 id="real-world-use-cases-of-this-technology" class="blog-md-h2">Real-World Use Cases of This Technology</h2>
+<p class="blog-md-p">This isn't just a cool side project — the underlying tech powers some serious real-world systems:</p>
+<p class="blog-md-p"><strong>Corporate Attendance</strong> — Touchless check-in portals that verify employees are physically present (not dialling in from home while showing a photo at the scanner).</p>
+<p class="blog-md-p"><strong>Two-Factor Auth</strong> — Replacing the second factor in 2FA with a face + liveness check instead of an SMS code.</p>
+<p class="blog-md-p"><strong>KYC (Know Your Customer)</strong> — Fintech and banking apps verifying a user's identity during onboarding.</p>
+<p class="blog-md-p"><strong>Exam Proctoring</strong> — Ensuring the person who sat the registration test is the same person taking the exam.</p>
+<p class="blog-md-p"><strong>Accessibility</strong> — Hands-free navigation for users with motor disabilities who can log in or control interfaces using head movements or expressions.</p>
+<hr class="blog-md-hr" />
+<h2 id="understanding-model-formats-a-quick-primer" class="blog-md-h2">Understanding Model Formats (A Quick Primer)</h2>
+<p class="blog-md-p">If you dig into the <code class="blog-md-inline-code">/models</code> folder of a face-api.js project, you'll notice files like <code class="blog-md-inline-code">tiny_face_detector_model-weights_manifest.json</code> and several <code class="blog-md-inline-code">.bin</code> files. This is the <strong>TensorFlow.js format</strong>.</p>
+<p class="blog-md-p">Here's a quick cheat sheet for the formats you'll encounter as you explore AI:</p>
+<div class="blog-md-table-wrap"><table class="blog-md-table">
+<thead>
+<tr>
+<th class="blog-md-th">Format</th>
+<th class="blog-md-th">Extension</th>
+<th class="blog-md-th">Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="blog-md-td">TensorFlow.js</td>
+<td class="blog-md-td"><code class="blog-md-inline-code">.json</code> + <code class="blog-md-inline-code">.bin</code></td>
+<td class="blog-md-td">Running models in the browser</td>
+</tr>
+<tr>
+<td class="blog-md-td">TFLite</td>
+<td class="blog-md-td"><code class="blog-md-inline-code">.tflite</code></td>
+<td class="blog-md-td">Mobile apps (Android / iOS)</td>
+</tr>
+<tr>
+<td class="blog-md-td">ONNX</td>
+<td class="blog-md-td"><code class="blog-md-inline-code">.onnx</code></td>
+<td class="blog-md-td">Sharing models across frameworks</td>
+</tr>
+<tr>
+<td class="blog-md-td">PyTorch</td>
+<td class="blog-md-td"><code class="blog-md-inline-code">.pt</code> / <code class="blog-md-inline-code">.pth</code></td>
+<td class="blog-md-td">Research and training</td>
+</tr>
+<tr>
+<td class="blog-md-td">ExecuTorch</td>
+<td class="blog-md-td"><code class="blog-md-inline-code">.pte</code></td>
+<td class="blog-md-td">On-device AI with NPU/DSP acceleration</td>
+</tr>
+</tbody>
+</table></div>
+<p class="blog-md-p">Think of it like image formats: a RAW file is great for editing in Photoshop (like a <code class="blog-md-inline-code">.pt</code> file), but you need a JPEG for a website (like <code class="blog-md-inline-code">.json</code> + <code class="blog-md-inline-code">.bin</code> shards) because it's compressed and browser-ready.</p>
+<hr class="blog-md-hr" />
+<h2 id="what-to-build-next" class="blog-md-h2">What to Build Next</h2>
+<p class="blog-md-p">Once you've cloned the prototype and got it running, here are some ideas to level it up:</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li">
+<p class="blog-md-p"><strong>Add a randomised liveness challenge</strong> — Instead of always asking to blink, randomly pick from: blink, smile, turn left, turn right. This makes replay attacks much harder.</p>
+</li>
+<li class="blog-md-li">
+<p class="blog-md-p"><strong>Persist descriptors to a backend</strong> — Connect a Node.js + MongoDB (or PostgreSQL) backend so registrations survive a page refresh.</p>
+</li>
+<li class="blog-md-li">
+<p class="blog-md-p"><strong>Add a fallback login</strong> — Face login is great, but always give users a password fallback in case their camera fails.</p>
+</li>
+<li class="blog-md-li">
+<p class="blog-md-p"><strong>Try it in React Native</strong> — TensorFlow Lite models can run on mobile via the <code class="blog-md-inline-code">@tensorflow/tfjs-react-native</code> package, bringing the same ideas to your native app.</p>
+</li>
+<li class="blog-md-li">
+<p class="blog-md-p"><strong>Audit for edge cases</strong> — Test with glasses, different lighting, hats. Real-world faces are messy, and your threshold tuning matters.</p>
+</li>
+</ol>
+<hr class="blog-md-hr" />
+<h2 id="wrapping-up" class="blog-md-h2">Wrapping Up</h2>
+<p class="blog-md-p">Face recognition in the browser is no longer a futuristic concept — it's a practical, accessible tool that any React developer can start using today. <code class="blog-md-inline-code">face-api.js</code> abstracts away all the neural network complexity, leaving you to focus on building the experience.</p>
+<p class="blog-md-p">The prototype at <a href="https://subraatakumar.github.io/face-recognition-authentication-system-prototype/" class="blog-md-link">subraatakumar.github.io/face-recognition-authentication-system-prototype</a> gives you a solid working foundation. From there, adding the liveness check is the key step that takes it from a demo to something genuinely production-worthy.</p>
+<p class="blog-md-p">If you build on top of this or have questions, feel free to open an issue on the repo. Happy building! 🚀</p>
+<hr class="blog-md-hr" />
+<p class="blog-md-p"><em>Built with React, face-api.js, and TailwindCSS. All processing happens on your device — no face data is sent anywhere.</em></p>
+<h3 id="connect-with-me" class="blog-md-h3">Connect With Me</h3>
+<p class="blog-md-p"><a href="https://github.com/TechCraft-By-Subrata" class="blog-md-link"><img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&#x26;logo=github&#x26;logoColor=white" alt="GitHub" class="blog-md-image"></a>
+<a href="https://www.youtube.com/@techcraftclub" class="blog-md-link"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&#x26;logo=youtube&#x26;logoColor=white" alt="YouTube" class="blog-md-image"></a>
+<a href="https://discord.gg/cA5fhVT8" class="blog-md-link"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&#x26;logo=discord&#x26;logoColor=white" alt="Discord" class="blog-md-image"></a>
+<a href="https://whatsapp.com/channel/0029VbCz72vFCCoUsMV4K30M" class="blog-md-link"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&#x26;logo=whatsapp&#x26;logoColor=white" alt="WhatsApp" class="blog-md-image"></a>
+<a href="https://www.linkedin.com/in/subraatakumar/" class="blog-md-link"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&#x26;logo=linkedin&#x26;logoColor=white" alt="LinkedIn" class="blog-md-image"></a>
+<a href="https://www.instagram.com/subraatakumar/" class="blog-md-link"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&#x26;logo=instagram&#x26;logoColor=white" alt="Instagram" class="blog-md-image"></a></p>
+19:["$","section",null,{"className":"blog-post-wrap","children":[["$","$Lb",null,{"href":"/blog","className":"blog-post-kicker","children":"Back to blog"}],["$","h1",null,{"children":"How to build a Liveness-Check Login with face-api.js and React"}],["$","div",null,{"className":"blog-post-meta","children":[["$","span",null,{"children":"May 7, 2026"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"10 min"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"Subrata Kumar Das"}]]}],["$","p",null,{"className":"blog-post-desc","children":"Build a login that requires a liveness check (e.g., 'Blink twice to login') to prevent photo-based bypasses — using face-api.js in the browser."}],["$","div",null,{"className":"blog-tag-row","children":[["$","span","face-api.js",{"children":"face-api.js"}],["$","span","react",{"children":"react"}],["$","span","ai",{"children":"ai"}],["$","span","authentication",{"children":"authentication"}],["$","span","javascript",{"children":"javascript"}],["$","span","software-development",{"children":"software-development"}]]}],["$","article",null,{"className":"blog-article","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$1b"}}],"$L1c"]}],"$L1d"]}]
+1a:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"mainEntityOfPage\":\"https://subraatakumar.com/blog/how-to-build-a-liveness-check-login-with-face-api-js-and-react\",\"headline\":\"How to build a Liveness-Check Login with face-api.js and React\",\"description\":\"Build a login that requires a liveness check (e.g., 'Blink twice to login') to prevent photo-based bypasses — using face-api.js in the browser.\",\"datePublished\":\"2026-05-07\",\"dateModified\":\"2026-05-07\",\"image\":\"https://subraatakumar.com/images/interview.png\",\"keywords\":[\"face-api.js\",\"react\",\"ai\",\"authentication\",\"javascript\",\"software-development\"],\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com/\"}}"}}]
+1e:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]
+1c:["$","$L1e",null,{}]
+1d:["$","div",null,{"className":"blog-post-nav","children":[["$","$Lb",null,{"href":"/blog/common-llm-parameters-for-rag","children":"Previous"}],["$","$Lb",null,{"href":"/blog/the-right-model-for-your-job","children":"Next"}]]}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"IconMark"]
+13:null
+17:[["$","title","0",{"children":"How to build a Liveness-Check Login with face-api.js and React | Subrata Kumar Das"}],["$","meta","1",{"name":"description","content":"Build a login that requires a liveness check (e.g., 'Blink twice to login') to prevent photo-based bypasses — using face-api.js in the browser."}],["$","meta","2",{"name":"keywords","content":"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"}],["$","link","3",{"rel":"canonical","href":"https://subraatakumar.com/blog/how-to-build-a-liveness-check-login-with-face-api-js-and-react/"}],["$","meta","4",{"property":"og:title","content":"How to build a Liveness-Check Login with face-api.js and React | Blog"}],["$","meta","5",{"property":"og:description","content":"Build a login that requires a liveness check (e.g., 'Blink twice to login') to prevent photo-based bypasses — using face-api.js in the browser. • 10 min"}],["$","meta","6",{"property":"og:url","content":"https://subraatakumar.com/blog/how-to-build-a-liveness-check-login-with-face-api-js-and-react/"}],["$","meta","7",{"property":"og:image","content":"https://subraatakumar.com/images/interview.png"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"property":"article:published_time","content":"2026-05-07"}],["$","meta","10",{"property":"article:modified_time","content":"2026-05-07"}],["$","meta","11",{"property":"article:tag","content":"face-api.js"}],["$","meta","12",{"property":"article:tag","content":"react"}],["$","meta","13",{"property":"article:tag","content":"ai"}],["$","meta","14",{"property":"article:tag","content":"authentication"}],["$","meta","15",{"property":"article:tag","content":"javascript"}],["$","meta","16",{"property":"article:tag","content":"software-development"}],["$","meta","17",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","18",{"name":"twitter:title","content":"How to build a Liveness-Check Login with face-api.js and React | Blog"}],["$","meta","19",{"name":"twitter:description","content":"Build a login that requires a liveness check (e.g., 'Blink twice to login') to prevent photo-based bypasses — using face-api.js in the browser. • 10 min"}],["$","meta","20",{"name":"twitter:image","content":"https://subraatakumar.com/images/interview.png"}],["$","link","21",{"rel":"icon","href":"/favicon.ico?favicon.750fd6b3.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L1f","22",{}]]
