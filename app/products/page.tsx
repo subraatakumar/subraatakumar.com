@@ -25,23 +25,17 @@ export const metadata: Metadata = {
 
 const products = [
   {
-    title: "Subrata Labs",
-    slug: "subratalabs",
-    desc: "Execution Studio for practical AI products, systems, and developer ecosystems. Current live track: 180Days.",
-    tags: ["AI Products", "Developer Ecosystem", "Learning Tracks", "180Days"],
+    title: "React Native Mastery",
+    slug: "https://rnm.subraatakumar.com",
+    desc: "Execution Studio to become a React Native Expert, From Fundamentals to System Design, From Code to Storefront, Build, Scale, and Architect Production Apps",
+    tags: ["React Native", "Developer Ecosystem", "Learning Tracks", "mobile development"],
     layout: "full",
   },
   {
     title: "TCBS CLI",
-    slug: "tcbs-cli",
+    slug: "https://tcbscli.subraatakumar.com/",
     desc: "A developer CLI tool for managing build workflows and automating common mobile release tasks.",
     tags: ["Node.js", "CLI"],
-  },
-  {
-    title: "Offline Life Archive",
-    slug: "offline-life-archive",
-    desc: "A personal project to document and reflect on life experiences, learnings, and growth through a private digital journal app.",
-    tags: ["React Native", "Realm", "Personal", "Journal", "Privacy", "Self-Reflection", "Offline-First"],
   },
   {
     title: "Water Tracker",
@@ -67,6 +61,19 @@ const products = [
     desc: "A women-first health platform delivering personalised care journeys and secure health tracking.",
     tags: ["React Native", "Firebase"],
   },
+  {
+    title: "Learners REST API (Swagger)",
+    slug: "https://backend.ecom.subraatakumar.com/api-docs/",
+    desc: "Dummy REST API for learners with interactive Swagger docs to explore endpoints, payloads, and responses.",
+    tags: ["REST API", "Swagger", "Learning"],
+  },
+  {
+    title: "Learners GraphQL (GraphiQL)",
+    slug: "https://backend.ecom.subraatakumar.com/graphiql",
+    desc: "Dummy GraphQL endpoint for learners to practice queries and mutations in an interactive GraphiQL playground.",
+    tags: ["GraphQL", "GraphiQL", "Learning"],
+  },
+
 ];
 
 export default function ProjectsPage() {
@@ -111,7 +118,13 @@ export default function ProjectsPage() {
               ))}
             </div>
 
-            <Link href={`/${p.slug}`} className="sk-btn sk-btn-ghost" style={{ alignSelf: "flex-start", fontSize: "1rem", padding: "7px 18px" }}>
+            <Link
+              href={p.slug.startsWith("http") ? p.slug : `/${p.slug}`}
+              className="sk-btn sk-btn-ghost"
+              style={{ alignSelf: "flex-start", fontSize: "1rem", padding: "7px 18px" }}
+              target={p.slug.startsWith("http") ? "_blank" : undefined}
+              rel={p.slug.startsWith("http") ? "noopener noreferrer" : undefined}
+            >
               View Details →
             </Link>
           </article>
