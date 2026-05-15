@@ -50,6 +50,13 @@ const sections = [
   },
 ];
 
+const IMAGE_TRANSFORM_BY_ID: Record<string, string> = {
+  control: "scale(2.2) translate(0px, -10px)",
+  park: "scale(2.2) translate(0px, -10px)",
+  gym: "scale(2.2) translate(30px, -10px)",
+  family: "scale(2.2) translate(0px, 10px)",
+};
+
 export const metadata: Metadata = {
   title: "WaterTracker Nearby | Private Group Sharing",
   description:
@@ -432,7 +439,7 @@ export default function WaterTrackerNearbyPage() {
                     sizes="(max-width: 980px) 100vw, 50vw"
                     style={{
                       objectFit: "cover",
-                      transform: "scale(2.2) translate(0px, -10px)",
+                      transform: IMAGE_TRANSFORM_BY_ID[item.id] ?? "scale(2)",
                       transformOrigin: QUADRANT_ORIGIN[item.imagePosition] ?? "center",
                     }}
                   />
@@ -450,7 +457,7 @@ export default function WaterTrackerNearbyPage() {
                     sizes="(max-width: 980px) 100vw, 50vw"
                     style={{
                       objectFit: "cover",
-                      transform: "scale(2.2) translate(30px, -10px)",
+                      transform: IMAGE_TRANSFORM_BY_ID[item.id] ?? "scale(2)",
                       transformOrigin: QUADRANT_ORIGIN[item.imagePosition] ?? "center",
                     }}
                   />
