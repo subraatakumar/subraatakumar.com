@@ -22,6 +22,9 @@ const sections = [
       "No central server. No backend dependency. Water logs stay on-device in Realm, with optional backup to each user&apos;s own Google Drive or iCloud.",
     imagePosition: "right bottom",
     dark: false,
+    bgFrom: "#30bfdc",
+    bgTo: "#47c9e2",
+    bgGlow: "rgba(255,255,255,0.22)",
   },
   {
     id: "park",
@@ -31,6 +34,9 @@ const sections = [
       "Share hydration progress with your morning circle nearby. Social accountability works without forcing accounts or cloud-first data flow.",
     imagePosition: "left top",
     dark: false,
+    bgFrom: "#36aa84",
+    bgTo: "#4eb792",
+    bgGlow: "rgba(255,255,255,0.18)",
   },
   {
     id: "gym",
@@ -40,6 +46,9 @@ const sections = [
       "Gym partners can compare intake quickly between sets. Sync stays fast and private while each person keeps full ownership of their records.",
     imagePosition: "right top",
     dark: true,
+    bgFrom: "#2d65be",
+    bgTo: "#2557a8",
+    bgGlow: "rgba(255,255,255,0.12)",
   },
   {
     id: "family",
@@ -49,6 +58,9 @@ const sections = [
       "Families can exchange daily hydration summaries at home while source data remains local on each device, not in a shared centralized store.",
     imagePosition: "left bottom",
     dark: false,
+    bgFrom: "#724736",
+    bgTo: "#8a5a45",
+    bgGlow: "rgba(255,255,255,0.12)",
   },
 ];
 
@@ -129,9 +141,8 @@ export default function WaterTrackerNearbyPage() {
           align-items: center;
           padding: clamp(24px, 5vw, 72px);
           background:
-            radial-gradient(circle at 14% 12%, rgba(123, 191, 255, 0.22), transparent 42%),
-            radial-gradient(circle at 88% 24%, rgba(172, 221, 255, 0.18), transparent 36%),
-            linear-gradient(130deg, #f4f9ff 0%, #e8f2ff 48%, #d9e7fb 100%);
+            radial-gradient(circle at 14% 12%, rgba(255, 255, 255, 0.2), transparent 42%),
+            linear-gradient(130deg, #30bfdc 0%, #47c9e2 100%);
         }
         .nb-hero-copy { max-width: 620px; }
         .nb-kicker {
@@ -248,23 +259,9 @@ export default function WaterTrackerNearbyPage() {
           align-items: center;
           gap: clamp(16px, 2.8vw, 40px);
           padding: clamp(24px, 5vw, 72px);
-        }
-        .nb-bar.light { background: linear-gradient(125deg, #f7fbff 0%, #edf4ff 100%); }
-        .nb-bar.dark { background: linear-gradient(125deg, #020f31 0%, #001440 100%); }
-        .nb-bar-park {
           background:
-            radial-gradient(circle at 8% 14%, rgba(150, 214, 255, 0.22), transparent 40%),
-            linear-gradient(125deg, #f5fbff 0%, #e9f4ff 100%);
-        }
-        .nb-bar-gym {
-          background:
-            radial-gradient(circle at 86% 18%, rgba(74, 146, 255, 0.26), transparent 46%),
-            linear-gradient(125deg, #001133 0%, #001b52 100%);
-        }
-        .nb-bar-family {
-          background:
-            radial-gradient(circle at 88% 20%, rgba(255, 210, 164, 0.24), transparent 40%),
-            linear-gradient(125deg, #f8fbff 0%, #eef4ff 100%);
+            radial-gradient(circle at 8% 14%, var(--nb-sec-glow, rgba(255, 255, 255, 0.12)), transparent 42%),
+            linear-gradient(125deg, var(--nb-sec-from, #f7fbff) 0%, var(--nb-sec-to, #edf4ff) 100%);
         }
         .nb-copy { max-width: 620px; }
         .nb-copy h2 {
@@ -318,8 +315,8 @@ export default function WaterTrackerNearbyPage() {
         .nb-bottom {
           min-height: 56vh;
           background:
-            radial-gradient(circle at 82% 10%, rgba(170, 224, 255, 0.2), transparent 42%),
-            linear-gradient(130deg, #f3f9ff 0%, #e7f1ff 100%);
+            radial-gradient(circle at 82% 10%, rgba(255, 255, 255, 0.28), transparent 42%),
+            linear-gradient(130deg, #f5f5f5 0%, #ebebeb 100%);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -374,8 +371,8 @@ export default function WaterTrackerNearbyPage() {
         .nb-sovereignty {
           padding: clamp(34px, 6vw, 80px) clamp(20px, 4vw, 60px);
           background:
-            radial-gradient(circle at 16% 18%, rgba(168, 216, 255, 0.2), transparent 42%),
-            linear-gradient(130deg, #edf4ff 0%, #e1ebfb 100%);
+            radial-gradient(circle at 16% 18%, rgba(255, 255, 255, 0.18), transparent 42%),
+            linear-gradient(130deg, #e686ba 0%, #d978af 100%);
         }
         .nb-sovereignty-inner {
           max-width: 1180px;
@@ -524,7 +521,18 @@ export default function WaterTrackerNearbyPage() {
       </header>
 
       {sections.slice(1).map((item, index) => (
-        <article key={item.id} className={`nb-bar ${item.dark ? "dark" : "light"} nb-bar-${item.id}`} data-reverse={index % 2 === 0 ? "true" : "false"}>
+        <article
+          key={item.id}
+          className={`nb-bar ${item.dark ? "dark" : "light"}`}
+          data-reverse={index % 2 === 0 ? "true" : "false"}
+          style={
+            {
+              "--nb-sec-from": item.bgFrom,
+              "--nb-sec-to": item.bgTo,
+              "--nb-sec-glow": item.bgGlow,
+            } as Record<string, string>
+          }
+        >
           {index % 2 === 0 ? (
             <>
               <div className="nb-copy">
