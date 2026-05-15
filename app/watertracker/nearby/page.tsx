@@ -128,7 +128,10 @@ export default function WaterTrackerNearbyPage() {
           grid-template-columns: 1fr 1fr;
           align-items: center;
           padding: clamp(24px, 5vw, 72px);
-          background: linear-gradient(130deg, #f7fbff 0%, #eef5ff 48%, #dde9f8 100%);
+          background:
+            radial-gradient(circle at 14% 12%, rgba(123, 191, 255, 0.22), transparent 42%),
+            radial-gradient(circle at 88% 24%, rgba(172, 221, 255, 0.18), transparent 36%),
+            linear-gradient(130deg, #f4f9ff 0%, #e8f2ff 48%, #d9e7fb 100%);
         }
         .nb-hero-copy { max-width: 620px; }
         .nb-kicker {
@@ -248,6 +251,21 @@ export default function WaterTrackerNearbyPage() {
         }
         .nb-bar.light { background: linear-gradient(125deg, #f7fbff 0%, #edf4ff 100%); }
         .nb-bar.dark { background: linear-gradient(125deg, #020f31 0%, #001440 100%); }
+        .nb-bar-park {
+          background:
+            radial-gradient(circle at 8% 14%, rgba(150, 214, 255, 0.22), transparent 40%),
+            linear-gradient(125deg, #f5fbff 0%, #e9f4ff 100%);
+        }
+        .nb-bar-gym {
+          background:
+            radial-gradient(circle at 86% 18%, rgba(74, 146, 255, 0.26), transparent 46%),
+            linear-gradient(125deg, #001133 0%, #001b52 100%);
+        }
+        .nb-bar-family {
+          background:
+            radial-gradient(circle at 88% 20%, rgba(255, 210, 164, 0.24), transparent 40%),
+            linear-gradient(125deg, #f8fbff 0%, #eef4ff 100%);
+        }
         .nb-copy { max-width: 620px; }
         .nb-copy h2 {
           margin: 8px 0 0;
@@ -299,7 +317,9 @@ export default function WaterTrackerNearbyPage() {
 
         .nb-bottom {
           min-height: 56vh;
-          background: linear-gradient(130deg, #f7fbff 0%, #eef4ff 100%);
+          background:
+            radial-gradient(circle at 82% 10%, rgba(170, 224, 255, 0.2), transparent 42%),
+            linear-gradient(130deg, #f3f9ff 0%, #e7f1ff 100%);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -353,7 +373,9 @@ export default function WaterTrackerNearbyPage() {
 
         .nb-sovereignty {
           padding: clamp(34px, 6vw, 80px) clamp(20px, 4vw, 60px);
-          background: linear-gradient(130deg, #eff5ff 0%, #e5eefc 100%);
+          background:
+            radial-gradient(circle at 16% 18%, rgba(168, 216, 255, 0.2), transparent 42%),
+            linear-gradient(130deg, #edf4ff 0%, #e1ebfb 100%);
         }
         .nb-sovereignty-inner {
           max-width: 1180px;
@@ -502,7 +524,7 @@ export default function WaterTrackerNearbyPage() {
       </header>
 
       {sections.slice(1).map((item, index) => (
-        <article key={item.id} className={`nb-bar ${item.dark ? "dark" : "light"}`} data-reverse={index % 2 === 0 ? "true" : "false"}>
+        <article key={item.id} className={`nb-bar ${item.dark ? "dark" : "light"} nb-bar-${item.id}`} data-reverse={index % 2 === 0 ? "true" : "false"}>
           {index % 2 === 0 ? (
             <>
               <div className="nb-copy">
