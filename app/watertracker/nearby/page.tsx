@@ -135,7 +135,32 @@ function FeatureCards({ dark }: { dark: boolean }) {
 export default function WaterTrackerNearbyPage() {
   return (
     <section className="nb-wrap">
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function () {
+              var params = new URLSearchParams(window.location.search);
+              var yes = function (v) {
+                return v === "1" || v === "true" || v === "yes";
+              };
+              var minimal = yes((params.get("minimal") || "").toLowerCase()) ||
+                            yes((params.get("embed") || "").toLowerCase()) ||
+                            yes((params.get("hideChrome") || "").toLowerCase());
+              document.body.toggleAttribute("data-nb-minimal", minimal);
+            })();
+          `,
+        }}
+      />
       <style>{`
+        body[data-nb-minimal] .wt-nav,
+        body[data-nb-minimal] .wt-footer {
+          display: none !important;
+        }
+        body[data-nb-minimal] .wt-main {
+          max-width: 100%;
+          margin: 0;
+          padding: 0;
+        }
         .nb-wrap {
           --nb-media-ratio: 16 / 11;
           /* ---------------------------------------------
@@ -151,6 +176,8 @@ export default function WaterTrackerNearbyPage() {
           margin-right: calc(50% - 50vw);
           margin-top: -26px;
         }
+        body[data-nb-minimal] .nb-wrap { margin-top: 0; }
+        body[data-nb-minimal] .nb-bottom { display: none !important; }
         .nb-hero {
           min-height: clamp(540px, 82vh, 820px);
           display: grid;
