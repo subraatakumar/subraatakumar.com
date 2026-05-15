@@ -224,7 +224,7 @@ a:I[68027,[],"default"]
             .sk-nav-mobile { display: block; }
             .sk-page-heading { font-size: 2.2rem; }
           }
-        0:{"P":null,"b":"RN7SoXORZ7wICOUxfEVAk","c":["","watertracker","nearby",""],"q":"","i":false,"f":[[["",{"children":["watertracker",{"children":["nearby",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/73857f047b5eee22.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+        0:{"P":null,"b":"OXjUMXsalqDmDUhvMhPcO","c":["","watertracker","nearby",""],"q":"","i":false,"f":[[["",{"children":["watertracker",{"children":["nearby",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/73857f047b5eee22.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
 b:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/d87b716920d553cc.js"],""]
 c:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
 d:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
@@ -445,13 +445,33 @@ e:T17db,
         }
       6:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/67d266141b06bb08.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","div",null,{"className":"wt-shell manrope_65508a06-module__rzDLfa__className","children":[["$","style",null,{"children":"$e"}],"$Lf","$L10","$L11"]}]]}]
 7:["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
-12:T2dc0,
+12:T351c,
+        body[data-nb-minimal] .wt-nav,
+        body[data-nb-minimal] .wt-footer {
+          display: none !important;
+        }
+        body[data-nb-minimal] .wt-main {
+          max-width: 100%;
+          margin: 0;
+          padding: 0;
+        }
         .nb-wrap {
+          --nb-media-ratio: 16 / 11;
+          /* ---------------------------------------------
+             Image crop controls (default = LARGE screens)
+             New developers: tune only these vars per breakpoint.
+             --------------------------------------------- */
+          --img-scale: 2.2;
+          --control-pos-x: 35%; --control-pos-y: 5px;
+          --park-pos-x: 6%; --park-pos-y: -10px;
+          --gym-pos-x: 38%; --gym-pos-y: -4px;
+          --family-pos-x: 10%; --family-pos-y: 5px;
           margin-left: calc(50% - 50vw);
           margin-right: calc(50% - 50vw);
           margin-top: -26px;
         }
-
+        body[data-nb-minimal] .nb-wrap { margin-top: 0; }
+        body[data-nb-minimal] .nb-bottom { display: none !important; }
         .nb-hero {
           min-height: clamp(540px, 82vh, 820px);
           display: grid;
@@ -459,9 +479,8 @@ e:T17db,
           align-items: center;
           padding: clamp(24px, 5vw, 72px);
           background:
-            radial-gradient(circle at 14% 12%, rgba(123, 191, 255, 0.22), transparent 42%),
-            radial-gradient(circle at 88% 24%, rgba(172, 221, 255, 0.18), transparent 36%),
-            linear-gradient(130deg, #f4f9ff 0%, #e8f2ff 48%, #d9e7fb 100%);
+            radial-gradient(circle at 14% 12%, rgba(255, 255, 255, 0.2), transparent 42%),
+            linear-gradient(130deg, #30bfdc 0%, #47c9e2 100%);
         }
         .nb-hero-copy { max-width: 620px; }
         .nb-kicker {
@@ -509,7 +528,8 @@ e:T17db,
         .nb-hero-media {
           position: relative;
           overflow: visible;
-          min-height: clamp(330px, 52vh, 600px);
+          aspect-ratio: var(--nb-media-ratio);
+          min-height: 0;
           max-width: 910px;
           width: 100%;
           justify-self: end;
@@ -578,23 +598,9 @@ e:T17db,
           align-items: center;
           gap: clamp(16px, 2.8vw, 40px);
           padding: clamp(24px, 5vw, 72px);
-        }
-        .nb-bar.light { background: linear-gradient(125deg, #f7fbff 0%, #edf4ff 100%); }
-        .nb-bar.dark { background: linear-gradient(125deg, #020f31 0%, #001440 100%); }
-        .nb-bar-park {
           background:
-            radial-gradient(circle at 8% 14%, rgba(150, 214, 255, 0.22), transparent 40%),
-            linear-gradient(125deg, #f5fbff 0%, #e9f4ff 100%);
-        }
-        .nb-bar-gym {
-          background:
-            radial-gradient(circle at 86% 18%, rgba(74, 146, 255, 0.26), transparent 46%),
-            linear-gradient(125deg, #001133 0%, #001b52 100%);
-        }
-        .nb-bar-family {
-          background:
-            radial-gradient(circle at 88% 20%, rgba(255, 210, 164, 0.24), transparent 40%),
-            linear-gradient(125deg, #f8fbff 0%, #eef4ff 100%);
+            radial-gradient(circle at 8% 14%, var(--nb-sec-glow, rgba(255, 255, 255, 0.12)), transparent 42%),
+            linear-gradient(125deg, var(--nb-sec-from, #f7fbff) 0%, var(--nb-sec-to, #edf4ff) 100%);
         }
         .nb-copy { max-width: 620px; }
         .nb-copy h2 {
@@ -620,7 +626,8 @@ e:T17db,
           position: relative;
           border-radius: 32px;
           overflow: visible;
-          min-height: clamp(320px, 54vh, 620px);
+          aspect-ratio: var(--nb-media-ratio);
+          min-height: 0;
           filter: drop-shadow(0 24px 44px rgba(9, 22, 54, 0.2));
         }
         .nb-figure-frame {
@@ -648,8 +655,8 @@ e:T17db,
         .nb-bottom {
           min-height: 56vh;
           background:
-            radial-gradient(circle at 82% 10%, rgba(170, 224, 255, 0.2), transparent 42%),
-            linear-gradient(130deg, #f3f9ff 0%, #e7f1ff 100%);
+            radial-gradient(circle at 82% 10%, rgba(255, 255, 255, 0.28), transparent 42%),
+            linear-gradient(130deg, #f5f5f5 0%, #ebebeb 100%);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -704,8 +711,8 @@ e:T17db,
         .nb-sovereignty {
           padding: clamp(34px, 6vw, 80px) clamp(20px, 4vw, 60px);
           background:
-            radial-gradient(circle at 16% 18%, rgba(168, 216, 255, 0.2), transparent 42%),
-            linear-gradient(130deg, #edf4ff 0%, #e1ebfb 100%);
+            radial-gradient(circle at 16% 18%, rgba(255, 255, 255, 0.18), transparent 42%),
+            linear-gradient(130deg, #e686ba 0%, #d978af 100%);
         }
         .nb-sovereignty-inner {
           max-width: 1180px;
@@ -774,7 +781,7 @@ e:T17db,
           }
           .nb-hero-media,
           .nb-figure {
-            min-height: 360px;
+            min-height: 0;
           }
           .nb-hero-media {
             justify-self: stretch;
@@ -817,17 +824,71 @@ e:T17db,
             height: 56px;
           }
         }
-      8:["$","$1","c",{"children":[["$","section",null,{"className":"nb-wrap","children":[["$","style",null,{"children":"$12"}],"$L13",["$L14","$L15","$L16"],"$L17","$L18"]}],["$L19"],"$L1a"]}]
+        /* MEDIUM screens */
+        @media (max-width: 1200px) {
+          .nb-wrap {
+            --control-pos-x: 35%; --control-pos-y: 5px;
+            --park-pos-x: 6%; --park-pos-y: -5px;
+            --gym-pos-x: 38%; --gym-pos-y: -4px;
+            --family-pos-x: 10%; --family-pos-y: 5px;
+          }
+        }
+        /* TABLET screens */
+        @media (max-width: 980px) {
+          .nb-wrap {
+            --control-pos-x: 96%; --control-pos-y: 96%;
+            --park-pos-x: 4%; --park-pos-y: 3%;
+            --gym-pos-x: 94%; --gym-pos-y: 3%;
+            --family-pos-x: 8%; --family-pos-y: 96%;
+          }
+        }
+        /* MOBILE screens */
+        @media (max-width: 640px) {
+          .nb-wrap {
+            --img-scale: 2.2;
+            --control-pos-x: 35%; --control-pos-y: 5px;
+            --park-pos-x: 6%; --park-pos-y: -5px;
+            --gym-pos-x: 38%; --gym-pos-y: -4px;
+            --family-pos-x: 10%; --family-pos-y: 5px;
+          }
+          .nb-hero-media {
+            margin-bottom: 96px;
+          }
+          .nb-live-card {
+            right: 8px;
+            bottom: -112px;
+            width: min(200px, 56%);
+            border-radius: 16px;
+            padding: 9px 9px 8px;
+          }
+          .nb-live-icon {
+            width: 26px;
+            height: 26px;
+            font-size: 12px;
+          }
+          .nb-live-title {
+            font-size: 0.8rem;
+          }
+          .nb-live-text {
+            font-size: 0.74rem;
+            line-height: 1.38;
+            margin-top: 5px;
+          }
+          .nb-hero {
+            padding-bottom: 126px;
+          }
+        }
+      8:["$","$1","c",{"children":[["$","section",null,{"className":"nb-wrap","children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n            (function () {\n              var params = new URLSearchParams(window.location.search);\n              var yes = function (v) {\n                return v === \"1\" || v === \"true\" || v === \"yes\";\n              };\n              var minimal = yes((params.get(\"minimal\") || \"\").toLowerCase()) ||\n                            yes((params.get(\"embed\") || \"\").toLowerCase()) ||\n                            yes((params.get(\"hideChrome\") || \"\").toLowerCase());\n              document.body.toggleAttribute(\"data-nb-minimal\", minimal);\n            })();\n          "}}],["$","style",null,{"children":"$12"}],"$L13",["$L14","$L15","$L16"],"$L17","$L18"]}],["$L19"],"$L1a"]}]
 9:["$","$1","h",{"children":[null,["$","$L1b",null,{"children":"$L1c"}],["$","div",null,{"hidden":true,"children":["$","$L1d",null,{"children":["$","$1e",null,{"name":"Next.Metadata","children":"$L1f"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
 20:I[5500,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/d87b716920d553cc.js"],"Image"]
 21:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
 f:["$","header",null,{"className":"wt-nav","children":[["$","div",null,{"className":"wt-nav-inner","children":[["$","$Lb",null,{"href":"/watertracker","className":"wt-logo","children":[["$","span",null,{"className":"wt-logo-mark","children":"WT"}],["$","span",null,{"className":"wt-logo-text wt-font-display","children":"WaterTracker"}]]}],["$","nav",null,{"className":"wt-links","aria-label":"Water Tracker pages","children":[["$","$Lb",null,{"href":"/watertracker","children":"Overview"}],["$","$Lb",null,{"href":"/watertracker/guide","children":"How To Use"}],["$","$Lb",null,{"href":"/watertracker/benefits","children":"Health Benefits"}],["$","$Lb",null,{"href":"/watertracker/nearby","children":"Nearby"}],["$","$Lb",null,{"href":"/products","children":"All Products"}]]}]]}],["$","nav",null,{"className":"wt-mobile-nav","aria-label":"Water Tracker pages mobile","children":[["$","$Lb",null,{"href":"/watertracker","children":"Overview"}],["$","$Lb",null,{"href":"/watertracker/guide","children":"How To Use"}],["$","$Lb",null,{"href":"/watertracker/benefits","children":"Health Benefits"}],["$","$Lb",null,{"href":"/watertracker/nearby","children":"Nearby"}],["$","$Lb",null,{"href":"/products","children":"All Products"}]]}]]}]
 10:["$","main",null,{"className":"wt-main","children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}]
 11:["$","footer",null,{"className":"wt-footer","children":["$","div",null,{"className":"wt-footer-inner","children":[["$","p",null,{"className":"wt-footer-copy","children":["© ",2026," WaterTracker"]}],["$","div",null,{"className":"wt-footer-links","children":[["$","$Lb",null,{"href":"/watertracker","children":"Overview"}],["$","$Lb",null,{"href":"/watertracker/guide","children":"How To Use"}],["$","$Lb",null,{"href":"/watertracker/benefits","children":"Health Benefits"}],["$","$Lb",null,{"href":"/watertracker/nearby","children":"Nearby"}],["$","$Lb",null,{"href":"/contact","children":"Support"}],["$","$Lb",null,{"href":"/watertracker/privacy-policy","children":"Privacy Policy"}],["$","$Lb",null,{"href":"/watertracker/terms","children":"Terms of Use"}]]}],["$","p",null,{"className":"wt-footer-attribution","children":["$","a",null,{"href":"https://pngtree.com/freepng/silver-laurel-wreaths-for-awards_20564144.html","children":"png image from pngtree.com/"}]}]]}]}]
-13:["$","header",null,{"className":"nb-hero","children":[["$","div",null,{"className":"nb-hero-copy","children":[["$","p",null,{"className":"nb-kicker","children":"Introducing Nearby Ripple Sync"}],["$","h1",null,{"className":"wt-font-display","children":["The Data ",["$","span",null,{"className":"accent","children":"Ripple"}]," Effect."]}],["$","p",null,{"children":"Share your hydration journey with people right next to you. No server, no mandatory account, and full control over your data."}],["$","$Lb",null,{"href":"#park","className":"nb-hero-cta","children":"Explore the Ripple"}]]}],["$","div",null,{"className":"nb-hero-media","children":[["$","div",null,{"className":"nb-hero-frame","children":["$","$L20",null,{"src":"/watertrackerimages/near_by.png","alt":"WaterTracker Nearby control scenario","fill":true,"sizes":"(max-width: 980px) 100vw, 50vw","style":{"objectFit":"cover","transform":"scale(2.2)","transformOrigin":"right bottom","top":20,"left":60},"priority":true}]}],["$","aside",null,{"className":"nb-live-card","aria-label":"Live syncing highlight","children":[["$","div",null,{"className":"nb-live-head","children":[["$","span",null,{"className":"nb-live-icon","aria-hidden":"true","children":"⚡"}],["$","p",null,{"className":"nb-live-title","children":"Live Syncing"}]]}],["$","p",null,{"className":"nb-live-text","children":"24 hours of hydration data shared in under 2 seconds via proximity sync."}]]}]]}]]}]
-14:["$","article","park",{"className":"nb-bar light nb-bar-park","data-reverse":"true","children":[["$","div",null,{"className":"nb-copy","children":[["$","p",null,{"className":"nb-kicker","children":"Community Energy"}],["$","h2",null,{"className":"wt-font-display","children":"Morning Park Group"}],["$","p",null,{"children":"Share hydration progress with your morning circle nearby. Social accountability works without forcing accounts or cloud-first data flow."}],["$","div",null,{"className":"nb-mini-grid","aria-label":"Nearby highlights","children":[["$","article",null,{"className":"nb-mini-card","children":[["$","h4",null,{"children":"Zero Servers"}],["$","p",null,{"children":"Data stays in your hand."}]]}],["$","article",null,{"className":"nb-mini-card","children":[["$","h4",null,{"children":"End-to-End"}],["$","p",null,{"children":"Local P2P encryption."}]]}],["$","style",null,{"children":"\n        .nb-mini-grid {\n          margin-top: 18px;\n          display: grid;\n          grid-template-columns: repeat(2, minmax(0, 1fr));\n          gap: 10px;\n        }\n        .nb-mini-card {\n          border-radius: 18px;\n          padding: 16px;\n          border: 1px solid rgba(15, 36, 88, 0.08);\n          background: rgba(255, 255, 255, 0.56);\n        }\n        .nb-mini-card h4 {\n          margin: 0;\n          font-size: 1.02rem;\n          color: #111f49;\n        }\n        .nb-mini-card p {\n          margin: 6px 0 0;\n          font-size: 0.9rem;\n          color: #4d628e;\n          line-height: 1.45;\n        }\n        @media (max-width: 760px) {\n          .nb-mini-grid { grid-template-columns: 1fr; }\n        }\n      "}]]}]]}],["$","div",null,{"className":"nb-figure","children":["$","div",null,{"className":"nb-figure-frame","children":["$","$L20",null,{"src":"/watertrackerimages/near_by.png","alt":"Morning Park Group","fill":true,"sizes":"(max-width: 980px) 100vw, 50vw","style":{"objectFit":"cover","transform":"scale(2.2) translate(0px, -10px)","transformOrigin":"left top"}}]}]}]]}]
-15:["$","article","gym",{"className":"nb-bar dark nb-bar-gym","data-reverse":"false","children":[["$","div",null,{"className":"nb-figure","children":["$","div",null,{"className":"nb-figure-frame","children":["$","$L20",null,{"src":"/watertrackerimages/near_by.png","alt":"Gym Squad Synergy","fill":true,"sizes":"(max-width: 980px) 100vw, 50vw","style":{"objectFit":"cover","transform":"scale(2.2) translate(30px, -10px)","transformOrigin":"right top"}}]}]}],["$","div",null,{"className":"nb-copy","children":[["$","p",null,{"className":"nb-kicker","children":"Performance Sync"}],["$","h2",null,{"className":"wt-font-display","children":"Gym Squad Synergy"}],["$","p",null,{"children":"Gym partners can compare intake quickly between sets. Sync stays fast and private while each person keeps full ownership of their records."}],["$","div",null,{"className":"nb-mini-grid","aria-label":"Nearby highlights","children":[["$","article",null,{"className":"nb-mini-card","children":[["$","h4",null,{"children":"Zero Servers"}],["$","p",null,{"children":"Data stays in your hand."}]]}],["$","article",null,{"className":"nb-mini-card","children":[["$","h4",null,{"children":"End-to-End"}],["$","p",null,{"children":"Local P2P encryption."}]]}],["$","style",null,{"children":"\n        .nb-mini-grid {\n          margin-top: 18px;\n          display: grid;\n          grid-template-columns: repeat(2, minmax(0, 1fr));\n          gap: 10px;\n        }\n        .nb-mini-card {\n          border-radius: 18px;\n          padding: 16px;\n          border: 1px solid rgba(147, 193, 255, 0.2);\n          background: rgba(13, 36, 87, 0.48);\n        }\n        .nb-mini-card h4 {\n          margin: 0;\n          font-size: 1.02rem;\n          color: #f0f7ff;\n        }\n        .nb-mini-card p {\n          margin: 6px 0 0;\n          font-size: 0.9rem;\n          color: #bdd7ff;\n          line-height: 1.45;\n        }\n        @media (max-width: 760px) {\n          .nb-mini-grid { grid-template-columns: 1fr; }\n        }\n      "}]]}]]}]]}]
-16:["$","article","family",{"className":"nb-bar light nb-bar-family","data-reverse":"true","children":[["$","div",null,{"className":"nb-copy","children":[["$","p",null,{"className":"nb-kicker","children":"Family Insights"}],["$","h2",null,{"className":"wt-font-display","children":"Dinner Table Visibility"}],["$","p",null,{"children":"Families can exchange daily hydration summaries at home while source data remains local on each device, not in a shared centralized store."}],["$","div",null,{"className":"nb-mini-grid","aria-label":"Nearby highlights","children":[["$","article",null,{"className":"nb-mini-card","children":[["$","h4",null,{"children":"Zero Servers"}],["$","p",null,{"children":"Data stays in your hand."}]]}],["$","article",null,{"className":"nb-mini-card","children":[["$","h4",null,{"children":"End-to-End"}],["$","p",null,{"children":"Local P2P encryption."}]]}],["$","style",null,{"children":"\n        .nb-mini-grid {\n          margin-top: 18px;\n          display: grid;\n          grid-template-columns: repeat(2, minmax(0, 1fr));\n          gap: 10px;\n        }\n        .nb-mini-card {\n          border-radius: 18px;\n          padding: 16px;\n          border: 1px solid rgba(15, 36, 88, 0.08);\n          background: rgba(255, 255, 255, 0.56);\n        }\n        .nb-mini-card h4 {\n          margin: 0;\n          font-size: 1.02rem;\n          color: #111f49;\n        }\n        .nb-mini-card p {\n          margin: 6px 0 0;\n          font-size: 0.9rem;\n          color: #4d628e;\n          line-height: 1.45;\n        }\n        @media (max-width: 760px) {\n          .nb-mini-grid { grid-template-columns: 1fr; }\n        }\n      "}]]}]]}],["$","div",null,{"className":"nb-figure","children":["$","div",null,{"className":"nb-figure-frame","children":["$","$L20",null,{"src":"/watertrackerimages/near_by.png","alt":"Dinner Table Visibility","fill":true,"sizes":"(max-width: 980px) 100vw, 50vw","style":{"objectFit":"cover","transform":"scale(2.2) translate(0px, 10px)","transformOrigin":"left bottom"}}]}]}]]}]
+13:["$","header",null,{"className":"nb-hero","children":[["$","div",null,{"className":"nb-hero-copy","children":[["$","p",null,{"className":"nb-kicker","children":"Introducing Nearby Ripple Sync"}],["$","h1",null,{"className":"wt-font-display","children":["The Data ",["$","span",null,{"className":"accent","children":"Ripple"}]," Effect."]}],["$","p",null,{"children":"Share your hydration journey with people right next to you. No server, no mandatory account, and full control over your data."}],["$","$Lb",null,{"href":"#park","className":"nb-hero-cta","children":"Explore the Ripple"}]]}],["$","div",null,{"className":"nb-hero-media","children":[["$","div",null,{"className":"nb-hero-frame","children":["$","$L20",null,{"src":"/watertrackerimages/near_by.png","alt":"WaterTracker Nearby control scenario","fill":true,"sizes":"(max-width: 980px) 100vw, 50vw","style":{"objectFit":"cover","transform":"scale(var(--img-scale, 2.2))","objectPosition":"var(--control-pos-x) var(--control-pos-y)","transformOrigin":"right bottom"},"priority":true}]}],["$","aside",null,{"className":"nb-live-card","aria-label":"Live syncing highlight","children":[["$","div",null,{"className":"nb-live-head","children":[["$","span",null,{"className":"nb-live-icon","aria-hidden":"true","children":"⚡"}],["$","p",null,{"className":"nb-live-title","children":"Live Syncing"}]]}],["$","p",null,{"className":"nb-live-text","children":"24 hours of hydration data shared in under 2 seconds via proximity sync."}]]}]]}]]}]
+14:["$","article","park",{"className":"nb-bar light","data-reverse":"true","style":{"--nb-sec-from":"#36aa84","--nb-sec-to":"#4eb792","--nb-sec-glow":"rgba(255,255,255,0.18)"},"children":[["$","div",null,{"className":"nb-copy","children":[["$","p",null,{"className":"nb-kicker","children":"Community Energy"}],["$","h2",null,{"className":"wt-font-display","children":"Morning Park Group"}],["$","p",null,{"children":"Share hydration progress with your morning circle nearby. Social accountability works without forcing accounts or cloud-first data flow."}],["$","div",null,{"className":"nb-mini-grid","aria-label":"Nearby highlights","children":[["$","article",null,{"className":"nb-mini-card","children":[["$","h4",null,{"children":"Zero Servers"}],["$","p",null,{"children":"Data stays in your hand."}]]}],["$","article",null,{"className":"nb-mini-card","children":[["$","h4",null,{"children":"End-to-End"}],["$","p",null,{"children":"Local P2P encryption."}]]}],["$","style",null,{"children":"\n        .nb-mini-grid {\n          margin-top: 18px;\n          display: grid;\n          grid-template-columns: repeat(2, minmax(0, 1fr));\n          gap: 10px;\n        }\n        .nb-mini-card {\n          border-radius: 18px;\n          padding: 16px;\n          border: 1px solid rgba(15, 36, 88, 0.08);\n          background: rgba(255, 255, 255, 0.56);\n        }\n        .nb-mini-card h4 {\n          margin: 0;\n          font-size: 1.02rem;\n          color: #111f49;\n        }\n        .nb-mini-card p {\n          margin: 6px 0 0;\n          font-size: 0.9rem;\n          color: #4d628e;\n          line-height: 1.45;\n        }\n        @media (max-width: 760px) {\n          .nb-mini-grid { grid-template-columns: 1fr; }\n        }\n      "}]]}]]}],["$","div",null,{"className":"nb-figure","children":["$","div",null,{"className":"nb-figure-frame","children":["$","$L20",null,{"src":"/watertrackerimages/near_by.png","alt":"Morning Park Group","fill":true,"sizes":"(max-width: 980px) 100vw, 50vw","style":{"objectFit":"cover","transform":"scale(var(--img-scale, 2.2))","objectPosition":"var(--park-pos-x) var(--park-pos-y)","transformOrigin":"left top"}}]}]}]]}]
+15:["$","article","gym",{"className":"nb-bar dark","data-reverse":"false","style":{"--nb-sec-from":"#2d65be","--nb-sec-to":"#2557a8","--nb-sec-glow":"rgba(255,255,255,0.12)"},"children":[["$","div",null,{"className":"nb-figure","children":["$","div",null,{"className":"nb-figure-frame","children":["$","$L20",null,{"src":"/watertrackerimages/near_by.png","alt":"Gym Squad Synergy","fill":true,"sizes":"(max-width: 980px) 100vw, 50vw","style":{"objectFit":"cover","transform":"scale(var(--img-scale, 2.2))","objectPosition":"var(--gym-pos-x) var(--gym-pos-y)","transformOrigin":"right top"}}]}]}],["$","div",null,{"className":"nb-copy","children":[["$","p",null,{"className":"nb-kicker","children":"Performance Sync"}],["$","h2",null,{"className":"wt-font-display","children":"Gym Squad Synergy"}],["$","p",null,{"children":"Gym partners can compare intake quickly between sets. Sync stays fast and private while each person keeps full ownership of their records."}],["$","div",null,{"className":"nb-mini-grid","aria-label":"Nearby highlights","children":[["$","article",null,{"className":"nb-mini-card","children":[["$","h4",null,{"children":"Zero Servers"}],["$","p",null,{"children":"Data stays in your hand."}]]}],["$","article",null,{"className":"nb-mini-card","children":[["$","h4",null,{"children":"End-to-End"}],["$","p",null,{"children":"Local P2P encryption."}]]}],["$","style",null,{"children":"\n        .nb-mini-grid {\n          margin-top: 18px;\n          display: grid;\n          grid-template-columns: repeat(2, minmax(0, 1fr));\n          gap: 10px;\n        }\n        .nb-mini-card {\n          border-radius: 18px;\n          padding: 16px;\n          border: 1px solid rgba(147, 193, 255, 0.2);\n          background: rgba(13, 36, 87, 0.48);\n        }\n        .nb-mini-card h4 {\n          margin: 0;\n          font-size: 1.02rem;\n          color: #f0f7ff;\n        }\n        .nb-mini-card p {\n          margin: 6px 0 0;\n          font-size: 0.9rem;\n          color: #bdd7ff;\n          line-height: 1.45;\n        }\n        @media (max-width: 760px) {\n          .nb-mini-grid { grid-template-columns: 1fr; }\n        }\n      "}]]}]]}]]}]
+16:["$","article","family",{"className":"nb-bar light","data-reverse":"true","style":{"--nb-sec-from":"#724736","--nb-sec-to":"#8a5a45","--nb-sec-glow":"rgba(255,255,255,0.12)"},"children":[["$","div",null,{"className":"nb-copy","children":[["$","p",null,{"className":"nb-kicker","children":"Family Insights"}],["$","h2",null,{"className":"wt-font-display","children":"Dinner Table Visibility"}],["$","p",null,{"children":"Families can exchange daily hydration summaries at home while source data remains local on each device, not in a shared centralized store."}],["$","div",null,{"className":"nb-mini-grid","aria-label":"Nearby highlights","children":[["$","article",null,{"className":"nb-mini-card","children":[["$","h4",null,{"children":"Zero Servers"}],["$","p",null,{"children":"Data stays in your hand."}]]}],["$","article",null,{"className":"nb-mini-card","children":[["$","h4",null,{"children":"End-to-End"}],["$","p",null,{"children":"Local P2P encryption."}]]}],["$","style",null,{"children":"\n        .nb-mini-grid {\n          margin-top: 18px;\n          display: grid;\n          grid-template-columns: repeat(2, minmax(0, 1fr));\n          gap: 10px;\n        }\n        .nb-mini-card {\n          border-radius: 18px;\n          padding: 16px;\n          border: 1px solid rgba(15, 36, 88, 0.08);\n          background: rgba(255, 255, 255, 0.56);\n        }\n        .nb-mini-card h4 {\n          margin: 0;\n          font-size: 1.02rem;\n          color: #111f49;\n        }\n        .nb-mini-card p {\n          margin: 6px 0 0;\n          font-size: 0.9rem;\n          color: #4d628e;\n          line-height: 1.45;\n        }\n        @media (max-width: 760px) {\n          .nb-mini-grid { grid-template-columns: 1fr; }\n        }\n      "}]]}]]}],["$","div",null,{"className":"nb-figure","children":["$","div",null,{"className":"nb-figure-frame","children":["$","$L20",null,{"src":"/watertrackerimages/near_by.png","alt":"Dinner Table Visibility","fill":true,"sizes":"(max-width: 980px) 100vw, 50vw","style":{"objectFit":"cover","transform":"scale(var(--img-scale, 2.2))","objectPosition":"var(--family-pos-x) var(--family-pos-y)","transformOrigin":"left bottom"}}]}]}]]}]
 17:["$","section",null,{"className":"nb-sovereignty","children":["$","div",null,{"className":"nb-sovereignty-inner","children":[["$","h3",null,{"className":"wt-font-display","children":"Built for Sovereignty"}],["$","p",null,{"children":"We combined modern social features with radical privacy. Your data, your rules."}],["$","div",null,{"className":"nb-sovereignty-grid","children":[["$","article",null,{"className":"nb-sovereignty-card","children":[["$","span",null,{"className":"nb-sovereignty-icon","aria-hidden":"true","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":28,"height":28,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-shield-check","aria-hidden":"true","children":[["$","path","oel41y",{"d":"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"}],["$","path","dzmm74",{"d":"m9 12 2 2 4-4"}],"$undefined"]}]}],["$","h4",null,{"children":"Zero Server Architecture"}],["$","p",null,{"children":"No accounts. No logins. Your data lives in a local Realm database, encrypted on your hardware."}]]}],["$","article",null,{"className":"nb-sovereignty-card","children":[["$","span",null,{"className":"nb-sovereignty-icon","aria-hidden":"true","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":28,"height":28,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-globe","aria-hidden":"true","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","path","13o1zl",{"d":"M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"}],["$","path","9i4pu4",{"d":"M2 12h20"}],"$undefined"]}]}],["$","h4",null,{"children":"Cross-Platform Flow"}],["$","p",null,{"children":"iOS and Android devices handshake effortlessly through our proximity sync protocol."}]]}],["$","article",null,{"className":"nb-sovereignty-card","children":[["$","span",null,{"className":"nb-sovereignty-icon","aria-hidden":"true","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":28,"height":28,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-lock","aria-hidden":"true","children":[["$","rect","1w4ew1",{"width":"18","height":"11","x":"3","y":"11","rx":"2","ry":"2"}],["$","path","fwvmzm",{"d":"M7 11V7a5 5 0 0 1 10 0v4"}],"$undefined"]}]}],["$","h4",null,{"children":"Personal Backups"}],["$","p",null,{"children":"Optionally sync to your own personal Google Drive or iCloud. You hold the master keys."}]]}]]}]]}]}]
 18:["$","footer",null,{"className":"nb-bottom","children":["$","div",null,{"className":"nb-bottom-inner","children":[["$","h3",null,{"className":"wt-font-display","children":"Stay Hydrated. Stay Private."}],["$","p",null,{"children":"Nearby keeps social motivation while preserving ownership. Your hydration data stays with you, and backup remains your choice."}],["$","div",null,{"className":"nb-actions","children":[["$","a",null,{"href":"https://apps.apple.com/us/app/water-tracker-n-reminder/id6759248297","target":"_blank","rel":"noopener noreferrer","className":"nb-store-link","aria-label":"Download on the App Store","children":["$","$L20",null,{"src":"/images/appstore-button-download.svg","alt":"Download on the App Store","width":240,"height":80,"className":"nb-store-button"}]}],["$","a",null,{"href":"https://play.google.com/store/apps/details?id=com.subraatakumar.watertracker","target":"_blank","rel":"noopener noreferrer","className":"nb-store-link","aria-label":"Get it on Google Play","children":["$","$L20",null,{"src":"/images/playstore-button-download.png","alt":"Get it on Google Play","width":646,"height":250,"className":"nb-store-button nb-store-button-play"}]}]]}]]}]}]
 19:["$","script","script-0",{"src":"/_next/static/chunks/d87b716920d553cc.js","async":true,"nonce":"$undefined"}]
