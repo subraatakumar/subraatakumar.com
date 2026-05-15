@@ -65,10 +65,18 @@ const sections = [
 ];
 
 const IMAGE_TRANSFORM_BY_ID: Record<string, string> = {
-  control: "scale(2.2) translate(0px, -10px)",
-  park: "scale(2.2) translate(0px, -10px)",
-  gym: "scale(2.2) translate(8px, -5px)",
-  family: "scale(2.2) translate(0px, 10px)",
+  // Scale only. Horizontal/vertical alignment is controlled with object-position vars.
+  control: "scale(var(--img-scale, 2.2))",
+  park: "scale(var(--img-scale, 2.2))",
+  gym: "scale(var(--img-scale, 2.2))",
+  family: "scale(var(--img-scale, 2.2))",
+};
+
+const IMAGE_POSITION_BY_ID: Record<string, string> = {
+  control: "var(--control-pos-x) var(--control-pos-y)",
+  park: "var(--park-pos-x) var(--park-pos-y)",
+  gym: "var(--gym-pos-x) var(--gym-pos-y)",
+  family: "var(--family-pos-x) var(--family-pos-y)",
 };
 
 const IOS_URL = storeLinks.watertracker.ios;
@@ -130,11 +138,19 @@ export default function WaterTrackerNearbyPage() {
       <style>{`
         .nb-wrap {
           --nb-media-ratio: 16 / 11;
+          /* ---------------------------------------------
+             Image crop controls (default = LARGE screens)
+             New developers: tune only these vars per breakpoint.
+             --------------------------------------------- */
+          --img-scale: 2.2;
+          --control-pos-x: 35%; --control-pos-y: 5px;
+          --park-pos-x: 6%; --park-pos-y: -10px;
+          --gym-pos-x: 38%; --gym-pos-y: -4px;
+          --family-pos-x: 10%; --family-pos-y: 5px;
           margin-left: calc(50% - 50vw);
           margin-right: calc(50% - 50vw);
           margin-top: -26px;
         }
-
         .nb-hero {
           min-height: clamp(540px, 82vh, 820px);
           display: grid;
@@ -487,6 +503,60 @@ export default function WaterTrackerNearbyPage() {
             height: 56px;
           }
         }
+        /* MEDIUM screens */
+        @media (max-width: 1200px) {
+          .nb-wrap {
+            --control-pos-x: 35%; --control-pos-y: 5px;
+            --park-pos-x: 6%; --park-pos-y: -5px;
+            --gym-pos-x: 38%; --gym-pos-y: -4px;
+            --family-pos-x: 10%; --family-pos-y: 5px;
+          }
+        }
+        /* TABLET screens */
+        @media (max-width: 980px) {
+          .nb-wrap {
+            --control-pos-x: 96%; --control-pos-y: 96%;
+            --park-pos-x: 4%; --park-pos-y: 3%;
+            --gym-pos-x: 94%; --gym-pos-y: 3%;
+            --family-pos-x: 8%; --family-pos-y: 96%;
+          }
+        }
+        /* MOBILE screens */
+        @media (max-width: 640px) {
+          .nb-wrap {
+            --img-scale: 2.2;
+            --control-pos-x: 35%; --control-pos-y: 5px;
+            --park-pos-x: 6%; --park-pos-y: -5px;
+            --gym-pos-x: 38%; --gym-pos-y: -4px;
+            --family-pos-x: 10%; --family-pos-y: 5px;
+          }
+          .nb-hero-media {
+            margin-bottom: 96px;
+          }
+          .nb-live-card {
+            right: 8px;
+            bottom: -112px;
+            width: min(200px, 56%);
+            border-radius: 16px;
+            padding: 9px 9px 8px;
+          }
+          .nb-live-icon {
+            width: 26px;
+            height: 26px;
+            font-size: 12px;
+          }
+          .nb-live-title {
+            font-size: 0.8rem;
+          }
+          .nb-live-text {
+            font-size: 0.74rem;
+            line-height: 1.38;
+            margin-top: 5px;
+          }
+          .nb-hero {
+            padding-bottom: 126px;
+          }
+        }
       `}</style>
 
       <header className="nb-hero">
@@ -507,7 +577,12 @@ export default function WaterTrackerNearbyPage() {
               alt="WaterTracker Nearby control scenario"
               fill
               sizes="(max-width: 980px) 100vw, 50vw"
-              style={{ objectFit: "cover", transform: "scale(2.2)", transformOrigin: "right bottom", top:20, left:60 }}
+              style={{
+                objectFit: "cover",
+                transform: IMAGE_TRANSFORM_BY_ID.control,
+                objectPosition: IMAGE_POSITION_BY_ID.control,
+                transformOrigin: "right bottom",
+              }}
               priority
             />
           </div>
@@ -554,6 +629,7 @@ export default function WaterTrackerNearbyPage() {
                     style={{
                       objectFit: "cover",
                       transform: IMAGE_TRANSFORM_BY_ID[item.id] ?? "scale(2)",
+                      objectPosition: IMAGE_POSITION_BY_ID[item.id] ?? "center",
                       transformOrigin: QUADRANT_ORIGIN[item.imagePosition] ?? "center",
                     }}
                   />
@@ -572,6 +648,7 @@ export default function WaterTrackerNearbyPage() {
                     style={{
                       objectFit: "cover",
                       transform: IMAGE_TRANSFORM_BY_ID[item.id] ?? "scale(2)",
+                      objectPosition: IMAGE_POSITION_BY_ID[item.id] ?? "center",
                       transformOrigin: QUADRANT_ORIGIN[item.imagePosition] ?? "center",
                     }}
                   />
