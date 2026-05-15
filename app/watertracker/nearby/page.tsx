@@ -165,7 +165,7 @@ export default function WaterTrackerNearbyPage() {
           position: relative;
           overflow: visible;
           min-height: clamp(330px, 52vh, 600px);
-          max-width: 760px;
+          max-width: 910px;
           width: 100%;
           justify-self: end;
           filter: drop-shadow(0 28px 52px rgba(9, 28, 66, 0.22));
@@ -258,10 +258,21 @@ export default function WaterTrackerNearbyPage() {
 
         .nb-figure {
           position: relative;
-          border-radius: 36px;
-          overflow: hidden;
+          border-radius: 32px;
+          overflow: visible;
           min-height: clamp(320px, 54vh, 620px);
-          box-shadow: 0 26px 46px rgba(9, 22, 54, 0.22);
+          filter: drop-shadow(0 24px 44px rgba(9, 22, 54, 0.2));
+        }
+        .nb-figure-frame {
+          position: absolute;
+          inset: 0;
+          border-radius: 32px;
+          overflow: hidden;
+          border: 12px solid rgba(255, 255, 255, 0.72);
+          box-shadow:
+            inset 0 1px 0 rgba(255, 255, 255, 0.35),
+            0 20px 40px rgba(15, 36, 88, 0.16);
+          background: linear-gradient(180deg, #0e1730 0%, #1a263f 100%);
         }
         .nb-figure::after {
           content: "";
@@ -269,6 +280,8 @@ export default function WaterTrackerNearbyPage() {
           inset: auto 0 0;
           height: 38%;
           background: linear-gradient(to top, rgba(8, 17, 39, 0.58) 0%, rgba(8, 17, 39, 0) 100%);
+          border-radius: 0 0 32px 32px;
+          overflow: hidden;
           pointer-events: none;
         }
 
@@ -338,6 +351,13 @@ export default function WaterTrackerNearbyPage() {
             border-width: 8px;
             border-radius: 24px;
           }
+          .nb-figure-frame {
+            border-width: 8px;
+            border-radius: 24px;
+          }
+          .nb-figure::after {
+            border-radius: 0 0 24px 24px;
+          }
           .nb-live-card {
             right: 10px;
             bottom: 10px;
@@ -377,7 +397,7 @@ export default function WaterTrackerNearbyPage() {
               alt="WaterTracker Nearby control scenario"
               fill
               sizes="(max-width: 980px) 100vw, 50vw"
-              style={{ objectFit: "cover", transform: "scale(2.2)", transformOrigin: "right bottom", top:20 }}
+              style={{ objectFit: "cover", transform: "scale(2.2)", transformOrigin: "right bottom", top:20, left:60 }}
               priority
             />
           </div>
@@ -404,33 +424,37 @@ export default function WaterTrackerNearbyPage() {
                 <FeatureCards dark={item.dark} />
               </div>
               <div className="nb-figure">
-                <Image
-                  src={IMAGE_SRC}
-                  alt={item.title}
-                  fill
-                  sizes="(max-width: 980px) 100vw, 50vw"
-                  style={{
-                    objectFit: "cover",
-                    transform: "scale(2)",
-                    transformOrigin: QUADRANT_ORIGIN[item.imagePosition] ?? "center",
-                  }}
-                />
+                <div className="nb-figure-frame">
+                  <Image
+                    src={IMAGE_SRC}
+                    alt={item.title}
+                    fill
+                    sizes="(max-width: 980px) 100vw, 50vw"
+                    style={{
+                      objectFit: "cover",
+                      transform: "scale(2.2) translate(0px, -10px)",
+                      transformOrigin: QUADRANT_ORIGIN[item.imagePosition] ?? "center",
+                    }}
+                  />
+                </div>
               </div>
             </>
           ) : (
             <>
               <div className="nb-figure">
-                <Image
-                  src={IMAGE_SRC}
-                  alt={item.title}
-                  fill
-                  sizes="(max-width: 980px) 100vw, 50vw"
-                  style={{
-                    objectFit: "cover",
-                    transform: "scale(2)",
-                    transformOrigin: QUADRANT_ORIGIN[item.imagePosition] ?? "center",
-                  }}
-                />
+                <div className="nb-figure-frame">
+                  <Image
+                    src={IMAGE_SRC}
+                    alt={item.title}
+                    fill
+                    sizes="(max-width: 980px) 100vw, 50vw"
+                    style={{
+                      objectFit: "cover",
+                      transform: "scale(2.2) translate(30px, -10px)",
+                      transformOrigin: QUADRANT_ORIGIN[item.imagePosition] ?? "center",
+                    }}
+                  />
+                </div>
               </div>
               <div className="nb-copy">
                 <p className="nb-kicker">{item.eyebrow}</p>
