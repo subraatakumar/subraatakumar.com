@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { Globe, Lock, ShieldCheck } from "lucide-react";
+import storeLinks from "@/config/store-links.json";
 
 const IMAGE_SRC = "/watertrackerimages/near_by.png";
 
@@ -56,6 +58,9 @@ const IMAGE_TRANSFORM_BY_ID: Record<string, string> = {
   gym: "scale(2.2) translate(30px, -10px)",
   family: "scale(2.2) translate(0px, 10px)",
 };
+
+const IOS_URL = storeLinks.watertracker.ios;
+const ANDROID_URL = storeLinks.watertracker.android;
 
 export const metadata: Metadata = {
   title: "WaterTracker Nearby | Private Group Sharing",
@@ -323,21 +328,90 @@ export default function WaterTrackerNearbyPage() {
           justify-content: center;
           flex-wrap: wrap;
         }
-        .nb-btn {
-          min-height: 46px;
-          border-radius: 12px;
-          text-decoration: none;
-          font-size: 12px;
-          font-weight: 800;
-          text-transform: uppercase;
-          letter-spacing: 0.06em;
-          padding: 0 16px;
+        .nb-store-link {
           display: inline-flex;
           align-items: center;
           justify-content: center;
+          width: 198px;
+          height: 58px;
+          border-radius: 12px;
+          transition: transform 0.15s ease, filter 0.15s ease;
         }
-        .nb-btn.primary { background: #0e1d46; color: #fff; }
-        .nb-btn.secondary { color: #0e1d46; border: 1px solid rgba(14, 29, 70, 0.16); }
+        .nb-store-link:hover {
+          transform: translateY(-1px);
+          filter: brightness(1.04);
+        }
+        .nb-store-button {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+        .nb-store-button-play {
+          transform: scale(1.33);
+          transform-origin: center;
+        }
+
+        .nb-sovereignty {
+          padding: clamp(34px, 6vw, 80px) clamp(20px, 4vw, 60px);
+          background: linear-gradient(130deg, #eff5ff 0%, #e5eefc 100%);
+        }
+        .nb-sovereignty-inner {
+          max-width: 1180px;
+          margin: 0 auto;
+        }
+        .nb-sovereignty h3 {
+          margin: 0;
+          text-align: center;
+          color: #0e1d46;
+          font-size: clamp(2rem, 4vw, 3.5rem);
+          letter-spacing: -0.03em;
+          line-height: 1.05;
+        }
+        .nb-sovereignty p {
+          margin: 12px auto 0;
+          text-align: center;
+          color: #5b6f92;
+          max-width: 740px;
+          font-size: clamp(1rem, 1.6vw, 1.2rem);
+          line-height: 1.7;
+        }
+        .nb-sovereignty-grid {
+          margin-top: 26px;
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 16px;
+        }
+        .nb-sovereignty-card {
+          border-radius: 24px;
+          border: 1px solid rgba(16, 36, 79, 0.08);
+          background: rgba(255, 255, 255, 0.75);
+          padding: 22px 20px;
+          box-shadow: 0 10px 24px rgba(16, 36, 79, 0.08);
+        }
+        .nb-sovereignty-icon {
+          width: 52px;
+          height: 52px;
+          border-radius: 14px;
+          background: rgba(47, 103, 212, 0.12);
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          color: #2f67d4;
+          margin-bottom: 14px;
+        }
+        .nb-sovereignty-card h4 {
+          margin: 0;
+          color: #121f46;
+          font-size: 1.1rem;
+          letter-spacing: -0.01em;
+        }
+        .nb-sovereignty-card p {
+          margin: 10px 0 0;
+          text-align: left;
+          color: #4d628e;
+          font-size: 0.98rem;
+          line-height: 1.65;
+        }
 
         @media (max-width: 980px) {
           .nb-wrap { margin-top: -22px; }
@@ -383,6 +457,13 @@ export default function WaterTrackerNearbyPage() {
           .nb-bar .nb-copy { order: 2; }
           .nb-bar[data-reverse="true"] .nb-figure { order: 1; }
           .nb-bar[data-reverse="true"] .nb-copy { order: 2; }
+          .nb-sovereignty-grid {
+            grid-template-columns: 1fr;
+          }
+          .nb-store-link {
+            width: 190px;
+            height: 56px;
+          }
         }
       `}</style>
 
@@ -474,6 +555,44 @@ export default function WaterTrackerNearbyPage() {
         </article>
       ))}
 
+      <section className="nb-sovereignty">
+        <div className="nb-sovereignty-inner">
+          <h3 className="wt-font-display">Built for Sovereignty</h3>
+          <p>
+            We combined modern social features with radical privacy. Your data, your rules.
+          </p>
+          <div className="nb-sovereignty-grid">
+            <article className="nb-sovereignty-card">
+              <span className="nb-sovereignty-icon" aria-hidden="true">
+                <ShieldCheck size={28} />
+              </span>
+              <h4>Zero Server Architecture</h4>
+              <p>
+                No accounts. No logins. Your data lives in a local Realm database, encrypted on your hardware.
+              </p>
+            </article>
+            <article className="nb-sovereignty-card">
+              <span className="nb-sovereignty-icon" aria-hidden="true">
+                <Globe size={28} />
+              </span>
+              <h4>Cross-Platform Flow</h4>
+              <p>
+                iOS and Android devices handshake effortlessly through our proximity sync protocol.
+              </p>
+            </article>
+            <article className="nb-sovereignty-card">
+              <span className="nb-sovereignty-icon" aria-hidden="true">
+                <Lock size={28} />
+              </span>
+              <h4>Personal Backups</h4>
+              <p>
+                Optionally sync to your own personal Google Drive or iCloud. You hold the master keys.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <footer className="nb-bottom">
         <div className="nb-bottom-inner">
           <h3 className="wt-font-display">Stay Hydrated. Stay Private.</h3>
@@ -481,8 +600,28 @@ export default function WaterTrackerNearbyPage() {
             Nearby keeps social motivation while preserving ownership. Your hydration data stays with you, and backup remains your choice.
           </p>
           <div className="nb-actions">
-            <Link href="/watertracker" className="nb-btn primary">Back To Overview</Link>
-            <Link href="/watertracker/privacy-policy" className="nb-btn secondary">Privacy Policy</Link>
+            {IOS_URL ? (
+              <a href={IOS_URL} target="_blank" rel="noopener noreferrer" className="nb-store-link" aria-label="Download on the App Store">
+                <Image
+                  src="/images/appstore-button-download.svg"
+                  alt="Download on the App Store"
+                  width={240}
+                  height={80}
+                  className="nb-store-button"
+                />
+              </a>
+            ) : null}
+            {ANDROID_URL ? (
+              <a href={ANDROID_URL} target="_blank" rel="noopener noreferrer" className="nb-store-link" aria-label="Get it on Google Play">
+                <Image
+                  src="/images/playstore-button-download.png"
+                  alt="Get it on Google Play"
+                  width={646}
+                  height={250}
+                  className="nb-store-button nb-store-button-play"
+                />
+              </a>
+            ) : null}
           </div>
         </div>
       </footer>
