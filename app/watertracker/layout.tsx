@@ -235,6 +235,7 @@ export default function WaterTrackerLayout({ children }: { children: React.React
             <Link href="/watertracker">Overview</Link>
             <Link href="/watertracker/guide">How To Use</Link>
             <Link href="/watertracker/benefits">Health Benefits</Link>
+            <Link href="/watertracker/nearby">Nearby</Link>
             <Link href="/products">All Products</Link>
           </nav>
         </div>
@@ -242,6 +243,7 @@ export default function WaterTrackerLayout({ children }: { children: React.React
           <Link href="/watertracker">Overview</Link>
           <Link href="/watertracker/guide">How To Use</Link>
           <Link href="/watertracker/benefits">Health Benefits</Link>
+          <Link href="/watertracker/nearby">Nearby</Link>
           <Link href="/products">All Products</Link>
         </nav>
       </header>
@@ -254,6 +256,7 @@ export default function WaterTrackerLayout({ children }: { children: React.React
             <Link href="/watertracker">Overview</Link>
             <Link href="/watertracker/guide">How To Use</Link>
             <Link href="/watertracker/benefits">Health Benefits</Link>
+            <Link href="/watertracker/nearby">Nearby</Link>
             <Link href="/contact">Support</Link>
             <Link href="/watertracker/privacy-policy">Privacy Policy</Link>
             <Link href="/watertracker/terms">Terms of Use</Link>
