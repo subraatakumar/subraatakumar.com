@@ -1,0 +1,882 @@
+<!DOCTYPE html><!--RN7SoXORZ7wICOUxfEVAk--><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" href="/_next/static/media/0c89a48fa5027cee-s.p.4564287c.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="preload" href="/_next/static/media/a343f882a40d2cc9-s.p.71e1367e.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="preload" as="image" href="/watertrackerimages/near_by.png"/><link rel="stylesheet" href="/_next/static/chunks/73857f047b5eee22.css" data-precedence="next"/><link rel="stylesheet" href="/_next/static/chunks/67d266141b06bb08.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/5a08c9e3a78c4f9b.js"/><script src="/_next/static/chunks/2a53c54479327e33.js" async=""></script><script src="/_next/static/chunks/b387cef77c823f83.js" async=""></script><script src="/_next/static/chunks/d1e380e53588e373.js" async=""></script><script src="/_next/static/chunks/turbopack-8c9e8715d9ebd26a.js" async=""></script><script src="/_next/static/chunks/7c92e96509cd355e.js" async=""></script><script src="/_next/static/chunks/d87b716920d553cc.js" async=""></script><script src="/_next/static/chunks/ff1a16fafef87110.js" async=""></script><script src="/_next/static/chunks/bf1f6d5df2e9b1a8.js" async=""></script><link rel="preload" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&amp;family=Caveat+Brush&amp;display=swap" as="style"/><meta name="next-size-adjust" content=""/><title>WaterTracker Nearby | Private Group Sharing | Subrata Kumar Das</title><meta name="description" content="Nearby sharing for WaterTracker: local-first hydration sync for family, gym partners, and park groups."/><meta name="keywords" content="Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"/><link rel="canonical" href="https://subraatakumar.com/watertracker/nearby/"/><meta property="og:title" content="Subrata Kumar Das"/><meta property="og:description" content="Tech Lead and React Native Architect building scalable mobile systems."/><meta property="og:url" content="https://subraatakumar.com/"/><meta property="og:site_name" content="Subrata Kumar Das"/><meta property="og:locale" content="en_US"/><meta property="og:image" content="https://subraatakumar.com/images/interview.png"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image:alt" content="Subrata Kumar Das portfolio"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Subrata Kumar Das"/><meta name="twitter:description" content="Tech Lead and React Native Architect building scalable mobile systems."/><meta name="twitter:image" content="https://subraatakumar.com/images/interview.png"/><link rel="icon" href="/favicon.ico?favicon.750fd6b3.ico" sizes="48x48" type="image/x-icon"/><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&amp;family=Caveat+Brush&amp;display=swap" rel="stylesheet"/><script src="/_next/static/chunks/a6dad97d9634a72d.js" noModule=""></script></head><body style="background:#fafaf7;margin:0;font-family:&#x27;Caveat&#x27;, cursive;color:#1a1a2e"><div hidden=""><!--$--><!--/$--></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Subrata Kumar Das","url":"https://subraatakumar.com","jobTitle":"Tech Lead","sameAs":["https://github.com/subraatakumar","https://linkedin.com/in/subraatakumar"]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWorkSeries","name":"180 Days Mentoring Journey","description":"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.","url":"https://subraatakumar.com/180days","startDate":"2026-02-19","publisher":{"@type":"Organization","name":"Subrata Kumar Das","url":"https://subraatakumar.com"}}</script><style>
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+
+          body {
+            background: #fafaf7;
+            font-family: 'Caveat', cursive;
+            color: #1a1a2e;
+          }
+
+          /* ── Nav ── */
+          .sk-header {
+            background: #fff;
+            border-bottom: 2.5px solid #1a1a2e;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+          }
+          .sk-header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .sk-logo {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.55rem;
+            color: #1a1a2e;
+            text-decoration: none;
+            letter-spacing: 0.01em;
+          }
+          .sk-nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+          }
+          .sk-nav-links a {
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+            padding-bottom: 2px;
+          }
+          .sk-nav-links a:hover {
+            text-decoration: underline wavy #2563eb 2px;
+            text-underline-offset: 4px;
+          }
+          .sk-nav-mobile {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 14px;
+          }
+          .sk-nav-mobile ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+          }
+          .sk-nav-mobile a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+          }
+
+          /* ── Footer ── */
+          .sk-footer {
+            border-top: 2.5px solid #1a1a2e;
+            background: #fff;
+            padding: 24px;
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+          }
+
+          /* ── Shared section ── */
+          .sk-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+          }
+          .sk-page-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            margin-bottom: 8px;
+            line-height: 1.1;
+          }
+          .sk-section-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.9rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+          .sk-section-heading::after {
+            content: '';
+            flex: 1;
+            border-top: 2px dashed #9ca3af;
+          }
+
+          /* ── Squiggle divider ── */
+          .sk-squiggle {
+            width: 100%;
+            height: 8px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 4 Q5 0 10 4 Q15 8 20 4 Q25 0 30 4 Q35 8 40 4' stroke='%239ca3af' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") repeat-x center;
+            opacity: 0.55;
+            margin: 36px 0;
+          }
+
+          /* ── Sketch button ── */
+          .sk-btn {
+            display: inline-block;
+            padding: 10px 26px;
+            background: #2563eb;
+            color: #fff;
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 3px 3px 0 #1a1a2e;
+            transition: transform 0.1s, box-shadow 0.1s;
+          }
+          .sk-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 #1a1a2e;
+          }
+          .sk-btn-ghost {
+            background: transparent;
+            color: #1a1a2e;
+            box-shadow: 3px 3px 0 #9ca3af;
+          }
+          .sk-btn-ghost:hover {
+            box-shadow: 5px 5px 0 #9ca3af;
+          }
+
+          /* ── Tag chip ── */
+          .sk-tag {
+            display: inline-block;
+            padding: 3px 13px;
+            border: 2px solid #1a1a2e;
+            border-radius: 2px;
+            font-size: 1rem;
+            font-weight: 600;
+            background: #fff;
+            margin: 3px;
+          }
+          .sk-tag.active {
+            background: #2563eb;
+            color: #fff;
+          }
+
+          /* ── Card ── */
+          .sk-card {
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 5px 5px 0 #1a1a2e;
+            padding: 24px;
+            transition: transform 0.15s, box-shadow 0.15s;
+          }
+          .sk-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0 #1a1a2e;
+          }
+
+          /* ── Stat card ── */
+          .sk-stat {
+            flex: 1;
+            min-width: 130px;
+            text-align: center;
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 4px 4px 0 #1a1a2e;
+            padding: 20px 12px;
+          }
+          .sk-stat .num {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            color: #2563eb;
+            line-height: 1;
+          }
+          .sk-stat .lbl {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 4px;
+          }
+
+          /* ── Image placeholder ── */
+          .sk-img {
+            width: 100%;
+            height: 160px;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            background: #f3f4f6;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 16px;
+          }
+          .sk-img::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+              linear-gradient(to bottom right, transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px)),
+              linear-gradient(to bottom left,  transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px));
+          }
+
+          @media (max-width: 640px) {
+            .sk-nav-links { display: none; }
+            .sk-nav-mobile { display: block; }
+            .sk-page-heading { font-size: 2.2rem; }
+          }
+        </style><header class="sk-header"><div class="sk-header-inner"><a class="sk-logo" href="/">SKD_</a><nav aria-label="Primary"><ul class="sk-nav-links"><li><a href="/about/">About</a></li><li><a href="/products/">Products</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact/">Contact</a></li></ul></nav></div><div class="sk-nav-mobile"><nav aria-label="Mobile"><ul><li><a href="/about/">About</a></li><li><a href="/products/">Products</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact/">Contact</a></li></ul></nav></div></header><main style="width:100%"><div class="wt-shell manrope_65508a06-module__rzDLfa__className"><style>
+        body:has(.wt-shell) .sk-header,
+        body:has(.wt-shell) .sk-footer {
+          display: none !important;
+        }
+
+        .wt-shell {
+          --wt-navy-900: #0f2458;
+          --wt-navy-800: #14336f;
+          --wt-navy-700: #1f4f9d;
+          --wt-sky-400: #7fc3ff;
+          --wt-sky-300: #b9e3ff;
+          --wt-cyan-200: #d8f5ff;
+          --wt-card: rgba(255, 255, 255, 0.88);
+          --wt-ink: #10244f;
+          --wt-muted: #4a5f8c;
+          min-height: 100vh;
+          color: var(--wt-ink);
+          background:
+            radial-gradient(circle at 8% 10%, rgba(125, 196, 255, 0.25), transparent 42%),
+            radial-gradient(circle at 92% 22%, rgba(174, 229, 255, 0.24), transparent 35%),
+            linear-gradient(140deg, #eaf6ff 0%, #dff2ff 30%, #cfe8ff 100%);
+        }
+        .wt-shell * {
+          box-sizing: border-box;
+        }
+        .wt-nav {
+          position: sticky;
+          top: 0;
+          z-index: 60;
+          border-bottom: 1px solid rgba(16, 36, 79, 0.1);
+          background: rgba(239, 249, 255, 0.85);
+          backdrop-filter: blur(12px);
+        }
+        .wt-nav-inner {
+          max-width: 1120px;
+          margin: 0 auto;
+          padding: 0 24px;
+          height: 68px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        }
+        .wt-logo {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          color: var(--wt-navy-900);
+          text-decoration: none;
+        }
+        .wt-logo-mark {
+          width: 34px;
+          height: 34px;
+          border-radius: 10px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 800;
+          color: #fff;
+          background: linear-gradient(140deg, #4f88ff, #3ec1ff);
+          box-shadow: 0 8px 16px rgba(31, 79, 157, 0.22);
+        }
+        .wt-logo-text {
+          font-size: 14px;
+          font-weight: 800;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+        }
+        .wt-links {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .wt-links a {
+          text-decoration: none;
+          font-size: 13px;
+          font-weight: 800;
+          color: var(--wt-navy-900);
+          padding: 10px 12px;
+          border-radius: 10px;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          white-space: nowrap;
+        }
+        .wt-links a:hover {
+          background: rgba(79, 136, 255, 0.14);
+          color: var(--wt-navy-700);
+        }
+        .wt-main {
+          max-width: 1120px;
+          margin: 0 auto;
+          padding: 26px 24px 70px;
+        }
+        .wt-footer {
+          border-top: 1px solid rgba(16, 36, 79, 0.12);
+          background: rgba(235, 247, 255, 0.78);
+        }
+        .wt-footer-inner {
+          max-width: 1120px;
+          margin: 0 auto;
+          padding: 16px 24px 22px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+        .wt-footer-copy {
+          color: var(--wt-muted);
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0.03em;
+        }
+        .wt-footer-links {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          flex-wrap: wrap;
+        }
+        .wt-footer-links a {
+          text-decoration: none;
+          font-size: 11px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          color: var(--wt-navy-900);
+          border: 1px solid rgba(16, 36, 79, 0.15);
+          border-radius: 9px;
+          padding: 7px 10px;
+          background: #fff;
+        }
+        .wt-footer-links a:hover {
+          border-color: rgba(31, 79, 157, 0.45);
+          color: var(--wt-navy-700);
+        }
+        .wt-footer-attribution {
+          width: 100%;
+          margin: 2px 0 0;
+          color: var(--wt-muted);
+          font-size: 11px;
+          font-weight: 600;
+        }
+        .wt-footer-attribution a {
+          color: var(--wt-navy-700);
+          text-decoration: underline;
+          text-decoration-thickness: 1px;
+          text-underline-offset: 2px;
+        }
+        .wt-footer-attribution a:hover {
+          color: var(--wt-navy-900);
+        }
+        .wt-font-display {
+          font-family: 'Space Grotesk', 'Space Grotesk Fallback';
+        }
+        .wt-mobile-nav {
+          display: none;
+        }
+        @media (max-width: 760px) {
+          .wt-nav {
+            display: none;
+          }
+          .wt-nav-inner {
+            padding: 0 14px;
+            height: 56px;
+          }
+          .wt-links {
+            display: none;
+          }
+          .wt-mobile-nav {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            overflow-x: auto;
+            padding: 0 14px 10px;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            border-bottom: 1px solid rgba(16, 36, 79, 0.1);
+          }
+          .wt-mobile-nav::-webkit-scrollbar {
+            display: none;
+          }
+          .wt-mobile-nav a {
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: 800;
+            color: var(--wt-navy-900);
+            padding: 7px 11px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            white-space: nowrap;
+            border: 1px solid rgba(16, 36, 79, 0.18);
+            background: rgba(255,255,255,0.7);
+          }
+          .wt-mobile-nav a:hover {
+            background: rgba(79, 136, 255, 0.14);
+            border-color: rgba(31, 79, 157, 0.35);
+          }
+          .wt-main {
+            padding: 22px 14px 54px;
+          }
+          .wt-footer-inner {
+            padding: 14px 14px 18px;
+          }
+          .wt-footer-attribution {
+            font-size: 10px;
+          }
+        }
+      </style><header class="wt-nav"><div class="wt-nav-inner"><a class="wt-logo" href="/watertracker/"><span class="wt-logo-mark">WT</span><span class="wt-logo-text wt-font-display">WaterTracker</span></a><nav class="wt-links" aria-label="Water Tracker pages"><a href="/watertracker/">Overview</a><a href="/watertracker/guide/">How To Use</a><a href="/watertracker/benefits/">Health Benefits</a><a href="/watertracker/nearby/">Nearby</a><a href="/products/">All Products</a></nav></div><nav class="wt-mobile-nav" aria-label="Water Tracker pages mobile"><a href="/watertracker/">Overview</a><a href="/watertracker/guide/">How To Use</a><a href="/watertracker/benefits/">Health Benefits</a><a href="/watertracker/nearby/">Nearby</a><a href="/products/">All Products</a></nav></header><main class="wt-main"><section class="nb-wrap"><style>
+        .nb-wrap {
+          margin-left: calc(50% - 50vw);
+          margin-right: calc(50% - 50vw);
+          margin-top: -26px;
+        }
+
+        .nb-hero {
+          min-height: clamp(540px, 82vh, 820px);
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          align-items: center;
+          padding: clamp(24px, 5vw, 72px);
+          background:
+            radial-gradient(circle at 14% 12%, rgba(123, 191, 255, 0.22), transparent 42%),
+            radial-gradient(circle at 88% 24%, rgba(172, 221, 255, 0.18), transparent 36%),
+            linear-gradient(130deg, #f4f9ff 0%, #e8f2ff 48%, #d9e7fb 100%);
+        }
+        .nb-hero-copy { max-width: 620px; }
+        .nb-kicker {
+          margin: 0;
+          font-size: 11px;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          font-weight: 800;
+          color: #2d66cb;
+        }
+        .nb-hero h1 {
+          margin: 12px 0 0;
+          font-size: clamp(2.3rem, 7vw, 6rem);
+          line-height: 0.9;
+          letter-spacing: -0.04em;
+          color: #0e1d46;
+        }
+        .nb-hero h1 .accent { color: #2f67d4; }
+        .nb-hero p {
+          margin: 16px 0 0;
+          color: #5b6f92;
+          font-size: clamp(1rem, 1.8vw, 1.25rem);
+          line-height: 1.7;
+          max-width: 530px;
+        }
+        .nb-hero-cta {
+          margin-top: 22px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 52px;
+          padding: 0 22px;
+          border-radius: 14px;
+          background: #0e1d46;
+          color: #fff;
+          text-decoration: none;
+          font-size: 0.95rem;
+          font-weight: 800;
+          letter-spacing: 0.02em;
+          box-shadow: 0 14px 26px rgba(14, 29, 70, 0.22);
+        }
+        .nb-hero-cta:hover {
+          filter: brightness(1.06);
+        }
+        .nb-hero-media {
+          position: relative;
+          overflow: visible;
+          min-height: clamp(330px, 52vh, 600px);
+          max-width: 910px;
+          width: 100%;
+          justify-self: end;
+          filter: drop-shadow(0 28px 52px rgba(9, 28, 66, 0.22));
+        }
+        .nb-hero-frame {
+          position: absolute;
+          inset: 0;
+          border-radius: 32px;
+          overflow: hidden;
+          border: 12px solid rgba(255, 255, 255, 0.72);
+          box-shadow:
+            inset 0 1px 0 rgba(255, 255, 255, 0.35),
+            0 20px 40px rgba(15, 36, 88, 0.16);
+          background: linear-gradient(180deg, #0e1730 0%, #1a263f 100%);
+        }
+        .nb-live-card {
+          position: absolute;
+          right: clamp(-44px, -3.4vw, -20px);
+          bottom: clamp(-42px, -3.8vw, -24px);
+          z-index: 3;
+          width: min(306px, calc(100% - 22px));
+          border-radius: 22px;
+          border: 1px solid rgba(16, 36, 79, 0.08);
+          background: rgba(255, 255, 255, 0.95);
+          backdrop-filter: blur(8px);
+          box-shadow: 0 18px 32px rgba(16, 36, 79, 0.14);
+          padding: 15px 15px 13px;
+        }
+        .nb-live-head {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+        .nb-live-icon {
+          width: 40px;
+          height: 40px;
+          border-radius: 999px;
+          background: linear-gradient(140deg, #4f88ff, #2f67d4);
+          color: #fff;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 18px;
+          font-weight: 900;
+          box-shadow: 0 8px 18px rgba(47, 103, 212, 0.3);
+        }
+        .nb-live-title {
+          margin: 0;
+          color: #0f2458;
+          font-size: 1.02rem;
+          font-weight: 900;
+          letter-spacing: -0.01em;
+        }
+        .nb-live-text {
+          margin: 10px 0 0;
+          color: #5a6f93;
+          font-size: 0.96rem;
+          line-height: 1.6;
+        }
+
+        .nb-bar {
+          min-height: clamp(520px, 72vh, 760px);
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          align-items: center;
+          gap: clamp(16px, 2.8vw, 40px);
+          padding: clamp(24px, 5vw, 72px);
+        }
+        .nb-bar.light { background: linear-gradient(125deg, #f7fbff 0%, #edf4ff 100%); }
+        .nb-bar.dark { background: linear-gradient(125deg, #020f31 0%, #001440 100%); }
+        .nb-bar-park {
+          background:
+            radial-gradient(circle at 8% 14%, rgba(150, 214, 255, 0.22), transparent 40%),
+            linear-gradient(125deg, #f5fbff 0%, #e9f4ff 100%);
+        }
+        .nb-bar-gym {
+          background:
+            radial-gradient(circle at 86% 18%, rgba(74, 146, 255, 0.26), transparent 46%),
+            linear-gradient(125deg, #001133 0%, #001b52 100%);
+        }
+        .nb-bar-family {
+          background:
+            radial-gradient(circle at 88% 20%, rgba(255, 210, 164, 0.24), transparent 40%),
+            linear-gradient(125deg, #f8fbff 0%, #eef4ff 100%);
+        }
+        .nb-copy { max-width: 620px; }
+        .nb-copy h2 {
+          margin: 8px 0 0;
+          font-size: clamp(2rem, 5.2vw, 4.1rem);
+          line-height: 0.96;
+          letter-spacing: -0.035em;
+        }
+        .nb-copy p {
+          margin: 14px 0 0;
+          font-size: clamp(1rem, 1.7vw, 1.23rem);
+          line-height: 1.7;
+        }
+        .nb-bar.light .nb-copy h2 { color: #0f1f4a; }
+        .nb-bar.light .nb-copy p { color: #4d628e; }
+        .nb-bar.light .nb-kicker { color: #2b66cd; }
+
+        .nb-bar.dark .nb-copy h2 { color: #f3f8ff; }
+        .nb-bar.dark .nb-copy p { color: #bfd8ff; }
+        .nb-bar.dark .nb-kicker { color: #68b4ff; }
+
+        .nb-figure {
+          position: relative;
+          border-radius: 32px;
+          overflow: visible;
+          min-height: clamp(320px, 54vh, 620px);
+          filter: drop-shadow(0 24px 44px rgba(9, 22, 54, 0.2));
+        }
+        .nb-figure-frame {
+          position: absolute;
+          inset: 0;
+          border-radius: 32px;
+          overflow: hidden;
+          border: 12px solid rgba(255, 255, 255, 0.72);
+          box-shadow:
+            inset 0 1px 0 rgba(255, 255, 255, 0.35),
+            0 20px 40px rgba(15, 36, 88, 0.16);
+          background: linear-gradient(180deg, #0e1730 0%, #1a263f 100%);
+        }
+        .nb-figure::after {
+          content: "";
+          position: absolute;
+          inset: auto 0 0;
+          height: 38%;
+          background: linear-gradient(to top, rgba(8, 17, 39, 0.58) 0%, rgba(8, 17, 39, 0) 100%);
+          border-radius: 0 0 32px 32px;
+          overflow: hidden;
+          pointer-events: none;
+        }
+
+        .nb-bottom {
+          min-height: 56vh;
+          background:
+            radial-gradient(circle at 82% 10%, rgba(170, 224, 255, 0.2), transparent 42%),
+            linear-gradient(130deg, #f3f9ff 0%, #e7f1ff 100%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: clamp(28px, 6vw, 72px);
+        }
+        .nb-bottom-inner { max-width: 840px; }
+        .nb-bottom h3 {
+          margin: 0;
+          font-size: clamp(2.1rem, 6vw, 5.2rem);
+          line-height: 0.92;
+          letter-spacing: -0.04em;
+          color: #0e1d46;
+        }
+        .nb-bottom p {
+          margin: 16px auto 0;
+          color: #5b6f92;
+          font-size: clamp(1rem, 1.8vw, 1.25rem);
+          line-height: 1.7;
+          max-width: 680px;
+        }
+        .nb-actions {
+          margin-top: 18px;
+          display: flex;
+          gap: 10px;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+        .nb-store-link {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 198px;
+          height: 58px;
+          border-radius: 12px;
+          transition: transform 0.15s ease, filter 0.15s ease;
+        }
+        .nb-store-link:hover {
+          transform: translateY(-1px);
+          filter: brightness(1.04);
+        }
+        .nb-store-button {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+        .nb-store-button-play {
+          transform: scale(1.33);
+          transform-origin: center;
+        }
+
+        .nb-sovereignty {
+          padding: clamp(34px, 6vw, 80px) clamp(20px, 4vw, 60px);
+          background:
+            radial-gradient(circle at 16% 18%, rgba(168, 216, 255, 0.2), transparent 42%),
+            linear-gradient(130deg, #edf4ff 0%, #e1ebfb 100%);
+        }
+        .nb-sovereignty-inner {
+          max-width: 1180px;
+          margin: 0 auto;
+        }
+        .nb-sovereignty h3 {
+          margin: 0;
+          text-align: center;
+          color: #0e1d46;
+          font-size: clamp(2rem, 4vw, 3.5rem);
+          letter-spacing: -0.03em;
+          line-height: 1.05;
+        }
+        .nb-sovereignty p {
+          margin: 12px auto 0;
+          text-align: center;
+          color: #5b6f92;
+          max-width: 740px;
+          font-size: clamp(1rem, 1.6vw, 1.2rem);
+          line-height: 1.7;
+        }
+        .nb-sovereignty-grid {
+          margin-top: 26px;
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 16px;
+        }
+        .nb-sovereignty-card {
+          border-radius: 24px;
+          border: 1px solid rgba(16, 36, 79, 0.08);
+          background: rgba(255, 255, 255, 0.75);
+          padding: 22px 20px;
+          box-shadow: 0 10px 24px rgba(16, 36, 79, 0.08);
+        }
+        .nb-sovereignty-icon {
+          width: 52px;
+          height: 52px;
+          border-radius: 14px;
+          background: rgba(47, 103, 212, 0.12);
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          color: #2f67d4;
+          margin-bottom: 14px;
+        }
+        .nb-sovereignty-card h4 {
+          margin: 0;
+          color: #121f46;
+          font-size: 1.1rem;
+          letter-spacing: -0.01em;
+        }
+        .nb-sovereignty-card p {
+          margin: 10px 0 0;
+          text-align: left;
+          color: #4d628e;
+          font-size: 0.98rem;
+          line-height: 1.65;
+        }
+
+        @media (max-width: 980px) {
+          .nb-wrap { margin-top: -22px; }
+          .nb-hero,
+          .nb-bar {
+            grid-template-columns: 1fr;
+            min-height: unset;
+          }
+          .nb-hero-media,
+          .nb-figure {
+            min-height: 360px;
+          }
+          .nb-hero-media {
+            justify-self: stretch;
+            max-width: none;
+          }
+          .nb-hero-frame {
+            border-width: 8px;
+            border-radius: 24px;
+          }
+          .nb-figure-frame {
+            border-width: 8px;
+            border-radius: 24px;
+          }
+          .nb-figure::after {
+            border-radius: 0 0 24px 24px;
+          }
+          .nb-live-card {
+            right: 10px;
+            bottom: 10px;
+            width: min(280px, calc(100% - 22px));
+            border-radius: 18px;
+            padding: 12px 12px 11px;
+          }
+          .nb-live-icon {
+            width: 34px;
+            height: 34px;
+            font-size: 16px;
+          }
+          .nb-live-title { font-size: 0.96rem; }
+          .nb-live-text { font-size: 0.88rem; line-height: 1.5; margin-top: 8px; }
+          .nb-bar .nb-figure { order: 1; }
+          .nb-bar .nb-copy { order: 2; }
+          .nb-bar[data-reverse="true"] .nb-figure { order: 1; }
+          .nb-bar[data-reverse="true"] .nb-copy { order: 2; }
+          .nb-sovereignty-grid {
+            grid-template-columns: 1fr;
+          }
+          .nb-store-link {
+            width: 190px;
+            height: 56px;
+          }
+        }
+      </style><header class="nb-hero"><div class="nb-hero-copy"><p class="nb-kicker">Introducing Nearby Ripple Sync</p><h1 class="wt-font-display">The Data <span class="accent">Ripple</span> Effect.</h1><p>Share your hydration journey with people right next to you. No server, no mandatory account, and full control over your data.</p><a class="nb-hero-cta" href="#park">Explore the Ripple</a></div><div class="nb-hero-media"><div class="nb-hero-frame"><img alt="WaterTracker Nearby control scenario" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:60px;top:20px;right:0;bottom:0;object-fit:cover;color:transparent;transform:scale(2.2);transform-origin:right bottom" src="/watertrackerimages/near_by.png"/></div><aside class="nb-live-card" aria-label="Live syncing highlight"><div class="nb-live-head"><span class="nb-live-icon" aria-hidden="true">⚡</span><p class="nb-live-title">Live Syncing</p></div><p class="nb-live-text">24 hours of hydration data shared in under 2 seconds via proximity sync.</p></aside></div></header><article class="nb-bar light nb-bar-park" data-reverse="true"><div class="nb-copy"><p class="nb-kicker">Community Energy</p><h2 class="wt-font-display">Morning Park Group</h2><p>Share hydration progress with your morning circle nearby. Social accountability works without forcing accounts or cloud-first data flow.</p><div class="nb-mini-grid" aria-label="Nearby highlights"><article class="nb-mini-card"><h4>Zero Servers</h4><p>Data stays in your hand.</p></article><article class="nb-mini-card"><h4>End-to-End</h4><p>Local P2P encryption.</p></article><style>
+        .nb-mini-grid {
+          margin-top: 18px;
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 10px;
+        }
+        .nb-mini-card {
+          border-radius: 18px;
+          padding: 16px;
+          border: 1px solid rgba(15, 36, 88, 0.08);
+          background: rgba(255, 255, 255, 0.56);
+        }
+        .nb-mini-card h4 {
+          margin: 0;
+          font-size: 1.02rem;
+          color: #111f49;
+        }
+        .nb-mini-card p {
+          margin: 6px 0 0;
+          font-size: 0.9rem;
+          color: #4d628e;
+          line-height: 1.45;
+        }
+        @media (max-width: 760px) {
+          .nb-mini-grid { grid-template-columns: 1fr; }
+        }
+      </style></div></div><div class="nb-figure"><div class="nb-figure-frame"><img alt="Morning Park Group" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent;transform:scale(2.2) translate(0px, -10px);transform-origin:left top" src="/watertrackerimages/near_by.png"/></div></div></article><article class="nb-bar dark nb-bar-gym" data-reverse="false"><div class="nb-figure"><div class="nb-figure-frame"><img alt="Gym Squad Synergy" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent;transform:scale(2.2) translate(30px, -10px);transform-origin:right top" src="/watertrackerimages/near_by.png"/></div></div><div class="nb-copy"><p class="nb-kicker">Performance Sync</p><h2 class="wt-font-display">Gym Squad Synergy</h2><p>Gym partners can compare intake quickly between sets. Sync stays fast and private while each person keeps full ownership of their records.</p><div class="nb-mini-grid" aria-label="Nearby highlights"><article class="nb-mini-card"><h4>Zero Servers</h4><p>Data stays in your hand.</p></article><article class="nb-mini-card"><h4>End-to-End</h4><p>Local P2P encryption.</p></article><style>
+        .nb-mini-grid {
+          margin-top: 18px;
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 10px;
+        }
+        .nb-mini-card {
+          border-radius: 18px;
+          padding: 16px;
+          border: 1px solid rgba(147, 193, 255, 0.2);
+          background: rgba(13, 36, 87, 0.48);
+        }
+        .nb-mini-card h4 {
+          margin: 0;
+          font-size: 1.02rem;
+          color: #f0f7ff;
+        }
+        .nb-mini-card p {
+          margin: 6px 0 0;
+          font-size: 0.9rem;
+          color: #bdd7ff;
+          line-height: 1.45;
+        }
+        @media (max-width: 760px) {
+          .nb-mini-grid { grid-template-columns: 1fr; }
+        }
+      </style></div></div></article><article class="nb-bar light nb-bar-family" data-reverse="true"><div class="nb-copy"><p class="nb-kicker">Family Insights</p><h2 class="wt-font-display">Dinner Table Visibility</h2><p>Families can exchange daily hydration summaries at home while source data remains local on each device, not in a shared centralized store.</p><div class="nb-mini-grid" aria-label="Nearby highlights"><article class="nb-mini-card"><h4>Zero Servers</h4><p>Data stays in your hand.</p></article><article class="nb-mini-card"><h4>End-to-End</h4><p>Local P2P encryption.</p></article><style>
+        .nb-mini-grid {
+          margin-top: 18px;
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 10px;
+        }
+        .nb-mini-card {
+          border-radius: 18px;
+          padding: 16px;
+          border: 1px solid rgba(15, 36, 88, 0.08);
+          background: rgba(255, 255, 255, 0.56);
+        }
+        .nb-mini-card h4 {
+          margin: 0;
+          font-size: 1.02rem;
+          color: #111f49;
+        }
+        .nb-mini-card p {
+          margin: 6px 0 0;
+          font-size: 0.9rem;
+          color: #4d628e;
+          line-height: 1.45;
+        }
+        @media (max-width: 760px) {
+          .nb-mini-grid { grid-template-columns: 1fr; }
+        }
+      </style></div></div><div class="nb-figure"><div class="nb-figure-frame"><img alt="Dinner Table Visibility" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent;transform:scale(2.2) translate(0px, 10px);transform-origin:left bottom" src="/watertrackerimages/near_by.png"/></div></div></article><section class="nb-sovereignty"><div class="nb-sovereignty-inner"><h3 class="wt-font-display">Built for Sovereignty</h3><p>We combined modern social features with radical privacy. Your data, your rules.</p><div class="nb-sovereignty-grid"><article class="nb-sovereignty-card"><span class="nb-sovereignty-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg></span><h4>Zero Server Architecture</h4><p>No accounts. No logins. Your data lives in a local Realm database, encrypted on your hardware.</p></article><article class="nb-sovereignty-card"><span class="nb-sovereignty-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg></span><h4>Cross-Platform Flow</h4><p>iOS and Android devices handshake effortlessly through our proximity sync protocol.</p></article><article class="nb-sovereignty-card"><span class="nb-sovereignty-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span><h4>Personal Backups</h4><p>Optionally sync to your own personal Google Drive or iCloud. You hold the master keys.</p></article></div></div></section><footer class="nb-bottom"><div class="nb-bottom-inner"><h3 class="wt-font-display">Stay Hydrated. Stay Private.</h3><p>Nearby keeps social motivation while preserving ownership. Your hydration data stays with you, and backup remains your choice.</p><div class="nb-actions"><a href="https://apps.apple.com/us/app/water-tracker-n-reminder/id6759248297" target="_blank" rel="noopener noreferrer" class="nb-store-link" aria-label="Download on the App Store"><img alt="Download on the App Store" loading="lazy" width="240" height="80" decoding="async" data-nimg="1" class="nb-store-button" style="color:transparent" src="/images/appstore-button-download.svg"/></a><a href="https://play.google.com/store/apps/details?id=com.subraatakumar.watertracker" target="_blank" rel="noopener noreferrer" class="nb-store-link" aria-label="Get it on Google Play"><img alt="Get it on Google Play" loading="lazy" width="646" height="250" decoding="async" data-nimg="1" class="nb-store-button nb-store-button-play" style="color:transparent" src="/images/playstore-button-download.png"/></a></div></div></footer></section><!--$--><!--/$--></main><footer class="wt-footer"><div class="wt-footer-inner"><p class="wt-footer-copy">© <!-- -->2026<!-- --> WaterTracker</p><div class="wt-footer-links"><a href="/watertracker/">Overview</a><a href="/watertracker/guide/">How To Use</a><a href="/watertracker/benefits/">Health Benefits</a><a href="/watertracker/nearby/">Nearby</a><a href="/contact/">Support</a><a href="/watertracker/privacy-policy/">Privacy Policy</a><a href="/watertracker/terms/">Terms of Use</a></div><p class="wt-footer-attribution"><a href="https://pngtree.com/freepng/silver-laurel-wreaths-for-awards_20564144.html">png image from pngtree.com/</a></p></div></footer></div></main><footer class="sk-footer">© <!-- -->2026<!-- --> Subrata Kumar Das. All rights reserved. ·<!-- --> <a href="/for-ai/">For AI/Crawlers</a></footer><script src="/_next/static/chunks/5a08c9e3a78c4f9b.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\na:I[68027,[],\"default\"]\n:HL[\"/_next/static/chunks/73857f047b5eee22.css\",\"style\"]\n:HL[\"/_next/static/chunks/67d266141b06bb08.css\",\"style\"]\n:HL[\"/_next/static/media/0c89a48fa5027cee-s.p.4564287c.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/a343f882a40d2cc9-s.p.71e1367e.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700\u0026family=Caveat+Brush\u0026display=swap\",\"style\"]\n2:T19f5,"])</script><script>self.__next_f.push([1,"\n          * { box-sizing: border-box; margin: 0; padding: 0; }\n\n          body {\n            background: #fafaf7;\n            font-family: 'Caveat', cursive;\n            color: #1a1a2e;\n          }\n\n          /* ── Nav ── */\n          .sk-header {\n            background: #fff;\n            border-bottom: 2.5px solid #1a1a2e;\n            position: sticky;\n            top: 0;\n            z-index: 100;\n          }\n          .sk-header-inner {\n            max-width: 900px;\n            margin: 0 auto;\n            padding: 16px 24px;\n            display: flex;\n            align-items: center;\n            justify-content: space-between;\n          }\n          .sk-logo {\n            font-family: 'Caveat Brush', cursive;\n            font-size: 1.55rem;\n            color: #1a1a2e;\n            text-decoration: none;\n            letter-spacing: 0.01em;\n          }\n          .sk-nav-links {\n            display: flex;\n            gap: 32px;\n            list-style: none;\n          }\n          .sk-nav-links a {\n            font-family: 'Caveat', cursive;\n            font-size: 1.15rem;\n            font-weight: 600;\n            color: #1a1a2e;\n            text-decoration: none;\n            padding-bottom: 2px;\n          }\n          .sk-nav-links a:hover {\n            text-decoration: underline wavy #2563eb 2px;\n            text-underline-offset: 4px;\n          }\n          .sk-nav-mobile {\n            display: none;\n            max-width: 900px;\n            margin: 0 auto;\n            padding: 0 24px 14px;\n          }\n          .sk-nav-mobile ul {\n            display: flex;\n            gap: 20px;\n            list-style: none;\n          }\n          .sk-nav-mobile a {\n            font-size: 1.1rem;\n            font-weight: 600;\n            color: #1a1a2e;\n            text-decoration: none;\n          }\n\n          /* ── Footer ── */\n          .sk-footer {\n            border-top: 2.5px solid #1a1a2e;\n            background: #fff;\n            padding: 24px;\n            text-align: center;\n            font-size: 1rem;\n            color: #666;\n          }\n\n          /* ── Shared section ── */\n          .sk-page {\n            max-width: 900px;\n            margin: 0 auto;\n            padding: 60px 24px 80px;\n          }\n          .sk-page-heading {\n            font-family: 'Caveat Brush', cursive;\n            font-size: 2.8rem;\n            margin-bottom: 8px;\n            line-height: 1.1;\n          }\n          .sk-section-heading {\n            font-family: 'Caveat Brush', cursive;\n            font-size: 1.9rem;\n            margin-bottom: 16px;\n            display: flex;\n            align-items: center;\n            gap: 12px;\n          }\n          .sk-section-heading::after {\n            content: '';\n            flex: 1;\n            border-top: 2px dashed #9ca3af;\n          }\n\n          /* ── Squiggle divider ── */\n          .sk-squiggle {\n            width: 100%;\n            height: 8px;\n            background: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 4 Q5 0 10 4 Q15 8 20 4 Q25 0 30 4 Q35 8 40 4' stroke='%239ca3af' stroke-width='1.5' fill='none'/%3E%3C/svg%3E\") repeat-x center;\n            opacity: 0.55;\n            margin: 36px 0;\n          }\n\n          /* ── Sketch button ── */\n          .sk-btn {\n            display: inline-block;\n            padding: 10px 26px;\n            background: #2563eb;\n            color: #fff;\n            font-family: 'Caveat', cursive;\n            font-size: 1.15rem;\n            font-weight: 700;\n            border: 2.5px solid #1a1a2e;\n            border-radius: 2px;\n            cursor: pointer;\n            text-decoration: none;\n            box-shadow: 3px 3px 0 #1a1a2e;\n            transition: transform 0.1s, box-shadow 0.1s;\n          }\n          .sk-btn:hover {\n            transform: translate(-2px, -2px);\n            box-shadow: 5px 5px 0 #1a1a2e;\n          }\n          .sk-btn-ghost {\n            background: transparent;\n            color: #1a1a2e;\n            box-shadow: 3px 3px 0 #9ca3af;\n          }\n          .sk-btn-ghost:hover {\n            box-shadow: 5px 5px 0 #9ca3af;\n          }\n\n          /* ── Tag chip ── */\n          .sk-tag {\n            display: inline-block;\n            padding: 3px 13px;\n            border: 2px solid #1a1a2e;\n            border-radius: 2px;\n            font-size: 1rem;\n            font-weight: 600;\n            background: #fff;\n            margin: 3px;\n          }\n          .sk-tag.active {\n            background: #2563eb;\n            color: #fff;\n          }\n\n          /* ── Card ── */\n          .sk-card {\n            background: #fff;\n            border: 2.5px solid #1a1a2e;\n            border-radius: 2px;\n            box-shadow: 5px 5px 0 #1a1a2e;\n            padding: 24px;\n            transition: transform 0.15s, box-shadow 0.15s;\n          }\n          .sk-card:hover {\n            transform: translate(-3px, -3px);\n            box-shadow: 8px 8px 0 #1a1a2e;\n          }\n\n          /* ── Stat card ── */\n          .sk-stat {\n            flex: 1;\n            min-width: 130px;\n            text-align: center;\n            background: #fff;\n            border: 2.5px solid #1a1a2e;\n            border-radius: 2px;\n            box-shadow: 4px 4px 0 #1a1a2e;\n            padding: 20px 12px;\n          }\n          .sk-stat .num {\n            font-family: 'Caveat Brush', cursive;\n            font-size: 2.8rem;\n            color: #2563eb;\n            line-height: 1;\n          }\n          .sk-stat .lbl {\n            font-size: 1rem;\n            color: #555;\n            margin-top: 4px;\n          }\n\n          /* ── Image placeholder ── */\n          .sk-img {\n            width: 100%;\n            height: 160px;\n            border: 2.5px solid #1a1a2e;\n            border-radius: 2px;\n            background: #f3f4f6;\n            position: relative;\n            overflow: hidden;\n            margin-bottom: 16px;\n          }\n          .sk-img::before {\n            content: '';\n            position: absolute;\n            inset: 0;\n            background:\n              linear-gradient(to bottom right, transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px)),\n              linear-gradient(to bottom left,  transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px));\n          }\n\n          @media (max-width: 640px) {\n            .sk-nav-links { display: none; }\n            .sk-nav-mobile { display: block; }\n            .sk-page-heading { font-size: 2.2rem; }\n          }\n        "])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"RN7SoXORZ7wICOUxfEVAk\",\"c\":[\"\",\"watertracker\",\"nearby\",\"\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"watertracker\",{\"children\":[\"nearby\",{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",true],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/73857f047b5eee22.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/7c92e96509cd355e.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[[\"$\",\"head\",null,{\"children\":[\"$\",\"link\",null,{\"href\":\"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700\u0026family=Caveat+Brush\u0026display=swap\",\"rel\":\"stylesheet\"}]}],[\"$\",\"body\",null,{\"style\":{\"background\":\"#fafaf7\",\"margin\":0,\"fontFamily\":\"'Caveat', cursive\",\"color\":\"#1a1a2e\"},\"children\":[[\"$\",\"script\",null,{\"type\":\"application/ld+json\",\"dangerouslySetInnerHTML\":{\"__html\":\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Subrata Kumar Das\\\",\\\"url\\\":\\\"https://subraatakumar.com\\\",\\\"jobTitle\\\":\\\"Tech Lead\\\",\\\"sameAs\\\":[\\\"https://github.com/subraatakumar\\\",\\\"https://linkedin.com/in/subraatakumar\\\"]}\"}}],[\"$\",\"script\",null,{\"type\":\"application/ld+json\",\"dangerouslySetInnerHTML\":{\"__html\":\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"CreativeWorkSeries\\\",\\\"name\\\":\\\"180 Days Mentoring Journey\\\",\\\"description\\\":\\\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\\\",\\\"url\\\":\\\"https://subraatakumar.com/180days\\\",\\\"startDate\\\":\\\"2026-02-19\\\",\\\"publisher\\\":{\\\"@type\\\":\\\"Organization\\\",\\\"name\\\":\\\"Subrata Kumar Das\\\",\\\"url\\\":\\\"https://subraatakumar.com\\\"}}\"}}],[\"$\",\"style\",null,{\"children\":\"$2\"}],\"$L3\",\"$L4\",\"$L5\"]}]]}]]}],{\"children\":[\"$L6\",{\"children\":[\"$L7\",{\"children\":[\"$L8\",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],\"$L9\",false]],\"m\":\"$undefined\",\"G\":[\"$a\",[]],\"S\":true}\n"])</script><script>self.__next_f.push([1,"b:I[22016,[\"/_next/static/chunks/7c92e96509cd355e.js\",\"/_next/static/chunks/d87b716920d553cc.js\"],\"\"]\nc:I[39756,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"default\"]\nd:I[37457,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"default\"]\n1b:I[97367,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"ViewportBoundary\"]\n1d:I[97367,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"MetadataBoundary\"]\n1e:\"$Sreact.suspense\"\n3:[\"$\",\"header\",null,{\"className\":\"sk-header\",\"children\":[[\"$\",\"div\",null,{\"className\":\"sk-header-inner\",\"children\":[[\"$\",\"$Lb\",null,{\"href\":\"/\",\"className\":\"sk-logo\",\"children\":\"SKD_\"}],[\"$\",\"nav\",null,{\"aria-label\":\"Primary\",\"children\":[\"$\",\"ul\",null,{\"className\":\"sk-nav-links\",\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/about\",\"children\":\"About\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/products\",\"children\":\"Products\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/blog\",\"children\":\"Blog\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/contact\",\"children\":\"Contact\"}]}]]}]}]]}],[\"$\",\"div\",null,{\"className\":\"sk-nav-mobile\",\"children\":[\"$\",\"nav\",null,{\"aria-label\":\"Mobile\",\"children\":[\"$\",\"ul\",null,{\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/about\",\"children\":\"About\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/products\",\"children\":\"Products\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/blog\",\"children\":\"Blog\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lb\",null,{\"href\":\"/contact\",\"children\":\"Contact\"}]}]]}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"4:[\"$\",\"main\",null,{\"style\":{\"width\":\"100%\"},\"children\":[\"$\",\"$Lc\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Ld\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]\n"])</script><script>self.__next_f.push([1,"5:[\"$\",\"footer\",null,{\"className\":\"sk-footer\",\"children\":[\"© \",2026,\" Subrata Kumar Das. All rights reserved. ·\",\" \",[\"$\",\"$Lb\",null,{\"href\":\"/for-ai\",\"children\":\"For AI/Crawlers\"}]]}]\ne:T17db,"])</script><script>self.__next_f.push([1,"\n        body:has(.wt-shell) .sk-header,\n        body:has(.wt-shell) .sk-footer {\n          display: none !important;\n        }\n\n        .wt-shell {\n          --wt-navy-900: #0f2458;\n          --wt-navy-800: #14336f;\n          --wt-navy-700: #1f4f9d;\n          --wt-sky-400: #7fc3ff;\n          --wt-sky-300: #b9e3ff;\n          --wt-cyan-200: #d8f5ff;\n          --wt-card: rgba(255, 255, 255, 0.88);\n          --wt-ink: #10244f;\n          --wt-muted: #4a5f8c;\n          min-height: 100vh;\n          color: var(--wt-ink);\n          background:\n            radial-gradient(circle at 8% 10%, rgba(125, 196, 255, 0.25), transparent 42%),\n            radial-gradient(circle at 92% 22%, rgba(174, 229, 255, 0.24), transparent 35%),\n            linear-gradient(140deg, #eaf6ff 0%, #dff2ff 30%, #cfe8ff 100%);\n        }\n        .wt-shell * {\n          box-sizing: border-box;\n        }\n        .wt-nav {\n          position: sticky;\n          top: 0;\n          z-index: 60;\n          border-bottom: 1px solid rgba(16, 36, 79, 0.1);\n          background: rgba(239, 249, 255, 0.85);\n          backdrop-filter: blur(12px);\n        }\n        .wt-nav-inner {\n          max-width: 1120px;\n          margin: 0 auto;\n          padding: 0 24px;\n          height: 68px;\n          display: flex;\n          align-items: center;\n          justify-content: space-between;\n          gap: 16px;\n        }\n        .wt-logo {\n          display: inline-flex;\n          align-items: center;\n          gap: 10px;\n          color: var(--wt-navy-900);\n          text-decoration: none;\n        }\n        .wt-logo-mark {\n          width: 34px;\n          height: 34px;\n          border-radius: 10px;\n          display: inline-flex;\n          align-items: center;\n          justify-content: center;\n          font-weight: 800;\n          color: #fff;\n          background: linear-gradient(140deg, #4f88ff, #3ec1ff);\n          box-shadow: 0 8px 16px rgba(31, 79, 157, 0.22);\n        }\n        .wt-logo-text {\n          font-size: 14px;\n          font-weight: 800;\n          letter-spacing: 0.04em;\n          text-transform: uppercase;\n        }\n        .wt-links {\n          display: flex;\n          align-items: center;\n          gap: 8px;\n        }\n        .wt-links a {\n          text-decoration: none;\n          font-size: 13px;\n          font-weight: 800;\n          color: var(--wt-navy-900);\n          padding: 10px 12px;\n          border-radius: 10px;\n          text-transform: uppercase;\n          letter-spacing: 0.05em;\n          white-space: nowrap;\n        }\n        .wt-links a:hover {\n          background: rgba(79, 136, 255, 0.14);\n          color: var(--wt-navy-700);\n        }\n        .wt-main {\n          max-width: 1120px;\n          margin: 0 auto;\n          padding: 26px 24px 70px;\n        }\n        .wt-footer {\n          border-top: 1px solid rgba(16, 36, 79, 0.12);\n          background: rgba(235, 247, 255, 0.78);\n        }\n        .wt-footer-inner {\n          max-width: 1120px;\n          margin: 0 auto;\n          padding: 16px 24px 22px;\n          display: flex;\n          align-items: center;\n          justify-content: space-between;\n          gap: 12px;\n          flex-wrap: wrap;\n        }\n        .wt-footer-copy {\n          color: var(--wt-muted);\n          font-size: 12px;\n          font-weight: 700;\n          letter-spacing: 0.03em;\n        }\n        .wt-footer-links {\n          display: flex;\n          align-items: center;\n          gap: 8px;\n          flex-wrap: wrap;\n        }\n        .wt-footer-links a {\n          text-decoration: none;\n          font-size: 11px;\n          font-weight: 800;\n          text-transform: uppercase;\n          letter-spacing: 0.05em;\n          color: var(--wt-navy-900);\n          border: 1px solid rgba(16, 36, 79, 0.15);\n          border-radius: 9px;\n          padding: 7px 10px;\n          background: #fff;\n        }\n        .wt-footer-links a:hover {\n          border-color: rgba(31, 79, 157, 0.45);\n          color: var(--wt-navy-700);\n        }\n        .wt-footer-attribution {\n          width: 100%;\n          margin: 2px 0 0;\n          color: var(--wt-muted);\n          font-size: 11px;\n          font-weight: 600;\n        }\n        .wt-footer-attribution a {\n          color: var(--wt-navy-700);\n          text-decoration: underline;\n          text-decoration-thickness: 1px;\n          text-underline-offset: 2px;\n        }\n        .wt-footer-attribution a:hover {\n          color: var(--wt-navy-900);\n        }\n        .wt-font-display {\n          font-family: 'Space Grotesk', 'Space Grotesk Fallback';\n        }\n        .wt-mobile-nav {\n          display: none;\n        }\n        @media (max-width: 760px) {\n          .wt-nav {\n            display: none;\n          }\n          .wt-nav-inner {\n            padding: 0 14px;\n            height: 56px;\n          }\n          .wt-links {\n            display: none;\n          }\n          .wt-mobile-nav {\n            display: flex;\n            align-items: center;\n            gap: 4px;\n            overflow-x: auto;\n            padding: 0 14px 10px;\n            scrollbar-width: none;\n            -ms-overflow-style: none;\n            border-bottom: 1px solid rgba(16, 36, 79, 0.1);\n          }\n          .wt-mobile-nav::-webkit-scrollbar {\n            display: none;\n          }\n          .wt-mobile-nav a {\n            text-decoration: none;\n            font-size: 11px;\n            font-weight: 800;\n            color: var(--wt-navy-900);\n            padding: 7px 11px;\n            border-radius: 20px;\n            text-transform: uppercase;\n            letter-spacing: 0.05em;\n            white-space: nowrap;\n            border: 1px solid rgba(16, 36, 79, 0.18);\n            background: rgba(255,255,255,0.7);\n          }\n          .wt-mobile-nav a:hover {\n            background: rgba(79, 136, 255, 0.14);\n            border-color: rgba(31, 79, 157, 0.35);\n          }\n          .wt-main {\n            padding: 22px 14px 54px;\n          }\n          .wt-footer-inner {\n            padding: 14px 14px 18px;\n          }\n          .wt-footer-attribution {\n            font-size: 10px;\n          }\n        }\n      "])</script><script>self.__next_f.push([1,"6:[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/67d266141b06bb08.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"div\",null,{\"className\":\"wt-shell manrope_65508a06-module__rzDLfa__className\",\"children\":[[\"$\",\"style\",null,{\"children\":\"$e\"}],\"$Lf\",\"$L10\",\"$L11\"]}]]}]\n7:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$Lc\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Ld\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n12:T2dc0,"])</script><script>self.__next_f.push([1,"\n        .nb-wrap {\n          margin-left: calc(50% - 50vw);\n          margin-right: calc(50% - 50vw);\n          margin-top: -26px;\n        }\n\n        .nb-hero {\n          min-height: clamp(540px, 82vh, 820px);\n          display: grid;\n          grid-template-columns: 1fr 1fr;\n          align-items: center;\n          padding: clamp(24px, 5vw, 72px);\n          background:\n            radial-gradient(circle at 14% 12%, rgba(123, 191, 255, 0.22), transparent 42%),\n            radial-gradient(circle at 88% 24%, rgba(172, 221, 255, 0.18), transparent 36%),\n            linear-gradient(130deg, #f4f9ff 0%, #e8f2ff 48%, #d9e7fb 100%);\n        }\n        .nb-hero-copy { max-width: 620px; }\n        .nb-kicker {\n          margin: 0;\n          font-size: 11px;\n          letter-spacing: 0.12em;\n          text-transform: uppercase;\n          font-weight: 800;\n          color: #2d66cb;\n        }\n        .nb-hero h1 {\n          margin: 12px 0 0;\n          font-size: clamp(2.3rem, 7vw, 6rem);\n          line-height: 0.9;\n          letter-spacing: -0.04em;\n          color: #0e1d46;\n        }\n        .nb-hero h1 .accent { color: #2f67d4; }\n        .nb-hero p {\n          margin: 16px 0 0;\n          color: #5b6f92;\n          font-size: clamp(1rem, 1.8vw, 1.25rem);\n          line-height: 1.7;\n          max-width: 530px;\n        }\n        .nb-hero-cta {\n          margin-top: 22px;\n          display: inline-flex;\n          align-items: center;\n          justify-content: center;\n          min-height: 52px;\n          padding: 0 22px;\n          border-radius: 14px;\n          background: #0e1d46;\n          color: #fff;\n          text-decoration: none;\n          font-size: 0.95rem;\n          font-weight: 800;\n          letter-spacing: 0.02em;\n          box-shadow: 0 14px 26px rgba(14, 29, 70, 0.22);\n        }\n        .nb-hero-cta:hover {\n          filter: brightness(1.06);\n        }\n        .nb-hero-media {\n          position: relative;\n          overflow: visible;\n          min-height: clamp(330px, 52vh, 600px);\n          max-width: 910px;\n          width: 100%;\n          justify-self: end;\n          filter: drop-shadow(0 28px 52px rgba(9, 28, 66, 0.22));\n        }\n        .nb-hero-frame {\n          position: absolute;\n          inset: 0;\n          border-radius: 32px;\n          overflow: hidden;\n          border: 12px solid rgba(255, 255, 255, 0.72);\n          box-shadow:\n            inset 0 1px 0 rgba(255, 255, 255, 0.35),\n            0 20px 40px rgba(15, 36, 88, 0.16);\n          background: linear-gradient(180deg, #0e1730 0%, #1a263f 100%);\n        }\n        .nb-live-card {\n          position: absolute;\n          right: clamp(-44px, -3.4vw, -20px);\n          bottom: clamp(-42px, -3.8vw, -24px);\n          z-index: 3;\n          width: min(306px, calc(100% - 22px));\n          border-radius: 22px;\n          border: 1px solid rgba(16, 36, 79, 0.08);\n          background: rgba(255, 255, 255, 0.95);\n          backdrop-filter: blur(8px);\n          box-shadow: 0 18px 32px rgba(16, 36, 79, 0.14);\n          padding: 15px 15px 13px;\n        }\n        .nb-live-head {\n          display: flex;\n          align-items: center;\n          gap: 10px;\n        }\n        .nb-live-icon {\n          width: 40px;\n          height: 40px;\n          border-radius: 999px;\n          background: linear-gradient(140deg, #4f88ff, #2f67d4);\n          color: #fff;\n          display: inline-flex;\n          align-items: center;\n          justify-content: center;\n          font-size: 18px;\n          font-weight: 900;\n          box-shadow: 0 8px 18px rgba(47, 103, 212, 0.3);\n        }\n        .nb-live-title {\n          margin: 0;\n          color: #0f2458;\n          font-size: 1.02rem;\n          font-weight: 900;\n          letter-spacing: -0.01em;\n        }\n        .nb-live-text {\n          margin: 10px 0 0;\n          color: #5a6f93;\n          font-size: 0.96rem;\n          line-height: 1.6;\n        }\n\n        .nb-bar {\n          min-height: clamp(520px, 72vh, 760px);\n          display: grid;\n          grid-template-columns: 1fr 1fr;\n          align-items: center;\n          gap: clamp(16px, 2.8vw, 40px);\n          padding: clamp(24px, 5vw, 72px);\n        }\n        .nb-bar.light { background: linear-gradient(125deg, #f7fbff 0%, #edf4ff 100%); }\n        .nb-bar.dark { background: linear-gradient(125deg, #020f31 0%, #001440 100%); }\n        .nb-bar-park {\n          background:\n            radial-gradient(circle at 8% 14%, rgba(150, 214, 255, 0.22), transparent 40%),\n            linear-gradient(125deg, #f5fbff 0%, #e9f4ff 100%);\n        }\n        .nb-bar-gym {\n          background:\n            radial-gradient(circle at 86% 18%, rgba(74, 146, 255, 0.26), transparent 46%),\n            linear-gradient(125deg, #001133 0%, #001b52 100%);\n        }\n        .nb-bar-family {\n          background:\n            radial-gradient(circle at 88% 20%, rgba(255, 210, 164, 0.24), transparent 40%),\n            linear-gradient(125deg, #f8fbff 0%, #eef4ff 100%);\n        }\n        .nb-copy { max-width: 620px; }\n        .nb-copy h2 {\n          margin: 8px 0 0;\n          font-size: clamp(2rem, 5.2vw, 4.1rem);\n          line-height: 0.96;\n          letter-spacing: -0.035em;\n        }\n        .nb-copy p {\n          margin: 14px 0 0;\n          font-size: clamp(1rem, 1.7vw, 1.23rem);\n          line-height: 1.7;\n        }\n        .nb-bar.light .nb-copy h2 { color: #0f1f4a; }\n        .nb-bar.light .nb-copy p { color: #4d628e; }\n        .nb-bar.light .nb-kicker { color: #2b66cd; }\n\n        .nb-bar.dark .nb-copy h2 { color: #f3f8ff; }\n        .nb-bar.dark .nb-copy p { color: #bfd8ff; }\n        .nb-bar.dark .nb-kicker { color: #68b4ff; }\n\n        .nb-figure {\n          position: relative;\n          border-radius: 32px;\n          overflow: visible;\n          min-height: clamp(320px, 54vh, 620px);\n          filter: drop-shadow(0 24px 44px rgba(9, 22, 54, 0.2));\n        }\n        .nb-figure-frame {\n          position: absolute;\n          inset: 0;\n          border-radius: 32px;\n          overflow: hidden;\n          border: 12px solid rgba(255, 255, 255, 0.72);\n          box-shadow:\n            inset 0 1px 0 rgba(255, 255, 255, 0.35),\n            0 20px 40px rgba(15, 36, 88, 0.16);\n          background: linear-gradient(180deg, #0e1730 0%, #1a263f 100%);\n        }\n        .nb-figure::after {\n          content: \"\";\n          position: absolute;\n          inset: auto 0 0;\n          height: 38%;\n          background: linear-gradient(to top, rgba(8, 17, 39, 0.58) 0%, rgba(8, 17, 39, 0) 100%);\n          border-radius: 0 0 32px 32px;\n          overflow: hidden;\n          pointer-events: none;\n        }\n\n        .nb-bottom {\n          min-height: 56vh;\n          background:\n            radial-gradient(circle at 82% 10%, rgba(170, 224, 255, 0.2), transparent 42%),\n            linear-gradient(130deg, #f3f9ff 0%, #e7f1ff 100%);\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          text-align: center;\n          padding: clamp(28px, 6vw, 72px);\n        }\n        .nb-bottom-inner { max-width: 840px; }\n        .nb-bottom h3 {\n          margin: 0;\n          font-size: clamp(2.1rem, 6vw, 5.2rem);\n          line-height: 0.92;\n          letter-spacing: -0.04em;\n          color: #0e1d46;\n        }\n        .nb-bottom p {\n          margin: 16px auto 0;\n          color: #5b6f92;\n          font-size: clamp(1rem, 1.8vw, 1.25rem);\n          line-height: 1.7;\n          max-width: 680px;\n        }\n        .nb-actions {\n          margin-top: 18px;\n          display: flex;\n          gap: 10px;\n          justify-content: center;\n          flex-wrap: wrap;\n        }\n        .nb-store-link {\n          display: inline-flex;\n          align-items: center;\n          justify-content: center;\n          width: 198px;\n          height: 58px;\n          border-radius: 12px;\n          transition: transform 0.15s ease, filter 0.15s ease;\n        }\n        .nb-store-link:hover {\n          transform: translateY(-1px);\n          filter: brightness(1.04);\n        }\n        .nb-store-button {\n          width: 100%;\n          height: 100%;\n          object-fit: contain;\n        }\n        .nb-store-button-play {\n          transform: scale(1.33);\n          transform-origin: center;\n        }\n\n        .nb-sovereignty {\n          padding: clamp(34px, 6vw, 80px) clamp(20px, 4vw, 60px);\n          background:\n            radial-gradient(circle at 16% 18%, rgba(168, 216, 255, 0.2), transparent 42%),\n            linear-gradient(130deg, #edf4ff 0%, #e1ebfb 100%);\n        }\n        .nb-sovereignty-inner {\n          max-width: 1180px;\n          margin: 0 auto;\n        }\n        .nb-sovereignty h3 {\n          margin: 0;\n          text-align: center;\n          color: #0e1d46;\n          font-size: clamp(2rem, 4vw, 3.5rem);\n          letter-spacing: -0.03em;\n          line-height: 1.05;\n        }\n        .nb-sovereignty p {\n          margin: 12px auto 0;\n          text-align: center;\n          color: #5b6f92;\n          max-width: 740px;\n          font-size: clamp(1rem, 1.6vw, 1.2rem);\n          line-height: 1.7;\n        }\n        .nb-sovereignty-grid {\n          margin-top: 26px;\n          display: grid;\n          grid-template-columns: repeat(3, minmax(0, 1fr));\n          gap: 16px;\n        }\n        .nb-sovereignty-card {\n          border-radius: 24px;\n          border: 1px solid rgba(16, 36, 79, 0.08);\n          background: rgba(255, 255, 255, 0.75);\n          padding: 22px 20px;\n          box-shadow: 0 10px 24px rgba(16, 36, 79, 0.08);\n        }\n        .nb-sovereignty-icon {\n          width: 52px;\n          height: 52px;\n          border-radius: 14px;\n          background: rgba(47, 103, 212, 0.12);\n          display: inline-flex;\n          align-items: center;\n          justify-content: center;\n          color: #2f67d4;\n          margin-bottom: 14px;\n        }\n        .nb-sovereignty-card h4 {\n          margin: 0;\n          color: #121f46;\n          font-size: 1.1rem;\n          letter-spacing: -0.01em;\n        }\n        .nb-sovereignty-card p {\n          margin: 10px 0 0;\n          text-align: left;\n          color: #4d628e;\n          font-size: 0.98rem;\n          line-height: 1.65;\n        }\n\n        @media (max-width: 980px) {\n          .nb-wrap { margin-top: -22px; }\n          .nb-hero,\n          .nb-bar {\n            grid-template-columns: 1fr;\n            min-height: unset;\n          }\n          .nb-hero-media,\n          .nb-figure {\n            min-height: 360px;\n          }\n          .nb-hero-media {\n            justify-self: stretch;\n            max-width: none;\n          }\n          .nb-hero-frame {\n            border-width: 8px;\n            border-radius: 24px;\n          }\n          .nb-figure-frame {\n            border-width: 8px;\n            border-radius: 24px;\n          }\n          .nb-figure::after {\n            border-radius: 0 0 24px 24px;\n          }\n          .nb-live-card {\n            right: 10px;\n            bottom: 10px;\n            width: min(280px, calc(100% - 22px));\n            border-radius: 18px;\n            padding: 12px 12px 11px;\n          }\n          .nb-live-icon {\n            width: 34px;\n            height: 34px;\n            font-size: 16px;\n          }\n          .nb-live-title { font-size: 0.96rem; }\n          .nb-live-text { font-size: 0.88rem; line-height: 1.5; margin-top: 8px; }\n          .nb-bar .nb-figure { order: 1; }\n          .nb-bar .nb-copy { order: 2; }\n          .nb-bar[data-reverse=\"true\"] .nb-figure { order: 1; }\n          .nb-bar[data-reverse=\"true\"] .nb-copy { order: 2; }\n          .nb-sovereignty-grid {\n            grid-template-columns: 1fr;\n          }\n          .nb-store-link {\n            width: 190px;\n            height: 56px;\n          }\n        }\n      "])</script><script>self.__next_f.push([1,"8:[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"section\",null,{\"className\":\"nb-wrap\",\"children\":[[\"$\",\"style\",null,{\"children\":\"$12\"}],\"$L13\",[\"$L14\",\"$L15\",\"$L16\"],\"$L17\",\"$L18\"]}],[\"$L19\"],\"$L1a\"]}]\n9:[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$L1b\",null,{\"children\":\"$L1c\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$L1d\",null,{\"children\":[\"$\",\"$1e\",null,{\"name\":\"Next.Metadata\",\"children\":\"$L1f\"}]}]}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}]\n"])</script><script>self.__next_f.push([1,"20:I[5500,[\"/_next/static/chunks/7c92e96509cd355e.js\",\"/_next/static/chunks/d87b716920d553cc.js\"],\"Image\"]\n21:I[97367,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"OutletBoundary\"]\nf:[\"$\",\"header\",null,{\"className\":\"wt-nav\",\"children\":[[\"$\",\"div\",null,{\"className\":\"wt-nav-inner\",\"children\":[[\"$\",\"$Lb\",null,{\"href\":\"/watertracker\",\"className\":\"wt-logo\",\"children\":[[\"$\",\"span\",null,{\"className\":\"wt-logo-mark\",\"children\":\"WT\"}],[\"$\",\"span\",null,{\"className\":\"wt-logo-text wt-font-display\",\"children\":\"WaterTracker\"}]]}],[\"$\",\"nav\",null,{\"className\":\"wt-links\",\"aria-label\":\"Water Tracker pages\",\"children\":[[\"$\",\"$Lb\",null,{\"href\":\"/watertracker\",\"children\":\"Overview\"}],[\"$\",\"$Lb\",null,{\"href\":\"/watertracker/guide\",\"children\":\"How To Use\"}],[\"$\",\"$Lb\",null,{\"href\":\"/watertracker/benefits\",\"children\":\"Health Benefits\"}],[\"$\",\"$Lb\",null,{\"href\":\"/watertracker/nearby\",\"children\":\"Nearby\"}],[\"$\",\"$Lb\",null,{\"href\":\"/products\",\"children\":\"All Products\"}]]}]]}],[\"$\",\"nav\",null,{\"className\":\"wt-mobile-nav\",\"aria-label\":\"Water Tracker pages mobile\",\"children\":[[\"$\",\"$Lb\",null,{\"href\":\"/watertracker\",\"children\":\"Overview\"}],[\"$\",\"$Lb\",null,{\"href\":\"/watertracker/guide\",\"children\":\"How To Use\"}],[\"$\",\"$Lb\",null,{\"href\":\"/watertracker/benefits\",\"children\":\"Health Benefits\"}],[\"$\",\"$Lb\",null,{\"href\":\"/watertracker/nearby\",\"children\":\"Nearby\"}],[\"$\",\"$Lb\",null,{\"href\":\"/products\",\"children\":\"All Products\"}]]}]]}]\n10:[\"$\",\"main\",null,{\"className\":\"wt-main\",\"children\":[\"$\",\"$Lc\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Ld\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]\n11:[\"$\",\"footer\",null,{\"className\":\"wt-footer\",\"children\":[\"$\",\"div\",null,{\"className\":\"wt-footer-inner\",\"children\":[[\"$\",\"p\",null,{\"className\":\"wt-footer-copy\",\"children\":[\"© \",2026,\" WaterTracker\"]}],[\"$\",\"div\",null,{\"className\":\"wt-footer-links\",\"children\":[[\"$\",\"$Lb\",null,{\"href\":\"/watertracker\",\"children\":\"Overview\"}],[\"$\",\"$Lb\",null,{\"href\":\"/watertracker/guide\",\"children\":\"How To Use\"}],[\"$\",\"$Lb\",null,{\"href\":\"/watertracker/benefits\",\"children\":\"Health Benefits\"}],[\"$\",\"$Lb\",null,{\"href\":\"/watertracker/nearby\",\"children\":\"Nearby\"}],[\"$\",\"$Lb\",null,{\"href\":\"/contact\",\"children\":\"Support\"}],[\"$\",\"$Lb\",null,{\"href\":\"/watertracker/privacy-policy\",\"children\":\"Privacy Policy\"}],[\"$\",\"$Lb\",null,{\"href\":\"/watertracker/terms\",\"children\":\"Terms of Use\"}]]}],[\"$\",\"p\",null,{\"className\":\"wt-footer-attribution\",\"children\":[\"$\",\"a\",null,{\"href\":\"https://pngtree.com/freepng/silver-laurel-wreaths-for-awards_20564144.html\",\"children\":\"png image from pngtree.com/\"}]}]]}]}]\n"])</script><script>self.__next_f.push([1,"13:[\"$\",\"header\",null,{\"className\":\"nb-hero\",\"children\":[[\"$\",\"div\",null,{\"className\":\"nb-hero-copy\",\"children\":[[\"$\",\"p\",null,{\"className\":\"nb-kicker\",\"children\":\"Introducing Nearby Ripple Sync\"}],[\"$\",\"h1\",null,{\"className\":\"wt-font-display\",\"children\":[\"The Data \",[\"$\",\"span\",null,{\"className\":\"accent\",\"children\":\"Ripple\"}],\" Effect.\"]}],[\"$\",\"p\",null,{\"children\":\"Share your hydration journey with people right next to you. No server, no mandatory account, and full control over your data.\"}],[\"$\",\"$Lb\",null,{\"href\":\"#park\",\"className\":\"nb-hero-cta\",\"children\":\"Explore the Ripple\"}]]}],[\"$\",\"div\",null,{\"className\":\"nb-hero-media\",\"children\":[[\"$\",\"div\",null,{\"className\":\"nb-hero-frame\",\"children\":[\"$\",\"$L20\",null,{\"src\":\"/watertrackerimages/near_by.png\",\"alt\":\"WaterTracker Nearby control scenario\",\"fill\":true,\"sizes\":\"(max-width: 980px) 100vw, 50vw\",\"style\":{\"objectFit\":\"cover\",\"transform\":\"scale(2.2)\",\"transformOrigin\":\"right bottom\",\"top\":20,\"left\":60},\"priority\":true}]}],[\"$\",\"aside\",null,{\"className\":\"nb-live-card\",\"aria-label\":\"Live syncing highlight\",\"children\":[[\"$\",\"div\",null,{\"className\":\"nb-live-head\",\"children\":[[\"$\",\"span\",null,{\"className\":\"nb-live-icon\",\"aria-hidden\":\"true\",\"children\":\"⚡\"}],[\"$\",\"p\",null,{\"className\":\"nb-live-title\",\"children\":\"Live Syncing\"}]]}],[\"$\",\"p\",null,{\"className\":\"nb-live-text\",\"children\":\"24 hours of hydration data shared in under 2 seconds via proximity sync.\"}]]}]]}]]}]\n"])</script><script>self.__next_f.push([1,"14:[\"$\",\"article\",\"park\",{\"className\":\"nb-bar light nb-bar-park\",\"data-reverse\":\"true\",\"children\":[[\"$\",\"div\",null,{\"className\":\"nb-copy\",\"children\":[[\"$\",\"p\",null,{\"className\":\"nb-kicker\",\"children\":\"Community Energy\"}],[\"$\",\"h2\",null,{\"className\":\"wt-font-display\",\"children\":\"Morning Park Group\"}],[\"$\",\"p\",null,{\"children\":\"Share hydration progress with your morning circle nearby. Social accountability works without forcing accounts or cloud-first data flow.\"}],[\"$\",\"div\",null,{\"className\":\"nb-mini-grid\",\"aria-label\":\"Nearby highlights\",\"children\":[[\"$\",\"article\",null,{\"className\":\"nb-mini-card\",\"children\":[[\"$\",\"h4\",null,{\"children\":\"Zero Servers\"}],[\"$\",\"p\",null,{\"children\":\"Data stays in your hand.\"}]]}],[\"$\",\"article\",null,{\"className\":\"nb-mini-card\",\"children\":[[\"$\",\"h4\",null,{\"children\":\"End-to-End\"}],[\"$\",\"p\",null,{\"children\":\"Local P2P encryption.\"}]]}],[\"$\",\"style\",null,{\"children\":\"\\n        .nb-mini-grid {\\n          margin-top: 18px;\\n          display: grid;\\n          grid-template-columns: repeat(2, minmax(0, 1fr));\\n          gap: 10px;\\n        }\\n        .nb-mini-card {\\n          border-radius: 18px;\\n          padding: 16px;\\n          border: 1px solid rgba(15, 36, 88, 0.08);\\n          background: rgba(255, 255, 255, 0.56);\\n        }\\n        .nb-mini-card h4 {\\n          margin: 0;\\n          font-size: 1.02rem;\\n          color: #111f49;\\n        }\\n        .nb-mini-card p {\\n          margin: 6px 0 0;\\n          font-size: 0.9rem;\\n          color: #4d628e;\\n          line-height: 1.45;\\n        }\\n        @media (max-width: 760px) {\\n          .nb-mini-grid { grid-template-columns: 1fr; }\\n        }\\n      \"}]]}]]}],[\"$\",\"div\",null,{\"className\":\"nb-figure\",\"children\":[\"$\",\"div\",null,{\"className\":\"nb-figure-frame\",\"children\":[\"$\",\"$L20\",null,{\"src\":\"/watertrackerimages/near_by.png\",\"alt\":\"Morning Park Group\",\"fill\":true,\"sizes\":\"(max-width: 980px) 100vw, 50vw\",\"style\":{\"objectFit\":\"cover\",\"transform\":\"scale(2.2) translate(0px, -10px)\",\"transformOrigin\":\"left top\"}}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"15:[\"$\",\"article\",\"gym\",{\"className\":\"nb-bar dark nb-bar-gym\",\"data-reverse\":\"false\",\"children\":[[\"$\",\"div\",null,{\"className\":\"nb-figure\",\"children\":[\"$\",\"div\",null,{\"className\":\"nb-figure-frame\",\"children\":[\"$\",\"$L20\",null,{\"src\":\"/watertrackerimages/near_by.png\",\"alt\":\"Gym Squad Synergy\",\"fill\":true,\"sizes\":\"(max-width: 980px) 100vw, 50vw\",\"style\":{\"objectFit\":\"cover\",\"transform\":\"scale(2.2) translate(30px, -10px)\",\"transformOrigin\":\"right top\"}}]}]}],[\"$\",\"div\",null,{\"className\":\"nb-copy\",\"children\":[[\"$\",\"p\",null,{\"className\":\"nb-kicker\",\"children\":\"Performance Sync\"}],[\"$\",\"h2\",null,{\"className\":\"wt-font-display\",\"children\":\"Gym Squad Synergy\"}],[\"$\",\"p\",null,{\"children\":\"Gym partners can compare intake quickly between sets. Sync stays fast and private while each person keeps full ownership of their records.\"}],[\"$\",\"div\",null,{\"className\":\"nb-mini-grid\",\"aria-label\":\"Nearby highlights\",\"children\":[[\"$\",\"article\",null,{\"className\":\"nb-mini-card\",\"children\":[[\"$\",\"h4\",null,{\"children\":\"Zero Servers\"}],[\"$\",\"p\",null,{\"children\":\"Data stays in your hand.\"}]]}],[\"$\",\"article\",null,{\"className\":\"nb-mini-card\",\"children\":[[\"$\",\"h4\",null,{\"children\":\"End-to-End\"}],[\"$\",\"p\",null,{\"children\":\"Local P2P encryption.\"}]]}],[\"$\",\"style\",null,{\"children\":\"\\n        .nb-mini-grid {\\n          margin-top: 18px;\\n          display: grid;\\n          grid-template-columns: repeat(2, minmax(0, 1fr));\\n          gap: 10px;\\n        }\\n        .nb-mini-card {\\n          border-radius: 18px;\\n          padding: 16px;\\n          border: 1px solid rgba(147, 193, 255, 0.2);\\n          background: rgba(13, 36, 87, 0.48);\\n        }\\n        .nb-mini-card h4 {\\n          margin: 0;\\n          font-size: 1.02rem;\\n          color: #f0f7ff;\\n        }\\n        .nb-mini-card p {\\n          margin: 6px 0 0;\\n          font-size: 0.9rem;\\n          color: #bdd7ff;\\n          line-height: 1.45;\\n        }\\n        @media (max-width: 760px) {\\n          .nb-mini-grid { grid-template-columns: 1fr; }\\n        }\\n      \"}]]}]]}]]}]\n"])</script><script>self.__next_f.push([1,"16:[\"$\",\"article\",\"family\",{\"className\":\"nb-bar light nb-bar-family\",\"data-reverse\":\"true\",\"children\":[[\"$\",\"div\",null,{\"className\":\"nb-copy\",\"children\":[[\"$\",\"p\",null,{\"className\":\"nb-kicker\",\"children\":\"Family Insights\"}],[\"$\",\"h2\",null,{\"className\":\"wt-font-display\",\"children\":\"Dinner Table Visibility\"}],[\"$\",\"p\",null,{\"children\":\"Families can exchange daily hydration summaries at home while source data remains local on each device, not in a shared centralized store.\"}],[\"$\",\"div\",null,{\"className\":\"nb-mini-grid\",\"aria-label\":\"Nearby highlights\",\"children\":[[\"$\",\"article\",null,{\"className\":\"nb-mini-card\",\"children\":[[\"$\",\"h4\",null,{\"children\":\"Zero Servers\"}],[\"$\",\"p\",null,{\"children\":\"Data stays in your hand.\"}]]}],[\"$\",\"article\",null,{\"className\":\"nb-mini-card\",\"children\":[[\"$\",\"h4\",null,{\"children\":\"End-to-End\"}],[\"$\",\"p\",null,{\"children\":\"Local P2P encryption.\"}]]}],[\"$\",\"style\",null,{\"children\":\"\\n        .nb-mini-grid {\\n          margin-top: 18px;\\n          display: grid;\\n          grid-template-columns: repeat(2, minmax(0, 1fr));\\n          gap: 10px;\\n        }\\n        .nb-mini-card {\\n          border-radius: 18px;\\n          padding: 16px;\\n          border: 1px solid rgba(15, 36, 88, 0.08);\\n          background: rgba(255, 255, 255, 0.56);\\n        }\\n        .nb-mini-card h4 {\\n          margin: 0;\\n          font-size: 1.02rem;\\n          color: #111f49;\\n        }\\n        .nb-mini-card p {\\n          margin: 6px 0 0;\\n          font-size: 0.9rem;\\n          color: #4d628e;\\n          line-height: 1.45;\\n        }\\n        @media (max-width: 760px) {\\n          .nb-mini-grid { grid-template-columns: 1fr; }\\n        }\\n      \"}]]}]]}],[\"$\",\"div\",null,{\"className\":\"nb-figure\",\"children\":[\"$\",\"div\",null,{\"className\":\"nb-figure-frame\",\"children\":[\"$\",\"$L20\",null,{\"src\":\"/watertrackerimages/near_by.png\",\"alt\":\"Dinner Table Visibility\",\"fill\":true,\"sizes\":\"(max-width: 980px) 100vw, 50vw\",\"style\":{\"objectFit\":\"cover\",\"transform\":\"scale(2.2) translate(0px, 10px)\",\"transformOrigin\":\"left bottom\"}}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"17:[\"$\",\"section\",null,{\"className\":\"nb-sovereignty\",\"children\":[\"$\",\"div\",null,{\"className\":\"nb-sovereignty-inner\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"wt-font-display\",\"children\":\"Built for Sovereignty\"}],[\"$\",\"p\",null,{\"children\":\"We combined modern social features with radical privacy. Your data, your rules.\"}],[\"$\",\"div\",null,{\"className\":\"nb-sovereignty-grid\",\"children\":[[\"$\",\"article\",null,{\"className\":\"nb-sovereignty-card\",\"children\":[[\"$\",\"span\",null,{\"className\":\"nb-sovereignty-icon\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":28,\"height\":28,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-shield-check\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"oel41y\",{\"d\":\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"}],[\"$\",\"path\",\"dzmm74\",{\"d\":\"m9 12 2 2 4-4\"}],\"$undefined\"]}]}],[\"$\",\"h4\",null,{\"children\":\"Zero Server Architecture\"}],[\"$\",\"p\",null,{\"children\":\"No accounts. No logins. Your data lives in a local Realm database, encrypted on your hardware.\"}]]}],[\"$\",\"article\",null,{\"className\":\"nb-sovereignty-card\",\"children\":[[\"$\",\"span\",null,{\"className\":\"nb-sovereignty-icon\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":28,\"height\":28,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-globe\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"circle\",\"1mglay\",{\"cx\":\"12\",\"cy\":\"12\",\"r\":\"10\"}],[\"$\",\"path\",\"13o1zl\",{\"d\":\"M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20\"}],[\"$\",\"path\",\"9i4pu4\",{\"d\":\"M2 12h20\"}],\"$undefined\"]}]}],[\"$\",\"h4\",null,{\"children\":\"Cross-Platform Flow\"}],[\"$\",\"p\",null,{\"children\":\"iOS and Android devices handshake effortlessly through our proximity sync protocol.\"}]]}],[\"$\",\"article\",null,{\"className\":\"nb-sovereignty-card\",\"children\":[[\"$\",\"span\",null,{\"className\":\"nb-sovereignty-icon\",\"aria-hidden\":\"true\",\"children\":[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":28,\"height\":28,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-lock\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"rect\",\"1w4ew1\",{\"width\":\"18\",\"height\":\"11\",\"x\":\"3\",\"y\":\"11\",\"rx\":\"2\",\"ry\":\"2\"}],[\"$\",\"path\",\"fwvmzm\",{\"d\":\"M7 11V7a5 5 0 0 1 10 0v4\"}],\"$undefined\"]}]}],[\"$\",\"h4\",null,{\"children\":\"Personal Backups\"}],[\"$\",\"p\",null,{\"children\":\"Optionally sync to your own personal Google Drive or iCloud. You hold the master keys.\"}]]}]]}]]}]}]\n"])</script><script>self.__next_f.push([1,"18:[\"$\",\"footer\",null,{\"className\":\"nb-bottom\",\"children\":[\"$\",\"div\",null,{\"className\":\"nb-bottom-inner\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"wt-font-display\",\"children\":\"Stay Hydrated. Stay Private.\"}],[\"$\",\"p\",null,{\"children\":\"Nearby keeps social motivation while preserving ownership. Your hydration data stays with you, and backup remains your choice.\"}],[\"$\",\"div\",null,{\"className\":\"nb-actions\",\"children\":[[\"$\",\"a\",null,{\"href\":\"https://apps.apple.com/us/app/water-tracker-n-reminder/id6759248297\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"nb-store-link\",\"aria-label\":\"Download on the App Store\",\"children\":[\"$\",\"$L20\",null,{\"src\":\"/images/appstore-button-download.svg\",\"alt\":\"Download on the App Store\",\"width\":240,\"height\":80,\"className\":\"nb-store-button\"}]}],[\"$\",\"a\",null,{\"href\":\"https://play.google.com/store/apps/details?id=com.subraatakumar.watertracker\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"nb-store-link\",\"aria-label\":\"Get it on Google Play\",\"children\":[\"$\",\"$L20\",null,{\"src\":\"/images/playstore-button-download.png\",\"alt\":\"Get it on Google Play\",\"width\":646,\"height\":250,\"className\":\"nb-store-button nb-store-button-play\"}]}]]}]]}]}]\n19:[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/d87b716920d553cc.js\",\"async\":true,\"nonce\":\"$undefined\"}]\n1a:[\"$\",\"$L21\",null,{\"children\":[\"$\",\"$1e\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@22\"}]}]\n"])</script><script>self.__next_f.push([1,"1c:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n"])</script><script>self.__next_f.push([1,"23:I[27201,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/bf1f6d5df2e9b1a8.js\"],\"IconMark\"]\n"])</script><script>self.__next_f.push([1,"1f:[[\"$\",\"title\",\"0\",{\"children\":\"WaterTracker Nearby | Private Group Sharing | Subrata Kumar Das\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Nearby sharing for WaterTracker: local-first hydration sync for family, gym partners, and park groups.\"}],[\"$\",\"meta\",\"2\",{\"name\":\"keywords\",\"content\":\"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer\"}],[\"$\",\"link\",\"3\",{\"rel\":\"canonical\",\"href\":\"https://subraatakumar.com/watertracker/nearby/\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:title\",\"content\":\"Subrata Kumar Das\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:description\",\"content\":\"Tech Lead and React Native Architect building scalable mobile systems.\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:url\",\"content\":\"https://subraatakumar.com/\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:site_name\",\"content\":\"Subrata Kumar Das\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:locale\",\"content\":\"en_US\"}],[\"$\",\"meta\",\"9\",{\"property\":\"og:image\",\"content\":\"https://subraatakumar.com/images/interview.png\"}],[\"$\",\"meta\",\"10\",{\"property\":\"og:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"11\",{\"property\":\"og:image:height\",\"content\":\"630\"}],[\"$\",\"meta\",\"12\",{\"property\":\"og:image:alt\",\"content\":\"Subrata Kumar Das portfolio\"}],[\"$\",\"meta\",\"13\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"14\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"15\",{\"name\":\"twitter:title\",\"content\":\"Subrata Kumar Das\"}],[\"$\",\"meta\",\"16\",{\"name\":\"twitter:description\",\"content\":\"Tech Lead and React Native Architect building scalable mobile systems.\"}],[\"$\",\"meta\",\"17\",{\"name\":\"twitter:image\",\"content\":\"https://subraatakumar.com/images/interview.png\"}],[\"$\",\"link\",\"18\",{\"rel\":\"icon\",\"href\":\"/favicon.ico?favicon.750fd6b3.ico\",\"sizes\":\"48x48\",\"type\":\"image/x-icon\"}],[\"$\",\"$L23\",\"19\",{}]]\n"])</script><script>self.__next_f.push([1,"22:null\n"])</script></body></html>

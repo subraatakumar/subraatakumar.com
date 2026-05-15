@@ -248,7 +248,7 @@ e:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0a
             padding-right: 16px;
           }
         }
-      0:{"buildId":"LewRUrGQke8HRZZC75IdW","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
+      0:{"buildId":"RN7SoXORZ7wICOUxfEVAk","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
 8:T538b,<p class="blog-md-p">The Right Tool for the Job: A Guide to AI Models by Data Type</p>
 <p class="blog-md-p">In the world of AI runtimes like Foundry, LM Studio, and OpenAI, we often talk about "models" as a single category. But just as you wouldn't use a calculator to write a novel, different AI models are built to handle specific types of data.</p>
 <p class="blog-md-p">If you are building an application or setting up a local workflow, understanding these categories is the first step to success. Here is a breakdown of AI models categorized by the data they process.</p>
