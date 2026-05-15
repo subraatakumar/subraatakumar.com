@@ -67,7 +67,7 @@ const sections = [
 const IMAGE_TRANSFORM_BY_ID: Record<string, string> = {
   control: "scale(2.2) translate(0px, -10px)",
   park: "scale(2.2) translate(0px, -10px)",
-  gym: "scale(2.2) translate(30px, -10px)",
+  gym: "scale(2.2) translate(8px, -5px)",
   family: "scale(2.2) translate(0px, 10px)",
 };
 
@@ -129,6 +129,7 @@ export default function WaterTrackerNearbyPage() {
     <section className="nb-wrap">
       <style>{`
         .nb-wrap {
+          --nb-media-ratio: 16 / 11;
           margin-left: calc(50% - 50vw);
           margin-right: calc(50% - 50vw);
           margin-top: -26px;
@@ -190,7 +191,8 @@ export default function WaterTrackerNearbyPage() {
         .nb-hero-media {
           position: relative;
           overflow: visible;
-          min-height: clamp(330px, 52vh, 600px);
+          aspect-ratio: var(--nb-media-ratio);
+          min-height: 0;
           max-width: 910px;
           width: 100%;
           justify-self: end;
@@ -287,7 +289,8 @@ export default function WaterTrackerNearbyPage() {
           position: relative;
           border-radius: 32px;
           overflow: visible;
-          min-height: clamp(320px, 54vh, 620px);
+          aspect-ratio: var(--nb-media-ratio);
+          min-height: 0;
           filter: drop-shadow(0 24px 44px rgba(9, 22, 54, 0.2));
         }
         .nb-figure-frame {
@@ -441,7 +444,7 @@ export default function WaterTrackerNearbyPage() {
           }
           .nb-hero-media,
           .nb-figure {
-            min-height: 360px;
+            min-height: 0;
           }
           .nb-hero-media {
             justify-self: stretch;
