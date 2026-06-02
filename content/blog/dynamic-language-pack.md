@@ -1,3 +1,34 @@
+---
+title: "Stop Shipping 20 Locale Files in React Native: On-Device Translation for Dynamic Language Packs"
+description: "Learn how to avoid shipping dozens of locale JSON files by generating and caching a dynamic language pack in React Native."
+date: "2026-06-02"
+tags:
+  - react-native
+  - i18n
+  - localization
+  - language-pack
+  - translation
+  - mobile
+author: "Subrata Kumar Das"
+readingTime: "8 min"
+excerpt: "Instead of bundling every locale file in your app, use a dynamic language pack that translates missing keys on device, caches results locally, and keeps your bundle lean."
+draft: false
+slug: "dynamic-language-pack"
+---
+
+> *"What if your app only shipped one source language, but still understood every user in their preferred locale?"*
+
+This article shows how to build a React Native internationalization strategy that avoids shipping every locale as a separate file. Instead, you keep a source language, translate missing keys on device, and cache the generated language pack locally.
+
+By the end of this article, you'll understand:
+
+- Why static locale files become a maintenance burden
+- How on-device translation can fill missing strings without server-side pipelines
+- What `@tcbs/react-native-language-translator` does for React Native apps
+- How to cache and ship only the language data users actually need
+
+---
+
 # Stop Shipping 20 Locale Files in React Native: On-Device Translation for Dynamic Language Packs
 
 Internationalization in mobile apps usually starts clean and then gets expensive.

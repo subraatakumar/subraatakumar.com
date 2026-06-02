@@ -74,6 +74,11 @@ export default function BlogLayout({ children }: { children: React.ReactNode }) 
           letter-spacing: 0.03em;
           box-shadow: 0 10px 24px rgba(14, 165, 233, 0.28);
         }
+        #blog-root .blog-brand-mark,
+        #blog-root .blog-brand-mark:visited {
+          text-decoration: none;
+          color: #fff;
+        }
         #blog-root .blog-brand-text {
           font-family: "Fraunces", "Iowan Old Style", serif;
           font-weight: 700;
@@ -145,10 +150,14 @@ export default function BlogLayout({ children }: { children: React.ReactNode }) 
       <div id="blog-root">
         <header className="blog-shell-header">
           <div className="blog-shell-header-inner">
-            <Link href="/blog" className="blog-brand">
-              <span className="blog-brand-mark"><Link href="/" aria-label="Go to main home page">SK</Link></span>
-              <span className="blog-brand-text">TechCraft Blog</span>
-            </Link>
+            <div className="blog-brand">
+              <Link href="/" className="blog-brand-mark" aria-label="Go to main home page">
+                SK
+              </Link>
+              <Link href="/blog" className="blog-brand-text" aria-label="Go to blog home page">
+                TechCraft Blog
+              </Link>
+            </div>
             <nav className="blog-shell-nav">
               <Link href="/products">Products</Link>
               <Link href="/">Home</Link>
