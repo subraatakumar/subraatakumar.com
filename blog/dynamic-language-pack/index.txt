@@ -1,0 +1,989 @@
+1:"$Sreact.fragment"
+a:I[68027,[],"default"]
+:HL["/_next/static/chunks/73857f047b5eee22.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","style"]
+2:T19f5,
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+
+          body {
+            background: #fafaf7;
+            font-family: 'Caveat', cursive;
+            color: #1a1a2e;
+          }
+
+          /* ── Nav ── */
+          .sk-header {
+            background: #fff;
+            border-bottom: 2.5px solid #1a1a2e;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+          }
+          .sk-header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .sk-logo {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.55rem;
+            color: #1a1a2e;
+            text-decoration: none;
+            letter-spacing: 0.01em;
+          }
+          .sk-nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+          }
+          .sk-nav-links a {
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+            padding-bottom: 2px;
+          }
+          .sk-nav-links a:hover {
+            text-decoration: underline wavy #2563eb 2px;
+            text-underline-offset: 4px;
+          }
+          .sk-nav-mobile {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 14px;
+          }
+          .sk-nav-mobile ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+          }
+          .sk-nav-mobile a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+          }
+
+          /* ── Footer ── */
+          .sk-footer {
+            border-top: 2.5px solid #1a1a2e;
+            background: #fff;
+            padding: 24px;
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+          }
+
+          /* ── Shared section ── */
+          .sk-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+          }
+          .sk-page-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            margin-bottom: 8px;
+            line-height: 1.1;
+          }
+          .sk-section-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.9rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+          .sk-section-heading::after {
+            content: '';
+            flex: 1;
+            border-top: 2px dashed #9ca3af;
+          }
+
+          /* ── Squiggle divider ── */
+          .sk-squiggle {
+            width: 100%;
+            height: 8px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 4 Q5 0 10 4 Q15 8 20 4 Q25 0 30 4 Q35 8 40 4' stroke='%239ca3af' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") repeat-x center;
+            opacity: 0.55;
+            margin: 36px 0;
+          }
+
+          /* ── Sketch button ── */
+          .sk-btn {
+            display: inline-block;
+            padding: 10px 26px;
+            background: #2563eb;
+            color: #fff;
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 3px 3px 0 #1a1a2e;
+            transition: transform 0.1s, box-shadow 0.1s;
+          }
+          .sk-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 #1a1a2e;
+          }
+          .sk-btn-ghost {
+            background: transparent;
+            color: #1a1a2e;
+            box-shadow: 3px 3px 0 #9ca3af;
+          }
+          .sk-btn-ghost:hover {
+            box-shadow: 5px 5px 0 #9ca3af;
+          }
+
+          /* ── Tag chip ── */
+          .sk-tag {
+            display: inline-block;
+            padding: 3px 13px;
+            border: 2px solid #1a1a2e;
+            border-radius: 2px;
+            font-size: 1rem;
+            font-weight: 600;
+            background: #fff;
+            margin: 3px;
+          }
+          .sk-tag.active {
+            background: #2563eb;
+            color: #fff;
+          }
+
+          /* ── Card ── */
+          .sk-card {
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 5px 5px 0 #1a1a2e;
+            padding: 24px;
+            transition: transform 0.15s, box-shadow 0.15s;
+          }
+          .sk-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0 #1a1a2e;
+          }
+
+          /* ── Stat card ── */
+          .sk-stat {
+            flex: 1;
+            min-width: 130px;
+            text-align: center;
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 4px 4px 0 #1a1a2e;
+            padding: 20px 12px;
+          }
+          .sk-stat .num {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            color: #2563eb;
+            line-height: 1;
+          }
+          .sk-stat .lbl {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 4px;
+          }
+
+          /* ── Image placeholder ── */
+          .sk-img {
+            width: 100%;
+            height: 160px;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            background: #f3f4f6;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 16px;
+          }
+          .sk-img::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+              linear-gradient(to bottom right, transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px)),
+              linear-gradient(to bottom left,  transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px));
+          }
+
+          @media (max-width: 640px) {
+            .sk-nav-links { display: none; }
+            .sk-nav-mobile { display: block; }
+            .sk-page-heading { font-size: 2.2rem; }
+          }
+        0:{"P":null,"b":"U_0RBvMTYDlPslLJ6C4nm","c":["","blog","dynamic-language-pack",""],"q":"","i":false,"f":[[["",{"children":["blog",{"children":[["slug","dynamic-language-pack","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/73857f047b5eee22.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+b:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
+c:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+d:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+11:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+14:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"ViewportBoundary"]
+16:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"MetadataBoundary"]
+3:["$","header",null,{"className":"sk-header","children":[["$","div",null,{"className":"sk-header-inner","children":[["$","$Lb",null,{"href":"/","className":"sk-logo","children":"SKD_"}],["$","nav",null,{"aria-label":"Primary","children":["$","ul",null,{"className":"sk-nav-links","children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]]}],["$","div",null,{"className":"sk-nav-mobile","children":["$","nav",null,{"aria-label":"Mobile","children":["$","ul",null,{"children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]}]]}]
+4:["$","main",null,{"style":{"width":"100%"},"children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
+5:["$","footer",null,{"className":"sk-footer","children":["© ",2026," Subrata Kumar Das. All rights reserved. ·"," ",["$","$Lb",null,{"href":"/for-ai","children":"For AI/Crawlers"}]]}]
+e:T10bc,
+        body:has(#blog-root) .sk-header,
+        body:has(#blog-root) .sk-footer {
+          display: none !important;
+        }
+
+        #blog-root,
+        #blog-root * {
+          box-sizing: border-box;
+        }
+
+        #blog-root {
+          --blog-ink: #101828;
+          --blog-muted: #667085;
+          --blog-line: #e4e7ec;
+          --blog-card: #ffffff;
+          --blog-accent: #0ea5e9;
+          --blog-accent-warm: #fb7185;
+          --blog-bg: radial-gradient(circle at 10% 0%, #dff6ff 0%, transparent 40%),
+            radial-gradient(circle at 100% 10%, #ffe8ec 0%, transparent 35%),
+            #f8fafc;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+          background: var(--blog-bg);
+          color: var(--blog-ink);
+          font-family: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
+        }
+
+        #blog-root .blog-shell-header {
+          position: sticky;
+          top: 0;
+          z-index: 100;
+          backdrop-filter: blur(10px);
+          background: rgba(248, 250, 252, 0.78);
+          border-bottom: 1px solid var(--blog-line);
+        }
+        #blog-root .blog-shell-header-inner {
+          width: 100%;
+          height: 66px;
+          padding: 0 clamp(16px, 4vw, 48px);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        }
+        #blog-root .blog-shell-main {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+        #blog-root .blog-brand {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          text-decoration: none;
+          color: var(--blog-ink);
+        }
+        #blog-root .blog-brand-mark {
+          width: 32px;
+          height: 32px;
+          border-radius: 10px;
+          background: linear-gradient(135deg, var(--blog-accent), var(--blog-accent-warm));
+          color: #fff;
+          display: grid;
+          place-items: center;
+          font-weight: 900;
+          font-size: 12px;
+          letter-spacing: 0.03em;
+          box-shadow: 0 10px 24px rgba(14, 165, 233, 0.28);
+        }
+        #blog-root .blog-brand-mark,
+        #blog-root .blog-brand-mark:visited {
+          text-decoration: none;
+          color: #fff;
+        }
+        #blog-root .blog-brand-text {
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-weight: 700;
+          font-size: 1.1rem;
+          letter-spacing: 0.01em;
+        }
+        #blog-root .blog-shell-nav {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+        }
+        #blog-root .blog-shell-nav a {
+          text-decoration: none;
+          color: var(--blog-ink);
+          font-size: 0.8rem;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          padding: 10px 12px;
+          border-radius: 10px;
+          transition: background 0.2s ease;
+        }
+        #blog-root .blog-shell-nav a:hover {
+          background: #eef2f6;
+        }
+
+        #blog-root .blog-shell-footer {
+          margin-top: auto;
+          border-top: 1px solid var(--blog-line);
+          background: rgba(255, 255, 255, 0.64);
+        }
+        #blog-root .blog-shell-footer-inner {
+          width: 100%;
+          padding: 20px clamp(16px, 4vw, 48px) 24px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+        #blog-root .blog-shell-copy {
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: 0.12em;
+          color: var(--blog-muted);
+          font-weight: 700;
+        }
+        #blog-root .blog-shell-footer a {
+          text-decoration: none;
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: 0.05em;
+          color: #0b6ba8;
+        }
+
+        @media (max-width: 700px) {
+          #blog-root .blog-shell-header-inner,
+          #blog-root .blog-shell-footer-inner {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+          #blog-root .blog-shell-nav a {
+            padding: 8px 10px;
+            font-size: 0.72rem;
+          }
+        }
+      6:["$","$1","c",{"children":[null,["$","div",null,{"style":{"all":"revert"},"children":[["$","style",null,{"children":"$e"}],"$Lf"]}]]}]
+7:["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+9:["$","$1","h",{"children":[null,["$","$L14",null,{"children":"$L15"}],["$","div",null,{"hidden":true,"children":["$","$L16",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L17"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+f:["$","div",null,{"id":"blog-root","children":[["$","header",null,{"className":"blog-shell-header","children":["$","div",null,{"className":"blog-shell-header-inner","children":[["$","div",null,{"className":"blog-brand","children":[["$","$Lb",null,{"href":"/","className":"blog-brand-mark","aria-label":"Go to main home page","children":"SK"}],["$","$Lb",null,{"href":"/blog","className":"blog-brand-text","aria-label":"Go to blog home page","children":"TechCraft Blog"}]]}],["$","nav",null,{"className":"blog-shell-nav","children":[["$","$Lb",null,{"href":"/products","children":"Products"}],["$","$Lb",null,{"href":"/","children":"Home"}]]}]]}]}],["$","main",null,{"className":"blog-shell-main","children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"blog-shell-footer","children":["$","div",null,{"className":"blog-shell-footer-inner","children":[["$","p",null,{"className":"blog-shell-copy","children":"Subrata Kumar Das • Blog"}],["$","$Lb",null,{"href":"/blog","children":"All Posts"}]]}]}]]}]
+18:T1b2e,
+        #blog-root .blog-post-wrap {
+          max-width: 880px;
+          margin: 0 auto;
+          padding: 30px 24px 0;
+        }
+        #blog-root .blog-post-kicker {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          color: #175cd3;
+          border: 1px solid #cfe1fa;
+          border-radius: 999px;
+          padding: 8px 12px;
+          background: #fff;
+          text-decoration: none;
+        }
+        #blog-root .blog-post-wrap h1 {
+          margin-top: 18px;
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-size: clamp(2rem, 4.6vw, 3.2rem);
+          line-height: 1.08;
+          letter-spacing: -0.02em;
+        }
+        #blog-root .blog-post-meta {
+          margin-top: 16px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 8px;
+          color: #667085;
+          font-size: 12px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.07em;
+        }
+        #blog-root .blog-post-desc {
+          margin-top: 14px;
+          font-size: 1.04rem;
+          line-height: 1.8;
+          color: #475467;
+        }
+        #blog-root .blog-tag-row {
+          margin-top: 12px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+        #blog-root .blog-tag-row span {
+          background: #f2f4f7;
+          color: #344054;
+          font-size: 11px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          padding: 6px 10px;
+          border-radius: 999px;
+        }
+        #blog-root .blog-article {
+          margin-top: 26px;
+          border-top: 1px solid #e4e7ec;
+          padding-top: 24px;
+          padding-bottom: 20px;
+        }
+        #blog-root .blog-md-p {
+          margin: 18px 0;
+          font-size: 1.03rem;
+          line-height: 1.95;
+          color: #1d2939;
+        }
+        #blog-root .blog-md-h1 {
+          margin: 56px 0 16px;
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-size: 2rem;
+          line-height: 1.18;
+        }
+        #blog-root .blog-md-h2 {
+          margin: 46px 0 14px;
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-size: 1.7rem;
+          line-height: 1.24;
+        }
+        #blog-root .blog-md-h3 {
+          margin: 36px 0 10px;
+          font-weight: 800;
+          font-size: 1.28rem;
+          line-height: 1.34;
+        }
+        #blog-root .blog-md-h4,
+        #blog-root .blog-md-h5,
+        #blog-root .blog-md-h6 {
+          margin: 28px 0 8px;
+          font-size: 1.08rem;
+          font-weight: 800;
+        }
+        #blog-root .blog-md-ul {
+          list-style: disc;
+          padding-left: 24px;
+          margin: 18px 0;
+        }
+        #blog-root .blog-md-ol {
+          list-style: decimal;
+          padding-left: 28px;
+          margin: 18px 0;
+        }
+        #blog-root .blog-md-li {
+          margin: 8px 0;
+          line-height: 1.8;
+          color: #344054;
+        }
+        #blog-root .blog-md-quote {
+          margin: 22px 0;
+          border-left: 3px solid #7cd4ff;
+          background: #f5fbff;
+          border-radius: 10px;
+          padding: 14px 16px;
+          color: #344054;
+          font-style: italic;
+        }
+        #blog-root .blog-md-link {
+          color: #0b6ba8;
+          text-decoration: none;
+          font-weight: 700;
+        }
+        #blog-root .blog-md-link:hover {
+          text-decoration: underline;
+        }
+        #blog-root .blog-md-inline-code {
+          background: #f2f4f7;
+          color: #7a271a;
+          border-radius: 6px;
+          padding: 2px 6px;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+          font-size: 0.9em;
+        }
+        #blog-root .blog-code-wrap {
+          margin: 24px 0;
+          border-radius: 14px;
+          overflow: hidden;
+          border: 1px solid #d0d5dd;
+        }
+        #blog-root .blog-code-head {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: #101828;
+          padding: 8px 10px;
+        }
+        #blog-root .blog-code-lang {
+          font-size: 11px;
+          font-weight: 800;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          color: #d1e9ff;
+        }
+        #blog-root .blog-copy-btn {
+          border: 0;
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          border-radius: 8px;
+          padding: 5px 10px;
+          background: #d1e9ff;
+          color: #0c2d6b;
+          cursor: pointer;
+        }
+        #blog-root .blog-md-pre {
+          margin: 0;
+          background: #182230;
+          color: #f8fafc;
+          padding: 14px;
+          overflow: auto;
+        }
+        #blog-root .blog-md-image {
+          max-width: 100%;
+          height: auto;
+          border-radius: 12px;
+          margin: 16px 0;
+          border: 1px solid #e4e7ec;
+        }
+        #blog-root .blog-md-hr {
+          border: 0;
+          height: 1px;
+          background: #e4e7ec;
+          margin: 44px 0;
+        }
+        #blog-root .blog-md-table-wrap {
+          overflow: auto;
+          border: 1px solid #e4e7ec;
+          border-radius: 12px;
+          margin: 20px 0;
+        }
+        #blog-root .blog-md-table {
+          border-collapse: collapse;
+          min-width: 100%;
+        }
+        #blog-root .blog-md-th {
+          background: #f9fafb;
+          text-align: left;
+          font-size: 12px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          color: #475467;
+          padding: 10px;
+          border-bottom: 1px solid #e4e7ec;
+        }
+        #blog-root .blog-md-td {
+          padding: 10px;
+          border-bottom: 1px solid #f2f4f7;
+          color: #344054;
+          font-size: 14px;
+        }
+        #blog-root .blog-post-nav {
+          margin-top: 20px;
+          padding-top: 20px;
+          border-top: 1px solid #e4e7ec;
+          display: flex;
+          gap: 10px;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+        #blog-root .blog-post-nav a {
+          text-decoration: none;
+          border: 1px solid #d0d5dd;
+          background: #fff;
+          color: #101828;
+          border-radius: 10px;
+          padding: 10px 14px;
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+        }
+        @media (max-width: 700px) {
+          #blog-root .blog-post-wrap {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+        }
+      10:["$","main",null,{"children":[["$","style",null,{"children":"$18"}],"$L19","$L1a"]}]
+1b:T56f7,<blockquote class="blog-md-quote">
+<p class="blog-md-p"><em>"What if your app only shipped one source language, but still understood every user in their preferred locale?"</em></p>
+</blockquote>
+<p class="blog-md-p">This article shows how to build a React Native internationalization strategy that avoids shipping every locale as a separate file. Instead, you keep a source language, translate missing keys on device, and cache the generated language pack locally.</p>
+<p class="blog-md-p">By the end of this article, you'll understand:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">Why static locale files become a maintenance burden</li>
+<li class="blog-md-li">How on-device translation can fill missing strings without server-side pipelines</li>
+<li class="blog-md-li">What <code class="blog-md-inline-code">@tcbs/react-native-language-translator</code> does for React Native apps</li>
+<li class="blog-md-li">How to cache and ship only the language data users actually need</li>
+</ul>
+<hr class="blog-md-hr" />
+<h1 id="stop-shipping-20-locale-files-in-react-native-on-device-translation-for-dynamic-language-packs" class="blog-md-h1">Stop Shipping 20 Locale Files in React Native: On-Device Translation for Dynamic Language Packs</h1>
+<p class="blog-md-p">Internationalization in mobile apps usually starts clean and then gets expensive.</p>
+<p class="blog-md-p">At first, you keep a couple of JSON files:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><code class="blog-md-inline-code">en.json</code></li>
+<li class="blog-md-li"><code class="blog-md-inline-code">es.json</code></li>
+<li class="blog-md-li"><code class="blog-md-inline-code">fr.json</code></li>
+</ul>
+<p class="blog-md-p">That works when your product is small and the set of languages is stable.</p>
+<p class="blog-md-p">It breaks down when:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">you want to support many languages</li>
+<li class="blog-md-li">the product team keeps changing copy</li>
+<li class="blog-md-li">translated files drift out of sync</li>
+<li class="blog-md-li">some languages are only partially used</li>
+<li class="blog-md-li">you do not want to run every string through a server-side translation pipeline</li>
+</ul>
+<p class="blog-md-p">This is the problem <code class="blog-md-inline-code">@tcbs/react-native-language-translator</code> is trying to solve.</p>
+<p class="blog-md-p">It lets a React Native app keep a source language, translate missing keys on device, and cache the generated language pack locally.</p>
+<p class="blog-md-p">Package: <a href="https://www.npmjs.com/package/@tcbs/react-native-language-translator" class="blog-md-link">@tcbs/react-native-language-translator</a></p>
+<hr class="blog-md-hr" />
+<h2 id="the-problem" class="blog-md-h2">The problem</h2>
+<p class="blog-md-p">Many React Native apps treat localization as a static asset problem:</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li">keep one JSON file per language</li>
+<li class="blog-md-li">ship all of them in the app</li>
+<li class="blog-md-li">update all of them whenever English changes</li>
+</ol>
+<p class="blog-md-p">That model has real costs.</p>
+<h3 id="1-translation-files-become-operational-debt" class="blog-md-h3">1. Translation files become operational debt</h3>
+<p class="blog-md-p">Every new feature adds more keys. Every copy change forces translators to update multiple locale files. Over time, the translation layer becomes a maintenance queue.</p>
+<p class="blog-md-p">The result is predictable:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">missing keys</li>
+<li class="blog-md-li">stale translations</li>
+<li class="blog-md-li">untranslated fallback strings</li>
+<li class="blog-md-li">inconsistent release quality across languages</li>
+</ul>
+<h3 id="2-shipping-many-locales-is-wasteful" class="blog-md-h3">2. Shipping many locales is wasteful</h3>
+<p class="blog-md-p">Most users only need one target language. But many apps ship every locale anyway. That increases bundle size and creates a lot of dead weight for users who will never use most of those files.</p>
+<h3 id="3-dynamic-product-copy-is-hard-to-localize-well" class="blog-md-h3">3. Dynamic product copy is hard to localize well</h3>
+<p class="blog-md-p">If your app changes quickly, static translation files lag behind. Teams either accept stale translations or build a backend workflow to keep everything synchronized.</p>
+<p class="blog-md-p">That is often more infrastructure than the app actually needs.</p>
+<h3 id="4-server-side-translation-is-not-always-the-right-tradeoff" class="blog-md-h3">4. Server-side translation is not always the right tradeoff</h3>
+<p class="blog-md-p">Calling a translation API at runtime introduces:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">latency</li>
+<li class="blog-md-li">API cost</li>
+<li class="blog-md-li">network dependency</li>
+<li class="blog-md-li">privacy considerations</li>
+<li class="blog-md-li">offline failure modes</li>
+</ul>
+<p class="blog-md-p">For some apps, that is acceptable. For many mobile flows, it is not.</p>
+<hr class="blog-md-hr" />
+<h2 id="the-idea-behind-the-package" class="blog-md-h2">The idea behind the package</h2>
+<p class="blog-md-p">Instead of treating every target language as a fully prebuilt asset, this package treats translation as a local capability.</p>
+<p class="blog-md-p">The app keeps one source dictionary, typically English, and then:</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li">detects the user’s target language</li>
+<li class="blog-md-li">checks whether that language is supported</li>
+<li class="blog-md-li">downloads the native translation model for the language pair</li>
+<li class="blog-md-li">translates missing keys on device</li>
+<li class="blog-md-li">stores the translated values locally</li>
+<li class="blog-md-li">applies the cached values to the app’s i18n layer</li>
+</ol>
+<p class="blog-md-p">That changes the architecture in a useful way:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">the source language stays canonical</li>
+<li class="blog-md-li">target languages are generated incrementally</li>
+<li class="blog-md-li">only needed translations are downloaded and cached</li>
+<li class="blog-md-li">the app can improve coverage over time without shipping every locale file up front</li>
+</ul>
+<hr class="blog-md-hr" />
+<h2 id="what-solution-is-it-providing" class="blog-md-h2">What solution is it providing?</h2>
+<p class="blog-md-p"><code class="blog-md-inline-code">@tcbs/react-native-language-translator</code> provides three things:</p>
+<h3 id="1-a-react-native-native-bridge-for-on-device-translation" class="blog-md-h3">1. A React Native native bridge for on-device translation</h3>
+<p class="blog-md-p">The package exposes a native translator module for:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">Android via Google ML Kit Translate</li>
+<li class="blog-md-li">iOS via ML Kit Translate through the native bridge</li>
+</ul>
+<p class="blog-md-p">This gives JavaScript code a simple interface for:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">checking supported language pairs</li>
+<li class="blog-md-li">preparing language models</li>
+<li class="blog-md-li">translating batches of strings</li>
+<li class="blog-md-li">reading downloaded languages</li>
+</ul>
+<h3 id="2-a-supported-language-catalog" class="blog-md-h3">2. A supported language catalog</h3>
+<p class="blog-md-p">The package includes a ready-to-use supported languages list for building UI such as:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">language pickers</li>
+<li class="blog-md-li">onboarding preference screens</li>
+<li class="blog-md-li">settings pages</li>
+</ul>
+<p class="blog-md-p">Each entry contains:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">language code</li>
+<li class="blog-md-li">display name</li>
+<li class="blog-md-li">flag</li>
+</ul>
+<p class="blog-md-p">It also includes a small alias normalization layer, for example:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><code class="blog-md-inline-code">hn -> hi</code></li>
+<li class="blog-md-li"><code class="blog-md-inline-code">od -> or</code></li>
+</ul>
+<p class="blog-md-p">That matters because app-internal language codes and translator-supported codes do not always match cleanly.</p>
+<h3 id="3-a-language-pack-generation-workflow" class="blog-md-h3">3. A language-pack generation workflow</h3>
+<p class="blog-md-p">This is the more interesting part.</p>
+<p class="blog-md-p">The package does not only translate text. It helps build a practical runtime flow around translation:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">flatten a source dictionary</li>
+<li class="blog-md-li">compare it with cached and bundled translations</li>
+<li class="blog-md-li">identify missing keys</li>
+<li class="blog-md-li">translate only the missing values</li>
+<li class="blog-md-li">save them into a repository abstraction</li>
+<li class="blog-md-li">apply them back into your i18n resource bundle</li>
+</ul>
+<p class="blog-md-p">That turns translation from a one-off API call into a reusable app pattern.</p>
+<hr class="blog-md-hr" />
+<h2 id="how-is-it-providing-that-solution" class="blog-md-h2">How is it providing that solution?</h2>
+<p class="blog-md-p">The package is opinionated in a useful way: it separates the translation engine from your app’s storage and i18n implementation.</p>
+<h3 id="layer-1-native-translation" class="blog-md-h3">Layer 1: Native translation</h3>
+<p class="blog-md-p">The <code class="blog-md-inline-code">createNativeTranslatorModule()</code> API exposes methods such as:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><code class="blog-md-inline-code">getSupportedLanguages()</code></li>
+<li class="blog-md-li"><code class="blog-md-inline-code">getDownloadedLanguages()</code></li>
+<li class="blog-md-li"><code class="blog-md-inline-code">isSupported(source, target)</code></li>
+<li class="blog-md-li"><code class="blog-md-inline-code">prepareLanguagePair(source, target)</code></li>
+<li class="blog-md-li"><code class="blog-md-inline-code">translateBatch(texts, source, target)</code></li>
+</ul>
+<p class="blog-md-p">This is the lowest-level layer. It is responsible for native translation model setup and translation execution.</p>
+<h3 id="layer-2-language-code-normalization" class="blog-md-h3">Layer 2: Language code normalization</h3>
+<p class="blog-md-p">The package normalizes language tags and resolves aliases before calling the native layer.</p>
+<p class="blog-md-p">This helps when:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">your app uses short internal aliases</li>
+<li class="blog-md-li">user profile data stores non-standard codes</li>
+<li class="blog-md-li">upstream systems do not agree on locale naming</li>
+</ul>
+<p class="blog-md-p">It reduces friction between app-specific language identifiers and translator-supported codes.</p>
+<h3 id="layer-3-coverage-based-language-pack-generation" class="blog-md-h3">Layer 3: Coverage-based language pack generation</h3>
+<p class="blog-md-p">The <code class="blog-md-inline-code">ensureLanguagePackReady()</code> helper does most of the workflow orchestration.</p>
+<p class="blog-md-p">Conceptually, it does this:</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li">flatten the source dictionary</li>
+<li class="blog-md-li">read existing cached translations</li>
+<li class="blog-md-li">inspect the currently bundled translations</li>
+<li class="blog-md-li">calculate what is missing or still effectively untranslated</li>
+<li class="blog-md-li">prepare the language pair</li>
+<li class="blog-md-li">translate missing values in chunks</li>
+<li class="blog-md-li">persist generated translations</li>
+<li class="blog-md-li">return coverage information</li>
+</ol>
+<p class="blog-md-p">This design matters because production localization is not binary. It is not just “translated” or “not translated.” You need to know:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">how many keys exist</li>
+<li class="blog-md-li">how many are ready</li>
+<li class="blog-md-li">how many are still missing</li>
+<li class="blog-md-li">how many are still identical to source text</li>
+</ul>
+<p class="blog-md-p">The package exposes that coverage model directly.</p>
+<h3 id="layer-4-storage-agnostic-integration" class="blog-md-h3">Layer 4: Storage-agnostic integration</h3>
+<p class="blog-md-p">The package does not force a database choice.</p>
+<p class="blog-md-p">Instead, you provide a repository adapter with methods like:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><code class="blog-md-inline-code">getMapForLanguage()</code></li>
+<li class="blog-md-li"><code class="blog-md-inline-code">upsertMany()</code></li>
+</ul>
+<p class="blog-md-p">That means you can back it with:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">SQLite</li>
+<li class="blog-md-li">Realm</li>
+<li class="blog-md-li">MMKV-backed structured persistence</li>
+<li class="blog-md-li">any custom local store</li>
+</ul>
+<p class="blog-md-p">The same pattern applies to your i18n layer. You provide an adapter with methods such as:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><code class="blog-md-inline-code">getResourceBundle()</code></li>
+<li class="blog-md-li"><code class="blog-md-inline-code">addResourceBundle()</code></li>
+</ul>
+<p class="blog-md-p">So the package can work with your existing localization setup rather than replacing it.</p>
+<hr class="blog-md-hr" />
+<h2 id="how-many-languages-does-it-support" class="blog-md-h2">How many languages does it support?</h2>
+<p class="blog-md-p">The current package exports <strong>59 supported languages</strong>.</p>
+<p class="blog-md-p">Examples include:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">English</li>
+<li class="blog-md-li">Spanish</li>
+<li class="blog-md-li">French</li>
+<li class="blog-md-li">German</li>
+<li class="blog-md-li">Arabic</li>
+<li class="blog-md-li">Hindi</li>
+<li class="blog-md-li">Bengali</li>
+<li class="blog-md-li">Gujarati</li>
+<li class="blog-md-li">Tamil</li>
+<li class="blog-md-li">Telugu</li>
+<li class="blog-md-li">Japanese</li>
+<li class="blog-md-li">Korean</li>
+<li class="blog-md-li">Chinese</li>
+<li class="blog-md-li">Russian</li>
+<li class="blog-md-li">Portuguese</li>
+<li class="blog-md-li">Turkish</li>
+<li class="blog-md-li">Ukrainian</li>
+<li class="blog-md-li">Vietnamese</li>
+</ul>
+<p class="blog-md-p">The full list is available directly from the package through <code class="blog-md-inline-code">supportedLanguages</code> and <code class="blog-md-inline-code">getSupportedLanguages()</code>.</p>
+<p class="blog-md-p">This is enough to cover a broad set of global product scenarios while keeping the app-side integration simple.</p>
+<hr class="blog-md-hr" />
+<h2 id="why-this-approach-is-useful" class="blog-md-h2">Why this approach is useful</h2>
+<p class="blog-md-p">There is a practical middle ground between “ship every locale file forever” and “call a translation API on every screen.”</p>
+<p class="blog-md-p">This package sits in that middle ground.</p>
+<h3 id="it-reduces-translation-maintenance-pressure" class="blog-md-h3">It reduces translation maintenance pressure</h3>
+<p class="blog-md-p">You still keep a canonical source dictionary, but you do not need every target language file to be complete before the app can function.</p>
+<h3 id="it-keeps-the-app-responsive-to-copy-changes" class="blog-md-h3">It keeps the app responsive to copy changes</h3>
+<p class="blog-md-p">If new English keys appear, the app can generate and cache missing translated entries instead of waiting for a full manual localization cycle.</p>
+<h3 id="it-works-with-offline-first-thinking-better-than-api-translation" class="blog-md-h3">It works with offline-first thinking better than API translation</h3>
+<p class="blog-md-p">Once models and translations are downloaded, the app can reuse them locally.</p>
+<h3 id="it-avoids-forcing-a-backend-translation-service" class="blog-md-h3">It avoids forcing a backend translation service</h3>
+<p class="blog-md-p">That can be useful for teams that want fewer moving parts or tighter privacy boundaries around runtime text handling.</p>
+<hr class="blog-md-hr" />
+<h2 id="a-realistic-usage-example" class="blog-md-h2">A realistic usage example</h2>
+<p class="blog-md-p">Here is the simple path:</p>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">TS</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-ts">import {
+  createNativeTranslatorModule,
+  getSupportedLanguages,
+  isLanguageSupported,
+  resolveTranslatorLanguageCode,
+} from '@tcbs/react-native-language-translator';
+
+const selectedLanguage = 'od';
+const targetLanguage = resolveTranslatorLanguageCode(selectedLanguage);
+
+if (!isLanguageSupported(targetLanguage)) {
+  throw new Error('Unsupported language');
+}
+
+const languageOptions = getSupportedLanguages({ includeEnglish: true });
+const translator = createNativeTranslatorModule();
+
+await translator.prepareLanguagePair('en', targetLanguage);
+
+const translated = await translator.translateBatch(
+  ['Settings', 'Store'],
+  'en',
+  targetLanguage,
+);
+</code></pre>
+      </div>
+    
+<p class="blog-md-p">That is useful if you only need direct string translation.</p>
+<p class="blog-md-p">But the more production-ready pattern is language-pack generation:</p>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">TS</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-ts">import {
+  applyCachedLanguagePack,
+  createNativeTranslatorModule,
+  ensureLanguagePackReady,
+} from '@tcbs/react-native-language-translator';
+
+await ensureLanguagePackReady({
+  sourceLanguage: 'en',
+  targetLanguage: selectedCode,
+  sourceDictionary: enJson,
+  i18n,
+  repository: localizedOverrideRepository,
+  nativeModule: createNativeTranslatorModule(),
+});
+
+applyCachedLanguagePack({
+  languageCode: selectedCode,
+  i18n,
+  repository: localizedOverrideRepository,
+});
+</code></pre>
+      </div>
+    
+<p class="blog-md-p">This is where the package becomes more than a translator wrapper. It becomes infrastructure for a dynamic localization workflow.</p>
+<hr class="blog-md-hr" />
+<h2 id="what-teams-should-know-before-using-it" class="blog-md-h2">What teams should know before using it</h2>
+<p class="blog-md-p">This is not magic. There are still operational realities.</p>
+<h3 id="1-translation-models-are-runtime-assets" class="blog-md-h3">1. Translation models are runtime assets</h3>
+<p class="blog-md-p">Models need to be downloaded for the language pair. That means:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">first use can take time</li>
+<li class="blog-md-li">network availability matters during preparation</li>
+<li class="blog-md-li">you should show clear user-facing progress states</li>
+</ul>
+<h3 id="2-generated-translations-should-be-treated-as-cached-output" class="blog-md-h3">2. Generated translations should be treated as cached output</h3>
+<p class="blog-md-p">You should think of generated language packs as local derived data, not as your source of truth.</p>
+<p class="blog-md-p">The source dictionary remains your canonical content.</p>
+<h3 id="3-quality-expectations-should-be-explicit" class="blog-md-h3">3. Quality expectations should be explicit</h3>
+<p class="blog-md-p">On-device translation is useful, but you still need product judgment.</p>
+<p class="blog-md-p">For critical legal, medical, financial, or brand-sensitive copy, human review may still be necessary.</p>
+<h3 id="4-good-ux-matters" class="blog-md-h3">4. Good UX matters</h3>
+<p class="blog-md-p">If you adopt this approach, the app should explain:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">that language resources may need downloading</li>
+<li class="blog-md-li">that translation happens on device</li>
+<li class="blog-md-li">that results are cached locally</li>
+<li class="blog-md-li">that some screens may improve in coverage over time</li>
+</ul>
+<hr class="blog-md-hr" />
+<h2 id="where-this-package-fits-best" class="blog-md-h2">Where this package fits best</h2>
+<p class="blog-md-p">This approach is especially useful for apps that:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">ship fast and change copy often</li>
+<li class="blog-md-li">want broad language reach without shipping many static locale files</li>
+<li class="blog-md-li">want local generation and local caching</li>
+<li class="blog-md-li">already have an i18n setup and just need a translation generation layer</li>
+<li class="blog-md-li">want to avoid a runtime translation backend for common flows</li>
+</ul>
+<p class="blog-md-p">It is less ideal if your localization model requires:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">formally reviewed translations for every string before release</li>
+<li class="blog-md-li">a centralized translation management system as the only allowed source</li>
+<li class="blog-md-li">strict server-mediated copy governance</li>
+</ul>
+<hr class="blog-md-hr" />
+<h2 id="final-take" class="blog-md-h2">Final take</h2>
+<p class="blog-md-p">The interesting part of <code class="blog-md-inline-code">@tcbs/react-native-language-translator</code> is not just that it translates strings.</p>
+<p class="blog-md-p">It provides a workable architecture for dynamic localization in React Native:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">source language as canonical input</li>
+<li class="blog-md-li">native on-device translation as the engine</li>
+<li class="blog-md-li">cached language packs as local derived output</li>
+<li class="blog-md-li">coverage-aware helpers to manage completeness</li>
+</ul>
+<p class="blog-md-p">That is a practical model for teams that want broader language support without turning localization into a backend-heavy system.</p>
+<p class="blog-md-p">If you want to try it, the package is here:</p>
+<p class="blog-md-p"><a href="https://www.npmjs.com/package/@tcbs/react-native-language-translator" class="blog-md-link">https://www.npmjs.com/package/@tcbs/react-native-language-translator</a></p>
+19:["$","section",null,{"className":"blog-post-wrap","children":[["$","$Lb",null,{"href":"/blog","className":"blog-post-kicker","children":"Back to blog"}],["$","h1",null,{"children":"Stop Shipping 20 Locale Files in React Native: On-Device Translation for Dynamic Language Packs"}],["$","div",null,{"className":"blog-post-meta","children":[["$","span",null,{"children":"June 2, 2026"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"8 min"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"Subrata Kumar Das"}]]}],["$","p",null,{"className":"blog-post-desc","children":"Learn how to avoid shipping dozens of locale JSON files by generating and caching a dynamic language pack in React Native."}],["$","div",null,{"className":"blog-tag-row","children":[["$","span","react-native",{"children":"react-native"}],["$","span","i18n",{"children":"i18n"}],["$","span","localization",{"children":"localization"}],["$","span","language-pack",{"children":"language-pack"}],["$","span","translation",{"children":"translation"}],["$","span","mobile",{"children":"mobile"}]]}],["$","article",null,{"className":"blog-article","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$1b"}}],"$L1c"]}],"$L1d"]}]
+1a:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"mainEntityOfPage\":\"https://subraatakumar.com/blog/dynamic-language-pack\",\"headline\":\"Stop Shipping 20 Locale Files in React Native: On-Device Translation for Dynamic Language Packs\",\"description\":\"Learn how to avoid shipping dozens of locale JSON files by generating and caching a dynamic language pack in React Native.\",\"datePublished\":\"2026-06-02\",\"dateModified\":\"2026-06-02\",\"image\":\"https://subraatakumar.com/images/interview.png\",\"keywords\":[\"react-native\",\"i18n\",\"localization\",\"language-pack\",\"translation\",\"mobile\"],\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com/\"}}"}}]
+1e:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]
+1c:["$","$L1e",null,{}]
+1d:["$","div",null,{"className":"blog-post-nav","children":[["$","$Lb",null,{"href":"/blog/common-llm-parameters-for-rag","children":"Previous"}],["$","$Lb",null,{"href":"/blog/how-to-build-a-liveness-check-login-with-face-api-js-and-react","children":"Next"}]]}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"IconMark"]
+13:null
+17:[["$","title","0",{"children":"Stop Shipping 20 Locale Files in React Native: On-Device Translation for Dynamic Language Packs | Subrata Kumar Das"}],["$","meta","1",{"name":"description","content":"Learn how to avoid shipping dozens of locale JSON files by generating and caching a dynamic language pack in React Native."}],["$","meta","2",{"name":"keywords","content":"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"}],["$","link","3",{"rel":"canonical","href":"https://subraatakumar.com/blog/dynamic-language-pack/"}],["$","meta","4",{"property":"og:title","content":"Stop Shipping 20 Locale Files in React Native: On-Device Translation for Dynamic Language Packs | Blog"}],["$","meta","5",{"property":"og:description","content":"Learn how to avoid shipping dozens of locale JSON files by generating and caching a dynamic language pack in React Native. • 8 min"}],["$","meta","6",{"property":"og:url","content":"https://subraatakumar.com/blog/dynamic-language-pack/"}],["$","meta","7",{"property":"og:image","content":"https://subraatakumar.com/images/interview.png"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"property":"article:published_time","content":"2026-06-02"}],["$","meta","10",{"property":"article:modified_time","content":"2026-06-02"}],["$","meta","11",{"property":"article:tag","content":"react-native"}],["$","meta","12",{"property":"article:tag","content":"i18n"}],["$","meta","13",{"property":"article:tag","content":"localization"}],["$","meta","14",{"property":"article:tag","content":"language-pack"}],["$","meta","15",{"property":"article:tag","content":"translation"}],["$","meta","16",{"property":"article:tag","content":"mobile"}],["$","meta","17",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","18",{"name":"twitter:title","content":"Stop Shipping 20 Locale Files in React Native: On-Device Translation for Dynamic Language Packs | Blog"}],["$","meta","19",{"name":"twitter:description","content":"Learn how to avoid shipping dozens of locale JSON files by generating and caching a dynamic language pack in React Native. • 8 min"}],["$","meta","20",{"name":"twitter:image","content":"https://subraatakumar.com/images/interview.png"}],["$","link","21",{"rel":"icon","href":"/favicon.ico?favicon.750fd6b3.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L1f","22",{}]]
