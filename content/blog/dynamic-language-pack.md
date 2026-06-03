@@ -18,6 +18,8 @@ slug: "dynamic-language-pack"
 
 > *"What if your app only shipped one source language, but still understood every user in their preferred locale?"*
 
+![](/images/react-native-language-pack.jpg)
+
 This article shows how to build a React Native internationalization strategy that avoids shipping every locale as a separate file. Instead, you keep a source language, translate missing keys on device, and cache the generated language pack locally.
 
 By the end of this article, you'll understand:
