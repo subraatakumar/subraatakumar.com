@@ -1,0 +1,500 @@
+1:"$Sreact.fragment"
+7:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
+b:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+c:"$Sreact.suspense"
+e:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]
+2:T1b2e,
+        #blog-root .blog-post-wrap {
+          max-width: 880px;
+          margin: 0 auto;
+          padding: 30px 24px 0;
+        }
+        #blog-root .blog-post-kicker {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          color: #175cd3;
+          border: 1px solid #cfe1fa;
+          border-radius: 999px;
+          padding: 8px 12px;
+          background: #fff;
+          text-decoration: none;
+        }
+        #blog-root .blog-post-wrap h1 {
+          margin-top: 18px;
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-size: clamp(2rem, 4.6vw, 3.2rem);
+          line-height: 1.08;
+          letter-spacing: -0.02em;
+        }
+        #blog-root .blog-post-meta {
+          margin-top: 16px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 8px;
+          color: #667085;
+          font-size: 12px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.07em;
+        }
+        #blog-root .blog-post-desc {
+          margin-top: 14px;
+          font-size: 1.04rem;
+          line-height: 1.8;
+          color: #475467;
+        }
+        #blog-root .blog-tag-row {
+          margin-top: 12px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+        #blog-root .blog-tag-row span {
+          background: #f2f4f7;
+          color: #344054;
+          font-size: 11px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          padding: 6px 10px;
+          border-radius: 999px;
+        }
+        #blog-root .blog-article {
+          margin-top: 26px;
+          border-top: 1px solid #e4e7ec;
+          padding-top: 24px;
+          padding-bottom: 20px;
+        }
+        #blog-root .blog-md-p {
+          margin: 18px 0;
+          font-size: 1.03rem;
+          line-height: 1.95;
+          color: #1d2939;
+        }
+        #blog-root .blog-md-h1 {
+          margin: 56px 0 16px;
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-size: 2rem;
+          line-height: 1.18;
+        }
+        #blog-root .blog-md-h2 {
+          margin: 46px 0 14px;
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-size: 1.7rem;
+          line-height: 1.24;
+        }
+        #blog-root .blog-md-h3 {
+          margin: 36px 0 10px;
+          font-weight: 800;
+          font-size: 1.28rem;
+          line-height: 1.34;
+        }
+        #blog-root .blog-md-h4,
+        #blog-root .blog-md-h5,
+        #blog-root .blog-md-h6 {
+          margin: 28px 0 8px;
+          font-size: 1.08rem;
+          font-weight: 800;
+        }
+        #blog-root .blog-md-ul {
+          list-style: disc;
+          padding-left: 24px;
+          margin: 18px 0;
+        }
+        #blog-root .blog-md-ol {
+          list-style: decimal;
+          padding-left: 28px;
+          margin: 18px 0;
+        }
+        #blog-root .blog-md-li {
+          margin: 8px 0;
+          line-height: 1.8;
+          color: #344054;
+        }
+        #blog-root .blog-md-quote {
+          margin: 22px 0;
+          border-left: 3px solid #7cd4ff;
+          background: #f5fbff;
+          border-radius: 10px;
+          padding: 14px 16px;
+          color: #344054;
+          font-style: italic;
+        }
+        #blog-root .blog-md-link {
+          color: #0b6ba8;
+          text-decoration: none;
+          font-weight: 700;
+        }
+        #blog-root .blog-md-link:hover {
+          text-decoration: underline;
+        }
+        #blog-root .blog-md-inline-code {
+          background: #f2f4f7;
+          color: #7a271a;
+          border-radius: 6px;
+          padding: 2px 6px;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+          font-size: 0.9em;
+        }
+        #blog-root .blog-code-wrap {
+          margin: 24px 0;
+          border-radius: 14px;
+          overflow: hidden;
+          border: 1px solid #d0d5dd;
+        }
+        #blog-root .blog-code-head {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: #101828;
+          padding: 8px 10px;
+        }
+        #blog-root .blog-code-lang {
+          font-size: 11px;
+          font-weight: 800;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          color: #d1e9ff;
+        }
+        #blog-root .blog-copy-btn {
+          border: 0;
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          border-radius: 8px;
+          padding: 5px 10px;
+          background: #d1e9ff;
+          color: #0c2d6b;
+          cursor: pointer;
+        }
+        #blog-root .blog-md-pre {
+          margin: 0;
+          background: #182230;
+          color: #f8fafc;
+          padding: 14px;
+          overflow: auto;
+        }
+        #blog-root .blog-md-image {
+          max-width: 100%;
+          height: auto;
+          border-radius: 12px;
+          margin: 16px 0;
+          border: 1px solid #e4e7ec;
+        }
+        #blog-root .blog-md-hr {
+          border: 0;
+          height: 1px;
+          background: #e4e7ec;
+          margin: 44px 0;
+        }
+        #blog-root .blog-md-table-wrap {
+          overflow: auto;
+          border: 1px solid #e4e7ec;
+          border-radius: 12px;
+          margin: 20px 0;
+        }
+        #blog-root .blog-md-table {
+          border-collapse: collapse;
+          min-width: 100%;
+        }
+        #blog-root .blog-md-th {
+          background: #f9fafb;
+          text-align: left;
+          font-size: 12px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          color: #475467;
+          padding: 10px;
+          border-bottom: 1px solid #e4e7ec;
+        }
+        #blog-root .blog-md-td {
+          padding: 10px;
+          border-bottom: 1px solid #f2f4f7;
+          color: #344054;
+          font-size: 14px;
+        }
+        #blog-root .blog-post-nav {
+          margin-top: 20px;
+          padding-top: 20px;
+          border-top: 1px solid #e4e7ec;
+          display: flex;
+          gap: 10px;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+        #blog-root .blog-post-nav a {
+          text-decoration: none;
+          border: 1px solid #d0d5dd;
+          background: #fff;
+          color: #101828;
+          border-radius: 10px;
+          padding: 10px 14px;
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+        }
+        @media (max-width: 700px) {
+          #blog-root .blog-post-wrap {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+        }
+      0:{"buildId":"UQXIDREKW4bkCmjYF8a5q","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
+8:T4a54,<p class="blog-md-p"><img src="/images/react-native-gemma.png" alt="" class="blog-md-image">
+It was 3:14 AM. The silence in the room was absolute, broken only by the hum of my laptop fan. On my desk sat two testing devices: a Xiaomi MI running Android and my daily driver iPhone 15. Both screens were completely black.</p>
+<p class="blog-md-p">Beside them lay a half-empty glass of flat water. Irony at its finest.</p>
+<p class="blog-md-p">For the past three weeks, I had been deep in the engineering trenches of a personal side project, trying to pull off a high-wire architectural act: embedding a fully sovereign, 100% offline, conversational AI Hydration Coach directly into the core of my application. No cloud servers. No API gateways. No network latency. And absolutely no monthly token subscriptions bleeding my runway dry.</p>
+<p class="blog-md-p">The promise was intoxicating. A user could be on an isolated mountain trail with zero cell service, open <strong>Water Tracker with Subra AI</strong> on <a href="https://apps.apple.com/us/app/water-tracker-with-subra-ai/id6759248297" class="blog-md-link">iOS</a> or <a href="https://play.google.com/store/apps/details?id=com.subraatakumar.watertracker" class="blog-md-link">Android</a>, ask their coach a question about thermal fluid loss, and receive a deeply contextualized, real-time response.</p>
+<p class="blog-md-p">But at 3:15 AM, the log stream on my monitor wasn't giving me context. It was spitting a single, devastating error line over and over:</p>
+<p class="blog-md-p"><code class="blog-md-inline-code">Fatal Exception: libc++abi: terminating with uncaught exception of type std::runtime_error: Failed to map model memory</code></p>
+<p class="blog-md-p">The app wasn't just crashing; it was suffocating. I had invited an LLM ghost into my React Native sandbox, and it was ravenous for memory.</p>
+<hr class="blog-md-hr" />
+<h2 id="chapter-1-the-sovereign-edge-architecture" class="blog-md-h2">Chapter 1: The Sovereign Edge Architecture</h2>
+<p class="blog-md-p">To understand how I got here, we have to look at the architectural blueprint. Most product teams building GenAI mobile features take the comfortable path: wrapping an <code class="blog-md-inline-code">axios</code> fetch request around a remote cloud API endpoint.</p>
+<p class="blog-md-p">It’s elegant until the user steps into an elevator, a subway tunnel, or an airplane. Then, your "smart" coach reverts to an expensive loading spinner. Worse, every time a user casually chats with your app, <em>you</em> get billed. If your app goes viral, your API bills scale linearly, threatening to bankrupt your project before monetization even kicks in.</p>
+<p class="blog-md-p">As a solo indie developer, I wanted a localized architecture. A sovereign edge.</p>
+<p class="blog-md-p">To pull this off, I needed a highly optimized runtime and a model small enough to fit inside a mobile app's tight memory sandbox, yet smart enough to avoid hallucinating medical advice.</p>
+<p class="blog-md-p">Enter Google’s newly minted <strong>LiteRT-LM</strong> stack.</p>
+<p class="blog-md-p">For the uninitiated, <strong>LiteRT</strong> (the production-ready framework formerly known as TensorFlow Lite) is the high-performance multi-platform runtime trusted by millions of edge applications. But raw LiteRT handles low-level tensor execution. To build an LLM app, you need an orchestration layer above it to manage Key-Value (KV) caches, enforce prompt templates, handle speculative decoding, and execute function calling. That is exactly what the <a href="https://developers.google.com/edge/litert-lm/overview" class="blog-md-link">LiteRT-LM Overview</a> brings to the table.</p>
+<p class="blog-md-p">And the brain? The <a href="https://developers.google.com/edge/litert-lm/models/gemma-4" class="blog-md-link">Gemma 4 E2B</a> model family. Specially built for on-device applications, the E2B variant is a lightweight powerhouse. It packs a text decoder with 0.79GB of weights and 1.12GB of embedding parameters into a ~2.59 GB <code class="blog-md-inline-code">.litertlm</code> file.</p>
+<p class="blog-md-p">But don't let its size fool you. It supports a staggering <strong>32k context length</strong> and features <strong>Multi-Token Prediction (MTP)</strong> drafters natively out of the box, allowing the framework to predict multiple upcoming tokens concurrently for a massive speedup on mobile chips.</p>
+<hr class="blog-md-hr" />
+<h2 id="chapter-2-the-edge-of-the-bridge" class="blog-md-h2">Chapter 2: The Edge of the Bridge</h2>
+<p class="blog-md-p">While community wrappers like <code class="blog-md-inline-code">react-native-litert-lm</code> have emerged to bridge these ecosystems, dropping a raw 2.5GB model file into a cross-platform environment is never a plug-and-play affair. To truly understand performance bottlenecks, optimize token-streaming speeds, and prevent memory leaks, you have to look under the hood at how LiteRT-LM binds to the device's native metal.</p>
+<p class="blog-md-p">The actual implementation maps to raw native development guides:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">The Kotlin engine setup: <a href="https://developers.google.com/edge/litert-lm/android" class="blog-md-link">LiteRT-LM Android Guide</a></li>
+<li class="blog-md-li">The Swift wrapper orchestration: <a href="https://developers.google.com/edge/litert-lm/swift" class="blog-md-link">LiteRT-LM Swift Guide</a></li>
+</ul>
+<p class="blog-md-p">The mission was clear: Initialize a singleton instance of the LiteRT-LM inference engine natively, load the heavy <code class="blog-md-inline-code">.litertlm</code> model file into memory once, expose a thread-safe <code class="blog-md-inline-code">sendMessage</code> method over the bridge, and stream the generated tokens back to the JavaScript UI in chunks.</p>
+<p class="blog-md-p">Here is the structural logic of how the native engines map to both platforms to talk back to a cross-platform state layer.</p>
+<h3 id="the-ios-blueprint-swift" class="blog-md-h3">The iOS Blueprint (Swift)</h3>
+<p class="blog-md-p">On iOS, the compiler links against the local LiteRT-LM framework headers, initializing the model and managing the asynchronous stream over an <code class="blog-md-inline-code">RCTEventEmitter</code>.</p>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">SWIFT</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-swift">// WaterAIModule.swift
+import Foundation
+import LiteRTLM // Under the hood native framework linkage
+
+@objc(WaterAIModule)
+class WaterAIModule: RCTEventEmitter {
+  private var lmEngine: Engine?
+  private var currentConversation: Conversation?
+
+  @objc func initializeEngine(_ modelPath: String, resolver resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {
+    do {
+      let settings = EngineSettings(modelPath: modelPath)
+      // Max out context token space allocated for conversation
+      settings.mainExecutorSettings.maxNumTokens = 8192 
+      
+      self.lmEngine = try Engine.create(settings: settings)
+      self.currentConversation = try self.lmEngine?.createConversation(config: ConversationConfig(
+        preface: "You are an expert Hydration AI Coach. Keep answers concise, scientific, and highly practical."
+      ))
+      resolve("Engine Warm and Ready")
+    } catch {
+      reject("ERR_INIT", "Failed to awaken LiteRT-LM Engine", error)
+    }
+  }
+
+  @objc func askCoach(_ message: String) {
+    guard let conversation = currentConversation else {
+      sendEvent(withName: "onTokenReceived", body: ["error": "Engine not initialized"])
+      return
+    }
+    
+    Task {
+      do {
+        // Stream back tokens sequentially to make UI responsive
+        let stream = try await conversation.sendMessage(role: "user", content: message)
+        for try await chunk in stream {
+          sendEvent(withName: "onTokenReceived", body: ["token": chunk.text])
+        }
+      } catch {
+        sendEvent(withName: "onTokenReceived", body: ["error": error.localizedDescription])
+      }
+    }
+  }
+  
+  override func supportedEvents() -> [String]! {
+    return ["onTokenReceived"]
+  }
+}
+
+</code></pre>
+      </div>
+    
+<h3 id="the-android-blueprint-kotlin" class="blog-md-h3">The Android Blueprint (Kotlin)</h3>
+<p class="blog-md-p">On the Android side, the Java Native Interface (JNI) overhead means handling context carefully, passing inputs securely down to the underlying XNNPACK or GPU backends.</p>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">KOTLIN</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-kotlin">// WaterAIModule.kt
+package com.subraatakumar.watertracker
+
+import com.facebook.react.bridge.*
+import com.facebook.react.modules.core.DeviceEventManagerModule
+import com.google.edge.litertlm.Engine
+import com.google.edge.litertlm.EngineSettings
+import com.google.edge.litertlm.Conversation
+import kotlinx.coroutines.*
+
+class WaterAIModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
+    private var lmEngine: Engine? = null
+    private var conversation: Conversation? = null
+    private val moduleScope = CoroutineScope(Dispatchers.Default + SupervisorJob())
+
+    override fun getName(): String = "WaterAIModule"
+
+    @ReactMethod
+    fun initializeEngine(modelPath: String, promise: Promise) {
+        try {
+            val settings = EngineSettings.builder()
+                .setModelPath(modelPath)
+                .setMaxNumTokens(8192)
+                .build()
+            
+            lmEngine = Engine.create(settings)
+            conversation = lmEngine?.createConversation()
+            promise.resolve("Android Engine Alive")
+        } catch (e: Exception) {
+            promise.reject("ERR_ANDROID_INIT", e.localizedMessage, e)
+        }
+    }
+
+    @ReactMethod
+    fun askCoach(message: String) {
+        val streamConversation = conversation ?: return
+        moduleScope.launch {
+            try {
+                streamConversation.sendMessage("user", message).collect { chunk ->
+                    val map = Arguments.createMap().apply {
+                        putString("token", chunk.text)
+                    }
+                    reactApplicationContext
+                        .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter::class.java)
+                        .emit("onTokenReceived", map)
+                }
+            } catch (e: Exception) {
+                // Handle stream drop failures cleanly
+            }
+        }
+    }
+}
+
+</code></pre>
+      </div>
+    
+<hr class="blog-md-hr" />
+<h2 id="chapter-3-the-607mb-breakthrough" class="blog-md-h2">Chapter 3: The 607MB Breakthrough</h2>
+<p class="blog-md-p">Back to 3:15 AM. The code looked immaculate, but the app was still imploding on startup.</p>
+<p class="blog-md-p">The physical math of mobile development is ruthless. A standard mobile application gets allocated anywhere from 200MB to 500MB of resident RAM by the OS before it lands on the high-risk eviction list. My model file alone was 2.59 GB. How was I supposed to squeeze a mountain inside a wallet?</p>
+<p class="blog-md-p">I poured over the technical specifications of Gemma 4 E2B. That's when I found the missing clue, hidden inside the mechanics of the runtime memory-mapping subsystem.</p>
+<p class="blog-md-p">LiteRT-LM implements a highly advanced memory footprint optimization strategy: <strong>It splits how it treats model parameters.</strong></p>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span></span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code>Gemma 4 E2B Model (2.59 GB Total Container)
+├── Text Decoder Weights (0.79 GB)  ---> Kept strictly in Resident Physical RAM
+└── Embedding Parameters (1.12 GB)  ---> Memory-Mapped (.mmap) dynamically from disk
+
+</code></pre>
+      </div>
+    
+<p class="blog-md-p">Instead of copying the full 2.59 GB binary wholesale into physical RAM blocks, the engine uses weight caching mechanisms (like XNNPACK's native allocations). It pins the critical 0.79GB text decoder directly in execution memory, while memory-mapping the massive embedding layers directly from the device's storage on-demand.</p>
+<p class="blog-md-p">The physical memory footprint doesn't hit 2.5 GB. It settles beautifully at <strong>just around 607MB to 700MB.</strong></p>
+<p class="blog-md-p">But why was my build still failing?</p>
+<p class="blog-md-p">Because of <em>how</em> I packaged the model container. I had manually bundled the raw tokenizer config files and the converted layers together, blinding the engine's memory-mapping parser. It was reading the whole file layout as unaligned, un-mappable raw byte-blobs.</p>
+<p class="blog-md-p">To fix it, I had to utilize the official serialization architecture outlined in the <a href="https://developers.google.com/edge/litert-lm/file_builder" class="blog-md-link">LiteRT-LM File Builder Documentation</a>. The builder aligns the internal headers perfectly so the mobile OS can execute memory mapping with zero block overhead.</p>
+<p class="blog-md-p">I spun up a Python virtual environment and ran the compiler pipeline script:</p>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">BASH</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-bash">pip install litert-lm-builder
+
+litert-lm-builder \
+  output --path ./assets/gemma-4-E2B-hydra.litertlm \
+  system_metadata --str engine_target "mobile-edge" \
+  llm_metadata --path ./configs/gemma_policy.pb \
+  tflite_model --path ./models/prefill_decode.tflite --model_type prefill_decode --backend_constraint gpu \
+  hf_tokenizer --path ./tokenizer/tokenizer.json
+
+</code></pre>
+      </div>
+    
+<p class="blog-md-p">The script ran cleanly, packaging the binary layers while injecting explicit alignment offsets into the file structure. I dragged the brand-new, optimized <code class="blog-md-inline-code">gemma-4-E2B-hydra.litertlm</code> file into the app bundles.</p>
+<p class="blog-md-p">I hit rebuild.</p>
+<hr class="blog-md-hr" />
+<h2 id="chapter-4-it-listens-it-thinks-it-adapts" class="blog-md-h2">Chapter 4: It Listens, It Thinks, It Adapts</h2>
+<p class="blog-md-p">The compilation finished. I tapped the chat icon on the app screen. The interface faded into a clean, minimalist prompt box.</p>
+<p class="blog-md-p">I typed: <em>"I just finished a 5K run in 85-degree humid weather. I’ve had 500ml of water today. Am I at risk?"</em></p>
+<p class="blog-md-p">I held my breath, waiting for the dreaded native crash log.</p>
+<p class="blog-md-p">The monitor remained clear. Instead, token by token, words started cascading onto the mobile viewport with fluid speed—hitting nearly <strong>50 tokens per second</strong> accelerated entirely by the local device's GPU layers.</p>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span></span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code>[Thinking...] 
+User hydration state is dangerously low given thermal conditions. 
+Prefill tokens: 1024 | Decode: ~52 tok/sec.
+
+"You are experiencing significant net fluid deficit. At 85°F with high humidity, 
+your sweat rate can easily exceed 1L/hour. Consuming only 500ml puts you in an 
+acute state of dehydration. Skip pure water for the next 300ml—you need 
+isotonic electrolytes immediately to restore plasma volume."
+
+</code></pre>
+      </div>
+    
+<p class="blog-md-p">No remote servers were pinged. No user tracking data escaped into the cloud. It was completely secure, private, instantaneous intelligence running locally on a handheld piece of glass.</p>
+<hr class="blog-md-hr" />
+<h2 id="the-takeaway-the-stack-of-2030-is-on-device" class="blog-md-h2">The Takeaway: The Stack of 2030 is On-Device</h2>
+<p class="blog-md-p">Building intelligence at the edge forces you to shed the lazy habits of cloud-first development. You cannot throw infinite elastic computing resources at a bad algorithm or a bloated architectural layout when your execution limits are hard-capped by a lithium-ion battery and a mobile operating system's kernel.</p>
+<p class="blog-md-p">But the reward? True application autonomy for a side project without ongoing maintenance costs.</p>
+<p class="blog-md-p">If you want to experience how this architecture behaves in production under real-world constraints, you can test the implementation live on both modern ecosystems:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">Download the iOS live build: <a href="https://apps.apple.com/us/app/water-tracker-with-subra-ai/id6759248297" class="blog-md-link">Water Tracker with Subra AI on the App Store</a></li>
+<li class="blog-md-li">Download the Android live build: <a href="https://play.google.com/store/apps/details?id=com.subraatakumar.watertracker" class="blog-md-link">Water Tracker Engine on Google Play</a></li>
+</ul>
+<p class="blog-md-p">The era of writing simple wrapper apps around expensive cloud endpoints is winding down. By bridging native frameworks like LiteRT-LM into accessible cross-platform viewports like React Native, we aren't just shipping apps—we're deploying highly optimized, self-contained digital minds directly into our users' pockets.</p>
+<p class="blog-md-p">And the best part? The next time my cloud server goes down... my users will still be perfectly hydrated.</p>
+<hr class="blog-md-hr" />
+<h3 id="technical-reference-ledger-x26-documentation" class="blog-md-h3">Technical Reference Ledger &#x26; Documentation</h3>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><strong>Core Model Architecture:</strong> <a href="https://developers.google.com/edge/litert-lm/models/gemma-4" class="blog-md-link">Gemma 4 LiteRT-LM Documentation</a></li>
+<li class="blog-md-li"><strong>Runtime Core Specifications:</strong> <a href="https://developers.google.com/edge/litert-lm/overview" class="blog-md-link">LiteRT-LM Core Overview</a></li>
+<li class="blog-md-li"><strong>Android JNI Implementation Matrix:</strong> <a href="https://developers.google.com/edge/litert-lm/android" class="blog-md-link">LiteRT-LM Android Integration</a></li>
+<li class="blog-md-li"><strong>iOS Metal Acceleration Layer:</strong> <a href="https://developers.google.com/edge/litert-lm/swift" class="blog-md-link">LiteRT-LM Swift Framework</a></li>
+<li class="blog-md-li"><strong>Binary Alignment Utility:</strong> <a href="https://developers.google.com/edge/litert-lm/file_builder" class="blog-md-link">LiteRT-LM File Builder CLI</a></li>
+</ul>
+3:["$","section",null,{"className":"blog-post-wrap","children":[["$","$L7",null,{"href":"/blog","className":"blog-post-kicker","children":"Back to blog"}],["$","h1",null,{"children":"React Native + Gemma: Building a Fully Offline AI Hydration Coach"}],["$","div",null,{"className":"blog-post-meta","children":[["$","span",null,{"children":"June 3, 2026"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"9 min"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"Subrata Kumar Das"}]]}],["$","p",null,{"className":"blog-post-desc","children":"How I embedded an on-device Gemma model in React Native for a sovereign, offline hydration coach without cloud APIs or token bills."}],["$","div",null,{"className":"blog-tag-row","children":[["$","span","ai",{"children":"ai"}],["$","span","react-native",{"children":"react-native"}],["$","span","gemma",{"children":"gemma"}],["$","span","mobile",{"children":"mobile"}],["$","span","offline",{"children":"offline"}],["$","span","edge",{"children":"edge"}],["$","span","architecture",{"children":"architecture"}]]}],["$","article",null,{"className":"blog-article","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}],"$L9"]}],"$La"]}]
+4:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"mainEntityOfPage\":\"https://subraatakumar.com/blog/react-native-gemma\",\"headline\":\"React Native + Gemma: Building a Fully Offline AI Hydration Coach\",\"description\":\"How I embedded an on-device Gemma model in React Native for a sovereign, offline hydration coach without cloud APIs or token bills.\",\"datePublished\":\"2026-06-03\",\"dateModified\":\"2026-06-03\",\"image\":\"https://subraatakumar.com/images/interview.png\",\"keywords\":[\"ai\",\"react-native\",\"gemma\",\"mobile\",\"offline\",\"edge\",\"architecture\"],\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com/\"}}"}}]
+5:["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true}]
+6:["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]
+9:["$","$Le",null,{}]
+a:["$","div",null,{"className":"blog-post-nav","children":[["$","$L7",null,{"href":"/blog/how-to-build-a-liveness-check-login-with-face-api-js-and-react","children":"Previous"}],["$","$L7",null,{"href":"/blog/the-right-model-for-your-job","children":"Next"}]]}]
+d:null

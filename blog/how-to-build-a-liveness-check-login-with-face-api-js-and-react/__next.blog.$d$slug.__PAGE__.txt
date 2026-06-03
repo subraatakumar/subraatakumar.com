@@ -248,7 +248,7 @@ e:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0a
             padding-right: 16px;
           }
         }
-      0:{"buildId":"U_0RBvMTYDlPslLJ6C4nm","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
+      0:{"buildId":"UQXIDREKW4bkCmjYF8a5q","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
 8:T5869,<blockquote class="blog-md-quote">
 <p class="blog-md-p"><em>"What if your login page could tell the difference between a real person and a photo of one?"</em></p>
 </blockquote>
@@ -572,5 +572,5 @@ app.post('/login', async (req, res) => {
 5:["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true}]
 6:["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]
 9:["$","$Le",null,{}]
-a:["$","div",null,{"className":"blog-post-nav","children":[["$","$L7",null,{"href":"/blog/dynamic-language-pack","children":"Previous"}],["$","$L7",null,{"href":"/blog/the-right-model-for-your-job","children":"Next"}]]}]
+a:["$","div",null,{"className":"blog-post-nav","children":[["$","$L7",null,{"href":"/blog/dynamic-language-pack","children":"Previous"}],["$","$L7",null,{"href":"/blog/react-native-gemma","children":"Next"}]]}]
 d:null
