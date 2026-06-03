@@ -31,8 +31,6 @@ By the end of this article, you'll understand:
 
 ---
 
-# Stop Shipping 20 Locale Files in React Native: On-Device Translation for Dynamic Language Packs
-
 Internationalization in mobile apps usually starts clean and then gets expensive.
 
 At first, you keep a couple of JSON files:
