@@ -248,8 +248,8 @@ e:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0a
             padding-right: 16px;
           }
         }
-      0:{"buildId":"UQXIDREKW4bkCmjYF8a5q","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
-8:T5760,<blockquote class="blog-md-quote">
+      0:{"buildId":"cP_BiS1YYqtBH1BNL-irs","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
+8:T5680,<blockquote class="blog-md-quote">
 <p class="blog-md-p"><em>"What if your app only shipped one source language, but still understood every user in their preferred locale?"</em></p>
 </blockquote>
 <p class="blog-md-p"><img src="/images/react-native-language-pack.jpg" alt="" class="blog-md-image"></p>
@@ -262,7 +262,6 @@ e:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0a
 <li class="blog-md-li">How to cache and ship only the language data users actually need</li>
 </ul>
 <hr class="blog-md-hr" />
-<h1 id="stop-shipping-20-locale-files-in-react-native-on-device-translation-for-dynamic-language-packs" class="blog-md-h1">Stop Shipping 20 Locale Files in React Native: On-Device Translation for Dynamic Language Packs</h1>
 <p class="blog-md-p">Internationalization in mobile apps usually starts clean and then gets expensive.</p>
 <p class="blog-md-p">At first, you keep a couple of JSON files:</p>
 <ul class="blog-md-ul">
