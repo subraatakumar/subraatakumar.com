@@ -1,21 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { LineChart, Paintbrush2, Cloud, Smartphone, ChevronRight } from "lucide-react";
-import { useWaterTrackerScrollSpy } from "./components/useWaterTrackerScrollSpy";
-
-type HomeSection = {
-  id: string;
-  title: string;
-  summary: string;
-  bullets: string[];
-  image?: {
-    src: string;
-    alt: string;
-    caption: string;
-  };
-};
+import { ChevronRight } from "lucide-react";
 
 type FluidChoiceCard = {
   name: string;
@@ -38,6 +24,17 @@ type LanguageFlag = {
   top: string;
   left: string;
   delay: string;
+};
+
+type AICoachPrompt = {
+  label: string;
+  reply: string;
+};
+
+type ShowcaseSlide = {
+  src: string;
+  alt: string;
+  title: string;
 };
 
 const FLUID_CHOICE_GROUPS: FluidChoiceGroup[] = [
@@ -96,108 +93,35 @@ const LANGUAGE_FLAGS: LanguageFlag[] = [
   { code: "sw", name: "Swahili", flag: "🇰🇪", top: "42%", left: "42%", delay: "0.22s" },
 ];
 
-const SECTIONS: HomeSection[] = [
+const AI_COACH_PROMPTS: AICoachPrompt[] = [
   {
-    id: "daily-tracking",
-    title: "Track Intake In Seconds",
-    summary:
-      "Quick-add logging keeps hydration tracking fast. Switch between ml and oz anytime and see progress update instantly.",
-    bullets: [
-      "One-tap drink entry for daily consistency",
-      "Supports ml and oz without resetting your data",
-      "Clear progress view to stay on target",
-    ],
-    image: {
-      src: "/watertrackerimages/5.png",
-      alt: "Water Tracker home dashboard with hydration progress",
-      caption: "Home dashboard with quick logging and unit toggle",
-    },
+    label: "How much water should I drink today?",
+    reply: "Check your goal, compare it with today’s intake, and close the gap with small steady sips.",
   },
   {
-    id: "reminders",
-    title: "Reminder Schedule That Fits Your Day",
-    summary:
-      "Set reminder times, lead-time nudges, and optional follow-up alerts to build a reliable hydration routine.",
-    bullets: [
-      "Custom reminder time slots",
-      "Lead-time and follow-up reminder options",
-      "Sound and silent reminder modes",
-    ],
-    image: {
-      src: "/watertrackerimages/4.png",
-      alt: "Hydration reminder schedule screen in Water Tracker",
-      caption: "Hydration goal and reminders on your schedule",
-    },
+    label: "Show my 10-day hydration trend",
+    reply: "Subra AI can go beyond fixed screens and help with custom hydration history or trend ranges.",
   },
   {
-    id: "drink-management",
-    title: "Build Your Own Drink Setup",
-    summary:
-      "After choosing from the built-in catalog, you can create your own drink types with custom volume, icon, and color.",
-    bullets: [
-      "Add your own custom drink types",
-      "Set icon, color, and default amount",
-      "Keep logging aligned with real servings",
-    ],
-    image: {
-      src: "/watertrackerimages/8.png",
-      alt: "Custom drink type setup screen in Water Tracker",
-      caption: "Create drink types with your own icon and volume",
-    },
-  },
-  {
-    id: "insights",
-    title: "Trend Insights, Not Guesswork",
-    summary:
-      "Visual trends help you understand consistency and daily performance so you can improve hydration habits over time.",
-    bullets: [
-      "Daily consumption vs goal visualization",
-      "History for habit review",
-      "Actionable progress patterns",
-    ],
-    image: {
-      src: "/watertrackerimages/9.png",
-      alt: "Hydration trend chart screen in Water Tracker",
-      caption: "Trend charts to measure consistency",
-    },
-  },
-  {
-    id: "privacy",
-    title: "Privacy-First By Default",
-    summary:
-      "No mandatory account. Hydration logs stay on-device with optional local protection like PIN and biometric unlock.",
-    bullets: [
-      "No login required for core tracking",
-      "Local-first data model",
-      "PIN and biometric protection options",
-    ],
-    image: {
-      src: "/watertrackerimages/1.png",
-      alt: "Water Tracker privacy message screen",
-      caption: "Built around local data privacy",
-    },
-  },
-  {
-    id: "backup-widgets",
-    title: "Backup, Widgets, and Personalization",
-    summary:
-      "Backup and restore support, fluid widgets, and appearance themes make the app practical for long-term daily use.",
-    bullets: [
-      "Backup and restore tools",
-      "Fluid intake widget support",
-      "Appearance themes and customization",
-    ],
-    image: {
-      src: "/watertrackerimages/2.png",
-      alt: "Backup and restore screen in Water Tracker",
-      caption: "Backup and restore support for safer continuity",
-    },
+    label: "I keep missing reminders in the afternoon",
+    reply: "Try tighter reminder spacing after lunch and keep a realistic sip target for that window.",
   },
 ];
 
-export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; androidUrl?: string }) {
-  const { activeSection, jumpTo } = useWaterTrackerScrollSpy(SECTIONS.map((section) => section.id), SECTIONS[0].id);
+const WATERTRACKER_SHOWCASE_SLIDES: ShowcaseSlide[] = [
+  { src: "/watertrackerimages/1.png", alt: "Water Tracker privacy-focused screen", title: "Privacy-first tracking" },
+  { src: "/watertrackerimages/2.png", alt: "Water Tracker backup and restore screen", title: "Backup and restore" },
+  { src: "/watertrackerimages/3.png", alt: "Water Tracker hydration app screen", title: "Daily hydration workflow" },
+  { src: "/watertrackerimages/4.png", alt: "Water Tracker reminder schedule screen", title: "Reminder scheduling" },
+  { src: "/watertrackerimages/5.png", alt: "Water Tracker dashboard screen", title: "Quick logging dashboard" },
+  { src: "/watertrackerimages/6.png", alt: "Water Tracker appearance customization screen", title: "Appearance themes" },
+  { src: "/watertrackerimages/7.png", alt: "Water Tracker manage drinks screen", title: "Manage drinks" },
+  { src: "/watertrackerimages/8.png", alt: "Water Tracker custom drink type screen", title: "Custom drink setup" },
+  { src: "/watertrackerimages/9.png", alt: "Water Tracker trend insights screen", title: "Hydration trends" },
+  { src: "/watertrackerimages/10.png", alt: "Water Tracker personalization screen", title: "Personalized app style" },
+];
 
+export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; androidUrl?: string }) {
   return (
     <section>
       <style>{`
@@ -572,6 +496,434 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
         @keyframes wth-flag-float {
           0%, 100% { transform: translate(-50%, -50%) translateY(0); }
           50% { transform: translate(-50%, -50%) translateY(-7px); }
+        }
+        .wth-ai-hero {
+          position: relative;
+          overflow: hidden;
+          min-height: calc(100vh - 68px);
+          margin-left: calc(50% - 50vw);
+          margin-right: calc(50% - 50vw);
+          margin-bottom: 30px;
+          padding: clamp(18px, 3vw, 34px);
+          background:
+            radial-gradient(circle at 18% 22%, rgba(255, 162, 122, 0.16), transparent 28%),
+            radial-gradient(circle at 82% 30%, rgba(132, 225, 255, 0.14), transparent 26%),
+            linear-gradient(135deg, #0a1537 0%, #132a63 44%, #173f8d 100%);
+          display: flex;
+          align-items: center;
+        }
+        .wth-ai-shell {
+          width: min(1160px, 100%);
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: minmax(280px, 390px) minmax(0, 1fr);
+          gap: clamp(18px, 3vw, 34px);
+          align-items: center;
+        }
+        .wth-ai-copy {
+          color: #eff9ff;
+        }
+        .wth-ai-kicker {
+          display: inline-flex;
+          align-items: center;
+          min-height: 38px;
+          padding: 0 14px;
+          border-radius: 999px;
+          border: 1px solid rgba(181, 232, 255, 0.24);
+          background: rgba(8, 31, 73, 0.34);
+          color: #a6e5ff;
+          font-size: 11px;
+          font-weight: 900;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+        }
+        .wth-ai-title {
+          margin: 14px 0 0;
+          font-size: clamp(2rem, 4.4vw, 3.9rem);
+          line-height: 0.98;
+          letter-spacing: -0.05em;
+          text-wrap: balance;
+        }
+        .wth-ai-summary {
+          margin: 14px 0 0;
+          max-width: 35ch;
+          font-size: 15px;
+          line-height: 1.65;
+          color: rgba(232, 245, 255, 0.84);
+        }
+        .wth-ai-badges {
+          margin-top: 16px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+        .wth-ai-badge {
+          display: inline-flex;
+          align-items: center;
+          min-height: 34px;
+          padding: 0 12px;
+          border-radius: 999px;
+          background: rgba(255, 255, 255, 0.08);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          color: #e8f7ff;
+          font-size: 11px;
+          font-weight: 800;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+        }
+        .wth-ai-points {
+          margin: 16px 0 0;
+          display: grid;
+          gap: 8px;
+        }
+        .wth-ai-point {
+          display: flex;
+          align-items: flex-start;
+          gap: 10px;
+          font-size: 13px;
+          line-height: 1.5;
+          font-weight: 700;
+          color: #eff8ff;
+        }
+        .wth-ai-point strong {
+          color: #9fe4ff;
+        }
+        .wth-ai-dot {
+          width: 9px;
+          height: 9px;
+          flex-shrink: 0;
+          margin-top: 6px;
+          border-radius: 999px;
+          background: linear-gradient(135deg, #7ae0ff, #ffffff);
+          box-shadow: 0 0 0 5px rgba(122, 224, 255, 0.12);
+        }
+        .wth-ai-note {
+          margin-top: 16px;
+          padding: 12px 14px;
+          border-radius: 18px;
+          border: 1px solid rgba(188, 234, 255, 0.18);
+          background: rgba(10, 36, 83, 0.34);
+          color: rgba(233, 246, 255, 0.9);
+          font-size: 12px;
+          line-height: 1.55;
+        }
+        .wth-ai-note strong {
+          color: #9fe4ff;
+        }
+        .wth-ai-board {
+          position: relative;
+          min-height: min(74vh, 680px);
+          border-radius: 30px;
+          border: 1px solid rgba(188, 234, 255, 0.16);
+          background:
+            radial-gradient(circle at 72% 20%, rgba(255, 188, 122, 0.12), transparent 26%),
+            linear-gradient(180deg, rgba(240, 249, 255, 0.1) 0%, rgba(240, 249, 255, 0.05) 100%);
+          box-shadow: 0 28px 60px rgba(3, 16, 45, 0.34);
+          overflow: hidden;
+          padding: 20px;
+        }
+        .wth-ai-board::before {
+          content: "";
+          position: absolute;
+          inset: 14px;
+          border-radius: 24px;
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          pointer-events: none;
+        }
+        .wth-ai-head {
+          position: relative;
+          z-index: 1;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          margin-bottom: 14px;
+        }
+        .wth-ai-brand {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+        }
+        .wth-ai-avatar {
+          width: 48px;
+          height: 48px;
+          border-radius: 16px;
+          background: linear-gradient(160deg, #8ce2ff, #4d9cff);
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          color: #08275a;
+          font-size: 20px;
+          font-weight: 900;
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+        }
+        .wth-ai-brand-copy strong {
+          display: block;
+          font-size: 16px;
+          color: #ffffff;
+        }
+        .wth-ai-brand-copy span {
+          display: block;
+          margin-top: 3px;
+          font-size: 12px;
+          color: #9fdfff;
+          line-height: 1.4;
+        }
+        .wth-ai-chip {
+          display: inline-flex;
+          align-items: center;
+          min-height: 34px;
+          padding: 0 12px;
+          border-radius: 999px;
+          background: rgba(140, 226, 255, 0.14);
+          border: 1px solid rgba(140, 226, 255, 0.22);
+          color: #dff8ff;
+          font-size: 11px;
+          font-weight: 900;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          white-space: nowrap;
+        }
+        .wth-ai-chat {
+          position: relative;
+          z-index: 1;
+          display: grid;
+          gap: 10px;
+        }
+        .wth-ai-chat-turn {
+          display: grid;
+          gap: 8px;
+        }
+        .wth-ai-message {
+          max-width: min(82%, 480px);
+          padding: 12px 14px;
+          border-radius: 18px;
+          font-size: 13px;
+          line-height: 1.55;
+          box-shadow: 0 12px 24px rgba(8, 17, 42, 0.14);
+        }
+        .wth-ai-message.user {
+          justify-self: end;
+          background: rgba(255, 255, 255, 0.96);
+          color: #14315d;
+          border-bottom-right-radius: 8px;
+        }
+        .wth-ai-message.assistant {
+          justify-self: start;
+          background: linear-gradient(160deg, rgba(126, 221, 255, 0.16), rgba(85, 154, 255, 0.18));
+          border: 1px solid rgba(160, 228, 255, 0.18);
+          color: #eefaff;
+          border-bottom-left-radius: 8px;
+        }
+        .wth-ai-grid {
+          position: relative;
+          z-index: 1;
+          margin-top: 14px;
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 12px;
+        }
+        .wth-ai-stat-card {
+          border-radius: 20px;
+          padding: 14px;
+          background: rgba(8, 24, 58, 0.44);
+          border: 1px solid rgba(188, 234, 255, 0.12);
+        }
+        .wth-ai-stat-card strong {
+          display: block;
+          font-size: 20px;
+          color: #ffffff;
+          line-height: 1.1;
+        }
+        .wth-ai-stat-card span {
+          display: block;
+          margin-top: 6px;
+          font-size: 11px;
+          line-height: 1.45;
+          color: #9fdfff;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          font-weight: 800;
+        }
+        .wth-ai-footer {
+          position: relative;
+          z-index: 1;
+          margin-top: 14px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          align-items: center;
+          justify-content: space-between;
+          padding-top: 12px;
+          border-top: 1px solid rgba(188, 234, 255, 0.12);
+        }
+        .wth-ai-footer-copy {
+          max-width: 42ch;
+          color: rgba(230, 244, 255, 0.88);
+          font-size: 11px;
+          line-height: 1.45;
+        }
+        .wth-ai-footer-copy strong {
+          color: #9fe4ff;
+        }
+        .wth-ai-footer-pill {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          min-height: 38px;
+          padding: 0 14px;
+          border-radius: 999px;
+          background: linear-gradient(135deg, #ffb07c, #ffd36f);
+          color: #5c2306;
+          font-size: 11px;
+          font-weight: 900;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+        }
+        .wth-gallery-hero {
+          position: relative;
+          overflow: hidden;
+          min-height: calc(100vh - 68px);
+          margin-left: calc(50% - 50vw);
+          margin-right: calc(50% - 50vw);
+          margin-bottom: 30px;
+          padding: clamp(20px, 3vw, 34px);
+          background:
+            radial-gradient(circle at 20% 18%, rgba(137, 228, 255, 0.14), transparent 30%),
+            radial-gradient(circle at 82% 24%, rgba(255, 216, 130, 0.12), transparent 28%),
+            linear-gradient(135deg, #08173c 0%, #0f2f73 48%, #1350a7 100%);
+          display: flex;
+          align-items: center;
+        }
+        .wth-gallery-shell {
+          width: min(1240px, 100%);
+          margin: 0 auto;
+        }
+        .wth-gallery-head {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 16px;
+          align-items: flex-end;
+          justify-content: space-between;
+          margin-bottom: 18px;
+        }
+        .wth-gallery-copy {
+          color: #eff9ff;
+          max-width: 700px;
+        }
+        .wth-gallery-kicker {
+          display: inline-flex;
+          align-items: center;
+          min-height: 38px;
+          padding: 0 14px;
+          border-radius: 999px;
+          border: 1px solid rgba(181, 232, 255, 0.24);
+          background: rgba(8, 31, 73, 0.34);
+          color: #a6e5ff;
+          font-size: 11px;
+          font-weight: 900;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+        }
+        .wth-gallery-title {
+          margin: 14px 0 0;
+          font-size: clamp(2rem, 4vw, 3.5rem);
+          line-height: 0.98;
+          letter-spacing: -0.05em;
+          text-wrap: balance;
+        }
+        .wth-gallery-summary {
+          margin: 12px 0 0;
+          font-size: 15px;
+          line-height: 1.65;
+          color: rgba(232, 245, 255, 0.84);
+          max-width: 58ch;
+        }
+        .wth-gallery-meta {
+          display: inline-flex;
+          align-items: center;
+          min-height: 38px;
+          padding: 0 14px;
+          border-radius: 999px;
+          background: rgba(255, 255, 255, 0.08);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          color: #e8f7ff;
+          font-size: 11px;
+          font-weight: 900;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          white-space: nowrap;
+        }
+        .wth-gallery-slider {
+          overflow: hidden;
+          padding: 8px 4px 14px;
+          position: relative;
+        }
+        .wth-gallery-track {
+          display: flex;
+          gap: 16px;
+          width: max-content;
+          animation: wth-gallery-marquee 42s linear infinite;
+        }
+        .wth-gallery-slider:hover .wth-gallery-track {
+          animation-play-state: paused;
+        }
+        @keyframes wth-gallery-marquee {
+          from { transform: translateX(0); }
+          to { transform: translateX(calc(-50% - 8px)); }
+        }
+        .wth-gallery-card {
+          flex: 0 0 min(320px, 26vw);
+          border-radius: 26px;
+          padding: 12px;
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
+          border: 1px solid rgba(192, 236, 255, 0.16);
+          box-shadow: 0 20px 40px rgba(5, 18, 49, 0.3);
+        }
+        .wth-gallery-card figure {
+          margin: 0;
+        }
+        .wth-gallery-card img {
+          width: 100%;
+          height: auto;
+          border-radius: 18px;
+          display: block;
+          background: rgba(255, 255, 255, 0.9);
+        }
+        .wth-gallery-caption {
+          margin-top: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+        }
+        .wth-gallery-caption strong {
+          display: block;
+          font-size: 14px;
+          color: #ffffff;
+        }
+        .wth-gallery-caption span {
+          display: block;
+          margin-top: 2px;
+          font-size: 11px;
+          color: #9fdfff;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          font-weight: 800;
+        }
+        .wth-gallery-index {
+          width: 36px;
+          height: 36px;
+          border-radius: 999px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(122, 224, 255, 0.14);
+          border: 1px solid rgba(122, 224, 255, 0.24);
+          color: #dff8ff;
+          font-size: 11px;
+          font-weight: 900;
+          flex-shrink: 0;
         }
         .wth-fluid-hero {
           position: relative;
@@ -1041,6 +1393,49 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
             justify-content: center;
             min-height: calc(100vh - 56px);
           }
+          .wth-gallery-hero {
+            min-height: auto;
+            padding: 22px 14px 24px;
+          }
+          .wth-gallery-head {
+            align-items: flex-start;
+          }
+          .wth-gallery-title {
+            font-size: clamp(2rem, 12vw, 3rem);
+          }
+          .wth-gallery-summary {
+            max-width: none;
+          }
+          .wth-gallery-slider {
+            overflow: hidden;
+          }
+          .wth-gallery-track {
+            gap: 12px;
+            animation-duration: 34s;
+          }
+          .wth-gallery-card {
+            flex-basis: min(260px, 72vw);
+          }
+          .wth-ai-hero {
+            min-height: auto;
+            padding: 22px 14px 24px;
+          }
+          .wth-ai-shell {
+            grid-template-columns: 1fr;
+            gap: 18px;
+          }
+          .wth-ai-title {
+            font-size: clamp(2rem, 12vw, 3rem);
+          }
+          .wth-ai-summary {
+            max-width: none;
+          }
+          .wth-ai-board {
+            min-height: 560px;
+          }
+          .wth-ai-grid {
+            grid-template-columns: 1fr;
+          }
           .wth-language-hero {
             min-height: auto;
             padding: 22px 14px 24px;
@@ -1162,6 +1557,13 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
         @media (max-width: 760px) {
           .wth-hero {
             margin-top: -22px;
+          }
+          .wth-ai-board {
+            min-height: 520px;
+            padding: 16px;
+          }
+          .wth-ai-message {
+            max-width: 100%;
           }
           .wth-language-art {
             min-height: 460px;
@@ -1387,125 +1789,135 @@ export default function HomeClient({ iosUrl, androidUrl }: { iosUrl?: string; an
         </div>
       </section>
 
-      <div className="wth-mobile-jumps" aria-label="Jump to sections">
-        {SECTIONS.map((section) => (
-          <button key={section.id} type="button" onClick={() => jumpTo(section.id)}>
-            {section.title}
-          </button>
-        ))}
-      </div>
+      <section className="wth-ai-hero" aria-labelledby="subra-ai-title">
+        <div className="wth-ai-shell">
+          <div className="wth-ai-copy">
+            <div className="wth-ai-kicker">AI Hydration Coach</div>
+            <h2 id="subra-ai-title" className="wt-font-display wth-ai-title">
+              Meet Subra AI Hydration Coach
+            </h2>
+            <p className="wth-ai-summary">
+              Subra AI gives Water Tracker a more flexible layer of guidance, helping users ask real hydration questions,
+              get concise coaching, and go beyond fixed screens when they want more personalized insight.
+            </p>
 
-      <div className="wth-layout">
-        <aside className="wth-sidebar" aria-label="Water tracker sections">
-          <p className="wth-sidebar-title">Explore</p>
-          <div className="wth-nav-list">
-            {SECTIONS.map((section) => (
-              <button
-                key={section.id}
-                type="button"
-                onClick={() => jumpTo(section.id)}
-                className={`wth-nav-item ${activeSection === section.id ? "active" : ""}`}
-              >
-                {section.title}
-              </button>
-            ))}
-          </div>
-        </aside>
+            <div className="wth-ai-badges" aria-label="Subra AI capabilities">
+              <span className="wth-ai-badge">Powered by Gemma 4</span>
+              <span className="wth-ai-badge">On-device privacy</span>
+              <span className="wth-ai-badge">Hydration coaching</span>
+            </div>
 
-        <div className="wth-content">
-          {SECTIONS.map((section) => (
-            <article id={section.id} key={section.id} className="wth-card">
-              <h2 className="wt-font-display">{section.title}</h2>
-              <p>{section.summary}</p>
-
-              <div className="wth-feature-list" role="list" aria-label={`${section.title} highlights`}>
-                {section.bullets.map((item) => (
-                  <div className="wth-feature-item" key={item} role="listitem">
-                    <span className="wth-dot" aria-hidden="true" />
-                    <span>{item}</span>
-                  </div>
-                ))}
+            <div className="wth-ai-points" role="list" aria-label="Subra AI highlights">
+              <div className="wth-ai-point" role="listitem">
+                <span className="wth-ai-dot" aria-hidden="true" />
+                <span><strong>More flexible than fixed screens:</strong> users can ask for custom hydration history or trend ranges that normal dashboards do not show by default.</span>
               </div>
+              <div className="wth-ai-point" role="listitem">
+                <span className="wth-ai-dot" aria-hidden="true" />
+                <span><strong>Built for privacy by default:</strong> after setup, Subra AI is designed to work on-device instead of sending personal hydration chats to cloud servers.</span>
+              </div>
+              <div className="wth-ai-point" role="listitem">
+                <span className="wth-ai-dot" aria-hidden="true" />
+                <span><strong>Practical daily coaching:</strong> reminder ideas, hydration habit suggestions, and intake guidance stay short, useful, and action-oriented.</span>
+              </div>
+            </div>
 
-              {section.image ? (
-                <div className="wth-shot">
-                  <figure>
-                    <Image src={section.image.src} alt={section.image.alt} width={1242} height={2688} sizes="(max-width: 860px) 100vw, 720px" />
-                    <figcaption>{section.image.caption}</figcaption>
-                  </figure>
+            <div className="wth-ai-note">
+              <strong>Real setup detail:</strong> Subra AI requires a one-time brain download of about 2.5 GB, then it can be exported, stored, and reused without repeating the same large download.
+            </div>
+          </div>
+
+          <div className="wth-ai-board" aria-label="Subra AI Hydration Coach preview">
+            <div className="wth-ai-head">
+              <div className="wth-ai-brand">
+                <div className="wth-ai-avatar">AI</div>
+                <div className="wth-ai-brand-copy">
+                  <strong>Subra AI</strong>
+                  <span>Your hydration coach with concise, practical guidance</span>
                 </div>
-              ) : null}
-            </article>
-          ))}
-
-          <div className="wth-faq">
-            <h3>Is this a good water reminder app for daily use?</h3>
-            <p>
-              Yes. It is built for practical daily tracking with quick drink logging, schedule-based hydration reminders,
-              and privacy-first local storage.
-            </p>
-          </div>
-
-          <div className="wth-bottom-cta">
-            <div>
-              <h2 className="wt-font-display">Ready To Build Better Hydration Habits?</h2>
-              <p>
-                Open the full guide for setup steps, then review hydration benefits to make your intake plan sustainable.
-              </p>
+              </div>
+              <div className="wth-ai-chip">Offline-ready after setup</div>
             </div>
-            <div className="wth-cta-row" style={{ marginTop: 0 }}>
-              <Link href="/watertracker/guide" className="wth-btn wth-btn-primary">
-                Open Guide <ChevronRight size={14} />
-              </Link>
-              <Link href="/watertracker/benefits" className="wth-btn wth-btn-secondary">Read Benefits</Link>
+
+            <div className="wth-ai-chat">
+              {AI_COACH_PROMPTS.map((item) => (
+                <div key={item.label} className="wth-ai-chat-turn">
+                  <div className="wth-ai-message user">{item.label}</div>
+                  <div className="wth-ai-message assistant">{item.reply}</div>
+                </div>
+              ))}
             </div>
-          </div>
 
-          <div className="wth-faq">
-            <h3>How is this different from a basic water tracker app?</h3>
-            <p>
-              Water Tracker N Reminder combines reminders, custom drinks, trend insights, backup support, widgets,
-              and on-device privacy controls in one app flow.
-            </p>
-          </div>
+            <div className="wth-ai-grid">
+              <div className="wth-ai-stat-card">
+                <strong>Gemma 4</strong>
+                <span>Engine behind Subra AI hydration guidance</span>
+              </div>
+              <div className="wth-ai-stat-card">
+                <strong>~2.5 GB</strong>
+                <span>One-time AI brain download before offline use</span>
+              </div>
+              <div className="wth-ai-stat-card">
+                <strong>Custom ranges</strong>
+                <span>Ask for views beyond fixed 7-day or 15-day trend screens</span>
+              </div>
+            </div>
 
-          <div className="wth-faq">
-            <h3>Need implementation-level walkthrough?</h3>
-            <p>
-              See the complete <Link href="/watertracker/guide" style={{ color: "var(--wt-navy-700)", fontWeight: 800 }}>WaterTracker guide</Link> to set goals,
-              reminders, drink types, and backup options from start to finish.
-            </p>
-          </div>
-
-          <div className="wth-faq" style={{ display: "flex", gap: 10, alignItems: "center" }}>
-            <Smartphone size={16} />
-            <p style={{ margin: 0 }}>
-              Looking for balanced hydration science? Read <Link href="/watertracker/benefits" style={{ color: "var(--wt-navy-700)", fontWeight: 800 }}>Benefits of Balanced Drinking</Link>.
-            </p>
-          </div>
-
-          <div className="wth-faq" style={{ display: "flex", gap: 10, alignItems: "center" }}>
-            <Cloud size={16} />
-            <p style={{ margin: 0 }}>
-              For backup and restore details, open the guide section dedicated to recovery flow and safe device migration.
-            </p>
-          </div>
-
-          <div className="wth-faq" style={{ display: "flex", gap: 10, alignItems: "center" }}>
-            <Paintbrush2 size={16} />
-            <p style={{ margin: 0 }}>
-              Personalization includes themes and appearance controls to match your routine and preference.
-            </p>
-          </div>
-
-          <div className="wth-faq" style={{ display: "flex", gap: 10, alignItems: "center" }}>
-            <LineChart size={16} />
-            <p style={{ margin: 0 }}>
-              Trend charts turn logs into insights, helping you see consistency and improve over time.
-            </p>
+            <div className="wth-ai-footer">
+              <div className="wth-ai-footer-copy">
+                <strong>Important:</strong> Subra AI supports hydration tracking and coaching, but it does not replace medical advice.
+              </div>
+              <div className="wth-ai-footer-pill">
+                Real app AI feature <ChevronRight size={14} />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section className="wth-gallery-hero" aria-labelledby="watertracker-gallery-title">
+        <div className="wth-gallery-shell">
+          <div className="wth-gallery-head">
+            <div className="wth-gallery-copy">
+              <div className="wth-gallery-kicker">Full App Showcase</div>
+              <h2 id="watertracker-gallery-title" className="wt-font-display wth-gallery-title">
+                Explore Water Tracker Screen By Screen
+              </h2>
+              <p className="wth-gallery-summary">
+                This final gallery brings together the full Water Tracker visual flow, from daily logging and reminders to trends,
+                privacy, customization, and backup features. Swipe horizontally to browse all showcase screens.
+              </p>
+            </div>
+            <div className="wth-gallery-meta">10 app screens</div>
+          </div>
+
+          <div className="wth-gallery-slider" aria-label="Water Tracker screenshot gallery">
+            <div className="wth-gallery-track">
+              {[...WATERTRACKER_SHOWCASE_SLIDES, ...WATERTRACKER_SHOWCASE_SLIDES].map((slide, index) => (
+                <article key={`${slide.src}-${index}`} className="wth-gallery-card" aria-hidden={index >= WATERTRACKER_SHOWCASE_SLIDES.length}>
+                  <figure>
+                    <Image
+                      src={slide.src}
+                      alt={slide.alt}
+                      width={1242}
+                      height={2688}
+                      sizes="(max-width: 860px) 72vw, 320px"
+                    />
+                    <figcaption className="wth-gallery-caption">
+                      <div>
+                        <strong>{slide.title}</strong>
+                        <span>Water Tracker</span>
+                      </div>
+                      <div className="wth-gallery-index">{(index % WATERTRACKER_SHOWCASE_SLIDES.length) + 1}</div>
+                    </figcaption>
+                  </figure>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
     </section>
   );
 }
