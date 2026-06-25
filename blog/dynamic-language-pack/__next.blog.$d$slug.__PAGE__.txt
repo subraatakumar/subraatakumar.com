@@ -1,8 +1,8 @@
 1:"$Sreact.fragment"
-7:I[22016,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
+7:I[22016,["/_next/static/chunks/18f38dbeee9f54d3.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
 b:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
 c:"$Sreact.suspense"
-e:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]
+e:I[21675,["/_next/static/chunks/18f38dbeee9f54d3.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]
 2:T1b2e,
         #blog-root .blog-post-wrap {
           max-width: 880px;
@@ -248,7 +248,7 @@ e:I[21675,["/_next/static/chunks/7c92e96509cd355e.js","/_next/static/chunks/ed0a
             padding-right: 16px;
           }
         }
-      0:{"buildId":"cP_BiS1YYqtBH1BNL-irs","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
+      0:{"buildId":"17p6A32H-yjullAO2oEwL","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
 8:T5680,<blockquote class="blog-md-quote">
 <p class="blog-md-p"><em>"What if your app only shipped one source language, but still understood every user in their preferred locale?"</em></p>
 </blockquote>
