@@ -38,6 +38,12 @@ const products = [
     tags: ["Node.js", "CLI"],
   },
   {
+    title: "Subra AI",
+    slug: "subra-ai",
+    desc: "A private, offline AI chat app powered by Google ML Kit and Gemma 4, with prompts and responses processed directly on your device.",
+    tags: ["On-device AI", "Gemma 4", "Google ML Kit", "Privacy-First"],
+  },
+  {
     title: "Water Tracker",
     slug: "watertracker",
     desc: "A hydration app built on offline-first architecture with biometric security, iCloud/Google Drive backup, freemium monetisation, and custom reminder systems.",
@@ -82,7 +88,7 @@ export default function ProjectsPage() {
 
       <h1 className="sk-page-heading">Products</h1>
       <p style={{ fontSize: "1.2rem", color: "#555", marginTop: 8, marginBottom: 0 }}>
-        A selection of apps, tools, and platforms I've built.
+        A selection of apps, tools, and platforms I&apos;ve built.
       </p>
       <div className="sk-squiggle" style={{ marginTop: 16 }} />
 
