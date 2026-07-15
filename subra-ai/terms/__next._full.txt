@@ -1,0 +1,347 @@
+1:"$Sreact.fragment"
+a:I[68027,[],"default"]
+:HL["/_next/static/chunks/679a7360d6b302b9.css","style"]
+:HL["/_next/static/chunks/0580d5d937213b49.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/a343f882a40d2cc9-s.p.71e1367e.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","style"]
+2:T19f5,
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+
+          body {
+            background: #fafaf7;
+            font-family: 'Caveat', cursive;
+            color: #1a1a2e;
+          }
+
+          /* ── Nav ── */
+          .sk-header {
+            background: #fff;
+            border-bottom: 2.5px solid #1a1a2e;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+          }
+          .sk-header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .sk-logo {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.55rem;
+            color: #1a1a2e;
+            text-decoration: none;
+            letter-spacing: 0.01em;
+          }
+          .sk-nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+          }
+          .sk-nav-links a {
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+            padding-bottom: 2px;
+          }
+          .sk-nav-links a:hover {
+            text-decoration: underline wavy #2563eb 2px;
+            text-underline-offset: 4px;
+          }
+          .sk-nav-mobile {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 14px;
+          }
+          .sk-nav-mobile ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+          }
+          .sk-nav-mobile a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+          }
+
+          /* ── Footer ── */
+          .sk-footer {
+            border-top: 2.5px solid #1a1a2e;
+            background: #fff;
+            padding: 24px;
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+          }
+
+          /* ── Shared section ── */
+          .sk-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+          }
+          .sk-page-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            margin-bottom: 8px;
+            line-height: 1.1;
+          }
+          .sk-section-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.9rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+          .sk-section-heading::after {
+            content: '';
+            flex: 1;
+            border-top: 2px dashed #9ca3af;
+          }
+
+          /* ── Squiggle divider ── */
+          .sk-squiggle {
+            width: 100%;
+            height: 8px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 4 Q5 0 10 4 Q15 8 20 4 Q25 0 30 4 Q35 8 40 4' stroke='%239ca3af' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") repeat-x center;
+            opacity: 0.55;
+            margin: 36px 0;
+          }
+
+          /* ── Sketch button ── */
+          .sk-btn {
+            display: inline-block;
+            padding: 10px 26px;
+            background: #2563eb;
+            color: #fff;
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 3px 3px 0 #1a1a2e;
+            transition: transform 0.1s, box-shadow 0.1s;
+          }
+          .sk-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 #1a1a2e;
+          }
+          .sk-btn-ghost {
+            background: transparent;
+            color: #1a1a2e;
+            box-shadow: 3px 3px 0 #9ca3af;
+          }
+          .sk-btn-ghost:hover {
+            box-shadow: 5px 5px 0 #9ca3af;
+          }
+
+          /* ── Tag chip ── */
+          .sk-tag {
+            display: inline-block;
+            padding: 3px 13px;
+            border: 2px solid #1a1a2e;
+            border-radius: 2px;
+            font-size: 1rem;
+            font-weight: 600;
+            background: #fff;
+            margin: 3px;
+          }
+          .sk-tag.active {
+            background: #2563eb;
+            color: #fff;
+          }
+
+          /* ── Card ── */
+          .sk-card {
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 5px 5px 0 #1a1a2e;
+            padding: 24px;
+            transition: transform 0.15s, box-shadow 0.15s;
+          }
+          .sk-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0 #1a1a2e;
+          }
+
+          /* ── Stat card ── */
+          .sk-stat {
+            flex: 1;
+            min-width: 130px;
+            text-align: center;
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 4px 4px 0 #1a1a2e;
+            padding: 20px 12px;
+          }
+          .sk-stat .num {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            color: #2563eb;
+            line-height: 1;
+          }
+          .sk-stat .lbl {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 4px;
+          }
+
+          /* ── Image placeholder ── */
+          .sk-img {
+            width: 100%;
+            height: 160px;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            background: #f3f4f6;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 16px;
+          }
+          .sk-img::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+              linear-gradient(to bottom right, transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px)),
+              linear-gradient(to bottom left,  transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px));
+          }
+
+          @media (max-width: 640px) {
+            .sk-nav-links { display: none; }
+            .sk-nav-mobile { display: block; }
+            .sk-page-heading { font-size: 2.2rem; }
+          }
+        0:{"P":null,"b":"S3Z6mDCMipTyCJ2U7KL1L","c":["","subra-ai","terms",""],"q":"","i":false,"f":[[["",{"children":["subra-ai",{"children":["terms",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/679a7360d6b302b9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/18f38dbeee9f54d3.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+b:I[22016,["/_next/static/chunks/18f38dbeee9f54d3.js"],""]
+c:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+d:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+1a:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"ViewportBoundary"]
+1c:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"MetadataBoundary"]
+1d:"$Sreact.suspense"
+3:["$","header",null,{"className":"sk-header","children":[["$","div",null,{"className":"sk-header-inner","children":[["$","$Lb",null,{"href":"/","className":"sk-logo","children":"SKD_"}],["$","nav",null,{"aria-label":"Primary","children":["$","ul",null,{"className":"sk-nav-links","children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]]}],["$","div",null,{"className":"sk-nav-mobile","children":["$","nav",null,{"aria-label":"Mobile","children":["$","ul",null,{"children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]}]]}]
+4:["$","main",null,{"style":{"width":"100%"},"children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
+5:["$","footer",null,{"className":"sk-footer","children":["© ",2026," Subrata Kumar Das. All rights reserved. ·"," ",["$","$Lb",null,{"href":"/for-ai","children":"For AI/Crawlers"}]]}]
+e:Tb26,
+        body:has(.sa-shell) .sk-header,
+        body:has(.sa-shell) .sk-footer { display: none !important; }
+        body:has(.sa-shell) { background: #080b10 !important; }
+        .sa-shell {
+          --sa-bg: #080b10;
+          --sa-panel: #10151d;
+          --sa-panel-2: #151c26;
+          --sa-line: rgba(255,255,255,.10);
+          --sa-text: #f5f7fa;
+          --sa-muted: #a2adbb;
+          --sa-lime: #b7f34a;
+          --sa-cyan: #56d7df;
+          min-height: 100vh;
+          color: var(--sa-text);
+          background:
+            radial-gradient(circle at 83% 8%, rgba(86,215,223,.12), transparent 26rem),
+            radial-gradient(circle at 12% 28%, rgba(183,243,74,.08), transparent 24rem),
+            var(--sa-bg);
+        }
+        .sa-shell * { box-sizing: border-box; }
+        .sa-display { font-family: 'Manrope', 'Manrope Fallback'; }
+        .sa-nav {
+          position: sticky; top: 0; z-index: 50;
+          background: rgba(8,11,16,.82); backdrop-filter: blur(18px);
+          border-bottom: 1px solid var(--sa-line);
+        }
+        .sa-nav-inner, .sa-footer-inner {
+          max-width: 1180px; margin: 0 auto; padding: 0 28px;
+          display: flex; align-items: center; justify-content: space-between; gap: 20px;
+        }
+        .sa-nav-inner { min-height: 72px; }
+        .sa-brand { display: inline-flex; align-items: center; gap: 11px; color: var(--sa-text); text-decoration: none; }
+        .sa-mark {
+          width: 38px; height: 38px; display: grid; place-items: center; border-radius: 12px;
+          color: #0a0d10; background: linear-gradient(135deg, var(--sa-lime), var(--sa-cyan));
+          box-shadow: 0 0 30px rgba(183,243,74,.18);
+        }
+        .sa-brand-name { font-weight: 800; letter-spacing: -.025em; font-size: 18px; }
+        .sa-nav-links, .sa-footer-links { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+        .sa-nav-links a, .sa-footer-links a {
+          color: var(--sa-muted); text-decoration: none; font-size: 13px; font-weight: 600;
+          padding: 9px 12px; border-radius: 9px;
+        }
+        .sa-nav-links a:hover, .sa-footer-links a:hover { color: var(--sa-text); background: rgba(255,255,255,.06); }
+        .sa-main { min-height: calc(100vh - 150px); }
+        .sa-footer { border-top: 1px solid var(--sa-line); background: rgba(7,10,14,.84); }
+        .sa-footer-inner { min-height: 78px; }
+        .sa-footer-copy { color: #778291; font-size: 12px; }
+        @media (max-width: 720px) {
+          .sa-nav-inner { min-height: 62px; padding: 0 18px; }
+          .sa-nav-links a:not(:last-child) { display: none; }
+          .sa-footer-inner { padding: 22px 18px; align-items: flex-start; flex-direction: column; }
+          .sa-footer-links { gap: 2px; }
+          .sa-footer-links a { padding-left: 0; padding-right: 14px; }
+        }
+      6:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0580d5d937213b49.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","div",null,{"className":"sa-shell inter_e2473468-module__7NREva__className","children":[["$","style",null,{"children":"$e"}],["$","header",null,{"className":"sa-nav","children":["$","div",null,{"className":"sa-nav-inner","children":[["$","$Lb",null,{"href":"/subra-ai","className":"sa-brand","aria-label":"Subra AI home","children":[["$","span",null,{"className":"sa-mark","children":"$Lf"}],"$L10"]}],"$L11"]}]}],"$L12","$L13"]}]]}]
+7:["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+14:Tba1,
+        .sa-legal { max-width: 1160px; margin: 0 auto; padding: 70px 28px 100px; }
+        .sa-legal-back { display: inline-flex; align-items: center; gap: 7px; color: var(--sa-muted); text-decoration: none; font-size: 13px; font-weight: 600; margin-bottom: 42px; }
+        .sa-legal-back:hover { color: var(--sa-text); }
+        .sa-legal-header { max-width: 820px; margin-bottom: 58px; }
+        .sa-legal-eyebrow { display: flex; align-items: center; gap: 8px; color: var(--sa-lime); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; margin-bottom: 18px; }
+        .sa-legal h1 { font-size: clamp(42px, 6vw, 70px); line-height: 1; letter-spacing: -.055em; margin: 0 0 22px; }
+        .sa-legal-intro { color: var(--sa-muted); font-size: 18px; line-height: 1.7; margin: 0; }
+        .sa-legal-date { color: #707c8b; font-size: 12px; margin-top: 20px; }
+        .sa-legal-grid { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 58px; align-items: start; }
+        .sa-legal-nav { position: sticky; top: 100px; display: grid; gap: 3px; }
+        .sa-legal-nav-label { color: #687482; font-size: 10px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; margin: 0 0 10px 12px; }
+        .sa-legal-nav a { color: #98a4b3; text-decoration: none; font-size: 12px; line-height: 1.35; padding: 9px 12px; border-radius: 9px; }
+        .sa-legal-nav a:hover { color: var(--sa-text); background: rgba(255,255,255,.05); }
+        .sa-legal-content { min-width: 0; }
+        .sa-legal-section { scroll-margin-top: 104px; padding: 0 0 42px; margin-bottom: 42px; border-bottom: 1px solid var(--sa-line); }
+        .sa-legal-section:last-child { border-bottom: 0; }
+        .sa-legal-section h2 { font-size: 24px; letter-spacing: -.025em; margin: 0 0 18px; }
+        .sa-legal-section p, .sa-legal-section li { color: var(--sa-muted); font-size: 14px; line-height: 1.78; }
+        .sa-legal-section p { margin: 0 0 15px; }
+        .sa-legal-section ul { padding-left: 20px; margin: 12px 0 18px; }
+        .sa-legal-section li { margin-bottom: 8px; padding-left: 4px; }
+        .sa-legal-section strong { color: #e5eaf0; }
+        .sa-legal-note { padding: 18px 20px; border: 1px solid rgba(183,243,74,.19); border-radius: 14px; background: rgba(183,243,74,.055); color: #cdd6df !important; }
+        .sa-legal-contact { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 24px; border: 1px solid var(--sa-line); border-radius: 17px; background: var(--sa-panel); }
+        .sa-legal-contact a { color: var(--sa-lime); text-decoration: none; font-size: 13px; font-weight: 700; word-break: break-all; }
+        @media (max-width: 760px) { .sa-legal { padding: 48px 18px 76px; } .sa-legal-grid { grid-template-columns: 1fr; gap: 20px; } .sa-legal-nav { display: none; } .sa-legal-header { margin-bottom: 44px; } .sa-legal-contact { align-items: flex-start; flex-direction: column; } }
+      8:["$","$1","c",{"children":[[["$","style",null,{"children":"$14"}],["$","article",null,{"className":"sa-legal","children":[["$","$Lb",null,{"href":"/subra-ai","className":"sa-legal-back","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":15,"height":15,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left","aria-hidden":"true","children":["$L15","$L16","$undefined"]}]," Back to Subra AI"]}],"$L17","$L18"]}]],null,"$L19"]}]
+9:["$","$1","h",{"children":[null,["$","$L1a",null,{"children":"$L1b"}],["$","div",null,{"hidden":true,"children":["$","$L1c",null,{"children":["$","$1d",null,{"name":"Next.Metadata","children":"$L1e"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+28:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+f:["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":20,"height":20,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2.4,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-message-square-text","aria-hidden":"true","children":[["$","path","18887p",{"d":"M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"}],["$","path","1twpyw",{"d":"M7 11h10"}],["$","path","d9of3u",{"d":"M7 15h6"}],["$","path","af5zfr",{"d":"M7 7h8"}],"$undefined"]}]
+10:["$","span",null,{"className":"sa-brand-name sa-display","children":"Subra AI"}]
+11:["$","nav",null,{"className":"sa-nav-links","aria-label":"Subra AI pages","children":[["$","$Lb",null,{"href":"/subra-ai","children":"Overview"}],["$","$Lb",null,{"href":"/subra-ai/privacy-policy","children":"Privacy"}],["$","$Lb",null,{"href":"/subra-ai/terms","children":"Terms"}],["$","$Lb",null,{"href":"/products","children":"All products"}]]}]
+12:["$","main",null,{"className":"sa-main","children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}]
+13:["$","footer",null,{"className":"sa-footer","children":["$","div",null,{"className":"sa-footer-inner","children":[["$","p",null,{"className":"sa-footer-copy","children":["© ",2026," Subra AI · Private intelligence, on your device."]}],["$","nav",null,{"className":"sa-footer-links","aria-label":"Subra AI footer links","children":[["$","$Lb",null,{"href":"/subra-ai/privacy-policy","children":"Privacy Policy"}],["$","$Lb",null,{"href":"/subra-ai/terms","children":"Terms"}],["$","$Lb",null,{"href":"/contact","children":"Support"}]]}]]}]}]
+15:["$","path","1l729n",{"d":"m12 19-7-7 7-7"}]
+16:["$","path","x3x0zl",{"d":"M19 12H5"}]
+17:["$","header",null,{"className":"sa-legal-header","children":[["$","div",null,{"className":"sa-legal-eyebrow","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":14,"height":14,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-shield-check","aria-hidden":"true","children":[["$","path","oel41y",{"d":"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"}],["$","path","dzmm74",{"d":"m9 12 2 2 4-4"}],"$undefined"]}]," ","Use Subra AI responsibly"]}],["$","h1",null,{"className":"sa-display","children":"Terms of Use"}],["$","p",null,{"className":"sa-legal-intro","children":"These terms explain what you can expect from an offline AI assistant—and what Subra AI expects from you."}],["$","p",null,{"className":"sa-legal-date","children":"Effective and last updated: July 15, 2026"}]]}]
+18:["$","div",null,{"className":"sa-legal-grid","children":[["$","nav",null,{"className":"sa-legal-nav","aria-label":"Terms of Use sections","children":[["$","p",null,{"className":"sa-legal-nav-label","children":"On this page"}],[["$","a","acceptance",{"href":"#acceptance","children":[1,". ","Acceptance of these terms"]}],["$","a","service",{"href":"#service","children":[2,". ","What Subra AI provides"]}],["$","a","ai-output",{"href":"#ai-output","children":[3,". ","AI output and accuracy"]}],["$","a","use",{"href":"#use","children":[4,". ","Responsible use"]}],["$","a","content",{"href":"#content","children":[5,". ","Your content and local data"]}],["$","a","third-party",{"href":"#third-party","children":[6,". ","Third-party technology"]}],["$","a","updates",{"href":"#updates","children":[7,". ","Updates and availability"]}],["$","a","ip",{"href":"#ip","children":[8,". ","Intellectual property"]}],["$","a","disclaimers",{"href":"#disclaimers","children":[9,". ","Disclaimers and liability"]}],["$","a","termination",{"href":"#termination","children":[10,". ","Termination"]}],["$","a","law",{"href":"#law","children":[11,". ","Governing terms and changes"]}]]]}],["$","div",null,{"className":"sa-legal-content","children":[[["$","section","acceptance",{"id":"acceptance","className":"sa-legal-section","children":[["$","h2",null,{"className":"sa-display","children":"Acceptance of these terms"}],["$","p",null,{"children":"These Terms of Use form an agreement between you and the developer of Subra AI. By downloading, installing, or using the app, you agree to these terms and the Subra AI Privacy Policy. If you do not agree, do not use the app."}]]}],["$","section","service",{"id":"service","className":"sa-legal-section","children":[["$","h2",null,{"className":"sa-display","children":"What Subra AI provides"}],[["$","p",null,{"children":"Subra AI provides a general-purpose chat interface powered by an on-device language model using Google ML Kit and Gemma 4. Model availability, speed, and capabilities depend on your device, operating system, available storage, and app version."}],["$","p",null,{"children":"An internet connection may be required for installation, updates, and model downloads, although the core inference experience is intended to work offline after setup."}]]]}],["$","section","ai-output",{"id":"ai-output","className":"sa-legal-section","children":[["$","h2",null,{"className":"sa-display","children":"AI output and accuracy"}],[["$","p",null,{"className":"sa-legal-note","children":[["$","strong",null,{"children":"AI-generated responses may be incomplete, outdated, inaccurate, or inappropriate."}]," Always review important output and verify facts using reliable sources."]}],["$","p",null,{"children":"Subra AI is not a substitute for professional medical, legal, financial, mental-health, safety, or other specialist advice. Do not rely on the app for emergencies, diagnoses, treatment decisions, legal deadlines, financial transactions, or decisions where an error could cause harm."}]]]}],["$","section","use",{"id":"use","className":"sa-legal-section","children":[["$","h2",null,{"className":"sa-display","children":"Responsible use"}],[["$","p",null,{"children":"You may use Subra AI for lawful, personal purposes. You must not use the app to:"}],["$","ul",null,{"children":[["$","li",null,{"children":"violate applicable laws or another person's rights;"}],["$","li",null,{"children":"create, facilitate, or distribute harmful, abusive, exploitative, or fraudulent content;"}],["$","li",null,{"children":"develop malware, bypass security, or gain unauthorized access to devices or systems;"}],["$","li",null,{"children":"misrepresent AI output as verified professional advice or as a human-authored statement where disclosure is required; or"}],["$","li",null,{"children":"reverse engineer or redistribute protected components except where applicable law or their licenses expressly permits it."}]]}]]]}],["$","section","content",{"id":"content","className":"sa-legal-section","children":["$L1f","$L20"]}],"$L21","$L22","$L23","$L24","$L25","$L26"],"$L27"]}]]}]
+19:["$","$L28",null,{"children":["$","$1d",null,{"name":"Next.MetadataOutlet","children":"$@29"}]}]
+1f:["$","h2",null,{"className":"sa-display","children":"Your content and local data"}]
+20:[["$","p",null,{"children":"You are responsible for the prompts and other material you enter and for how you use generated output. Do not enter content you do not have the right to use. Because chats are stored locally, you are responsible for securing your device and managing or deleting your conversation history."}],["$","p",null,{"children":"Subra AI does not claim ownership of the prompts you enter. Subject to applicable law and third-party rights, you may use generated output at your own risk."}]]
+21:["$","section","third-party",{"id":"third-party","className":"sa-legal-section","children":[["$","h2",null,{"className":"sa-display","children":"Third-party technology"}],["$","p",null,{"children":"The app includes or relies on third-party technology, including Google ML Kit and Gemma. Those components may be governed by separate licenses, acceptable-use terms, and notices. Google, ML Kit, Gemma, and related marks belong to their respective owners. Their inclusion does not imply endorsement of Subra AI."}]]}]
+22:["$","section","updates",{"id":"updates","className":"sa-legal-section","children":[["$","h2",null,{"className":"sa-display","children":"Updates and availability"}],["$","p",null,{"children":"We may add, change, suspend, or discontinue features, model versions, or device support. We do not guarantee that the app will always be available, error-free, compatible with every device, or capable of producing a response to every prompt."}]]}]
+23:["$","section","ip",{"id":"ip","className":"sa-legal-section","children":[["$","h2",null,{"className":"sa-display","children":"Intellectual property"}],["$","p",null,{"children":"Subra AI's app interface, branding, original code, and documentation are protected by applicable intellectual-property laws. These terms grant you a limited, revocable, non-exclusive, non-transferable license to use the app for its intended purpose. They do not transfer ownership of the app or third-party components."}]]}]
+24:["$","section","disclaimers",{"id":"disclaimers","className":"sa-legal-section","children":[["$","h2",null,{"className":"sa-display","children":"Disclaimers and liability"}],[["$","p",null,{"children":"To the maximum extent permitted by law, the app is provided “as is” and “as available,” without warranties of accuracy, fitness for a particular purpose, non-infringement, or uninterrupted operation."}],["$","p",null,{"children":"To the maximum extent permitted by law, the developer will not be liable for indirect, incidental, special, consequential, or punitive damages, loss of data, lost profits, or harm resulting from your use of or reliance on the app or its output. Nothing in these terms excludes liability that cannot legally be excluded."}]]]}]
+25:["$","section","termination",{"id":"termination","className":"sa-legal-section","children":[["$","h2",null,{"className":"sa-display","children":"Termination"}],["$","p",null,{"children":"You may stop using Subra AI at any time by uninstalling it. We may restrict access to future versions or services if you materially violate these terms, subject to applicable law. Provisions that by their nature should survive termination—including disclaimers, liability limits, and intellectual-property provisions—will survive."}]]}]
+26:["$","section","law",{"id":"law","className":"sa-legal-section","children":[["$","h2",null,{"className":"sa-display","children":"Governing terms and changes"}],["$","p",null,{"children":"Applicable mandatory consumer laws remain unaffected. We may update these terms as the app or legal requirements change. Continuing to use the app after revised terms take effect means you accept them, where permitted by law."}]]}]
+27:["$","div",null,{"className":"sa-legal-contact","children":[["$","div",null,{"children":[["$","strong",null,{"children":"Questions about this document?"}],["$","p",null,{"style":{"margin":"5px 0 0","color":"var(--sa-muted)","fontSize":13},"children":"Contact the Subra AI developer."}]]}],["$","a",null,{"href":"mailto:subraatakumar+subraai@gmail.com","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":14,"height":14,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-mail","aria-hidden":"true","style":{"verticalAlign":"middle","marginRight":7},"children":[["$","path","132q7q",{"d":"m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"}],["$","rect","izxlao",{"x":"2","y":"4","width":"20","height":"16","rx":"2"}],"$undefined"]}],"subraatakumar+subraai@gmail.com"]}]]}]
+1b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+2a:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"IconMark"]
+1e:[["$","title","0",{"children":"Terms of Use | Subra AI | Subrata Kumar Das"}],["$","meta","1",{"name":"description","content":"Terms governing use of the Subra AI offline, on-device AI chat application."}],["$","meta","2",{"name":"keywords","content":"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"}],["$","link","3",{"rel":"canonical","href":"https://subraatakumar.com/subra-ai/terms/"}],["$","meta","4",{"property":"og:title","content":"Terms of Use | Subra AI"}],["$","meta","5",{"property":"og:description","content":"Terms for using the Subra AI offline chat app."}],["$","meta","6",{"property":"og:url","content":"https://subraatakumar.com/subra-ai/terms/"}],["$","meta","7",{"property":"og:type","content":"website"}],["$","meta","8",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","9",{"name":"twitter:title","content":"Subrata Kumar Das"}],["$","meta","10",{"name":"twitter:description","content":"Tech Lead and React Native Architect building scalable mobile systems."}],["$","meta","11",{"name":"twitter:image","content":"https://subraatakumar.com/images/interview.png"}],["$","link","12",{"rel":"icon","href":"/favicon.ico?favicon.750fd6b3.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L2a","13",{}]]
+29:null
