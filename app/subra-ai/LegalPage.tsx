@@ -40,7 +40,7 @@ export default function LegalPage({ eyebrow, title, intro, sections }: { eyebrow
           <div className="sa-legal-eyebrow"><ShieldCheck size={14} /> {eyebrow}</div>
           <h1 className="sa-display">{title}</h1>
           <p className="sa-legal-intro">{intro}</p>
-          <p className="sa-legal-date">Effective and last updated: July 15, 2026</p>
+          <p className="sa-legal-date">Effective and last updated: July 17, 2026</p>
         </header>
         <div className="sa-legal-grid">
           <nav className="sa-legal-nav" aria-label={`${title} sections`}><p className="sa-legal-nav-label">On this page</p>{sections.map((section, i) => <a href={`#${section.id}`} key={section.id}>{i + 1}. {section.title}</a>)}</nav>
