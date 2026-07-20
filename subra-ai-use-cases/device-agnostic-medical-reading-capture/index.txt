@@ -1,0 +1,404 @@
+1:"$Sreact.fragment"
+a:I[68027,[],"default"]
+:HL["/_next/static/chunks/679a7360d6b302b9.css","style"]
+:HL["/_next/static/chunks/0580d5d937213b49.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/a343f882a40d2cc9-s.p.71e1367e.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","style"]
+2:T19f5,
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+
+          body {
+            background: #fafaf7;
+            font-family: 'Caveat', cursive;
+            color: #1a1a2e;
+          }
+
+          /* ── Nav ── */
+          .sk-header {
+            background: #fff;
+            border-bottom: 2.5px solid #1a1a2e;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+          }
+          .sk-header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .sk-logo {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.55rem;
+            color: #1a1a2e;
+            text-decoration: none;
+            letter-spacing: 0.01em;
+          }
+          .sk-nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+          }
+          .sk-nav-links a {
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+            padding-bottom: 2px;
+          }
+          .sk-nav-links a:hover {
+            text-decoration: underline wavy #2563eb 2px;
+            text-underline-offset: 4px;
+          }
+          .sk-nav-mobile {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 14px;
+          }
+          .sk-nav-mobile ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+          }
+          .sk-nav-mobile a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+          }
+
+          /* ── Footer ── */
+          .sk-footer {
+            border-top: 2.5px solid #1a1a2e;
+            background: #fff;
+            padding: 24px;
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+          }
+
+          /* ── Shared section ── */
+          .sk-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+          }
+          .sk-page-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            margin-bottom: 8px;
+            line-height: 1.1;
+          }
+          .sk-section-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.9rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+          .sk-section-heading::after {
+            content: '';
+            flex: 1;
+            border-top: 2px dashed #9ca3af;
+          }
+
+          /* ── Squiggle divider ── */
+          .sk-squiggle {
+            width: 100%;
+            height: 8px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 4 Q5 0 10 4 Q15 8 20 4 Q25 0 30 4 Q35 8 40 4' stroke='%239ca3af' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") repeat-x center;
+            opacity: 0.55;
+            margin: 36px 0;
+          }
+
+          /* ── Sketch button ── */
+          .sk-btn {
+            display: inline-block;
+            padding: 10px 26px;
+            background: #2563eb;
+            color: #fff;
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 3px 3px 0 #1a1a2e;
+            transition: transform 0.1s, box-shadow 0.1s;
+          }
+          .sk-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 #1a1a2e;
+          }
+          .sk-btn-ghost {
+            background: transparent;
+            color: #1a1a2e;
+            box-shadow: 3px 3px 0 #9ca3af;
+          }
+          .sk-btn-ghost:hover {
+            box-shadow: 5px 5px 0 #9ca3af;
+          }
+
+          /* ── Tag chip ── */
+          .sk-tag {
+            display: inline-block;
+            padding: 3px 13px;
+            border: 2px solid #1a1a2e;
+            border-radius: 2px;
+            font-size: 1rem;
+            font-weight: 600;
+            background: #fff;
+            margin: 3px;
+          }
+          .sk-tag.active {
+            background: #2563eb;
+            color: #fff;
+          }
+
+          /* ── Card ── */
+          .sk-card {
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 5px 5px 0 #1a1a2e;
+            padding: 24px;
+            transition: transform 0.15s, box-shadow 0.15s;
+          }
+          .sk-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0 #1a1a2e;
+          }
+
+          /* ── Stat card ── */
+          .sk-stat {
+            flex: 1;
+            min-width: 130px;
+            text-align: center;
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 4px 4px 0 #1a1a2e;
+            padding: 20px 12px;
+          }
+          .sk-stat .num {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            color: #2563eb;
+            line-height: 1;
+          }
+          .sk-stat .lbl {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 4px;
+          }
+
+          /* ── Image placeholder ── */
+          .sk-img {
+            width: 100%;
+            height: 160px;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            background: #f3f4f6;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 16px;
+          }
+          .sk-img::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+              linear-gradient(to bottom right, transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px)),
+              linear-gradient(to bottom left,  transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px));
+          }
+
+          @media (max-width: 640px) {
+            .sk-nav-links { display: none; }
+            .sk-nav-mobile { display: block; }
+            .sk-page-heading { font-size: 2.2rem; }
+          }
+        0:{"P":null,"b":"TfqsxNqlgkyhpIwysgJPj","c":["","subra-ai-use-cases","device-agnostic-medical-reading-capture",""],"q":"","i":false,"f":[[["",{"children":["subra-ai-use-cases",{"children":["device-agnostic-medical-reading-capture",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/679a7360d6b302b9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/18f38dbeee9f54d3.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+b:I[22016,["/_next/static/chunks/18f38dbeee9f54d3.js","/_next/static/chunks/d87b716920d553cc.js"],""]
+c:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+d:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+19:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"ViewportBoundary"]
+1b:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"MetadataBoundary"]
+1c:"$Sreact.suspense"
+3:["$","header",null,{"className":"sk-header","children":[["$","div",null,{"className":"sk-header-inner","children":[["$","$Lb",null,{"href":"/","className":"sk-logo","children":"SKD_"}],["$","nav",null,{"aria-label":"Primary","children":["$","ul",null,{"className":"sk-nav-links","children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]]}],["$","div",null,{"className":"sk-nav-mobile","children":["$","nav",null,{"aria-label":"Mobile","children":["$","ul",null,{"children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]}]]}]
+4:["$","main",null,{"style":{"width":"100%"},"children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
+5:["$","footer",null,{"className":"sk-footer","children":["© ",2026," Subrata Kumar Das. All rights reserved. ·"," ",["$","$Lb",null,{"href":"/for-ai","children":"For AI/Crawlers"}]]}]
+e:Tb26,
+        body:has(.sa-shell) .sk-header,
+        body:has(.sa-shell) .sk-footer { display: none !important; }
+        body:has(.sa-shell) { background: #080b10 !important; }
+        .sa-shell {
+          --sa-bg: #080b10;
+          --sa-panel: #10151d;
+          --sa-panel-2: #151c26;
+          --sa-line: rgba(255,255,255,.10);
+          --sa-text: #f5f7fa;
+          --sa-muted: #a2adbb;
+          --sa-lime: #b7f34a;
+          --sa-cyan: #56d7df;
+          min-height: 100vh;
+          color: var(--sa-text);
+          background:
+            radial-gradient(circle at 83% 8%, rgba(86,215,223,.12), transparent 26rem),
+            radial-gradient(circle at 12% 28%, rgba(183,243,74,.08), transparent 24rem),
+            var(--sa-bg);
+        }
+        .sa-shell * { box-sizing: border-box; }
+        .sa-display { font-family: 'Manrope', 'Manrope Fallback'; }
+        .sa-nav {
+          position: sticky; top: 0; z-index: 50;
+          background: rgba(8,11,16,.82); backdrop-filter: blur(18px);
+          border-bottom: 1px solid var(--sa-line);
+        }
+        .sa-nav-inner, .sa-footer-inner {
+          max-width: 1180px; margin: 0 auto; padding: 0 28px;
+          display: flex; align-items: center; justify-content: space-between; gap: 20px;
+        }
+        .sa-nav-inner { min-height: 72px; }
+        .sa-brand { display: inline-flex; align-items: center; gap: 11px; color: var(--sa-text); text-decoration: none; }
+        .sa-mark {
+          width: 38px; height: 38px; display: grid; place-items: center; border-radius: 12px;
+          color: #0a0d10; background: linear-gradient(135deg, var(--sa-lime), var(--sa-cyan));
+          box-shadow: 0 0 30px rgba(183,243,74,.18);
+        }
+        .sa-brand-name { font-weight: 800; letter-spacing: -.025em; font-size: 18px; }
+        .sa-nav-links, .sa-footer-links { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+        .sa-nav-links a, .sa-footer-links a {
+          color: var(--sa-muted); text-decoration: none; font-size: 13px; font-weight: 600;
+          padding: 9px 12px; border-radius: 9px;
+        }
+        .sa-nav-links a:hover, .sa-footer-links a:hover { color: var(--sa-text); background: rgba(255,255,255,.06); }
+        .sa-main { min-height: calc(100vh - 150px); }
+        .sa-footer { border-top: 1px solid var(--sa-line); background: rgba(7,10,14,.84); }
+        .sa-footer-inner { min-height: 78px; }
+        .sa-footer-copy { color: #778291; font-size: 12px; }
+        @media (max-width: 720px) {
+          .sa-nav-inner { min-height: 62px; padding: 0 18px; }
+          .sa-nav-links a:not(:last-child) { display: none; }
+          .sa-footer-inner { padding: 22px 18px; align-items: flex-start; flex-direction: column; }
+          .sa-footer-links { gap: 2px; }
+          .sa-footer-links a { padding-left: 0; padding-right: 14px; }
+        }
+      6:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0580d5d937213b49.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","div",null,{"className":"sa-shell inter_e2473468-module__7NREva__className","children":[["$","style",null,{"children":"$e"}],["$","header",null,{"className":"sa-nav","children":["$","div",null,{"className":"sa-nav-inner","children":[["$","$Lb",null,{"href":"/subra-ai","className":"sa-brand","aria-label":"Subra AI home","children":[["$","span",null,{"className":"sa-mark","children":"$Lf"}],"$L10"]}],"$L11"]}]}],"$L12","$L13"]}]]}]
+7:["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+14:T2ad4,
+        .uc-article { overflow: hidden; }
+        .uc-wrap { max-width: 1120px; margin: 0 auto; padding-inline: 28px; }
+        .uc-hero { padding: 72px 0 68px; border-bottom: 1px solid var(--sa-line); }
+        .uc-back { display: inline-flex; align-items: center; gap: 8px; color: var(--sa-muted); text-decoration: none; font-size: 13px; font-weight: 700; margin-bottom: 54px; }
+        .uc-back:hover { color: var(--sa-text); }
+        .uc-kicker { display: flex; align-items: center; gap: 10px; color: var(--sa-cyan); font-size: 12px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
+        .uc-hero h1 { max-width: 980px; font-size: clamp(48px, 7vw, 82px); line-height: .99; letter-spacing: -.062em; margin: 20px 0 26px; }
+        .uc-deck { max-width: 780px; color: #b2bdc9; font-size: 20px; line-height: 1.65; margin: 0; }
+        .uc-meta { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 32px; }
+        .uc-meta span { display: inline-flex; align-items: center; gap: 7px; padding: 8px 10px; border: 1px solid var(--sa-line); border-radius: 9px; color: #9ca8b6; font-size: 11px; font-weight: 700; }
+        .uc-figure { margin: 38px 0 0; }
+        .uc-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--sa-line); border-radius: 22px; background: #05070a; }
+        .uc-figure figcaption { display: flex; align-items: flex-start; gap: 9px; color: #7f8b99; font-size: 11px; line-height: 1.55; margin-top: 12px; }
+        .uc-figure figcaption:before { content: ""; width: 6px; height: 6px; flex: 0 0 auto; margin-top: 5px; border-radius: 50%; background: var(--sa-lime); }
+        .uc-hero-figure { margin-top: 42px; }
+        .uc-section-figure { margin: 34px 0; }
+        .uc-architecture-figure img { border-color: rgba(86,215,223,.22); }
+        .uc-mobile-figure { max-width: 430px; margin: 0 auto; }
+        .uc-lead-card { display: grid; grid-template-columns: 1.2fr .8fr; gap: 60px; margin-top: 58px; padding: 38px; border: 1px solid rgba(183,243,74,.22); border-radius: 24px; background: linear-gradient(135deg, rgba(183,243,74,.08), rgba(86,215,223,.035)); }
+        .uc-lead-card blockquote { font-family: inherit; font-size: clamp(25px, 3vw, 36px); line-height: 1.25; letter-spacing: -.035em; margin: 0; }
+        .uc-lead-card p { color: var(--sa-muted); font-size: 14px; line-height: 1.75; margin: 0; }
+        .uc-section { padding: 92px 0; border-bottom: 1px solid var(--sa-line); }
+        .uc-section-grid { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 76px; }
+        .uc-side-label { position: sticky; top: 104px; align-self: start; }
+        .uc-number { color: var(--sa-lime); font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+        .uc-side-label h2 { font-size: 27px; line-height: 1.15; letter-spacing: -.035em; margin: 12px 0 0; }
+        .uc-copy { color: #b4beca; font-size: 16px; line-height: 1.82; }
+        .uc-copy > p:first-child { margin-top: 0; }
+        .uc-copy h3 { color: var(--sa-text); font-size: 26px; line-height: 1.2; letter-spacing: -.03em; margin: 42px 0 14px; }
+        .uc-copy strong { color: #edf1f5; }
+        .uc-pullquote { margin: 34px 0; padding: 24px 26px; border-left: 3px solid var(--sa-cyan); color: #e9eef3; background: rgba(86,215,223,.045); font-size: 20px; line-height: 1.5; }
+        .uc-risk-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 28px; }
+        .uc-risk { padding: 22px; border: 1px solid var(--sa-line); border-radius: 16px; background: rgba(255,255,255,.022); }
+        .uc-risk svg { color: var(--sa-lime); } .uc-risk b { display: block; color: var(--sa-text); font-size: 14px; margin: 18px 0 7px; } .uc-risk span { display: block; color: var(--sa-muted); font-size: 12px; line-height: 1.6; }
+        .uc-architecture { margin: 36px 0; padding: 26px; border: 1px solid var(--sa-line); border-radius: 22px; background: #090d13; }
+        .uc-architecture-title { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 24px; color: #81909f; font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+        .uc-flow { display: grid; grid-template-columns: 1fr auto 1.25fr auto 1fr; gap: 12px; align-items: stretch; }
+        .uc-node { padding: 20px; border: 1px solid var(--sa-line); border-radius: 14px; background: var(--sa-panel); }
+        .uc-node-primary { border-color: rgba(183,243,74,.28); background: rgba(183,243,74,.055); }
+        .uc-node svg { color: var(--sa-cyan); margin-bottom: 24px; } .uc-node-primary svg { color: var(--sa-lime); }
+        .uc-node b { display: block; color: var(--sa-text); font-size: 13px; margin-bottom: 8px; } .uc-node span { display: block; color: var(--sa-muted); font-size: 11px; line-height: 1.55; }
+        .uc-arrow { display: grid; place-items: center; color: #53606e; }
+        .uc-boundary { margin-top: 14px; padding: 10px 13px; border: 1px dashed rgba(183,243,74,.28); border-radius: 10px; color: #9ead8c; font-size: 10px; text-align: center; }
+        .uc-mobile { display: grid; grid-template-columns: .82fr 1.18fr; gap: 40px; align-items: center; margin-top: 34px; }
+        .uc-phone { max-width: 310px; margin: 0 auto; padding: 12px; border: 1px solid rgba(255,255,255,.16); border-radius: 34px; background: linear-gradient(145deg, #202a36, #0e131a); box-shadow: 0 30px 70px rgba(0,0,0,.4); }
+        .uc-phone-screen { min-height: 520px; display: flex; flex-direction: column; padding: 20px; border-radius: 24px; background: #0b1016; }
+        .uc-phone-top { display: flex; align-items: center; justify-content: space-between; color: #aeb8c4; font-size: 10px; }
+        .uc-viewfinder { flex: 1; display: grid; place-items: center; margin: 22px 0; border: 1px solid var(--sa-line); border-radius: 18px; background: radial-gradient(circle, rgba(86,215,223,.13), transparent 55%), #080c11; }
+        .uc-monitor { width: 190px; padding: 20px; border-radius: 25px 25px 34px 34px; background: linear-gradient(150deg, #edf1ee, #aeb8b7); color: #1a242b; }
+        .uc-monitor-display { padding: 14px; border: 6px solid #34434b; border-radius: 10px; background: #bcd4c2; font: 700 11px ui-monospace, SFMono-Regular, Menlo, monospace; }
+        .uc-monitor-row { display: flex; align-items: baseline; justify-content: space-between; } .uc-monitor-row strong { font-size: 34px; letter-spacing: -.08em; }
+        .uc-confirm { padding: 15px; border: 1px solid rgba(183,243,74,.25); border-radius: 13px; background: rgba(183,243,74,.07); }
+        .uc-confirm b { display: block; color: #e4ecd8; font-size: 12px; margin-bottom: 5px; } .uc-confirm span { color: #93a188; font-size: 10px; }
+        .uc-journey { display: grid; gap: 13px; }
+        .uc-journey-step { display: grid; grid-template-columns: 36px 1fr; gap: 14px; padding: 18px; border: 1px solid var(--sa-line); border-radius: 14px; background: rgba(255,255,255,.02); }
+        .uc-journey-step > span { width: 32px; height: 32px; display: grid; place-items: center; border-radius: 9px; color: #0b0f12; background: var(--sa-lime); font-size: 11px; font-weight: 900; }
+        .uc-journey-step b { display: block; color: var(--sa-text); font-size: 14px; margin-bottom: 6px; } .uc-journey-step p { font-size: 12px; line-height: 1.6; margin: 0; }
+        .uc-privacy-table { margin-top: 28px; border: 1px solid var(--sa-line); border-radius: 18px; overflow: hidden; }
+        .uc-privacy-row { display: grid; grid-template-columns: .85fr 1fr 1.25fr; } .uc-privacy-row + .uc-privacy-row { border-top: 1px solid var(--sa-line); }
+        .uc-privacy-row > div { padding: 17px; font-size: 12px; line-height: 1.55; } .uc-privacy-row > div + div { border-left: 1px solid var(--sa-line); }
+        .uc-privacy-head { color: #8090a0; background: rgba(255,255,255,.025); font-size: 10px !important; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+        .uc-privacy-row b { color: var(--sa-text); } .uc-privacy-row span { color: var(--sa-muted); }
+        .uc-metrics { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 30px; }
+        .uc-metric { padding: 22px; border: 1px solid var(--sa-line); border-radius: 15px; background: rgba(255,255,255,.02); }
+        .uc-metric-top { display: flex; align-items: center; gap: 9px; color: var(--sa-text); font-size: 13px; font-weight: 800; } .uc-metric-top svg { color: var(--sa-lime); }
+        .uc-metric-target { color: var(--sa-cyan); font-size: 11px; font-weight: 700; margin: 14px 0 7px; } .uc-metric p { color: var(--sa-muted); font-size: 11px; line-height: 1.55; margin: 0; }
+        .uc-leadership { display: grid; gap: 14px; counter-reset: decision; margin-top: 28px; }
+        .uc-decision { position: relative; padding: 24px 24px 24px 72px; border: 1px solid var(--sa-line); border-radius: 16px; background: rgba(255,255,255,.02); counter-increment: decision; }
+        .uc-decision:before { content: "0" counter(decision); position: absolute; left: 23px; top: 25px; color: var(--sa-lime); font-size: 12px; font-weight: 900; }
+        .uc-decision b { color: var(--sa-text); font-size: 15px; } .uc-decision p { font-size: 13px; line-height: 1.65; margin: 8px 0 0; }
+        .uc-cta { padding: 82px 0; }
+        .uc-cta-card { display: flex; align-items: center; justify-content: space-between; gap: 42px; padding: 42px; border: 1px solid rgba(183,243,74,.22); border-radius: 24px; background: linear-gradient(135deg, rgba(183,243,74,.08), rgba(86,215,223,.04)); }
+        .uc-cta h2 { font-size: 34px; line-height: 1.15; letter-spacing: -.04em; margin: 0 0 10px; } .uc-cta p { color: var(--sa-muted); font-size: 14px; margin: 0; }
+        .uc-btn { flex-shrink: 0; display: inline-flex; align-items: center; gap: 8px; padding: 13px 17px; border-radius: 11px; color: #090c10; background: var(--sa-lime); text-decoration: none; font-size: 13px; font-weight: 800; }
+        @media (max-width: 860px) { .uc-section-grid { grid-template-columns: 1fr; gap: 36px; } .uc-side-label { position: static; } .uc-lead-card, .uc-mobile { grid-template-columns: 1fr; gap: 30px; } .uc-flow { grid-template-columns: 1fr; } .uc-arrow { transform: rotate(90deg); min-height: 25px; } .uc-privacy-row { grid-template-columns: 1fr; } .uc-privacy-row > div + div { border-left: 0; border-top: 1px solid var(--sa-line); } .uc-privacy-row:first-child { display: none; } }
+        @media (max-width: 600px) { .uc-wrap { padding-inline: 18px; } .uc-hero { padding-top: 44px; } .uc-back { margin-bottom: 38px; } .uc-deck { font-size: 17px; } .uc-lead-card { padding: 26px 22px; } .uc-section { padding: 70px 0; } .uc-risk-grid, .uc-metrics { grid-template-columns: 1fr; } .uc-architecture { padding: 18px; } .uc-phone-screen { min-height: 470px; } .uc-decision { padding-left: 58px; } .uc-cta-card { align-items: flex-start; flex-direction: column; padding: 30px 24px; } }
+      8:["$","$1","c",{"children":[[["$","style",null,{"children":"$14"}],"$L15","$L16"],["$L17"],"$L18"]}]
+9:["$","$1","h",{"children":[null,["$","$L19",null,{"children":"$L1a"}],["$","div",null,{"hidden":true,"children":["$","$L1b",null,{"children":["$","$1c",null,{"name":"Next.Metadata","children":"$L1d"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+1e:I[5500,["/_next/static/chunks/18f38dbeee9f54d3.js","/_next/static/chunks/d87b716920d553cc.js"],"Image"]
+27:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+f:["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":20,"height":20,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2.4,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-message-square-text","aria-hidden":"true","children":[["$","path","18887p",{"d":"M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"}],["$","path","1twpyw",{"d":"M7 11h10"}],["$","path","d9of3u",{"d":"M7 15h6"}],["$","path","af5zfr",{"d":"M7 7h8"}],"$undefined"]}]
+10:["$","span",null,{"className":"sa-brand-name sa-display","children":"Subra AI"}]
+11:["$","nav",null,{"className":"sa-nav-links","aria-label":"Subra AI pages","children":[["$","$Lb",null,{"href":"/subra-ai","children":"Overview"}],["$","$Lb",null,{"href":"/subra-ai#use-cases","children":"Use cases"}],["$","$Lb",null,{"href":"/subra-ai/privacy-policy","children":"Privacy"}],["$","$Lb",null,{"href":"/subra-ai/terms","children":"Terms"}],["$","$Lb",null,{"href":"/products","children":"All products"}]]}]
+12:["$","main",null,{"className":"sa-main","children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}]
+13:["$","footer",null,{"className":"sa-footer","children":["$","div",null,{"className":"sa-footer-inner","children":[["$","p",null,{"className":"sa-footer-copy","children":["© ",2026," Subra AI · Private intelligence, on your device."]}],["$","nav",null,{"className":"sa-footer-links","aria-label":"Subra AI footer links","children":[["$","$Lb",null,{"href":"/subra-ai/privacy-policy","children":"Privacy Policy"}],["$","$Lb",null,{"href":"/subra-ai/terms","children":"Terms"}],["$","$Lb",null,{"href":"/contact","children":"Support"}]]}]]}]}]
+15:["$","article",null,{"className":"uc-article","children":[["$","header",null,{"className":"uc-hero","children":["$","div",null,{"className":"uc-wrap","children":[["$","$Lb",null,{"className":"uc-back","href":"/subra-ai#use-cases","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":15,"height":15,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left","aria-hidden":"true","children":[["$","path","1l729n",{"d":"m12 19-7-7 7-7"}],["$","path","x3x0zl",{"d":"M19 12H5"}],"$undefined"]}]," All business use cases"]}],["$","div",null,{"className":"uc-kicker","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":16,"height":16,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-heart-pulse","aria-hidden":"true","children":[["$","path","mvr1a0",{"d":"M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"}],["$","path","auskq0",{"d":"M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"}],"$undefined"]}]," Use case 01 · Healthcare"]}],["$","h1",null,{"className":"sa-display","children":"Capture any medical-device reading without making the cloud the default."}],["$","p",null,{"className":"uc-deck","children":"A founder's architecture case study for turning blood pressure monitors, glucose meters, weighing scales, and other device screens into trusted structured data—while keeping sensitive images on the phone."}],["$","div",null,{"className":"uc-meta","children":[["$","span",null,{"children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":13,"height":13,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-smartphone","aria-hidden":"true","children":[["$","rect","1yt0o3",{"width":"14","height":"20","x":"5","y":"2","rx":"2","ry":"2"}],["$","path","mhygvu",{"d":"M12 18h.01"}],"$undefined"]}]," Mobile-first"]}],["$","span",null,{"children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":13,"height":13,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-wifi-off","aria-hidden":"true","children":[["$","path","zekei9",{"d":"M12 20h.01"}],["$","path","1bycff",{"d":"M8.5 16.429a5 5 0 0 1 7 0"}],["$","path","1dl1wf",{"d":"M5 12.859a10 10 0 0 1 5.17-2.69"}],["$","path","4k23kn",{"d":"M19 12.859a10 10 0 0 0-2.007-1.523"}],["$","path","1grhjp",{"d":"M2 8.82a15 15 0 0 1 4.177-2.643"}],["$","path","z3jwby",{"d":"M22 8.82a15 15 0 0 0-11.288-3.764"}],["$","path","1ooewy",{"d":"m2 2 20 20"}],"$undefined"]}]," Offline-capable"]}],["$","span",null,{"children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":13,"height":13,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-shield-check","aria-hidden":"true","children":[["$","path","oel41y",{"d":"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"}],["$","path","dzmm74",{"d":"m9 12 2 2 4-4"}],"$undefined"]}]," Privacy by architecture"]}],["$","span",null,{"children":"8 min read"}]]}],["$","figure",null,{"className":"uc-figure uc-hero-figure","children":[["$","$L1e",null,{"src":"/subra-ai/use-cases/device-agnostic-medical-reading-capture/article-hero.png","alt":"A person holding a smartphone beside a blood pressure monitor while on-device AI captures a reading of 118 over 76 with a pulse of 68","width":1672,"height":941,"priority":true,"sizes":"(max-width: 1120px) 100vw, 1064px"}],["$","figcaption",null,{"children":"The raw medical-device image can be understood inside the phone before any approved data crosses into a backend workflow."}]]}],["$","div",null,{"className":"uc-lead-card","children":[["$","blockquote",null,{"className":"sa-display","children":"The product decision is not simply whether AI can read the screen. It is where that screen is allowed to be read."}],"$L1f"]}]]}]}],"$L20","$L21","$L22","$L23","$L24","$L25","$L26"]}]
+16:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Capture any medical-device reading without making the cloud the default\",\"description\":\"A founder-focused architecture case study for private, device-agnostic medical reading capture with on-device AI.\",\"url\":\"https://subraatakumar.com/subra-ai-use-cases/device-agnostic-medical-reading-capture\",\"image\":\"https://subraatakumar.com/subra-ai/use-cases/device-agnostic-medical-reading-capture/article-hero.png\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\"},\"publisher\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\"},\"about\":[\"On-device AI\",\"Healthcare privacy\",\"React Native architecture\",\"Medical device reading capture\"]}"}}]
+17:["$","script","script-0",{"src":"/_next/static/chunks/d87b716920d553cc.js","async":true,"nonce":"$undefined"}]
+18:["$","$L27",null,{"children":["$","$1c",null,{"name":"Next.MetadataOutlet","children":"$@28"}]}]
+1f:["$","p",null,{"children":"For founders building in healthcare, architecture becomes part of the value proposition. The system must make capture easy for patients, integration predictable for engineering teams, and data boundaries clear enough for enterprise buyers to trust."}]
+20:["$","section",null,{"className":"uc-section","children":["$","div",null,{"className":"uc-wrap uc-section-grid","children":[["$","aside",null,{"className":"uc-side-label","children":[["$","div",null,{"className":"uc-number","children":"01 · The business problem"}],["$","h2",null,{"className":"sa-display","children":"Interoperability has a hidden privacy cost"}]]}],["$","div",null,{"className":"uc-copy","children":[["$","p",null,{"children":"Healthcare apps want a complete view of the patient: wearable activity, medical records, home-device readings, notes, and AI-generated guidance. Each new connection can make the experience more seamless. It can also move sensitive data across another vendor, storage layer, retention policy, and regulatory boundary."}],["$","div",null,{"className":"uc-pullquote sa-display","children":"More integration can mean less protection—even when every individual connection is encrypted."}],["$","figure",null,{"className":"uc-figure uc-section-figure","children":[["$","$L1e",null,{"src":"/subra-ai/use-cases/device-agnostic-medical-reading-capture/integration-and-privacy-problem.png","alt":"A healthcare app connected to wearables, medical devices, hospitals, AI services, and many external data systems, illustrating an expanding privacy boundary","width":1536,"height":1024,"sizes":"(max-width: 860px) 100vw, 708px"}],["$","figcaption",null,{"children":"Every integration can improve product continuity while adding another processor, retention policy, and potential regulatory boundary."}]]}],["$","p",null,{"children":[["$","strong",null,{"children":"“Encrypted in transit” is a transport control, not a complete privacy strategy."}]," A founder still needs answers to harder questions: Did the image need to leave the phone? Is the raw image retained? Can a processor use it for model improvement? What happens when consent changes? Which party owns deletion?"]}],["$","h3",null,{"className":"sa-display","children":"The customer problem is simpler"}],["$","p",null,{"children":"A patient already owns a working device. They should not need a particular Bluetooth model, a new account, or a manual multi-field form. Pointing a camera at the display should be enough. The business opportunity is to make that input device-agnostic without turning every camera frame into cloud data."}],["$","div",null,{"className":"uc-risk-grid","children":[["$","div",null,{"className":"uc-risk","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":20,"height":20,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-cloud","aria-hidden":"true","children":[["$","path","p7xjir",{"d":"M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"}],"$undefined"]}],["$","b",null,{"children":"Cloud-first capture"}],["$","span",null,{"children":"Easy to centralize, but raw health imagery crosses the device boundary by default."}]]}],["$","div",null,{"className":"uc-risk","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":20,"height":20,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-eye-off","aria-hidden":"true","children":[["$","path","ct8e1f",{"d":"M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"}],["$","path","151rxh",{"d":"M14.084 14.158a3 3 0 0 1-4.242-4.242"}],["$","path","13bj9a",{"d":"M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"}],["$","path","1ooewy",{"d":"m2 2 20 20"}],"$undefined"]}],["$","b",null,{"children":"Manual entry"}],["$","span",null,{"children":"Private, but slow and vulnerable to skipped fields, unit errors, and abandonment."}]]}],["$","div",null,{"className":"uc-risk","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":20,"height":20,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-heart-pulse","aria-hidden":"true","children":["$L29","$L2a","$undefined"]}],"$L2b","$L2c"]}],"$L2d"]}]]}]]}]}]
+21:["$","section",null,{"className":"uc-section","children":["$","div",null,{"className":"uc-wrap uc-section-grid","children":[["$","aside",null,{"className":"uc-side-label","children":[["$","div",null,{"className":"uc-number","children":"02 · Architectural decision"}],["$","h2",null,{"className":"sa-display","children":"Use hybrid inference, with the phone as the first trust boundary"}]]}],["$","div",null,{"className":"uc-copy","children":[["$","p",null,{"children":["The architecture assigns work according to sensitivity and capability. ",["$","strong",null,{"children":"Device-side processing handles capture, device classification, value extraction, unit normalization, timestamp detection, confidence scoring, and optional redaction."}]," The app presents the structured result for human confirmation before anything is submitted."]}],["$","figure",null,{"className":"uc-figure uc-section-figure uc-architecture-figure","children":[["$","$L1e",null,{"src":"/subra-ai/use-cases/device-agnostic-medical-reading-capture/hybrid-inference-architecture.png","alt":"Hybrid inference architecture showing medical device capture, on-device classification and extraction, user confirmation, minimal structured JSON, controlled backend submission, and optional consent-controlled cloud escalation","width":1693,"height":929,"sizes":"(max-width: 860px) 100vw, 708px"}],["$","figcaption",null,{"children":"The raw image stops inside the smartphone trust boundary. Only approved structured data proceeds to controlled healthcare infrastructure."}]]}],["$","h3",null,{"className":"sa-display","children":"React Native orchestrates the boundary—it does not hide it"}],["$","p",null,{"children":"React Native is the product coordination layer: camera state, wearable ingestion, consent, lifecycle, offline queues, error recovery, and the review UI. Native modules own model execution and platform-specific resources. A typed boundary returns a versioned result to JavaScript, where runtime validation rejects malformed or unsupported payloads before persistence or network submission."}],["$","div",null,{"className":"uc-pullquote sa-display","children":"Cross-platform should mean one product contract—not pretending native execution, consent, and network boundaries do not exist."}],["$","p",null,{"children":"The cloud remains valuable for longitudinal analysis, clinician collaboration, advanced reasoning, and workflows that require shared state. But it receives only the minimum confirmed fields needed for that job—not the source image simply because uploading is convenient."}]]}]]}]}]
+22:["$","section",null,{"className":"uc-section","children":["$","div",null,{"className":"uc-wrap uc-section-grid","children":[["$","aside",null,{"className":"uc-side-label","children":[["$","div",null,{"className":"uc-number","children":"03 · Working mobile experience"}],["$","h2",null,{"className":"sa-display","children":"Make privacy feel like speed, not friction"}]]}],["$","div",null,{"className":"uc-copy","children":[["$","p",null,{"children":"The mobile flow is intentionally short. The user scans the display, sees what the model understood, corrects anything uncertain, and approves the submission. On-device processing means the first useful result does not wait for an upload or a stable connection."}],["$","div",null,{"className":"uc-mobile","children":[["$","figure",null,{"className":"uc-figure uc-mobile-figure","children":[["$","$L1e",null,{"src":"/subra-ai/use-cases/device-agnostic-medical-reading-capture/working-mobile-experience.png","alt":"Four mobile screens showing capture, on-device scan, reading review, and confirmation before submitting structured blood pressure data","width":864,"height":1821,"sizes":"(max-width: 860px) 90vw, 370px"}],["$","figcaption",null,{"children":"The user stays in control from camera capture through final submission."}]]}],["$","div",null,{"className":"uc-journey","children":[["$","div",null,{"className":"uc-journey-step","children":[["$","span",null,{"children":"1"}],["$","div",null,{"children":[["$","b",null,{"children":"Frame the device"}],["$","p",null,{"children":"Visual guidance helps the user align glare-prone LCD and LED displays."}]]}]]}],["$","div",null,{"className":"uc-journey-step","children":[["$","span",null,{"children":"2"}],["$","div",null,{"children":[["$","b",null,{"children":"Understand locally"}],["$","p",null,{"children":"The model identifies device category, readings, units, and any visible measurement time."}]]}]]}],["$","div",null,{"className":"uc-journey-step","children":[["$","span",null,{"children":"3"}],["$","div",null,{"children":[["$","b",null,{"children":"Review uncertainty"}],["$","p",null,{"children":"Low-confidence fields are highlighted instead of silently accepted."}]]}]]}],["$","div",null,{"className":"uc-journey-step","children":[["$","span",null,{"children":"4"}],["$","div",null,{"children":[["$","b",null,{"children":"Submit intentionally"}],["$","p",null,{"children":"Only the confirmed structured payload enters the app's controlled backend workflow."}]]}]]}]]}]]}],["$","p",null,{"children":["If a measurement time is visible, the model extracts it and labels the source as ",["$","strong",null,{"children":"device_display"}],". Otherwise, the app uses capture time and records ",["$","strong",null,{"children":"capture_time"}],". That provenance prevents a convenient fallback from masquerading as an exact clinical timestamp."]}]]}]]}]}]
+23:["$","section",null,{"className":"uc-section","children":["$","div",null,{"className":"uc-wrap uc-section-grid","children":[["$","aside",null,{"className":"uc-side-label","children":[["$","div",null,{"className":"uc-number","children":"04 · Security & privacy"}],["$","h2",null,{"className":"sa-display","children":"Minimize data before trying to protect it"}]]}],["$","div",null,{"className":"uc-copy","children":[["$","p",null,{"children":"Encryption is required, but minimization is the stronger starting point. If raw camera imagery is not necessary outside the device, the safest retention period is zero and the safest third-party permission is none."}],["$","div",null,{"className":"uc-privacy-table","children":[["$","div",null,{"className":"uc-privacy-row","children":[["$","div",null,{"className":"uc-privacy-head","children":"Data"}],["$","div",null,{"className":"uc-privacy-head","children":"Default location"}],["$","div",null,{"className":"uc-privacy-head","children":"Control"}]]}],["$","div",null,{"className":"uc-privacy-row","children":[["$","div",null,{"children":["$","b",null,{"children":"Camera frame"}]}],["$","div",null,{"children":["$","span",null,{"children":"Volatile device memory"}]}],["$","div",null,{"children":["$","span",null,{"children":"Process locally; do not persist or upload by default."}]}]]}],["$","div",null,{"className":"uc-privacy-row","children":[["$","div",null,{"children":["$","b",null,{"children":"Extracted reading"}]}],["$","div",null,{"children":["$","span",null,{"children":"Local review state"}]}],["$","div",null,{"children":["$","span",null,{"children":"Runtime schema validation, confidence threshold, user confirmation."}]}]]}],["$","div",null,{"className":"uc-privacy-row","children":[["$","div",null,{"children":["$","b",null,{"children":"Approved payload"}]}],["$","div",null,{"children":["$","span",null,{"children":"Controlled health backend"}]}],["$","div",null,{"children":["$","span",null,{"children":"Purpose limitation, authenticated transport, retention and deletion policy."}]}]]}],["$","div",null,{"className":"uc-privacy-row","children":[["$","div",null,{"children":["$","b",null,{"children":"Cloud escalation"}]}],["$","div",null,{"children":["$","span",null,{"children":"Only when required"}]}],["$","div",null,{"children":["$","span",null,{"children":"Explicit consent, minimal redacted context, vendor-use restrictions."}]}]]}]]}],["$","h3",null,{"className":"sa-display","children":"Threats worth designing for"}],["$","p",null,{"children":"Screen captures in logs, analytics events containing health values, model files replaced at runtime, prompt or schema injection from visible text, replayed submissions, stale consent, debug builds with broader storage, and unbounded offline queues. The architecture needs signed model assets, strict output schemas, least-privilege permissions, log redaction, protected local storage, authenticated requests, replay resistance, and testable deletion behavior."}],["$","div",null,{"className":"uc-pullquote sa-display","children":"“Your sensitive health information stays on your device” is both a security decision and a commercial position."}],["$","p",null,{"children":"That position can reduce hesitation for patients and improve conversations with hospitals, insurers, and enterprise buyers—provided product telemetry and support tooling honor the same promise."}]]}]]}]}]
+24:["$","section",null,{"className":"uc-section","children":["$","div",null,{"className":"uc-wrap uc-section-grid","children":[["$","aside",null,{"className":"uc-side-label","children":[["$","div",null,{"className":"uc-number","children":"05 · Measurable results"}],["$","h2",null,{"className":"sa-display","children":"Measure trust and usability together"}]]}],["$","div",null,{"className":"uc-copy","children":[["$","p",null,{"children":"This case study does not invent benchmark numbers. The right founder-level scorecard makes the claims falsifiable across the actual device matrix, lighting conditions, display types, languages, and target phones. These are the acceptance gates I would take into a pilot:"}],["$","div",null,{"className":"uc-metrics","children":[["$","div","Device classification",{"className":"uc-metric","children":[["$","div",null,{"className":"uc-metric-top","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":16,"height":16,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-gauge","aria-hidden":"true","children":[["$","path","9kzdfg",{"d":"m12 14 4-4"}],["$","path","19p75a",{"d":"M3.34 19a10 10 0 1 1 17.32 0"}],"$undefined"]}],"Device classification"]}],["$","div",null,{"className":"uc-metric-target","children":"Measure per supported device class"}],["$","p",null,{"children":"A single average can hide weak performance on less common devices."}]]}],["$","div","Field-level accuracy",{"className":"uc-metric","children":[["$","div",null,{"className":"uc-metric-top","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":16,"height":16,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-gauge","aria-hidden":"true","children":[["$","path","9kzdfg",{"d":"m12 14 4-4"}],["$","path","19p75a",{"d":"M3.34 19a10 10 0 1 1 17.32 0"}],"$undefined"]}],"Field-level accuracy"]}],["$","div",null,{"className":"uc-metric-target","children":"Track value, unit, and timestamp separately"}],["$","p",null,{"children":"A correct number with the wrong unit is still an unsafe result."}]]}],["$","div","Time to structured result",{"className":"uc-metric","children":[["$","div",null,{"className":"uc-metric-top","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":16,"height":16,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-gauge","aria-hidden":"true","children":[["$","path","9kzdfg",{"d":"m12 14 4-4"}],["$","path","19p75a",{"d":"M3.34 19a10 10 0 1 1 17.32 0"}],"$undefined"]}],"Time to structured result"]}],["$","div",null,{"className":"uc-metric-target","children":"Report p50 and p95 on target hardware"}],["$","p",null,{"children":"The slowest supported phones shape the real user experience."}]]}],["$","div","Review and correction rate",{"className":"uc-metric","children":[["$","div",null,{"className":"uc-metric-top","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":16,"height":16,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-gauge","aria-hidden":"true","children":[["$","path","9kzdfg",{"d":"m12 14 4-4"}],["$","path","19p75a",{"d":"M3.34 19a10 10 0 1 1 17.32 0"}],"$undefined"]}],"Review and correction rate"]}],["$","div",null,{"className":"uc-metric-target","children":"Measure edits before submission"}],["$","p",null,{"children":"Human correction is a product signal, not merely an AI failure."}]]}],["$","div","Cloud data reduction",{"className":"uc-metric","children":[["$","div",null,{"className":"uc-metric-top","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":16,"height":16,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-gauge","aria-hidden":"true","children":[["$","path","9kzdfg",{"d":"m12 14 4-4"}],["$","path","19p75a",{"d":"M3.34 19a10 10 0 1 1 17.32 0"}],"$undefined"]}],"Cloud data reduction"]}],["$","div",null,{"className":"uc-metric-target","children":"Compare bytes sent with image-upload baseline"}],"$L2e"]}],"$L2f"]}],"$L30"]}]]}]}]
+25:["$","section",null,{"className":"uc-section","children":["$","div",null,{"className":"uc-wrap uc-section-grid","children":[["$","aside",null,{"className":"uc-side-label","children":[["$","div",null,{"className":"uc-number","children":"06 · Leadership reasoning"}],["$","h2",null,{"className":"sa-display","children":"Architecture is a sequence of business choices"}]]}],["$","div",null,{"className":"uc-copy","children":[["$","p",null,{"children":"A leader's job is not to maximize local inference at any cost. It is to place each capability where customer value, privacy risk, reliability, operating cost, and team complexity balance correctly."}],["$","div",null,{"className":"uc-leadership","children":[["$","div",null,{"className":"uc-decision","children":[["$","b",null,{"children":"Start with the promise"}],["$","p",null,{"children":"If privacy is part of positioning, define the allowed data flows before selecting model or vendor."}]]}],["$","div",null,{"className":"uc-decision","children":[["$","b",null,{"children":"Make uncertainty visible"}],["$","p",null,{"children":"A review step creates user agency and supplies the correction signal needed to improve the system responsibly."}]]}],["$","div",null,{"className":"uc-decision","children":[["$","b",null,{"children":"Earn cloud escalation"}],["$","p",null,{"children":"Use it where shared context or advanced reasoning creates clear value, not as the default route for every frame."}]]}],["$","div",null,{"className":"uc-decision","children":[["$","b",null,{"children":"Version the contract"}],["$","p",null,{"children":"Device models can change independently while mobile and backend teams rely on a stable, validated schema."}]]}],["$","div",null,{"className":"uc-decision","children":[["$","b",null,{"children":"Sell the boundary"}],["$","p",null,{"children":"Privacy architecture can reduce enterprise risk, shorten security conversations, and differentiate the product."}]]}]]}]]}]]}]}]
+26:["$","footer",null,{"className":"uc-cta","children":["$","div",null,{"className":"uc-wrap","children":["$","div",null,{"className":"uc-cta-card","children":[["$","div",null,{"children":[["$","h2",null,{"className":"sa-display","children":"Private AI should be visible in the product."}],["$","p",null,{"children":"Explore how Subra AI brings useful intelligence onto the device."}]]}],["$","$Lb",null,{"className":"uc-btn","href":"/subra-ai","children":["Explore Subra AI ",["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":16,"height":16,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}]]}]}]}]
+29:["$","path","mvr1a0",{"d":"M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"}]
+2a:["$","path","auskq0",{"d":"M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"}]
+2b:["$","b",null,{"children":"Vendor integrations"}]
+2c:["$","span",null,{"children":"High fidelity, but coverage depends on device partnerships and patient hardware."}]
+2d:["$","div",null,{"className":"uc-risk","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":20,"height":20,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-scan-line","aria-hidden":"true","children":[["$","path","aa7l1z",{"d":"M3 7V5a2 2 0 0 1 2-2h2"}],["$","path","4qcy5o",{"d":"M17 3h2a2 2 0 0 1 2 2v2"}],["$","path","6vwrx8",{"d":"M21 17v2a2 2 0 0 1-2 2h-2"}],["$","path","ioqczr",{"d":"M7 21H5a2 2 0 0 1-2-2v-2"}],["$","path","b7w52i",{"d":"M7 12h10"}],"$undefined"]}],["$","b",null,{"children":"On-device vision"}],["$","span",null,{"children":"Broad visual compatibility with a smaller data boundary and a reviewable result."}]]}]
+2e:["$","p",null,{"children":"Privacy architecture should create a visible, auditable reduction."}]
+2f:["$","div","Offline completion",{"className":"uc-metric","children":[["$","div",null,{"className":"uc-metric-top","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":16,"height":16,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-gauge","aria-hidden":"true","children":[["$","path","9kzdfg",{"d":"m12 14 4-4"}],["$","path","19p75a",{"d":"M3.34 19a10 10 0 1 1 17.32 0"}],"$undefined"]}],"Offline completion"]}],["$","div",null,{"className":"uc-metric-target","children":"Track scans completed without network access"}],["$","p",null,{"children":"Offline reliability proves the boundary is architectural, not marketing."}]]}]
+30:["$","p",null,{"children":"Report results by device category and environment, alongside a cloud baseline. A strong pilot should demonstrate not only extraction quality and latency, but also how much raw data never leaves the phone, how often users need to correct a field, and whether the experience still completes offline."}]
+1a:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+31:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"IconMark"]
+1d:[["$","title","0",{"children":"Device-Agnostic Medical Reading Capture | Subra AI Use Case | Subrata Kumar Das"}],["$","meta","1",{"name":"description","content":"A founder-focused case study for capturing readings from medical devices with private on-device AI, a hybrid inference architecture, and controlled cloud escalation."}],["$","meta","2",{"name":"keywords","content":"on-device AI healthcare,medical device reading capture,hybrid AI architecture,React Native healthcare app,health data privacy,Subra AI use case"}],["$","link","3",{"rel":"canonical","href":"https://subraatakumar.com/subra-ai-use-cases/device-agnostic-medical-reading-capture/"}],["$","meta","4",{"property":"og:title","content":"Device-Agnostic Medical Reading Capture"}],["$","meta","5",{"property":"og:description","content":"A privacy-first on-device AI architecture for healthcare apps."}],["$","meta","6",{"property":"og:url","content":"https://subraatakumar.com/subra-ai-use-cases/device-agnostic-medical-reading-capture/"}],["$","meta","7",{"property":"og:image","content":"https://subraatakumar.com/subra-ai/use-cases/device-agnostic-medical-reading-capture/article-hero.png"}],["$","meta","8",{"property":"og:image:width","content":"1672"}],["$","meta","9",{"property":"og:image:height","content":"941"}],["$","meta","10",{"property":"og:image:alt","content":"A person using a smartphone to capture a blood pressure monitor reading with on-device AI"}],["$","meta","11",{"property":"og:type","content":"article"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Device-Agnostic Medical Reading Capture"}],["$","meta","14",{"name":"twitter:description","content":"How on-device AI turns medical-device screens into structured health data without defaulting to cloud processing."}],["$","meta","15",{"name":"twitter:image","content":"https://subraatakumar.com/subra-ai/use-cases/device-agnostic-medical-reading-capture/article-hero.png"}],["$","link","16",{"rel":"icon","href":"/favicon.ico?favicon.750fd6b3.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L31","17",{}]]
+28:null
