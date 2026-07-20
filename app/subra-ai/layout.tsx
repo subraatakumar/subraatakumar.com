@@ -73,6 +73,7 @@ export default function SubraAiLayout({ children }: { children: React.ReactNode 
           </Link>
           <nav className="sa-nav-links" aria-label="Subra AI pages">
             <Link href="/subra-ai">Overview</Link>
+            <Link href="/subra-ai#use-cases">Use cases</Link>
             <Link href="/subra-ai/privacy-policy">Privacy</Link>
             <Link href="/subra-ai/terms">Terms</Link>
             <Link href="/products">All products</Link>

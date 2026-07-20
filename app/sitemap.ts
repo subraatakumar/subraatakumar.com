@@ -52,6 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
     "/for-ai",
     "/subra-ai",
+    "/subra-ai-use-cases/device-agnostic-medical-reading-capture",
     "/subra-ai/privacy-policy",
     "/subra-ai/terms",
     "/watertracker",
