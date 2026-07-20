@@ -24,48 +24,18 @@ export const metadata: Metadata = {
 };
 
 const products = [
+    {
+    title: "Subra AI",
+    slug: "subra-ai",
+    desc: "A private, offline AI chat app powered by Google ML Kit and Gemma 4, with prompts and responses processed directly on your device.",
+    tags: ["On-device AI", "Gemma 4", "Google ML Kit", "Privacy-First"],
+    layout: "full",
+  },
   {
     title: "React Native Mastery",
     slug: "https://rnm.subraatakumar.com",
     desc: "Execution Studio to become a React Native Expert, From Fundamentals to System Design, From Code to Storefront, Build, Scale, and Architect Production Apps",
     tags: ["React Native", "Developer Ecosystem", "Learning Tracks", "mobile development"],
-    layout: "full",
-  },
-  {
-    title: "TCBS CLI",
-    slug: "https://tcbscli.subraatakumar.com/",
-    desc: "A developer CLI tool for managing build workflows and automating common mobile release tasks.",
-    tags: ["Node.js", "CLI"],
-  },
-  {
-    title: "Subra AI",
-    slug: "subra-ai",
-    desc: "A private, offline AI chat app powered by Google ML Kit and Gemma 4, with prompts and responses processed directly on your device.",
-    tags: ["On-device AI", "Gemma 4", "Google ML Kit", "Privacy-First"],
-  },
-  {
-    title: "Water Tracker",
-    slug: "watertracker",
-    desc: "A hydration app built on offline-first architecture with biometric security, iCloud/Google Drive backup, freemium monetisation, and custom reminder systems.",
-    tags: ["React Native", "Health"],
-  },
-  {
-    title: "Mood Tracker",
-    slug: "moodtracker",
-    desc: "A mood tracking app built on offline-first architecture with biometric security, iCloud/Google Drive backup, freemium monetisation, and custom reminder systems.",
-    tags: ["React Native", "Health", "Privacy-First", "Wellbeing"],
-  },
-  {
-    title: "PillTracker",
-    slug: "pilltracker",
-    desc: "A medicine reminder app built on offline-first architecture with biometric security, iCloud/Google Drive backup, freemium monetisation, and custom reminder systems.",
-    tags: ["React Native", "Health", "Offline-First", "Realm"],
-  },
-  {
-    title: "She Health",
-    slug: "shehealth",
-    desc: "A women-first health platform delivering personalised care journeys and secure health tracking.",
-    tags: ["React Native", "Firebase"],
   },
   {
     title: "Learners REST API (Swagger)",
