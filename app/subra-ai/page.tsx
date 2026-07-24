@@ -57,6 +57,13 @@ export default function SubraAiPage() {
         .sa-strip { border-block: 1px solid var(--sa-line); background: rgba(255,255,255,.018); }
         .sa-strip-inner { max-width: 1180px; margin: 0 auto; padding: 26px 28px; display: flex; align-items: center; justify-content: space-between; gap: 24px; color: #84909f; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; }
         .sa-tech { display: flex; align-items: center; gap: 26px; flex-wrap: wrap; } .sa-tech span { display: inline-flex; align-items: center; gap: 8px; color: #c8d0da; }
+        .sa-video-section { max-width: 1180px; margin: 0 auto; padding: 100px 28px 24px; text-align: center; scroll-margin-top: 90px; }
+        .sa-video-section .sa-eyebrow { margin-bottom: 18px; }
+        .sa-video-section h2 { font-size: clamp(36px, 5vw, 58px); line-height: 1.06; letter-spacing: -.05em; margin: 0; }
+        .sa-video-intro { max-width: 620px; margin: 18px auto 38px; color: var(--sa-muted); font-size: 16px; line-height: 1.7; }
+        .sa-video-frame { position: relative; overflow: hidden; padding: 8px; border: 1px solid rgba(255,255,255,.16); border-radius: 26px; background: linear-gradient(145deg, rgba(255,255,255,.07), rgba(255,255,255,.02)); box-shadow: 0 34px 100px rgba(0,0,0,.42); }
+        .sa-video-frame:before { content: ""; position: absolute; inset: -30% 15% 45%; z-index: -1; background: radial-gradient(circle, rgba(86,215,223,.16), transparent 65%); }
+        .sa-video-frame video { display: block; width: 100%; aspect-ratio: 16 / 9; border-radius: 18px; background: #070a0e; object-fit: cover; }
         .sa-section { max-width: 1180px; margin: 0 auto; padding: 100px 28px; }
         .sa-section-head { max-width: 680px; margin-bottom: 44px; }
         .sa-section h2 { font-size: clamp(34px, 5vw, 54px); line-height: 1.08; letter-spacing: -.045em; margin: 0 0 16px; }
@@ -101,7 +108,7 @@ export default function SubraAiPage() {
         .sa-download-actions { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: stretch; gap: 10px; min-width: 220px; }
         .sa-download-actions .sa-btn { justify-content: center; }
         @media (max-width: 860px) { .sa-hero { grid-template-columns: 1fr; padding-top: 66px; gap: 60px; } .sa-feature-grid { grid-template-columns: 1fr; } .sa-feature-icon { margin-bottom: 26px; } .sa-use-case-head { align-items: flex-start; flex-direction: column; gap: 18px; } .sa-case-card { grid-template-columns: 1fr; } .sa-case-visual { min-height: 310px; } .sa-privacy-card { grid-template-columns: 1fr; gap: 20px; padding: 34px; } .sa-download-card { align-items: flex-start; flex-direction: column; gap: 30px; padding: 38px; } .sa-download-actions { width: 100%; min-width: 0; flex-direction: row; } }
-        @media (max-width: 520px) { .sa-hero, .sa-section, .sa-use-case-inner { padding-left: 18px; padding-right: 18px; } .sa-hero h1 { font-size: 49px; } .sa-lead { font-size: 16px; } .sa-actions { align-items: stretch; flex-direction: column; } .sa-actions .sa-btn { justify-content: center; } .sa-btn-tertiary { align-self: center; } .sa-phone { padding: 9px; border-radius: 27px; } .sa-screen { min-height: 450px; padding: 17px; } .sa-strip-inner { align-items: flex-start; flex-direction: column; padding-left: 18px; } .sa-section, .sa-use-case-inner { padding-top: 76px; padding-bottom: 76px; } .sa-case-card { flex-basis: calc(100vw - 38px); } .sa-case-copy { padding: 26px 22px; min-height: 330px; } .sa-case-visual { min-height: 280px; } .sa-privacy-card { padding: 26px 22px; } .sa-download-card { padding: 30px 22px; } .sa-download-actions { flex-direction: column; } }
+        @media (max-width: 520px) { .sa-hero, .sa-video-section, .sa-section, .sa-use-case-inner { padding-left: 18px; padding-right: 18px; } .sa-hero h1 { font-size: 49px; } .sa-lead { font-size: 16px; } .sa-actions { align-items: stretch; flex-direction: column; } .sa-actions .sa-btn { justify-content: center; } .sa-btn-tertiary { align-self: center; } .sa-phone { padding: 9px; border-radius: 27px; } .sa-screen { min-height: 450px; padding: 17px; } .sa-strip-inner { align-items: flex-start; flex-direction: column; padding-left: 18px; } .sa-video-section { padding-top: 76px; } .sa-video-frame { padding: 5px; border-radius: 18px; } .sa-video-frame video { border-radius: 13px; } .sa-section, .sa-use-case-inner { padding-top: 76px; padding-bottom: 76px; } .sa-case-card { flex-basis: calc(100vw - 38px); } .sa-case-copy { padding: 26px 22px; min-height: 330px; } .sa-case-visual { min-height: 280px; } .sa-privacy-card { padding: 26px 22px; } .sa-download-card { padding: 30px 22px; } .sa-download-actions { flex-direction: column; } }
       `}</style>
       <div className="sa-home">
         <section className="sa-hero">
@@ -112,6 +119,7 @@ export default function SubraAiPage() {
             <div className="sa-actions">
               <a className="sa-btn sa-btn-primary" href={subraAiStoreLinks.ios} target="_blank" rel="noopener noreferrer" aria-label="Download Subra AI on the Apple App Store"><Apple size={17} /> Download for iPhone &amp; iPad</a>
               <a className="sa-btn sa-btn-secondary" href={subraAiStoreLinks.android} target="_blank" rel="noopener noreferrer" aria-label="Get Subra AI on Google Play"><Play size={16} fill="currentColor" /> Get it on Google Play</a>
+              <Link className="sa-btn sa-btn-tertiary" href="#intro"><Play size={15} /> Watch 54-sec introduction</Link>
               <Link className="sa-btn sa-btn-tertiary" href="#privacy">How privacy works <ArrowRight size={15} /></Link>
             </div>
             <p className="sa-store-note">Store availability may vary by device and region.</p>
@@ -131,6 +139,17 @@ export default function SubraAiPage() {
           </div>
         </section>
         <div className="sa-strip"><div className="sa-strip-inner"><span>Runs locally with</span><div className="sa-tech"><span><Cpu size={18} /> Google ML Kit</span><span><BrainCircuit size={18} /> Gemma 4</span></div></div></div>
+        <section className="sa-video-section" id="intro" aria-labelledby="sa-video-title">
+          <div className="sa-eyebrow"><Play size={14} fill="currentColor" /> Meet Subra AI</div>
+          <h2 className="sa-display" id="sa-video-title">Private AI, explained in under a minute.</h2>
+          <p className="sa-video-intro">See how Subra AI brings useful, private intelligence directly to your phone—without sending your conversations to our servers.</p>
+          <div className="sa-video-frame">
+            <video controls playsInline preload="metadata" poster="/subra-ai/subra-ai-intro-poster.jpg" aria-label="Introduction to Subra AI">
+              <source src="/subra-ai/subra-ai-intro.mp4" type="video/mp4" />
+              Your browser does not support embedded video.
+            </video>
+          </div>
+        </section>
         <section className="sa-section">
           <div className="sa-section-head"><div className="sa-eyebrow">Designed for your device</div><h2 className="sa-display">Useful AI. A much smaller privacy surface.</h2><p>Subra AI keeps the core chat experience where it belongs: in your hands, on your hardware.</p></div>
           <div className="sa-feature-grid">{features.map(({ icon: Icon, title, copy }) => <article className="sa-feature" key={title}><div className="sa-feature-icon"><Icon size={21} /></div><h3 className="sa-display">{title}</h3><p>{copy}</p></article>)}</div>
