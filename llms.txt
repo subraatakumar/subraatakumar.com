@@ -9,10 +9,12 @@ The website contains portfolio pages, an active 180-day technical mentorship wri
 
 ## Collaboration Focus
 Collaboration focus: selective work with teams building consumer health, quantified-self, and habit-formation platforms (mobile + data + AI).
+Engagement options include mobile architecture and codebase audits, hands-on React Native delivery, and technical leadership or mentoring.
 
 ## High-value pages
 - Home: https://subraatakumar.com/
 - About: https://subraatakumar.com/about
+- Work with me: https://subraatakumar.com/work-with-me
 - Products index: https://subraatakumar.com/products
 - Subra AI, private on-device AI and business use cases: https://subraatakumar.com/subra-ai/
 - AI summary page: https://subraatakumar.com/for-ai
