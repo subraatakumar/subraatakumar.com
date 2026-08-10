@@ -46,6 +46,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPaths = [
     "/",
     "/about",
+    "/work-with-me",
     "/career-timeline",
     "/products",
     "/subratalabs",
