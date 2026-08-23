@@ -326,6 +326,7 @@ export default function RootLayout({
                 <li><Link href="/about">About</Link></li>
                 <li><Link href="/products">Products</Link></li>
                 <li><Link href="/blog">Blog</Link></li>
+                <li><Link href="/notes">Notes</Link></li>
                 <li><Link href="/contact">Contact</Link></li>
               </ul>
             </nav>
@@ -337,6 +338,7 @@ export default function RootLayout({
                 <li><Link href="/about">About</Link></li>
                 <li><Link href="/products">Products</Link></li>
                 <li><Link href="/blog">Blog</Link></li>
+                <li><Link href="/notes">Notes</Link></li>
                 <li><Link href="/contact">Contact</Link></li>
               </ul>
             </nav>

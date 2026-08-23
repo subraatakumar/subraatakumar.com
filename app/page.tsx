@@ -122,6 +122,7 @@ export default function HomePage() {
         {[
           { label: "Products", href: "/products", note: "Apps & tools I've built" },
           { label: "About",    href: "/about",    note: "Background & philosophy" },
+          { label: "Notes",    href: "/notes",    note: "Technical notes & chapters" },
           { label: "Contact",  href: "/contact",  note: "Let's connect" },
         ].map((item) => (
           <Link key={item.label} href={item.href} style={{ textDecoration: "none" }}>
