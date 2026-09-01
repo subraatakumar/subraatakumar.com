@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const features = [
   { icon: WifiOff, title: "Works offline", copy: "Once the model is available on your device, you can chat without an internet connection." },
   { icon: LockKeyhole, title: "Conversations stay local", copy: "Your prompts and generated responses are processed on-device—not sent to a Subra AI server." },
-  { icon: BrainCircuit, title: "Gemma 4 intelligence", copy: "A capable language model runs locally through Google ML Kit for fast, private inference." },
+  { icon: BrainCircuit, title: "Gemma 4 intelligence", copy: "A capable language model runs locally through Google ML Kit for fast, private inference.", href: "/blog/why-i-chose-gemma-4-e2b-for-subra-ai" },
 ];
 
 export default function SubraAiPage() {
@@ -72,6 +72,7 @@ export default function SubraAiPage() {
         .sa-feature { padding: 28px; border-radius: 20px; border: 1px solid var(--sa-line); background: linear-gradient(145deg, rgba(255,255,255,.045), rgba(255,255,255,.015)); }
         .sa-feature-icon { width: 45px; height: 45px; display: grid; place-items: center; border-radius: 13px; color: var(--sa-lime); background: rgba(183,243,74,.09); border: 1px solid rgba(183,243,74,.18); margin-bottom: 42px; }
         .sa-feature h3 { font-size: 18px; margin: 0 0 10px; } .sa-feature p { color: var(--sa-muted); line-height: 1.65; font-size: 14px; margin: 0; }
+        .sa-feature-link { display: inline-flex; align-items: center; gap: 7px; margin-top: 18px; color: var(--sa-lime); font-size: 13px; font-weight: 700; text-decoration: none; } .sa-feature-link:hover { text-decoration: underline; }
         .sa-use-case { max-width: none; padding: 0; border-block: 1px solid var(--sa-line); background: linear-gradient(180deg, rgba(86,215,223,.035), rgba(255,255,255,.008)); }
         .sa-use-case-inner { max-width: 1180px; margin: 0 auto; padding: 100px 28px; }
         .sa-use-case-head { display: flex; align-items: end; justify-content: space-between; gap: 50px; margin-bottom: 38px; }
@@ -152,7 +153,7 @@ export default function SubraAiPage() {
         </section>
         <section className="sa-section">
           <div className="sa-section-head"><div className="sa-eyebrow">Designed for your device</div><h2 className="sa-display">Useful AI. A much smaller privacy surface.</h2><p>Subra AI keeps the core chat experience where it belongs: in your hands, on your hardware.</p></div>
-          <div className="sa-feature-grid">{features.map(({ icon: Icon, title, copy }) => <article className="sa-feature" key={title}><div className="sa-feature-icon"><Icon size={21} /></div><h3 className="sa-display">{title}</h3><p>{copy}</p></article>)}</div>
+          <div className="sa-feature-grid">{features.map(({ icon: Icon, title, copy, href }) => <article className="sa-feature" key={title}><div className="sa-feature-icon"><Icon size={21} /></div><h3 className="sa-display">{title}</h3><p>{copy}</p>{href && <Link className="sa-feature-link" href={href}>Read the technical deep dive <ArrowRight size={14} /></Link>}</article>)}</div>
         </section>
         <section className="sa-use-case" id="use-cases">
           <div className="sa-use-case-inner">
