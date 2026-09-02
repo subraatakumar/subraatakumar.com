@@ -141,6 +141,15 @@
     flex-grow: 1;
     min-height: 0;
   }
+  /* Keep Markdown images inside the printable writing area. */
+  .content img:not(.page-watermark) {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin: 8px auto;
+  }
   h1 {
     font-family: 'Architects Daughter', cursive;
     font-size: 28px;
@@ -592,7 +601,7 @@
 </ul>
 </div>
 <h2>📺 Video Explanation</h2>
-<p>Watch the full explanation of these notes here: <a href="https://youtu.be/3IaDiTli43w">https://youtu.be/3IaDiTli43w</a></p>
+<p>Watch the full course with certification on : <a href="https://www.udemy.com/course/javascript-essentials-for-react-native-developers/?referralCode=4D7DFE48BEEFAFEF7716">Udemy</a></p>
 <hr />
 <p>In React Native development, data rarely arrives in flat, isolated variables. Server payloads return deeply nested JSON objects, components receive configurations through a unified <code>props</code> object, and hooks return multi-element tuples.</p>
 <p>Without destructuring, extracting these values requires repetitive prefixing (<code>props.name</code>, <code>props.age</code>, <code>user.data.id</code>), leading to noisy, cluttered code. <strong>Destructuring</strong> provides a clean syntax to unpack properties from objects and elements from arrays directly into distinct, readable local variables.</p>

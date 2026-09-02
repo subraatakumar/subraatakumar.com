@@ -141,6 +141,15 @@
     flex-grow: 1;
     min-height: 0;
   }
+  /* Keep Markdown images inside the printable writing area. */
+  .content img:not(.page-watermark) {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin: 8px auto;
+  }
   h1 {
     font-family: 'Architects Daughter', cursive;
     font-size: 28px;
@@ -585,7 +594,7 @@
     <h1>Chapter 1: let, const &amp; block scoping: why var is gone</h1>
 <p>Before building interactive user interfaces or managing state updates across screens in React Native, you need a precise mental model of how the JavaScript engine reads, allocates, and runs your code. Understanding the execution lifecycle, the differences between <code>var</code>, <code>let</code>, and <code>const</code>, and how variables reside in memory prevents subtle runtime bugs, scope pollution, and unexpected crashes.</p>
 <h2>📺 Video Explanation</h2>
-<p>Watch the full explanation of these notes here: <a href="https://youtu.be/xUGv1nLpPxQ">https://youtu.be/xUGv1nLpPxQ</a></p>
+<p>Watch the full course with certification on : <a href="https://www.udemy.com/course/javascript-essentials-for-react-native-developers/?referralCode=4D7DFE48BEEFAFEF7716">Udemy</a></p>
 <hr />
 <h2>1. How JavaScript Reads Your Code (The Two Execution Phases)</h2>
 <p>The JavaScript runtime does not read and run your source code in a single, blind pass. It processes code in two distinct phases: the <strong>Compilation (Parsing) Phase</strong> and the <strong>Execution Phase</strong>.</p>

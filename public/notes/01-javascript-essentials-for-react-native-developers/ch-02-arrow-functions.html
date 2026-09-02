@@ -141,6 +141,15 @@
     flex-grow: 1;
     min-height: 0;
   }
+  /* Keep Markdown images inside the printable writing area. */
+  .content img:not(.page-watermark) {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin: 8px auto;
+  }
   h1 {
     font-family: 'Architects Daughter', cursive;
     font-size: 28px;
@@ -592,7 +601,7 @@
 </ul>
 </div>
 <h2>📺 Video Explanation</h2>
-<p>Watch the full explanation of these notes here: <a href="https://youtu.be/YPpgMgaEaR4">https://youtu.be/YPpgMgaEaR4</a></p>
+<p>Watch the full course with certification on : <a href="https://www.udemy.com/course/javascript-essentials-for-react-native-developers/?referralCode=4D7DFE48BEEFAFEF7716">Udemy</a></p>
 <hr />
 <h2>What is Hoisting ?</h2>
 <p>Hoisting is a JavaScript mechanism where variable, function, and class declarations are moved to the top of their containing scope (global or function) during the compilation phase, before the code is executed</p>
