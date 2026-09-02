@@ -248,7 +248,7 @@ e:I[21675,["/_next/static/chunks/18f38dbeee9f54d3.js","/_next/static/chunks/ed0a
             padding-right: 16px;
           }
         }
-      0:{"buildId":"tJb5BVbNPrcDGcn1gGKGb","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
+      0:{"buildId":"6sKxv9aMuG2Uh4J_bzSgs","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
 8:T48d5,<h2 id="introduction-to-cocoapods" class="blog-md-h2">Introduction to CocoaPods</h2>
 <p class="blog-md-p">Before Swift Package Manager (SPM) became the native standard, the iOS world belonged to CocoaPods.</p>
 <h2 id="what-is-cocoapods" class="blog-md-h2">What is CocoaPods?</h2>
@@ -454,5 +454,5 @@ During the transition, you might have some libraries installed via CocoaPods and
 5:["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true}]
 6:["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]
 9:["$","$Le",null,{}]
-a:["$","div",null,{"className":"blog-post-nav","children":[["$","span",null,{}],["$","$L7",null,{"href":"/blog/common-llm-parameters-for-rag","children":"Next"}]]}]
+a:["$","div",null,{"className":"blog-post-nav","children":[["$","$L7",null,{"href":"/blog/Why-I-Chose-Gemma-4-E2B-for-Subra-AI","children":"Previous"}],["$","$L7",null,{"href":"/blog/common-llm-parameters-for-rag","children":"Next"}]]}]
 d:null

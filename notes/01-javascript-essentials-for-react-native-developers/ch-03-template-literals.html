@@ -141,6 +141,15 @@
     flex-grow: 1;
     min-height: 0;
   }
+  /* Keep Markdown images inside the printable writing area. */
+  .content img:not(.page-watermark) {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin: 8px auto;
+  }
   h1 {
     font-family: 'Architects Daughter', cursive;
     font-size: 28px;
@@ -593,7 +602,7 @@
 </ul>
 </div>
 <h2>📺 Video Explanation</h2>
-<p>Watch the full explanation of these notes here: <a href="https://youtu.be/NtFqgY0U1lE">https://youtu.be/NtFqgY0U1lE</a></p>
+<p>Watch the full course with certification on : <a href="https://www.udemy.com/course/javascript-essentials-for-react-native-developers/?referralCode=4D7DFE48BEEFAFEF7716">Udemy</a></p>
 <hr />
 <p>In mobile development, dynamic text is everywhere. User greetings change with authenticated profiles, API endpoints require dynamic query parameters, and UI components constantly format metrics like stock levels, product discounts, cart counts, and currency totals.</p>
 <p>Before ES6, combining dynamic data with static text meant relying on verbose and brittle string concatenation. <strong>Template literals</strong> modernize this workflow by replacing plus-operator chains with clean, readable string interpolation, expression evaluation, and native multi-line formatting.</p>
