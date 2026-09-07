@@ -1,197 +1,97 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import { Apple, ArrowRight, BrainCircuit, Check, CloudOff, Cpu, Database, HeartPulse, LockKeyhole, MessageSquareText, Play, ShieldCheck, Sparkles, WifiOff } from "lucide-react";
+import { Apple, ArrowRight, BrainCircuit, Check, Cpu, Download, Image as ImageIcon, MessageSquareText, Mic, Play, Share2, ShieldCheck, Volume2, WifiOff } from "lucide-react";
 import { absoluteUrl } from "@/lib/seo";
 import storeLinks from "@/config/store-links.json";
+import styles from "./home.module.css";
 
-const subraAiStoreLinks = storeLinks["subra-ai"];
-
-export const metadata: Metadata = {
-  title: "Subra AI | Private Offline AI Chat",
-  description: "Subra AI brings private, on-device intelligence to chat and business workflows, including device-agnostic medical reading capture for healthcare apps.",
-  keywords: ["offline AI chat", "on-device AI", "private AI assistant", "medical device reading capture", "healthcare app AI", "Google ML Kit", "Gemma 4", "Subra AI"],
-  alternates: { canonical: "/subra-ai" },
-  openGraph: { title: "Subra AI | Private On-Device AI", description: "Private on-device AI for chat and business workflows, including medical reading capture.", url: "/subra-ai", type: "website" },
-  twitter: { card: "summary_large_image", title: "Subra AI | Private On-Device AI", description: "Private on-device AI for chat and business workflows." },
-};
-
-const features = [
-  { icon: WifiOff, title: "Works offline", copy: "Once the model is available on your device, you can chat without an internet connection." },
-  { icon: LockKeyhole, title: "Conversations stay local", copy: "Your prompts and generated responses are processed on-device—not sent to a Subra AI server." },
-  { icon: BrainCircuit, title: "Gemma 4 intelligence", copy: "A capable language model runs locally through Google ML Kit for fast, private inference.", href: "/blog/why-i-chose-gemma-4-e2b-for-subra-ai" },
+const stores = storeLinks["subra-ai"];
+const description = "Chat, ask questions about images, transcribe voice, and keep useful context with AI Memory. Subra AI runs on your device, with local history and chat sharing.";
+const screenshots = [
+  { file: "01-private-ai", title: "Private AI chat", alt: "Subra AI planning a morning routine in an on-device conversation" },
+  { file: "02-image-questions", title: "Image questions", alt: "Subra AI answering a question about a weekend packing checklist" },
+  { file: "03-voice-to-text", title: "Voice to text", alt: "A spoken idea transcribed into readable text in Subra AI" },
+  { file: "04-chat-history", title: "Local chat history", alt: "Saved Subra AI conversations with pinning and import controls" },
+  { file: "08-share-any-chat", title: "Share any chat", alt: "The Share action in the Subra AI chat options menu" },
+  { file: "05-read-aloud", title: "Read aloud", alt: "Subra AI response with a read-aloud control" },
+  { file: "06-ai-memory", title: "AI Memory", alt: "Editable AI Memory preferences with save and reset controls" },
+  { file: "07-local-model", title: "Model control", alt: "Subra AI local model download and import controls" },
 ];
 
+export const metadata: Metadata = {
+  title: "Subra AI | Private AI for Text, Images & Voice",
+  description,
+  keywords: ["Subra AI", "on-device AI", "offline AI chat", "private AI assistant", "voice transcription", "AI Memory", "image questions"],
+  alternates: { canonical: "/subra-ai" },
+  openGraph: { title: "Subra AI — Your ideas. Your AI. On your device.", description, url: "/subra-ai", type: "website", images: [{ url: absoluteUrl("/subra-ai/screenshots/social.jpg"), width: 1200, height: 630, alt: "Subra AI: text, images and voice on your device" }] },
+  twitter: { card: "summary_large_image", title: "Subra AI | Private AI for Text, Images & Voice", description, images: [absoluteUrl("/subra-ai/screenshots/social.jpg")] },
+};
+
+function StoreButtons() {
+  return <div className={styles.actions}>
+    <a className={styles.primary} href={stores.ios} target="_blank" rel="noopener noreferrer"><Apple size={19} aria-hidden="true" /> Download on the App Store</a>
+    <a className={styles.secondary} href={stores.android} target="_blank" rel="noopener noreferrer"><Play size={17} aria-hidden="true" /> Get it on Google Play</a>
+  </div>;
+}
+
+function Capture({ name, alt, priority = false }: { name: string; alt: string; priority?: boolean }) {
+  return <a className={styles.captureLink} href={`/subra-ai/screenshots/${name}.webp`} target="_blank" rel="noopener noreferrer" aria-label={`${alt}. Open larger image in a new tab`}>
+    <Image className={styles.capture} src={`/subra-ai/screenshots/${name}.webp`} alt={alt} width={720} height={1565} sizes="(max-width: 760px) 80vw, 360px" priority={priority} />
+    <span className={styles.enlarge}>Explore the real interface <ArrowRight size={14} aria-hidden="true" /></span>
+  </a>;
+}
+
 export default function SubraAiPage() {
-  return (
-    <>
-      <style>{`
-        .sa-home { overflow: hidden; }
-        .sa-hero { max-width: 1180px; margin: 0 auto; padding: 92px 28px 74px; display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 78px; }
-        .sa-eyebrow { display: inline-flex; align-items: center; gap: 8px; color: var(--sa-lime); font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 24px; }
-        .sa-hero h1 { font-size: clamp(48px, 7vw, 86px); line-height: .98; letter-spacing: -.065em; max-width: 780px; margin: 0; }
-        .sa-gradient { color: transparent; background: linear-gradient(110deg, var(--sa-lime), var(--sa-cyan)); background-clip: text; }
-        .sa-lead { color: var(--sa-muted); font-size: 18px; line-height: 1.7; max-width: 610px; margin: 28px 0 34px; }
-        .sa-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
-        .sa-btn { display: inline-flex; align-items: center; gap: 9px; text-decoration: none; padding: 13px 18px; border-radius: 12px; font-size: 14px; font-weight: 700; }
-        .sa-btn-primary { color: #090c10; background: var(--sa-lime); box-shadow: 0 8px 34px rgba(183,243,74,.17); }
-        .sa-btn-secondary { color: var(--sa-text); border: 1px solid var(--sa-line); background: rgba(255,255,255,.03); }
-        .sa-btn-tertiary { color: var(--sa-muted); padding-inline: 8px; }
-        .sa-btn-tertiary:hover { color: var(--sa-text); }
-        .sa-store-note { color: #6f7c8b; font-size: 11px; line-height: 1.5; margin: 13px 0 0; }
-        .sa-trust-line { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 30px; color: #8995a5; font-size: 12px; }
-        .sa-trust-line span { display: inline-flex; align-items: center; gap: 7px; }
-        .sa-phone { position: relative; max-width: 430px; margin: 0 auto; padding: 14px; border-radius: 35px; border: 1px solid rgba(255,255,255,.17); background: linear-gradient(150deg, #1b2330, #0d1219); box-shadow: 0 36px 100px rgba(0,0,0,.55); transform: rotate(1.5deg); }
-        .sa-phone:before { content: ""; position: absolute; inset: -25%; z-index: -1; background: radial-gradient(circle, rgba(86,215,223,.15), transparent 60%); }
-        .sa-screen { min-height: 500px; border-radius: 25px; padding: 22px; background: #0b0f15; overflow: hidden; }
-        .sa-screen-top { display: flex; justify-content: space-between; align-items: center; padding-bottom: 24px; border-bottom: 1px solid var(--sa-line); }
-        .sa-screen-title { display: flex; align-items: center; gap: 9px; font-size: 14px; font-weight: 700; }
-        .sa-status { display: inline-flex; align-items: center; gap: 6px; color: var(--sa-lime); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
-        .sa-status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--sa-lime); box-shadow: 0 0 10px var(--sa-lime); }
-        .sa-chat { display: flex; flex-direction: column; gap: 16px; padding-top: 28px; }
-        .sa-bubble { max-width: 88%; padding: 15px 16px; border-radius: 17px; font-size: 13px; line-height: 1.6; }
-        .sa-bubble-user { align-self: flex-end; color: #0a0e12; background: var(--sa-lime); border-bottom-right-radius: 5px; }
-        .sa-bubble-ai { background: var(--sa-panel-2); color: #dbe1e9; border: 1px solid var(--sa-line); border-bottom-left-radius: 5px; }
-        .sa-typing { display: flex; gap: 4px; padding: 6px 2px 2px; } .sa-typing i { width: 5px; height: 5px; border-radius: 50%; background: #8793a3; }
-        .sa-input { margin-top: 28px; padding: 14px 14px 14px 16px; border: 1px solid var(--sa-line); border-radius: 14px; display: flex; justify-content: space-between; align-items: center; color: #677383; font-size: 12px; background: #10151d; }
-        .sa-input button { border: 0; border-radius: 9px; width: 32px; height: 32px; display: grid; place-items: center; color: #091013; background: var(--sa-cyan); }
-        .sa-strip { border-block: 1px solid var(--sa-line); background: rgba(255,255,255,.018); }
-        .sa-strip-inner { max-width: 1180px; margin: 0 auto; padding: 26px 28px; display: flex; align-items: center; justify-content: space-between; gap: 24px; color: #84909f; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; }
-        .sa-tech { display: flex; align-items: center; gap: 26px; flex-wrap: wrap; } .sa-tech span { display: inline-flex; align-items: center; gap: 8px; color: #c8d0da; }
-        .sa-video-section { max-width: 1180px; margin: 0 auto; padding: 100px 28px 24px; text-align: center; scroll-margin-top: 90px; }
-        .sa-video-section .sa-eyebrow { margin-bottom: 18px; }
-        .sa-video-section h2 { font-size: clamp(36px, 5vw, 58px); line-height: 1.06; letter-spacing: -.05em; margin: 0; }
-        .sa-video-intro { max-width: 620px; margin: 18px auto 38px; color: var(--sa-muted); font-size: 16px; line-height: 1.7; }
-        .sa-video-frame { position: relative; overflow: hidden; padding: 8px; border: 1px solid rgba(255,255,255,.16); border-radius: 26px; background: linear-gradient(145deg, rgba(255,255,255,.07), rgba(255,255,255,.02)); box-shadow: 0 34px 100px rgba(0,0,0,.42); }
-        .sa-video-frame:before { content: ""; position: absolute; inset: -30% 15% 45%; z-index: -1; background: radial-gradient(circle, rgba(86,215,223,.16), transparent 65%); }
-        .sa-video-frame video { display: block; width: 100%; aspect-ratio: 16 / 9; border-radius: 18px; background: #070a0e; object-fit: cover; }
-        .sa-section { max-width: 1180px; margin: 0 auto; padding: 100px 28px; }
-        .sa-section-head { max-width: 680px; margin-bottom: 44px; }
-        .sa-section h2 { font-size: clamp(34px, 5vw, 54px); line-height: 1.08; letter-spacing: -.045em; margin: 0 0 16px; }
-        .sa-section-head p { color: var(--sa-muted); font-size: 17px; line-height: 1.7; }
-        .sa-feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-        .sa-feature { padding: 28px; border-radius: 20px; border: 1px solid var(--sa-line); background: linear-gradient(145deg, rgba(255,255,255,.045), rgba(255,255,255,.015)); }
-        .sa-feature-icon { width: 45px; height: 45px; display: grid; place-items: center; border-radius: 13px; color: var(--sa-lime); background: rgba(183,243,74,.09); border: 1px solid rgba(183,243,74,.18); margin-bottom: 42px; }
-        .sa-feature h3 { font-size: 18px; margin: 0 0 10px; } .sa-feature p { color: var(--sa-muted); line-height: 1.65; font-size: 14px; margin: 0; }
-        .sa-feature-link { display: inline-flex; align-items: center; gap: 7px; margin-top: 18px; color: var(--sa-lime); font-size: 13px; font-weight: 700; text-decoration: none; } .sa-feature-link:hover { text-decoration: underline; }
-        .sa-use-case { max-width: none; padding: 0; border-block: 1px solid var(--sa-line); background: linear-gradient(180deg, rgba(86,215,223,.035), rgba(255,255,255,.008)); }
-        .sa-use-case-inner { max-width: 1180px; margin: 0 auto; padding: 100px 28px; }
-        .sa-use-case-head { display: flex; align-items: end; justify-content: space-between; gap: 50px; margin-bottom: 38px; }
-        .sa-issue { color: var(--sa-cyan); font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-        .sa-use-case h2 { font-size: clamp(38px, 5.5vw, 62px); line-height: 1.02; letter-spacing: -.05em; margin: 12px 0 0; }
-        .sa-use-case-intro { color: var(--sa-muted); font-size: 15px; line-height: 1.7; margin: 0; max-width: 430px; }
-        .sa-case-list { display: flex; gap: 20px; overflow-x: auto; padding: 4px 2px 22px; scroll-snap-type: x mandatory; scrollbar-color: rgba(183,243,74,.45) transparent; scrollbar-width: thin; }
-        .sa-case-list::-webkit-scrollbar { height: 6px; } .sa-case-list::-webkit-scrollbar-thumb { background: rgba(183,243,74,.45); border-radius: 999px; }
-        .sa-case-card { flex: 0 0 min(780px, calc(100vw - 72px)); min-height: 390px; display: grid; grid-template-columns: .9fr 1.1fr; overflow: hidden; scroll-snap-align: start; border: 1px solid var(--sa-line); border-radius: 26px; background: #0b1017; }
-        .sa-case-visual { position: relative; display: grid; place-items: center; min-height: 390px; background: radial-gradient(circle, rgba(86,215,223,.16), transparent 48%), linear-gradient(145deg, #111923, #090d13); }
-        .sa-case-visual:before, .sa-case-visual:after { content: ""; position: absolute; width: 58px; height: 58px; border-color: var(--sa-lime); border-style: solid; opacity: .8; }
-        .sa-case-visual:before { top: 35px; left: 35px; border-width: 2px 0 0 2px; border-radius: 12px 0 0; } .sa-case-visual:after { right: 35px; bottom: 35px; border-width: 0 2px 2px 0; border-radius: 0 0 12px; }
-        .sa-case-device { width: 220px; padding: 24px; border-radius: 28px 28px 40px 40px; color: #17202a; background: linear-gradient(155deg, #eef2ef, #aeb8b7); box-shadow: 0 25px 60px rgba(0,0,0,.45); }
-        .sa-case-screen { padding: 16px; border: 7px solid #34434b; border-radius: 12px; background: #bcd4c2; font: 700 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
-        .sa-case-reading { display: flex; align-items: baseline; justify-content: space-between; } .sa-case-reading strong { font-size: 38px; letter-spacing: -.08em; } .sa-case-reading + .sa-case-reading { margin-top: 6px; }
-        .sa-case-copy { padding: 36px; display: flex; flex-direction: column; align-items: flex-start; }
-        .sa-case-number { color: var(--sa-cyan); font-size: 11px; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
-        .sa-case-copy h3 { font-size: 30px; line-height: 1.12; letter-spacing: -.04em; margin: 18px 0 14px; } .sa-case-copy p { color: var(--sa-muted); font-size: 14px; line-height: 1.7; margin: 0; }
-        .sa-case-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 22px; } .sa-case-tags span { padding: 7px 9px; border: 1px solid var(--sa-line); border-radius: 8px; color: #aeb8c5; font-size: 10px; font-weight: 700; }
-        .sa-case-link { margin-top: auto; display: inline-flex; align-items: center; gap: 8px; color: #090c10; background: var(--sa-lime); text-decoration: none; font-size: 13px; font-weight: 800; padding: 12px 15px; border-radius: 11px; }
-        .sa-list-hint { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-top: 10px; color: #748090; font-size: 11px; }
-        .sa-privacy { padding-top: 30px; }
-        .sa-privacy-card { display: grid; grid-template-columns: .8fr 1.2fr; gap: 60px; padding: 54px; border-radius: 28px; border: 1px solid rgba(183,243,74,.2); background: linear-gradient(135deg, rgba(183,243,74,.075), rgba(86,215,223,.035)); }
-        .sa-privacy-card h2 { font-size: 42px; }
-        .sa-privacy-list { display: grid; gap: 14px; }
-        .sa-privacy-list div { display: flex; gap: 12px; color: #cbd3dc; font-size: 14px; line-height: 1.55; }
-        .sa-privacy-list svg { color: var(--sa-lime); flex-shrink: 0; margin-top: 2px; }
-        .sa-download { padding-top: 28px; }
-        .sa-download-card { position: relative; overflow: hidden; display: flex; align-items: center; justify-content: space-between; gap: 52px; padding: 48px 52px; border: 1px solid var(--sa-line); border-radius: 28px; background: linear-gradient(120deg, rgba(86,215,223,.09), rgba(183,243,74,.065)); }
-        .sa-download-card:after { content: ""; position: absolute; width: 260px; height: 260px; right: -110px; top: -110px; border-radius: 50%; background: rgba(183,243,74,.10); filter: blur(10px); }
-        .sa-download-copy { position: relative; z-index: 1; max-width: 580px; }
-        .sa-download-copy h2 { font-size: clamp(34px, 4.5vw, 50px); margin-bottom: 13px; }
-        .sa-download-copy p { color: var(--sa-muted); font-size: 15px; line-height: 1.65; margin: 0; }
-        .sa-download-actions { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: stretch; gap: 10px; min-width: 220px; }
-        .sa-download-actions .sa-btn { justify-content: center; }
-        @media (max-width: 860px) { .sa-hero { grid-template-columns: 1fr; padding-top: 66px; gap: 60px; } .sa-feature-grid { grid-template-columns: 1fr; } .sa-feature-icon { margin-bottom: 26px; } .sa-use-case-head { align-items: flex-start; flex-direction: column; gap: 18px; } .sa-case-card { grid-template-columns: 1fr; } .sa-case-visual { min-height: 310px; } .sa-privacy-card { grid-template-columns: 1fr; gap: 20px; padding: 34px; } .sa-download-card { align-items: flex-start; flex-direction: column; gap: 30px; padding: 38px; } .sa-download-actions { width: 100%; min-width: 0; flex-direction: row; } }
-        @media (max-width: 520px) { .sa-hero, .sa-video-section, .sa-section, .sa-use-case-inner { padding-left: 18px; padding-right: 18px; } .sa-hero h1 { font-size: 49px; } .sa-lead { font-size: 16px; } .sa-actions { align-items: stretch; flex-direction: column; } .sa-actions .sa-btn { justify-content: center; } .sa-btn-tertiary { align-self: center; } .sa-phone { padding: 9px; border-radius: 27px; } .sa-screen { min-height: 450px; padding: 17px; } .sa-strip-inner { align-items: flex-start; flex-direction: column; padding-left: 18px; } .sa-video-section { padding-top: 76px; } .sa-video-frame { padding: 5px; border-radius: 18px; } .sa-video-frame video { border-radius: 13px; } .sa-section, .sa-use-case-inner { padding-top: 76px; padding-bottom: 76px; } .sa-case-card { flex-basis: calc(100vw - 38px); } .sa-case-copy { padding: 26px 22px; min-height: 330px; } .sa-case-visual { min-height: 280px; } .sa-privacy-card { padding: 26px 22px; } .sa-download-card { padding: 30px 22px; } .sa-download-actions { flex-direction: column; } }
-      `}</style>
-      <div className="sa-home">
-        <section className="sa-hero">
-          <div>
-            <div className="sa-eyebrow"><Sparkles size={15} /> Private AI, without the cloud</div>
-            <h1 className="sa-display">Think freely.<br /><span className="sa-gradient">Stay offline.</span></h1>
-            <p className="sa-lead">Subra AI is a ChatGPT-like assistant that runs on your device. Ask, explore, write, and reason with Gemma 4—without sending your conversations to our servers.</p>
-            <div className="sa-actions">
-              <a className="sa-btn sa-btn-primary" href={subraAiStoreLinks.ios} target="_blank" rel="noopener noreferrer" aria-label="Download Subra AI on the Apple App Store"><Apple size={17} /> Download for iPhone &amp; iPad</a>
-              <a className="sa-btn sa-btn-secondary" href={subraAiStoreLinks.android} target="_blank" rel="noopener noreferrer" aria-label="Get Subra AI on Google Play"><Play size={16} fill="currentColor" /> Get it on Google Play</a>
-              <Link className="sa-btn sa-btn-tertiary" href="#intro"><Play size={15} /> Watch 54-sec introduction</Link>
-              <Link className="sa-btn sa-btn-tertiary" href="#privacy">How privacy works <ArrowRight size={15} /></Link>
-            </div>
-            <p className="sa-store-note">Store availability may vary by device and region.</p>
-            <div className="sa-trust-line"><span><ShieldCheck size={14} /> No account required</span><span><CloudOff size={14} /> No chat cloud</span><span><Database size={14} /> Local conversation history</span></div>
-          </div>
-          <div className="sa-phone" aria-label="Illustration of Subra AI chat running offline">
-            <div className="sa-screen">
-              <div className="sa-screen-top"><div className="sa-screen-title"><MessageSquareText size={17} color="var(--sa-cyan)" /> New chat</div><span className="sa-status"><i className="sa-status-dot" /> Offline</span></div>
-              <div className="sa-chat">
-                <div className="sa-bubble sa-bubble-user">Help me outline a focused learning plan for this week.</div>
-                <div className="sa-bubble sa-bubble-ai">Let’s make it realistic. Pick one main outcome, then split it into three short sessions: learn, practise, and review.</div>
-                <div className="sa-bubble sa-bubble-user">Keep each session under 30 minutes.</div>
-                <div className="sa-bubble sa-bubble-ai">Absolutely. I’ll build a compact plan with a clear finish line for each day.<div className="sa-typing"><i /><i /><i /></div></div>
-              </div>
-              <div className="sa-input"><span>Message Subra AI…</span><button aria-label="Send message"><ArrowRight size={15} /></button></div>
-            </div>
-          </div>
-        </section>
-        <div className="sa-strip"><div className="sa-strip-inner"><span>Runs locally with</span><div className="sa-tech"><span><Cpu size={18} /> Google ML Kit</span><span><BrainCircuit size={18} /> Gemma 4</span></div></div></div>
-        <section className="sa-video-section" id="intro" aria-labelledby="sa-video-title">
-          <div className="sa-eyebrow"><Play size={14} fill="currentColor" /> Meet Subra AI</div>
-          <h2 className="sa-display" id="sa-video-title">Private AI, explained in under a minute.</h2>
-          <p className="sa-video-intro">See how Subra AI brings useful, private intelligence directly to your phone—without sending your conversations to our servers.</p>
-          <div className="sa-video-frame">
-            <video controls playsInline preload="metadata" poster="/subra-ai/subra-ai-intro-poster.jpg" aria-label="Introduction to Subra AI">
-              <source src="/subra-ai/subra-ai-intro.mp4" type="video/mp4" />
-              Your browser does not support embedded video.
-            </video>
-          </div>
-        </section>
-        <section className="sa-section">
-          <div className="sa-section-head"><div className="sa-eyebrow">Designed for your device</div><h2 className="sa-display">Useful AI. A much smaller privacy surface.</h2><p>Subra AI keeps the core chat experience where it belongs: in your hands, on your hardware.</p></div>
-          <div className="sa-feature-grid">{features.map(({ icon: Icon, title, copy, href }) => <article className="sa-feature" key={title}><div className="sa-feature-icon"><Icon size={21} /></div><h3 className="sa-display">{title}</h3><p>{copy}</p>{href && <Link className="sa-feature-link" href={href}>Read the technical deep dive <ArrowRight size={14} /></Link>}</article>)}</div>
-        </section>
-        <section className="sa-use-case" id="use-cases">
-          <div className="sa-use-case-inner">
-            <div className="sa-use-case-head">
-              <div><div className="sa-issue">On-device AI in practice</div><h2 className="sa-display">Business use cases</h2></div>
-              <p className="sa-use-case-intro">A growing collection of practical ways businesses can use private, on-device intelligence. A new use case will be added regularly.</p>
-            </div>
-            <div className="sa-case-list" aria-label="Subra AI business use cases">
-              <article className="sa-case-card">
-                <div className="sa-case-visual" aria-hidden="true">
-                  <div className="sa-case-device"><div className="sa-case-screen"><div className="sa-case-reading"><span>SYS</span><strong>118</strong><span>mmHg</span></div><div className="sa-case-reading"><span>DIA</span><strong>76</strong><span>mmHg</span></div><div className="sa-case-reading"><span>PUL</span><strong>68</strong><span>/min</span></div></div></div>
-                </div>
-                <div className="sa-case-copy">
-                  <div className="sa-case-number">Use case 01 · Healthcare</div>
-                  <h3 className="sa-display">Device-agnostic medical reading capture</h3>
-                  <p>Scan a blood pressure monitor, glucose meter, weighing scale, or another medical device. Subra AI recognizes the device and reading on-device, then returns normalized data for the healthcare app.</p>
-                  <div className="sa-case-tags"><span><HeartPulse size={11} /> Healthcare</span><span>On-device vision</span><span>Structured JSON</span></div>
-                  <Link className="sa-case-link" href="/subra-ai-use-cases/device-agnostic-medical-reading-capture">See more <ArrowRight size={15} /></Link>
-                </div>
-              </article>
-            </div>
-            <div className="sa-list-hint"><span>Scroll to explore use cases</span><span>01 / 01</span></div>
-          </div>
-        </section>
-        <section className="sa-section sa-privacy" id="privacy">
-          <div className="sa-privacy-card"><div><div className="sa-eyebrow"><LockKeyhole size={15} /> Privacy by architecture</div><h2 className="sa-display">Your chats are not our data.</h2></div><div className="sa-privacy-list"><div><Check size={18} /><span>Prompts and responses are processed locally by the model on your device.</span></div><div><Check size={18} /><span>Subra AI does not require an account or upload conversation history to a Subra AI server.</span></div><div><Check size={18} /><span>You control local chat history and can delete it from within the app or by removing the app.</span></div><div><Check size={18} /><span>An internet connection may be needed to download the app, updates, or model files before offline use.</span></div><Link className="sa-btn sa-btn-secondary" href="/subra-ai/privacy-policy" style={{ width: "fit-content", marginTop: 8 }}>Full privacy details <ArrowRight size={16} /></Link></div></div>
-        </section>
-        <section className="sa-section sa-download" id="download">
-          <div className="sa-download-card">
-            <div className="sa-download-copy"><div className="sa-eyebrow"><Sparkles size={15} /> Ready on your device</div><h2 className="sa-display">Take private AI with you.</h2><p>Download Subra AI and use on-device chat and vision without making your private conversations a cloud dataset.</p></div>
-            <div className="sa-download-actions">
-              <a className="sa-btn sa-btn-primary" href={subraAiStoreLinks.ios} target="_blank" rel="noopener noreferrer"><Apple size={17} /> App Store</a>
-              <a className="sa-btn sa-btn-secondary" href={subraAiStoreLinks.android} target="_blank" rel="noopener noreferrer"><Play size={15} fill="currentColor" /> Google Play</a>
-            </div>
-          </div>
-        </section>
+  return <div className={styles.home}>
+    <section className={styles.hero} aria-labelledby="hero-title">
+      <div>
+        <p className={styles.eyebrow}><span className={styles.dot} /> YOUR EVERYDAY AI, ON DEVICE</p>
+        <h1 id="hero-title" className="sa-display">Your ideas.<br />Your AI.<br /><span className={styles.gradient}>On your device.</span></h1>
+        <p className={styles.lead}>Chat, ask questions about images, turn voice into text, and keep useful context with AI Memory. A private AI workspace that goes where you go.</p>
+        <StoreButtons />
+        <p className={styles.note}>Runs offline after model download. Availability varies by device and region.</p>
+        <div className={styles.trust}><span><ShieldCheck size={16} /> No account required</span><span><WifiOff size={16} /> On-device inference</span><span><Share2 size={16} /> Share when you choose</span></div>
+        <a className={styles.textLink} href="#features">Explore what you can do <ArrowRight size={16} /></a>
       </div>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "SoftwareApplication", name: "Subra AI", applicationCategory: "UtilitiesApplication", operatingSystem: "Android, iOS", url: absoluteUrl("/subra-ai"), installUrl: [subraAiStoreLinks.ios, subraAiStoreLinks.android], description: "Private on-device AI for chat and business workflows, including structured medical device reading capture.", featureList: ["Offline AI chat", "On-device inference", "Medical device reading capture", "Structured JSON output", "Local conversation history", "No account required"], offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }, author: { "@type": "Person", name: "Subrata Kumar Das" } }) }} />
-    </>
-  );
+      <div className={styles.heroVisual}><div className={styles.orbit} /><Capture name="chat" alt="Subra AI chat with a sample 30-minute morning routine" priority /><span className={styles.visualBadge}><span className={styles.dot} /> TEXT · IMAGES · VOICE</span></div>
+    </section>
+
+    <section className={styles.section} id="features" aria-labelledby="features-title">
+      <div className={styles.sectionHead}><p className={styles.eyebrow}>A LITTLE HELP, EVERY DAY</p><h2 className="sa-display" id="features-title">From a passing thought<br />to something useful.</h2><p>Start with a message, an image or your own voice. Keep the conversation going in one place.</p></div>
+      <div className={styles.featureGrid}>
+        <article className={styles.feature}><MessageSquareText className={styles.icon} size={26} /><h3>Make room for your ideas</h3><p>Plan a calmer morning, draft a thoughtful message or work through a question. Get help putting your thoughts into words.</p><div className={styles.miniCapture}><Capture name="chat" alt="A sample morning routine created in Subra AI chat" /></div></article>
+        <article className={styles.feature}><ImageIcon className={styles.icon} size={26} /><h3>Bring an image into the chat</h3><p>Add a picture and ask about what you see. A packing checklist, a visual reference or an everyday object can start the conversation.</p><div className={styles.miniCapture}><Capture name="image" alt="Subra AI responding to an image of a packing checklist" /></div></article>
+        <article className={styles.feature}><Mic className={styles.icon} size={26} /><h3>Say it. Keep the words.</h3><p>Record a thought or attach an audio file. Turn spoken audio into readable text you can return to later.</p><div className={styles.transcript}><span>EXAMPLE TRANSCRIPT</span><blockquote>“Let’s take the early train, find a quiet café, and spend the afternoon exploring on foot.”</blockquote><div className={styles.wave} aria-hidden="true">{Array.from({ length: 28 }, (_, i) => <i key={i} style={{ height: `${12 + ((i * 17) % 39)}px` }} />)}</div><a className={styles.textLink} href="#screenshots">See voice to text <ArrowRight size={15} /></a></div></article>
+      </div>
+    </section>
+
+    <section className={`${styles.section} ${styles.personal}`} aria-labelledby="personal-title">
+      <div className={styles.personalVisual}><Capture name="memory" alt="AI Memory with editable sample preferences and save and reset controls" /></div>
+      <div className={styles.sectionHead}><p className={styles.eyebrow}>MAKE IT YOURS</p><h2 className="sa-display" id="personal-title">A little memory.<br /><span className={styles.gradient}>More you.</span></h2><p>Keep useful context and preferences across chats. Open AI Memory to see what is saved, edit it or reset it whenever you want.</p><div className={styles.inlineFeature}><BrainCircuit size={23} /><div><h3>Context you control</h3><p>Saved memory and your current conversation context have separate controls.</p></div></div><div className={styles.inlineFeature}><Volume2 size={23} /><div><h3>Give your eyes a break</h3><p>Use the read-aloud control to hear a response. You can also enable spoken replies in Settings.</p></div></div></div>
+    </section>
+
+    <section className={`${styles.section} ${styles.sharing}`} aria-labelledby="sharing-title">
+      <div className={styles.sectionHead}><p className={styles.eyebrow}>KEEP IT. COME BACK. PASS IT ON.</p><h2 className="sa-display" id="sharing-title">Private by default.<br /><span className={styles.gradient}>Shared by you.</span></h2><p>Your conversations stay in your local chat history. When a chat is worth passing along, share an export with a friend, a colleague or anyone you choose.</p><ul className={styles.checklist}><li><Check size={18} /> Pin favorites and rename conversations.</li><li><Check size={18} /> Clone, archive or delete chats.</li><li><Check size={18} /> Share a chat export through your device’s sharing options.</li><li><Check size={18} /> Import a Subra AI chat export back into the app.</li></ul><p className={styles.note}>Open chat options → Share → choose a recipient or destination.</p></div>
+      <div className={styles.shareVisual}><a href="/subra-ai/screenshots/share.webp" target="_blank" rel="noopener noreferrer" aria-label="Open a larger screenshot of the Share menu in a new tab"><Image src="/subra-ai/screenshots/share.webp" alt="Subra AI chat options with Share, Rename, Pin, Clone and Archive" width={760} height={1003} sizes="(max-width: 760px) 90vw, 460px" /></a><span className={styles.shareBadge}><Share2 size={19} /> Share any chat. With anyone.</span></div>
+    </section>
+
+    <section className={styles.section} id="screenshots" aria-labelledby="screenshots-title">
+      <div className={styles.galleryHead}><div className={styles.sectionHead}><p className={styles.eyebrow}>TAKE A LOOK INSIDE</p><h2 className="sa-display" id="screenshots-title">One app. Everyday possibilities.</h2><p>Explore all eight capabilities. Select an image to open it larger.</p></div><span className={styles.galleryHint}>Scroll to explore →</span></div>
+      <div className={styles.gallery} tabIndex={0} role="region" aria-label="Scrollable Subra AI screenshot gallery">{screenshots.map((shot, i) => <figure key={shot.file}><a href={`/subra-ai/screenshots/${shot.file}.webp`} target="_blank" rel="noopener noreferrer" aria-label={`${shot.title}. Open larger image in a new tab`}><Image src={`/subra-ai/screenshots/${shot.file}.webp`} alt={shot.alt} width={620} height={1342} sizes="(max-width: 600px) 72vw, 260px" /></a><figcaption><span>{String(i + 1).padStart(2, "0")}</span>{shot.title}</figcaption></figure>)}</div>
+      <p className={styles.note}>iOS interface shown with example conversations. Features and layout may vary by platform and model.</p>
+    </section>
+
+    <section className={styles.section} id="privacy" aria-labelledby="privacy-title"><div className={styles.privacyCard}>
+      <div><p className={styles.eyebrow}><ShieldCheck size={16} /> PRIVACY YOU CAN UNDERSTAND</p><h2 className="sa-display" id="privacy-title">On your hardware.<br />Under your control.</h2><p className={styles.muted}>The on-device experience processes prompts and responses locally, without uploading your chat history to a Subra AI server.</p><Link className={styles.textLink} href="/subra-ai/privacy-policy">Read the privacy details <ArrowRight size={16} /></Link></div>
+      <ul className={styles.privacyList}><li><WifiOff size={22} /><div><h3>Ready for offline use</h3><p>Download the app and a compatible model first. On-device chat can then work without an internet connection.</p></div></li><li><Download size={22} /><div><h3>Your model, your choice</h3><p>Download or import a local model, export a copy, and manage it directly on your device.</p></div></li><li><ShieldCheck size={22} /><div><h3>Clear controls for your data</h3><p>Manage local chats and AI Memory in the app. Sharing an export gives your chosen recipient a copy of that conversation.</p></div></li></ul>
+    </div></section>
+
+    <section className={`${styles.section} ${styles.videoSection}`} id="intro" aria-labelledby="intro-title"><div className={styles.sectionHead}><p className={styles.eyebrow}>MEET SUBRA AI</p><h2 className="sa-display" id="intro-title">See where it started.</h2><p>A short introduction to the idea behind Subra AI. Explore the screenshots above for the current interface and capabilities.</p></div><video className={styles.video} controls playsInline preload="none" poster="/subra-ai/subra-ai-intro-poster.jpg" aria-label="Subra AI introduction"><source src="/subra-ai/subra-ai-intro.mp4" type="video/mp4" />Your browser does not support embedded video.</video></section>
+
+    <section className={`${styles.section} ${styles.developers}`} id="use-cases" aria-labelledby="developers-title"><div><p className={styles.eyebrow}><Cpu size={16} /> FOR DEVELOPERS &amp; BUSINESSES</p><h2 className="sa-display" id="developers-title">Curious about what powers it?</h2><p>Subra AI uses Gemma 4 through LiteRT-LM for on-device inference. Explore the engineering decisions and separate integration examples behind the technology.</p><p className={styles.note}>Business integration examples are separate from the consumer features shown above.</p></div><div className={styles.developerLinks}><Link href="/blog/Why-I-Chose-Gemma-4-E2B-for-Subra-AI">Why I chose Gemma 4 E2B <ArrowRight size={18} /></Link><Link href="/subra-ai-use-cases/device-agnostic-medical-reading-capture">Explore a medical-reading integration example <ArrowRight size={18} /></Link></div></section>
+
+    <section className={styles.section} id="download" aria-labelledby="download-title"><div className={styles.downloadCard}><p className={styles.eyebrow}>BRING YOUR NEXT IDEA</p><h2 className="sa-display" id="download-title">Take private AI with you.</h2><p>Text, images, voice and useful context.<br />Ready for your everyday conversations.</p><StoreButtons /><p className={styles.note}>No account required. A compatible model is needed for on-device inference.</p></div></section>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "SoftwareApplication", name: "Subra AI", applicationCategory: "UtilitiesApplication", operatingSystem: "Android, iOS", url: absoluteUrl("/subra-ai"), installUrl: [stores.ios, stores.android], description, featureList: ["Offline chat after model download", "Image questions", "Voice transcription", "Read aloud", "Local chat history", "AI Memory", "Chat export and import", "Local model management"], offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }, author: { "@type": "Person", name: "Subrata Kumar Das" } }) }} />
+  </div>;
 }
