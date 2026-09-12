@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/18f38dbeee9f54d3.js"],""]
+3:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"LZO3_0KWTTindfiaQKPrZ","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"d365-empty-page","children":["$","div",null,{"className":"d365-empty-card","children":[["$","span",null,{"className":"d365-status","children":[["$","span",null,{"className":"d365-status-dot"}],"Starts soon"]}],["$","p",null,{"className":"d365-kicker","children":"Weekly field notes"}],["$","h1",null,{"children":"The first update arrives on 19 September 2026."}],["$","p",null,{"children":"The journey begins on Monday, 14 September 2026. The first weekly note will cover Python syntax, typing, collections, control flow, functions, and the CLI build."}],["$","div",null,{"className":"d365-actions","children":[["$","$L2",null,{"className":"d365-button","href":"/365-days-to-50-lpa/schedule","children":"View the full schedule"}],["$","$L2",null,{"className":"d365-button d365-button-secondary","href":"/365-days-to-50-lpa","children":"Journey home"}]]}]]}]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null
