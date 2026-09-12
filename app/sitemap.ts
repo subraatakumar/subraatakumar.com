@@ -8,6 +8,7 @@ export const dynamic = "force-static";
 const contentDirectory180Days = path.join(process.cwd(), "content/180days");
 const contentDirectory24Weeks = path.join(process.cwd(), "content/24weeks");
 const contentDirectoryBlog = path.join(process.cwd(), "content/blog");
+const contentDirectory365Days = path.join(process.cwd(), "content/365-days-to-50-lpa");
 
 function get180DayPaths() {
   if (!fs.existsSync(contentDirectory180Days)) return [];
@@ -41,6 +42,14 @@ function getBlogPaths() {
     .map((slug) => `/blog/${slug}`);
 }
 
+function get365DayPaths() {
+  if (!fs.existsSync(contentDirectory365Days)) return [];
+  return fs.readdirSync(contentDirectory365Days)
+    .filter((file) => /^day-\d{3}\.md$/.test(file))
+    .map((file) => `/365-days-to-50-lpa/${file.replace(/\.md$/, "")}`)
+    .sort();
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const staticPaths = [
@@ -65,17 +74,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/shehealth",
     "/tcbs-cli",
     "/180days",
+    "/365-days-to-50-lpa",
+    "/365-days-to-50-lpa/schedule",
+    "/365-days-to-50-lpa/updates",
     "/24weeks",
     "/blog",
   ];
 
-  const allPaths = [...staticPaths, ...get180DayPaths(), ...get24WeekPaths(), ...getBlogPaths()];
+  const allPaths = [...staticPaths, ...get365DayPaths(), ...get180DayPaths(), ...get24WeekPaths(), ...getBlogPaths()];
 
   return allPaths.map((route) => ({
     url: new URL(route, SITE_URL).toString(),
     lastModified: now,
     changeFrequency:
-      route.startsWith("/180days/day-")
+      route.startsWith("/180days/day-") || route.startsWith("/365-days-to-50-lpa/day-")
         ? "daily"
         : route.startsWith("/24weeks/week-")
           ? "weekly"
@@ -85,7 +97,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority:
       route === "/"
         ? 1
-        : route === "/180days" || route === "/24weeks" || route === "/blog"
+        : route === "/180days" || route === "/365-days-to-50-lpa" || route === "/24weeks" || route === "/blog"
           ? 0.9
         : route.startsWith("/24weeks/week-")
             ? 0.85
