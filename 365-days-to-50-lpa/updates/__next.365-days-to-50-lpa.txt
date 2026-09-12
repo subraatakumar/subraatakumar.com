@@ -573,5 +573,5 @@
           .d365-project, .d365-project:nth-child(even), .d365-project:hover, .d365-project:nth-child(even):hover { transform: none !important; }
           .d365-perspective-plane { transform: translate(-50%, -50%) rotateZ(8deg); pointer-events: none; }
         }
-      0:{"buildId":"LZO3_0KWTTindfiaQKPrZ","rsc":["$","$1","c",{"children":[null,["$","div",null,{"style":{"all":"revert"},"children":[["$","style",null,{"children":"$2"}],"$L3"]}]]}],"loading":null,"isPartial":false}
+      0:{"buildId":"IxMyMkIcY-1p_Hugt-BbN","rsc":["$","$1","c",{"children":[null,["$","div",null,{"style":{"all":"revert"},"children":[["$","style",null,{"children":"$2"}],"$L3"]}]]}],"loading":null,"isPartial":false}
 3:["$","div",null,{"id":"days365-root","children":[["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}],["$","footer",null,{"className":"d365-footer","children":["$","div",null,{"className":"d365-shell d365-footer-inner","children":[["$","span",null,{"children":"Subrata Kumar Das · 365-day engineering journey"}],["$","$L6",null,{"href":"/","className":"d365-nav-link","children":"Main home"}]]}]}]]}]
