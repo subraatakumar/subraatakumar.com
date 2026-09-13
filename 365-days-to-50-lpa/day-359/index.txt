@@ -221,7 +221,7 @@ a:I[68027,[],"default"]
             .sk-nav-mobile { display: block; }
             .sk-page-heading { font-size: 2.2rem; }
           }
-        0:{"P":null,"b":"QjsLpYZpgPVbuAQncjaYU","c":["","365-days-to-50-lpa","day-359",""],"q":"","i":false,"f":[[["",{"children":["365-days-to-50-lpa",{"children":[["slug","day-359","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/9719c3c70144cf32.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/18f38dbeee9f54d3.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+        0:{"P":null,"b":"pvHjsBt21hv6rRSBIoYpc","c":["","365-days-to-50-lpa","day-359",""],"q":"","i":false,"f":[[["",{"children":["365-days-to-50-lpa",{"children":[["slug","day-359","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/9719c3c70144cf32.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/18f38dbeee9f54d3.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
 b:I[22016,["/_next/static/chunks/18f38dbeee9f54d3.js","/_next/static/chunks/d87b716920d553cc.js"],""]
 c:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
 d:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
@@ -232,7 +232,7 @@ d:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f
 3:["$","header",null,{"className":"sk-header","children":[["$","div",null,{"className":"sk-header-inner","children":[["$","$Lb",null,{"href":"/","className":"sk-logo","children":"SKD_"}],["$","nav",null,{"aria-label":"Primary","children":["$","ul",null,{"className":"sk-nav-links","children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/work-with-me","children":"Work with me"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/notes","children":"Notes"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]]}],["$","div",null,{"className":"sk-nav-mobile","children":["$","nav",null,{"aria-label":"Mobile","children":["$","ul",null,{"children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/work-with-me","children":"Work"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/notes","children":"Notes"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]}]]}]
 4:["$","main",null,{"style":{"width":"100%"},"children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
 5:["$","footer",null,{"className":"sk-footer","children":["© ",2026," Subrata Kumar Das. All rights reserved. ·"," ",["$","$Lb",null,{"href":"/for-ai","children":"For AI/Crawlers"}]]}]
-e:T8645,
+e:Ta064,
         body:has(#days365-root) .sk-header,
         body:has(#days365-root) .sk-footer {
           display: none !important;
@@ -403,13 +403,31 @@ e:T8645,
           line-height: 0.93;
         }
         .d365-hero h1 span { color: var(--amber); }
+        .d365-hero-subtitle {
+          margin: 16px 0 0;
+          color: var(--slate-800);
+          font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+          font-weight: 800;
+          letter-spacing: -0.02em;
+          line-height: 1.2;
+        }
         .d365-lede {
           max-width: 660px;
-          margin: 28px 0 0;
+          margin: 22px 0 0;
           color: var(--slate-600);
           font-size: clamp(1rem, 2vw, 1.2rem);
           line-height: 1.75;
         }
+        .d365-audience-note {
+          max-width: 660px;
+          margin: 14px 0 0;
+          padding-left: 14px;
+          border-left: 3px solid var(--amber);
+          color: var(--slate-600);
+          font-size: 0.9rem;
+          line-height: 1.6;
+        }
+        .d365-audience-note strong { color: var(--slate-900); }
         .d365-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
         .d365-button {
           display: inline-flex;
@@ -552,7 +570,7 @@ e:T8645,
         .d365-section h2 { margin: 0; color: var(--slate-950); font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 900; letter-spacing: -0.04em; line-height: 1.05; }
         .d365-section-intro { margin: 0; color: var(--slate-500); font-size: 1rem; line-height: 1.75; }
 
-        .d365-principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+        .d365-principles { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
         .d365-principle { padding: 24px; border: 1px solid var(--slate-200); border-radius: 16px; background: var(--white); }
         .d365-principle-mark { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 11px; background: var(--amber-soft); color: var(--amber-deep); font-size: 17px; font-weight: 900; }
         .d365-principle h3 { margin: 18px 0 8px; color: var(--slate-950); font-size: 1rem; }
@@ -662,9 +680,36 @@ e:T8645,
         .d365-subpage-header { max-width: 760px; }
         .d365-subpage-header h1, .d365-empty-card h1 { margin: 0; color: var(--slate-950); font-size: clamp(2.5rem, 6vw, 4.7rem); line-height: 0.98; letter-spacing: -0.05em; }
         .d365-subpage-header > p:last-child, .d365-empty-card > p { margin: 24px 0 0; color: var(--slate-600); font-size: 1rem; line-height: 1.75; }
+        .d365-evidence-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 38px; }
+        .d365-evidence-summary article { padding: 22px; border: 1px solid var(--slate-200); border-radius: 16px; background: var(--white); }
+        .d365-evidence-summary strong { display: block; color: var(--slate-950); font-size: 1rem; }
+        .d365-evidence-summary p { margin: 8px 0 0; color: var(--slate-500); font-size: 13px; line-height: 1.6; }
+        .d365-evidence-gallery { margin-top: 52px; }
+        .d365-evidence-gallery-heading { display: flex; align-items: end; justify-content: space-between; gap: 32px; }
+        .d365-evidence-gallery-heading h2 { margin: 0; font-size: clamp(1.8rem, 4vw, 2.8rem); }
+        .d365-evidence-gallery-heading p:last-child { margin: 10px 0 0; color: var(--slate-500); line-height: 1.6; }
+        .d365-evidence-controls { display: flex; align-items: center; gap: 12px; flex: 0 0 auto; }
+        .d365-evidence-controls button { width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid var(--slate-300); border-radius: 50%; background: var(--white); color: var(--slate-900); cursor: pointer; transition: border-color 160ms ease, color 160ms ease, transform 160ms ease; }
+        .d365-evidence-controls button:hover { border-color: var(--amber); color: var(--amber-deep); transform: translateY(-2px); }
+        .d365-evidence-controls button:focus-visible { outline: 3px solid rgba(8,145,178,0.28); outline-offset: 3px; }
+        .d365-evidence-controls span { min-width: 42px; color: var(--slate-500); font-size: 13px; font-weight: 800; text-align: center; }
+        .d365-evidence-stack { position: relative; height: min(69vw, 780px); min-height: 570px; margin-top: 26px; }
+        .d365-evidence-card { --evidence-offset: 0; position: absolute; inset: 0; overflow: hidden; border: 1px solid var(--slate-200); border-radius: 22px; background: var(--white); box-shadow: 0 24px 55px rgba(15,23,42,0.12); opacity: calc(1 - (var(--evidence-offset) * 0.18)); transform: translateY(calc(var(--evidence-offset) * 13px)) scale(calc(1 - (var(--evidence-offset) * 0.018))); transform-origin: top center; z-index: calc(10 - var(--evidence-offset)); pointer-events: none; transition: opacity 260ms ease, transform 300ms cubic-bezier(.2,.8,.2,1); }
+        .d365-evidence-card.is-active { pointer-events: auto; }
+        .d365-evidence-card-meta { min-height: 108px; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 24px; border-bottom: 1px solid var(--slate-200); }
+        .d365-evidence-card-meta span { color: var(--amber-deep); font-size: 11px; font-weight: 900; letter-spacing: 0.12em; text-transform: uppercase; }
+        .d365-evidence-card-meta h3 { margin: 5px 0 0; color: var(--slate-950); font-size: clamp(1.15rem, 2.5vw, 1.55rem); }
+        .d365-evidence-card-meta p { margin: 5px 0 0; color: var(--slate-500); font-size: 13px; }
+        .d365-evidence-card-meta a { display: inline-flex; align-items: center; gap: 7px; color: var(--cyan); font-size: 13px; font-weight: 850; text-decoration: none; white-space: nowrap; }
+        .d365-evidence-image-frame { aspect-ratio: 1.44; overflow: hidden; background: var(--slate-100); }
+        .d365-evidence-image-frame img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+        .d365-evidence-disclaimer { margin-top: 24px; padding: 20px 22px; border-radius: 14px; background: var(--amber-soft); color: var(--slate-700); font-size: 14px; line-height: 1.65; }
         .d365-schedule-key { display: flex; flex-wrap: wrap; gap: 10px; margin: 42px 0 22px; }
         .d365-schedule-key span { padding: 10px 13px; border: 1px solid var(--slate-200); border-radius: 9px; background: var(--white); color: var(--slate-500); font-size: 12px; }
         .d365-schedule-key strong { color: var(--slate-900); }
+        .d365-schedule-principle { margin: -6px 0 22px; padding: 18px 20px; border: 1px solid #a5f3fc; border-radius: 12px; background: var(--cyan-soft); }
+        .d365-schedule-principle strong { display: block; color: var(--slate-950); font-size: 13px; }
+        .d365-schedule-principle p { margin: 7px 0 0; color: var(--slate-600); font-size: 13px; line-height: 1.65; }
         .d365-schedule-controls { position: sticky; top: 12px; z-index: 20; display: grid; grid-template-columns: minmax(190px, 1fr) minmax(170px, 0.8fr) auto; gap: 10px; align-items: end; margin: 0 0 18px; padding: 12px; border: 1px solid rgba(203,213,225,0.88); border-radius: 14px; background: rgba(255,255,255,0.92); box-shadow: 0 12px 30px rgba(15,23,42,0.08); backdrop-filter: blur(14px); }
         .d365-schedule-controls label { display: grid; gap: 5px; }
         .d365-schedule-controls label > span { color: var(--slate-500); font-size: 10px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; }
@@ -677,8 +722,15 @@ e:T8645,
         .d365-week:target { border-color: var(--amber); box-shadow: 0 0 0 4px rgba(245,158,11,0.14), 0 18px 42px rgba(15,23,42,0.10); }
         .d365-week-heading { padding: 20px; background: var(--slate-900); color: var(--white); }
         .d365-week-heading span { display: block; font-size: 14px; font-weight: 900; }
+        .d365-week-heading h2 { margin: 0; font-size: 14px; font-weight: 900; }
         .d365-week-heading small { display: block; margin-top: 6px; color: var(--slate-400); font-size: 11px; font-weight: 700; }
+        .d365-week-heading em { display: block; margin-top: 18px; color: #67e8f9; font-size: 9px; font-style: normal; font-weight: 900; letter-spacing: 0.09em; line-height: 1.45; text-transform: uppercase; }
         .d365-week-content { min-width: 0; }
+        .d365-week-brief { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-left: 1px solid var(--slate-200); border-bottom: 1px solid var(--slate-200); background: var(--slate-50); }
+        .d365-week-brief div { padding: 14px 16px; border-right: 1px solid var(--slate-200); border-bottom: 1px solid var(--slate-200); }
+        .d365-week-brief div:last-child { border-bottom: 0; }
+        .d365-week-brief span { color: var(--amber-deep); font-size: 9px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; }
+        .d365-week-brief p { margin: 6px 0 0; color: var(--slate-600); font-size: 11px; line-height: 1.5; }
         .d365-week-days { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); }
         .d365-day { min-height: 110px; padding: 18px 16px; border-left: 1px solid var(--slate-200); color: inherit; text-decoration: none; transition: background 160ms ease, box-shadow 160ms ease, transform 160ms ease; }
         .d365-day:hover, .d365-day:focus-visible { position: relative; z-index: 2; background: #ecfeff; box-shadow: inset 3px 0 0 var(--cyan), inset 0 0 0 1px #a5f3fc; }
@@ -693,7 +745,9 @@ e:T8645,
         .d365-weekend-row { min-height: 42px; display: grid; grid-template-columns: 78px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 8px 14px; border-top: 1px solid var(--slate-200); border-left: 1px solid var(--slate-200); background: var(--slate-50); }
         .d365-weekend-row > span { color: var(--cyan); font-size: 10px; font-weight: 900; letter-spacing: 0.11em; text-transform: uppercase; }
         .d365-weekend-row strong { color: var(--slate-600); font-size: 11px; }
-        .d365-weekend-row div { display: flex; gap: 6px; }
+        .d365-weekend-row > div:last-child { display: flex; gap: 6px; }
+        .d365-weekend-summary { display: grid; gap: 4px; }
+        .d365-weekend-summary small { color: var(--slate-500); font-size: 10px; line-height: 1.45; }
         .d365-weekend-row a { min-height: 36px; display: inline-flex; align-items: center; padding: 5px 10px; border: 1px solid var(--slate-200); border-radius: 7px; background: var(--white); color: var(--slate-600); font-size: 10px; font-weight: 800; text-decoration: none; }
         .d365-weekend-row a:hover { border-color: var(--cyan); color: var(--cyan); }
         .d365-final-day { display: grid; grid-template-columns: 54px 1fr; gap: 20px; margin-top: 24px; padding: 26px; border: 1px solid #a5f3fc; border-radius: 16px; background: var(--cyan-soft); color: inherit; text-decoration: none; transition: transform 160ms ease, box-shadow 160ms ease; }
@@ -714,7 +768,7 @@ e:T8645,
         .d365-note-heading { display: grid; grid-template-columns: minmax(0, 1fr) 118px; gap: 30px; align-items: end; }
         .d365-note-portrait { display: block; width: 118px; height: auto; align-self: end; filter: drop-shadow(0 10px 12px rgba(15,23,42,0.14)); }
         .d365-note-header .d365-kicker { margin: 0 0 18px; color: var(--amber-deep); }
-        .d365-note-header h1 { margin: 0; color: var(--slate-950); font-size: clamp(2.4rem, 7vw, 4.8rem); line-height: 1; letter-spacing: -0.05em; }
+        .d365-note-header h1 { margin: 0; color: var(--slate-950); font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.04; letter-spacing: -0.04em; }
         .d365-note-date { margin: 20px 0 0; color: var(--slate-500); font-size: 14px; font-weight: 750; }
         .d365-note-coming-soon { margin-top: 42px; padding: clamp(26px, 5vw, 44px); border: 1px solid var(--slate-200); border-radius: 20px; background: var(--white); box-shadow: 0 22px 55px rgba(15,23,42,0.07); }
         .d365-note-coming-soon h2 { margin: 24px 0 0; color: var(--slate-950); font-size: clamp(1.7rem, 4vw, 2.4rem); letter-spacing: -0.03em; }
@@ -748,6 +802,9 @@ e:T8645,
           .d365-principles { grid-template-columns: 1fr; }
           .d365-nav-link:first-child { display: none; }
           .d365-week { grid-template-columns: 88px minmax(0, 1fr); }
+          .d365-week-brief { grid-template-columns: 1fr; }
+          .d365-week-brief div, .d365-week-brief div:nth-last-child(-n + 2) { border-bottom: 1px solid var(--slate-200); }
+          .d365-week-brief div:last-child { border-bottom: 0; }
           .d365-week-days { grid-template-columns: 1fr; }
           .d365-day { min-height: auto; display: block; border-left: 1px solid var(--slate-200); border-bottom: 1px solid var(--slate-200); }
           .d365-day span { display: block; white-space: nowrap; }
@@ -755,7 +812,7 @@ e:T8645,
           .d365-day p { margin: 8px 0 0; }
           .d365-day small { margin-top: 8px; }
           .d365-weekend-row { grid-template-columns: 1fr; gap: 5px; padding: 12px 16px; }
-          .d365-weekend-row div { margin-top: 3px; }
+          .d365-weekend-row > div:last-child { margin-top: 3px; }
         }
         @media (max-width: 620px) {
           .d365-logo-label { display: none; }
@@ -766,6 +823,15 @@ e:T8645,
           .d365-hero-portrait { width: 244px; }
           .d365-hero-portrait figcaption { display: none; }
           .d365-stats, .d365-phases, .d365-projects { grid-template-columns: 1fr; }
+          .d365-evidence-summary { grid-template-columns: 1fr; }
+          .d365-evidence-gallery { margin-top: 40px; }
+          .d365-evidence-gallery-heading { display: block; }
+          .d365-evidence-controls { display: none; }
+          .d365-evidence-stack { height: auto; min-height: 0; display: grid; gap: 20px; margin-top: 22px; }
+          .d365-evidence-card { position: relative; inset: auto; opacity: 1; transform: none; pointer-events: auto; }
+          .d365-evidence-card[aria-hidden="true"] { visibility: visible; }
+          .d365-evidence-card-meta { min-height: 0; display: block; padding: 18px; }
+          .d365-evidence-card-meta a { margin-top: 14px; }
           .d365-section { padding-top: 64px; }
           .d365-proof { grid-template-columns: 1fr; padding: 26px; }
           .d365-footer-inner { padding: 20px 0; align-items: flex-start; flex-direction: column; }
@@ -773,6 +839,7 @@ e:T8645,
           .d365-week { grid-template-columns: 1fr; }
           .d365-week-heading { display: flex; justify-content: space-between; align-items: center; }
           .d365-week-heading small { margin-top: 0; }
+          .d365-week-heading em { max-width: 48%; margin-top: 0; text-align: right; }
           .d365-day { border-left: 0; }
           .d365-weekend-row { border-left: 0; }
           .d365-schedule-controls { top: 8px; grid-template-columns: 1fr 1fr; }
@@ -809,8 +876,8 @@ e:T8645,
 9:["$","$1","h",{"children":[null,["$","$L14",null,{"children":"$L15"}],["$","div",null,{"hidden":true,"children":["$","$L16",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L17"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
 f:["$","div",null,{"id":"days365-root","children":[["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"className":"d365-footer","children":["$","div",null,{"className":"d365-shell d365-footer-inner","children":[["$","span",null,{"children":"Subrata Kumar Das · 365-day engineering journey"}],["$","$Lb",null,{"href":"/","className":"d365-nav-link","children":"Main home"}]]}]}]]}]
 18:I[5500,["/_next/static/chunks/18f38dbeee9f54d3.js","/_next/static/chunks/d87b716920d553cc.js"],"Image"]
-10:["$","main",null,{"className":"d365-subpage d365-note-page","children":["$","article",null,{"className":"d365-note-shell","children":[["$","nav",null,{"className":"d365-note-topnav","aria-label":"Journey navigation","children":[["$","$Lb",null,{"className":"d365-back-link","href":"/365-days-to-50-lpa/schedule","children":"← Complete schedule"}],["$","$Lb",null,{"className":"d365-back-link","href":"/365-days-to-50-lpa","children":"Journey home"}]]}],["$","header",null,{"className":"d365-note-header","children":["$","div",null,{"className":"d365-note-heading","children":[["$","div",null,{"children":[["$","p",null,{"className":"d365-kicker","children":["Day ",359," · Week ",52]}],["$","h1",null,{"children":"System-design mock"}],["$","p",null,{"className":"d365-note-date","children":"Tuesday, 7 September 2027"}]]}],["$","$L18",null,{"className":"d365-note-portrait","src":"/images/instructor_image_pencil_transparent.png","alt":"Subrata Kumar Das","width":1092,"height":1379}]]}]}],["$","section",null,{"className":"d365-note-coming-soon","children":[["$","span",null,{"className":"d365-status","children":[["$","i",null,{"className":"d365-status-dot"}]," ","Scheduled"]}],["$","h2",null,{"children":"This note is coming soon."}],["$","p",null,{"children":"It will be updated on Tuesday, 7 September 2027 after the day’s learning and building session."}],["$","p",null,{"className":"d365-note-file-hint","children":["Expected file: ",["$","code",null,{"children":["content/365-days-to-50-lpa/","day-359",".md"]}]]}]]}],["$","nav",null,{"className":"d365-day-pagination","aria-label":"Day navigation","children":[["$","$Lb",null,{"href":"/365-days-to-50-lpa/day-358","children":["← Day ",358]}],["$","$Lb",null,{"href":"/365-days-to-50-lpa/day-360","children":["Day ",360," →"]}]]}],null]}]}]
+10:["$","main",null,{"className":"d365-subpage d365-note-page","children":["$","article",null,{"className":"d365-note-shell","children":[["$","nav",null,{"className":"d365-note-topnav","aria-label":"Journey navigation","children":[["$","$Lb",null,{"className":"d365-back-link","href":"/365-days-to-50-lpa/schedule","children":"← Complete schedule"}],["$","$Lb",null,{"className":"d365-back-link","href":"/365-days-to-50-lpa","children":"Journey home"}]]}],["$","header",null,{"className":"d365-note-header","children":["$","div",null,{"className":"d365-note-heading","children":[["$","div",null,{"children":[["$","p",null,{"className":"d365-kicker","children":["Day ",359," · Week ",52]}],["$","h1",null,{"children":"Week 52 · Build our next increment"}],["$","p",null,{"className":"d365-note-date","children":["Scheduled session · ","Tuesday, 7 September 2027"]}],null]}],["$","$L18",null,{"className":"d365-note-portrait","src":"/images/instructor_image_pencil_transparent.png","alt":"Subrata Kumar Das","width":1092,"height":1379}]]}]}],["$","section",null,{"className":"d365-note-content","aria-labelledby":"session-plan-heading","children":[["$","h2",null,{"id":"session-plan-heading","children":"Our planned session"}],["$","p",null,{"children":"We tailor applications or follow up on earlier applications, checking every claim."}],[["$","h3",null,{"children":"Weekly outcome"}],["$","p",null,{"children":"A measured application cycle and a plan for the next quarter."}],["$","h3",null,{"children":"Readiness check"}],["$","p",null,{"children":"We build on Week 51: A system-design interview grounded in our actual product decisions. If its required checks remain incomplete, we use this week to finish or reduce scope first."}],false,["$","h3",null,{"children":"Human approval gate"}],["$","p",null,{"children":"We personally approve applications and record outcomes only when received."}],["$","p",null,{"children":["$","$Lb",null,{"href":"/365-days-to-50-lpa/schedule#week-52","children":["View Week ",52,": agent roles, decisions, and evidence →"]}]}]]]}],["$","section",null,{"className":"d365-note-coming-soon","children":[["$","span",null,{"className":"d365-status","children":[["$","i",null,{"className":"d365-status-dot"}]," Chapter pending"]}],["$","h2",null,{"children":"This chapter has not been published yet."}],["$","p",null,{"children":"We plan to publish each chapter one day before its scheduled session. Session results record work we actually performed and reviewed. Neither the calendar date nor publication alone marks this activity complete."}],["$","p",null,{"className":"d365-note-file-hint","children":["Expected file: ",["$","code",null,{"children":["content/365-days-to-50-lpa/","day-359",".md"]}]]}]]}],["$","nav",null,{"className":"d365-day-pagination","aria-label":"Day navigation","children":[["$","$Lb",null,{"href":"/365-days-to-50-lpa/day-358","children":["← Day ",358]}],["$","$Lb",null,{"href":"/365-days-to-50-lpa/day-360","children":["Day ",360," →"]}]]}],null]}]}]
 15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 19:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"IconMark"]
 13:null
-17:[["$","title","0",{"children":"Day 359: System-design mock | Subrata Kumar Das"}],["$","meta","1",{"name":"description","content":"Day 359 of the 365 Days to Senior Full-Stack AI Engineer journey, scheduled for Tuesday, 7 September 2027."}],["$","meta","2",{"name":"keywords","content":"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"}],["$","meta","3",{"name":"robots","content":"noindex, follow"}],["$","link","4",{"rel":"canonical","href":"https://subraatakumar.com/365-days-to-50-lpa/day-359/"}],["$","meta","5",{"property":"og:title","content":"Day 359: System-design mock"}],["$","meta","6",{"property":"og:description","content":"Day 359 of the 365 Days to Senior Full-Stack AI Engineer journey, scheduled for Tuesday, 7 September 2027."}],["$","meta","7",{"property":"og:url","content":"https://subraatakumar.com/365-days-to-50-lpa/day-359/"}],["$","meta","8",{"property":"og:image","content":"https://subraatakumar.com/images/interview.png"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","11",{"name":"twitter:title","content":"Day 359: System-design mock"}],["$","meta","12",{"name":"twitter:description","content":"Day 359 of the 365 Days to Senior Full-Stack AI Engineer journey, scheduled for Tuesday, 7 September 2027."}],["$","meta","13",{"name":"twitter:image","content":"https://subraatakumar.com/images/interview.png"}],["$","link","14",{"rel":"icon","href":"/favicon.ico?favicon.750fd6b3.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L19","15",{}]]
+17:[["$","title","0",{"children":"Day 359: Week 52 · Build our next increment | Subrata Kumar Das"}],["$","meta","1",{"name":"description","content":"Day 359 of our transition toward Senior/Staff Mobile Engineering with full-stack and applied-AI capabilities, scheduled for Tuesday, 7 September 2027."}],["$","meta","2",{"name":"keywords","content":"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"}],["$","meta","3",{"name":"robots","content":"noindex, follow"}],["$","link","4",{"rel":"canonical","href":"https://subraatakumar.com/365-days-to-50-lpa/day-359/"}],["$","meta","5",{"property":"og:title","content":"Day 359: Week 52 · Build our next increment"}],["$","meta","6",{"property":"og:description","content":"Day 359 of our transition toward Senior/Staff Mobile Engineering with full-stack and applied-AI capabilities, scheduled for Tuesday, 7 September 2027."}],["$","meta","7",{"property":"og:url","content":"https://subraatakumar.com/365-days-to-50-lpa/day-359/"}],["$","meta","8",{"property":"og:image","content":"https://subraatakumar.com/images/interview.png"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","11",{"name":"twitter:title","content":"Day 359: Week 52 · Build our next increment"}],["$","meta","12",{"name":"twitter:description","content":"Day 359 of our transition toward Senior/Staff Mobile Engineering with full-stack and applied-AI capabilities, scheduled for Tuesday, 7 September 2027."}],["$","meta","13",{"name":"twitter:image","content":"https://subraatakumar.com/images/interview.png"}],["$","link","14",{"rel":"icon","href":"/favicon.ico?favicon.750fd6b3.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L19","15",{}]]

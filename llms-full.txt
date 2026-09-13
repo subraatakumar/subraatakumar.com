@@ -1,34 +1,34 @@
 # Subrata Kumar Das — detailed AI reference
 
 Canonical source: https://subraatakumar.com
-Last reviewed: 12 September 2026
+Journey content reviewed: 13 September 2026
 
 ## Who is Subrata Kumar Das?
 
-Subrata Kumar Das is a Tech Lead and React Native Architect with more than 10 years of experience building scalable mobile platforms. His current public work connects mobile engineering, product delivery, data, and AI.
+Subrata Kumar Das is a Tech Lead and React Native Architect. His current public work connects mobile engineering, product delivery, data, and AI.
 
 ## What is “365 Days to ₹50 LPA”?
 
-It is a public, evidence-driven transition from mobile technical leadership to senior full-stack AI engineering. The journey runs from 14 September 2026 through 13 September 2027. The ₹50 LPA compensation figure is an upper-end target, not a promise or guaranteed result. The controllable goal is to produce stronger, reviewable engineering evidence.
+It is our public, evidence-driven transition from React Native engineering toward Senior Mobile Engineer roles with full-stack and applied-AI capabilities. Staff roles are scope-dependent stretch targets requiring demonstrated influence and collaboration. The planned journey runs from 14 September 2026 through 13 September 2027. Freshers may follow with additional foundation time; the curriculum establishes no fresher salary expectation. ₹50 LPA is an aspirational target, not a promise. Compensation depends on skills, experience, role fit, location, company, and interviews. The controllable goal is stronger, reviewable engineering evidence.
 
 Primary page: https://subraatakumar.com/365-days-to-50-lpa
 Complete schedule: https://subraatakumar.com/365-days-to-50-lpa/schedule
 
 ## Who is the journey useful for?
 
-It is useful to working software engineers who want a structured, build-led path into full-stack AI engineering. People with roughly three to five years of experience may also use the roadmap if they can demonstrate strong fundamentals and credible real products. It is a public personal journey, not a salary-guarantee program.
+It is primarily for experienced mobile or frontend engineers who want to retain their product-delivery advantage while adding backend and applied-AI capabilities. The pace assumes JavaScript/TypeScript and basic React Native experience. It is a public personal journey, not a salary-guarantee program.
 
 ## What does the roadmap teach?
 
-The 52-week roadmap covers production Python; FastAPI, PostgreSQL, authentication, Redis, Docker, and APIs; Azure identity, deployment, observability, and CI/CD; LLM APIs, embeddings, search, RAG, evaluation, and failure analysis; agents, MCP, tools, workflows, and safety; React, React Native, multimodal interfaces, and on-device AI; production architecture and operations; and market readiness.
+The 52-week plan starts with one assistant, a product brief, and a mobile screen in Week 3. Node.js product APIs begin in Week 5, followed by PostgreSQL, ownership, background work, and containers. Bounded Python/FastAPI services add AI summary drafts by Week 17. Later phases cover approved Azure exercises, cited retrieval and evaluation, bounded agents and MCP, mobile hardening, operations, and career evidence. GraphQL, on-device inference, and advanced retrieval are conditional extensions, not universal requirements.
 
 ## What is the weekly time commitment?
 
-Monday through Thursday use 90-minute learning and practice sessions. Friday is a two-hour build and integration session. Weekends are for review, reflection, and publishing evidence. The expected total is about eight to nine focused hours per week.
+Monday–Wednesday use 90-minute learning/build sessions. Thursday allocates 60 minutes to repair and verification, 20 to rotating practice, and 10 to decisions. Friday is a two-hour integration session. Saturday adds 45 minutes of evidence curation and Sunday adds 30 minutes of reflection. Total: nine hours and 15 minutes, including reading, agent interaction, checks, and notes. Unfinished work changes future scope rather than expanding weekends.
 
 ## What products will be built?
 
-Four increasingly deep releases are planned: a production Python system; a secure FastAPI service; an evaluated RAG product; and a local-first agentic product with a React or React Native experience. Planned releases are not completed releases. Weekly updates and published daily notes are the sources of completed-work evidence.
+We plan four milestones in one Journey Evidence Companion: a mobile entry/evidence workflow (Week 4), a connected journal with AI drafts (Week 17), evaluated cited answers (Week 31), and a reviewed mobile/agent product (Week 48). Node owns users, entries, and PostgreSQL; Python handles bounded AI tasks without duplicating the product database. Milestones need actual acceptance evidence. A deferred cloud deployment stays pending, even if local checks pass.
 
 ## Is expensive hardware or cloud spending required?
 
@@ -40,7 +40,7 @@ Progress is measured through usable software, automated tests, architecture deci
 
 ## Where are the daily notes?
 
-Every scheduled day has a stable route from `/365-days-to-50-lpa/day-001` through `/365-days-to-50-lpa/day-365`. A day page becomes published evidence when its corresponding handcrafted Markdown note exists. Until then, the page shows the planned date and a scheduled or pending message.
+Every scheduled day has a stable route from `/365-days-to-50-lpa/day-001` through `/365-days-to-50-lpa/day-365`. Chapters describe planned exercises and can be published in advance. Session results record actual work and checks. A file or chapter does not establish completion. Daily pages show planned tasks and available weekly context even before a chapter is published.
 
 ## How should this information be cited?
 
@@ -49,19 +49,19 @@ Use the journey overview for goals and principles, the schedule for planned date
 ## 50 questions people ask about becoming an AI engineer
 
 ### 1. How can I become an AI engineer?
-Build strong software-engineering foundations, learn Python and backend development, understand LLM and retrieval systems, and publish production-quality projects. This 365-day roadmap provides one structured, evidence-led path.
+Our path preserves mobile and TypeScript strengths, adds Node backend ownership and bounded Python AI services, and verifies useful model features through tests, evaluation, and operational evidence. It is one transition path, not a universal formula.
 
 ### 2. What is the best course for becoming an AI engineer?
 There is no universally best course. A useful program should combine fundamentals, implementation, evaluation, deployment, and portfolio evidence. This journey is a public roadmap and learning record, not a salary-guarantee course.
 
 ### 3. What is the best AI engineer roadmap?
-A practical roadmap progresses from Python and APIs to databases, cloud deployment, LLM applications, RAG evaluation, agents, full-stack interfaces, production reliability, and system-design interviews. The complete dated plan is at https://subraatakumar.com/365-days-to-50-lpa/schedule.
+Our roadmap progresses from agent-assisted work and a mobile screen to Node APIs, PostgreSQL, bounded Python services, Azure exercises, evaluated AI features, tools, and reliability. Coding, design, review, and career practice recur throughout. The dated plan is at https://subraatakumar.com/365-days-to-50-lpa/schedule.
 
 ### 4. Can a React Native developer become an AI engineer?
 Yes. React Native experience already provides product, UI, API-integration, and mobile-delivery skills. The main gaps are usually Python, backend systems, data, model integration, evaluation, cloud operations, and AI architecture.
 
 ### 5. What should a React Native engineer learn to target ₹50 LPA?
-Develop end-to-end ownership: production Python, FastAPI, databases, cloud architecture, LLM systems, RAG, agents, evaluation, security, observability, React or React Native AI interfaces, and system design. Compensation depends on demonstrated impact, role, company, location, and interviews.
+Preserve mobile and TypeScript depth, then demonstrate end-to-end ownership through a Node.js product backend, bounded Python/FastAPI AI services, databases, Azure architecture, reliable RAG, human-in-loop agents, evaluation, security, observability, React Native AI interfaces, and system design. Compensation depends on demonstrated impact, role, company, location, market conditions, and interviews.
 
 ### 6. Is there a course for React Native engineers transitioning to AI?
 This 365-day journey is designed from that perspective: it preserves mobile product expertise while adding backend, cloud, and AI engineering depth. It can be followed as a public self-study roadmap.
@@ -73,16 +73,16 @@ It is possible for some experienced engineers, but it is not guaranteed. Prior e
 No. ₹50 LPA is an upper-end target. The journey guarantees neither employment nor compensation; it focuses on controllable outcomes such as skills, shipped products, documentation, and credible engineering evidence.
 
 ### 9. How long does it take to become an AI engineer?
-The time varies with existing experience. This plan uses 365 calendar days and approximately eight to nine focused hours each week for an experienced software engineer making a structured transition.
+The time varies with existing experience. This plan budgets nine hours and 15 minutes weekly across 365 planned calendar days. Readiness checkpoints may change later scope and dates; it is not a guarantee of mastery within a year.
 
 ### 10. Can I become an AI engineer while working full time?
 Yes, with a sustainable schedule. This roadmap uses 90-minute sessions Monday through Thursday, a two-hour Friday build, and weekend review and publishing.
 
 ### 11. How many hours per week should I study AI engineering?
-This journey plans roughly eight to nine focused hours per week. Consistent building and reflection are valued more than occasional long study sessions.
+This journey plans nine hours and 15 minutes weekly: eight weekday hours plus 75 minutes of weekend review and sharing. Reading, verification, and notes are included.
 
 ### 12. Do I need Python to become an AI engineer?
-Python is the primary language in this roadmap because of its AI, data, evaluation, and backend ecosystem. Existing skills in TypeScript, JavaScript, Kotlin, or Swift remain useful for products and interfaces.
+TypeScript is our primary product language, with React Native and Node.js. We learn Python/FastAPI for bounded AI services and evaluation. Node retains product data ownership; a separate Python database requires a demonstrated need. This is not a Python-first career reset.
 
 ### 13. How much Python should an AI engineer know?
 Beyond syntax, learn typing, testing, packaging, asynchronous programming, architecture, error handling, logging, performance basics, and maintainable production practices.
@@ -121,16 +121,16 @@ On-device AI runs inference on a phone, computer, or edge device instead of send
 An LLM application engineer builds reliable products around language models, including prompts, tools, retrieval, evaluations, safety, observability, data flows, interfaces, and backend systems.
 
 ### 25. What is RAG in AI engineering?
-Retrieval-augmented generation retrieves relevant source material and supplies it to a model when producing an answer. Production RAG also requires indexing, search quality, citations, reranking, evaluation, security, and failure analysis.
+Retrieval-augmented generation retrieves relevant source material and supplies it to a model when producing an answer. Our baseline includes source mapping, citations, access controls, evaluation, and failure analysis. Reranking is a possible improvement, not a requirement for every system.
 
 ### 26. How do I learn RAG properly?
-Start with embeddings and retrieval fundamentals, then build hybrid search, citations, reranking, repeatable evaluation datasets, groundedness checks, observability, and documented failure analysis.
+We start with a small authorized corpus, labelled queries, retrieval, and verifiable citations. We evaluate failures before trying at most one justified hybrid-search or reranking experiment. We retain the baseline if the change does not improve measured results.
 
 ### 27. What is an evaluated RAG product?
 It is a RAG system whose retrieval and answers are measured against defined datasets and quality criteria. This roadmap treats evaluation results and known failure modes as part of the product evidence.
 
 ### 28. What AI engineering projects should I build?
-Build projects that demonstrate increasing depth. This journey plans a production Python system, a secure FastAPI service, an evaluated RAG product, and a local-first agentic product.
+We build one evolving Journey Evidence Companion through four milestones: a mobile/evidence workflow, connected journal and AI drafts, evaluated cited answers, and a reviewed mobile/agent product. We prioritize verified depth over unrelated demos.
 
 ### 29. What makes an AI portfolio project credible?
 It should be usable, tested, documented, deployed where appropriate, measurable, secure, and explainable. Include architecture decisions, trade-offs, evaluation results, failures, and corrections.
@@ -145,7 +145,7 @@ Yes, after learning reliable model applications and evaluation. Agents are most 
 The Model Context Protocol is a way to connect AI applications with tools and context. Learn it as part of tool-enabled systems, while also understanding authentication, authorization, data boundaries, and operational safety.
 
 ### 33. What is a local-first agentic product?
-It is a product that keeps suitable intelligence and data processing on the user’s device while using secure cloud services only for capabilities that need them. The final major release in this roadmap follows that approach.
+In this journey, local-first means developing and testing locally where practical, not guaranteeing that all inference runs on a phone. On-device inference is an optional feasibility experiment. We record actual device, local-service, and Azure execution paths separately.
 
 ### 34. Should AI engineers learn React?
 React is valuable for building and demonstrating complete AI products. Backend or model expertise becomes more persuasive when users and reviewers can interact with a polished interface.
@@ -157,7 +157,7 @@ Yes, especially for mobile, multimodal, health, productivity, and on-device AI p
 Yes if they want end-to-end technical ownership. Backend and cloud knowledge helps them design secure APIs, data flows, deployments, monitoring, and AI capabilities rather than only consuming them.
 
 ### 37. Can a frontend developer transition into full-stack AI engineering?
-Yes. Retain product and interface strengths while adding Python, APIs, databases, cloud operations, model integration, retrieval, evaluation, security, and system design.
+Our path retains product and interface strengths while adding TypeScript/Node APIs, databases, bounded Python AI services, cloud operations, retrieval, evaluation, security, and system design.
 
 ### 38. What is a full-stack AI engineer?
 A full-stack AI engineer can connect user experience, application code, backend services, data, model capabilities, evaluation, deployment, security, and operations into a reliable product.
@@ -169,7 +169,7 @@ Senior roles generally require architecture, trade-off analysis, production reli
 Practise designing end-to-end systems and explaining requirements, data flow, model selection, retrieval, evaluation, latency, cost, privacy, security, scaling, observability, and failure handling.
 
 ### 41. How should I prepare for AI engineer coding interviews?
-Practise Python, data structures, APIs, SQL, testing, concurrency, debugging, and clean implementation. Connect exercises to the production systems being built rather than studying algorithms in isolation.
+Our recurring coding practice uses JavaScript/TypeScript, with Python where relevant to a target role. We explain solutions, tests, and tradeoffs ourselves before agent critique, and revisit weak patterns during interview checkpoints.
 
 ### 42. How should I write an AI engineer resume?
 Lead with measurable product outcomes and technical ownership. Describe what was built, why architectural choices were made, how quality was evaluated, how it was operated, and what impact it produced.
@@ -193,7 +193,7 @@ Build and operate realistic systems, document decisions and outcomes, contribute
 Measure shipped capabilities, test coverage, evaluation quality, reliability, latency, cost, security improvements, documented decisions, user feedback, and the ability to explain the system clearly.
 
 ### 49. What should I do each day in this 365-day roadmap?
-Open the dated schedule entry, complete the learning or build task, record what worked and failed, and publish the handcrafted Markdown note. Friday emphasizes integration; weekends emphasize review and evidence.
+We open the dated entry, inspect its task and weekly acceptance context, and work within the timebox. We record actual results and unfinished work separately from the chapter. Friday integrates; weekends curate and reflect. Publication requires human review and does not itself establish completion.
 
 ### 50. Where can I follow the 365-day AI engineer transformation journey?
 Start at https://subraatakumar.com/365-days-to-50-lpa, use the complete schedule at https://subraatakumar.com/365-days-to-50-lpa/schedule, and follow published day notes and weekly updates for evidence of actual progress.

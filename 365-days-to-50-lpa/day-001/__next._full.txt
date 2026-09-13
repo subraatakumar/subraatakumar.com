@@ -221,7 +221,7 @@ a:I[68027,[],"default"]
             .sk-nav-mobile { display: block; }
             .sk-page-heading { font-size: 2.2rem; }
           }
-        0:{"P":null,"b":"QjsLpYZpgPVbuAQncjaYU","c":["","365-days-to-50-lpa","day-001",""],"q":"","i":false,"f":[[["",{"children":["365-days-to-50-lpa",{"children":[["slug","day-001","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/9719c3c70144cf32.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/18f38dbeee9f54d3.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+        0:{"P":null,"b":"pvHjsBt21hv6rRSBIoYpc","c":["","365-days-to-50-lpa","day-001",""],"q":"","i":false,"f":[[["",{"children":["365-days-to-50-lpa",{"children":[["slug","day-001","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/9719c3c70144cf32.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/18f38dbeee9f54d3.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
 b:I[22016,["/_next/static/chunks/18f38dbeee9f54d3.js","/_next/static/chunks/d87b716920d553cc.js"],""]
 c:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
 d:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
@@ -232,7 +232,7 @@ d:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f
 3:["$","header",null,{"className":"sk-header","children":[["$","div",null,{"className":"sk-header-inner","children":[["$","$Lb",null,{"href":"/","className":"sk-logo","children":"SKD_"}],["$","nav",null,{"aria-label":"Primary","children":["$","ul",null,{"className":"sk-nav-links","children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/work-with-me","children":"Work with me"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/notes","children":"Notes"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]]}],["$","div",null,{"className":"sk-nav-mobile","children":["$","nav",null,{"aria-label":"Mobile","children":["$","ul",null,{"children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/work-with-me","children":"Work"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/notes","children":"Notes"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]}]]}]
 4:["$","main",null,{"style":{"width":"100%"},"children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
 5:["$","footer",null,{"className":"sk-footer","children":["© ",2026," Subrata Kumar Das. All rights reserved. ·"," ",["$","$Lb",null,{"href":"/for-ai","children":"For AI/Crawlers"}]]}]
-e:T8645,
+e:Ta064,
         body:has(#days365-root) .sk-header,
         body:has(#days365-root) .sk-footer {
           display: none !important;
@@ -403,13 +403,31 @@ e:T8645,
           line-height: 0.93;
         }
         .d365-hero h1 span { color: var(--amber); }
+        .d365-hero-subtitle {
+          margin: 16px 0 0;
+          color: var(--slate-800);
+          font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+          font-weight: 800;
+          letter-spacing: -0.02em;
+          line-height: 1.2;
+        }
         .d365-lede {
           max-width: 660px;
-          margin: 28px 0 0;
+          margin: 22px 0 0;
           color: var(--slate-600);
           font-size: clamp(1rem, 2vw, 1.2rem);
           line-height: 1.75;
         }
+        .d365-audience-note {
+          max-width: 660px;
+          margin: 14px 0 0;
+          padding-left: 14px;
+          border-left: 3px solid var(--amber);
+          color: var(--slate-600);
+          font-size: 0.9rem;
+          line-height: 1.6;
+        }
+        .d365-audience-note strong { color: var(--slate-900); }
         .d365-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
         .d365-button {
           display: inline-flex;
@@ -552,7 +570,7 @@ e:T8645,
         .d365-section h2 { margin: 0; color: var(--slate-950); font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 900; letter-spacing: -0.04em; line-height: 1.05; }
         .d365-section-intro { margin: 0; color: var(--slate-500); font-size: 1rem; line-height: 1.75; }
 
-        .d365-principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+        .d365-principles { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
         .d365-principle { padding: 24px; border: 1px solid var(--slate-200); border-radius: 16px; background: var(--white); }
         .d365-principle-mark { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 11px; background: var(--amber-soft); color: var(--amber-deep); font-size: 17px; font-weight: 900; }
         .d365-principle h3 { margin: 18px 0 8px; color: var(--slate-950); font-size: 1rem; }
@@ -662,9 +680,36 @@ e:T8645,
         .d365-subpage-header { max-width: 760px; }
         .d365-subpage-header h1, .d365-empty-card h1 { margin: 0; color: var(--slate-950); font-size: clamp(2.5rem, 6vw, 4.7rem); line-height: 0.98; letter-spacing: -0.05em; }
         .d365-subpage-header > p:last-child, .d365-empty-card > p { margin: 24px 0 0; color: var(--slate-600); font-size: 1rem; line-height: 1.75; }
+        .d365-evidence-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 38px; }
+        .d365-evidence-summary article { padding: 22px; border: 1px solid var(--slate-200); border-radius: 16px; background: var(--white); }
+        .d365-evidence-summary strong { display: block; color: var(--slate-950); font-size: 1rem; }
+        .d365-evidence-summary p { margin: 8px 0 0; color: var(--slate-500); font-size: 13px; line-height: 1.6; }
+        .d365-evidence-gallery { margin-top: 52px; }
+        .d365-evidence-gallery-heading { display: flex; align-items: end; justify-content: space-between; gap: 32px; }
+        .d365-evidence-gallery-heading h2 { margin: 0; font-size: clamp(1.8rem, 4vw, 2.8rem); }
+        .d365-evidence-gallery-heading p:last-child { margin: 10px 0 0; color: var(--slate-500); line-height: 1.6; }
+        .d365-evidence-controls { display: flex; align-items: center; gap: 12px; flex: 0 0 auto; }
+        .d365-evidence-controls button { width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid var(--slate-300); border-radius: 50%; background: var(--white); color: var(--slate-900); cursor: pointer; transition: border-color 160ms ease, color 160ms ease, transform 160ms ease; }
+        .d365-evidence-controls button:hover { border-color: var(--amber); color: var(--amber-deep); transform: translateY(-2px); }
+        .d365-evidence-controls button:focus-visible { outline: 3px solid rgba(8,145,178,0.28); outline-offset: 3px; }
+        .d365-evidence-controls span { min-width: 42px; color: var(--slate-500); font-size: 13px; font-weight: 800; text-align: center; }
+        .d365-evidence-stack { position: relative; height: min(69vw, 780px); min-height: 570px; margin-top: 26px; }
+        .d365-evidence-card { --evidence-offset: 0; position: absolute; inset: 0; overflow: hidden; border: 1px solid var(--slate-200); border-radius: 22px; background: var(--white); box-shadow: 0 24px 55px rgba(15,23,42,0.12); opacity: calc(1 - (var(--evidence-offset) * 0.18)); transform: translateY(calc(var(--evidence-offset) * 13px)) scale(calc(1 - (var(--evidence-offset) * 0.018))); transform-origin: top center; z-index: calc(10 - var(--evidence-offset)); pointer-events: none; transition: opacity 260ms ease, transform 300ms cubic-bezier(.2,.8,.2,1); }
+        .d365-evidence-card.is-active { pointer-events: auto; }
+        .d365-evidence-card-meta { min-height: 108px; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 24px; border-bottom: 1px solid var(--slate-200); }
+        .d365-evidence-card-meta span { color: var(--amber-deep); font-size: 11px; font-weight: 900; letter-spacing: 0.12em; text-transform: uppercase; }
+        .d365-evidence-card-meta h3 { margin: 5px 0 0; color: var(--slate-950); font-size: clamp(1.15rem, 2.5vw, 1.55rem); }
+        .d365-evidence-card-meta p { margin: 5px 0 0; color: var(--slate-500); font-size: 13px; }
+        .d365-evidence-card-meta a { display: inline-flex; align-items: center; gap: 7px; color: var(--cyan); font-size: 13px; font-weight: 850; text-decoration: none; white-space: nowrap; }
+        .d365-evidence-image-frame { aspect-ratio: 1.44; overflow: hidden; background: var(--slate-100); }
+        .d365-evidence-image-frame img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+        .d365-evidence-disclaimer { margin-top: 24px; padding: 20px 22px; border-radius: 14px; background: var(--amber-soft); color: var(--slate-700); font-size: 14px; line-height: 1.65; }
         .d365-schedule-key { display: flex; flex-wrap: wrap; gap: 10px; margin: 42px 0 22px; }
         .d365-schedule-key span { padding: 10px 13px; border: 1px solid var(--slate-200); border-radius: 9px; background: var(--white); color: var(--slate-500); font-size: 12px; }
         .d365-schedule-key strong { color: var(--slate-900); }
+        .d365-schedule-principle { margin: -6px 0 22px; padding: 18px 20px; border: 1px solid #a5f3fc; border-radius: 12px; background: var(--cyan-soft); }
+        .d365-schedule-principle strong { display: block; color: var(--slate-950); font-size: 13px; }
+        .d365-schedule-principle p { margin: 7px 0 0; color: var(--slate-600); font-size: 13px; line-height: 1.65; }
         .d365-schedule-controls { position: sticky; top: 12px; z-index: 20; display: grid; grid-template-columns: minmax(190px, 1fr) minmax(170px, 0.8fr) auto; gap: 10px; align-items: end; margin: 0 0 18px; padding: 12px; border: 1px solid rgba(203,213,225,0.88); border-radius: 14px; background: rgba(255,255,255,0.92); box-shadow: 0 12px 30px rgba(15,23,42,0.08); backdrop-filter: blur(14px); }
         .d365-schedule-controls label { display: grid; gap: 5px; }
         .d365-schedule-controls label > span { color: var(--slate-500); font-size: 10px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; }
@@ -677,8 +722,15 @@ e:T8645,
         .d365-week:target { border-color: var(--amber); box-shadow: 0 0 0 4px rgba(245,158,11,0.14), 0 18px 42px rgba(15,23,42,0.10); }
         .d365-week-heading { padding: 20px; background: var(--slate-900); color: var(--white); }
         .d365-week-heading span { display: block; font-size: 14px; font-weight: 900; }
+        .d365-week-heading h2 { margin: 0; font-size: 14px; font-weight: 900; }
         .d365-week-heading small { display: block; margin-top: 6px; color: var(--slate-400); font-size: 11px; font-weight: 700; }
+        .d365-week-heading em { display: block; margin-top: 18px; color: #67e8f9; font-size: 9px; font-style: normal; font-weight: 900; letter-spacing: 0.09em; line-height: 1.45; text-transform: uppercase; }
         .d365-week-content { min-width: 0; }
+        .d365-week-brief { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-left: 1px solid var(--slate-200); border-bottom: 1px solid var(--slate-200); background: var(--slate-50); }
+        .d365-week-brief div { padding: 14px 16px; border-right: 1px solid var(--slate-200); border-bottom: 1px solid var(--slate-200); }
+        .d365-week-brief div:last-child { border-bottom: 0; }
+        .d365-week-brief span { color: var(--amber-deep); font-size: 9px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; }
+        .d365-week-brief p { margin: 6px 0 0; color: var(--slate-600); font-size: 11px; line-height: 1.5; }
         .d365-week-days { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); }
         .d365-day { min-height: 110px; padding: 18px 16px; border-left: 1px solid var(--slate-200); color: inherit; text-decoration: none; transition: background 160ms ease, box-shadow 160ms ease, transform 160ms ease; }
         .d365-day:hover, .d365-day:focus-visible { position: relative; z-index: 2; background: #ecfeff; box-shadow: inset 3px 0 0 var(--cyan), inset 0 0 0 1px #a5f3fc; }
@@ -693,7 +745,9 @@ e:T8645,
         .d365-weekend-row { min-height: 42px; display: grid; grid-template-columns: 78px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 8px 14px; border-top: 1px solid var(--slate-200); border-left: 1px solid var(--slate-200); background: var(--slate-50); }
         .d365-weekend-row > span { color: var(--cyan); font-size: 10px; font-weight: 900; letter-spacing: 0.11em; text-transform: uppercase; }
         .d365-weekend-row strong { color: var(--slate-600); font-size: 11px; }
-        .d365-weekend-row div { display: flex; gap: 6px; }
+        .d365-weekend-row > div:last-child { display: flex; gap: 6px; }
+        .d365-weekend-summary { display: grid; gap: 4px; }
+        .d365-weekend-summary small { color: var(--slate-500); font-size: 10px; line-height: 1.45; }
         .d365-weekend-row a { min-height: 36px; display: inline-flex; align-items: center; padding: 5px 10px; border: 1px solid var(--slate-200); border-radius: 7px; background: var(--white); color: var(--slate-600); font-size: 10px; font-weight: 800; text-decoration: none; }
         .d365-weekend-row a:hover { border-color: var(--cyan); color: var(--cyan); }
         .d365-final-day { display: grid; grid-template-columns: 54px 1fr; gap: 20px; margin-top: 24px; padding: 26px; border: 1px solid #a5f3fc; border-radius: 16px; background: var(--cyan-soft); color: inherit; text-decoration: none; transition: transform 160ms ease, box-shadow 160ms ease; }
@@ -714,7 +768,7 @@ e:T8645,
         .d365-note-heading { display: grid; grid-template-columns: minmax(0, 1fr) 118px; gap: 30px; align-items: end; }
         .d365-note-portrait { display: block; width: 118px; height: auto; align-self: end; filter: drop-shadow(0 10px 12px rgba(15,23,42,0.14)); }
         .d365-note-header .d365-kicker { margin: 0 0 18px; color: var(--amber-deep); }
-        .d365-note-header h1 { margin: 0; color: var(--slate-950); font-size: clamp(2.4rem, 7vw, 4.8rem); line-height: 1; letter-spacing: -0.05em; }
+        .d365-note-header h1 { margin: 0; color: var(--slate-950); font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.04; letter-spacing: -0.04em; }
         .d365-note-date { margin: 20px 0 0; color: var(--slate-500); font-size: 14px; font-weight: 750; }
         .d365-note-coming-soon { margin-top: 42px; padding: clamp(26px, 5vw, 44px); border: 1px solid var(--slate-200); border-radius: 20px; background: var(--white); box-shadow: 0 22px 55px rgba(15,23,42,0.07); }
         .d365-note-coming-soon h2 { margin: 24px 0 0; color: var(--slate-950); font-size: clamp(1.7rem, 4vw, 2.4rem); letter-spacing: -0.03em; }
@@ -748,6 +802,9 @@ e:T8645,
           .d365-principles { grid-template-columns: 1fr; }
           .d365-nav-link:first-child { display: none; }
           .d365-week { grid-template-columns: 88px minmax(0, 1fr); }
+          .d365-week-brief { grid-template-columns: 1fr; }
+          .d365-week-brief div, .d365-week-brief div:nth-last-child(-n + 2) { border-bottom: 1px solid var(--slate-200); }
+          .d365-week-brief div:last-child { border-bottom: 0; }
           .d365-week-days { grid-template-columns: 1fr; }
           .d365-day { min-height: auto; display: block; border-left: 1px solid var(--slate-200); border-bottom: 1px solid var(--slate-200); }
           .d365-day span { display: block; white-space: nowrap; }
@@ -755,7 +812,7 @@ e:T8645,
           .d365-day p { margin: 8px 0 0; }
           .d365-day small { margin-top: 8px; }
           .d365-weekend-row { grid-template-columns: 1fr; gap: 5px; padding: 12px 16px; }
-          .d365-weekend-row div { margin-top: 3px; }
+          .d365-weekend-row > div:last-child { margin-top: 3px; }
         }
         @media (max-width: 620px) {
           .d365-logo-label { display: none; }
@@ -766,6 +823,15 @@ e:T8645,
           .d365-hero-portrait { width: 244px; }
           .d365-hero-portrait figcaption { display: none; }
           .d365-stats, .d365-phases, .d365-projects { grid-template-columns: 1fr; }
+          .d365-evidence-summary { grid-template-columns: 1fr; }
+          .d365-evidence-gallery { margin-top: 40px; }
+          .d365-evidence-gallery-heading { display: block; }
+          .d365-evidence-controls { display: none; }
+          .d365-evidence-stack { height: auto; min-height: 0; display: grid; gap: 20px; margin-top: 22px; }
+          .d365-evidence-card { position: relative; inset: auto; opacity: 1; transform: none; pointer-events: auto; }
+          .d365-evidence-card[aria-hidden="true"] { visibility: visible; }
+          .d365-evidence-card-meta { min-height: 0; display: block; padding: 18px; }
+          .d365-evidence-card-meta a { margin-top: 14px; }
           .d365-section { padding-top: 64px; }
           .d365-proof { grid-template-columns: 1fr; padding: 26px; }
           .d365-footer-inner { padding: 20px 0; align-items: flex-start; flex-direction: column; }
@@ -773,6 +839,7 @@ e:T8645,
           .d365-week { grid-template-columns: 1fr; }
           .d365-week-heading { display: flex; justify-content: space-between; align-items: center; }
           .d365-week-heading small { margin-top: 0; }
+          .d365-week-heading em { max-width: 48%; margin-top: 0; text-align: right; }
           .d365-day { border-left: 0; }
           .d365-weekend-row { border-left: 0; }
           .d365-schedule-controls { top: 8px; grid-template-columns: 1fr 1fr; }
@@ -809,8 +876,319 @@ e:T8645,
 9:["$","$1","h",{"children":[null,["$","$L14",null,{"children":"$L15"}],["$","div",null,{"hidden":true,"children":["$","$L16",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L17"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
 f:["$","div",null,{"id":"days365-root","children":[["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"className":"d365-footer","children":["$","div",null,{"className":"d365-shell d365-footer-inner","children":[["$","span",null,{"children":"Subrata Kumar Das · 365-day engineering journey"}],["$","$Lb",null,{"href":"/","className":"d365-nav-link","children":"Main home"}]]}]}]]}]
 18:I[5500,["/_next/static/chunks/18f38dbeee9f54d3.js","/_next/static/chunks/d87b716920d553cc.js"],"Image"]
-10:["$","main",null,{"className":"d365-subpage d365-note-page","children":["$","article",null,{"className":"d365-note-shell","children":[["$","nav",null,{"className":"d365-note-topnav","aria-label":"Journey navigation","children":[["$","$Lb",null,{"className":"d365-back-link","href":"/365-days-to-50-lpa/schedule","children":"← Complete schedule"}],["$","$Lb",null,{"className":"d365-back-link","href":"/365-days-to-50-lpa","children":"Journey home"}]]}],["$","header",null,{"className":"d365-note-header","children":["$","div",null,{"className":"d365-note-heading","children":[["$","div",null,{"children":[["$","p",null,{"className":"d365-kicker","children":["Day ",1," · Week ",1]}],["$","h1",null,{"children":"Python refresher: syntax & typing"}],["$","p",null,{"className":"d365-note-date","children":"Monday, 14 September 2026"}]]}],["$","$L18",null,{"className":"d365-note-portrait","src":"/images/instructor_image_pencil_transparent.png","alt":"Subrata Kumar Das","width":1092,"height":1379}]]}]}],["$","section",null,{"className":"d365-note-coming-soon","children":[["$","span",null,{"className":"d365-status","children":[["$","i",null,{"className":"d365-status-dot"}]," ","Scheduled"]}],["$","h2",null,{"children":"This note is coming soon."}],["$","p",null,{"children":"It will be updated on Monday, 14 September 2026 after the day’s learning and building session."}],["$","p",null,{"className":"d365-note-file-hint","children":["Expected file: ",["$","code",null,{"children":["content/365-days-to-50-lpa/","day-001",".md"]}]]}]]}],["$","nav",null,{"className":"d365-day-pagination","aria-label":"Day navigation","children":[["$","span",null,{}],["$","$Lb",null,{"href":"/365-days-to-50-lpa/day-002","children":["Day ",2," →"]}]]}],null]}]}]
+19:T4dc2,<h2>What we will do today</h2>
+<p>We begin our transition toward Senior/Staff Mobile Engineering with full-stack and applied-AI capabilities by creating a place to work, choosing one available AI assistant, and completing one small exercise. By the end of this chapter, we will have a local folder, a JavaScript file we have run, and a journal explaining our decisions and starting knowledge.</p>
+<p>This chapter is a plan we can follow. Its sample answers and results are illustrative; our actual results belong in our own journal after we perform the exercise.</p>
+<p>We already bring different strengths to the journey. Some of us have delivered React Native applications for years. Others are still learning JavaScript. Today’s exercise gives us a small starting measurement we can revisit. It does not assess our entire engineering ability or determine our readiness for a job title.</p>
+<h2>Our workspace and assistant</h2>
+<p>A <strong>workspace</strong> is simply a folder containing the files for our work. We can open it in a code editor and keep the exercise beside the explanation of why we wrote it.</p>
+<p>An <strong>AI assistant</strong> receives our instructions and produces suggestions. A coding agent may also have tools that read files, edit code, or execute commands. We will start with an assistant we already have access to. A browser chat is sufficient for today: we can copy a short snippet into it and apply reviewed suggestions ourselves.</p>
+<p>We will use that assistant in two clearly separated roles:</p>
+<ul>
+<li><strong>Planning assistant:</strong> helps us create a short checklist and understand unfamiliar steps.</li>
+<li><strong>Review assistant:</strong> challenges our explanation and suggests tests after our first attempt.</li>
+</ul>
+<p>These are two scoped conversations or tasks. We do not need two products or a custom multi-agent system. We will build and understand more capable agents later in the journey.</p>
+<p>If a coding agent is already installed, we use its review or approval controls and limit it to this new folder. For today, it needs no access to our employer’s repositories, cloud accounts, or public profiles.</p>
+<h3>What happens to Ollama, Hermes, and the coding CLI?</h3>
+<p>We record their current status today and use one available assistant during Week 1. In Week 2, we select our primary coding workflow and benchmark one local model with Ollama if our hardware supports it. In Week 3, we apply that workflow to our first mobile screen. In Week 4, we prepare evidence drafts with Hermes or our existing assistant; manual publication remains sufficient. This follows the <a href="/365-days-to-50-lpa/schedule/">complete schedule</a>.</p>
+<p>If a tool is already available, we record what we actually use. If it is absent, we write “not configured.” We do not need to install all the candidates before beginning.</p>
+<h2>The 90-minute session</h2>
+<p>Reading and troubleshooting belong inside the time budget. We stop when the session ends and record anything unfinished.</p>
+<table>
+<thead>
+<tr>
+<th>Minutes</th>
+<th>Our activity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0–15</td>
+<td>Read the chapter and identify our editor and available assistant.</td>
+</tr>
+<tr>
+<td>15–30</td>
+<td>Create the folder and journal; check whether Node.js is available.</td>
+</tr>
+<tr>
+<td>30–45</td>
+<td>Predict and run the small exercise; save our original explanation.</td>
+</tr>
+<tr>
+<td>45–60</td>
+<td>Ask the review assistant for feedback and apply one focused correction.</td>
+</tr>
+<tr>
+<td>60–75</td>
+<td>Run the checks and explain the corrected code in our own words.</td>
+</tr>
+<tr>
+<td>75–90</td>
+<td>Record our tool decisions, one gap, and a public-update draft.</td>
+</tr>
+</tbody>
+</table>
+<p>If setup takes the full first 30 minutes, we use a browser console for the exercise and defer Node.js installation. We can also save our files locally if Git or GitHub is not ready. Repository setup and publication can continue during Week 1.</p>
+<h2>Step 1: Create a place for the journey</h2>
+<p>Using our file manager, we create a folder named <code>365-day-journey</code> in a location we can find again. Inside it, we create a <code>day-001</code> folder. We open that folder in our preferred code editor and create two files:</p>
+<pre><code class="language-text">365-day-journey/
+  day-001/
+    journal.md
+    baseline.js
+</code></pre>
+<p>The <code>.md</code> extension means <strong>Markdown</strong>, a plain-text format that uses simple characters for headings and lists. For example, <code># Day 1</code> becomes a heading when displayed by GitHub or our website. We can edit it as ordinary text.</p>
+<p>The <code>.js</code> extension identifies a JavaScript file. It will hold a tiny function and its checks.</p>
+<p>We put this template in <code>journal.md</code>:</p>
+<pre><code class="language-markdown"># Day 1 — Our starting point
+
+## Session
+- Date:
+- Minutes spent:
+- Status: in progress
+
+## Environment
+- Operating system:
+- Editor:
+- JavaScript runtime and version, or browser:
+- Assistant and model, if shown:
+- Assistant access: chat only / approved workspace tools
+
+## Tool decisions
+- What we used:
+- Why it was sufficient today:
+- Alternatives deferred and why:
+- Assumptions or limitations:
+- What would make us reconsider:
+
+## Exercise
+- Our prediction before running:
+- Actual output:
+- Our explanation before AI feedback:
+- Assistant suggestions:
+- What we accepted or rejected, and why:
+- Checks we actually ran:
+- What we can now explain:
+- What remains unclear:
+
+## Visibility
+- GitHub: existing / not configured
+- Notion: existing / not configured
+- Public site or LinkedIn: existing / not configured
+- Public-update draft:
+- Publication status: draft, not published
+
+## Next step
+- One gap to revisit:
+- One action for Day 2:
+</code></pre>
+<p>We fill this progressively as we work. Empty fields are acceptable while the session is in progress. The template is a working document, not a completed account of our experience.</p>
+<p>For a planning assistant, we can use this prompt:</p>
+<pre><code class="language-text">We have 90 minutes for Day 1 of our engineering journey.
+Help us follow this chapter using one editor, one assistant,
+one JavaScript file, and one journal.
+
+Ask which tools we already have. Explain unfamiliar steps plainly.
+Give us a short checklist. Keep the exercise answers for later.
+Do not invent our environment, results, or completed work.
+</code></pre>
+<h2>Step 2: Check how we will run JavaScript</h2>
+<p>JavaScript needs a <strong>runtime</strong>: a program that executes JavaScript instructions. A browser includes one. Node.js also runs JavaScript, including from files outside a browser.</p>
+<p>If a terminal is already available in our editor, we enter:</p>
+<pre><code class="language-sh">node --version
+</code></pre>
+<p>This asks Node.js to print its installed version. We copy the actual output into the journal. If the command is unavailable, we record that and use the browser route below. We do not spend the session troubleshooting installation.</p>
+<p>With Node.js available, we open the terminal in the <code>day-001</code> folder. After saving code in <code>baseline.js</code>, we can run it with:</p>
+<pre><code class="language-sh">node baseline.js
+</code></pre>
+<p>If we get a “cannot find module” or file-not-found message, we check that the terminal is in <code>day-001</code> and that the filename is exactly <code>baseline.js</code>.</p>
+<h3>Browser route</h3>
+<p>We open a blank browser tab, open its developer tools, and select the <strong>Console</strong> panel. The console can evaluate JavaScript we type. We enter the small examples from this chapter there and keep the same code in our local file for reference. If the browser restricts pasting, we type the short example ourselves.</p>
+<p>When repeating declarations causes an “already declared” error, a fresh blank tab gives us a fresh console. Our journal records that we used a browser rather than Node.js.</p>
+<h2>Step 3: Capture our first explanation</h2>
+<p>Our exercise connects something familiar—a name displayed on a screen—to a backend concern: data may have a different shape from what our interface expects.</p>
+<p>An <strong>API</strong> is an interface through which software exchanges requests and responses. A mobile application often receives an object from an API and turns its fields into visible text.</p>
+<p>We start with this function:</p>
+<pre><code class="language-js">function greeting(user) {
+  return "Hello, " + user.name.toUpperCase();
+}
+
+console.log(greeting({ name: "Asha" }));
+console.log(greeting({ name: null }));
+</code></pre>
+<p><code>greeting</code> accepts an object named <code>user</code>. It reads the <code>name</code> property and calls <code>toUpperCase()</code>, a method that converts a string to uppercase. <code>console.log()</code> prints a result.</p>
+<p>Before running the code, we write two predictions in our journal:</p>
+<ol>
+<li>What will the first call print?</li>
+<li>What will happen when <code>name</code> is <code>null</code>, meaning that no value is present?</li>
+</ol>
+<p>We then run the code and preserve our actual output. We write a short explanation before consulting the assistant. If we do not know the answer, “I do not yet understand this behaviour” is useful evidence.</p>
+<p><strong>Checkpoint:</strong> we save our prediction and first output before reading the worked explanation below. Reading the explanation first is fine for learning; we simply label that attempt “guided” in our journal.</p>
+<h2>Step 4: Work through the failure</h2>
+<p>The first call prints:</p>
+<pre><code class="language-text">Hello, ASHA
+</code></pre>
+<p>The second call throws a <code>TypeError</code>. Its exact wording depends on the runtime, but the reason is that <code>null</code> has no <code>toUpperCase</code> method.</p>
+<p>This is a useful failure. The function assumes <code>name</code> is a string without checking that assumption. In a real product, a similar problem might come from an API response, stored data, or an AI-generated answer.</p>
+<p>TypeScript helps us reason about code through types, but a type declaration alone does not inspect incoming network data while the program runs. We will study that boundary more deeply when we build our backend services. Today we can make it visible with a small JavaScript check.</p>
+<h3>Define the behaviour before changing the code</h3>
+<p>We choose a simple contract for this exercise:</p>
+<ul>
+<li>A non-empty string name produces an uppercase greeting.</li>
+<li>Spaces around a valid name are removed.</li>
+<li>Missing, empty, or non-string names produce <code>Hello, friend</code>.</li>
+</ul>
+<p>A <strong>contract</strong> describes the behaviour callers can expect. Another product might reject invalid input instead. Our decision today is to display a friendly fallback, and our journal records why.</p>
+<p>We ask the review assistant:</p>
+<pre><code class="language-text">Act as our review assistant for this small JavaScript exercise.
+We will provide the code, our original explanation, and actual output.
+
+First, ask one question that checks our understanding of the failure.
+Then suggest the smallest change meeting this contract:
+- Trim and uppercase a non-empty string name.
+- Return "Hello, friend" for missing, empty, or non-string names.
+
+Explain each condition and suggest three edge cases.
+Do not claim that tests passed unless we provide execution results.
+We will decide what to accept and run the checks ourselves.
+</code></pre>
+<p>We keep its suggestions separate from our original answer. If it introduces a library or rewrites the whole example, we ask how that helps this specific contract.</p>
+<h2>Step 5: Make and verify one correction</h2>
+<p>Here is a worked correction we can compare with the assistant’s proposal:</p>
+<pre><code class="language-js">function greeting(user) {
+  if (user === null || typeof user !== "object") {
+    return "Hello, friend";
+  }
+
+  if (typeof user.name !== "string") {
+    return "Hello, friend";
+  }
+
+  const name = user.name.trim();
+
+  if (name.length === 0) {
+    return "Hello, friend";
+  }
+
+  return "Hello, " + name.toUpperCase();
+}
+</code></pre>
+<p>The first condition checks whether a usable object was provided. We check <code>null</code> explicitly because JavaScript reports <code>typeof null</code> as <code>"object"</code>.</p>
+<p>The second condition checks the property we need. An object can exist while its <code>name</code> is missing, a number, or <code>null</code>.</p>
+<p>Only after confirming that <code>name</code> is a string do we call <code>trim()</code>. This removes surrounding whitespace. We then handle an empty result before constructing the greeting.</p>
+<p>We replace the original function and calls in <code>baseline.js</code> with the corrected function, followed by these checks:</p>
+<pre><code class="language-js">const cases = [
+  [{ name: "Asha" }, "Hello, ASHA"],
+  [{ name: "  Asha  " }, "Hello, ASHA"],
+  [{ name: "   " }, "Hello, friend"],
+  [{ name: null }, "Hello, friend"],
+  [{ name: 42 }, "Hello, friend"],
+  [{}, "Hello, friend"],
+  [null, "Hello, friend"],
+  [undefined, "Hello, friend"],
+];
+
+for (const [input, expected] of cases) {
+  const actual = greeting(input);
+
+  if (actual !== expected) {
+    throw new Error("Expected: " + expected + "; received: " + actual);
+  }
+}
+
+console.log("Passed " + cases.length + " checks.");
+</code></pre>
+<p>Each entry pairs an input with its expected output. The loop calls our function and compares the result. A mismatch throws an error; reaching the final line means all listed comparisons succeeded.</p>
+<p>The expected output for this worked example is:</p>
+<pre><code class="language-text">Passed 8 checks.
+</code></pre>
+<p>We record what our own run actually prints. These checks cover the contract we chose for a small exercise; they do not prove that we have built a complete API validation system.</p>
+<p>To check our understanding, we explain why <code>trim()</code> comes after the type check. We also add one case of our own and predict the result before running it.</p>
+<h2>Step 6: Record capability and assistance separately</h2>
+<p>We avoid giving ourselves a single score for “backend engineering” based on this function. Instead, we record what this particular exercise demonstrated.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>What we record</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Understanding</td>
+<td>Can we explain the failure and each condition?</td>
+</tr>
+<tr>
+<td>Verification</td>
+<td>Which cases did we actually run, and what happened?</td>
+</tr>
+<tr>
+<td>Debugging</td>
+<td>Can we investigate a failed case and explain a correction?</td>
+</tr>
+<tr>
+<td>Assistance</td>
+<td>Which suggestions or worked examples did we use?</td>
+</tr>
+<tr>
+<td>Remaining gap</td>
+<td>What do we still need help understanding?</td>
+</tr>
+</tbody>
+</table>
+<p>Using AI or documentation does not reduce demonstrated capability by itself. What matters is whether we can judge the suggestion, verify it, and take responsibility for the result. Following a worked example is a valid first step; we record it accurately so later comparisons remain useful.</p>
+<p>Here is an <strong>illustrative journal excerpt</strong>, not a claim about our own session:</p>
+<pre><code class="language-text">Original prediction: I expected the second call to print "Hello, NULL".
+Observed: It threw a TypeError.
+Review feedback: The assistant asked whether null is a string.
+Accepted change: Check the input and name before calling string methods.
+Rejected change: Adding a validation package for this tiny exercise.
+Verification: Ran the eight supplied cases and one new missing-name case.
+Understanding: I can explain why the string check precedes trim().
+Gap: I want to understand how runtime validation fits with TypeScript types.
+</code></pre>
+<h2>Step 7: Record tools, decisions, and visibility</h2>
+<p>Our journal should name the editor, runtime, assistant, and model we actually used. If the model name is not visible, we write “not shown.” We also record whether the assistant only saw pasted text or could act inside our workspace.</p>
+<p>For each material choice, we record the option selected, why it fits today, an alternative we deferred, how we checked it, and what would make us reconsider. For example:</p>
+<pre><code class="language-text">Decision: Use the existing chat assistant for Day 1.
+Reason: It can review this small snippet with no additional setup.
+Deferred alternative: A local coding agent, to evaluate during Week 2.
+Limitation: We copy suggestions and execution output manually.
+Verification: We ran the accepted code locally and inspected the result.
+Revisit: When workspace editing or repeatable local-model use becomes useful.
+</code></pre>
+<p>We also inventory our GitHub, Notion, and public profile status. GitHub will hold versioned work; Notion can provide a readable dashboard; the website and LinkedIn can help others discover our evidence. Today, recording existing links and preparing one draft is enough. Account setup and automation have their own scheduled sessions.</p>
+<p>We can ask a documentation assistant to prepare a short update from the journal:</p>
+<pre><code class="language-text">Using only the completed work in this journal, draft a short Day 1 update.
+Include what we attempted, what failed, what we changed, what we verified,
+and our next question. Preserve uncertainty. Do not invent scores,
+screenshots, repository links, or successful checks. Leave it as a draft.
+</code></pre>
+<p>Before sharing, we check that each claim matches our results and that the draft contains only material we intend to make public. Our example uses fictional names and standalone code, so there is no reason to include employer code or account credentials.</p>
+<p>If Git is already configured, we may commit the two files through our normal workflow after reviewing them. Otherwise, saving them locally completes today’s storage requirement. Git records changes and author-supplied timestamps; it does not independently certify when or by whom a task was completed.</p>
+<h2>Our stopping point</h2>
+<p>At 90 minutes, we save our files and mark the session accurately. A useful Day 1 result contains:</p>
+<ul>
+<li>A workspace and journal naming the tools we used.</li>
+<li>Our original prediction and actual exercise output.</li>
+<li>A reviewed correction with the checks we ran, or a specific unresolved blocker.</li>
+<li>One explanation in our own words and one gap to revisit.</li>
+<li>A decision entry and a public-update draft labelled with its actual status.</li>
+</ul>
+<p>If something failed, we record the error and the next diagnostic step. That makes the session useful without claiming that unfinished work succeeded.</p>
+<h2>Questions we may have</h2>
+<h3>Do we need to install every AI tool today?</h3>
+<p>We need one usable assistant. We record other tools as existing, deferred, or not configured, then evaluate them in their scheduled sessions.</p>
+<h3>What if JavaScript is new to us?</h3>
+<p>We can follow the worked example, record unfamiliar terms, and finish with a guided result. We may need additional foundation sessions before following the experienced-engineer pace.</p>
+<h3>Does passing these checks mean we know backend engineering?</h3>
+<p>It demonstrates one small input-handling exercise. Broader capability requires more varied implementation, debugging, design, and operational evidence across the journey.</p>
+<h3>What comes next?</h3>
+<p>In <a href="/365-days-to-50-lpa/day-002/">Day 2</a>, we connect our starting experience and gaps to a target-role scorecard. We now have a concrete example of the daily process we will repeat: define behaviour, use assistance, inspect the result, verify it, and record the reasoning.</p>
+10:["$","main",null,{"className":"d365-subpage d365-note-page","children":["$","article",null,{"className":"d365-note-shell","children":[["$","nav",null,{"className":"d365-note-topnav","aria-label":"Journey navigation","children":[["$","$Lb",null,{"className":"d365-back-link","href":"/365-days-to-50-lpa/schedule","children":"← Complete schedule"}],["$","$Lb",null,{"className":"d365-back-link","href":"/365-days-to-50-lpa","children":"Journey home"}]]}],["$","header",null,{"className":"d365-note-header","children":["$","div",null,{"className":"d365-note-heading","children":[["$","div",null,{"children":[["$","p",null,{"className":"d365-kicker","children":["Day ",1," · Week ",1]}],["$","h1",null,{"children":"Day 1 — Set Up Our Workspace and Capture Our Starting Point"}],["$","p",null,{"className":"d365-note-date","children":["Scheduled session · ","Monday, 14 September 2026"]}],["$","p",null,{"className":"d365-note-date","children":"Chapter · Planned exercise. Publication does not indicate completed work."}]]}],["$","$L18",null,{"className":"d365-note-portrait","src":"/images/instructor_image_pencil_transparent.png","alt":"Subrata Kumar Das","width":1092,"height":1379}]]}]}],["$","section",null,{"className":"d365-note-content","aria-labelledby":"session-plan-heading","children":[["$","h2",null,{"id":"session-plan-heading","children":"Our planned session"}],["$","p",null,{"children":"We set up our workspace, establish one assistant, and verify a small JavaScript baseline exercise."}],[["$","h3",null,{"children":"Weekly outcome"}],["$","p",null,{"children":"A workspace, starting exercise, and agreed first product slice."}],["$","h3",null,{"children":"Readiness check"}],["$","p",null,{"children":"We need an editor and one available assistant; Day 1 includes a browser fallback for JavaScript."}],false,["$","h3",null,{"children":"Human approval gate"}],["$","p",null,{"children":"We run the Day 1 checks and approve a brief identifying the user, problem, first feature, and non-goals."}],["$","p",null,{"children":["$","$Lb",null,{"href":"/365-days-to-50-lpa/schedule#week-1","children":["View Week ",1,": agent roles, decisions, and evidence →"]}]}]]]}],["$","div",null,{"className":"d365-note-content","dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a","$L1b"]}]}]
+1a:["$","nav",null,{"className":"d365-day-pagination","aria-label":"Day navigation","children":[["$","span",null,{}],["$","$Lb",null,{"href":"/365-days-to-50-lpa/day-002","children":["Day ",2," →"]}]]}]
+1b:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Day 1 — Set Up Our Workspace and Capture Our Starting Point\",\"description\":\"We create a journey workspace, establish one AI assistant, and complete a small JavaScript exercise with human verification and a reusable decision journal.\",\"datePublished\":\"2026-09-13\",\"dateModified\":\"2026-09-13\",\"mainEntityOfPage\":\"https://subraatakumar.com/365-days-to-50-lpa/day-001\",\"url\":\"https://subraatakumar.com/365-days-to-50-lpa/day-001\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com/\"},\"isPartOf\":{\"@type\":\"CreativeWorkSeries\",\"name\":\"365 Days to Senior/Staff Mobile Engineering with Full-Stack and Applied AI\",\"url\":\"https://subraatakumar.com/365-days-to-50-lpa\"}}"}}]
 15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-19:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"IconMark"]
+1c:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"IconMark"]
 13:null
-17:[["$","title","0",{"children":"Day 1: Python refresher: syntax & typing | Subrata Kumar Das"}],["$","meta","1",{"name":"description","content":"Day 1 of the 365 Days to Senior Full-Stack AI Engineer journey, scheduled for Monday, 14 September 2026."}],["$","meta","2",{"name":"keywords","content":"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"}],["$","meta","3",{"name":"robots","content":"noindex, follow"}],["$","link","4",{"rel":"canonical","href":"https://subraatakumar.com/365-days-to-50-lpa/day-001/"}],["$","meta","5",{"property":"og:title","content":"Day 1: Python refresher: syntax & typing"}],["$","meta","6",{"property":"og:description","content":"Day 1 of the 365 Days to Senior Full-Stack AI Engineer journey, scheduled for Monday, 14 September 2026."}],["$","meta","7",{"property":"og:url","content":"https://subraatakumar.com/365-days-to-50-lpa/day-001/"}],["$","meta","8",{"property":"og:image","content":"https://subraatakumar.com/images/interview.png"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","11",{"name":"twitter:title","content":"Day 1: Python refresher: syntax & typing"}],["$","meta","12",{"name":"twitter:description","content":"Day 1 of the 365 Days to Senior Full-Stack AI Engineer journey, scheduled for Monday, 14 September 2026."}],["$","meta","13",{"name":"twitter:image","content":"https://subraatakumar.com/images/interview.png"}],["$","link","14",{"rel":"icon","href":"/favicon.ico?favicon.750fd6b3.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L19","15",{}]]
+17:[["$","title","0",{"children":"Day 1 — Set Up Our Workspace and Capture Our Starting Point | Subrata Kumar Das"}],["$","meta","1",{"name":"description","content":"We create a journey workspace, establish one AI assistant, and complete a small JavaScript exercise with human verification and a reusable decision journal."}],["$","meta","2",{"name":"keywords","content":"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"}],["$","meta","3",{"name":"robots","content":"index, follow"}],["$","link","4",{"rel":"canonical","href":"https://subraatakumar.com/365-days-to-50-lpa/day-001/"}],["$","meta","5",{"property":"og:title","content":"Day 1 — Set Up Our Workspace and Capture Our Starting Point"}],["$","meta","6",{"property":"og:description","content":"We create a journey workspace, establish one AI assistant, and complete a small JavaScript exercise with human verification and a reusable decision journal."}],["$","meta","7",{"property":"og:url","content":"https://subraatakumar.com/365-days-to-50-lpa/day-001/"}],["$","meta","8",{"property":"og:image","content":"https://subraatakumar.com/images/interview.png"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"property":"article:published_time","content":"2026-09-13"}],["$","meta","11",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","12",{"name":"twitter:title","content":"Day 1 — Set Up Our Workspace and Capture Our Starting Point"}],["$","meta","13",{"name":"twitter:description","content":"We create a journey workspace, establish one AI assistant, and complete a small JavaScript exercise with human verification and a reusable decision journal."}],["$","meta","14",{"name":"twitter:image","content":"https://subraatakumar.com/images/interview.png"}],["$","link","15",{"rel":"icon","href":"/favicon.ico?favicon.750fd6b3.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L1c","16",{}]]
