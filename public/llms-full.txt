@@ -9,7 +9,7 @@ Subrata Kumar Das is a Tech Lead and React Native Architect with more than 10 ye
 
 ## What is “365 Days to ₹50 LPA”?
 
-It is a public, evidence-driven transition from mobile technical leadership to senior full-stack AI engineering. The journey runs from 14 September 2026 through 13 September 2027. The ₹50 LPA compensation figure is an upper-end target, not a promise or guaranteed result. The controllable goal is to produce stronger, reviewable engineering evidence.
+It is a public, evidence-driven transition from senior software engineering to senior full-stack AI engineering. The journey runs from 14 September 2026 through 13 September 2027. Freshers can follow the same roadmap with ₹10–15 LPA framed as a more realistic initial target. The ₹50 LPA compensation figure is an upper-end target for experienced engineers, not a promise or guaranteed result. Actual compensation depends on demonstrated skills, experience, role fit, location, company, and interview performance. The controllable goal is to produce stronger, reviewable engineering evidence.
 
 Primary page: https://subraatakumar.com/365-days-to-50-lpa
 Complete schedule: https://subraatakumar.com/365-days-to-50-lpa/schedule

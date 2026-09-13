@@ -174,13 +174,31 @@ export default function Days365Layout({ children }: { children: React.ReactNode 
           line-height: 0.93;
         }
         .d365-hero h1 span { color: var(--amber); }
+        .d365-hero-subtitle {
+          margin: 16px 0 0;
+          color: var(--slate-800);
+          font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+          font-weight: 800;
+          letter-spacing: -0.02em;
+          line-height: 1.2;
+        }
         .d365-lede {
           max-width: 660px;
-          margin: 28px 0 0;
+          margin: 22px 0 0;
           color: var(--slate-600);
           font-size: clamp(1rem, 2vw, 1.2rem);
           line-height: 1.75;
         }
+        .d365-audience-note {
+          max-width: 660px;
+          margin: 14px 0 0;
+          padding-left: 14px;
+          border-left: 3px solid var(--amber);
+          color: var(--slate-600);
+          font-size: 0.9rem;
+          line-height: 1.6;
+        }
+        .d365-audience-note strong { color: var(--slate-900); }
         .d365-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
         .d365-button {
           display: inline-flex;
@@ -433,6 +451,30 @@ export default function Days365Layout({ children }: { children: React.ReactNode 
         .d365-subpage-header { max-width: 760px; }
         .d365-subpage-header h1, .d365-empty-card h1 { margin: 0; color: var(--slate-950); font-size: clamp(2.5rem, 6vw, 4.7rem); line-height: 0.98; letter-spacing: -0.05em; }
         .d365-subpage-header > p:last-child, .d365-empty-card > p { margin: 24px 0 0; color: var(--slate-600); font-size: 1rem; line-height: 1.75; }
+        .d365-evidence-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 38px; }
+        .d365-evidence-summary article { padding: 22px; border: 1px solid var(--slate-200); border-radius: 16px; background: var(--white); }
+        .d365-evidence-summary strong { display: block; color: var(--slate-950); font-size: 1rem; }
+        .d365-evidence-summary p { margin: 8px 0 0; color: var(--slate-500); font-size: 13px; line-height: 1.6; }
+        .d365-evidence-gallery { margin-top: 52px; }
+        .d365-evidence-gallery-heading { display: flex; align-items: end; justify-content: space-between; gap: 32px; }
+        .d365-evidence-gallery-heading h2 { margin: 0; font-size: clamp(1.8rem, 4vw, 2.8rem); }
+        .d365-evidence-gallery-heading p:last-child { margin: 10px 0 0; color: var(--slate-500); line-height: 1.6; }
+        .d365-evidence-controls { display: flex; align-items: center; gap: 12px; flex: 0 0 auto; }
+        .d365-evidence-controls button { width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid var(--slate-300); border-radius: 50%; background: var(--white); color: var(--slate-900); cursor: pointer; transition: border-color 160ms ease, color 160ms ease, transform 160ms ease; }
+        .d365-evidence-controls button:hover { border-color: var(--amber); color: var(--amber-deep); transform: translateY(-2px); }
+        .d365-evidence-controls button:focus-visible { outline: 3px solid rgba(8,145,178,0.28); outline-offset: 3px; }
+        .d365-evidence-controls span { min-width: 42px; color: var(--slate-500); font-size: 13px; font-weight: 800; text-align: center; }
+        .d365-evidence-stack { position: relative; height: min(69vw, 780px); min-height: 570px; margin-top: 26px; }
+        .d365-evidence-card { --evidence-offset: 0; position: absolute; inset: 0; overflow: hidden; border: 1px solid var(--slate-200); border-radius: 22px; background: var(--white); box-shadow: 0 24px 55px rgba(15,23,42,0.12); opacity: calc(1 - (var(--evidence-offset) * 0.18)); transform: translateY(calc(var(--evidence-offset) * 13px)) scale(calc(1 - (var(--evidence-offset) * 0.018))); transform-origin: top center; z-index: calc(10 - var(--evidence-offset)); pointer-events: none; transition: opacity 260ms ease, transform 300ms cubic-bezier(.2,.8,.2,1); }
+        .d365-evidence-card.is-active { pointer-events: auto; }
+        .d365-evidence-card-meta { min-height: 108px; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 24px; border-bottom: 1px solid var(--slate-200); }
+        .d365-evidence-card-meta span { color: var(--amber-deep); font-size: 11px; font-weight: 900; letter-spacing: 0.12em; text-transform: uppercase; }
+        .d365-evidence-card-meta h3 { margin: 5px 0 0; color: var(--slate-950); font-size: clamp(1.15rem, 2.5vw, 1.55rem); }
+        .d365-evidence-card-meta p { margin: 5px 0 0; color: var(--slate-500); font-size: 13px; }
+        .d365-evidence-card-meta a { display: inline-flex; align-items: center; gap: 7px; color: var(--cyan); font-size: 13px; font-weight: 850; text-decoration: none; white-space: nowrap; }
+        .d365-evidence-image-frame { aspect-ratio: 1.44; overflow: hidden; background: var(--slate-100); }
+        .d365-evidence-image-frame img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+        .d365-evidence-disclaimer { margin-top: 24px; padding: 20px 22px; border-radius: 14px; background: var(--amber-soft); color: var(--slate-700); font-size: 14px; line-height: 1.65; }
         .d365-schedule-key { display: flex; flex-wrap: wrap; gap: 10px; margin: 42px 0 22px; }
         .d365-schedule-key span { padding: 10px 13px; border: 1px solid var(--slate-200); border-radius: 9px; background: var(--white); color: var(--slate-500); font-size: 12px; }
         .d365-schedule-key strong { color: var(--slate-900); }
@@ -537,6 +579,15 @@ export default function Days365Layout({ children }: { children: React.ReactNode 
           .d365-hero-portrait { width: 244px; }
           .d365-hero-portrait figcaption { display: none; }
           .d365-stats, .d365-phases, .d365-projects { grid-template-columns: 1fr; }
+          .d365-evidence-summary { grid-template-columns: 1fr; }
+          .d365-evidence-gallery { margin-top: 40px; }
+          .d365-evidence-gallery-heading { display: block; }
+          .d365-evidence-controls { display: none; }
+          .d365-evidence-stack { height: auto; min-height: 0; display: grid; gap: 20px; margin-top: 22px; }
+          .d365-evidence-card { position: relative; inset: auto; opacity: 1; transform: none; pointer-events: auto; }
+          .d365-evidence-card[aria-hidden="true"] { visibility: visible; }
+          .d365-evidence-card-meta { min-height: 0; display: block; padding: 18px; }
+          .d365-evidence-card-meta a { margin-top: 14px; }
           .d365-section { padding-top: 64px; }
           .d365-proof { grid-template-columns: 1fr; padding: 26px; }
           .d365-footer-inner { padding: 20px 0; align-items: flex-start; flex-direction: column; }

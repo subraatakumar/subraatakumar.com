@@ -11,7 +11,7 @@ Canonical site: https://subraatakumar.com
 - [Weekly updates](https://subraatakumar.com/365-days-to-50-lpa/updates): Published progress, evidence, corrections, and retrospectives.
 - [Detailed AI reference](https://subraatakumar.com/llms-full.txt): Concise facts and direct answers about the journey and this site.
 
-The journey is an evidence-driven transition from mobile technical leadership to senior full-stack AI engineering. It covers production Python, FastAPI, PostgreSQL, Azure, LLM applications, embeddings, search, RAG evaluation, agents, MCP, React, React Native, and on-device AI. The ₹50 LPA figure is a target, not a guarantee.
+The journey is an evidence-driven transition from senior software engineering to senior full-stack AI engineering. Freshers can follow the same roadmap with ₹10–15 LPA framed as a more realistic initial target. It covers production Python, FastAPI, PostgreSQL, Azure, LLM applications, embeddings, search, RAG evaluation, agents, MCP, React, React Native, and on-device AI. Compensation depends on skills, experience, role fit, and interview performance; no salary is guaranteed.
 
 Daily notes use stable URLs such as `https://subraatakumar.com/365-days-to-50-lpa/day-001`. Treat a daily page as published evidence only when it contains the author’s handcrafted note; a scheduled or pending page is not evidence of completed work.
 

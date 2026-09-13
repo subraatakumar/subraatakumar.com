@@ -9,7 +9,7 @@ import PerspectiveGrid from "./PerspectiveGrid";
 export const metadata: Metadata = {
   title: "365-Day AI Engineer Roadmap: Python, FastAPI, RAG & Agents",
   description:
-    "A public, evidence-driven journey from mobile tech lead to senior full-stack AI engineer through Python, FastAPI, Azure AI, RAG, agents, and local AI.",
+    "A public, evidence-driven journey from senior software engineer to senior full-stack AI engineer through Python, FastAPI, Azure AI, RAG, agents, and local AI.",
   alternates: { canonical: "/365-days-to-50-lpa" },
   openGraph: {
     title: "365 Days to Senior Full-Stack AI Engineer | Subrata Kumar Das",
@@ -95,7 +95,15 @@ const projects = [
 const questions = [
   {
     question: "What is the 365 Days to ₹50 LPA journey?",
-    answer: "It is a public, evidence-driven transition from mobile technical leadership to senior full-stack AI engineering. The compensation figure is a target, not a guarantee; the concrete outcome is stronger, reviewable engineering evidence.",
+    answer: "It is a public, evidence-driven transition from senior software engineering to senior full-stack AI engineering. The compensation figure is a target, not a guarantee; the concrete outcome is stronger, reviewable engineering evidence.",
+  },
+  {
+    question: "Can freshers follow this roadmap?",
+    answer: "Yes. Freshers can use the same roadmap to build strong foundations and credible project evidence, but should treat ₹10–15 LPA as a more realistic initial target rather than expecting senior-level compensation.",
+  },
+  {
+    question: "Does the roadmap guarantee a particular salary?",
+    answer: "No. Compensation depends on demonstrated skills, prior experience, location, the hiring company, role scope, and interview performance. The opening snapshots are market evidence, not a promise of an offer or salary.",
   },
   {
     question: "What will be learned during the 365 days?",
@@ -147,12 +155,15 @@ export default function Days365Home() {
                 365 days to<br />
                 <span>₹50 LPA.</span>
               </h1>
+              <p className="d365-hero-subtitle">FullStack AI Engineer</p>
               <p className="d365-lede">
-                An evidence-driven transition from mobile tech lead to senior full-stack AI engineer—through Python, FastAPI, Azure AI, RAG, agents, React, and on-device AI.
+                An evidence-driven transition from Senior Software Engineer to Senior Full-Stack AI Engineer—through Python, FastAPI, Azure AI, RAG, agents, React, and on-device AI.
               </p>
+              <p className="d365-audience-note"><strong>Freshers are welcome.</strong> Follow the same roadmap, with ₹10–15 LPA as a more realistic initial target.</p>
               <div className="d365-actions">
                 <Link href="/365-days-to-50-lpa/schedule" className="d365-button">View the day-by-day schedule <span aria-hidden="true">→</span></Link>
                 <a href="#proof" className="d365-button d365-button-secondary">How progress is measured</a>
+                <Link href="/365-days-to-50-lpa/market-evidence" className="d365-button d365-button-secondary">View market evidence <span aria-hidden="true">→</span></Link>
               </div>
             </div>
 
@@ -177,7 +188,7 @@ export default function Days365Home() {
                 </div>
                 <div className="d365-progress-labels"><span>Day 0</span><span>365 days</span></div>
                 <div className="d365-progress-track" aria-label="0 percent complete"><div className="d365-progress-fill" /></div>
-                <p className="d365-launch-note">The compensation is a target, not a guarantee. The controllable outcome is stronger engineering evidence.</p>
+                <p className="d365-launch-note">Salary depends on demonstrated skills, experience, role fit, and interview performance. It is a target—not a guarantee.</p>
               </aside>
             </div>
           </div>
