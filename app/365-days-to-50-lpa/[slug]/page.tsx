@@ -34,8 +34,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!day) return {};
   const plan = getDayPlan(day)!;
   const note = await readNote(slug);
-  const title = note?.data.title || `Day ${day}: ${plan.topic}`;
-  const description = note?.data.description || `Day ${day} of the 365 Days to Senior Full-Stack AI Engineer journey, scheduled for ${formatJourneyDate(day)}.`;
+  const title = note?.data.title || `Day ${day}: ${plan.title}`;
+  const description = note?.data.description || `Day ${day} of our transition toward Senior/Staff Mobile Engineering with full-stack and applied-AI capabilities, scheduled for ${formatJourneyDate(day)}.`;
   const canonical = `/365-days-to-50-lpa/${slug}`;
 
   return {
@@ -54,21 +54,19 @@ export default async function JourneyDayPage({ params }: PageProps) {
   if (!day) notFound();
   const plan = getDayPlan(day)!;
   const note = await readNote(slug);
-  const title = note?.data.title || plan.topic;
-  const today = new Date();
-  const isUpcoming = plan.date.getTime() > Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate());
+  const title = note?.data.title || plan.title;
   const canonical = `/365-days-to-50-lpa/${slug}`;
   const structuredData = note ? {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: title,
-    description: note.data.description || `Day ${day} of the 365-day full-stack AI engineering journey.`,
-    datePublished: note.data.date || plan.date.toISOString().slice(0, 10),
-    dateModified: note.data.updated || note.data.date || plan.date.toISOString().slice(0, 10),
+    description: note.data.description || `Day ${day} of our 365-day mobile, full-stack, and applied-AI engineering journey.`,
+    datePublished: note.data.date || undefined,
+    dateModified: note.data.updated || note.data.date || undefined,
     mainEntityOfPage: absoluteUrl(canonical),
     url: absoluteUrl(canonical),
     author: { "@type": "Person", name: "Subrata Kumar Das", url: absoluteUrl("/") },
-    isPartOf: { "@type": "CreativeWorkSeries", name: "365 Days to Senior Full-Stack AI Engineer", url: absoluteUrl("/365-days-to-50-lpa") },
+    isPartOf: { "@type": "CreativeWorkSeries", name: "365 Days to Senior/Staff Mobile Engineering with Full-Stack and Applied AI", url: absoluteUrl("/365-days-to-50-lpa") },
   } : null;
 
   return (
@@ -84,7 +82,8 @@ export default async function JourneyDayPage({ params }: PageProps) {
             <div>
               <p className="d365-kicker">Day {day} · Week {plan.week}</p>
               <h1>{title}</h1>
-              <p className="d365-note-date">{formatJourneyDate(day)}</p>
+              <p className="d365-note-date">Scheduled session · {formatJourneyDate(day)}</p>
+              {note && <p className="d365-note-date">{note.data.kind === "session-result" ? "Session result — see recorded checks and limitations below." : "Chapter · Planned exercise. Publication does not indicate completed work."}</p>}
             </div>
             <Image
               className="d365-note-portrait"
@@ -96,13 +95,31 @@ export default async function JourneyDayPage({ params }: PageProps) {
           </div>
         </header>
 
+        <section className="d365-note-content" aria-labelledby="session-plan-heading">
+          <h2 id="session-plan-heading">Our planned session</h2>
+          <p>{plan.topic}</p>
+          {plan.scheduledWeek && <>
+            <h3>Weekly outcome</h3>
+            <p>{plan.scheduledWeek.outcome}</p>
+            <h3>Readiness check</h3>
+            <p>{plan.scheduledWeek.prerequisite}</p>
+            {plan.weekdayIndex === 3 && <>
+              <h3>Our 20-minute practice</h3>
+              <p>{plan.scheduledWeek.practice}</p>
+            </>}
+            <h3>Human approval gate</h3>
+            <p>{plan.scheduledWeek.humanGate}</p>
+            <p><Link href={`/365-days-to-50-lpa/schedule#week-${plan.week}`}>View Week {plan.week}: agent roles, decisions, and evidence →</Link></p>
+          </>}
+        </section>
+
         {note ? (
           <div className="d365-note-content" dangerouslySetInnerHTML={{ __html: note.html }} />
         ) : (
           <section className="d365-note-coming-soon">
-            <span className="d365-status"><i className="d365-status-dot" /> {isUpcoming ? "Scheduled" : "Notes pending"}</span>
-            <h2>{isUpcoming ? "This note is coming soon." : "The handcrafted notes will be added soon."}</h2>
-            <p>{isUpcoming ? `It will be updated on ${formatJourneyDate(day)} after the day’s learning and building session.` : "This day has passed, but the notes have not been published yet."}</p>
+            <span className="d365-status"><i className="d365-status-dot" /> Chapter pending</span>
+            <h2>This chapter has not been published yet.</h2>
+            <p>We plan to publish each chapter one day before its scheduled session. Session results record work we actually performed and reviewed. Neither the calendar date nor publication alone marks this activity complete.</p>
             <p className="d365-note-file-hint">Expected file: <code>content/365-days-to-50-lpa/{slug}.md</code></p>
           </section>
         )}

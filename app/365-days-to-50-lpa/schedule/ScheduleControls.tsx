@@ -1,17 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-
-const phases = [
-  ["Python engineering", 1, 8],
-  ["Backend systems", 9, 15],
-  ["Azure foundations", 16, 20],
-  ["LLM applications", 21, 28],
-  ["Agents and MCP", 29, 35],
-  ["Full-stack AI", 36, 44],
-  ["Production release", 45, 48],
-  ["Market readiness", 49, 52],
-] as const;
+import { schedulePhases as phases } from "../schedule-data";
 
 function phaseStartForWeek(week: number) {
   return [...phases].reverse().find(([, start]) => week >= start)?.[1] ?? 1;

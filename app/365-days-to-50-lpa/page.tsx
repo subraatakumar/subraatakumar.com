@@ -5,25 +5,26 @@ import { absoluteUrl, DEFAULT_OG_IMAGE } from "@/lib/seo";
 import StatsCounter from "./StatsCounter";
 import TechStackConstellation from "./TechStackConstellation";
 import PerspectiveGrid from "./PerspectiveGrid";
+import { journeyProduct, schedulePhases } from "./schedule-data";
 
 export const metadata: Metadata = {
-  title: "365-Day AI Engineer Roadmap: Python, FastAPI, RAG & Agents",
+  title: "365 Days — Senior Mobile Engineering with Full-Stack and Applied AI",
   description:
-    "A public, evidence-driven journey from senior software engineer to senior full-stack AI engineer through Python, FastAPI, Azure AI, RAG, agents, and local AI.",
+    "A public, AI-assisted transition from React Native engineering to Senior/Staff Mobile Engineer with full-stack, applied-AI, and Azure capabilities.",
   alternates: { canonical: "/365-days-to-50-lpa" },
   openGraph: {
-    title: "365 Days to Senior Full-Stack AI Engineer | Subrata Kumar Das",
+    title: "365 Days to Senior/Staff Mobile + Full-Stack AI Engineering",
     description:
-      "52 weekly checkpoints, four production releases, and one transparent goal: build the evidence required for senior full-stack AI roles.",
+      "52 evidence-driven checkpoints combining React Native, TypeScript, Node.js, Python AI services, Azure, and human-governed coding agents.",
     url: "/365-days-to-50-lpa",
     type: "website",
     images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
-    title: "365 Days to Senior Full-Stack AI Engineer",
+    title: "365 Days to Senior/Staff Mobile + Full-Stack AI Engineering",
     description:
-      "Building production AI systems in public—locally first, on Azure where the architecture needs it.",
+      "Building production mobile and full-stack AI systems in public—with dedicated agents, human approval, and secure Azure delivery.",
     images: [DEFAULT_OG_IMAGE],
   },
 };
@@ -31,63 +32,71 @@ export const metadata: Metadata = {
 const principles = [
   {
     mark: "01",
-    title: "Evidence over certificates",
-    text: "Every learning phase ends in working software, tests, architecture decisions, or measurable evaluation results.",
+    title: "AI-assisted, human-owned",
+    text: "Dedicated agents help us plan, code, review, test, secure, document, and publish. We understand, verify, approve, and remain accountable.",
   },
   {
     mark: "02",
-    title: "Local first, cloud when needed",
-    text: "Use on-device and local models for privacy, speed, and cost—then Azure for scale, managed identity, search, and operations.",
+    title: "Evidence over claims",
+    text: "Every phase produces working software, tests, architecture decisions, measured results, and an honest record of failures and corrections.",
   },
   {
     mark: "03",
-    title: "Market-calibrated learning",
-    text: "Review real openings throughout the year and adjust the plan when employers consistently ask for different evidence.",
+    title: "Build locally, operate on Azure",
+    text: "We develop locally with available tools, test local models where practical, and use bounded Azure deployments to learn identity, delivery, and operations.",
+  },
+  {
+    mark: "04",
+    title: "Learn visibly from Day 1",
+    text: "We publish decisions and evidence throughout the year, compare our work with real openings, and improve how recruiters can evaluate it.",
   },
 ];
 
-const phases = [
-  ["01", "Python engineering", "Weeks 1–8 · Typed, tested, asynchronous and production-oriented Python."],
-  ["02", "Backend systems", "Weeks 9–15 · FastAPI, PostgreSQL, auth, Redis, Docker and testing."],
-  ["03", "Azure foundations", "Weeks 16–20 · Identity, deployment, observability and CI/CD."],
-  ["04", "LLM applications", "Weeks 21–28 · Model APIs, embeddings, search, RAG and evaluation."],
-  ["05", "Agents and MCP", "Weeks 29–35 · Tools, workflows, persistence and multi-agent patterns."],
-  ["06", "Full-stack AI", "Weeks 36–44 · React, React Native, multimodal AI, safety and reliability."],
-  ["07", "Production release", "Weeks 45–48 · Architecture, integration, evaluation and deployment."],
-  ["08", "Market readiness", "Weeks 49–52 · System design, interviews, case studies and applications."],
+const phaseDescriptions = [
+  "Workspace, one assistant, product brief, local-model trial, first mobile screen, and evidence workflow.",
+  "Mobile-to-Node delivery, PostgreSQL, ownership, one background job, containers, and consolidation. GraphQL is optional.",
+  "A small Python utility, stateless FastAPI service, summary evaluation, and human-reviewed mobile drafts.",
+  "Budget, identity, a small deployment, one trace and alert, infrastructure, and recovery.",
+  "Model evaluation, searchable entries, citations, access controls, and a measured RAG milestone.",
+  "Draft workflows, bounded tools, local MCP, approval state, one preference, and agent evaluation.",
+  "Streaming, optional on-device and attachment experiments, architecture review, performance, and recovery.",
+  "Milestone review, verified case studies, focused interview mocks, and an application cycle.",
 ];
+const phases = schedulePhases.map(([name, start, end], index) => [
+  String(index + 1).padStart(2, "0"), name, `Weeks ${start}–${end} · ${phaseDescriptions[index]}`,
+]);
 
 const projects = [
   {
-    title: "Production Python system",
-    text: "A maintainable, typed and fully tested Python application that establishes backend engineering depth.",
-    period: "Weeks 1–8",
-    release: "Ships Day 54",
-    sequence: "Python → typing → testing → async → architecture",
-    scheduleWeek: 8,
+    title: "First mobile screen and evidence workflow",
+    text: "A local journal screen, reviewed development loop, and evidence draft. This first milestone is a working foundation, with manual publication available.",
+    period: "Weeks 1–4",
+    release: "Planned · first proof loop",
+    sequence: "Product brief → mobile entry → review → evidence draft",
+    scheduleWeek: 4,
   },
   {
-    title: "Secure FastAPI service",
-    text: "Database-backed APIs with authentication, async processing, containers, CI/CD and operational telemetry.",
-    period: "Weeks 9–20",
-    release: "Core ships Day 103",
-    sequence: "FastAPI → PostgreSQL → auth → Docker → Azure",
-    scheduleWeek: 15,
+    title: "Connected mobile journal and AI drafts",
+    text: "Mobile entries persist through Node and PostgreSQL. A bounded Python service prepares a summary that we can inspect, accept, or discard.",
+    period: "Weeks 5–17",
+    release: "Planned · service foundation",
+    sequence: "React Native → Node.js → PostgreSQL → Python/FastAPI → tests",
+    scheduleWeek: 17,
   },
   {
     title: "Evaluated RAG product",
-    text: "Hybrid retrieval, citations, reranking, groundedness tests, failure analysis and observable quality metrics.",
-    period: "Weeks 21–28",
-    release: "Ships Day 194",
-    sequence: "LLMs → embeddings → search → RAG → evaluation",
-    scheduleWeek: 28,
+    text: "A cited-answer feature with access checks, failure analysis, and measured quality. We try at most one retrieval improvement when justified; Azure deployment remains pending if deferred.",
+    period: "Weeks 18–31",
+    release: "Planned · measured AI milestone",
+    sequence: "Local models → Azure AI → retrieval → evaluation → observability",
+    scheduleWeek: 31,
   },
   {
-    title: "Local-first agentic product",
-    text: "A polished React or React Native experience combining on-device intelligence with secure Azure-backed capabilities.",
-    period: "Weeks 29–48",
-    release: "Ships Day 334",
-    sequence: "Agents → MCP → mobile UI → safety → production",
+    title: "Reviewed mobile and agent product",
+    text: "The same companion gains bounded tools, approval controls, and operational evidence. We state which paths ran locally, were deployed for testing, or were actually operated in production.",
+    period: "Weeks 32–48",
+    release: "Planned · product case study",
+    sequence: "Agents → MCP → mobile product → distributed systems → Azure operations",
     scheduleWeek: 48,
   },
 ];
@@ -95,11 +104,11 @@ const projects = [
 const questions = [
   {
     question: "What is the 365 Days to ₹50 LPA journey?",
-    answer: "It is a public, evidence-driven transition from senior software engineering to senior full-stack AI engineering. The compensation figure is a target, not a guarantee; the concrete outcome is stronger, reviewable engineering evidence.",
+    answer: "It is our public, evidence-driven transition from React Native engineering toward Senior/Staff Mobile Engineer with full-stack and applied-AI capabilities. The compensation figure is a target, not a guarantee; the concrete outcome is stronger, reviewable engineering evidence.",
   },
   {
     question: "Can freshers follow this roadmap?",
-    answer: "Yes. Freshers can use the same roadmap to build strong foundations and credible project evidence, but should treat ₹10–15 LPA as a more realistic initial target rather than expecting senior-level compensation.",
+    answer: "Yes, with additional foundation time. The calendar assumes JavaScript/TypeScript and mobile or frontend experience. We repeat prerequisite work when needed; this plan does not establish a salary expectation for freshers.",
   },
   {
     question: "Does the roadmap guarantee a particular salary?",
@@ -107,23 +116,23 @@ const questions = [
   },
   {
     question: "What will be learned during the 365 days?",
-    answer: "The roadmap covers production Python, FastAPI, PostgreSQL, authentication, Docker, Azure, LLM APIs, embeddings, search, RAG evaluation, agents, MCP, React, React Native, on-device AI, observability, security, and system design.",
+    answer: "We will combine React Native and TypeScript with Node.js, PostgreSQL, GraphQL, Python/FastAPI AI services, Azure, RAG, agents, MCP, evaluation, security, observability, distributed-system design, and production operations.",
   },
   {
     question: "How much time does the journey require?",
-    answer: "The plan uses 90-minute learning sessions from Monday to Thursday, a two-hour build session on Friday, and weekend review and publishing—for roughly eight to nine focused hours each week.",
+    answer: "We plan eight weekday hours: 90 minutes Monday–Thursday and two hours Friday. Saturday adds 45 minutes for evidence and Sunday adds 30 minutes for reflection: nine hours and 15 minutes total. Reading, agent interaction, checks, and notes are included. Unfinished core work changes future scope rather than expanding weekends.",
   },
   {
     question: "What portfolio projects will be built?",
-    answer: "Four increasingly deep releases are planned: a production Python system, a secure FastAPI service, an evaluated RAG product, and a local-first agentic product with a React or React Native experience.",
+    answer: "We plan four milestones in one evolving companion: a mobile entry and evidence workflow, a connected journal with AI summary drafts, cited retrieval, and a reviewed mobile agent product. Each milestone needs acceptance evidence before being marked complete.",
   },
   {
     question: "Can most of the AI work run locally?",
-    answer: "Yes. The approach is local-first for privacy, speed, and cost. Azure is introduced where managed identity, search, deployment, scale, or production operations provide clear value.",
+    answer: "Much of the development can run locally. Model suitability depends on available hardware and task quality; an existing hosted assistant is a fallback. Azure exercises may incur charges and need a budget. A deferred deployment stays labelled pending, even when its local equivalent works.",
   },
   {
     question: "Where can I follow each day’s work?",
-    answer: "Every schedule entry opens a dated day page. After a session, that page is populated from a handcrafted Markdown note containing what was learned, built, tested, and corrected.",
+    answer: "Every schedule entry opens a dated day page. We plan to publish each chapter one day before its scheduled session. Session results record actual work, tests, and corrections. Reading or publishing a chapter does not mark the exercise or milestone complete.",
   },
 ];
 
@@ -155,11 +164,11 @@ export default function Days365Home() {
                 365 days to<br />
                 <span>₹50 LPA.</span>
               </h1>
-              <p className="d365-hero-subtitle">FullStack AI Engineer</p>
+              <p className="d365-hero-subtitle">Mobile · Full-Stack · Applied AI</p>
               <p className="d365-lede">
-                An evidence-driven transition from Senior Software Engineer to Senior Full-Stack AI Engineer—through Python, FastAPI, Azure AI, RAG, agents, React, and on-device AI.
+                Our evidence-driven transition from React Native engineering toward Senior/Staff Mobile Engineer with full-stack and applied-AI capabilities—using TypeScript, Node.js, Python, Azure, and human-governed agents.
               </p>
-              <p className="d365-audience-note"><strong>Freshers are welcome.</strong> Follow the same roadmap, with ₹10–15 LPA as a more realistic initial target.</p>
+              <p className="d365-audience-note"><strong>Experienced mobile and frontend engineers can follow with us.</strong> Freshers may use the same path, but should expect a longer foundation phase and different initial outcomes.</p>
               <div className="d365-actions">
                 <Link href="/365-days-to-50-lpa/schedule" className="d365-button">View the day-by-day schedule <span aria-hidden="true">→</span></Link>
                 <a href="#proof" className="d365-button d365-button-secondary">How progress is measured</a>
@@ -181,13 +190,12 @@ export default function Days365Home() {
               <aside className="d365-launch-card" aria-label="Journey status">
                 <div className="d365-launch-row">
                   <div>
-                    <span className="d365-kicker">Journey status</span>
-                    <p className="d365-launch-date">Starts 14 Sep 2026</p>
+                    <span className="d365-kicker">Planned journey window</span>
+                    <p className="d365-launch-date">14 Sep 2026 – 13 Sep 2027</p>
                   </div>
-                  <span className="d365-status"><span className="d365-status-dot" />Ready</span>
+                  <span className="d365-status">Roadmap</span>
                 </div>
-                <div className="d365-progress-labels"><span>Day 0</span><span>365 days</span></div>
-                <div className="d365-progress-track" aria-label="0 percent complete"><div className="d365-progress-fill" /></div>
+                <p className="d365-launch-note">Calendar dates show the plan. Completed work is recorded separately in reviewed session results and milestone reports.</p>
                 <p className="d365-launch-note">Salary depends on demonstrated skills, experience, role fit, and interview performance. It is a target—not a guarantee.</p>
               </aside>
             </div>
@@ -199,8 +207,8 @@ export default function Days365Home() {
             {[
               [365, "", "Calendar days"],
               [52, "", "Weekly checkpoints"],
-              [4, "", "Production releases"],
-              [8, "–9h", "Focused each week"],
+              [4, "", "Planned milestones"],
+              [8, "h", "Weekdays + 75 min weekends"],
             ].map(([value, suffix, label]) => (
               <div className="d365-stat" key={label}>
                 <p className="d365-stat-value"><StatsCounter value={Number(value)} suffix={String(suffix)} /></p>
@@ -209,13 +217,21 @@ export default function Days365Home() {
             ))}
           </section>
 
+          <section className="d365-section" aria-labelledby="product-brief-title">
+            <div className="d365-section-heading">
+              <div><p className="d365-kicker">Our working product · reviewed in Week 1</p><h2 id="product-brief-title">{journeyProduct.name}</h2></div>
+              <p className="d365-section-intro">{journeyProduct.description}</p>
+            </div>
+            <div className="d365-schedule-principle"><p><strong>First usable slice:</strong> {journeyProduct.firstSlice}</p><p>{journeyProduct.boundary}</p></div>
+          </section>
+
           <section className="d365-section d365-stack-section" aria-labelledby="stack-title">
             <div className="d365-section-heading">
               <div>
                 <p className="d365-kicker">Core technology map</p>
-                <h2 id="stack-title">One stack. End-to-end ownership.</h2>
+                <h2 id="stack-title">One product. Two backend strengths.</h2>
               </div>
-              <p className="d365-section-intro">The journey connects production Python and FastAPI services with PostgreSQL, Azure operations, containerized delivery, and React experiences.</p>
+              <p className="d365-section-intro">React Native remains our product advantage. TypeScript and Node.js own the application backend; Python and FastAPI handle specialised AI workloads; Azure provides secure production operations.</p>
             </div>
             <TechStackConstellation />
           </section>
@@ -224,9 +240,9 @@ export default function Days365Home() {
             <div className="d365-section-heading">
               <div>
                 <p className="d365-kicker">The operating system</p>
-                <h2 id="principles-title">Not another course checklist.</h2>
+                <h2 id="principles-title">Our transition operating system.</h2>
               </div>
-              <p className="d365-section-intro">The goal is to become credible at designing, shipping, evaluating, and operating AI products—not simply to collect tool names.</p>
+              <p className="d365-section-intro">We use dedicated agents for meaningful work from Day 1, while retaining the understanding, approval, and accountability required of a senior engineer.</p>
             </div>
             <div className="d365-principles">
               {principles.map((principle) => (
@@ -243,9 +259,9 @@ export default function Days365Home() {
             <div className="d365-section-heading">
               <div>
                 <p className="d365-kicker">52-week roadmap</p>
-                <h2 id="roadmap-title">Refresh. Build. Ship. Prove.</h2>
+                <h2 id="roadmap-title">Assist. Understand. Ship. Prove.</h2>
               </div>
-              <p className="d365-section-intro">Each phase starts with targeted refreshers and quickly moves into production-oriented implementation.</p>
+              <p className="d365-section-intro">We build on mobile from Week 3 and connect the backend in Week 5. Thursdays include repair and rotating coding, design, review, or career practice. Every fourth week we reassess readiness. Senior roles are the primary target; Staff scope requires demonstrated influence and collaboration beyond a solo project.</p>
             </div>
             <div className="d365-phases">
               {phases.map(([number, title, text]) => (
@@ -261,9 +277,9 @@ export default function Days365Home() {
             <div className="d365-section-heading">
               <div>
                 <p className="d365-kicker">Portfolio evidence</p>
-                <h2 id="projects-title">Four releases, increasing depth.</h2>
+                <h2 id="projects-title">Four planned milestones.</h2>
               </div>
-              <p className="d365-section-intro">Every release must be usable, documented, tested, and explainable in an architecture or interview conversation.</p>
+              <p className="d365-section-intro">Each milestone extends the same user workflow. We verify acceptance checks and label local, test-deployed, and production-operated evidence separately.</p>
             </div>
             <div className="d365-projects">
               {projects.map((project, index) => (
@@ -290,7 +306,7 @@ export default function Days365Home() {
               <div>
                 <p className="d365-kicker">Definition of progress</p>
                 <h2 id="proof-title">The proof will be public.</h2>
-                <p>Weekly notes will show what was built, the decisions behind it, evaluation results, failures, corrections, source code, and working demonstrations. Market feedback will shape the roadmap throughout the year.</p>
+                <p>From Day 1, weekly notes will separate what agents produced from what we understood and approved. They will show decisions, alternatives, tests, evaluations, failures, corrections, source code, demonstrations, and recruiter-facing case studies.</p>
               </div>
               <Link href="/365-days-to-50-lpa/updates" className="d365-button">Read weekly updates <span aria-hidden="true">→</span></Link>
             </div>
@@ -325,15 +341,15 @@ export default function Days365Home() {
               {
                 "@type": "CreativeWorkSeries",
                 "@id": `${absoluteUrl("/365-days-to-50-lpa")}#journey`,
-                name: "365 Days to Senior Full-Stack AI Engineer",
-                description: "An evidence-driven engineering journey through Python, FastAPI, Azure AI, RAG, agents, React, and on-device AI.",
+                name: "365 Days to Senior/Staff Mobile Engineer with Full-Stack and Applied-AI Capabilities",
+                description: "An AI-assisted, human-owned engineering journey through React Native, TypeScript, Node.js, Python AI services, Azure, RAG, agents, and production operations.",
                 url: absoluteUrl("/365-days-to-50-lpa"),
                 startDate: "2026-09-14",
                 endDate: "2027-09-13",
                 timeRequired: "P365D",
                 author: { "@type": "Person", "@id": `${absoluteUrl("/")}#subrata-kumar-das`, name: "Subrata Kumar Das", url: absoluteUrl("/") },
-                about: ["Python", "FastAPI", "Azure AI", "retrieval-augmented generation", "AI agents", "React", "on-device AI"],
-                hasPart: projects.map((project) => ({ "@type": "SoftwareApplication", name: project.title, description: project.text })),
+                about: ["React Native", "TypeScript", "Node.js", "Python", "FastAPI", "Azure AI", "retrieval-augmented generation", "AI agents", "human-in-the-loop engineering"],
+                hasPart: projects.map((project) => ({ "@type": "CreativeWork", name: `Planned milestone: ${project.title}`, description: project.text })),
               },
               {
                 "@type": "FAQPage",

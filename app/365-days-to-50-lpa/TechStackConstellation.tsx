@@ -1,11 +1,11 @@
 "use client";
 
 const technologies = [
-  { name: "Python", icon: "https://cdn.simpleicons.org/python/3776AB", className: "d365-tech-python" },
-  { name: "FastAPI", icon: "https://cdn.simpleicons.org/fastapi/009688", className: "d365-tech-fastapi" },
+  { name: "React Native", icon: "https://cdn.simpleicons.org/react/61DAFB", className: "d365-tech-python" },
+  { name: "TypeScript", icon: "https://cdn.simpleicons.org/typescript/3178C6", className: "d365-tech-fastapi" },
   { name: "Microsoft Azure", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg", className: "d365-tech-azure" },
-  { name: "React", icon: "https://cdn.simpleicons.org/react/61DAFB", className: "d365-tech-react" },
-  { name: "Docker", icon: "https://cdn.simpleicons.org/docker/2496ED", className: "d365-tech-docker" },
+  { name: "Node.js", icon: "https://cdn.simpleicons.org/nodedotjs/5FA04E", className: "d365-tech-react" },
+  { name: "Python and FastAPI", icon: "https://cdn.simpleicons.org/python/3776AB", className: "d365-tech-docker" },
   { name: "PostgreSQL", icon: "https://cdn.simpleicons.org/postgresql/4169E1", className: "d365-tech-postgres" },
 ];
 

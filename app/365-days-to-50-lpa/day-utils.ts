@@ -3,7 +3,7 @@ import { schedule } from "./schedule-data";
 export const TOTAL_JOURNEY_DAYS = 365;
 export const JOURNEY_START_DATE = new Date(Date.UTC(2026, 8, 14));
 
-const weekdayKeys = ["monday", "tuesday", "wednesday", "thursday", "friday"] as const;
+const weekdayKeys = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"] as const;
 
 export function daySlug(day: number) {
   return `day-${String(day).padStart(3, "0")}`;
@@ -31,17 +31,21 @@ export function getDayPlan(day: number) {
   const scheduledWeek = schedule[week - 1];
   let topic: string;
 
-  if (scheduledWeek && weekdayIndex < 5) {
-    topic = scheduledWeek[weekdayKeys[weekdayIndex]];
-  } else if (day === TOTAL_JOURNEY_DAYS) {
+  if (day === TOTAL_JOURNEY_DAYS) {
     topic = "Final 365-day retrospective";
-  } else if (weekdayIndex === 5) {
-    topic = "Weekly review and public build update";
+  } else if (scheduledWeek) {
+    topic = scheduledWeek[weekdayKeys[weekdayIndex]];
   } else {
-    topic = "Reflection, gaps, and next-week planning";
+    topic = "We review the journey and plan the next professional step.";
   }
 
-  return { day, week, weekdayIndex, topic, date: getJourneyDate(day) };
+  const title = day === TOTAL_JOURNEY_DAYS ? topic
+    : weekdayIndex === 3 ? "Review, repair, and practise"
+    : weekdayIndex === 5 ? "Curate and share our evidence"
+    : weekdayIndex === 6 ? "Reflect and plan our next step"
+    : `Week ${week} · ${["Start our next increment", "Build our next increment", "Test and extend our increment", "", "Integrate and verify"][weekdayIndex]}`;
+
+  return { day, week, weekdayIndex, title, topic, scheduledWeek, date: getJourneyDate(day) };
 }
 
 export function dayNumberFromSlug(slug: string) {

@@ -341,7 +341,7 @@ export default function Days365Layout({ children }: { children: React.ReactNode 
         .d365-section h2 { margin: 0; color: var(--slate-950); font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 900; letter-spacing: -0.04em; line-height: 1.05; }
         .d365-section-intro { margin: 0; color: var(--slate-500); font-size: 1rem; line-height: 1.75; }
 
-        .d365-principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+        .d365-principles { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
         .d365-principle { padding: 24px; border: 1px solid var(--slate-200); border-radius: 16px; background: var(--white); }
         .d365-principle-mark { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 11px; background: var(--amber-soft); color: var(--amber-deep); font-size: 17px; font-weight: 900; }
         .d365-principle h3 { margin: 18px 0 8px; color: var(--slate-950); font-size: 1rem; }
@@ -478,6 +478,9 @@ export default function Days365Layout({ children }: { children: React.ReactNode 
         .d365-schedule-key { display: flex; flex-wrap: wrap; gap: 10px; margin: 42px 0 22px; }
         .d365-schedule-key span { padding: 10px 13px; border: 1px solid var(--slate-200); border-radius: 9px; background: var(--white); color: var(--slate-500); font-size: 12px; }
         .d365-schedule-key strong { color: var(--slate-900); }
+        .d365-schedule-principle { margin: -6px 0 22px; padding: 18px 20px; border: 1px solid #a5f3fc; border-radius: 12px; background: var(--cyan-soft); }
+        .d365-schedule-principle strong { display: block; color: var(--slate-950); font-size: 13px; }
+        .d365-schedule-principle p { margin: 7px 0 0; color: var(--slate-600); font-size: 13px; line-height: 1.65; }
         .d365-schedule-controls { position: sticky; top: 12px; z-index: 20; display: grid; grid-template-columns: minmax(190px, 1fr) minmax(170px, 0.8fr) auto; gap: 10px; align-items: end; margin: 0 0 18px; padding: 12px; border: 1px solid rgba(203,213,225,0.88); border-radius: 14px; background: rgba(255,255,255,0.92); box-shadow: 0 12px 30px rgba(15,23,42,0.08); backdrop-filter: blur(14px); }
         .d365-schedule-controls label { display: grid; gap: 5px; }
         .d365-schedule-controls label > span { color: var(--slate-500); font-size: 10px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; }
@@ -490,8 +493,15 @@ export default function Days365Layout({ children }: { children: React.ReactNode 
         .d365-week:target { border-color: var(--amber); box-shadow: 0 0 0 4px rgba(245,158,11,0.14), 0 18px 42px rgba(15,23,42,0.10); }
         .d365-week-heading { padding: 20px; background: var(--slate-900); color: var(--white); }
         .d365-week-heading span { display: block; font-size: 14px; font-weight: 900; }
+        .d365-week-heading h2 { margin: 0; font-size: 14px; font-weight: 900; }
         .d365-week-heading small { display: block; margin-top: 6px; color: var(--slate-400); font-size: 11px; font-weight: 700; }
+        .d365-week-heading em { display: block; margin-top: 18px; color: #67e8f9; font-size: 9px; font-style: normal; font-weight: 900; letter-spacing: 0.09em; line-height: 1.45; text-transform: uppercase; }
         .d365-week-content { min-width: 0; }
+        .d365-week-brief { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-left: 1px solid var(--slate-200); border-bottom: 1px solid var(--slate-200); background: var(--slate-50); }
+        .d365-week-brief div { padding: 14px 16px; border-right: 1px solid var(--slate-200); border-bottom: 1px solid var(--slate-200); }
+        .d365-week-brief div:last-child { border-bottom: 0; }
+        .d365-week-brief span { color: var(--amber-deep); font-size: 9px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; }
+        .d365-week-brief p { margin: 6px 0 0; color: var(--slate-600); font-size: 11px; line-height: 1.5; }
         .d365-week-days { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); }
         .d365-day { min-height: 110px; padding: 18px 16px; border-left: 1px solid var(--slate-200); color: inherit; text-decoration: none; transition: background 160ms ease, box-shadow 160ms ease, transform 160ms ease; }
         .d365-day:hover, .d365-day:focus-visible { position: relative; z-index: 2; background: #ecfeff; box-shadow: inset 3px 0 0 var(--cyan), inset 0 0 0 1px #a5f3fc; }
@@ -506,7 +516,9 @@ export default function Days365Layout({ children }: { children: React.ReactNode 
         .d365-weekend-row { min-height: 42px; display: grid; grid-template-columns: 78px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 8px 14px; border-top: 1px solid var(--slate-200); border-left: 1px solid var(--slate-200); background: var(--slate-50); }
         .d365-weekend-row > span { color: var(--cyan); font-size: 10px; font-weight: 900; letter-spacing: 0.11em; text-transform: uppercase; }
         .d365-weekend-row strong { color: var(--slate-600); font-size: 11px; }
-        .d365-weekend-row div { display: flex; gap: 6px; }
+        .d365-weekend-row > div:last-child { display: flex; gap: 6px; }
+        .d365-weekend-summary { display: grid; gap: 4px; }
+        .d365-weekend-summary small { color: var(--slate-500); font-size: 10px; line-height: 1.45; }
         .d365-weekend-row a { min-height: 36px; display: inline-flex; align-items: center; padding: 5px 10px; border: 1px solid var(--slate-200); border-radius: 7px; background: var(--white); color: var(--slate-600); font-size: 10px; font-weight: 800; text-decoration: none; }
         .d365-weekend-row a:hover { border-color: var(--cyan); color: var(--cyan); }
         .d365-final-day { display: grid; grid-template-columns: 54px 1fr; gap: 20px; margin-top: 24px; padding: 26px; border: 1px solid #a5f3fc; border-radius: 16px; background: var(--cyan-soft); color: inherit; text-decoration: none; transition: transform 160ms ease, box-shadow 160ms ease; }
@@ -527,7 +539,7 @@ export default function Days365Layout({ children }: { children: React.ReactNode 
         .d365-note-heading { display: grid; grid-template-columns: minmax(0, 1fr) 118px; gap: 30px; align-items: end; }
         .d365-note-portrait { display: block; width: 118px; height: auto; align-self: end; filter: drop-shadow(0 10px 12px rgba(15,23,42,0.14)); }
         .d365-note-header .d365-kicker { margin: 0 0 18px; color: var(--amber-deep); }
-        .d365-note-header h1 { margin: 0; color: var(--slate-950); font-size: clamp(2.4rem, 7vw, 4.8rem); line-height: 1; letter-spacing: -0.05em; }
+        .d365-note-header h1 { margin: 0; color: var(--slate-950); font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.04; letter-spacing: -0.04em; }
         .d365-note-date { margin: 20px 0 0; color: var(--slate-500); font-size: 14px; font-weight: 750; }
         .d365-note-coming-soon { margin-top: 42px; padding: clamp(26px, 5vw, 44px); border: 1px solid var(--slate-200); border-radius: 20px; background: var(--white); box-shadow: 0 22px 55px rgba(15,23,42,0.07); }
         .d365-note-coming-soon h2 { margin: 24px 0 0; color: var(--slate-950); font-size: clamp(1.7rem, 4vw, 2.4rem); letter-spacing: -0.03em; }
@@ -561,6 +573,9 @@ export default function Days365Layout({ children }: { children: React.ReactNode 
           .d365-principles { grid-template-columns: 1fr; }
           .d365-nav-link:first-child { display: none; }
           .d365-week { grid-template-columns: 88px minmax(0, 1fr); }
+          .d365-week-brief { grid-template-columns: 1fr; }
+          .d365-week-brief div, .d365-week-brief div:nth-last-child(-n + 2) { border-bottom: 1px solid var(--slate-200); }
+          .d365-week-brief div:last-child { border-bottom: 0; }
           .d365-week-days { grid-template-columns: 1fr; }
           .d365-day { min-height: auto; display: block; border-left: 1px solid var(--slate-200); border-bottom: 1px solid var(--slate-200); }
           .d365-day span { display: block; white-space: nowrap; }
@@ -568,7 +583,7 @@ export default function Days365Layout({ children }: { children: React.ReactNode 
           .d365-day p { margin: 8px 0 0; }
           .d365-day small { margin-top: 8px; }
           .d365-weekend-row { grid-template-columns: 1fr; gap: 5px; padding: 12px 16px; }
-          .d365-weekend-row div { margin-top: 3px; }
+          .d365-weekend-row > div:last-child { margin-top: 3px; }
         }
         @media (max-width: 620px) {
           .d365-logo-label { display: none; }
@@ -595,6 +610,7 @@ export default function Days365Layout({ children }: { children: React.ReactNode 
           .d365-week { grid-template-columns: 1fr; }
           .d365-week-heading { display: flex; justify-content: space-between; align-items: center; }
           .d365-week-heading small { margin-top: 0; }
+          .d365-week-heading em { max-width: 48%; margin-top: 0; text-align: right; }
           .d365-day { border-left: 0; }
           .d365-weekend-row { border-left: 0; }
           .d365-schedule-controls { top: 8px; grid-template-columns: 1fr 1fr; }
