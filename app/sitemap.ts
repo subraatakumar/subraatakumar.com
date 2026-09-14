@@ -9,6 +9,23 @@ const contentDirectory180Days = path.join(process.cwd(), "content/180days");
 const contentDirectory24Weeks = path.join(process.cwd(), "content/24weeks");
 const contentDirectoryBlog = path.join(process.cwd(), "content/blog");
 const contentDirectory365Days = path.join(process.cwd(), "content/365-days-to-50-lpa");
+const notesDirectory = path.join(process.cwd(), "public/notes");
+
+function getHtmlFiles(directory: string): string[] {
+  return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    const entryPath = path.join(directory, entry.name);
+    if (entry.isDirectory()) return getHtmlFiles(entryPath);
+    return entry.isFile() && entry.name.endsWith(".html") ? [entryPath] : [];
+  });
+}
+
+function getNotePaths() {
+  if (!fs.existsSync(notesDirectory)) return [];
+
+  return getHtmlFiles(notesDirectory)
+    .map((file) => `/notes/${path.relative(notesDirectory, file).split(path.sep).join("/")}`)
+    .sort();
+}
 
 function get180DayPaths() {
   if (!fs.existsSync(contentDirectory180Days)) return [];
@@ -63,6 +80,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/for-ai",
     "/subra-ai",
     "/subra-ai-use-cases/device-agnostic-medical-reading-capture",
+    "/subra-ai-use-cases/how-to-remove-image-background-for-free",
     "/subra-ai/privacy-policy",
     "/subra-ai/terms",
     "/watertracker",
@@ -81,7 +99,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog",
   ];
 
-  const allPaths = [...staticPaths, ...get365DayPaths(), ...get180DayPaths(), ...get24WeekPaths(), ...getBlogPaths()];
+  const allPaths = [...staticPaths, ...get365DayPaths(), ...get180DayPaths(), ...get24WeekPaths(), ...getBlogPaths(), ...getNotePaths()];
 
   return allPaths.map((route) => ({
     url: new URL(route, SITE_URL).toString(),
@@ -91,7 +109,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ? "daily"
         : route.startsWith("/24weeks/week-")
           ? "weekly"
-          : route.startsWith("/blog/")
+          : route.startsWith("/blog/") || route.startsWith("/notes/")
             ? "weekly"
           : "weekly",
     priority:
@@ -101,7 +119,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
           ? 0.9
         : route.startsWith("/24weeks/week-")
             ? 0.85
-            : route.startsWith("/blog/")
+            : route.startsWith("/blog/") || route.startsWith("/notes/")
               ? 0.85
             : 0.8,
   }));

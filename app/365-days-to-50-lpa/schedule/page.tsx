@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { journeyProduct, schedule } from "../schedule-data";
-import { daySlug, formatJourneyDate } from "../day-utils";
+import { formatJourneyDate, getDayTitle, getDayUrl } from "../day-utils";
 import ScheduleControls from "./ScheduleControls";
 import { absoluteUrl, DEFAULT_OG_IMAGE } from "@/lib/seo";
 
@@ -81,9 +81,10 @@ export default function SchedulePage() {
                     ["Thu", item.thursday], ["Fri", item.friday],
                   ].map(([weekday, topic], index) => {
                     const day = firstDay + index;
+                    const title = getDayTitle(day, topic);
                     return (
-                    <Link aria-label={`Open Day ${day}: ${topic}`} href={`/365-days-to-50-lpa/${daySlug(day)}`} className={weekday === "Fri" ? "d365-day d365-day-build" : "d365-day"} key={weekday}>
-                      <span>{weekday} · Day {day}</span><p>{topic}</p><small>{formatJourneyDate(day, true)} →</small>
+                    <Link aria-label={`Open Day ${day}: ${title}`} href={getDayUrl(day)} className={weekday === "Fri" ? "d365-day d365-day-build" : "d365-day"} key={weekday}>
+                      <span>{weekday} · Day {day}</span><p>{title}</p><small>{formatJourneyDate(day, true)} →</small>
                     </Link>
                     );
                   })}
@@ -95,8 +96,8 @@ export default function SchedulePage() {
                     <small>Sun · {item.sunday}</small>
                   </div>
                   <div>
-                    <Link href={`/365-days-to-50-lpa/${daySlug(firstDay + 5)}`}>Open Day {firstDay + 5}</Link>
-                    <Link href={`/365-days-to-50-lpa/${daySlug(firstDay + 6)}`}>Open Day {firstDay + 6}</Link>
+                    <Link href={getDayUrl(firstDay + 5)}>Open Day {firstDay + 5}</Link>
+                    <Link href={getDayUrl(firstDay + 6)}>Open Day {firstDay + 6}</Link>
                   </div>
                 </div>
               </div>
@@ -105,7 +106,7 @@ export default function SchedulePage() {
           })}
         </div>
 
-        <Link href="/365-days-to-50-lpa/day-365" className="d365-final-day">
+        <Link href={getDayUrl(365)} className="d365-final-day">
           <span className="d365-phase-number">365</span>
           <div><h2>Final retrospective</h2><p>We review the complete year: capabilities earned, products shipped, mistakes corrected, market response, and our next professional target. The compensation target remains aspirational and depends on role fit, evidence, interview performance, location, and the market.</p></div>
         </Link>

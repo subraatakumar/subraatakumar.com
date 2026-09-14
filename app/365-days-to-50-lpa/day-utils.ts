@@ -5,8 +5,28 @@ export const JOURNEY_START_DATE = new Date(Date.UTC(2026, 8, 14));
 
 const weekdayKeys = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"] as const;
 
+type DayUrlOverride = {
+  url: string;
+  title: string;
+};
+
+const dayUrlOverrides: Partial<Record<number, DayUrlOverride>> = {
+  1: {
+    url: "/notes/02-enterprise-ai-system-vol-1/ch-01-taking-AI-off-the-cloud-and-bringing-it-directly-to-local-hardware.html",
+    title: "Taking AI off the cloud and bringing it directly to local hardware",
+  },
+};
+
 export function daySlug(day: number) {
   return `day-${String(day).padStart(3, "0")}`;
+}
+
+export function getDayUrl(day: number) {
+  return dayUrlOverrides[day]?.url ?? `/365-days-to-50-lpa/${daySlug(day)}/`;
+}
+
+export function getDayTitle(day: number, defaultTitle: string) {
+  return dayUrlOverrides[day]?.title ?? defaultTitle;
 }
 
 export function getJourneyDate(day: number) {
