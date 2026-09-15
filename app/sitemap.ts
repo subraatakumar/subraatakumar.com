@@ -81,6 +81,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/subra-ai",
     "/subra-ai-use-cases/device-agnostic-medical-reading-capture",
     "/subra-ai-use-cases/how-to-remove-image-background-for-free",
+    "/subra-ai-use-cases/how-to-change-ai-speaking-voice",
     "/subra-ai/privacy-policy",
     "/subra-ai/terms",
     "/watertracker",

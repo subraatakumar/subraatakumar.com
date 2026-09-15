@@ -13,8 +13,12 @@ type DayUrlOverride = {
 const dayUrlOverrides: Partial<Record<number, DayUrlOverride>> = {
   1: {
     url: "/notes/02-enterprise-ai-system-vol-1/ch-01-taking-AI-off-the-cloud-and-bringing-it-directly-to-local-hardware.html",
-    title: "Taking AI off the cloud and bringing it directly to local hardware",
+    title: "Enterprise Cost Optimization, KV Cache, Context window, Local LLMs, Hardware sizing and Memory requirements, inspecting running model",
   },
+  2: {
+    url: "/notes/02-enterprise-ai-system-vol-1/ch-02-local-ollama-with-openai-sdk.html",
+    title: "Why OpenAi SDK ?, Normal vs streamed responses, Restaurant Vs Conveyor belt, Analyse Finish Reason, Token Usases, Testing the request and inspect JSON response.",
+  }
 };
 
 export function daySlug(day: number) {
