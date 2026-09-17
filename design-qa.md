@@ -1,7 +1,7 @@
 # Design QA — AI technology constellation
 
 - Source visual truth: `/var/folders/__/_x25mj4n5w963vgqqw3cbgl40000gn/T/codex-clipboard-0266731b-620c-43d1-b406-a7d3b6fc205e.png`
-- Implementation: `http://localhost:4173/365-days-to-50-lpa/#stack-title`
+- Implementation: `http://localhost:4173/365-days-to-fullstack-ai-engineer/#stack-title`
 - Implementation screenshot: Codex in-app Browser capture, 637 × 820 viewport, emitted in the implementation turn (the browser API does not expose a filesystem path)
 - Source pixels: 637 × 405
 - Implementation comparison region: approximately 637 × 405 CSS pixels at device scale 1

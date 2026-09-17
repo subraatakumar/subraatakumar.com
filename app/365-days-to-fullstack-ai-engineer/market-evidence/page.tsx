@@ -3,16 +3,16 @@ import Link from "next/link";
 import EvidenceGallery from "./EvidenceGallery";
 
 export const metadata: Metadata = {
-  title: "AI Job Market Evidence — 365 Days to ₹50 LPA",
+  title: "AI Job Market Evidence — 365 Days to FullStack AI Engineer",
   description: "A dated archive of AI engineering job-opening screenshots used to calibrate the 365-day roadmap against real market demand.",
-  alternates: { canonical: "/365-days-to-50-lpa/market-evidence" },
+  alternates: { canonical: "/365-days-to-fullstack-ai-engineer/market-evidence" },
 };
 
 export default function MarketEvidencePage() {
   return (
     <main className="d365-subpage">
       <div className="d365-shell">
-        <Link className="d365-back-link" href="/365-days-to-50-lpa">← Journey home</Link>
+        <Link className="d365-back-link" href="/365-days-to-fullstack-ai-engineer">← Journey home</Link>
 
         <header className="d365-subpage-header">
           <p className="d365-kicker">Market evidence archive</p>
@@ -31,8 +31,8 @@ export default function MarketEvidencePage() {
         <p className="d365-evidence-disclaimer"><strong>Important:</strong> These listings document market demand; they do not guarantee employment or compensation. Outcomes depend on the candidate’s demonstrated skills, experience, interview performance, and the employer’s hiring criteria.</p>
 
         <div className="d365-actions">
-          <Link className="d365-button" href="/365-days-to-50-lpa/schedule">Explore the roadmap</Link>
-          <Link className="d365-button d365-button-secondary" href="/365-days-to-50-lpa">Journey home</Link>
+          <Link className="d365-button" href="/365-days-to-fullstack-ai-engineer/schedule">Explore the roadmap</Link>
+          <Link className="d365-button d365-button-secondary" href="/365-days-to-fullstack-ai-engineer">Journey home</Link>
         </div>
       </div>
     </main>

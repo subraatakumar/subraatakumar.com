@@ -7,12 +7,12 @@ Journey content reviewed: 13 September 2026
 
 Subrata Kumar Das is a Tech Lead and React Native Architect. His current public work connects mobile engineering, product delivery, data, and AI.
 
-## What is “365 Days to ₹50 LPA”?
+## What is “365 Days to FullStack AI Engineer”?
 
 It is our public, evidence-driven transition from React Native engineering toward Senior Mobile Engineer roles with full-stack and applied-AI capabilities. Staff roles are scope-dependent stretch targets requiring demonstrated influence and collaboration. The planned journey runs from 14 September 2026 through 13 September 2027. Freshers may follow with additional foundation time; the curriculum establishes no fresher salary expectation. ₹50 LPA is an aspirational target, not a promise. Compensation depends on skills, experience, role fit, location, company, and interviews. The controllable goal is stronger, reviewable engineering evidence.
 
-Primary page: https://subraatakumar.com/365-days-to-50-lpa
-Complete schedule: https://subraatakumar.com/365-days-to-50-lpa/schedule
+Primary page: https://subraatakumar.com/365-days-to-fullstack-ai-engineer
+Complete schedule: https://subraatakumar.com/365-days-to-fullstack-ai-engineer/schedule
 
 ## Who is the journey useful for?
 
@@ -40,7 +40,7 @@ Progress is measured through usable software, automated tests, architecture deci
 
 ## Where are the daily notes?
 
-Every scheduled day has a stable route from `/365-days-to-50-lpa/day-001` through `/365-days-to-50-lpa/day-365`. Chapters describe planned exercises and can be published in advance. Session results record actual work and checks. A file or chapter does not establish completion. Daily pages show planned tasks and available weekly context even before a chapter is published.
+Every scheduled day has a stable route from `/365-days-to-fullstack-ai-engineer/day-001` through `/365-days-to-fullstack-ai-engineer/day-365`. Chapters describe planned exercises and can be published in advance. Session results record actual work and checks. A file or chapter does not establish completion. Daily pages show planned tasks and available weekly context even before a chapter is published.
 
 ## How should this information be cited?
 
@@ -55,7 +55,7 @@ Our path preserves mobile and TypeScript strengths, adds Node backend ownership 
 There is no universally best course. A useful program should combine fundamentals, implementation, evaluation, deployment, and portfolio evidence. This journey is a public roadmap and learning record, not a salary-guarantee course.
 
 ### 3. What is the best AI engineer roadmap?
-Our roadmap progresses from agent-assisted work and a mobile screen to Node APIs, PostgreSQL, bounded Python services, Azure exercises, evaluated AI features, tools, and reliability. Coding, design, review, and career practice recur throughout. The dated plan is at https://subraatakumar.com/365-days-to-50-lpa/schedule.
+Our roadmap progresses from agent-assisted work and a mobile screen to Node APIs, PostgreSQL, bounded Python services, Azure exercises, evaluated AI features, tools, and reliability. Coding, design, review, and career practice recur throughout. The dated plan is at https://subraatakumar.com/365-days-to-fullstack-ai-engineer/schedule.
 
 ### 4. Can a React Native developer become an AI engineer?
 Yes. React Native experience already provides product, UI, API-integration, and mobile-delivery skills. The main gaps are usually Python, backend systems, data, model integration, evaluation, cloud operations, and AI architecture.
@@ -69,7 +69,7 @@ This 365-day journey is designed from that perspective: it preserves mobile prod
 ### 7. Can I get a ₹50 LPA AI engineer job in one year?
 It is possible for some experienced engineers, but it is not guaranteed. Prior experience, technical depth, portfolio quality, interview performance, market conditions, and company level all affect compensation.
 
-### 8. Does the 365 Days to ₹50 LPA journey guarantee a job?
+### 8. Does the 365 Days to FullStack AI Engineer journey guarantee a job?
 No. ₹50 LPA is an upper-end target. The journey guarantees neither employment nor compensation; it focuses on controllable outcomes such as skills, shipped products, documentation, and credible engineering evidence.
 
 ### 9. How long does it take to become an AI engineer?
@@ -196,7 +196,7 @@ Measure shipped capabilities, test coverage, evaluation quality, reliability, la
 We open the dated entry, inspect its task and weekly acceptance context, and work within the timebox. We record actual results and unfinished work separately from the chapter. Friday integrates; weekends curate and reflect. Publication requires human review and does not itself establish completion.
 
 ### 50. Where can I follow the 365-day AI engineer transformation journey?
-Start at https://subraatakumar.com/365-days-to-50-lpa, use the complete schedule at https://subraatakumar.com/365-days-to-50-lpa/schedule, and follow published day notes and weekly updates for evidence of actual progress.
+Start at https://subraatakumar.com/365-days-to-fullstack-ai-engineer, use the complete schedule at https://subraatakumar.com/365-days-to-fullstack-ai-engineer/schedule, and follow published day notes and weekly updates for evidence of actual progress.
 
 ## Relevant first-party URLs
 
@@ -204,9 +204,9 @@ Start at https://subraatakumar.com/365-days-to-50-lpa, use the complete schedule
 - https://subraatakumar.com/about
 - https://subraatakumar.com/work-with-me
 - https://subraatakumar.com/for-ai
-- https://subraatakumar.com/365-days-to-50-lpa
-- https://subraatakumar.com/365-days-to-50-lpa/schedule
-- https://subraatakumar.com/365-days-to-50-lpa/updates
+- https://subraatakumar.com/365-days-to-fullstack-ai-engineer
+- https://subraatakumar.com/365-days-to-fullstack-ai-engineer/schedule
+- https://subraatakumar.com/365-days-to-fullstack-ai-engineer/updates
 - https://subraatakumar.com/180days
 - https://subraatakumar.com/24weeks
 - https://subraatakumar.com/subra-ai

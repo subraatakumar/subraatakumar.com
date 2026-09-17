@@ -5,6 +5,9 @@ import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  icons: {
+    icon: [{ url: "/site-icon.ico", type: "image/x-icon" }],
+  },
   alternates: {
     canonical: "/",
   },
@@ -60,7 +63,14 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body style={{ background: "#fafaf7", margin: 0, fontFamily: "'Caveat', cursive", color: "#1a1a2e" }}>
+      <body
+        style={{
+          background: "#fafaf7",
+          margin: 0,
+          fontFamily: "'Caveat', cursive",
+          color: "#1a1a2e",
+        }}
+      >
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -319,27 +329,53 @@ export default function RootLayout({
         `}</style>
         <header className="sk-header">
           <div className="sk-header-inner">
-            <Link href="/" className="sk-logo">SKD_</Link>
+            <Link href="/" className="sk-logo">
+              SKD_
+            </Link>
             <nav aria-label="Primary">
               <ul className="sk-nav-links">
-                <li><Link href="/work-with-me">Work with me</Link></li>
-                <li><Link href="/about">About</Link></li>
-                <li><Link href="/products">Products</Link></li>
-                <li><Link href="/blog">Blog</Link></li>
-                <li><Link href="/notes">Notes</Link></li>
-                <li><Link href="/contact">Contact</Link></li>
+                <li>
+                  <Link href="/work-with-me">Work with me</Link>
+                </li>
+                <li>
+                  <Link href="/about">About</Link>
+                </li>
+                <li>
+                  <Link href="/products">Products</Link>
+                </li>
+                <li>
+                  <Link href="/blog">Blog</Link>
+                </li>
+                <li>
+                  <Link href="/notes">Notes</Link>
+                </li>
+                <li>
+                  <Link href="/contact">Contact</Link>
+                </li>
               </ul>
             </nav>
           </div>
           <div className="sk-nav-mobile">
             <nav aria-label="Mobile">
               <ul>
-                <li><Link href="/work-with-me">Work</Link></li>
-                <li><Link href="/about">About</Link></li>
-                <li><Link href="/products">Products</Link></li>
-                <li><Link href="/blog">Blog</Link></li>
-                <li><Link href="/notes">Notes</Link></li>
-                <li><Link href="/contact">Contact</Link></li>
+                <li>
+                  <Link href="/work-with-me">Work</Link>
+                </li>
+                <li>
+                  <Link href="/about">About</Link>
+                </li>
+                <li>
+                  <Link href="/products">Products</Link>
+                </li>
+                <li>
+                  <Link href="/blog">Blog</Link>
+                </li>
+                <li>
+                  <Link href="/notes">Notes</Link>
+                </li>
+                <li>
+                  <Link href="/contact">Contact</Link>
+                </li>
               </ul>
             </nav>
           </div>

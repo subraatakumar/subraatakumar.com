@@ -14,7 +14,7 @@ import { dayNumberFromSlug, daySlug, formatJourneyDate, getDayPlan, TOTAL_JOURNE
 type PageProps = { params: Promise<{ slug: string }> };
 type Note = { data: Record<string, string>; html: string };
 
-const contentDirectory = path.join(process.cwd(), "content/365-days-to-50-lpa");
+const contentDirectory = path.join(process.cwd(), "content/365-days-to-fullstack-ai-engineer");
 
 async function readNote(slug: string): Promise<Note | null> {
   const filePath = path.join(contentDirectory, `${slug}.md`);
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const note = await readNote(slug);
   const title = note?.data.title || `Day ${day}: ${plan.title}`;
   const description = note?.data.description || `Day ${day} of our transition toward Senior/Staff Mobile Engineering with full-stack and applied-AI capabilities, scheduled for ${formatJourneyDate(day)}.`;
-  const canonical = `/365-days-to-50-lpa/${slug}`;
+  const canonical = `/365-days-to-fullstack-ai-engineer/${slug}`;
 
   return {
     title,
@@ -55,7 +55,7 @@ export default async function JourneyDayPage({ params }: PageProps) {
   const plan = getDayPlan(day)!;
   const note = await readNote(slug);
   const title = note?.data.title || plan.title;
-  const canonical = `/365-days-to-50-lpa/${slug}`;
+  const canonical = `/365-days-to-fullstack-ai-engineer/${slug}`;
   const structuredData = note ? {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -66,15 +66,15 @@ export default async function JourneyDayPage({ params }: PageProps) {
     mainEntityOfPage: absoluteUrl(canonical),
     url: absoluteUrl(canonical),
     author: { "@type": "Person", name: "Subrata Kumar Das", url: absoluteUrl("/") },
-    isPartOf: { "@type": "CreativeWorkSeries", name: "365 Days to Senior/Staff Mobile Engineering with Full-Stack and Applied AI", url: absoluteUrl("/365-days-to-50-lpa") },
+    isPartOf: { "@type": "CreativeWorkSeries", name: "365 Days to FullStack AI Engineer", url: absoluteUrl("/365-days-to-fullstack-ai-engineer") },
   } : null;
 
   return (
     <main className="d365-subpage d365-note-page">
       <article className="d365-note-shell">
         <nav className="d365-note-topnav" aria-label="Journey navigation">
-          <Link className="d365-back-link" href="/365-days-to-50-lpa/schedule">← Complete schedule</Link>
-          <Link className="d365-back-link" href="/365-days-to-50-lpa">Journey home</Link>
+          <Link className="d365-back-link" href="/365-days-to-fullstack-ai-engineer/schedule">← Complete schedule</Link>
+          <Link className="d365-back-link" href="/365-days-to-fullstack-ai-engineer">Journey home</Link>
         </nav>
 
         <header className="d365-note-header">
@@ -109,7 +109,7 @@ export default async function JourneyDayPage({ params }: PageProps) {
             </>}
             <h3>Human approval gate</h3>
             <p>{plan.scheduledWeek.humanGate}</p>
-            <p><Link href={`/365-days-to-50-lpa/schedule#week-${plan.week}`}>View Week {plan.week}: agent roles, decisions, and evidence →</Link></p>
+            <p><Link href={`/365-days-to-fullstack-ai-engineer/schedule#week-${plan.week}`}>View Week {plan.week}: agent roles, decisions, and evidence →</Link></p>
           </>}
         </section>
 
@@ -120,13 +120,13 @@ export default async function JourneyDayPage({ params }: PageProps) {
             <span className="d365-status"><i className="d365-status-dot" /> Chapter pending</span>
             <h2>This chapter has not been published yet.</h2>
             <p>We plan to publish each chapter one day before its scheduled session. Session results record work we actually performed and reviewed. Neither the calendar date nor publication alone marks this activity complete.</p>
-            <p className="d365-note-file-hint">Expected file: <code>content/365-days-to-50-lpa/{slug}.md</code></p>
+            <p className="d365-note-file-hint">Expected file: <code>content/365-days-to-fullstack-ai-engineer/{slug}.md</code></p>
           </section>
         )}
 
         <nav className="d365-day-pagination" aria-label="Day navigation">
-          {day > 1 ? <Link href={`/365-days-to-50-lpa/${daySlug(day - 1)}`}>← Day {day - 1}</Link> : <span />}
-          {day < TOTAL_JOURNEY_DAYS ? <Link href={`/365-days-to-50-lpa/${daySlug(day + 1)}`}>Day {day + 1} →</Link> : <span />}
+          {day > 1 ? <Link href={`/365-days-to-fullstack-ai-engineer/${daySlug(day - 1)}`}>← Day {day - 1}</Link> : <span />}
+          {day < TOTAL_JOURNEY_DAYS ? <Link href={`/365-days-to-fullstack-ai-engineer/${daySlug(day + 1)}`}>Day {day + 1} →</Link> : <span />}
         </nav>
         {structuredData && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />}
       </article>

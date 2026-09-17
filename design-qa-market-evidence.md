@@ -1,6 +1,6 @@
 # Design QA — Market evidence gallery
 
-- Source visual truth: four live job pages verified and captured on 13 September 2026; paths are under `public/365-days-to-50-lpa/market-evidence/`.
+- Source visual truth: four live job pages verified and captured on 13 September 2026; paths are under `public/365-days-to-fullstack-ai-engineer/market-evidence/`.
 - Implementation screenshot: `/tmp/market-evidence-desktop.png`, plus Codex in-app Browser mobile capture.
 - Desktop viewport: 1440 × 1100 CSS pixels, device scale factor 1.
 - Mobile viewport: 376 × 710 CSS pixels, device scale factor 1.

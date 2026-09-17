@@ -1,5 +1,5 @@
 export const schedulePhases = [
-  ["Agent-assisted foundation", 1, 4],
+  ["Local AI agent foundation", 1, 4],
   ["TypeScript backend systems", 5, 11],
   ["Python AI services", 12, 17],
   ["Azure production foundations", 18, 23],
@@ -10,10 +10,10 @@ export const schedulePhases = [
 ] as const;
 
 export const journeyProduct = {
-  name: "Journey Evidence Companion",
-  description: "Our working product is a React Native companion for engineers who lose track of what they learned, built, and verified. We capture a private journal entry on mobile, attach evidence, find it again, and prepare a public update for human approval.",
-  firstSlice: "We create and list a journal entry on mobile, preserve it across an API restart, and keep one user’s entries inaccessible to another.",
-  boundary: "We validate this brief in Week 1. Node.js owns users, entries, and PostgreSQL data. Python receives only the text needed for a bounded AI task. Summaries, cited search, and approval-based tools extend the same product later.",
+  name: "Subra AI — a local Ollama agent",
+  description: "Our first working product is a small JavaScript agent that runs against a local Ollama model through its OpenAI-compatible API. It receives a goal, follows explicit instructions, can choose one allowlisted local tool, and reports the result for human review.",
+  firstSlice: "We can run the agent locally, stream its response, observe its model and token behaviour, and verify one bounded tool call without sending prompts to a cloud model.",
+  boundary: "Week 1 is intentionally small: one local model, one agent loop, and one safe tool. System prompts guide behaviour but are not treated as a security boundary; application code validates tool names, arguments, limits, and approval requirements.",
 };
 
 export type ScheduleWeek = {
@@ -35,13 +35,13 @@ type WeekPlan = {
 // Reading, agent interaction, review, and the decision log are included in each timebox.
 const plans: WeekPlan[] = [
   {
-    outcome: "A workspace, starting exercise, and agreed first product slice.",
-    decision: "We validate the companion brief, primary audience, and first acceptance criteria.",
-    evidence: "Day 1 journal, a one-page product brief, and a reviewed repository change",
-    agents: "A setup assistant explains steps; a review assistant checks the exercise; a planning assistant challenges the brief.",
-    gate: "We run the Day 1 checks and approve a brief identifying the user, problem, first feature, and non-goals.",
-    tasks: ["We set up our workspace, establish one assistant, and verify a small JavaScript baseline exercise.", "We connect our strengths and gaps to a role scorecard, then validate the companion’s first user story.", "We create a journey repository and README; record existing GitHub, Notion, and public-profile links."],
-    integrate: "We review and commit the journal and product brief; practise a small pull request using the assistant already available.",
+    outcome: "A working AI agent powered entirely by a local Ollama model.",
+    decision: "We choose one model that fits our hardware, a practical context size, and one tightly bounded tool for the first agent loop.",
+    evidence: "Ollama runtime notes, normal and streamed SDK calls, sampling experiments, agent source code, tests, and a recorded local demo",
+    agents: "Our local Ollama agent performs the bounded task; a review assistant may critique the design, but we inspect every prompt, tool request, and result.",
+    gate: "We can explain the difference between a prompted chatbot and an agent, then demonstrate that only an allowlisted tool with validated arguments can run.",
+    tasks: ["We install and run Ollama, choose a model for our available RAM or VRAM, inspect it with ollama ps, and test a smaller context window.", "We call local Ollama through the OpenAI JavaScript SDK, inspect the completion payload and token usage, then compare normal and streamed responses.", "We study tokens, next-token generation, temperature, top-p, message roles, and system-prompt limits; then test how those controls change our local model’s behaviour."],
+    integrate: "We implement and demonstrate a minimal local agent loop: accept a goal, let Ollama select one allowlisted tool, validate and execute it in application code, return the observation to the model, and present the final answer for human review.",
   },
   {
     outcome: "One usable coding workflow with a measured local-model option.",
@@ -516,15 +516,21 @@ export const schedule: ScheduleWeek[] = plans.map((plan, index) => {
   const firstDay = index * 7 + 1;
   return {
     week, days: `D${firstDay}–${firstDay + 6}`,
-    phase: schedulePhases.find(([, start, end]) => week >= start && week <= end)![0],
+    phase: week === 1
+      ? schedulePhases.find(([, start, end]) => week >= start && week <= end)![0]
+      : `${schedulePhases.find(([, start, end]) => week >= start && week <= end)![0]} · Provisional`,
     outcome: plan.outcome,
     prerequisite: index === 0 ? "We need an editor and one available assistant; Day 1 includes a browser fallback for JavaScript." : `We build on Week ${index}: ${plans[index - 1].outcome} If its required checks remain incomplete, we use this week to finish or reduce scope first.`,
     agents: plan.agents, humanGate: plan.gate, decision: plan.decision, evidence: plan.evidence,
     practice: practiceCycle[index % practiceCycle.length],
     monday: plan.tasks[0], tuesday: plan.tasks[1], wednesday: plan.tasks[2],
-    thursday: "We use 60 minutes to verify and repair this week’s slice, 20 minutes for the recurring practice below, and 10 minutes to record decisions. We carry unfinished work forward explicitly.",
+    thursday: week === 1
+      ? "We design the agent loop and its safety boundary: goal → model decision → allowlisted tool request → argument validation → tool result → final answer. We define what requires human approval before writing the implementation."
+      : "We use 60 minutes to verify and repair this week’s slice, 20 minutes for the recurring practice below, and 10 minutes to record decisions. We carry unfinished work forward explicitly.",
     friday: plan.integrate,
     saturday: `We spend 45 minutes curating ${plan.evidence}. We publish only reviewed results and label unfinished work.`,
-    sunday: week === 52 ? "We spend 30 minutes preparing the final retrospective and next-quarter questions." : "We spend 30 minutes reviewing feedback and planning the next small increment. Every fourth week, we reassess scope and role fit; readiness may change later dates.",
+    sunday: week === 52
+      ? "We prepare the final retrospective and use the year’s evidence to plan the next quarter."
+      : "We review this week’s evidence, changes in AI tooling and practice, and our remaining gaps. We then revise and publish the next week’s curriculum; future weeks remain provisional.",
   };
 });

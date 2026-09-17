@@ -10,7 +10,7 @@ const openings = [
     role: "Senior AI / Machine Learning Engineer",
     location: "Pune · Hybrid",
     experience: "5–8 years",
-    image: "/365-days-to-50-lpa/market-evidence/aera-ai-ml-engineer-2026-09-13.png",
+    image: "/365-days-to-fullstack-ai-engineer/market-evidence/aera-ai-ml-engineer-2026-09-13.png",
     source: "https://jobs.lever.co/aeratechnology/05e71552-a936-4067-976e-fbad0a3698e0",
   },
   {
@@ -18,7 +18,7 @@ const openings = [
     role: "AI Engineer",
     location: "Hyderabad · Hybrid / on-site",
     experience: "3–5 years",
-    image: "/365-days-to-50-lpa/market-evidence/iicl-ai-engineer-2026-09-13.png",
+    image: "/365-days-to-fullstack-ai-engineer/market-evidence/iicl-ai-engineer-2026-09-13.png",
     source: "https://www.iicl.in/careers/ai-engineer",
   },
   {
@@ -26,7 +26,7 @@ const openings = [
     role: "AI Engineer — RAG & Agents",
     location: "Gurugram / Remote India",
     experience: "1–5 years",
-    image: "/365-days-to-50-lpa/market-evidence/sabrixa-ai-engineer-2026-09-13.png",
+    image: "/365-days-to-fullstack-ai-engineer/market-evidence/sabrixa-ai-engineer-2026-09-13.png",
     source: "https://sabrixa.com/careers/ai-engineer",
   },
   {
@@ -34,7 +34,7 @@ const openings = [
     role: "ML / AI Engineer",
     location: "Remote · India",
     experience: "3+ years · internships considered",
-    image: "/365-days-to-50-lpa/market-evidence/partython-ml-ai-engineer-2026-09-13.png",
+    image: "/365-days-to-fullstack-ai-engineer/market-evidence/partython-ml-ai-engineer-2026-09-13.png",
     source: "https://www.partython.com/careers/ml-engineer",
   },
 ];

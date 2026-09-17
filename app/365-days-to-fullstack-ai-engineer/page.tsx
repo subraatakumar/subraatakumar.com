@@ -8,21 +8,21 @@ import PerspectiveGrid from "./PerspectiveGrid";
 import { journeyProduct, schedulePhases } from "./schedule-data";
 
 export const metadata: Metadata = {
-  title: "365 Days — Senior Mobile Engineering with Full-Stack and Applied AI",
+  title: "365 Days to FullStack AI Engineer",
   description:
     "A public, AI-assisted transition from React Native engineering to Senior/Staff Mobile Engineer with full-stack, applied-AI, and Azure capabilities.",
-  alternates: { canonical: "/365-days-to-50-lpa" },
+  alternates: { canonical: "/365-days-to-fullstack-ai-engineer" },
   openGraph: {
-    title: "365 Days to Senior/Staff Mobile + Full-Stack AI Engineering",
+    title: "365 Days to FullStack AI Engineer",
     description:
       "52 evidence-driven checkpoints combining React Native, TypeScript, Node.js, Python AI services, Azure, and human-governed coding agents.",
-    url: "/365-days-to-50-lpa",
+    url: "/365-days-to-fullstack-ai-engineer",
     type: "website",
     images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
-    title: "365 Days to Senior/Staff Mobile + Full-Stack AI Engineering",
+    title: "365 Days to FullStack AI Engineer",
     description:
       "Building production mobile and full-stack AI systems in public—with dedicated agents, human approval, and secure Azure delivery.",
     images: [DEFAULT_OG_IMAGE],
@@ -103,7 +103,7 @@ const projects = [
 
 const questions = [
   {
-    question: "What is the 365 Days to ₹50 LPA journey?",
+    question: "What is the 365 Days to FullStack AI Engineer journey?",
     answer: "It is our public, evidence-driven transition from React Native engineering toward Senior/Staff Mobile Engineer with full-stack and applied-AI capabilities. The compensation figure is a target, not a guarantee; the concrete outcome is stronger, reviewable engineering evidence.",
   },
   {
@@ -148,8 +148,8 @@ export default function Days365Home() {
           <nav className="d365-nav" aria-label="Journey navigation">
             <a href="#roadmap" className="d365-nav-link">Roadmap</a>
             <a href="#projects" className="d365-nav-link">Projects</a>
-            <Link href="/365-days-to-50-lpa/schedule" className="d365-nav-link">Schedule</Link>
-            <Link href="/365-days-to-50-lpa/updates" className="d365-nav-link">Updates ↗</Link>
+            <Link href="/365-days-to-fullstack-ai-engineer/schedule" className="d365-nav-link">Schedule</Link>
+            <Link href="/365-days-to-fullstack-ai-engineer/updates" className="d365-nav-link">Updates ↗</Link>
           </nav>
         </div>
       </header>
@@ -161,8 +161,8 @@ export default function Days365Home() {
             <div>
               <p className="d365-eyebrow">14 Sep 2026 → 13 Sep 2027</p>
               <h1>
-                365 days to<br />
-                <span>₹50 LPA.</span>
+                365 Days to<br />
+                <span>FullStack AI Engineer.</span>
               </h1>
               <p className="d365-hero-subtitle">Mobile · Full-Stack · Applied AI</p>
               <p className="d365-lede">
@@ -170,9 +170,9 @@ export default function Days365Home() {
               </p>
               <p className="d365-audience-note"><strong>Experienced mobile and frontend engineers can follow with us.</strong> Freshers may use the same path, but should expect a longer foundation phase and different initial outcomes.</p>
               <div className="d365-actions">
-                <Link href="/365-days-to-50-lpa/schedule" className="d365-button">View the day-by-day schedule <span aria-hidden="true">→</span></Link>
+                <Link href="/365-days-to-fullstack-ai-engineer/schedule" className="d365-button">View the day-by-day schedule <span aria-hidden="true">→</span></Link>
                 <a href="#proof" className="d365-button d365-button-secondary">How progress is measured</a>
-                <Link href="/365-days-to-50-lpa/market-evidence" className="d365-button d365-button-secondary">View market evidence <span aria-hidden="true">→</span></Link>
+                <Link href="/365-days-to-fullstack-ai-engineer/market-evidence" className="d365-button d365-button-secondary">View market evidence <span aria-hidden="true">→</span></Link>
               </div>
             </div>
 
@@ -293,7 +293,7 @@ export default function Days365Home() {
                   <h3>{project.title}</h3>
                   <p>{project.text}</p>
                   <p className="d365-project-sequence">{project.sequence}</p>
-                  <Link className="d365-project-link" href={`/365-days-to-50-lpa/schedule#week-${project.scheduleWeek}`}>
+                  <Link className="d365-project-link" href={`/365-days-to-fullstack-ai-engineer/schedule#week-${project.scheduleWeek}`}>
                     View build plan <span aria-hidden="true">→</span>
                   </Link>
                 </article>
@@ -308,7 +308,7 @@ export default function Days365Home() {
                 <h2 id="proof-title">The proof will be public.</h2>
                 <p>From Day 1, weekly notes will separate what agents produced from what we understood and approved. They will show decisions, alternatives, tests, evaluations, failures, corrections, source code, demonstrations, and recruiter-facing case studies.</p>
               </div>
-              <Link href="/365-days-to-50-lpa/updates" className="d365-button">Read weekly updates <span aria-hidden="true">→</span></Link>
+              <Link href="/365-days-to-fullstack-ai-engineer/updates" className="d365-button">Read weekly updates <span aria-hidden="true">→</span></Link>
             </div>
           </section>
 
@@ -340,10 +340,10 @@ export default function Days365Home() {
             "@graph": [
               {
                 "@type": "CreativeWorkSeries",
-                "@id": `${absoluteUrl("/365-days-to-50-lpa")}#journey`,
-                name: "365 Days to Senior/Staff Mobile Engineer with Full-Stack and Applied-AI Capabilities",
+                "@id": `${absoluteUrl("/365-days-to-fullstack-ai-engineer")}#journey`,
+                name: "365 Days to FullStack AI Engineer",
                 description: "An AI-assisted, human-owned engineering journey through React Native, TypeScript, Node.js, Python AI services, Azure, RAG, agents, and production operations.",
-                url: absoluteUrl("/365-days-to-50-lpa"),
+                url: absoluteUrl("/365-days-to-fullstack-ai-engineer"),
                 startDate: "2026-09-14",
                 endDate: "2027-09-13",
                 timeRequired: "P365D",
@@ -353,7 +353,7 @@ export default function Days365Home() {
               },
               {
                 "@type": "FAQPage",
-                "@id": `${absoluteUrl("/365-days-to-50-lpa")}#questions`,
+                "@id": `${absoluteUrl("/365-days-to-fullstack-ai-engineer")}#questions`,
                 mainEntity: questions.map((item) => ({
                   "@type": "Question",
                   name: item.question,

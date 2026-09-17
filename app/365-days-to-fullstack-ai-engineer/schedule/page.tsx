@@ -6,13 +6,13 @@ import ScheduleControls from "./ScheduleControls";
 import { absoluteUrl, DEFAULT_OG_IMAGE } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Day-by-Day Schedule — 365 Days to Senior/Staff Mobile + AI",
-  description: "Our complete 52-week transition plan: agent-assisted delivery, TypeScript and Node.js, bounded Python AI services, Azure, reliable RAG, and a production React Native product.",
-  alternates: { canonical: "/365-days-to-50-lpa/schedule" },
+  title: "Day-by-Day Schedule — 365 Days to FullStack AI Engineer",
+  description: "An adaptive FullStack AI engineering curriculum planned one week at a time, beginning with a local Ollama-powered AI agent.",
+  alternates: { canonical: "/365-days-to-fullstack-ai-engineer/schedule" },
   openGraph: {
-    title: "365-Day Senior/Staff Mobile + Applied AI Roadmap — Complete Schedule",
-    description: "A dated, evidence-led transition plan spanning agent-assisted engineering, full-stack systems, applied AI, Azure, and React Native.",
-    url: "/365-days-to-50-lpa/schedule",
+    title: "365 Days to FullStack AI Engineer — Complete Schedule",
+    description: "An adaptive, evidence-led journey beginning with a local Ollama-powered AI agent and reviewed every week.",
+    url: "/365-days-to-fullstack-ai-engineer/schedule",
     type: "website",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -22,11 +22,11 @@ export default function SchedulePage() {
   return (
     <main className="d365-subpage">
       <div className="d365-shell">
-        <Link className="d365-back-link" href="/365-days-to-50-lpa">← Journey home</Link>
+        <Link className="d365-back-link" href="/365-days-to-fullstack-ai-engineer">← Journey home</Link>
         <header className="d365-subpage-header">
           <p className="d365-kicker">14 Sep 2026 → 13 Sep 2027</p>
-          <h1>The complete schedule.</h1>
-          <p>We are extending experienced mobile engineering with full-stack and applied-AI capabilities. Senior roles are our primary target; Staff roles depend on demonstrated scope, influence, and collaboration. These are planned sessions: we revise future scope at checkpoints when work needs more time.</p>
+          <h1>The adaptive schedule.</h1>
+          <p>AI changes too quickly for a fixed 365-day syllabus. Week 1 is our active curriculum: we will build an AI agent using a local Ollama model. At the end of every week, we review what we learned, what changed in the field, and what evidence we produced before committing to the next week. Later weeks show direction, not a locked curriculum.</p>
         </header>
 
         <div className="d365-schedule-key" aria-label="Weekly rhythm">
@@ -39,9 +39,10 @@ export default function SchedulePage() {
 
         <aside className="d365-schedule-principle">
           <strong>Our rule for all 365 days</strong>
+          <p><strong>We plan one week in detail.</strong> Future weeks are provisional and will be updated from our progress, new AI capabilities, engineering fundamentals, and relevant market demand. Completed weeks remain unchanged as an honest record.</p>
           <p>AI agents can plan, code, review, test, secure, document, and prepare evidence. We set the intent, inspect their work, approve consequential actions, and remain accountable for every result.</p>
           <p>Our weekly budget is eight weekday hours plus 75 minutes of weekend review and sharing. Reading, tool interaction, troubleshooting, and notes are included. Monday–Wednesday target 15 minutes of reading, 45 of implementation, 20 of verification, and 10 of decisions. Friday integrates existing work; weekends do not absorb an unfinished build.</p>
-          <p>Thursday rotates coding practice, design explanation, review or mentoring, and role/evidence review. Every fourth week we reassess readiness. Peer feedback and targeted applications can begin at any checkpoint when our evidence supports them; Week 52 is a campaign review, not a requirement to wait.</p>
+          <p>Thursday is used to design, verify, and repair the current week’s build. Friday integrates the week into working evidence. On Sunday we review the curriculum and publish the next detailed week only when the current evidence and priorities support it.</p>
           <p>We start with JavaScript/TypeScript and basic React Native experience. If those foundations are new, we repeat prerequisite sessions and extend the calendar. Optional experiments yield to unresolved core checks.</p>
         </aside>
 
@@ -117,9 +118,9 @@ export default function SchedulePage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LearningResource",
-            name: "365-Day Senior/Staff Mobile Engineer with Full-Stack and Applied-AI Capabilities Roadmap",
+            name: "365 Days to FullStack AI Engineer Roadmap",
             description: "A dated 52-week, evidence-led professional transition using agent-assisted engineering with human accountability.",
-            url: absoluteUrl("/365-days-to-50-lpa/schedule"),
+            url: absoluteUrl("/365-days-to-fullstack-ai-engineer/schedule"),
             timeRequired: "P365D",
             educationalUse: "Professional development",
             teaches: ["AI-assisted software delivery", "TypeScript and Node.js", "Python and FastAPI", "PostgreSQL", "Azure", "RAG evaluation", "AI agents", "MCP", "React Native", "on-device AI", "system design", "production operations"],
