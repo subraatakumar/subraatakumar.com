@@ -1,0 +1,271 @@
+1:"$Sreact.fragment"
+9:I[68027,[],"default"]
+:HL["/_next/static/chunks/62d0268a6e06bf4c.css","style"]
+:HL["/_next/static/chunks/0580d5d937213b49.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/a343f882a40d2cc9-s.p.71e1367e.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/2d45e1fd80a69f24.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","style"]
+2:T19f5,
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+
+          body {
+            background: #fafaf7;
+            font-family: 'Caveat', cursive;
+            color: #1a1a2e;
+          }
+
+          /* ── Nav ── */
+          .sk-header {
+            background: #fff;
+            border-bottom: 2.5px solid #1a1a2e;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+          }
+          .sk-header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .sk-logo {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.55rem;
+            color: #1a1a2e;
+            text-decoration: none;
+            letter-spacing: 0.01em;
+          }
+          .sk-nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+          }
+          .sk-nav-links a {
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+            padding-bottom: 2px;
+          }
+          .sk-nav-links a:hover {
+            text-decoration: underline wavy #2563eb 2px;
+            text-underline-offset: 4px;
+          }
+          .sk-nav-mobile {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 14px;
+          }
+          .sk-nav-mobile ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+          }
+          .sk-nav-mobile a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+          }
+
+          /* ── Footer ── */
+          .sk-footer {
+            border-top: 2.5px solid #1a1a2e;
+            background: #fff;
+            padding: 24px;
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+          }
+
+          /* ── Shared section ── */
+          .sk-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+          }
+          .sk-page-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            margin-bottom: 8px;
+            line-height: 1.1;
+          }
+          .sk-section-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.9rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+          .sk-section-heading::after {
+            content: '';
+            flex: 1;
+            border-top: 2px dashed #9ca3af;
+          }
+
+          /* ── Squiggle divider ── */
+          .sk-squiggle {
+            width: 100%;
+            height: 8px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 4 Q5 0 10 4 Q15 8 20 4 Q25 0 30 4 Q35 8 40 4' stroke='%239ca3af' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") repeat-x center;
+            opacity: 0.55;
+            margin: 36px 0;
+          }
+
+          /* ── Sketch button ── */
+          .sk-btn {
+            display: inline-block;
+            padding: 10px 26px;
+            background: #2563eb;
+            color: #fff;
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 3px 3px 0 #1a1a2e;
+            transition: transform 0.1s, box-shadow 0.1s;
+          }
+          .sk-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 #1a1a2e;
+          }
+          .sk-btn-ghost {
+            background: transparent;
+            color: #1a1a2e;
+            box-shadow: 3px 3px 0 #9ca3af;
+          }
+          .sk-btn-ghost:hover {
+            box-shadow: 5px 5px 0 #9ca3af;
+          }
+
+          /* ── Tag chip ── */
+          .sk-tag {
+            display: inline-block;
+            padding: 3px 13px;
+            border: 2px solid #1a1a2e;
+            border-radius: 2px;
+            font-size: 1rem;
+            font-weight: 600;
+            background: #fff;
+            margin: 3px;
+          }
+          .sk-tag.active {
+            background: #2563eb;
+            color: #fff;
+          }
+
+          /* ── Card ── */
+          .sk-card {
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 5px 5px 0 #1a1a2e;
+            padding: 24px;
+            transition: transform 0.15s, box-shadow 0.15s;
+          }
+          .sk-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0 #1a1a2e;
+          }
+
+          /* ── Stat card ── */
+          .sk-stat {
+            flex: 1;
+            min-width: 130px;
+            text-align: center;
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 4px 4px 0 #1a1a2e;
+            padding: 20px 12px;
+          }
+          .sk-stat .num {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            color: #2563eb;
+            line-height: 1;
+          }
+          .sk-stat .lbl {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 4px;
+          }
+
+          /* ── Image placeholder ── */
+          .sk-img {
+            width: 100%;
+            height: 160px;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            background: #f3f4f6;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 16px;
+          }
+          .sk-img::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+              linear-gradient(to bottom right, transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px)),
+              linear-gradient(to bottom left,  transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px));
+          }
+
+          @media (max-width: 640px) {
+            .sk-nav-links { display: none; }
+            .sk-nav-mobile { display: block; }
+            .sk-page-heading { font-size: 2.2rem; }
+          }
+        0:{"P":null,"b":"VwgfV9dzSARQ9T46tOrwR","c":["","background-remover",""],"q":"","i":false,"f":[[["",{"children":["background-remover",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62d0268a6e06bf4c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/18f38dbeee9f54d3.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{},null,false,false]},null,false,false]},null,false,false],"$L8",false]],"m":"$undefined","G":["$9",[]],"S":true}
+a:I[22016,["/_next/static/chunks/18f38dbeee9f54d3.js","/_next/static/chunks/d87b716920d553cc.js"],""]
+b:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+c:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
+e:I[5500,["/_next/static/chunks/18f38dbeee9f54d3.js","/_next/static/chunks/d87b716920d553cc.js"],"Image"]
+1d:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"ViewportBoundary"]
+1f:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"MetadataBoundary"]
+20:"$Sreact.suspense"
+3:["$","header",null,{"className":"sk-header","children":[["$","div",null,{"className":"sk-header-inner","children":[["$","$La",null,{"href":"/","className":"sk-logo","children":"SKD_"}],["$","nav",null,{"aria-label":"Primary","children":["$","ul",null,{"className":"sk-nav-links","children":[["$","li",null,{"children":["$","$La",null,{"href":"/work-with-me","children":"Work with me"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/notes","children":"Notes"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/contact","children":"Contact"}]}]]}]}]]}],["$","div",null,{"className":"sk-nav-mobile","children":["$","nav",null,{"aria-label":"Mobile","children":["$","ul",null,{"children":[["$","li",null,{"children":["$","$La",null,{"href":"/work-with-me","children":"Work"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/notes","children":"Notes"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/contact","children":"Contact"}]}]]}]}]}]]}]
+4:["$","main",null,{"style":{"width":"100%"},"children":["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
+5:["$","footer",null,{"className":"sk-footer","children":["© ",2026," Subrata Kumar Das. All rights reserved. ·"," ",["$","$La",null,{"href":"/for-ai","children":"For AI/Crawlers"}]]}]
+d:T832,
+        body:has(.sa-shell) .sk-header, body:has(.sa-shell) .sk-footer { display: none !important; }
+        body:has(.sa-shell) { background: #080b10 !important; }
+        .sa-shell { --sa-bg:#080b10;--sa-panel:#10151d;--sa-panel-2:#151c26;--sa-line:rgba(255,255,255,.10);--sa-text:#f5f7fa;--sa-muted:#a2adbb;--sa-lime:#b7f34a;--sa-cyan:#56d7df;min-height:100vh;color:var(--sa-text);background:radial-gradient(circle at 83% 8%,rgba(86,215,223,.12),transparent 26rem),radial-gradient(circle at 12% 28%,rgba(183,243,74,.08),transparent 24rem),var(--sa-bg); }
+        .sa-shell * { box-sizing:border-box; }.sa-display{font-family:'Manrope', 'Manrope Fallback'}
+        .sa-nav{position:sticky;top:0;z-index:50;background:rgba(8,11,16,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--sa-line)}
+        .sa-nav-inner,.sa-footer-inner{max-width:1180px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:20px}.sa-nav-inner{min-height:72px}
+        .sa-brand{display:inline-flex;align-items:center;gap:11px;color:var(--sa-text);text-decoration:none}.sa-app-icon{width:38px;height:38px;border-radius:12px;box-shadow:0 0 30px rgba(183,243,74,.18)}.sa-brand-name{font-weight:800;letter-spacing:-.025em;font-size:18px}
+        .sa-nav-links,.sa-footer-links{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.sa-nav-links a,.sa-footer-links a{color:var(--sa-muted);text-decoration:none;font-size:13px;font-weight:600;padding:9px 12px;border-radius:9px}.sa-nav-links a:hover,.sa-footer-links a:hover{color:var(--sa-text);background:rgba(255,255,255,.06)}
+        .sa-main{min-height:calc(100vh - 150px)}.sa-footer{border-top:1px solid var(--sa-line);background:rgba(7,10,14,.84)}.sa-footer-inner{min-height:78px}.sa-footer-copy{color:#778291;font-size:12px}
+        @media(max-width:720px){.sa-nav-inner{min-height:62px;padding:0 18px}.sa-nav-links a:not(:last-child){display:none}.sa-footer-inner{padding:22px 18px;align-items:flex-start;flex-direction:column}.sa-footer-links{gap:2px}.sa-footer-links a{padding-left:0;padding-right:14px}}
+      6:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0580d5d937213b49.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/d87b716920d553cc.js","async":true,"nonce":"$undefined"}]],["$","div",null,{"className":"sa-shell inter_e2473468-module__7NREva__className","children":[["$","style",null,{"children":"$d"}],["$","header",null,{"className":"sa-nav","children":["$","div",null,{"className":"sa-nav-inner","children":[["$","$La",null,{"href":"/background-remover","className":"sa-brand","aria-label":"Subra AI Background Remover home","children":[["$","$Le",null,{"className":"sa-app-icon","src":"/background-remover/app-icon.png","alt":"","width":38,"height":38,"priority":true}],["$","span",null,{"className":"sa-brand-name sa-display","children":"Subra AI: Background Remover"}]]}],["$","nav",null,{"className":"sa-nav-links","aria-label":"Background Remover pages","children":[["$","$La",null,{"href":"/background-remover","children":"Overview"}],["$","$La",null,{"href":"/background-remover#features","children":"Features"}],["$","$La",null,{"href":"/background-remover#screenshots","children":"Screenshots"}],["$","$La",null,{"href":"/background-remover/privacy-policy","children":"Privacy"}],["$","$La",null,{"href":"/background-remover/terms","children":"Terms"}],["$","$La",null,{"href":"/products","children":"All products"}]]}]]}]}],["$","main",null,{"className":"sa-main","children":["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}],"$Lf"]}]]}]
+7:["$","$1","c",{"children":[["$","article",null,{"className":"page-module__w7GDJq__page","children":[["$","header",null,{"className":"page-module__w7GDJq__hero","children":["$","div",null,{"className":"page-module__w7GDJq__wrap","children":["$","div",null,{"className":"page-module__w7GDJq__heroGrid","children":[["$","div",null,{"className":"$undefined","children":[["$","p",null,{"className":"page-module__w7GDJq__eyebrow","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":16,"height":16,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-sparkles","aria-hidden":"true","children":[["$","path","1s2grr",{"d":"M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"}],["$","path","1rf3ol",{"d":"M20 2v4"}],["$","path","gwowj6",{"d":"M22 4h-4"}],["$","circle","6kqj1y",{"cx":"4","cy":"20","r":"2"}],"$undefined"]}]," Paid once · Private forever"]}],["$","h1",null,{"className":"sa-display","children":["Remove the background.",["$","br",null,{}],["$","span",null,{"children":"Keep every photo private."}]]}],["$","p",null,{"className":"page-module__w7GDJq__lead","children":"Transform photos in seconds with a focused, AI-powered editor for professional cutouts and clean compositions. Everything runs offline on your iPhone—no account, no cloud processing, and no subscription."}],["$","div",null,{"className":"page-module__w7GDJq__actions","children":[["$","a",null,{"className":"page-module__w7GDJq__primary","href":"#screenshots","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":19,"height":19,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-apple","aria-hidden":"true","children":[["$","path","11qiee",{"d":"M12 6.528V3a1 1 0 0 1 1-1h0"}],["$","path","110c12",{"d":"M18.237 21A15 15 0 0 0 22 11a6 6 0 0 0-10-4.472A6 6 0 0 0 2 11a15.1 15.1 0 0 0 3.763 10 3 3 0 0 0 3.648.648 5.5 5.5 0 0 1 5.178 0A3 3 0 0 0 18.237 21"}],"$undefined"]}]," Explore the iPhone app"]}],["$","a",null,{"className":"page-module__w7GDJq__secondary","href":"https://apps.apple.com/us/app/subra-ai-private-offline-ai/id6791144948","target":"_blank","rel":"noopener noreferrer","children":"Try the free version first"}]]}],["$","div",null,{"className":"page-module__w7GDJq__trust","children":[["$","span",null,{"children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":16,"height":16,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-wifi-off","aria-hidden":"true","children":[["$","path","zekei9",{"d":"M12 20h.01"}],["$","path","1bycff",{"d":"M8.5 16.429a5 5 0 0 1 7 0"}],["$","path","1dl1wf",{"d":"M5 12.859a10 10 0 0 1 5.17-2.69"}],["$","path","4k23kn",{"d":"M19 12.859a10 10 0 0 0-2.007-1.523"}],["$","path","1grhjp",{"d":"M2 8.82a15 15 0 0 1 4.177-2.643"}],["$","path","z3jwby",{"d":"M22 8.82a15 15 0 0 0-11.288-3.764"}],["$","path","1ooewy",{"d":"m2 2 20 20"}],"$undefined"]}]," Fully offline editing"]}],["$","span",null,{"children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":16,"height":16,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-lock-keyhole","aria-hidden":"true","children":[["$","circle","1au0dj",{"cx":"12","cy":"16","r":"1"}],["$","rect","6s8ecr",{"x":"3","y":"10","width":"18","height":"12","rx":"2"}],["$","path","1pqi11",{"d":"M7 10V7a5 5 0 0 1 10 0v3"}],"$undefined"]}]," No photo upload"]}],["$","span",null,{"children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":16,"height":16,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-check","aria-hidden":"true","children":[["$","path","1gmf2c",{"d":"M20 6 9 17l-5-5"}],"$undefined"]}]," Unlimited watermark-free exports"]}]]}]]}],["$","div",null,{"className":"page-module__w7GDJq__heroVisual","children":["$L10","$L11"]}]]}]}]}],"$L12","$L13","$L14","$L15","$L16","$L17","$L18","$L19","$L1a"]}],["$L1b"],"$L1c"]}]
+8:["$","$1","h",{"children":[null,["$","$L1d",null,{"children":"$L1e"}],["$","div",null,{"hidden":true,"children":["$","$L1f",null,{"children":["$","$20",null,{"name":"Next.Metadata","children":"$L21"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+22:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+f:["$","footer",null,{"className":"sa-footer","children":["$","div",null,{"className":"sa-footer-inner","children":[["$","p",null,{"className":"sa-footer-copy","children":["© ",2026," TechCraft by Subrata · Private photo editing, on your device."]}],["$","nav",null,{"className":"sa-footer-links","aria-label":"Background Remover footer links","children":[["$","$La",null,{"href":"/background-remover/privacy-policy","children":"Privacy Policy"}],["$","$La",null,{"href":"/background-remover/terms","children":"Terms"}],["$","$La",null,{"href":"/contact","children":"Support"}],["$","$La",null,{"href":"/products","children":"All products"}]]}]]}]}]
+10:["$","figure",null,{"className":"page-module__w7GDJq__heroFigure page-module__w7GDJq__majorScreenshot","children":[["$","$Le",null,{"src":"/background-remover/screenshots/remove-background-instantly.png","alt":"Subra AI Background Remover showing a before-and-after transparent cutout","width":1242,"height":2688,"priority":true,"sizes":"(max-width: 900px) 88vw, 360px"}],["$","figcaption",null,{"children":"Remove people, products, and objects in one tap—fully on device."}]]}]
+11:["$","div",null,{"className":"page-module__w7GDJq__heroNote","children":[["$","b",null,{"children":"One purchase. No recurring bill."}],["$","p",null,{"children":"Get unlimited premium access without monthly fees, daily limits, accounts, or hidden export charges."}]]}]
+12:["$","section",null,{"className":"page-module__w7GDJq__promise","aria-label":"Product advantages","children":["$","div",null,{"className":"page-module__w7GDJq__wrap page-module__w7GDJq__promiseGrid","children":[["$","div",null,{"children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-shield-check","aria-hidden":"true","children":[["$","path","oel41y",{"d":"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"}],["$","path","dzmm74",{"d":"m9 12 2 2 4-4"}],"$undefined"]}],["$","b",null,{"children":"100% private and offline"}],["$","p",null,{"children":"No accounts, sign-ups, or cloud processing. Photos stay on your device."}]]}],["$","div",null,{"children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-scan-line","aria-hidden":"true","children":[["$","path","aa7l1z",{"d":"M3 7V5a2 2 0 0 1 2-2h2"}],["$","path","4qcy5o",{"d":"M17 3h2a2 2 0 0 1 2 2v2"}],["$","path","6vwrx8",{"d":"M21 17v2a2 2 0 0 1-2 2h-2"}],["$","path","ioqczr",{"d":"M7 21H5a2 2 0 0 1-2-2v-2"}],["$","path","b7w52i",{"d":"M7 12h10"}],"$undefined"]}],["$","b",null,{"children":"Automatic, then adjustable"}],["$","p",null,{"children":"Start with an AI cutout and refine complex details with hands-on controls."}]]}],["$","div",null,{"children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-palette","aria-hidden":"true","children":[["$","path","e79jfc",{"d":"M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"}],["$","circle","1okk4w",{"cx":"13.5","cy":"6.5","r":".5","fill":"currentColor"}],["$","circle","f64h9f",{"cx":"17.5","cy":"10.5","r":".5","fill":"currentColor"}],["$","circle","qy21gx",{"cx":"6.5","cy":"12.5","r":".5","fill":"currentColor"}],["$","circle","fotxhn",{"cx":"8.5","cy":"7.5","r":".5","fill":"currentColor"}],"$undefined"]}],["$","b",null,{"children":"Paid once, unlimited"}],["$","p",null,{"children":"No subscription, daily caps, or watermark on your high-resolution exports."}]]}]]}]}]
+13:["$","section",null,{"className":"page-module__w7GDJq__section","id":"features","aria-labelledby":"workflow-title","children":["$","div",null,{"className":"page-module__w7GDJq__wrap","children":[["$","div",null,{"className":"page-module__w7GDJq__sectionIntro","children":[["$","p",null,{"className":"page-module__w7GDJq__eyebrow","children":"Complete feature workflow"}],["$","h2",null,{"className":"sa-display","id":"workflow-title","children":"From source photo to finished cutout in six focused steps."}],["$","p",null,{"children":"Fast automatic processing meets the precision controls needed for professional results."}]]}],["$","ol",null,{"className":"page-module__w7GDJq__steps","children":[["$","li","01",{"children":[["$","span",null,{"children":"01"}],["$","div",null,{"children":[["$","h3",null,{"children":"Choose a photo"}],["$","p",null,{"children":"Select a portrait, product, animal, or object from your device. Your source image stays on your iPhone."}]]}]]}],["$","li","02",{"children":[["$","span",null,{"children":"02"}],["$","div",null,{"children":[["$","h3",null,{"children":"Remove the background"}],["$","p",null,{"children":"On-device machine learning separates the subject and prepares a transparent, high-resolution cutout."}]]}]]}],["$","li","03",{"children":[["$","span",null,{"children":"03"}],["$","div",null,{"children":[["$","h3",null,{"children":"Inspect the result"}],["$","p",null,{"children":"Drag the split-view divider to compare the original photo with the processed result."}]]}]]}],["$","li","04",{"children":[["$","span",null,{"children":"04"}],["$","div",null,{"children":[["$","h3",null,{"children":"Refine difficult details"}],["$","p",null,{"children":"Erase unwanted areas, restore the subject, and tune threshold, softness, cleanup, refinement, and color spill."}]]}]]}],["$","li","05",{"children":[["$","span",null,{"children":"05"}],["$","div",null,{"children":[["$","h3",null,{"children":"Replace and arrange"}],["$","p",null,{"children":"Keep transparency or add your own background, then resize, rotate, and position the subject precisely."}]]}]]}],["$","li","06",{"children":[["$","span",null,{"children":"06"}],["$","div",null,{"children":[["$","h3",null,{"children":"Export without a watermark"}],["$","p",null,{"children":"Save the finished image at high resolution with no recurring subscription and no export limits."}]]}]]}]]}]]}]}]
+14:["$","section",null,{"className":"page-module__w7GDJq__section page-module__w7GDJq__options","aria-labelledby":"outputs-title","children":["$","div",null,{"className":"page-module__w7GDJq__wrap page-module__w7GDJq__optionsGrid","children":[["$","figure",null,{"className":"page-module__w7GDJq__optionsFigure","children":[["$","$Le",null,{"src":"/subra-ai/use-cases/how-to-remove-image-background-for-free/background-options.webp","alt":"Transparent, white, colored, and custom photo-background options","width":1536,"height":1024,"sizes":"(max-width:900px) 100vw,58vw"}],["$","figcaption",null,{"children":"One cutout, multiple professional uses."}]]}],["$","div",null,{"children":[["$","p",null,{"className":"page-module__w7GDJq__eyebrow","children":"More than background removal"}],["$","h2",null,{"className":"sa-display","id":"outputs-title","children":"Transparent is only the beginning."}],["$","p",null,{"className":"page-module__w7GDJq__bodyCopy","children":"Prepare marketplace listings, thumbnails, collages, marketing graphics, profile photos, and reusable design assets."}],["$","ul",null,{"className":"page-module__w7GDJq__optionList","children":[["$","li",null,{"children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":20,"height":20,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-layers","aria-hidden":"true","children":[["$","path","zw3jo",{"d":"M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"}],["$","path","1wduqc",{"d":"M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"}],["$","path","kqbvx6",{"d":"M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"}],"$undefined"]}],["$","div",null,{"children":[["$","b",null,{"children":"Transparent PNG maker"}],["$","span",null,{"children":"Export a clean cutout ready for design layouts, stickers, logos, and digital marketing."}]]}]]}],["$","li",null,{"children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":20,"height":20,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-image","aria-hidden":"true","children":[["$","rect","1m3agn",{"width":"18","height":"18","x":"3","y":"3","rx":"2","ry":"2"}],["$","circle","af1f0g",{"cx":"9","cy":"9","r":"2"}],["$","path","1xmnt7",{"d":"m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"}],"$undefined"]}],["$","div",null,{"children":[["$","b",null,{"children":"Perfect white backgrounds"}],["$","span",null,{"children":"Create crisp product imagery for Amazon, eBay, Etsy, Poshmark, and catalog use."}]]}]]}],["$","li",null,{"children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":20,"height":20,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-palette","aria-hidden":"true","children":[["$","path","e79jfc",{"d":"M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"}],["$","circle","1okk4w",{"cx":"13.5","cy":"6.5","r":".5","fill":"currentColor"}],["$","circle","f64h9f",{"cx":"17.5","cy":"10.5","r":".5","fill":"currentColor"}],["$","circle","qy21gx",{"cx":"6.5","cy":"12.5","r":".5","fill":"currentColor"}],["$","circle","fotxhn",{"cx":"8.5","cy":"7.5","r":".5","fill":"currentColor"}],"$undefined"]}],["$","div",null,{"children":[["$","b",null,{"children":"Your own replacement image"}],["$","span",null,{"children":"Swap distracting scenes for a custom photo, texture, or branded composition."}]]}]]}]]}]]}]]}]}]
+15:["$","section",null,{"className":"page-module__w7GDJq__section","id":"screenshots","aria-labelledby":"screenshots-title","children":["$","div",null,{"className":"page-module__w7GDJq__wrap","children":[["$","div",null,{"className":"page-module__w7GDJq__sectionIntro","children":[["$","p",null,{"className":"page-module__w7GDJq__eyebrow","children":"The real app, end to end"}],["$","h2",null,{"className":"sa-display","id":"screenshots-title","children":"Every important control stays close to the image."}],["$","p",null,{"children":"See edge refinement, subject placement, background replacement, and clean white-background creation."}]]}],["$","div",null,{"className":"page-module__w7GDJq__screenshotGrid","children":[["$","figure","/background-remover/screenshots/refine-every-edge.png",{"children":["$","$Le",null,{"src":"/background-remover/screenshots/refine-every-edge.png","alt":"Subra AI mask tools refining hair and difficult image edges","width":1242,"height":2688,"sizes":"(max-width:640px) 82vw, (max-width:1000px) 42vw, 260px"}]}],["$","figure","/background-remover/screenshots/resize-and-reposition.png",{"children":["$","$Le",null,{"src":"/background-remover/screenshots/resize-and-reposition.png","alt":"Subra AI resizing and repositioning a cutout over a custom background","width":1242,"height":2688,"sizes":"(max-width:640px) 82vw, (max-width:1000px) 42vw, 260px"}]}],["$","figure","/background-remover/screenshots/swap-selfie-backgrounds.png",{"children":["$","$Le",null,{"src":"/background-remover/screenshots/swap-selfie-backgrounds.png","alt":"Subra AI swapping a selfie background with a beach scene","width":1242,"height":2688,"sizes":"(max-width:640px) 82vw, (max-width:1000px) 42vw, 260px"}]}],["$","figure","/background-remover/screenshots/perfect-white-background.png",{"children":["$","$Le",null,{"src":"/background-remover/screenshots/perfect-white-background.png","alt":"Subra AI creating a clean white background for a professional photo","width":1242,"height":2688,"sizes":"(max-width:640px) 82vw, (max-width:1000px) 42vw, 260px"}]}]]}]]}]}]
+16:["$","section",null,{"className":"page-module__w7GDJq__section","aria-labelledby":"control-title","children":["$","div",null,{"className":"page-module__w7GDJq__wrap","children":[["$","div",null,{"className":"page-module__w7GDJq__sectionIntro","children":[["$","p",null,{"className":"page-module__w7GDJq__eyebrow","children":"Precision when one tap is not enough"}],["$","h2",null,{"className":"sa-display","id":"control-title","children":"Keep the speed. Take back the edges."}],["$","p",null,{"children":"Automatic segmentation gets you started; practical controls let you finish hair, fur, clothing folds, product corners, and complex boundaries."}]]}],["$","div",null,{"className":"page-module__w7GDJq__controlGrid","children":[["$","article",null,{"children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":25,"height":25,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-brush","aria-hidden":"true","children":[["$","path","fzmg1i",{"d":"m11 10 3 3"}],["$","path","p4q2r7",{"d":"M6.5 21A3.5 3.5 0 1 0 3 17.5a2.62 2.62 0 0 1-.708 1.792A1 1 0 0 0 3 21z"}],["$","path","wy6l02",{"d":"M9.969 17.031 21.378 5.624a1 1 0 0 0-3.002-3.002L6.967 14.031"}],"$undefined"]}],["$","h3",null,{"children":"Refine the mask"}],["$","p",null,{"children":"Erase background remnants or restore parts of the subject with hard or soft brushes."}]]}],["$","article",null,{"children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":25,"height":25,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-sliders-horizontal","aria-hidden":"true","children":[["$","path","1qgfaw",{"d":"M10 5H3"}],["$","path","yhmn1j",{"d":"M12 19H3"}],["$","path","1sua03",{"d":"M14 3v4"}],["$","path","1q0r14",{"d":"M16 17v4"}],["$","path","1o4lsq",{"d":"M21 12h-9"}],["$","path","1rlt1p",{"d":"M21 19h-5"}],["$","path","1oszz2",{"d":"M21 5h-7"}],["$","path","tgpxqk",{"d":"M8 10v4"}],["$","path","a7s4jb",{"d":"M8 12H3"}],"$undefined"]}],["$","h3",null,{"children":"Adjust the edge"}],["$","p",null,{"children":"Tune threshold, softness, cleanup, refinement, and color-spill removal."}]]}],["$","article",null,{"children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":25,"height":25,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-sparkles","aria-hidden":"true","children":[["$","path","1s2grr",{"d":"M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"}],["$","path","1rf3ol",{"d":"M20 2v4"}],["$","path","gwowj6",{"d":"M22 4h-4"}],["$","circle","6kqj1y",{"cx":"4","cy":"20","r":"2"}],"$undefined"]}],["$","h3",null,{"children":"Start with a preset"}],["$","p",null,{"children":"Natural, Sharp, and Hair Detail give you sensible starting points."}]]}]]}]]}]}]
+17:["$","section",null,{"className":"page-module__w7GDJq__section page-module__w7GDJq__founders","aria-labelledby":"pros-title","children":["$","div",null,{"className":"page-module__w7GDJq__wrap page-module__w7GDJq__founderGrid","children":[["$","div",null,{"children":[["$","p",null,{"className":"page-module__w7GDJq__eyebrow","children":"Why professionals choose Subra AI"}],["$","h2",null,{"className":"sa-display","id":"pros-title","children":"Professional image utility without a privacy trade."}]]}],["$","div",null,{"className":"page-module__w7GDJq__founderCopy","children":[["$","p",null,{"children":"E-commerce owners can create crisp listing photos. Content creators can prepare thumbnails and collages. Designers can make reusable transparent graphics—all without feeding private or unreleased imagery into a cloud service."}],["$","p",null,{"children":"Work anywhere, including without network access. There are no accounts, processing caps, monthly plans, or watermarked exports."}],["$","p",null,{"className":"page-module__w7GDJq__honest","children":[["$","b",null,{"children":"Honest boundary:"}]," hair, fur, motion blur, transparent objects, shadows, and low-contrast edges can still require manual refinement. The app includes those controls instead of pretending every automatic cutout is perfect."]}]]}]]}]}]
+18:["$","section",null,{"className":"page-module__w7GDJq__section","aria-labelledby":"faq-title","children":["$","div",null,{"className":"page-module__w7GDJq__wrap","children":[["$","div",null,{"className":"page-module__w7GDJq__sectionIntro","children":[["$","p",null,{"className":"page-module__w7GDJq__eyebrow","children":"Frequently asked questions"}],["$","h2",null,{"className":"sa-display","id":"faq-title","children":"Everything to know before your first cutout."}]]}],["$","div",null,{"className":"page-module__w7GDJq__faqs","children":[["$","details","Are my photos uploaded to a server?",{"children":[["$","summary",null,{"children":"Are my photos uploaded to a server?"}],["$","p",null,{"children":"No. The editing workflow runs locally on your device. Your selected photos do not need to leave your iPhone for background removal or replacement."}]]}],["$","details","Does the app require an account?",{"children":[["$","summary",null,{"children":"Does the app require an account?"}],["$","p",null,{"children":"No account, profile, email address, or sign-up is required. Download the app and start editing."}]]}],["$","details","Is this a subscription?",{"children":[["$","summary",null,{"children":"Is this a subscription?"}],["$","p",null,{"children":"No. Subra AI: Background Remover is designed as a one-time purchase with unlimited lifetime use of the included features—without monthly subscription fees."}]]}],["$","details","Will exported images contain a watermark?",{"children":[["$","summary",null,{"children":"Will exported images contain a watermark?"}],["$","p",null,{"children":"No. The standalone paid app exports clean, watermark-free images. The free background-removal experience in the main Subra AI app includes a watermark."}]]}],["$","details","Can I create transparent PNGs and white backgrounds?",{"children":[["$","summary",null,{"children":"Can I create transparent PNGs and white backgrounds?"}],["$","p",null,{"children":"Yes. Export a transparent PNG, use a clean white background for product listings, or choose your own replacement image."}]]}],["$","details","Can I correct hair and difficult edges?",{"children":[["$","summary",null,{"children":"Can I correct hair and difficult edges?"}],["$","p",null,{"children":"Yes. Natural, Sharp, and Hair Detail presets provide starting points, while mask and edge controls let you refine difficult boundaries manually."}]]}]]}]]}]}]
+19:["$","section",null,{"className":"page-module__w7GDJq__cta","aria-labelledby":"download-title","children":["$","div",null,{"className":"page-module__w7GDJq__wrap page-module__w7GDJq__ctaCard","children":[["$","div",null,{"children":[["$","p",null,{"className":"page-module__w7GDJq__eyebrow","children":"Try before you buy"}],["$","h2",null,{"className":"sa-display","id":"download-title","children":"Test the core AI in the free Subra AI app."}],["$","p",null,{"children":"The master app includes a limited version of background removal so you can test the experience first. Free exports include a watermark; the standalone paid app removes it."}]]}],["$","div",null,{"className":"page-module__w7GDJq__actions","children":[["$","a",null,{"className":"page-module__w7GDJq__primary","href":"https://apps.apple.com/us/app/subra-ai-private-offline-ai/id6791144948","target":"_blank","rel":"noopener noreferrer","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":19,"height":19,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-apple","aria-hidden":"true","children":[["$","path","11qiee",{"d":"M12 6.528V3a1 1 0 0 1 1-1h0"}],["$","path","110c12",{"d":"M18.237 21A15 15 0 0 0 22 11a6 6 0 0 0-10-4.472A6 6 0 0 0 2 11a15.1 15.1 0 0 0 3.763 10 3 3 0 0 0 3.648.648 5.5 5.5 0 0 1 5.178 0A3 3 0 0 0 18.237 21"}],"$undefined"]}]," Download Subra AI"]}],["$","$La",null,{"className":"page-module__w7GDJq__secondary","href":"/subra-ai-use-cases/how-to-remove-image-background-for-free","children":"Read the free workflow"}]]}]]}]}]
+1a:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"Subra AI: Background Remover\",\"applicationCategory\":\"PhotoApplication\",\"operatingSystem\":\"iOS\",\"url\":\"https://subraatakumar.com/background-remover\",\"description\":\"Remove, replace, and refine image backgrounds privately on your iPhone. One purchase, unlimited high-resolution exports, no subscription, no watermark, and no cloud upload.\",\"offers\":{\"@type\":\"Offer\",\"category\":\"One-time purchase\"},\"featureList\":[\"Offline background removal\",\"Transparent PNG export\",\"Custom replacement backgrounds\",\"Manual mask refinement\",\"Edge adjustment controls\",\"Watermark-free exports\"]}"}}]
+1b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2d45e1fd80a69f24.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+1c:["$","$L22",null,{"children":["$","$20",null,{"name":"Next.MetadataOutlet","children":"$@23"}]}]
+1e:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+24:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"IconMark"]
+21:[["$","title","0",{"children":"Subra AI: Background Remover | Private Offline Photo Editor | Subrata Kumar Das"}],["$","meta","1",{"name":"description","content":"Remove, replace, and refine image backgrounds privately on your iPhone. One purchase, unlimited high-resolution exports, no subscription, no watermark, and no cloud upload."}],["$","meta","2",{"name":"keywords","content":"offline background remover,private background remover,transparent PNG maker,white background creator,background remover without subscription,watermark-free photo editor,on-device background remover"}],["$","link","3",{"rel":"canonical","href":"https://subraatakumar.com/background-remover/"}],["$","meta","4",{"property":"og:title","content":"Subra AI: Background Remover | Private Offline Photo Editor"}],["$","meta","5",{"property":"og:description","content":"Remove, replace, and refine image backgrounds privately on your iPhone. One purchase, unlimited high-resolution exports, no subscription, no watermark, and no cloud upload."}],["$","meta","6",{"property":"og:url","content":"https://subraatakumar.com/background-remover/"}],["$","meta","7",{"property":"og:image","content":"https://subraatakumar.com/background-remover/screenshots/remove-background-instantly.png"}],["$","meta","8",{"property":"og:image:width","content":"1242"}],["$","meta","9",{"property":"og:image:height","content":"2688"}],["$","meta","10",{"property":"og:image:alt","content":"Subra AI Background Remover creating a clean transparent cutout"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Subra AI: Background Remover | Private Offline Photo Editor"}],["$","meta","14",{"name":"twitter:description","content":"Remove, replace, and refine image backgrounds privately on your iPhone. One purchase, unlimited high-resolution exports, no subscription, no watermark, and no cloud upload."}],["$","meta","15",{"name":"twitter:image","content":"https://subraatakumar.com/background-remover/screenshots/remove-background-instantly.png"}],["$","link","16",{"rel":"icon","href":"/favicon.ico?favicon.750fd6b3.ico","sizes":"48x48","type":"image/x-icon"}],["$","link","17",{"rel":"icon","href":"/background-remover/icon.png?v=2","type":"image/png","sizes":"512x512"}],["$","link","18",{"rel":"apple-touch-icon","href":"/background-remover/apple-icon.png?v=2","type":"image/png","sizes":"512x512"}],["$","$L24","19",{}]]
+23:null
