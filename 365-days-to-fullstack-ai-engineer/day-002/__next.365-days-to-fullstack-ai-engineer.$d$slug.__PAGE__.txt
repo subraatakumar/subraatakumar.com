@@ -1,0 +1,319 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/18f38dbeee9f54d3.js","/_next/static/chunks/d87b716920d553cc.js"],""]
+3:I[5500,["/_next/static/chunks/18f38dbeee9f54d3.js","/_next/static/chunks/d87b716920d553cc.js"],"Image"]
+9:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+a:"$Sreact.suspense"
+4:T3aa3,<p><img src="02-ollama-with-openai-hero.png" alt=""></p>
+<h1>Connecting the Dots: Local Ollama with OpenAI's SDK</h1>
+<p>To call a local Ollama instance using the official OpenAI NPM package, you just need to point the configuration's <code>baseURL</code> to your local Ollama server (<code>http://localhost:11434/v1</code>) and provide a dummy <code>apiKey</code>.</p>
+<p>Here is the complete step-by-step setup and code to process a user's question.</p>
+<h2>1. Installation</h2>
+<p>Install the official OpenAI JavaScript library in your project:</p>
+<pre><code class="language-sh">npm install openai
+</code></pre>
+<h2>2. Make sure Ollama is running and model is downloaded</h2>
+<p>Before executing the script, make sure your local Ollama server is running (typically defaults to port 11434) and that you have pulled the model you want to use (e.g., llama3.2 or mistral).</p>
+<pre><code class="language-sh">ollama pull llama3.2
+</code></pre>
+<h2>3. JavaScript Implementation</h2>
+<p>Create a file (e.g., <code>index.js</code>) and use the following code to pass a user's question to your local model:</p>
+<pre><code class="language-js">import OpenAI from 'openai';
+
+// 1. Initialize the client targeting the local Ollama instance
+
+const openaiClient = new OpenAI({
+  baseURL: 'http://localhost:11434/v1', // Redirects requests to Ollama
+  apiKey: 'ollama',                      // An API key is required by the SDK but ignored by Ollama
+});
+
+async function askSubraAI(userQuestion) {
+  try {
+    // 2. Call the chat completions API
+    const completion = await openaiClient.chat.completions.create({
+      model: 'llama3.2', // Replace with any model you have downloaded locally via Ollama
+      messages: [
+        { role: 'system', content: 'You are a helpful and concise assistant.' },
+        { role: 'user', content: userQuestion }
+      ],
+    });
+
+    // 3. Output the response
+    console.log("\n\n\nAI Response:\n");
+    console.log(completion.choices[0].message.content);
+  } catch (error) {
+    console.error("Error communicating with local Ollama:", error);
+  }
+}
+// Example usage:
+
+const question = 'Why is the sky blue?';
+askSubraAI(question);
+</code></pre>
+<h3>Completion response</h3>
+<pre><code class="language-json">{
+  "id": "chatcmpl-945",
+  "object": "chat.completion",
+  "created": 1789188116,
+  "model": "llama3.2",
+  "system_fingerprint": "fp_ollama",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The sky appears blue because of a phenomenon called scattering, which occurs when sunlight interacts with the tiny molecules of gases in the Earth's atmosphere, such as nitrogen and oxygen. \n\nWhen sunlight enters the atmosphere, it encounters these tiny molecules and is scattered in all directions. The shorter, blue wavelengths of light are scattered more than the longer, red wavelengths, due to their smaller size and higher energy. This is known as Rayleigh scattering, named after the British physicist Lord Rayleigh, who first described the phenomenon.\n\nAs a result of this scattering, the blue light is distributed throughout the atmosphere, making it visible to our eyes from the ground. This is why the sky typically appears blue during the daytime, especially in the absence of clouds or pollution.\n\nHowever, the color of the sky can vary depending on the time of day and atmospheric conditions. For example, the sky can appear more red or orange during sunrise and sunset due to the scattering of light by atmospheric particles and the lower angle of the sun."
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 39,
+    "prompt_tokens_details": {
+      "cached_tokens": 15
+    },
+    "completion_tokens": 201,
+    "total_tokens": 240
+  }
+}
+</code></pre>
+<h3>Explanation of completion response</h3>
+<p>This JSON object is the standard payload returned by an OpenAI-compatible API (in your case, Ollama running llama3.2 locally).
+Here is the breakdown of what each part of this response means, grouped by its function:</p>
+<h4>1. Core Metadata</h4>
+<ul>
+<li>"id": "chatcmpl-159": A unique identifier assigned to this specific chat completion request.</li>
+<li>"object": "chat.completion": Confirms the type of object returned. In this case, it is a chat completion response.</li>
+<li>"created": 1789187010: A Unix timestamp indicating exactly when the response was generated.</li>
+<li>"model": "llama3.2": The specific AI model that processed your request.</li>
+<li>"system_fingerprint": "fp_ollama": A unique fingerprint indicating the backend system architecture or configuration that ran the model. Here, it explicitly tells you it was served by Ollama.</li>
+</ul>
+<h4>2. The AI's Output (choices)</h4>
+<p>The choices array contains the actual answers generated by the model. It is an array because you can technically ask the API to generate multiple alternative answers at once (though it defaults to one).</p>
+<ul>
+<li>"index": 0: The position of this answer in the list (starting at zero).</li>
+<li>"message": Contains the generated message payload.</li>
+<li>"role": "assistant": Confirms that this message was generated by the AI assistant (as opposed to the user or system).</li>
+</ul>
+<p>The role in the response is always "assistant" because that parameter identifies who is speaking in that specific message object.
+In the chat completions framework, there are three primary roles used to track the conversation history:</p>
+<ul>
+<li>"system": The developer sets this to give instructions on how the AI should behave.</li>
+<li>"user": This represents the human (you) asking the question.</li>
+<li>"assistant": This represents the AI model generating the answer.</li>
+</ul>
+<ul>
+<li>When you send a message with <code>{ role: 'user', content: userQuestion }</code>, you are telling the engine: "Hey, a human user is saying this text right now."</li>
+</ul>
+<p>The model then processes that text and creates a brand-new response payload. Because the AI model is the one generating that text payload, its author role will always be flagged as "assistant" to keep the dialogue records clean, logical, and structured.</p>
+<ul>
+<li>Why this structure matters: This rigid labeling structure allows you to pass the response cleanly back into your next API request to build an ongoing conversation thread like this:</li>
+</ul>
+<pre><code class="language-js">const conversationHistory = [
+  { role: 'user', content: 'Hi, I am Subrata.' }, // User speaks
+  { role: 'assistant', content: 'Hello Subrata! How can I help you today?' }, // Assistant responds
+  { role: 'user', content: 'What is my name?' } // User speaks again
+];
+</code></pre>
+<p>By keeping the generated output role locked as "assistant", the SDK guarantees that both your code and the AI backend always know exactly who said what.</p>
+<ul>
+<li>"content": The actual textual answer text generated by the model (explaining why the sky is blue).</li>
+<li>"finish_reason": "stop": This tells you why the AI stopped generating text. "stop" means the model naturally finished its thought and hit its own end-of-text token successfully (it didn't run out of token limits or crash).</li>
+</ul>
+<h4>3. Token &#x26; Resource Usage (usage)</h4>
+<p>Tokens are the pieces of words the AI uses to read and write. This section helps you track performance or costs.</p>
+<ul>
+<li>"prompt_tokens": 39: The length of your input question ("Why is the sky blue?") combined with your system prompt, broken down into tokens.</li>
+<li>"prompt_tokens_details": { "cached_tokens": 15 }: Out of your 39 input tokens, 15 were cached. This means Ollama already had part of your prompt (like the system instructions) stored in memory from a previous run, making this request faster.</li>
+<li>"completion_tokens": 202: The total number of tokens the AI generated to write the answer text.</li>
+<li>"total_tokens": 241: The sum of your prompt tokens (39) and completion tokens (202).</li>
+</ul>
+<h2>4. Enable Streaming Responses</h2>
+<p>If you want the response to chunk out progressively (like ChatGPT/Claude) instead of waiting for the full sentence, set <code>stream: true</code>:</p>
+<pre><code class="language-js">async function askSubraAIStream(userQuestion) {
+  const stream = await openaiClient.chat.completions.create({
+    model: 'llama3.2',
+    messages: [{ role: 'user', content: userQuestion }],
+    stream: true,
+  });
+
+  //   let fullResponse = ""; // 1. Create a container to hold the text
+
+  // 2. Loop through the chunks as they arrive
+  for await (const chunk of stream) {
+    const textChunk = chunk.choices[0]?.delta?.content || '';
+    // Prints words smoothly as they arrive without jumping to a new line
+    process.stdout.write(textChunk);
+    // fullResponse += textChunk; // 3. Keep glueing the text pieces together
+  }
+
+  // 4. Print the entire complete answer at once cleanly
+  //   console.log(fullResponse);
+}
+</code></pre>
+<h2>Difference between a Streamed response and a normal response</h2>
+<p>The fundamental difference between a streamed response and a normal response lies in how the data is structured and delivered over the network.
+A normal response delivers the entire data package at once after waiting for the AI to completely finish writing, while a streamed response breaks the output into a continuous series of tiny individual chunks delivered in real time.
+Here is a direct layout comparison of their JSON payloads:</p>
+<h3>1. The Payload Structures Side-by-Side</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Normal Response Payload</th>
+<th>Streamed Response Payload (Per Chunk)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Object Type</td>
+<td>"chat.completion"</td>
+<td>"chat.completion.chunk"</td>
+</tr>
+<tr>
+<td>Data Key</td>
+<td>Uses message (contains the full text)</td>
+<td>Uses delta (contains only the new characters)</td>
+</tr>
+<tr>
+<td>Content Delivery</td>
+<td>Delivered exactly once as a single giant block.</td>
+<td>Delivered dozens of times sequentially.</td>
+</tr>
+<tr>
+<td>Finish Reason</td>
+<td>Populated immediately ("stop" or "length").</td>
+<td>Always null until the very last chunk arrives.</td>
+</tr>
+<tr>
+<td>Usage (Tokens)</td>
+<td>Includes exact prompt and completion token counts.</td>
+<td>Often absent or only included in the absolute final chunk.</td>
+</tr>
+</tbody>
+</table>
+<h3>2. Payload Code Comparison</h3>
+<h4>Normal Response Payload</h4>
+<p>This is a single static JSON object. The content string contains the fully completed answer text.</p>
+<pre><code class="language-json">{
+  "id": "chatcmpl-123",
+  "object": "chat.completion",
+  "created": 1789187000,
+  "model": "llama3.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Hello! How can I help you today?"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 15,
+    "completion_tokens": 9,
+    "total_tokens": 24
+  }
+}
+</code></pre>
+<h4>Streamed Response Payload (Sent Fragment by Fragment)</h4>
+<p>Instead of one big response, your server receives multiple Server-Sent Events (SSE). Each event contains a tiny JSON payload object where <code>delta</code> holds just the incremental word or whitespace.</p>
+<h5>Chunk 1</h5>
+<pre><code class="language-json">{
+  "id": "chatcmpl-123",
+  "object": "chat.completion.chunk",
+  "created": 1789187001,
+  "model": "llama3.2",
+  "choices": [{ "index": 0, "delta": { "role": "assistant", "content": "Hello" }, "finish_reason": null }]
+}
+</code></pre>
+<h5>Chunk 2</h5>
+<pre><code class="language-json">{
+  "id": "chatcmpl-123",
+  "object": "chat.completion.chunk",
+  "created": 1789187002,
+  "model": "llama3.2",
+  "choices": [{ "index": 0, "delta": { "content": "!" }, "finish_reason": null }]
+}
+</code></pre>
+<h5>Chunk 3 (The Finalizing Token)</h5>
+<pre><code class="language-json">{
+  "id": "chatcmpl-123",
+  "object": "chat.completion.chunk",
+  "created": 1789187003,
+  "model": "llama3.2",
+  "choices": [{ "index": 0, "delta": {}, "finish_reason": "stop" }]
+}
+</code></pre>
+<h3>Key Takeaway for Developers</h3>
+<p>When parsing these payloads in JavaScript:</p>
+<ul>
+<li>For a normal response, you grab the text using <code>completion.choices[0].message.content</code>.</li>
+<li>For a streamed response chunk, you grab the text using <code>chunk.choices[0].delta.content</code>.</li>
+</ul>
+<h3>🔎 The Core Difference: Batch vs. Incremental</h3>
+<p>Streaming reduces Time to First Token (TTFT) by shifting from a "batch delivery" model to an "incremental delivery" model, allowing users to see data as soon as it is generated rather than waiting for the entire computation to finish.</p>
+<p><img src="diff-batch-incremental.png" alt=""></p>
+<ul>
+<li>⏳ <strong>Without Streaming (Normal Response):</strong></li>
+</ul>
+<p>The server acts like a restaurant kitchen that refuses to serve any food until the entire multi-course meal is cooked. The client waits idly while the LLM generates token 1, token 2, token 50, and token 200. Only when the final token is generated does the server bundle the whole payload into a single network packet and ship it.</p>
+<ul>
+<li>⚡ <strong>With Streaming:</strong></li>
+</ul>
+<p>The server acts like a conveyor belt. The second the LLM computes Token 1, the server pushes it down a persistent network pipeline (Server-Sent Events) to the user's browser. While the user is already reading Token 1, the server is calculating Token 2.</p>
+<h3>📊 How the Math Changes Your TTFT</h3>
+<p>To understand the massive performance gap, look at how the total waiting time scales for a user:</p>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Without Streaming</th>
+<th>With Streaming</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>User presses 'Submit'</td>
+<td>0.0 seconds</td>
+<td>0.0 seconds</td>
+</tr>
+<tr>
+<td>Server/LLM warms up</td>
+<td>~0.2 seconds</td>
+<td>~0.2 seconds</td>
+</tr>
+<tr>
+<td>Token 1 is generated</td>
+<td>Server holds it in memory</td>
+<td>Sent instantly to user (TTFT = ~0.25s)</td>
+</tr>
+<tr>
+<td>Tokens 2 to 199 generated</td>
+<td>Server holds them in memory</td>
+<td>Sent sequentially as they generate</td>
+</tr>
+<tr>
+<td>Token 200 (Last Token)</td>
+<td>Server finally sends everything</td>
+<td>Final token arrives</td>
+</tr>
+<tr>
+<td>User sees first text</td>
+<td>~2.5 seconds later 🛑</td>
+<td>~0.25 seconds later 🚀</td>
+</tr>
+</tbody>
+</table>
+<h3>💡 Why This Matters for User Experience (UX)</h3>
+<p>Human psychology perceives system speed based on responsiveness, not just completion time.</p>
+<ol>
+<li><strong>Perceived Performance:</strong> A TTFT of 250ms makes an application feel instant and alive, even if the entire paragraph takes 3 seconds to finish printing. Waiting 3 seconds in total silence feels like the app is frozen.</li>
+<li><strong>Cognitive Overlay:</strong> Humans read at roughly 200 to 250 words per minute. A streaming LLM generates text faster than the average human can read it, meaning the user can start consuming the answer immediately while the AI is still processing the remainder.</li>
+</ol>
+0:{"buildId":"NbVrBmwQcVQ1m4AEfqNWm","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"d365-subpage d365-note-page","children":["$","article",null,{"className":"d365-note-shell","children":[["$","nav",null,{"className":"d365-note-topnav","aria-label":"Journey navigation","children":[["$","$L2",null,{"className":"d365-back-link","href":"/365-days-to-fullstack-ai-engineer/schedule","children":"← Complete schedule"}],["$","$L2",null,{"className":"d365-back-link","href":"/365-days-to-fullstack-ai-engineer","children":"Journey home"}]]}],["$","header",null,{"className":"d365-note-header","children":["$","div",null,{"className":"d365-note-heading","children":[["$","div",null,{"children":[["$","p",null,{"className":"d365-kicker","children":["Day ",2," · Week ",1]}],["$","h1",null,{"children":"Week 1 · Build our next increment"}],["$","p",null,{"className":"d365-note-date","children":["Scheduled session · ","Tuesday, 15 September 2026"]}],["$","p",null,{"className":"d365-note-date","children":"Chapter · Planned exercise. Publication does not indicate completed work."}]]}],["$","$L3",null,{"className":"d365-note-portrait","src":"/images/instructor_image_pencil_transparent.png","alt":"Subrata Kumar Das","width":1092,"height":1379}]]}]}],["$","section",null,{"className":"d365-note-content","aria-labelledby":"session-plan-heading","children":[["$","h2",null,{"id":"session-plan-heading","children":"Our planned session"}],["$","p",null,{"children":"We call local Ollama through the OpenAI JavaScript SDK, inspect the completion payload and token usage, then compare normal and streamed responses."}],[["$","h3",null,{"children":"Weekly outcome"}],["$","p",null,{"children":"A working AI agent powered entirely by a local Ollama model."}],["$","h3",null,{"children":"Readiness check"}],["$","p",null,{"children":"We need an editor and one available assistant; Day 1 includes a browser fallback for JavaScript."}],false,["$","h3",null,{"children":"Human approval gate"}],["$","p",null,{"children":"We can explain the difference between a prompted chatbot and an agent, then demonstrate that only an allowlisted tool with validated arguments can run."}],["$","p",null,{"children":["$","$L2",null,{"href":"/365-days-to-fullstack-ai-engineer/schedule#week-1","children":["View Week ",1,": agent roles, decisions, and evidence →"]}]}]]]}],["$","div",null,{"className":"d365-note-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}]}],["$L7"],"$L8"]}],"loading":null,"isPartial":false}
+5:["$","nav",null,{"className":"d365-day-pagination","aria-label":"Day navigation","children":[["$","$L2",null,{"href":"/365-days-to-fullstack-ai-engineer/day-001","children":["← Day ",1]}],["$","$L2",null,{"href":"/365-days-to-fullstack-ai-engineer/day-003","children":["Day ",3," →"]}]]}]
+6:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Week 1 · Build our next increment\",\"description\":\"Day 2 of our 365-day mobile, full-stack, and applied-AI engineering journey.\",\"mainEntityOfPage\":\"https://subraatakumar.com/365-days-to-fullstack-ai-engineer/day-002\",\"url\":\"https://subraatakumar.com/365-days-to-fullstack-ai-engineer/day-002\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com/\"},\"isPartOf\":{\"@type\":\"CreativeWorkSeries\",\"name\":\"365 Days to FullStack AI Engineer\",\"url\":\"https://subraatakumar.com/365-days-to-fullstack-ai-engineer\"}}"}}]
+7:["$","script","script-0",{"src":"/_next/static/chunks/d87b716920d553cc.js","async":true}]
+8:["$","$L9",null,{"children":["$","$a",null,{"name":"Next.MetadataOutlet","children":"$@b"}]}]
+b:null

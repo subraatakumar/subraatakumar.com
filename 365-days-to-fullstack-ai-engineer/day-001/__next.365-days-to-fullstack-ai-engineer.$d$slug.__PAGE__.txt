@@ -1,0 +1,246 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/18f38dbeee9f54d3.js","/_next/static/chunks/d87b716920d553cc.js"],""]
+3:I[5500,["/_next/static/chunks/18f38dbeee9f54d3.js","/_next/static/chunks/d87b716920d553cc.js"],"Image"]
+9:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+a:"$Sreact.suspense"
+4:T4b43,<h1>taking AI off the cloud and bringing it directly to local hardware</h1>
+<p><a href="https://ollama.com/">Ollama</a> is a free, open-source application that allows us to download and run Large Language Models (LLMs) locally on our own computer.</p>
+<p>By serving as a local package manager and inference engine for AI, it removes the need for cloud infrastructure, internet connectivity, or paid subscription fees to use advanced AI. We can download the software directly from the official Ollama Website.</p>
+<h2>Core Benefits</h2>
+<ul>
+<li>Complete Privacy: Our data and prompts stay on our machine and are never sent to external servers.</li>
+<li>Zero Cost: We do not pay recurring subscription fees or per-token API charges.</li>
+<li>Offline Access: Models run completely local, allowing us to use AI without an internet connection.</li>
+<li>Hardware Acceleration: Out-of-the-box support for Apple Silicon (Metal), NVIDIA (CUDA), and AMD (ROCm) GPUs.</li>
+</ul>
+<h2>Key Features</h2>
+<ul>
+<li>Simplified Commands: Download and run complex models using simple terminal prompts (e.g., ollama run llama3).</li>
+<li>Built-in REST API: Automatically hosts a local server (on port 11434) so we can connect the AI to third-party tools, code editors, or custom web interfaces.</li>
+<li>Model Customization: Uses a "Modelfile" configuration system to easily adjust system prompts, parameters, or temperatures.</li>
+</ul>
+<h2>Popular Supported Models</h2>
+<p>Ollama hosts a massive library of pre-packaged, optimized open-weights models:</p>
+<ul>
+<li>Llama 3 / 3.1 / 3.2: Meta's highly capable general-purpose models.</li>
+<li>Mistral / Mixtral: High-performance models known for logical reasoning.</li>
+<li>Gemma: Google’s lightweight and efficient open models.</li>
+<li>DeepSeek-R1: Advanced reasoning and chain-of-thought models.</li>
+<li>Code Specialist Models: Specialized tools like CodeLlama or Qwen for pair programming.</li>
+</ul>
+<h2>Ecosystem Integrations</h2>
+<p>Because Ollama exposes a standard API, it plugs directly into hundreds of popular developer tools and consumer interfaces:</p>
+<ul>
+<li>UI Frontends: Connects seamlessly to <a href="https://github.com/open-webui/open-webui">Open WebUI</a> to give us a ChatGPT-like browser interface running locally on our hardware.</li>
+<li>Coding Assistants: Integrates with VS Code extensions (like Continue) to provide private code autocompletion.</li>
+<li>AI Frameworks: Supported natively by app-building frameworks like LangChain and LlamaIndex.</li>
+</ul>
+<p>An LLM (Large Language Model) is a type of artificial intelligence trained on massive amounts of text data to understand, generate, and manipulate human language. Ollama is needed because it solves the privacy, cost, and complexity barriers of running these massive models directly on our own computer instead of relying on big tech cloud servers.
+Here is a direct breakdown of what LLMs are and why Ollama is a game-changer for using them.</p>
+<h2>Lets try to solve some of the questions those may be in our mind as a fresher.</h2>
+<h2>What is an LLM?</h2>
+<p>An LLM (Large Language Model) is a type of artificial intelligence trained on massive amounts of text data to understand, generate, and manipulate human language. An LLM is a foundational AI model that acts like a highly sophisticated autocomplete engine. It predicts the most logical next word in a sequence based on patterns it learned during training.</p>
+<ul>
+<li>The "Large" Part: They consist of billions of parameters (the internal settings the AI uses to make decisions) and require massive computing power to train.</li>
+<li>Capabilities: They don't just copy text; they can write code, summarize long documents, translate languages, brainstorm ideas, and solve complex reasoning problems.</li>
+<li>Examples: Commercial examples include ChatGPT (OpenAI) and Claude (Anthropic). Open-weights examples (which we can download) include Meta's Llama and Google's Gemma.</li>
+</ul>
+<hr>
+<h2>Why We Need Ollama</h2>
+<p>Traditionally, running a powerful AI model required renting expensive cloud servers or having a computer science degree to configure complex code libraries. Ollama acts as the bridge that brings this technology to our everyday computers.</p>
+<p>We need Ollama for three primary reasons:</p>
+<h2>1. It Democratizes Open-Source AI</h2>
+<p>Before Ollama, if we wanted to run a model like Meta's Llama locally, we had to manually download massive files, manage Python environments, configure complex hardware drivers, and write code just to chat with it.</p>
+<ul>
+<li>Ollama's Fix: It bundles everything into a single app. We download it, type <code>ollama run llama3</code> into our terminal, and the app automatically handles the downloading, configuring, and running.</li>
+</ul>
+<h2>2. It Solves Data Privacy &#x26; Cloud Dependency</h2>
+<p>When we use cloud-based AIs (like ChatGPT or Claude), our private documents, financial data, or proprietary code are sent over the internet to external corporate servers.</p>
+<ul>
+<li>Ollama's Fix: Everything stays strictly on our hard drive. If we deal with sensitive corporate data, medical records, or private code, Ollama ensures zero data leaks and lets us work completely offline.</li>
+</ul>
+<h2>3. It Eliminates Token Fees and Subscriptions</h2>
+<p>Cloud AI APIs charge us for every single word (token) the AI reads or writes. Premium chat apps charge $20+/month per user.</p>
+<ul>
+<li>Ollama's Fix: It is 100% free. We can feed a 500-page book into a local model over and over again without paying a single cent in API fees.</li>
+</ul>
+<h2>4. It Optimizes Our Computer's Hardware</h2>
+<p>AI models are massive and sluggish if run purely on a standard computer processor (CPU). They need Graphics Cards (GPUs) to run at usable speeds.</p>
+<ul>
+<li>Ollama's Fix: It automatically detects if we have an Apple Silicon chip (M1/M2/M3/M4), an NVIDIA card, or an AMD card, and instantly optimizes the model to run at maximum speed on our specific hardware.</li>
+</ul>
+<h1>How to determine if a model will run smoothly ?</h1>
+<p>To determine if a model will run smoothly, we can easily figure it out just by looking at the model's name on the website or by checking its file size.</p>
+<p>There is no complex diagnostic software needed. The deciding factor is how much VRAM (Video RAM on Windows/Linux graphics cards) or Unified Memory (on Mac computers) we have. Ollama loads the entire model into this memory; if it fits, it runs lightning fast. If it overflows, it slows down drastically.</p>
+<hr>
+<h2>Method 1: Look at the Model Name (The "B" Rule)</h2>
+<p>When browsing the <a href="https://ollama.com/library">Ollama Model Library</a>, we will see numbers like 1B, 3B, 8B, or 32B in the tags or model names. The "B" stands for Billion parameters (the size of the AI's brain).</p>
+<p>As a universal rule of thumb, we can map the "B" size directly to our computer's RAM/VRAM requirements:</p>
+<table>
+<thead>
+<tr>
+<th>Model Parameter Size</th>
+<th>Required VRAM (Windows/Linux) or RAM (Mac)</th>
+<th>Smoothly Runs On...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1B to 3B (e.g., Llama 3.2 3B)</td>
+<td>4 GB to 6 GB</td>
+<td>Most standard laptops &#x26; older PCs</td>
+</tr>
+<tr>
+<td>7B to 9B (e.g., Llama 3 8B)</td>
+<td>8 GB to 12 GB</td>
+<td>Entry-level gaming PCs &#x26; base Macs</td>
+</tr>
+<tr>
+<td>14B to 32B (e.g., Qwen 32B)</td>
+<td>16 GB to 24 GB</td>
+<td>High-end gaming PCs &#x26; upgraded Macs</td>
+</tr>
+<tr>
+<td>70B+ (e.g., Llama 3 70B)</td>
+<td>64 GB+</td>
+<td>Advanced workstations only</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Method 2: Check the Model File Size</h2>
+<p>If we look closely at the specific model tags on the <a href="https://ollama.com/">Ollama Website</a>, it will show us the exact file size (e.g., 4.7GB).</p>
+<ul>
+<li></li>
+<li>The Rule: Our available VRAM/RAM must be at least 1.5 to 2 GB larger than the file size.</li>
+<li>Why? Our computer needs that extra 1.5 to 2 GB of breathing room to handle the system background tasks and the "context window" (the short-term memory of our ongoing conversation).</li>
+<li></li>
+</ul>
+<hr>
+<h2>Method 3: Check via the Command Line</h2>
+<p>If we have already downloaded a model and want to know how it is behaving on our system, we can open our terminal or command prompt while chatting with it and type:</p>
+<pre><code>ollama ps
+</code></pre>
+<p>This built-in command will print out exactly how much of the model is fitting into our graphics card (GPU) versus our computer processor (CPU). If it says 100% GPU, it is running perfectly smoothly.</p>
+<pre><code>ollama ps
+
+NAME               ID              SIZE     PROCESSOR    CONTEXT    UNTIL              
+llama3.2:latest    a80c4f17acd5    18 GB    100% GPU     131072     4 minutes from now    
+subratakumardas@Mac ~ %
+</code></pre>
+<h2>Here is the breakdown of our terminal output, explaining exactly what each column means and why our 2 GB model is currently occupying 18 GB of memory.</h2>
+<h2>Part 1: What Each Part of the Output Means</h2>
+<ul>
+<li>NAME: llama3.2:latest
+This is the name of the AI model currently loaded into our memory. We are running Meta’s Llama 3.2 model (specifically, the default :latest version downloaded by Ollama).</li>
+<li>ID: a80c4f17acd5
+This is the unique hash identifier for this specific model image on our hard drive.</li>
+<li>SIZE: 18 GB
+This is the exact amount of our Mac's active runtime memory (RAM) that the model is occupying at this very moment.</li>
+<li>PROCESSOR: 100% GPU
+This indicates that the entire model fits perfectly inside our Mac's graphics processing cores (the Apple Silicon GPU). Because it is at 100%, the AI will run smoothly and generate answers at maximum speed.</li>
+<li>CONTEXT: 131072
+This is the maximum number of tokens (roughly 100,000 words) the model is prepared to hold in its short-term memory during our conversation.</li>
+<li>UNTIL: 4 minutes from now
+Ollama has an automatic sleep timer to save our Mac's battery. If we don't send any prompts for 4 minutes, Ollama will automatically unload the model from our RAM.</li>
+</ul>
+<hr>
+<h2>Part 2: Why is a 2 GB Model Taking 18 GB of Memory?</h2>
+<p>Our model file only takes up 2 GB of space on our hard disk, but it expands to 18 GB in our RAM because of the CONTEXT size (131072).
+When an AI model runs, its total memory usage is calculated using a simple equation:</p>
+<pre><code>Total Memory = Base Model Size + Context Window Memory (KV Cache)
+</code></pre>
+<p>Here is how that breaks down for our session:</p>
+<ol>
+<li>The Base Model (2 GB): Ollama loads the core 2 GB file from our disk into our RAM. This is the permanent "brain" of the AI.</li>
+<li>The Context Window Allocation (+16 GB): Because our context window is set to a massive 131,072 tokens, Ollama must pre-allocate a huge pool of temporary memory called the Key-Value (KV) Cache. The AI uses this space to calculate and store the mathematical relationships between every single word in a long conversation.</li>
+<li>The Result (18 GB): Even if we have only typed a short sentence, Ollama prepares our system for a massive, book-length conversation by reserving that 16 GB of extra RAM right from the start. Since our Mac has plenty of available Unified Memory, Ollama claims this space immediately to guarantee that our chat won't slow down as the conversation grows.</li>
+</ol>
+<hr>
+<h2>Lets create a Shrunk Model</h2>
+<p>Lets create a custom clone of llama3.2 that defaults to a lower memory footprint.</p>
+<ol>
+<li>Create an empty text file on our Mac desktop and name it Modelfile (no file extension).</li>
+<li>Open it in a basic text editor and paste these two lines:</li>
+</ol>
+<pre><code>FROM llama3.2
+PARAMETER num_ctx 2048
+</code></pre>
+<p>or in terminal</p>
+<pre><code>echo 'FROM llama3.2\nPARAMETER num_ctx 2048' > ModelFile
+</code></pre>
+<ol start="3">
+<li>Open our Mac terminal, navigate to our desktop, and build the custom version:</li>
+</ol>
+<p>cd ~/Desktop
+ollama create llama3.2-small -f Modelfile</p>
+<ol start="4">
+<li>Now we can run our lightweight model permanently using:</li>
+</ol>
+<pre><code>ollama run llama3.2-small:latest
+</code></pre>
+<pre><code>ollama ps
+NAME                     ID              SIZE      PROCESSOR    CONTEXT    UNTIL              
+llama3.2-small:latest    bb1c85d7e477    2.3 GB    100% GPU     2048       4 minutes from now 
+</code></pre>
+<h1>What is a Context window ?</h1>
+<p>A context window is the short-term memory of an AI model. It represents the total amount of text (both our prompts and the AI's previous responses) that the model can process, read, and remember at any single point in time during a conversation.</p>
+<p>Think of it like a digital whiteboard.
+As we chat, everything we and the AI say gets written on the whiteboard. The AI reads the entire whiteboard every time we press enter to figure out what to say next.</p>
+<hr>
+<h2>How the Context Window Works</h2>
+<ul>
+<li>The Unit of Measurement: Context windows are measured in tokens. A token is roughly equivalent to 4 characters or 0.75 words.</li>
+<li>The Limit: Every model has a hard limit to its context window. In our previous step, we saw llama3.2 default to a maximum context window of 131,072 tokens (roughly 100,000 words).</li>
+<li>What Happens When It Fills Up? If our conversation exceeds the context window limit, the AI suffers from "digital amnesia." It will literally erase the oldest messages at the top of the whiteboard to make room for our newest prompt. It completely forgets how the conversation started.</li>
+</ul>
+<h2>How an Enterprise Application Handles This</h2>
+<p>When we build an enterprise application, we use a framework like LangChain, LlamaIndex, or an API wrapper to sit between our users and Ollama.</p>
+<p>Since Ollama only processes exactly what is sent to its <code>/api/generate</code> endpoint, our wrapper code is responsible for tracking tokens. When it notices our conversation is getting too close to the memory limit, our application code pauses, tells a model to summarize the past 20 messages, and packages that fresh summary with the newest prompt.</p>
+<p>By the time the request hits Ollama, the context is already "compacted" by our application layer, keeping Ollama's memory usage tight, predictable, and cost-effective.</p>
+<p>We may have seen context compacting in ChatGpt, Claude and Open WebUI chat applications.</p>
+<hr>
+<h2>Why Does It Affect Our Computer's RAM?</h2>
+<p>The context window directly impacts our computer hardware because of how AI processes information:</p>
+<ol>
+<li>Massive Calculations: To remember context, the AI doesn't just read text like a document; it has to calculate mathematical relationships between every single word on that whiteboard simultaneously.</li>
+<li>The "KV Cache": To avoid recalculating those word relationships over and over again with every new prompt, Ollama saves those calculations into a temporary data structure in our RAM called the Key-Value (KV) Cache.</li>
+<li>The RAM Spike: A context window of 2,048 tokens requires a tiny whiteboard—so the KV Cache is small, and our model runs at its bare-minimum size (~2 GB to 3 GB). A context window of 131,072 tokens requires an absolutely massive whiteboard, forcing Ollama to pre-allocate an extra 15+ GB of RAM just to hold the math equations for our future conversation.</li>
+</ol>
+<h2>When should we use a large or small context window?</h2>
+<ul>
+<li>Use a small context (e.g., 2,048 - 4,096): For casual chatting, basic coding, or quick questions. This saves massive amounts of our Mac's RAM for other apps like Photoshop or our web browser.</li>
+<li>Use a large context (e.g., 32,000 - 131,072): When we need to paste a massive 50-page PDF document, an entire codebase file, or a long essay and ask the AI to analyze, summarize, or debug it.</li>
+</ul>
+<h1>The Enterprise UseCase : managing infrastructure costs.</h1>
+<p>Controlling context solves, One of the most critical challenges in modern enterprise software engineering: managing infrastructure costs.</p>
+<p>When building a cloud-based enterprise application that uses AI, memory management is no longer just a technical detail—it directly dictates our monthly cloud bill. Controlling our context window sizes and optimizing how models sit in memory is vital for keeping an enterprise profitable.</p>
+<p>Here is exactly why managing this memory is so critical when moving from our local Mac to a cloud environment:</p>
+<h2>1. Cloud RAM and VRAM are Extremely Expensive</h2>
+<p>On our Mac, our Unified Memory is a one-time purchase. On the cloud (AWS, Google Cloud, or Azure), we rent specialized AI hardware—specifically NVIDIA GPUs (like the A100 or H100)—and we are billed by the minute or hour.</p>
+<ul>
+<li>The Reality: A cloud server with enough GPU memory (VRAM) to handle multiple massive 131k context windows can cost anywhere from $2 to $5+ per hour, per server.</li>
+<li>The Math: If our enterprise application scales to hundreds of concurrent users, we will need an array of these servers. Running unoptimized, maxed-out context windows across a fleet of cloud servers can easily rack up tens of thousands of dollars a month in unnecessary expenses.</li>
+</ul>
+<h2>2. The Context Window Cost Multiplier (The "Quadratic" Problem)</h2>
+<p>As we discovered with our ollama ps output, a model that takes up 2 GB on a disk can swell to 18 GB in memory when the context window is maxed out.
+In AI engineering, the memory required for the context window (the KV Cache) scales heavily as the conversation gets longer. If we leave the context window unmanaged at 131k tokens for every user:</p>
+<ul>
+<li>A single user asking a simple question like "What is our account balance?" will still force the cloud server to reserve a massive, expensive block of VRAM.</li>
+<li>The Enterprise Solution: By explicitly limiting the context window to 2048 or 4096 tokens for standard tasks, we drastically shrink the VRAM footprint per user. This allows a single cloud GPU to handle 5x to 10x more users simultaneously, slashing our infrastructure costs by up to 90%.</li>
+</ul>
+<h2>3. Server Efficiency: Maximize "Concurrancy"</h2>
+<p>In an enterprise setup, our goal is to fit as many user requests onto a single server as possible before needing to launch a second one.</p>
+<ul>
+<li>Unoptimized: If one user session takes up 18 GB of memory due to an unlocked context window, a standard 24 GB cloud GPU can only handle one user at a time.</li>
+<li>Optimized: If we restrict the context window so the model only takes up 3 GB of memory, that exact same cloud GPU can easily handle 7 to 8 users at the exact same time. We just cut our cloud hardware requirement—and our bill—by a factor of eight.</li>
+</ul>
+<h2>Summary for our Enterprise Architecture:</h2>
+<p>When pitching or designing an enterprise AI system, we can explain it using this core financial principle:</p>
+<p>"We must aggressively manage our AI runtime memory. By tailoring our model context windows to the specific task—using small context windows for quick transactions and reserving large context windows only for massive document processing—we drastically maximize our hardware efficiency, prevent cloud server waste, and directly control our operational expenses (OpEx)."</p>
+0:{"buildId":"NbVrBmwQcVQ1m4AEfqNWm","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"d365-subpage d365-note-page","children":["$","article",null,{"className":"d365-note-shell","children":[["$","nav",null,{"className":"d365-note-topnav","aria-label":"Journey navigation","children":[["$","$L2",null,{"className":"d365-back-link","href":"/365-days-to-fullstack-ai-engineer/schedule","children":"← Complete schedule"}],["$","$L2",null,{"className":"d365-back-link","href":"/365-days-to-fullstack-ai-engineer","children":"Journey home"}]]}],["$","header",null,{"className":"d365-note-header","children":["$","div",null,{"className":"d365-note-heading","children":[["$","div",null,{"children":[["$","p",null,{"className":"d365-kicker","children":["Day ",1," · Week ",1]}],["$","h1",null,{"children":"Week 1 · Start our next increment"}],["$","p",null,{"className":"d365-note-date","children":["Scheduled session · ","Monday, 14 September 2026"]}],["$","p",null,{"className":"d365-note-date","children":"Chapter · Planned exercise. Publication does not indicate completed work."}]]}],["$","$L3",null,{"className":"d365-note-portrait","src":"/images/instructor_image_pencil_transparent.png","alt":"Subrata Kumar Das","width":1092,"height":1379}]]}]}],["$","section",null,{"className":"d365-note-content","aria-labelledby":"session-plan-heading","children":[["$","h2",null,{"id":"session-plan-heading","children":"Our planned session"}],["$","p",null,{"children":"We install and run Ollama, choose a model for our available RAM or VRAM, inspect it with ollama ps, and test a smaller context window."}],[["$","h3",null,{"children":"Weekly outcome"}],["$","p",null,{"children":"A working AI agent powered entirely by a local Ollama model."}],["$","h3",null,{"children":"Readiness check"}],["$","p",null,{"children":"We need an editor and one available assistant; Day 1 includes a browser fallback for JavaScript."}],false,["$","h3",null,{"children":"Human approval gate"}],["$","p",null,{"children":"We can explain the difference between a prompted chatbot and an agent, then demonstrate that only an allowlisted tool with validated arguments can run."}],["$","p",null,{"children":["$","$L2",null,{"href":"/365-days-to-fullstack-ai-engineer/schedule#week-1","children":["View Week ",1,": agent roles, decisions, and evidence →"]}]}]]]}],["$","div",null,{"className":"d365-note-content","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}]}],["$L7"],"$L8"]}],"loading":null,"isPartial":false}
+5:["$","nav",null,{"className":"d365-day-pagination","aria-label":"Day navigation","children":[["$","span",null,{}],["$","$L2",null,{"href":"/365-days-to-fullstack-ai-engineer/day-002","children":["Day ",2," →"]}]]}]
+6:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Week 1 · Start our next increment\",\"description\":\"Day 1 of our 365-day mobile, full-stack, and applied-AI engineering journey.\",\"mainEntityOfPage\":\"https://subraatakumar.com/365-days-to-fullstack-ai-engineer/day-001\",\"url\":\"https://subraatakumar.com/365-days-to-fullstack-ai-engineer/day-001\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com/\"},\"isPartOf\":{\"@type\":\"CreativeWorkSeries\",\"name\":\"365 Days to FullStack AI Engineer\",\"url\":\"https://subraatakumar.com/365-days-to-fullstack-ai-engineer\"}}"}}]
+7:["$","script","script-0",{"src":"/_next/static/chunks/d87b716920d553cc.js","async":true}]
+8:["$","$L9",null,{"children":["$","$a",null,{"name":"Next.MetadataOutlet","children":"$@b"}]}]
+b:null

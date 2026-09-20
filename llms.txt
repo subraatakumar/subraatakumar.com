@@ -4,18 +4,18 @@
 
 Canonical site: https://subraatakumar.com
 
-## 365 Days to Senior/Staff Mobile Engineering with Full-Stack and Applied AI
+## 365 Days to FullStack AI Engineer
 
-- [Journey overview](https://subraatakumar.com/365-days-to-50-lpa): Purpose, dates, principles, technology map, four planned milestones in one product, measurement method, and common questions.
-- [Complete day-by-day schedule](https://subraatakumar.com/365-days-to-50-lpa/schedule): The planned activity, human approval gate, decision, evidence artifact, and date for every day from 14 September 2026 to 13 September 2027.
-- [Weekly updates](https://subraatakumar.com/365-days-to-50-lpa/updates): Published progress, evidence, corrections, and retrospectives.
+- [Journey overview](https://subraatakumar.com/365-days-to-fullstack-ai-engineer): Purpose, dates, principles, technology map, four planned milestones in one product, measurement method, and common questions.
+- [Complete day-by-day schedule](https://subraatakumar.com/365-days-to-fullstack-ai-engineer/schedule): The planned activity, human approval gate, decision, evidence artifact, and date for every day from 14 September 2026 to 13 September 2027.
+- [Weekly updates](https://subraatakumar.com/365-days-to-fullstack-ai-engineer/updates): Published progress, evidence, corrections, and retrospectives.
 - [Detailed AI reference](https://subraatakumar.com/llms-full.txt): Concise facts and direct answers about the journey and this site.
 
 The journey is an evidence-driven transition for an experienced React Native engineer toward Senior/Staff Mobile Engineer roles with full-stack and applied-AI capabilities. It preserves React Native and TypeScript depth, adds a Node.js product backend, uses Python/FastAPI for bounded AI services, and covers PostgreSQL, Azure, reliable RAG, agents, MCP, system design, security, operations, and on-device AI. Every activity is AI-assisted with human review and accountability. Freshers may follow but should expect a longer foundation path. Compensation depends on skills, experience, role fit, location, market conditions, and interview performance; no salary is guaranteed.
 
 Senior Mobile roles are the primary target; Staff roles require demonstrated scope, influence, and collaboration. We build one Journey Evidence Companion, with Node owning product data and bounded Python AI services. The weekly budget is nine hours and 15 minutes, including weekend review. Retrieval improvements and on-device experiments are conditional; deferred Azure deployments remain pending.
 
-Daily notes use stable URLs such as `https://subraatakumar.com/365-days-to-50-lpa/day-001`. Chapters describe planned exercises and may be published in advance. Session results document actual work and checks. Neither a Markdown file nor a published chapter establishes completion; milestone acceptance is recorded separately.
+Daily notes use stable URLs such as `https://subraatakumar.com/365-days-to-fullstack-ai-engineer/day-001`. Chapters describe planned exercises and may be published in advance. Session results document actual work and checks. Neither a Markdown file nor a published chapter establishes completion; milestone acceptance is recorded separately.
 
 ## Questions answered
 
