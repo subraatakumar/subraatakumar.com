@@ -90,6 +90,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
     "/for-ai",
     "/subra-ai",
+    "/subra-ai/early-access",
     "/subra-ai-use-cases/device-agnostic-medical-reading-capture",
     "/subra-ai-use-cases/how-to-remove-image-background-for-free",
     "/subra-ai-use-cases/how-to-change-ai-speaking-voice",

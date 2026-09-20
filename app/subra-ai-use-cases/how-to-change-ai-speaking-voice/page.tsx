@@ -80,7 +80,7 @@ const screenshots = Array.from({ length: 21 }, (_, index) => {
 function DownloadButtons() {
   return <div className={styles.actions}>
     <a className={styles.primary} href={stores.ios} target="_blank" rel="noopener noreferrer"><Apple size={19} /> Download on the App Store</a>
-    <a className={styles.secondary} href={stores.android} target="_blank" rel="noopener noreferrer"><Play size={18} /> Get it on Google Play</a>
+    <Link className={styles.secondary} href={stores.android}><Play size={18} /> Get early access on Android</Link>
   </div>;
 }
 
@@ -95,7 +95,7 @@ export default function SpeakingVoicePage() {
         { "@type": "HowToStep", name: "Listen to a response", text: "Play an AI response aloud with the selected device voice." },
       ] },
       { "@type": "FAQPage", mainEntity: questions.map(({ q, a }) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
-      { "@type": "SoftwareApplication", name: "Subra AI", applicationCategory: "UtilitiesApplication", operatingSystem: "Android, iOS", url: absoluteUrl(canonicalPath), installUrl: [stores.ios, stores.android], offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } },
+      { "@type": "SoftwareApplication", name: "Subra AI", applicationCategory: "UtilitiesApplication", operatingSystem: "Android, iOS", url: absoluteUrl(canonicalPath), installUrl: [stores.ios, absoluteUrl(stores.android)], offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } },
     ],
   };
 
