@@ -39,6 +39,7 @@ Full question-and-answer reference: https://subraatakumar.com/llms-full.txt
 - [Work with me](https://subraatakumar.com/work-with-me): Mobile architecture, React Native delivery, technical leadership, and mentoring engagements.
 - [Products](https://subraatakumar.com/products): First-party product portfolio.
 - [Subra AI](https://subraatakumar.com/subra-ai): Private, on-device AI and its business use cases.
+- [Study with your own materials](https://subraatakumar.com/subra-ai-use-cases/study-with-your-own-materials): A user-facing guide to Subra AI Learning Lens, its local Learning Vault, and source-referenced study answers.
 - [AI-readable profile](https://subraatakumar.com/for-ai): Compact professional facts for AI systems.
 - [Contact](https://subraatakumar.com/contact): Official contact route.
 
@@ -46,6 +47,7 @@ Full question-and-answer reference: https://subraatakumar.com/llms-full.txt
 
 - [180 Days](https://subraatakumar.com/180days): Technical mentorship notes with individual day pages.
 - [24 Weeks](https://subraatakumar.com/24weeks): AI-native engineering builds, including RAG architecture and implementation.
+- [Subra AI Learning Lens RAG implementation](https://subraatakumar.com/blog/subra-ai-learning-lens-on-device-rag): Local Vault ingestion, SQLite FTS5 retrieval, Lens-scoped grounding, and on-device answer generation.
 
 ## Citation guidance
 
