@@ -1,9 +1,8 @@
 1:"$Sreact.fragment"
-6:I[22016,["/_next/static/chunks/18f38dbeee9f54d3.js"],""]
-7:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
-8:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
-:HL["/_next/static/chunks/67d266141b06bb08.css","style"]
-2:T15e4,
+6:I[8500,["8500","static/chunks/8500-41fa79ac743d83f1.js","755","static/chunks/app/pilltracker/layout-da49d664796f226e.js"],""]
+7:I[7121,[],""]
+8:I[4581,[],""]
+2:T163c,
         body:has(.pt-shell) .sk-header,
         body:has(.pt-shell) .sk-footer {
           display: none !important;
@@ -22,6 +21,7 @@
           --pt-ink: #123b63;
           --pt-muted: #4b6e92;
           min-height: 100vh;
+          font-family: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif;
           color: var(--pt-ink);
           background:
             radial-gradient(circle at 8% 10%, rgba(143, 221, 255, 0.27), transparent 42%),
@@ -142,7 +142,7 @@
           color: var(--pt-blue-700);
         }
         .pt-font-display {
-          font-family: 'Space Grotesk', 'Space Grotesk Fallback';
+          font-family: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif;
         }
         .pt-mobile-nav {
           display: none;
@@ -192,7 +192,7 @@
             padding: 14px 14px 18px;
           }
         }
-      0:{"buildId":"QxpjXSB-mKWR8e_hZRaJJ","rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/67d266141b06bb08.css","precedence":"next"}]],["$","div",null,{"className":"pt-shell manrope_65508a06-module__rzDLfa__className","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}],"loading":null,"isPartial":false}
+      0:{"buildId":"JxItTBBXX68lHzZ0DpG8U","rsc":["$","$1","c",{"children":[null,["$","div",null,{"className":"pt-shell","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}],"loading":null,"isPartial":false}
 3:["$","header",null,{"className":"pt-nav","children":[["$","div",null,{"className":"pt-nav-inner","children":[["$","$L6",null,{"href":"/pilltracker","className":"pt-logo","children":[["$","span",null,{"className":"pt-logo-mark","children":"PT"}],["$","span",null,{"className":"pt-logo-text pt-font-display","children":"PillTracker"}]]}],["$","nav",null,{"className":"pt-links","aria-label":"PillTracker pages","children":[["$","$L6",null,{"href":"/pilltracker","children":"Overview"}],["$","$L6",null,{"href":"/pilltracker/privacy-policy","children":"Privacy Policy"}],["$","$L6",null,{"href":"/pilltracker/terms","children":"Terms of Use"}],["$","$L6",null,{"href":"/products","children":"All Products"}]]}]]}],["$","nav",null,{"className":"pt-mobile-nav","aria-label":"PillTracker pages mobile","children":[["$","$L6",null,{"href":"/pilltracker","children":"Overview"}],["$","$L6",null,{"href":"/pilltracker/privacy-policy","children":"Privacy Policy"}],["$","$L6",null,{"href":"/pilltracker/terms","children":"Terms of Use"}],["$","$L6",null,{"href":"/products","children":"All Products"}]]}]]}]
 4:["$","main",null,{"className":"pt-main","children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]}]
 5:["$","footer",null,{"className":"pt-footer","children":["$","div",null,{"className":"pt-footer-inner","children":[["$","p",null,{"className":"pt-footer-copy","children":["© ",2026," PillTracker"]}],["$","div",null,{"className":"pt-footer-links","children":[["$","$L6",null,{"href":"/pilltracker","children":"Overview"}],["$","$L6",null,{"href":"/pilltracker/privacy-policy","children":"Privacy Policy"}],["$","$L6",null,{"href":"/pilltracker/terms","children":"Terms of Use"}],["$","$L6",null,{"href":"/contact","children":"Support"}]]}]]}]}]

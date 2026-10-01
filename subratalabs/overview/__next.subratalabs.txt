@@ -1,9 +1,8 @@
 1:"$Sreact.fragment"
-6:I[22016,["/_next/static/chunks/18f38dbeee9f54d3.js"],""]
-7:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
-8:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
-:HL["/_next/static/chunks/19626a09ad9ab341.css","style"]
-2:Te14,
+6:I[8500,["8500","static/chunks/8500-41fa79ac743d83f1.js","4205","static/chunks/app/subratalabs/overview/page-da49d664796f226e.js"],""]
+7:I[7121,[],""]
+8:I[4581,[],""]
+2:Te7c,
         body:has(.labs-shell) .sk-header,
         body:has(.labs-shell) .sk-footer {
           display: none !important;
@@ -14,6 +13,7 @@
           min-height: 100vh;
           background: #0d1117;
           color: #dde5e3;
+          font-family: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif;
         }
 
         .labs-shell * {
@@ -106,7 +106,7 @@
 
         /* ── Font util ── */
         .labs-font-display {
-          font-family: 'Exo 2', 'Exo 2 Fallback';
+          font-family: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif;
         }
 
         /* ── Footer ── */
@@ -143,7 +143,7 @@
             padding-right: 16px;
           }
         }
-      0:{"buildId":"QxpjXSB-mKWR8e_hZRaJJ","rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/19626a09ad9ab341.css","precedence":"next"}]],["$","div",null,{"className":"labs-shell plus_jakarta_sans_2535c7a2-module__o7etOa__className","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}],"loading":null,"isPartial":false}
+      0:{"buildId":"JxItTBBXX68lHzZ0DpG8U","rsc":["$","$1","c",{"children":[null,["$","div",null,{"className":"labs-shell","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}],"loading":null,"isPartial":false}
 3:["$","header",null,{"className":"labs-nav","children":["$","div",null,{"className":"labs-nav-inner","children":[["$","$L6",null,{"href":"/subratalabs","className":"labs-brand","children":[["$","span",null,{"className":"labs-mark labs-font-display","children":"S"}],["$","span",null,{"className":"labs-brand-text","children":[["$","b",null,{"className":"labs-font-display","children":"Subrata"}],["$","span",null,{"children":"Labs"}]]}]]}],["$","nav",null,{"className":"labs-nav-links","aria-label":"Subrata Labs navigation","children":[["$","$L6",null,{"href":"/subratalabs/overview","children":"Overview"}],["$","$L6",null,{"href":"/subratalabs/insights","children":"Insights"}]]}]]}]}]
 4:["$","main",null,{"className":"labs-main","children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]}]
 5:["$","footer",null,{"className":"labs-footer","children":["$","div",null,{"className":"labs-footer-inner","children":[["$","p",null,{"children":["© ",2026," Subrata Labs"]}],["$","$L6",null,{"href":"/contact","children":"Collaborate with Subrata Labs"}]]}]}]

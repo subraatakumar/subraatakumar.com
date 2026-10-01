@@ -1,8 +1,8 @@
 1:"$Sreact.fragment"
-9:I[22016,["/_next/static/chunks/18f38dbeee9f54d3.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
-e:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
-f:"$Sreact.suspense"
-11:I[21675,["/_next/static/chunks/18f38dbeee9f54d3.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]
+8:I[8500,["8500","static/chunks/8500-41fa79ac743d83f1.js","5355","static/chunks/app/180days/%5Bslug%5D/page-3f0e412199a1fb28.js"],""]
+d:I[484,[],"OutletBoundary"]
+e:"$Sreact.suspense"
+10:I[3970,["8500","static/chunks/8500-41fa79ac743d83f1.js","5355","static/chunks/app/180days/%5Bslug%5D/page-3f0e412199a1fb28.js"],"default"]
 2:T225e,
         #days180-root .d180-article-page {
           min-height: 100vh;
@@ -304,10 +304,10 @@ f:"$Sreact.suspense"
             display: none;
           }
         }
-      0:{"buildId":"QxpjXSB-mKWR8e_hZRaJJ","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5","$L6"]}],["$L7"],"$L8"]}],"loading":null,"isPartial":false}
-3:["$","header",null,{"className":"d180-article-header","children":["$","div",null,{"className":"d180-article-header-inner","children":[["$","div",null,{"className":"flex items-center gap-3 shrink-0","children":[["$","$L9",null,{"href":"/","aria-label":"Go to main home page","className":"w-8 h-8 bg-amber-400 rounded-lg flex items-center justify-center text-slate-900 shadow-lg shadow-amber-400/20","children":["$","span",null,{"className":"font-black text-sm","children":"SK"}]}],["$","nav",null,{"className":"hidden md:flex items-center gap-3","children":[["$","$L9",null,{"href":"/180days","className":"d180-crumb","children":[["$","span",null,{"className":"d180-crumb-series","children":"180 Days"}]," ",["$","span",null,{"children":"/"}]," ",["$","strong",null,{"children":["Day ","8"]}]]}],["$","div",null,{"className":"d180-pill","children":[["$","div",null,{"className":"d180-pill-track","children":["$","div",null,{"className":"d180-pill-fill","style":{"width":"4%"}}]}],["$","b",null,{"children":[4,"%"]}]]}]]}]]}],["$","div",null,{"className":"flex items-center gap-4","children":["$","$L9",null,{"href":"/180days","className":"d180-crumb","children":"← All Days"}]}]]}]}]
+      0:{"buildId":"JxItTBBXX68lHzZ0DpG8U","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"d180-article-page","children":[["$","style",null,{"children":"$2"}],"$L3","$L4","$L5","$L6"]}],null,"$L7"]}],"loading":null,"isPartial":false}
+3:["$","header",null,{"className":"d180-article-header","children":["$","div",null,{"className":"d180-article-header-inner","children":[["$","div",null,{"className":"flex items-center gap-3 shrink-0","children":[["$","$L8",null,{"href":"/","aria-label":"Go to main home page","className":"w-8 h-8 bg-amber-400 rounded-lg flex items-center justify-center text-slate-900 shadow-lg shadow-amber-400/20","children":["$","span",null,{"className":"font-black text-sm","children":"SK"}]}],["$","nav",null,{"className":"hidden md:flex items-center gap-3","children":[["$","$L8",null,{"href":"/180days","className":"d180-crumb","children":[["$","span",null,{"className":"d180-crumb-series","children":"180 Days"}]," ",["$","span",null,{"children":"/"}]," ",["$","strong",null,{"children":["Day ","8"]}]]}],["$","div",null,{"className":"d180-pill","children":[["$","div",null,{"className":"d180-pill-track","children":["$","div",null,{"className":"d180-pill-fill","style":{"width":"4%"}}]}],["$","b",null,{"children":[4,"%"]}]]}]]}]]}],["$","div",null,{"className":"flex items-center gap-4","children":["$","$L8",null,{"href":"/180days","className":"d180-crumb","children":"← All Days"}]}]]}]}]
 4:["$","div",null,{"className":"d180-hero","children":["$","div",null,{"className":"d180-hero-inner d180-content-wrap","style":{"paddingTop":56,"paddingBottom":56},"children":[["$","h1",null,{"style":{"maxWidth":820},"children":"Day 8 : Offline Life Archive — Screen Structure (MVP) Using AI"}],["$","p",null,{"style":{"marginTop":14,"maxWidth":760},"children":"Define the MVP screen structure and prompts for a privacy-focused offline memory app."}],["$","div",null,{"className":"d180-meta-line","children":[["$","span",null,{"children":"2026-02-27"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#d97706"},"children":"Subrata Kumar Das"}],["$","span",null,{"className":"dot"}],["$","span",null,{"style":{"color":"#15803d","fontSize":11,"fontWeight":800,"textTransform":"uppercase","letterSpacing":".08em"},"children":"Complete"}]]}],["$","p",null,{"style":{"marginTop":16,"maxWidth":500,"fontSize":13,"lineHeight":1.7,"color":"#92400e","borderLeft":"2px solid #fcd34d","paddingLeft":10,"fontStyle":"italic"},"children":"\"Consistent small steps lead to massive long-term results. Keep pushing.\""}]]}]}]
-a:T6b90,<p class="d180-md-p">We divide screens into 4 groups:</p>
+9:T6b90,<p class="d180-md-p">We divide screens into 4 groups:</p>
 <ol class="d180-md-ol">
 <li class="d180-md-li">Onboarding</li>
 <li class="d180-md-li">Core Archive</li>
@@ -1021,11 +1021,10 @@ Add empty state variation.
 </ul>
 <p class="d180-md-p">Not just pretty visuals — but usable structure.</p>
 <p class="d180-md-p"><img src="/images/day8_last_screen.png" class="rounded-md shadow-sm mx-auto block" alt="export designed screens and html files as zip"></p>
-5:["$","main",null,{"className":"d180-content-wrap","style":{"paddingTop":36},"children":["$","div",null,{"className":"flex-1","children":[["$","article",null,{"className":"d180-post-content","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$a"}}],"$Lb"]}],"$Lc","$Ld"]}]}]
+5:["$","main",null,{"className":"d180-content-wrap","style":{"paddingTop":36},"children":["$","div",null,{"className":"flex-1","children":[["$","article",null,{"className":"d180-post-content","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$9"}}],"$La"]}],"$Lb","$Lc"]}]}]
 6:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"mainEntityOfPage\":\"https://subraatakumar.com/180days/day-8\",\"headline\":\"Day 8 : Offline Life Archive — Screen Structure (MVP) Using AI\",\"datePublished\":\"2026-02-27\",\"description\":\"Define the MVP screen structure and prompts for a privacy-focused offline memory app.\",\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\"}}"}}]
-7:["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true}]
-8:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
-b:["$","$L11",null,{}]
-c:["$","div",null,{"className":"mt-8 mb-6","children":["$","a",null,{"href":"https://github.com/subraatakumar/subraatakumar.com/edit/main/content/180days/day-8.md","target":"_blank","rel":"noopener noreferrer","className":"d180-edit-link","children":"Suggest a change to the content of the material"}]}]
-d:["$","div",null,{"className":"d180-bottom-nav","children":[["$","$L9",null,{"href":"/180days/day-7","className":"d180-nav-link","children":["$","div",null,{"children":[["$","strong",null,{"children":"Previous"}],["$","span",null,{"style":{"fontSize":14,"fontWeight":700,"textTransform":"capitalize"},"children":"day 7"}]]}]}],["$","$L9",null,{"href":"/180days/day-11","className":"d180-nav-link next","children":["$","div",null,{"children":[["$","strong",null,{"children":"Next Up"}],["$","span",null,{"style":{"fontSize":14,"fontWeight":700,"textTransform":"capitalize"},"children":"day 11"}]]}]}]]}]
-10:null
+7:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+a:["$","$L10",null,{}]
+b:["$","div",null,{"className":"mt-8 mb-6","children":["$","a",null,{"href":"https://github.com/subraatakumar/subraatakumar.com/edit/main/content/180days/day-8.md","target":"_blank","rel":"noopener noreferrer","className":"d180-edit-link","children":"Suggest a change to the content of the material"}]}]
+c:["$","div",null,{"className":"d180-bottom-nav","children":[["$","$L8",null,{"href":"/180days/day-7","className":"d180-nav-link","children":["$","div",null,{"children":[["$","strong",null,{"children":"Previous"}],["$","span",null,{"style":{"fontSize":14,"fontWeight":700,"textTransform":"capitalize"},"children":"day 7"}]]}]}],["$","$L8",null,{"href":"/180days/day-11","className":"d180-nav-link next","children":["$","div",null,{"children":[["$","strong",null,{"children":"Next Up"}],["$","span",null,{"style":{"fontSize":14,"fontWeight":700,"textTransform":"capitalize"},"children":"day 11"}]]}]}]]}]
+f:null

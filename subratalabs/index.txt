@@ -1,9 +1,6 @@
 1:"$Sreact.fragment"
-9:I[68027,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
-:HL["/_next/static/chunks/62d0268a6e06bf4c.css","style"]
-:HL["/_next/static/chunks/19626a09ad9ab341.css","style"]
-:HL["/_next/static/media/a626ed2fbe2db1bf-s.p.45f567a3.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/_next/static/media/fba5a26ea33df6a3-s.p.1bbdebe6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+9:I[7123,[],""]
+:HL["/_next/static/css/17d1fa692a4518fa.css","style"]
 :HL["https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","style"]
 2:T19f5,
           * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -224,17 +221,17 @@
             .sk-nav-mobile { display: block; }
             .sk-page-heading { font-size: 2.2rem; }
           }
-        0:{"P":null,"b":"QxpjXSB-mKWR8e_hZRaJJ","c":["","subratalabs",""],"q":"","i":false,"f":[[["",{"children":["subratalabs",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/62d0268a6e06bf4c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/18f38dbeee9f54d3.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{},null,false,false]},null,false,false]},null,false,false],"$L8",false]],"m":"$undefined","G":["$9",[]],"S":true}
-a:I[22016,["/_next/static/chunks/18f38dbeee9f54d3.js"],""]
-b:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
-c:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"default"]
-16:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"ViewportBoundary"]
-18:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"MetadataBoundary"]
+        0:{"P":null,"b":"JxItTBBXX68lHzZ0DpG8U","c":["","subratalabs",""],"q":"","i":false,"f":[[["",{"children":["subratalabs",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/17d1fa692a4518fa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{},null,false,false]},null,false,false]},null,false,false],"$L8",false]],"m":"$undefined","G":["$9",[]],"S":true}
+a:I[8500,["8500","static/chunks/8500-41fa79ac743d83f1.js","8337","static/chunks/app/subratalabs/page-da49d664796f226e.js"],""]
+b:I[7121,[],""]
+c:I[4581,[],""]
+16:I[484,[],"ViewportBoundary"]
+18:I[484,[],"MetadataBoundary"]
 19:"$Sreact.suspense"
 3:["$","header",null,{"className":"sk-header","children":[["$","div",null,{"className":"sk-header-inner","children":[["$","$La",null,{"href":"/","className":"sk-logo","children":"SKD_"}],["$","nav",null,{"aria-label":"Primary","children":["$","ul",null,{"className":"sk-nav-links","children":[["$","li",null,{"children":["$","$La",null,{"href":"/work-with-me","children":"Work with me"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/notes","children":"Notes"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/contact","children":"Contact"}]}]]}]}]]}],["$","div",null,{"className":"sk-nav-mobile","children":["$","nav",null,{"aria-label":"Mobile","children":["$","ul",null,{"children":[["$","li",null,{"children":["$","$La",null,{"href":"/work-with-me","children":"Work"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/notes","children":"Notes"}]}],["$","li",null,{"children":["$","$La",null,{"href":"/contact","children":"Contact"}]}]]}]}]}]]}]
 4:["$","main",null,{"style":{"width":"100%"},"children":["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
 5:["$","footer",null,{"className":"sk-footer","children":["© ",2026," Subrata Kumar Das. All rights reserved. ·"," ",["$","$La",null,{"href":"/for-ai","children":"For AI/Crawlers"}]]}]
-d:Te14,
+d:Te7c,
         body:has(.labs-shell) .sk-header,
         body:has(.labs-shell) .sk-footer {
           display: none !important;
@@ -245,6 +242,7 @@ d:Te14,
           min-height: 100vh;
           background: #0d1117;
           color: #dde5e3;
+          font-family: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif;
         }
 
         .labs-shell * {
@@ -337,7 +335,7 @@ d:Te14,
 
         /* ── Font util ── */
         .labs-font-display {
-          font-family: 'Exo 2', 'Exo 2 Fallback';
+          font-family: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif;
         }
 
         /* ── Footer ── */
@@ -374,7 +372,7 @@ d:Te14,
             padding-right: 16px;
           }
         }
-      6:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/19626a09ad9ab341.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","div",null,{"className":"labs-shell plus_jakarta_sans_2535c7a2-module__o7etOa__className","children":[["$","style",null,{"children":"$d"}],"$Le","$Lf","$L10"]}]]}]
+      6:["$","$1","c",{"children":[null,["$","div",null,{"className":"labs-shell","children":[["$","style",null,{"children":"$d"}],"$Le","$Lf","$L10"]}]]}]
 11:T17ef,
 
         /* ─────────────────────────────────────────
@@ -588,8 +586,8 @@ d:Te14,
           .lp-hero { padding: 44px 0 60px; }
         }
       7:["$","$1","c",{"children":[["$","section",null,{"className":"lp","children":[["$","style",null,{"children":"$11"}],"$L12","$L13","$L14"]}],null,"$L15"]}]
-8:["$","$1","h",{"children":[null,["$","$L16",null,{"children":"$L17"}],["$","div",null,{"hidden":true,"children":["$","$L18",null,{"children":["$","$19",null,{"name":"Next.Metadata","children":"$L1a"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
-1b:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
+8:["$","$1","h",{"children":[null,["$","$L16",null,{"children":"$L17"}],["$","div",null,{"hidden":true,"children":["$","$L18",null,{"children":["$","$19",null,{"name":"Next.Metadata","children":"$L1a"}]}]}],null]}]
+1b:I[484,[],"OutletBoundary"]
 e:["$","header",null,{"className":"labs-nav","children":["$","div",null,{"className":"labs-nav-inner","children":[["$","$La",null,{"href":"/subratalabs","className":"labs-brand","children":[["$","span",null,{"className":"labs-mark labs-font-display","children":"S"}],["$","span",null,{"className":"labs-brand-text","children":[["$","b",null,{"className":"labs-font-display","children":"Subrata"}],["$","span",null,{"children":"Labs"}]]}]]}],["$","nav",null,{"className":"labs-nav-links","aria-label":"Subrata Labs navigation","children":[["$","$La",null,{"href":"/subratalabs/overview","children":"Overview"}],["$","$La",null,{"href":"/subratalabs/insights","children":"Insights"}]]}]]}]}]
 f:["$","main",null,{"className":"labs-main","children":["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}]
 10:["$","footer",null,{"className":"labs-footer","children":["$","div",null,{"className":"labs-footer-inner","children":[["$","p",null,{"children":["© ",2026," Subrata Labs"]}],["$","$La",null,{"href":"/contact","children":"Collaborate with Subrata Labs"}]]}]}]
@@ -598,6 +596,6 @@ f:["$","main",null,{"className":"labs-main","children":["$","$Lb",null,{"paralle
 14:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Brand\",\"name\":\"Subrata Labs\",\"url\":\"https://subraatakumar.com/subratalabs\",\"description\":\"Execution Studio for practical AI products, systems, and developer ecosystems.\"},{\"@type\":\"ItemList\",\"name\":\"Subrata Labs Learning Tracks\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"180Days\",\"url\":\"https://subraatakumar.com/180days\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"AI Agents\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Plugins\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Enterprise Tools\"},{\"@type\":\"ListItem\",\"position\":5,\"name\":\"Monetization Frameworks\"},{\"@type\":\"ListItem\",\"position\":6,\"name\":\"Desktop/Mobile AI Apps\"}]},{\"@type\":\"WebPage\",\"name\":\"Subrata Labs\",\"url\":\"https://subraatakumar.com/subratalabs\"}]}"}}]
 15:["$","$L1b",null,{"children":["$","$19",null,{"name":"Next.MetadataOutlet","children":"$@1c"}]}]
 17:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-1d:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"IconMark"]
+1d:I[6869,[],"IconMark"]
 1a:[["$","title","0",{"children":"Subrata Labs | Subrata Kumar Das"}],["$","meta","1",{"name":"description","content":"Subrata Labs is the Execution Studio for practical AI products, systems, and developer ecosystems, starting with the 180Days structured build track."}],["$","meta","2",{"name":"keywords","content":"Subrata Kumar Das,React Native Developer,Tech Lead,Mobile Architect,Next.js Developer"}],["$","link","3",{"rel":"canonical","href":"https://subraatakumar.com/subratalabs/"}],["$","meta","4",{"property":"og:title","content":"Subrata Labs | Practical AI Products and Systems"}],["$","meta","5",{"property":"og:description","content":"Execution Studio for practical AI products, systems, and developer ecosystems. Explore 180Days and upcoming structured tracks."}],["$","meta","6",{"property":"og:url","content":"https://subraatakumar.com/subratalabs/"}],["$","meta","7",{"property":"og:image","content":"https://subraatakumar.com/images/interview.png"}],["$","meta","8",{"property":"og:type","content":"website"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"Subrata Labs | Practical AI Products and Systems"}],["$","meta","11",{"name":"twitter:description","content":"Execution Studio for practical AI products, systems, and developer ecosystems. Explore 180Days and upcoming structured tracks."}],["$","meta","12",{"name":"twitter:image","content":"https://subraatakumar.com/images/interview.png"}],["$","link","13",{"rel":"icon","href":"/site-icon.ico","type":"image/x-icon"}],["$","$L1d","14",{}]]
 1c:null

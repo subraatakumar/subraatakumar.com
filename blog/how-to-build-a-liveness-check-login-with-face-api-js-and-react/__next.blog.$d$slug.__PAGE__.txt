@@ -1,8 +1,8 @@
 1:"$Sreact.fragment"
-7:I[22016,["/_next/static/chunks/18f38dbeee9f54d3.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],""]
-b:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/bf1f6d5df2e9b1a8.js"],"OutletBoundary"]
-c:"$Sreact.suspense"
-e:I[21675,["/_next/static/chunks/18f38dbeee9f54d3.js","/_next/static/chunks/ed0ac4fd205f8cfa.js"],"default"]
+6:I[8500,["8500","static/chunks/8500-41fa79ac743d83f1.js","5953","static/chunks/app/blog/%5Bslug%5D/page-3f0e412199a1fb28.js"],""]
+a:I[484,[],"OutletBoundary"]
+b:"$Sreact.suspense"
+d:I[3970,["8500","static/chunks/8500-41fa79ac743d83f1.js","5953","static/chunks/app/blog/%5Bslug%5D/page-3f0e412199a1fb28.js"],"default"]
 2:T1b2e,
         #blog-root .blog-post-wrap {
           max-width: 880px;
@@ -248,8 +248,8 @@ e:I[21675,["/_next/static/chunks/18f38dbeee9f54d3.js","/_next/static/chunks/ed0a
             padding-right: 16px;
           }
         }
-      0:{"buildId":"QxpjXSB-mKWR8e_hZRaJJ","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
-8:T5869,<blockquote class="blog-md-quote">
+      0:{"buildId":"JxItTBBXX68lHzZ0DpG8U","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],null,"$L5"]}],"loading":null,"isPartial":false}
+7:T5869,<blockquote class="blog-md-quote">
 <p class="blog-md-p"><em>"What if your login page could tell the difference between a real person and a photo of one?"</em></p>
 </blockquote>
 <p class="blog-md-p">That's the idea we're going to explore today. We'll look at how to build an <strong>anti-spoofing face login</strong> — a login system that asks users to do something like <em>"blink twice"</em> or <em>"turn your head left"</em> before letting them in. This makes it nearly impossible for someone to bypass the system by just holding up a photo.</p>
@@ -567,10 +567,9 @@ app.post('/login', async (req, res) => {
 <a href="https://whatsapp.com/channel/0029VbCz72vFCCoUsMV4K30M" class="blog-md-link"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&#x26;logo=whatsapp&#x26;logoColor=white" alt="WhatsApp" class="blog-md-image"></a>
 <a href="https://www.linkedin.com/in/subraatakumar/" class="blog-md-link"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&#x26;logo=linkedin&#x26;logoColor=white" alt="LinkedIn" class="blog-md-image"></a>
 <a href="https://www.instagram.com/subraatakumar/" class="blog-md-link"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&#x26;logo=instagram&#x26;logoColor=white" alt="Instagram" class="blog-md-image"></a></p>
-3:["$","section",null,{"className":"blog-post-wrap","children":[["$","$L7",null,{"href":"/blog","className":"blog-post-kicker","children":"Back to blog"}],["$","h1",null,{"children":"How to build a Liveness-Check Login with face-api.js and React"}],["$","div",null,{"className":"blog-post-meta","children":[["$","span",null,{"children":"May 7, 2026"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"10 min"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"Subrata Kumar Das"}]]}],["$","p",null,{"className":"blog-post-desc","children":"Build a login that requires a liveness check (e.g., 'Blink twice to login') to prevent photo-based bypasses — using face-api.js in the browser."}],["$","div",null,{"className":"blog-tag-row","children":[["$","span","face-api.js",{"children":"face-api.js"}],["$","span","react",{"children":"react"}],["$","span","ai",{"children":"ai"}],["$","span","authentication",{"children":"authentication"}],["$","span","javascript",{"children":"javascript"}],["$","span","software-development",{"children":"software-development"}]]}],["$","article",null,{"className":"blog-article","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}],"$L9"]}],"$La"]}]
+3:["$","section",null,{"className":"blog-post-wrap","children":[["$","$L6",null,{"href":"/blog","className":"blog-post-kicker","children":"Back to blog"}],["$","h1",null,{"children":"How to build a Liveness-Check Login with face-api.js and React"}],["$","div",null,{"className":"blog-post-meta","children":[["$","span",null,{"children":"May 7, 2026"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"10 min"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"Subrata Kumar Das"}]]}],["$","p",null,{"className":"blog-post-desc","children":"Build a login that requires a liveness check (e.g., 'Blink twice to login') to prevent photo-based bypasses — using face-api.js in the browser."}],["$","div",null,{"className":"blog-tag-row","children":[["$","span","face-api.js",{"children":"face-api.js"}],["$","span","react",{"children":"react"}],["$","span","ai",{"children":"ai"}],["$","span","authentication",{"children":"authentication"}],["$","span","javascript",{"children":"javascript"}],["$","span","software-development",{"children":"software-development"}]]}],["$","article",null,{"className":"blog-article","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$7"}}],"$L8"]}],"$L9"]}]
 4:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"mainEntityOfPage\":\"https://subraatakumar.com/blog/how-to-build-a-liveness-check-login-with-face-api-js-and-react\",\"headline\":\"How to build a Liveness-Check Login with face-api.js and React\",\"description\":\"Build a login that requires a liveness check (e.g., 'Blink twice to login') to prevent photo-based bypasses — using face-api.js in the browser.\",\"datePublished\":\"2026-05-07\",\"dateModified\":\"2026-05-07\",\"image\":\"https://subraatakumar.com/images/interview.png\",\"keywords\":[\"face-api.js\",\"react\",\"ai\",\"authentication\",\"javascript\",\"software-development\"],\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com/\"}}"}}]
-5:["$","script","script-0",{"src":"/_next/static/chunks/ed0ac4fd205f8cfa.js","async":true}]
-6:["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]
-9:["$","$Le",null,{}]
-a:["$","div",null,{"className":"blog-post-nav","children":[["$","$L7",null,{"href":"/blog/dynamic-language-pack","children":"Previous"}],["$","$L7",null,{"href":"/blog/react-native-gemma","children":"Next"}]]}]
-d:null
+5:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
+8:["$","$Ld",null,{}]
+9:["$","div",null,{"className":"blog-post-nav","children":[["$","$L6",null,{"href":"/blog/dynamic-language-pack","children":"Previous"}],["$","$L6",null,{"href":"/blog/react-native-gemma","children":"Next"}]]}]
+c:null
