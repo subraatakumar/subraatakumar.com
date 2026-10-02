@@ -248,7 +248,7 @@ d:I[3970,["8500","static/chunks/8500-41fa79ac743d83f1.js","5953","static/chunks/
             padding-right: 16px;
           }
         }
-      0:{"buildId":"-rWPKXyf01f3UBqbb_RPq","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],null,"$L5"]}],"loading":null,"isPartial":false}
+      0:{"buildId":"Hms8uLjknrw0pc7VldkKR","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],null,"$L5"]}],"loading":null,"isPartial":false}
 7:T48d5,<h2 id="introduction-to-cocoapods" class="blog-md-h2">Introduction to CocoaPods</h2>
 <p class="blog-md-p">Before Swift Package Manager (SPM) became the native standard, the iOS world belonged to CocoaPods.</p>
 <h2 id="what-is-cocoapods" class="blog-md-h2">What is CocoaPods?</h2>

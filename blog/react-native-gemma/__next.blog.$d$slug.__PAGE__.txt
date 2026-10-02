@@ -248,7 +248,7 @@ d:I[3970,["8500","static/chunks/8500-41fa79ac743d83f1.js","5953","static/chunks/
             padding-right: 16px;
           }
         }
-      0:{"buildId":"-rWPKXyf01f3UBqbb_RPq","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],null,"$L5"]}],"loading":null,"isPartial":false}
+      0:{"buildId":"Hms8uLjknrw0pc7VldkKR","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],null,"$L5"]}],"loading":null,"isPartial":false}
 7:T4a54,<p class="blog-md-p"><img src="/images/react-native-gemma.png" alt="" class="blog-md-image">
 It was 3:14 AM. The silence in the room was absolute, broken only by the hum of my laptop fan. On my desk sat two testing devices: a Xiaomi MI running Android and my daily driver iPhone 15. Both screens were completely black.</p>
 <p class="blog-md-p">Beside them lay a half-empty glass of flat water. Irony at its finest.</p>

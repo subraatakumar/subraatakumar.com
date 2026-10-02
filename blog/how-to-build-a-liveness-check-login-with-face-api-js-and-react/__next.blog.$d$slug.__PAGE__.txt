@@ -248,7 +248,7 @@ d:I[3970,["8500","static/chunks/8500-41fa79ac743d83f1.js","5953","static/chunks/
             padding-right: 16px;
           }
         }
-      0:{"buildId":"-rWPKXyf01f3UBqbb_RPq","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],null,"$L5"]}],"loading":null,"isPartial":false}
+      0:{"buildId":"Hms8uLjknrw0pc7VldkKR","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],null,"$L5"]}],"loading":null,"isPartial":false}
 7:T5869,<blockquote class="blog-md-quote">
 <p class="blog-md-p"><em>"What if your login page could tell the difference between a real person and a photo of one?"</em></p>
 </blockquote>

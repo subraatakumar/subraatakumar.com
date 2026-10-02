@@ -248,7 +248,7 @@ d:I[3970,["8500","static/chunks/8500-41fa79ac743d83f1.js","5953","static/chunks/
             padding-right: 16px;
           }
         }
-      0:{"buildId":"-rWPKXyf01f3UBqbb_RPq","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],null,"$L5"]}],"loading":null,"isPartial":false}
+      0:{"buildId":"Hms8uLjknrw0pc7VldkKR","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],null,"$L5"]}],"loading":null,"isPartial":false}
 7:T4eb8,<p class="blog-md-p">Learning Lens answers questions about material a user has put in a private Vault. The core engineering problem is to find useful passages from that material and give them to an on-device language model at answer time. We implemented a retrieval-augmented generation (RAG) pipeline: ingest files locally, turn their useful content into searchable text, retrieve matches within the Learning Vault, and pass the matches to an on-device Gemma model.</p>
 <p class="blog-md-p">This article describes the implementation in the current Subra AI codebase. It also explains why the design is a practical starting point for a mobile personal Vault, and where its guarantees stop.</p>
 <h2 id="first-what-does-rag-mean" class="blog-md-h2">First, what does RAG mean?</h2>
