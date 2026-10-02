@@ -3,14 +3,14 @@ import Link from "next/link";
 import { DEFAULT_OG_IMAGE } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Subrata Kumar Das | Tech Lead & React Native Architect",
   description:
     "Tech Lead and React Native Architect with 10+ years building scalable mobile platforms and delivering 40+ mobile applications.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Subrata Kumar Das | Home",
+    title: "Subrata Kumar Das | Mobile Architect & Indie Developer",
     description:
       "Tech Lead and React Native Architect with 10+ years building scalable mobile platforms and delivering 40+ mobile applications.",
     url: "/",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Subrata Kumar Das | Home",
+    title: "Subrata Kumar Das | Mobile Architect & Indie Developer",
     description:
       "Tech Lead and React Native Architect with 10+ years building scalable mobile platforms and delivering 40+ mobile applications.",
     images: [DEFAULT_OG_IMAGE],
@@ -57,6 +57,15 @@ export default function HomePage() {
             Kumar Das
           </span>
         </h1>
+        <h2 style={{
+          fontSize: "1.4rem",
+          fontWeight: 600,
+          color: "#2563eb",
+          marginTop: "10px",
+          marginBottom: "-5px",
+        }}>
+          React Native Architect & Indie Developer
+        </h2>
 
         <p style={{
           fontSize: "1.3rem",

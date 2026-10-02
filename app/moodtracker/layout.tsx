@@ -1,20 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Manrope, Space_Grotesk } from "next/font/google";
-
-const manrope = Manrope({
-  subsets: ["latin"],
-  weight: ["500", "600", "700", "800"],
-});
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  weight: ["600", "700"],
-});
 
 export default function MoodTrackerLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className={`wt-shell ${manrope.className}`}>
+    <div className="wt-shell">
       <style>{`
         body:has(.wt-shell) .sk-header,
         body:has(.wt-shell) .sk-footer {
@@ -32,6 +21,7 @@ export default function MoodTrackerLayout({ children }: { children: React.ReactN
           --wt-ink: #2e1f48;
           --wt-muted: #624b86;
           min-height: 100vh;
+          font-family: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif;
           color: var(--wt-ink);
           background:
             radial-gradient(circle at 8% 10%, rgba(212, 166, 255, 0.25), transparent 42%),
@@ -151,7 +141,7 @@ export default function MoodTrackerLayout({ children }: { children: React.ReactN
           color: var(--wt-navy-700);
         }
         .wt-font-display {
-          font-family: ${spaceGrotesk.style.fontFamily};
+          font-family: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif;
         }
         .wt-mobile-nav {
           display: none;

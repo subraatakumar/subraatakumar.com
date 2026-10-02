@@ -17,13 +17,6 @@ export const metadata: Metadata = {
   },
   description:
     "Tech Lead and React Native Architect with 10+ years building scalable mobile platforms and product-focused systems.",
-  keywords: [
-    "Subrata Kumar Das",
-    "React Native Developer",
-    "Tech Lead",
-    "Mobile Architect",
-    "Next.js Developer",
-  ],
   openGraph: {
     title: SITE_NAME,
     description:

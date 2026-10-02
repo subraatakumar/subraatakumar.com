@@ -1,19 +1,8 @@
 import Link from "next/link";
-import { Manrope, Space_Grotesk } from "next/font/google";
-
-const manrope = Manrope({
-  subsets: ["latin"],
-  weight: ["500", "600", "700", "800"],
-});
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  weight: ["600", "700"],
-});
 
 export default function PillTrackerLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className={`pt-shell ${manrope.className}`}>
+    <div className="pt-shell">
       <style>{`
         body:has(.pt-shell) .sk-header,
         body:has(.pt-shell) .sk-footer {
@@ -33,6 +22,7 @@ export default function PillTrackerLayout({ children }: { children: React.ReactN
           --pt-ink: #123b63;
           --pt-muted: #4b6e92;
           min-height: 100vh;
+          font-family: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif;
           color: var(--pt-ink);
           background:
             radial-gradient(circle at 8% 10%, rgba(143, 221, 255, 0.27), transparent 42%),
@@ -153,7 +143,7 @@ export default function PillTrackerLayout({ children }: { children: React.ReactN
           color: var(--pt-blue-700);
         }
         .pt-font-display {
-          font-family: ${spaceGrotesk.style.fontFamily};
+          font-family: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif;
         }
         .pt-mobile-nav {
           display: none;

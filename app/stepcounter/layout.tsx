@@ -1,14 +1,8 @@
 import Link from "next/link";
-import { DM_Sans } from "next/font/google";
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
 
 export default function StepCounterLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className={`sc-shell ${dmSans.className}`}>
+    <div className="sc-shell">
 
 <style>{`
 body:has(.sc-shell) .sk-header,
@@ -28,6 +22,7 @@ body:has(.sc-shell) .sk-footer {
   --sc-accent: #3b82f6;
 
   min-height:100vh;
+  font-family: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif;
   color:var(--sc-navy);
 
   background:

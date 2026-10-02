@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
-    "deploy": "rm -rf .next out && next build && gh-pages -d out --dotfiles"
+    "deploy": "rm -rf .next out && next build --webpack && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

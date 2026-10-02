@@ -1,13 +1,18 @@
 import Link from "next/link";
-import { MessageSquareText } from "lucide-react";
-import { Inter, Manrope } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
-const manrope = Manrope({ subsets: ["latin"], weight: ["600", "700", "800"] });
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  icons: {
+    icon: [{ url: "/subra-ai/icon.png", type: "image/png" }],
+    apple: [{ url: "/subra-ai/icon.png", type: "image/png" }],
+  },
+};
+
 
 export default function SubraAiLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className={`sa-shell ${inter.className}`}>
+    <div className="sa-shell">
       <style>{`
         body:has(.sa-shell) .sk-header,
         body:has(.sa-shell) .sk-footer { display: none !important; }
@@ -22,6 +27,7 @@ export default function SubraAiLayout({ children }: { children: React.ReactNode 
           --sa-lime: #b7f34a;
           --sa-cyan: #56d7df;
           min-height: 100vh;
+          font-family: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif;
           color: var(--sa-text);
           background:
             radial-gradient(circle at 83% 8%, rgba(86,215,223,.12), transparent 26rem),
@@ -29,7 +35,7 @@ export default function SubraAiLayout({ children }: { children: React.ReactNode 
             var(--sa-bg);
         }
         .sa-shell * { box-sizing: border-box; }
-        .sa-display { font-family: ${manrope.style.fontFamily}; }
+        .sa-display { font-family: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif; }
         .sa-nav {
           position: sticky; top: 0; z-index: 50;
           background: rgba(8,11,16,.82); backdrop-filter: blur(18px);
@@ -68,7 +74,7 @@ export default function SubraAiLayout({ children }: { children: React.ReactNode 
       <header className="sa-nav">
         <div className="sa-nav-inner">
           <Link href="/subra-ai" className="sa-brand" aria-label="Subra AI home">
-            <span className="sa-mark"><MessageSquareText size={20} strokeWidth={2.4} /></span>
+            <img src="/subra-ai/icon.png" alt="Subra AI Logo" style={{ width: 38, height: 38, borderRadius: 12 }} />
             <span className="sa-brand-name sa-display">Subra AI</span>
           </Link>
           <nav className="sa-nav-links" aria-label="Subra AI pages">

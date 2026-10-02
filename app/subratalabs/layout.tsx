@@ -1,19 +1,8 @@
 import Link from "next/link";
-import { Exo_2, Plus_Jakarta_Sans } from "next/font/google";
-
-const exo2 = Exo_2({
-  subsets: ["latin"],
-  weight: ["600", "700", "800"],
-});
-
-const jakarta = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-});
 
 export default function SubrataLabsLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className={`labs-shell ${jakarta.className}`}>
+    <div className="labs-shell">
       <style>{`
         body:has(.labs-shell) .sk-header,
         body:has(.labs-shell) .sk-footer {
@@ -25,6 +14,7 @@ export default function SubrataLabsLayout({ children }: { children: React.ReactN
           min-height: 100vh;
           background: #0d1117;
           color: #dde5e3;
+          font-family: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif;
         }
 
         .labs-shell * {
@@ -117,7 +107,7 @@ export default function SubrataLabsLayout({ children }: { children: React.ReactN
 
         /* ── Font util ── */
         .labs-font-display {
-          font-family: ${exo2.style.fontFamily};
+          font-family: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif;
         }
 
         /* ── Footer ── */

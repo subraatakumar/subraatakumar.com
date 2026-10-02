@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { Inter, Manrope } from "next/font/google";
 
 export const metadata: Metadata = {
   icons: {
@@ -22,24 +21,19 @@ export const metadata: Metadata = {
   },
 };
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-const manrope = Manrope({ subsets: ["latin"], weight: ["600", "700", "800"] });
-
 export default function BackgroundRemoverLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <div className={`sa-shell ${inter.className}`}>
+    <div className="sa-shell">
       <style>{`
         body:has(.sa-shell) .sk-header, body:has(.sa-shell) .sk-footer { display: none !important; }
         body:has(.sa-shell) { background: #080b10 !important; }
         .sa-shell { --sa-bg:#080b10;--sa-panel:#10151d;--sa-panel-2:#151c26;--sa-line:rgba(255,255,255,.10);--sa-text:#f5f7fa;--sa-muted:#a2adbb;--sa-lime:#b7f34a;--sa-cyan:#56d7df;min-height:100vh;color:var(--sa-text);background:radial-gradient(circle at 83% 8%,rgba(86,215,223,.12),transparent 26rem),radial-gradient(circle at 12% 28%,rgba(183,243,74,.08),transparent 24rem),var(--sa-bg); }
-        .sa-shell * { box-sizing:border-box; }.sa-display{font-family:${manrope.style.fontFamily}}
+        .sa-shell { font-family: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif; }
+        .sa-shell * { box-sizing:border-box; }.sa-display{font-family:"Avenir Next", Avenir, "Segoe UI", Arial, sans-serif}
         .sa-nav{position:sticky;top:0;z-index:50;background:rgba(8,11,16,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--sa-line)}
         .sa-nav-inner,.sa-footer-inner{max-width:1180px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:20px}.sa-nav-inner{min-height:72px}
         .sa-brand{display:inline-flex;align-items:center;gap:11px;color:var(--sa-text);text-decoration:none}.sa-app-icon{width:38px;height:38px;border-radius:12px;box-shadow:0 0 30px rgba(183,243,74,.18)}.sa-brand-name{font-weight:800;letter-spacing:-.025em;font-size:18px}

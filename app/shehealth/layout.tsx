@@ -1,20 +1,8 @@
 import Link from "next/link";
-import { Cormorant_Garamond, DM_Sans } from "next/font/google";
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-  style: ["normal", "italic"],
-});
 
 export default function SheHealthLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className={`sh-shell ${dmSans.className}`}>
+    <div className="sh-shell">
       <style>{`
         body:has(.sh-shell) .sk-header,
         body:has(.sh-shell) .sk-footer {
@@ -35,6 +23,7 @@ export default function SheHealthLayout({ children }: { children: React.ReactNod
           --sh-card:     rgba(255, 255, 255, 0.88);
 
           min-height: 100vh;
+          font-family: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif;
           overflow-x: hidden; /* FIX: prevent horizontal scroll */
           color: var(--sh-charcoal);
           background:
@@ -90,7 +79,7 @@ export default function SheHealthLayout({ children }: { children: React.ReactNod
         .sh-logo-text {
           font-size: 18px;
           font-weight: 700;
-          font-family: ${cormorant.style.fontFamily};
+          font-family: Georgia, "Times New Roman", serif;
           letter-spacing: 0.01em;
         }
         .sh-links {
@@ -183,7 +172,7 @@ export default function SheHealthLayout({ children }: { children: React.ReactNod
         }
 
         .sh-font-display {
-          font-family: ${cormorant.style.fontFamily};
+          font-family: Georgia, "Times New Roman", serif;
         }
 
         @media (max-width: 760px) {
