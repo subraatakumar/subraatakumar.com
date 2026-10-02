@@ -248,7 +248,7 @@ d:I[3970,["8500","static/chunks/8500-41fa79ac743d83f1.js","5953","static/chunks/
             padding-right: 16px;
           }
         }
-      0:{"buildId":"JxItTBBXX68lHzZ0DpG8U","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],null,"$L5"]}],"loading":null,"isPartial":false}
+      0:{"buildId":"-rWPKXyf01f3UBqbb_RPq","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],null,"$L5"]}],"loading":null,"isPartial":false}
 7:T14db,<h2 id="introduction-the-anti-cloud-philosophy" class="blog-md-h2">Introduction: The Anti-Cloud Philosophy</h2>
 <p class="blog-md-p">In an era dominated by server-side APIs, <a href="https://subraatakumar.com/subra-ai/" class="blog-md-link">Subra AI</a> was built to prove a point: you can have a highly intelligent, ChatGPT-like assistant that lives entirely on your device. No account creation, no external server handshakes, and absolute data privacy.</p>
 <h2 id="to-pull-off-this-architectural-high-wire-act-across-consumer-hardware-like-iphones-android-devices-and-desktop-computers-i-needed-a-model-that-was-fiercely-resource-efficient-yet-multi-modally-competent-enter-google-deepminds-gemma-4-e2b" class="blog-md-h2">To pull off this architectural high-wire act across consumer hardware like iPhones, Android devices, and Desktop computers, I needed a model that was fiercely resource-efficient yet multi-modally competent. Enter Google DeepMind’s Gemma 4 E2B.</h2>
