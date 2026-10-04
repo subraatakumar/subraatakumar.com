@@ -248,7 +248,7 @@ d:I[3970,["8500","static/chunks/8500-41fa79ac743d83f1.js","5953","static/chunks/
             padding-right: 16px;
           }
         }
-      0:{"buildId":"Hms8uLjknrw0pc7VldkKR","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],null,"$L5"]}],"loading":null,"isPartial":false}
+      0:{"buildId":"rM_fucNVZNcS4X6sWmqEa","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],null,"$L5"]}],"loading":null,"isPartial":false}
 7:T14db,<h2 id="introduction-the-anti-cloud-philosophy" class="blog-md-h2">Introduction: The Anti-Cloud Philosophy</h2>
 <p class="blog-md-p">In an era dominated by server-side APIs, <a href="https://subraatakumar.com/subra-ai/" class="blog-md-link">Subra AI</a> was built to prove a point: you can have a highly intelligent, ChatGPT-like assistant that lives entirely on your device. No account creation, no external server handshakes, and absolute data privacy.</p>
 <h2 id="to-pull-off-this-architectural-high-wire-act-across-consumer-hardware-like-iphones-android-devices-and-desktop-computers-i-needed-a-model-that-was-fiercely-resource-efficient-yet-multi-modally-competent-enter-google-deepminds-gemma-4-e2b" class="blog-md-h2">To pull off this architectural high-wire act across consumer hardware like iPhones, Android devices, and Desktop computers, I needed a model that was fiercely resource-efficient yet multi-modally competent. Enter Google DeepMind’s Gemma 4 E2B.</h2>
@@ -296,5 +296,5 @@ d:I[3970,["8500","static/chunks/8500-41fa79ac743d83f1.js","5953","static/chunks/
 4:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"mainEntityOfPage\":\"https://subraatakumar.com/blog/Why-I-Chose-Gemma-4-E2B-for-Subra-AI\",\"headline\":\"Why I Chose Gemma 4 E2B for Subra AI: The Reality of Running LLMs on Mid-Range Phones\",\"description\":\"A practical look at why Gemma 4 E2B is a strong fit for running a private, multimodal AI assistant on mid-range phones.\",\"datePublished\":\"2026-09-01\",\"dateModified\":\"2026-09-01\",\"image\":\"https://subraatakumar.com/images/interview.png\",\"keywords\":[\"ai\",\"gemma\",\"llm\",\"on-device-ai\",\"mobile-ai\",\"multimodal\",\"react-native\"],\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com/\"}}"}}]
 5:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
 8:["$","$Ld",null,{}]
-9:["$","div",null,{"className":"blog-post-nav","children":[["$","span",null,{}],["$","$L6",null,{"href":"/blog/cocoapods-sunset-react-native-app","children":"Next"}]]}]
+9:["$","div",null,{"className":"blog-post-nav","children":[["$","span",null,{}],["$","$L6",null,{"href":"/blog/architecting-on-device-localization-react-native","children":"Next"}]]}]
 c:null

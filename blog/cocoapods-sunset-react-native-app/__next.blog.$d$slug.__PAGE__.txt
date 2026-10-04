@@ -248,7 +248,7 @@ d:I[3970,["8500","static/chunks/8500-41fa79ac743d83f1.js","5953","static/chunks/
             padding-right: 16px;
           }
         }
-      0:{"buildId":"Hms8uLjknrw0pc7VldkKR","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],null,"$L5"]}],"loading":null,"isPartial":false}
+      0:{"buildId":"rM_fucNVZNcS4X6sWmqEa","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","style",null,{"children":"$2"}],"$L3","$L4"]}],null,"$L5"]}],"loading":null,"isPartial":false}
 7:T48d5,<h2 id="introduction-to-cocoapods" class="blog-md-h2">Introduction to CocoaPods</h2>
 <p class="blog-md-p">Before Swift Package Manager (SPM) became the native standard, the iOS world belonged to CocoaPods.</p>
 <h2 id="what-is-cocoapods" class="blog-md-h2">What is CocoaPods?</h2>
@@ -453,5 +453,5 @@ During the transition, you might have some libraries installed via CocoaPods and
 4:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"mainEntityOfPage\":\"https://subraatakumar.com/blog/cocoapods-sunset-react-native-app\",\"headline\":\"The CocoaPods Sunset: What Dec 2, 2026 Means for Your React Native App\",\"description\":\"Explore what the CocoaPods read-only transition on December 2, 2026, means for React Native apps, the shift to Swift Package Manager (SPM), and how to prepare your projects.\",\"datePublished\":\"2026-05-02\",\"dateModified\":\"2026-05-02\",\"image\":\"https://subraatakumar.com/images/interview.png\",\"keywords\":[\"cocoapods\",\"react-native\",\"ios\",\"swift\",\"software-development\"],\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com/\"}}"}}]
 5:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
 8:["$","$Ld",null,{}]
-9:["$","div",null,{"className":"blog-post-nav","children":[["$","$L6",null,{"href":"/blog/Why-I-Chose-Gemma-4-E2B-for-Subra-AI","children":"Previous"}],["$","$L6",null,{"href":"/blog/common-llm-parameters-for-rag","children":"Next"}]]}]
+9:["$","div",null,{"className":"blog-post-nav","children":[["$","$L6",null,{"href":"/blog/architecting-on-device-localization-react-native","children":"Previous"}],["$","$L6",null,{"href":"/blog/common-llm-parameters-for-rag","children":"Next"}]]}]
 c:null

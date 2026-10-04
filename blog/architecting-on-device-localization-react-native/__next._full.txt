@@ -1,0 +1,950 @@
+1:"$Sreact.fragment"
+a:I[7123,[],""]
+:HL["/_next/static/css/17d1fa692a4518fa.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","style"]
+2:T19f5,
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+
+          body {
+            background: #fafaf7;
+            font-family: 'Caveat', cursive;
+            color: #1a1a2e;
+          }
+
+          /* ── Nav ── */
+          .sk-header {
+            background: #fff;
+            border-bottom: 2.5px solid #1a1a2e;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+          }
+          .sk-header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .sk-logo {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.55rem;
+            color: #1a1a2e;
+            text-decoration: none;
+            letter-spacing: 0.01em;
+          }
+          .sk-nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+          }
+          .sk-nav-links a {
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+            padding-bottom: 2px;
+          }
+          .sk-nav-links a:hover {
+            text-decoration: underline wavy #2563eb 2px;
+            text-underline-offset: 4px;
+          }
+          .sk-nav-mobile {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 14px;
+          }
+          .sk-nav-mobile ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+          }
+          .sk-nav-mobile a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            text-decoration: none;
+          }
+
+          /* ── Footer ── */
+          .sk-footer {
+            border-top: 2.5px solid #1a1a2e;
+            background: #fff;
+            padding: 24px;
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+          }
+
+          /* ── Shared section ── */
+          .sk-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+          }
+          .sk-page-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            margin-bottom: 8px;
+            line-height: 1.1;
+          }
+          .sk-section-heading {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 1.9rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+          .sk-section-heading::after {
+            content: '';
+            flex: 1;
+            border-top: 2px dashed #9ca3af;
+          }
+
+          /* ── Squiggle divider ── */
+          .sk-squiggle {
+            width: 100%;
+            height: 8px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8'%3E%3Cpath d='M0 4 Q5 0 10 4 Q15 8 20 4 Q25 0 30 4 Q35 8 40 4' stroke='%239ca3af' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") repeat-x center;
+            opacity: 0.55;
+            margin: 36px 0;
+          }
+
+          /* ── Sketch button ── */
+          .sk-btn {
+            display: inline-block;
+            padding: 10px 26px;
+            background: #2563eb;
+            color: #fff;
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 3px 3px 0 #1a1a2e;
+            transition: transform 0.1s, box-shadow 0.1s;
+          }
+          .sk-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 #1a1a2e;
+          }
+          .sk-btn-ghost {
+            background: transparent;
+            color: #1a1a2e;
+            box-shadow: 3px 3px 0 #9ca3af;
+          }
+          .sk-btn-ghost:hover {
+            box-shadow: 5px 5px 0 #9ca3af;
+          }
+
+          /* ── Tag chip ── */
+          .sk-tag {
+            display: inline-block;
+            padding: 3px 13px;
+            border: 2px solid #1a1a2e;
+            border-radius: 2px;
+            font-size: 1rem;
+            font-weight: 600;
+            background: #fff;
+            margin: 3px;
+          }
+          .sk-tag.active {
+            background: #2563eb;
+            color: #fff;
+          }
+
+          /* ── Card ── */
+          .sk-card {
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 5px 5px 0 #1a1a2e;
+            padding: 24px;
+            transition: transform 0.15s, box-shadow 0.15s;
+          }
+          .sk-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0 #1a1a2e;
+          }
+
+          /* ── Stat card ── */
+          .sk-stat {
+            flex: 1;
+            min-width: 130px;
+            text-align: center;
+            background: #fff;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            box-shadow: 4px 4px 0 #1a1a2e;
+            padding: 20px 12px;
+          }
+          .sk-stat .num {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 2.8rem;
+            color: #2563eb;
+            line-height: 1;
+          }
+          .sk-stat .lbl {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 4px;
+          }
+
+          /* ── Image placeholder ── */
+          .sk-img {
+            width: 100%;
+            height: 160px;
+            border: 2.5px solid #1a1a2e;
+            border-radius: 2px;
+            background: #f3f4f6;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 16px;
+          }
+          .sk-img::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+              linear-gradient(to bottom right, transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px)),
+              linear-gradient(to bottom left,  transparent calc(50% - 1px), #9ca3af calc(50% - 1px), #9ca3af calc(50% + 1px), transparent calc(50% + 1px));
+          }
+
+          @media (max-width: 640px) {
+            .sk-nav-links { display: none; }
+            .sk-nav-mobile { display: block; }
+            .sk-page-heading { font-size: 2.2rem; }
+          }
+        0:{"P":null,"b":"rM_fucNVZNcS4X6sWmqEa","c":["","blog","architecting-on-device-localization-react-native",""],"q":"","i":false,"f":[[["",{"children":["blog",{"children":[["slug","architecting-on-device-localization-react-native","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/17d1fa692a4518fa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Caveat+Brush&display=swap","rel":"stylesheet"}]}],["$","body",null,{"style":{"background":"#fafaf7","margin":0,"fontFamily":"'Caveat', cursive","color":"#1a1a2e"},"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\",\"jobTitle\":\"Tech Lead\",\"sameAs\":[\"https://github.com/subraatakumar\",\"https://linkedin.com/in/subraatakumar\"]}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"CreativeWorkSeries\",\"name\":\"180 Days Mentoring Journey\",\"description\":\"A 180-day mentoring journey documenting the build of a real mobile app intended for app stores.\",\"url\":\"https://subraatakumar.com/180days\",\"startDate\":\"2026-02-19\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com\"}}"}}],["$","style",null,{"children":"$2"}],"$L3","$L4","$L5"]}]]}]]}],{"children":["$L6",{"children":["$L7",{"children":["$L8",{},null,false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+b:I[8500,["8500","static/chunks/8500-41fa79ac743d83f1.js","5953","static/chunks/app/blog/%5Bslug%5D/page-3f0e412199a1fb28.js"],""]
+c:I[7121,[],""]
+d:I[4581,[],""]
+11:I[484,[],"OutletBoundary"]
+12:"$Sreact.suspense"
+14:I[484,[],"ViewportBoundary"]
+16:I[484,[],"MetadataBoundary"]
+3:["$","header",null,{"className":"sk-header","children":[["$","div",null,{"className":"sk-header-inner","children":[["$","$Lb",null,{"href":"/","className":"sk-logo","children":"SKD_"}],["$","nav",null,{"aria-label":"Primary","children":["$","ul",null,{"className":"sk-nav-links","children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/work-with-me","children":"Work with me"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/notes","children":"Notes"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]]}],["$","div",null,{"className":"sk-nav-mobile","children":["$","nav",null,{"aria-label":"Mobile","children":["$","ul",null,{"children":[["$","li",null,{"children":["$","$Lb",null,{"href":"/work-with-me","children":"Work"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/about","children":"About"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/products","children":"Products"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/blog","children":"Blog"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/notes","children":"Notes"}]}],["$","li",null,{"children":["$","$Lb",null,{"href":"/contact","children":"Contact"}]}]]}]}]}]]}]
+4:["$","main",null,{"style":{"width":"100%"},"children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
+5:["$","footer",null,{"className":"sk-footer","children":["© ",2026," Subrata Kumar Das. All rights reserved. ·"," ",["$","$Lb",null,{"href":"/for-ai","children":"For AI/Crawlers"}]]}]
+e:T10bc,
+        body:has(#blog-root) .sk-header,
+        body:has(#blog-root) .sk-footer {
+          display: none !important;
+        }
+
+        #blog-root,
+        #blog-root * {
+          box-sizing: border-box;
+        }
+
+        #blog-root {
+          --blog-ink: #101828;
+          --blog-muted: #667085;
+          --blog-line: #e4e7ec;
+          --blog-card: #ffffff;
+          --blog-accent: #0ea5e9;
+          --blog-accent-warm: #fb7185;
+          --blog-bg: radial-gradient(circle at 10% 0%, #dff6ff 0%, transparent 40%),
+            radial-gradient(circle at 100% 10%, #ffe8ec 0%, transparent 35%),
+            #f8fafc;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+          background: var(--blog-bg);
+          color: var(--blog-ink);
+          font-family: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
+        }
+
+        #blog-root .blog-shell-header {
+          position: sticky;
+          top: 0;
+          z-index: 100;
+          backdrop-filter: blur(10px);
+          background: rgba(248, 250, 252, 0.78);
+          border-bottom: 1px solid var(--blog-line);
+        }
+        #blog-root .blog-shell-header-inner {
+          width: 100%;
+          height: 66px;
+          padding: 0 clamp(16px, 4vw, 48px);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        }
+        #blog-root .blog-shell-main {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+        #blog-root .blog-brand {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          text-decoration: none;
+          color: var(--blog-ink);
+        }
+        #blog-root .blog-brand-mark {
+          width: 32px;
+          height: 32px;
+          border-radius: 10px;
+          background: linear-gradient(135deg, var(--blog-accent), var(--blog-accent-warm));
+          color: #fff;
+          display: grid;
+          place-items: center;
+          font-weight: 900;
+          font-size: 12px;
+          letter-spacing: 0.03em;
+          box-shadow: 0 10px 24px rgba(14, 165, 233, 0.28);
+        }
+        #blog-root .blog-brand-mark,
+        #blog-root .blog-brand-mark:visited {
+          text-decoration: none;
+          color: #fff;
+        }
+        #blog-root .blog-brand-text {
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-weight: 700;
+          font-size: 1.1rem;
+          letter-spacing: 0.01em;
+        }
+        #blog-root .blog-shell-nav {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+        }
+        #blog-root .blog-shell-nav a {
+          text-decoration: none;
+          color: var(--blog-ink);
+          font-size: 0.8rem;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          padding: 10px 12px;
+          border-radius: 10px;
+          transition: background 0.2s ease;
+        }
+        #blog-root .blog-shell-nav a:hover {
+          background: #eef2f6;
+        }
+
+        #blog-root .blog-shell-footer {
+          margin-top: auto;
+          border-top: 1px solid var(--blog-line);
+          background: rgba(255, 255, 255, 0.64);
+        }
+        #blog-root .blog-shell-footer-inner {
+          width: 100%;
+          padding: 20px clamp(16px, 4vw, 48px) 24px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+        #blog-root .blog-shell-copy {
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: 0.12em;
+          color: var(--blog-muted);
+          font-weight: 700;
+        }
+        #blog-root .blog-shell-footer a {
+          text-decoration: none;
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: 0.05em;
+          color: #0b6ba8;
+        }
+
+        @media (max-width: 700px) {
+          #blog-root .blog-shell-header-inner,
+          #blog-root .blog-shell-footer-inner {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+          #blog-root .blog-shell-nav a {
+            padding: 8px 10px;
+            font-size: 0.72rem;
+          }
+        }
+      6:["$","$1","c",{"children":[null,["$","div",null,{"style":{"all":"revert"},"children":[["$","style",null,{"children":"$e"}],"$Lf"]}]]}]
+7:["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":["$L10",null,["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+9:["$","$1","h",{"children":[null,["$","$L14",null,{"children":"$L15"}],["$","div",null,{"hidden":true,"children":["$","$L16",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L17"}]}]}],null]}]
+f:["$","div",null,{"id":"blog-root","children":[["$","header",null,{"className":"blog-shell-header","children":["$","div",null,{"className":"blog-shell-header-inner","children":[["$","div",null,{"className":"blog-brand","children":[["$","$Lb",null,{"href":"/","className":"blog-brand-mark","aria-label":"Go to main home page","children":"SK"}],["$","$Lb",null,{"href":"/blog","className":"blog-brand-text","aria-label":"Go to blog home page","children":"TechCraft Blog"}]]}],["$","nav",null,{"className":"blog-shell-nav","children":[["$","$Lb",null,{"href":"/products","children":"Products"}],["$","$Lb",null,{"href":"/","children":"Home"}]]}]]}]}],["$","main",null,{"className":"blog-shell-main","children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"blog-shell-footer","children":["$","div",null,{"className":"blog-shell-footer-inner","children":[["$","p",null,{"className":"blog-shell-copy","children":"Subrata Kumar Das • Blog"}],["$","$Lb",null,{"href":"/blog","children":"All Posts"}]]}]}]]}]
+18:T1b2e,
+        #blog-root .blog-post-wrap {
+          max-width: 880px;
+          margin: 0 auto;
+          padding: 30px 24px 0;
+        }
+        #blog-root .blog-post-kicker {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          color: #175cd3;
+          border: 1px solid #cfe1fa;
+          border-radius: 999px;
+          padding: 8px 12px;
+          background: #fff;
+          text-decoration: none;
+        }
+        #blog-root .blog-post-wrap h1 {
+          margin-top: 18px;
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-size: clamp(2rem, 4.6vw, 3.2rem);
+          line-height: 1.08;
+          letter-spacing: -0.02em;
+        }
+        #blog-root .blog-post-meta {
+          margin-top: 16px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 8px;
+          color: #667085;
+          font-size: 12px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.07em;
+        }
+        #blog-root .blog-post-desc {
+          margin-top: 14px;
+          font-size: 1.04rem;
+          line-height: 1.8;
+          color: #475467;
+        }
+        #blog-root .blog-tag-row {
+          margin-top: 12px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+        #blog-root .blog-tag-row span {
+          background: #f2f4f7;
+          color: #344054;
+          font-size: 11px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          padding: 6px 10px;
+          border-radius: 999px;
+        }
+        #blog-root .blog-article {
+          margin-top: 26px;
+          border-top: 1px solid #e4e7ec;
+          padding-top: 24px;
+          padding-bottom: 20px;
+        }
+        #blog-root .blog-md-p {
+          margin: 18px 0;
+          font-size: 1.03rem;
+          line-height: 1.95;
+          color: #1d2939;
+        }
+        #blog-root .blog-md-h1 {
+          margin: 56px 0 16px;
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-size: 2rem;
+          line-height: 1.18;
+        }
+        #blog-root .blog-md-h2 {
+          margin: 46px 0 14px;
+          font-family: "Fraunces", "Iowan Old Style", serif;
+          font-size: 1.7rem;
+          line-height: 1.24;
+        }
+        #blog-root .blog-md-h3 {
+          margin: 36px 0 10px;
+          font-weight: 800;
+          font-size: 1.28rem;
+          line-height: 1.34;
+        }
+        #blog-root .blog-md-h4,
+        #blog-root .blog-md-h5,
+        #blog-root .blog-md-h6 {
+          margin: 28px 0 8px;
+          font-size: 1.08rem;
+          font-weight: 800;
+        }
+        #blog-root .blog-md-ul {
+          list-style: disc;
+          padding-left: 24px;
+          margin: 18px 0;
+        }
+        #blog-root .blog-md-ol {
+          list-style: decimal;
+          padding-left: 28px;
+          margin: 18px 0;
+        }
+        #blog-root .blog-md-li {
+          margin: 8px 0;
+          line-height: 1.8;
+          color: #344054;
+        }
+        #blog-root .blog-md-quote {
+          margin: 22px 0;
+          border-left: 3px solid #7cd4ff;
+          background: #f5fbff;
+          border-radius: 10px;
+          padding: 14px 16px;
+          color: #344054;
+          font-style: italic;
+        }
+        #blog-root .blog-md-link {
+          color: #0b6ba8;
+          text-decoration: none;
+          font-weight: 700;
+        }
+        #blog-root .blog-md-link:hover {
+          text-decoration: underline;
+        }
+        #blog-root .blog-md-inline-code {
+          background: #f2f4f7;
+          color: #7a271a;
+          border-radius: 6px;
+          padding: 2px 6px;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+          font-size: 0.9em;
+        }
+        #blog-root .blog-code-wrap {
+          margin: 24px 0;
+          border-radius: 14px;
+          overflow: hidden;
+          border: 1px solid #d0d5dd;
+        }
+        #blog-root .blog-code-head {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: #101828;
+          padding: 8px 10px;
+        }
+        #blog-root .blog-code-lang {
+          font-size: 11px;
+          font-weight: 800;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          color: #d1e9ff;
+        }
+        #blog-root .blog-copy-btn {
+          border: 0;
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          border-radius: 8px;
+          padding: 5px 10px;
+          background: #d1e9ff;
+          color: #0c2d6b;
+          cursor: pointer;
+        }
+        #blog-root .blog-md-pre {
+          margin: 0;
+          background: #182230;
+          color: #f8fafc;
+          padding: 14px;
+          overflow: auto;
+        }
+        #blog-root .blog-md-image {
+          max-width: 100%;
+          height: auto;
+          border-radius: 12px;
+          margin: 16px 0;
+          border: 1px solid #e4e7ec;
+        }
+        #blog-root .blog-md-hr {
+          border: 0;
+          height: 1px;
+          background: #e4e7ec;
+          margin: 44px 0;
+        }
+        #blog-root .blog-md-table-wrap {
+          overflow: auto;
+          border: 1px solid #e4e7ec;
+          border-radius: 12px;
+          margin: 20px 0;
+        }
+        #blog-root .blog-md-table {
+          border-collapse: collapse;
+          min-width: 100%;
+        }
+        #blog-root .blog-md-th {
+          background: #f9fafb;
+          text-align: left;
+          font-size: 12px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          color: #475467;
+          padding: 10px;
+          border-bottom: 1px solid #e4e7ec;
+        }
+        #blog-root .blog-md-td {
+          padding: 10px;
+          border-bottom: 1px solid #f2f4f7;
+          color: #344054;
+          font-size: 14px;
+        }
+        #blog-root .blog-post-nav {
+          margin-top: 20px;
+          padding-top: 20px;
+          border-top: 1px solid #e4e7ec;
+          display: flex;
+          gap: 10px;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+        #blog-root .blog-post-nav a {
+          text-decoration: none;
+          border: 1px solid #d0d5dd;
+          background: #fff;
+          color: #101828;
+          border-radius: 10px;
+          padding: 10px 14px;
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+        }
+        @media (max-width: 700px) {
+          #blog-root .blog-post-wrap {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+        }
+      10:["$","main",null,{"children":[["$","style",null,{"children":"$18"}],"$L19","$L1a"]}]
+1b:T8356,<p class="blog-md-p">When building modern, privacy-first mobile applications, localization is often treated as an afterthought—a routine task handed to junior engineers to drop a few JSON files into an <code class="blog-md-inline-code">/i18n</code> directory or wrap an API call around Google Cloud Translate.</p>
+<p class="blog-md-p">In an offline-first, confidential AI workspace like <strong><a href="https://subraatakumar.com/subra-ai" class="blog-md-link">Subra AI</a></strong>, traditional localization patterns completely fall apart:</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li"><strong>Static Bundling Bloat:</strong> Shipping 30+ pre-translated locale JSON dictionaries inflates the initial app binary, forces tedious translation pipelines for every minor copy tweak, and constantly falls out of sync across fast-moving product iterations.</li>
+<li class="blog-md-li"><strong>Cloud Translation Privacy Violations:</strong> Sending every UI string or context fragment to a third-party translation cloud endpoint violates the core privacy contract of an on-device application.</li>
+<li class="blog-md-li"><strong>Runtime Latency &#x26; Determinism:</strong> Natural language translation models running on the edge have physical resource footprints (~30MB runtime model assets, non-deterministic phrasing, high CPU cycles).</li>
+</ol>
+<p class="blog-md-p">To solve this, our architectural strategy shifts translation directly to the edge: <strong>ship a single source of truth (<code class="blog-md-inline-code">en.json</code>), download on-device translation models on demand via <code class="blog-md-inline-code">@tcbs/react-native-language-translator</code> (bridging Google ML Kit), generate translations locally, and persist them into a high-performance database cache that hydrates <code class="blog-md-inline-code">i18next</code> dynamically.</strong></p>
+<p class="blog-md-p">On a whiteboard, this pipeline looks deceptively simple. In practice, running machine translation models on edge devices to drive a native user interface introduces a minefield of system constraints, App Store compliance hazards, typography bugs, and UI threading blocks.</p>
+<p class="blog-md-p">Below is the definitive architectural field guide detailing the system topology and the <strong>18 production landmines</strong> we engineered around to achieve an enterprise-grade, zero-cloud localization engine.</p>
+<hr class="blog-md-hr" />
+<h2 id="1-system-topology-x26-architecture-boundaries" class="blog-md-h2">1. System Topology &#x26; Architecture Boundaries</h2>
+<p class="blog-md-p">Before diving into failure modes, we must clearly establish the boundaries of the localization subsystem within the broader application stack.</p>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span></span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code>                           ┌──────────────────────────────┐
+                           │   App Bundle Asset: en.json  │
+                           │   (Single Source of Truth)   │
+                           └──────────────┬───────────────┘
+                                          │
+                                          ▼
+┌──────────────────────────────┐   ┌──────────────────────────────┐
+│  OS Locale / User Selection  ├──►│   Locale Code Normalizer     │
+│   (e.g., es-MX, de-DE)       │   │    (Resolves es-MX ➔ es)     │
+└──────────────────────────────┘   └──────────────┬───────────────┘
+                                                  │
+                                                  ▼
+                                   ┌──────────────────────────────┐
+                                   │ Onboarding &#x26; Consent Engine  │
+                                   │ (Verifies Disk, Data &#x26; UX)   │
+                                   └──────────────┬───────────────┘
+                                                  │
+                                                  ▼
+                                   ┌──────────────────────────────┐
+                                   │  Native ML Kit Bridge Daemon │
+                                   │  (Downloads ~30MB Language)  │
+                                   └──────────────┬───────────────┘
+                                                  │
+                                                  ▼
+┌──────────────────────────────┐   ┌──────────────────────────────┐
+│  Manual Overrides Dictionary ├──►│  Batch Translation &#x26; Chunking│
+│  (Vault, Space, Lens terms)  │   │  (Protected Interpolations)  │
+└──────────────────────────────┘   └──────────────┬───────────────┘
+                                                  │
+                                                  ▼
+                                   ┌──────────────────────────────┐
+                                   │   Persistent Database Cache  │
+                                   │ (SQLite Table / MMKV Store)  │
+                                   └──────────────┬───────────────┘
+                                                  │
+                                                  ▼
+                                   ┌──────────────────────────────┐
+                                   │ Runtime i18next Hydration    │
+                                   │  (fallbackLng: 'en' Active)  │
+                                   └──────────────┬───────────────┘
+                                                  │
+                ┌─────────────────────────────────┴─────────────────────────────────┐
+                ▼                                                                   ▼
+┌──────────────────────────────┐                                   ┌──────────────────────────────┐
+│    React UI Tree Render      │                                   │ Decoupled AI &#x26; Speech Sync   │
+│  (Typography, A11y, RTL)     │                                   │ (Gemma LLM / Audio Ingest)   │
+└──────────────────────────────┘                                   └──────────────────────────────┘
+</code></pre>
+      </div>
+    
+<h3 id="the-separation-of-concerns" class="blog-md-h3">The Separation of Concerns</h3>
+<p class="blog-md-p">A fundamental rule in this architecture is the strict boundary between <strong>Static UI Localization</strong> and <strong>Dynamic Multimodal Intelligence</strong>:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">The translation package and ML Kit are strictly restricted to translating deterministic UI strings (menus, labels, buttons, navigation headers).</li>
+<li class="blog-md-li">The Vault Document extraction, OCR, user notes, and conversational intelligence are handled exclusively by the on-device <strong>Gemma 4 E2B</strong> model.</li>
+<li class="blog-md-li">The translation bridge must <strong>never</strong> be used to parse or translate private user vault documents or LLM outputs.</li>
+</ul>
+<hr class="blog-md-hr" />
+<h2 id="2-user-agency-onboarding-x26-hardware-resiliency" class="blog-md-h2">2. User Agency, Onboarding &#x26; Hardware Resiliency</h2>
+<h3 id="landmine-1-aggressive-auto-downloads-vs-consent-first-onboarding" class="blog-md-h3">Landmine 1: Aggressive Auto-Downloads vs. Consent-First Onboarding</h3>
+<p class="blog-md-p"><strong>The Trap:</strong> When an app detects a non-English OS locale on initial launch (e.g., German), the developer instinct is to immediately trigger the translation pipeline. However, on-device translation requires downloading a ~30MB language model. Doing this silently over a user's cellular connection without consent burns their data allotment and causes unexpected delays.
+<strong>Architectural Fix:</strong> Implement a <strong>Consent-First Onboarding Interceptor</strong>. The app boots instantly into its default English bundle and presents a lightweight, non-blocking modal:</p>
+<blockquote class="blog-md-quote">
+<p class="blog-md-p"><em>"We noticed your device is set to German. Would you like to use the app in German? This requires a one-time 30MB download."</em></p>
+</blockquote>
+<p class="blog-md-p">If the user declines, the app remains in English with zero network impact.</p>
+<h3 id="landmine-2-flash-of-unlocalized-content-fouc-vs-boot-sequence-gating" class="blog-md-h3">Landmine 2: Flash of Unlocalized Content (FOUC) vs. Boot Sequence Gating</h3>
+<p class="blog-md-p"><strong>The Trap:</strong> Once a language pack is cached, React components mount faster than asynchronous storage adapters can read from SQLite. This results in an unsightly "flash" where the UI renders in English for 100ms before snapping to German.
+<strong>Architectural Fix:</strong> Gate the native splash screen during application bootstrap. The root React Navigation container is held unmounted until <code class="blog-md-inline-code">applyCachedLanguagePack()</code> completes its synchronous memory hydration into <code class="blog-md-inline-code">i18next</code>. Because cached SQLite/MMKV reads take less than 15ms, the user experiences zero perceptible lag and zero FOUC.</p>
+<h3 id="landmine-3-background-network-suspension-x26-the-keep-app-open-protocol" class="blog-md-h3">Landmine 3: Background Network Suspension &#x26; The "Keep App Open" Protocol</h3>
+<p class="blog-md-p"><strong>The Trap:</strong> During the initial 30MB model download, if a user switches apps or locks their screen, iOS (<code class="blog-md-inline-code">NSURLSession</code>) and Android process managers aggressively suspend background networking to preserve battery. When the user returns, the download socket is broken, leaving the setup screen permanently frozen or throwing unhandled socket timeout exceptions.
+<strong>Architectural Fix:</strong> Rather than introducing fragile native background daemons (<code class="blog-md-inline-code">WorkManager</code> / background fetch entitlements), solve the problem transparently in the presentation layer. The download modal explicitly renders real-time progress indicators alongside a prominent instruction:</p>
+<blockquote class="blog-md-quote">
+<p class="blog-md-p"><strong>"Please keep the app open while downloading."</strong></p>
+</blockquote>
+<p class="blog-md-p">If network connectivity drops entirely, the download safely aborts, cleans up temporary artifacts, falls back to English, and unlocks the app.</p>
+<h3 id="landmine-4-pre-flight-storage-capacity-guards" class="blog-md-h3">Landmine 4: Pre-Flight Storage Capacity Guards</h3>
+<p class="blog-md-p"><strong>The Trap:</strong> A device with 5MB of free storage attempts to download the 30MB model. The download proceeds, exhausts physical disk sectors, crashes the native process, and risks corrupting the active SQLite database file.
+<strong>Architectural Fix:</strong> Enforce a hard pre-flight storage check prior to initiating any download or presenting the consent dialog. Using disk space inspection APIs, the app asserts that available free space exceeds at least <strong>100MB</strong> (providing a safety buffer for the model asset plus database index growth). If space is insufficient, the download flow is disabled with an explanatory prompt, and the app defaults to English.</p>
+<hr class="blog-md-hr" />
+<h2 id="3-storage-topology-lifecycle-x26-compliance" class="blog-md-h2">3. Storage Topology, Lifecycle &#x26; Compliance</h2>
+<h3 id="landmine-5-apple-app-store-icloud-backup-violations" class="blog-md-h3">Landmine 5: Apple App Store iCloud Backup Violations</h3>
+<p class="blog-md-p"><strong>The Trap:</strong> Storing downloaded translation models or the generated SQLite translation database in the default <code class="blog-md-inline-code">NSDocumentDirectory</code> means iOS will automatically back them up to iCloud. Apple App Store Review Guideline 2.23 explicitly forbids apps from syncing easily regenerable or downloadable data to iCloud backups. Apps that do this face immediate rejection.
+<strong>Architectural Fix:</strong> Direct all downloaded language models to the platform cache directory (<code class="blog-md-inline-code">Library/Caches</code> on iOS, <code class="blog-md-inline-code">context.getCacheDir()</code> on Android). For persistent database tables in SQLite, ensure the file descriptor sets the iOS <code class="blog-md-inline-code">NSURLIsExcludedFromBackupKey</code> attribute to <code class="blog-md-inline-code">true</code>, and set <code class="blog-md-inline-code">android:allowBackup="false"</code> for these specific data paths.</p>
+<h3 id="landmine-6-the-model-pruning-lifecycle-decoupling-model-vs-cache" class="blog-md-h3">Landmine 6: The Model Pruning Lifecycle (Decoupling Model vs. Cache)</h3>
+<p class="blog-md-p"><strong>The Trap:</strong> Teams assume that deleting a language model from device storage will revert the app's UI back to English.
+<strong>Architectural Fix:</strong> Explicitly decouple the <strong>Translation Engine (ML Kit Model)</strong> from the <strong>Presentation Layer (Database Cache)</strong>. Once <code class="blog-md-inline-code">ensureLanguagePackReady</code> iterates through <code class="blog-md-inline-code">en.json</code> and writes the translated key-value pairs into SQLite, the 30MB model file is no longer required for day-to-day rendering.
+The architecture exposes a "Manage Downloaded Languages" screen in Settings where users can prune downloaded model files to reclaim disk space while their localized UI remains 100% operational. The model is only re-requested if a future app update introduces new, untranslated English keys.</p>
+<h3 id="landmine-7-cross-device-settings-sync-asynchrony" class="blog-md-h3">Landmine 7: Cross-Device Settings Sync Asynchrony</h3>
+<p class="blog-md-p"><strong>The Trap:</strong> In multi-device ecosystems (e.g., iPhone and iPad linked to the same Apple ID), syncing user preferences via iCloud Key-Value storage creates an asset mismatch. If a user enables German on their iPhone, the preference <code class="blog-md-inline-code">locale: 'de'</code> syncs to their iPad. The iPad boots, attempts to render German, finds neither the model nor the SQLite cache, and crashes or triggers an unprompted cellular download.
+<strong>Architectural Fix:</strong> Enforce that UI language selections are stored as <strong>Device-Local Settings</strong>. If cloud preference synchronization is utilized, the boot pipeline on secondary devices must implement a fallback guard: if <code class="blog-md-inline-code">cloudLocale !== localLocale</code> and local assets are missing, boot safely in English and display a badge in Settings indicating that a language pack is ready for download.</p>
+<h3 id="landmine-8-database-schema-migrations-x26-versioning-governance" class="blog-md-h3">Landmine 8: Database Schema Migrations &#x26; Versioning Governance</h3>
+<p class="blog-md-p"><strong>The Trap:</strong> Adding dynamic localization caching without strict schema versioning leads to database locks and crashes when upgrading existing production users.
+<strong>Architectural Fix:</strong> In accordance with repository architecture rules (<code class="blog-md-inline-code">AGENTS.md</code>), any schema modification must follow an append-only migration path:</p>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">SQL</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-sql">-- Migration v4: Create UI Translations Cache
+CREATE TABLE IF NOT EXISTS ui_translations (
+    language_code TEXT NOT NULL,
+    translation_key TEXT NOT NULL,
+    translated_text TEXT NOT NULL,
+    updated_at INTEGER NOT NULL,
+    PRIMARY KEY (language_code, translation_key)
+);
+CREATE INDEX IF NOT EXISTS idx_ui_translations_lang ON ui_translations(language_code);
+</code></pre>
+      </div>
+    
+<p class="blog-md-p">Every schema modification is tracked in <code class="blog-md-inline-code">docs/database-schema.md</code> before shipping code.</p>
+<h3 id="landmine-9-cache-invalidation-x26-manual-recovery" class="blog-md-h3">Landmine 9: Cache Invalidation &#x26; Manual Recovery</h3>
+<p class="blog-md-p"><strong>The Trap:</strong> When the app binary updates via the App Store, new UI features introduce new keys in <code class="blog-md-inline-code">en.json</code>. Furthermore, machine learning models periodically update with better phrasing. If the cache is static, new buttons show raw JSON keys and grammar mistakes can never be corrected.
+<strong>Architectural Fix:</strong></p>
+<ol class="blog-md-ol">
+<li class="blog-md-li"><strong>Incremental Invalidation:</strong> On launch, the bootloader compares the key count of <code class="blog-md-inline-code">en.json</code> against the local SQLite store for the active language. Any missing delta keys are translated in the background without blocking the UI.</li>
+<li class="blog-md-li"><strong>Emergency Cache Flush:</strong> Provide a "Refresh Language Cache" button in Developer/Advanced Settings that wipes the SQLite language rows and forces a clean re-generation from the source dictionary.</li>
+</ol>
+<hr class="blog-md-hr" />
+<h2 id="4-ui-layout-typography-x26-accessibility" class="blog-md-h2">4. UI Layout, Typography &#x26; Accessibility</h2>
+<h3 id="landmine-10-verbose-expansion-dynamics-the-german-expansion-bug" class="blog-md-h3">Landmine 10: Verbose Expansion Dynamics (The "German Expansion" Bug)</h3>
+<p class="blog-md-p"><strong>The Trap:</strong> Designing UI components with fixed widths (<code class="blog-md-inline-code">width: 120</code>, <code class="blog-md-inline-code">height: 48</code>). When translated into verbose languages like German, Russian, or Finnish, words expand by <strong>30% to 50%</strong>. A simple button labeled "Save" becomes <em>"Speichern"</em>; "Speed limit" becomes <em>"Geschwindigkeitsbegrenzung"</em>. Fixed containers truncate text (<code class="blog-md-inline-code">"Geschwindig..."</code>) or shatter flex layouts.
+<strong>Architectural Fix:</strong> Mandate layout elasticity across all shared design components:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li">Ban hardcoded widths and heights on text-bearing elements.</li>
+<li class="blog-md-li">Enforce <code class="blog-md-inline-code">flexWrap: 'wrap'</code> and dynamic container padding.</li>
+<li class="blog-md-li">Utilize React Native's <code class="blog-md-inline-code">adjustsFontSizeToFit</code> and <code class="blog-md-inline-code">minimumFontScale={0.8}</code> on constrained navigation bars and tabs.</li>
+</ul>
+<h3 id="landmine-11-complex-script-typography-x26-lineheight-metrics" class="blog-md-h3">Landmine 11: Complex Script Typography &#x26; LineHeight Metrics</h3>
+<p class="blog-md-p"><strong>The Trap:</strong> Subra AI's roadmap targets the Hindi and Punjabi diasporas. English fonts (like SF Pro or Inter) do not contain glyphs for Devanagari (Hindi) or Gurmukhi (Punjabi) scripts. When rendered, the OS falls back to default system fonts with differing ascender/descender metrics. Because Devanagari characters are physically taller and incorporate top vowel markers, standard English <code class="blog-md-inline-code">lineHeight</code> values cause the tops and bottoms of letters to be vertically clipped.
+<strong>Architectural Fix:</strong> Implement dynamic typography scaling within the theme engine:</p>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">TYPESCRIPT</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-typescript">export const getDynamicTypography = (languageCode: string) => {
+  const isTallScript = ['hi', 'pa'].includes(languageCode);
+  return {
+    fontFamily: isTallScript ? 'NotoSans' : 'System',
+    lineHeightMultiplier: isTallScript ? 1.35 : 1.15,
+  };
+};
+</code></pre>
+      </div>
+    
+<h3 id="landmine-12-bidirectional-layouts-x26-rtl-mirroring" class="blog-md-h3">Landmine 12: Bidirectional Layouts &#x26; RTL Mirroring</h3>
+<p class="blog-md-p"><strong>The Trap:</strong> Translating strings into Arabic or Hebrew flips the reading order, but standard React Native layouts remain Left-to-Right (LTR). Icons point in the wrong direction, back buttons appear on the wrong side, and alignment feels completely broken.
+<strong>Architectural Fix:</strong> Integrate directly with React Native's <code class="blog-md-inline-code">I18nManager</code>:</p>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">TYPESCRIPT</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-typescript">import { I18nManager } from 'react-native';
+
+export const handleRTLTransition = async (isRTL: boolean) => {
+  if (I18nManager.isRTL !== isRTL) {
+    I18nManager.allowRTL(isRTL);
+    I18nManager.forceRTL(isRTL);
+    // Requires an app restart to cleanly re-render root native view hierarchies
+  }
+};
+</code></pre>
+      </div>
+    
+<hr class="blog-md-hr" />
+<h2 id="5-translation-science-x26-brand-integrity" class="blog-md-h2">5. Translation Science &#x26; Brand Integrity</h2>
+<h3 id="landmine-13-dynamic-string-variable-x26-token-destruction" class="blog-md-h3">Landmine 13: Dynamic String Variable &#x26; Token Destruction</h3>
+<p class="blog-md-p"><strong>The Trap:</strong> Many UI strings contain runtime interpolation variables:</p>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">JSON</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-json">{
+  "welcome_user": "Hello, {{userName}}!",
+  "items_remaining": "You have {{count}} unread notes."
+}
+</code></pre>
+      </div>
+    
+<p class="blog-md-p">Because ML Kit is an off-the-shelf natural language model, it does not understand template syntax. It will often translate the word "userName" into German (<code class="blog-md-inline-code">{{benutzerName}}</code>) or inject spaces into the brackets (<code class="blog-md-inline-code">{ { userName } }</code>). When <code class="blog-md-inline-code">i18next</code> attempts to hydrate the template, the variable lookup fails and displays literal broken brackets.
+<strong>Architectural Fix:</strong> Build a pre-translation token masking interceptor. Variables matching <code class="blog-md-inline-code">/\{\{(.*?)\}\}/g</code> are extracted and substituted with unique numeric tokens (e.g., <code class="blog-md-inline-code">__0__</code>) prior to ML Kit processing, and restored precisely into place after translation returns.</p>
+<h3 id="landmine-14-non-deterministic-brand-drift-x26-overrides-dictionary" class="blog-md-h3">Landmine 14: Non-Deterministic Brand Drift &#x26; Overrides Dictionary</h3>
+<p class="blog-md-p"><strong>The Trap:</strong> Natural language models lack platform context. In Subra AI, words like <strong>"Vault"</strong>, <strong>"Space"</strong>, and <strong>"Lens"</strong> are proprietary architectural concepts. A raw ML Kit translation model will literally translate "Vault" into the German word for a bank safe (<em>"Tresor"</em>), or "Space" into astronomical outer space (<em>"Weltraum"</em>).
+<strong>Architectural Fix:</strong> Implement a deterministic <strong>Manual Overrides Pipeline</strong>. A bundled <code class="blog-md-inline-code">overrides.json</code> dictionary maps platform-specific terms for each target locale. During cache generation, the manual overrides dictionary is shallow-merged <em>over</em> the ML Kit batch output, guaranteeing that brand terminology remains pristine and consistent.</p>
+<h3 id="landmine-15-regional-dialect-mismatches-x26-code-normalization" class="blog-md-h3">Landmine 15: Regional Dialect Mismatches &#x26; Code Normalization</h3>
+<p class="blog-md-p"><strong>The Trap:</strong> When reading device locales, the OS returns BCP-47 regional identifiers like <code class="blog-md-inline-code">es-MX</code> (Mexican Spanish) or <code class="blog-md-inline-code">fr-CA</code> (Canadian French). ML Kit's translation models operate strictly on primary language codes (<code class="blog-md-inline-code">es</code>, <code class="blog-md-inline-code">fr</code>). Checking whether <code class="blog-md-inline-code">es-MX</code> is supported will fail, causing the app to erroneously abort and revert to English.
+<strong>Architectural Fix:</strong> Run all detected locales through a code normalization utility (<code class="blog-md-inline-code">resolveTranslatorLanguageCode()</code>) before running support checks or initiating model downloads:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><code class="blog-md-inline-code">es-MX</code> $\longrightarrow$ <code class="blog-md-inline-code">es</code></li>
+<li class="blog-md-li"><code class="blog-md-inline-code">pt-BR</code> $\longrightarrow$ <code class="blog-md-inline-code">pt</code></li>
+<li class="blog-md-li"><code class="blog-md-inline-code">zh-Hant</code> $\longrightarrow$ <code class="blog-md-inline-code">zh</code></li>
+</ul>
+<h3 id="landmine-16-module-scope-translation-staleness-in-non-react-controllers" class="blog-md-h3">Landmine 16: Module-Scope Translation Staleness in Non-React Controllers</h3>
+<p class="blog-md-p"><strong>The Trap:</strong> In a well-architected React Native app, business logic resides in singleton services and controllers (<code class="blog-md-inline-code">vaultChatController.ts</code>). A developer writes:</p>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">TYPESCRIPT</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-typescript">// ❌ CRITICAL BUG: Module-scope execution
+const NETWORK_ERROR = i18next.t('errors.network');
+
+export class VaultChatController {
+  handleFailure() {
+    showToast(NETWORK_ERROR);
+  }
+}
+</code></pre>
+      </div>
+    
+<p class="blog-md-p">This string is evaluated exactly once when the JavaScript bundle loads on boot (when the app is still in English). When the user later switches the language to German, React components re-render correctly, but the controller continues throwing English error toasts!
+<strong>Architectural Fix:</strong> Forbid module-scope translation calls. All translations inside non-React controllers must be evaluated dynamically at execution time:</p>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">TYPESCRIPT</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-typescript">// ✅ CORRECT: Runtime dynamic execution
+export class VaultChatController {
+  handleFailure() {
+    showToast(i18next.t('errors.network'));
+  }
+}
+</code></pre>
+      </div>
+    
+<hr class="blog-md-hr" />
+<h2 id="6-system-boundaries-privacy-x26-quality-engineering" class="blog-md-h2">6. System Boundaries, Privacy &#x26; Quality Engineering</h2>
+<h3 id="landmine-17-silent-sdk-telemetry-leaks" class="blog-md-h3">Landmine 17: Silent SDK Telemetry Leaks</h3>
+<p class="blog-md-p"><strong>The Trap:</strong> Subra AI's core value proposition is uncompromising privacy. While Google ML Kit translates text entirely on-device without transmitting strings over the wire, the native Google ML Kit libraries phone home by default with SDK telemetry, download logs, and hardware device metrics.
+<strong>Architectural Fix:</strong> Explicitly disable Google ML Kit background analytics in the native build configurations:</p>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><strong>Android (<code class="blog-md-inline-code">AndroidManifest.xml</code>):</strong>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">XML</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-xml">&#x3C;meta-data
+    android:name="com.google.mlkit.telemetry.ENABLED"
+    android:value="false" />
+</code></pre>
+      </div>
+    
+</li>
+<li class="blog-md-li"><strong>iOS (<code class="blog-md-inline-code">Info.plist</code>):</strong>
+
+      <div class="blog-code-wrap">
+        <div class="blog-code-head">
+          <span class="blog-code-lang">XML</span>
+          <button data-copy class="blog-copy-btn">Copy</button>
+        </div>
+        <pre class="blog-md-pre"><code class="language-xml">&#x3C;key>MLKitTelemetryEnabled&#x3C;/key>
+&#x3C;false/>
+</code></pre>
+      </div>
+    
+</li>
+</ul>
+<h3 id="landmine-18-non-deterministic-e2e-testing-x26-headless-ci-bridge-mocking" class="blog-md-h3">Landmine 18: Non-Deterministic E2E Testing &#x26; Headless CI Bridge Mocking</h3>
+<p class="blog-md-p"><strong>The Trap:</strong></p>
+<ol class="blog-md-ol">
+<li class="blog-md-li"><strong>CI Crashes:</strong> Automated unit test runners (Jest in GitHub Actions) run in headless Node.js environments where native iOS/Android ML Kit bridges do not exist. Invoking the localization package immediately crashes the test suite.</li>
+<li class="blog-md-li"><strong>Brittle E2E Tests:</strong> End-to-end tests (Detox/Appium) that locate UI buttons by string matching (e.g., <code class="blog-md-inline-code">element(by.text('Speichern'))</code>) will break whenever ML Kit updates its language weights and changes a phrasing slightly.
+<strong>Architectural Fix:</strong></li>
+</ol>
+<ul class="blog-md-ul">
+<li class="blog-md-li"><strong>Headless Jest Mocking:</strong> Provide a global Jest mock that immediately resolves <code class="blog-md-inline-code">ensureLanguagePackReady</code> by returning the untranslated <code class="blog-md-inline-code">en.json</code> dictionary.</li>
+<li class="blog-md-li"><strong>Strict TestID Selectors:</strong> Enforce that all automated E2E test suites select elements exclusively by immutable <code class="blog-md-inline-code">testID</code> attributes (e.g., <code class="blog-md-inline-code">testID="btn-vault-save"</code>), never by localized string text.</li>
+</ul>
+<hr class="blog-md-hr" />
+<h2 id="the-complete-architectural-blueprint" class="blog-md-h2">The Complete Architectural Blueprint</h2>
+<p class="blog-md-p">When you assemble these patterns into a single cohesive architecture, you get an on-device localization engine that provides:</p>
+<ol class="blog-md-ol">
+<li class="blog-md-li"><strong>Zero Bundle Bloat:</strong> Ship only <code class="blog-md-inline-code">en.json</code>.</li>
+<li class="blog-md-li"><strong>Total Data Privacy:</strong> Zero text leaves the device; third-party SDK analytics are disabled.</li>
+<li class="blog-md-li"><strong>Flawless Presentation:</strong> No FOUC, no clipped typography, and flexible layout scaling.</li>
+<li class="blog-md-li"><strong>Resilient Offline Architecture:</strong> Decoupled models and database caches with safe fallbacks at every stage.</li>
+</ol>
+<p class="blog-md-p">Building on-device systems forces you to respect the physical constraints of mobile hardware. By accounting for these 18 architectural landmines before writing production code, you turn a fragile machine learning integration into a predictable, rock-solid mobile platform.</p>
+<hr class="blog-md-hr" />
+<h3 id="experience-subra-ai-firsthand" class="blog-md-h3">Experience Subra AI Firsthand</h3>
+<p class="blog-md-p">Subra AI is an offline-first, confidential AI workspace built for users who value extreme privacy without sacrificing capability. Experience our on-device document Vaults, private Lens workflows, and edge-native intelligence directly on your device:</p>
+<p class="blog-md-p">👉 <strong><a href="https://subra-ai.web.app/" class="blog-md-link">Download Subra AI Today</a></strong> (Available for iOS, Mac and Android).</p>
+19:["$","section",null,{"className":"blog-post-wrap","children":[["$","$Lb",null,{"href":"/blog","className":"blog-post-kicker","children":"Back to blog"}],["$","h1",null,{"children":"Architecting On-Device Localization for Subra AI in React Native: A Field Guide to 18 Production Landmines"}],["$","div",null,{"className":"blog-post-meta","children":[["$","span",null,{"children":"October 4, 2026"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"18 min"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"Subrata Kumar Das"}]]}],["$","p",null,{"className":"blog-post-desc","children":"A comprehensive systems-architecture breakdown of building an edge-native, zero-cloud localization engine in React Native—covering storage, layout dynamics, ML Kit boundaries, and lifecycle resilience."}],["$","div",null,{"className":"blog-tag-row","children":[["$","span","react-native",{"children":"react-native"}],["$","span","architecture",{"children":"architecture"}],["$","span","i18n",{"children":"i18n"}],["$","span","localization",{"children":"localization"}],["$","span","on-device-ai",{"children":"on-device-ai"}],["$","span","mobile-engineering",{"children":"mobile-engineering"}],["$","span","performance",{"children":"performance"}]]}],["$","article",null,{"className":"blog-article","children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$1b"}}],"$L1c"]}],"$L1d"]}]
+1a:["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"mainEntityOfPage\":\"https://subraatakumar.com/blog/architecting-on-device-localization-react-native\",\"headline\":\"Architecting On-Device Localization for Subra AI in React Native: A Field Guide to 18 Production Landmines\",\"description\":\"A comprehensive systems-architecture breakdown of building an edge-native, zero-cloud localization engine in React Native—covering storage, layout dynamics, ML Kit boundaries, and lifecycle resilience.\",\"datePublished\":\"2026-10-04\",\"dateModified\":\"2026-10-04\",\"image\":\"https://subraatakumar.com/images/interview.png\",\"keywords\":[\"react-native\",\"architecture\",\"i18n\",\"localization\",\"on-device-ai\",\"mobile-engineering\",\"performance\"],\"author\":{\"@type\":\"Person\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com/\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Subrata Kumar Das\",\"url\":\"https://subraatakumar.com/\"}}"}}]
+1e:I[3970,["8500","static/chunks/8500-41fa79ac743d83f1.js","5953","static/chunks/app/blog/%5Bslug%5D/page-3f0e412199a1fb28.js"],"default"]
+1c:["$","$L1e",null,{}]
+1d:["$","div",null,{"className":"blog-post-nav","children":[["$","$Lb",null,{"href":"/blog/Why-I-Chose-Gemma-4-E2B-for-Subra-AI","children":"Previous"}],["$","$Lb",null,{"href":"/blog/cocoapods-sunset-react-native-app","children":"Next"}]]}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[6869,[],"IconMark"]
+13:null
+17:[["$","title","0",{"children":"Architecting On-Device Localization for Subra AI in React Native: A Field Guide to 18 Production Landmines | Subrata Kumar Das"}],["$","meta","1",{"name":"description","content":"A comprehensive systems-architecture breakdown of building an edge-native, zero-cloud localization engine in React Native—covering storage, layout dynamics, ML Kit boundaries, and lifecycle resilience."}],["$","link","2",{"rel":"canonical","href":"https://subraatakumar.com/blog/architecting-on-device-localization-react-native/"}],["$","meta","3",{"property":"og:title","content":"Architecting On-Device Localization for Subra AI in React Native: A Field Guide to 18 Production Landmines | Blog"}],["$","meta","4",{"property":"og:description","content":"A comprehensive systems-architecture breakdown of building an edge-native, zero-cloud localization engine in React Native—covering storage, layout dynamics, ML Kit boundaries, and lifecycle resilience. • 18 min"}],["$","meta","5",{"property":"og:url","content":"https://subraatakumar.com/blog/architecting-on-device-localization-react-native/"}],["$","meta","6",{"property":"og:image","content":"https://subraatakumar.com/images/interview.png"}],["$","meta","7",{"property":"og:type","content":"article"}],["$","meta","8",{"property":"article:published_time","content":"2026-10-04"}],["$","meta","9",{"property":"article:modified_time","content":"2026-10-04"}],["$","meta","10",{"property":"article:tag","content":"react-native"}],["$","meta","11",{"property":"article:tag","content":"architecture"}],["$","meta","12",{"property":"article:tag","content":"i18n"}],["$","meta","13",{"property":"article:tag","content":"localization"}],["$","meta","14",{"property":"article:tag","content":"on-device-ai"}],["$","meta","15",{"property":"article:tag","content":"mobile-engineering"}],["$","meta","16",{"property":"article:tag","content":"performance"}],["$","meta","17",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","18",{"name":"twitter:title","content":"Architecting On-Device Localization for Subra AI in React Native: A Field Guide to 18 Production Landmines | Blog"}],["$","meta","19",{"name":"twitter:description","content":"A comprehensive systems-architecture breakdown of building an edge-native, zero-cloud localization engine in React Native—covering storage, layout dynamics, ML Kit boundaries, and lifecycle resilience. • 18 min"}],["$","meta","20",{"name":"twitter:image","content":"https://subraatakumar.com/images/interview.png"}],["$","link","21",{"rel":"icon","href":"/site-icon.ico","type":"image/x-icon"}],["$","$L1f","22",{}]]
