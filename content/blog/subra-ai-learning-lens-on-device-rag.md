@@ -190,3 +190,10 @@ The best retrieval method depends on corpus size and question style. Exact techn
 ## Closing
 
 Subra AI’s Learning Lens RAG pipeline runs extraction, search, and generation on the device. Its current strength is the clear boundary between a Lens-scoped Vault, local evidence retrieval, and local answer generation. Its current weakness is that relevance and citations are still partly delegated to the model. The architecture makes those limits visible and gives us a direct path to stronger retrieval and verifiable grounding as the Learning Vault grows.
+
+### Experience Subra AI Firsthand
+
+Subra AI is an offline-first, confidential AI workspace built for users who value extreme privacy without sacrificing capability. Experience our on-device document Vaults, private Lens workflows, and edge-native intelligence directly on your device:
+
+👉 **[Download Subra AI Today](https://subra-ai.web.app/)** (Available for iOS, Mac and Android).
+
