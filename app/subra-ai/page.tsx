@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 function StoreButtons() {
   return <div className={styles.actions}>
     <a className={styles.primary} href={stores.ios} target="_blank" rel="noopener noreferrer"><Apple size={19} aria-hidden="true" /> Download on the App Store</a>
-    <Link className={styles.secondary} href={stores.android}><Play size={17} aria-hidden="true" /> Get early access on Android</Link>
+    <Link className={styles.secondary} href={stores.android}><Play size={17} aria-hidden="true" /> Get Subra AI on Android</Link>
   </div>;
 }
 

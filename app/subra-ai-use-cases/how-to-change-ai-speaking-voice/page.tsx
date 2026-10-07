@@ -80,7 +80,7 @@ const screenshots = Array.from({ length: 21 }, (_, index) => {
 function DownloadButtons() {
   return <div className={styles.actions}>
     <a className={styles.primary} href={stores.ios} target="_blank" rel="noopener noreferrer"><Apple size={19} /> Download on the App Store</a>
-    <Link className={styles.secondary} href={stores.android}><Play size={18} /> Get early access on Android</Link>
+    <Link className={styles.secondary} href={stores.android}><Play size={18} /> Get Subra AI on Android</Link>
   </div>;
 }
 
